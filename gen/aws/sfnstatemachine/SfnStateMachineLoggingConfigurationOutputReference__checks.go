@@ -98,7 +98,7 @@ func (s *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateSetIncludeExecutionDataParameters(val interface{}) error {
+func (j *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateSetIncludeExecutionDataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewSfnStateMachineLoggingConfigurationOutputReferenceParameters(ter
 
 	return nil
 }
-

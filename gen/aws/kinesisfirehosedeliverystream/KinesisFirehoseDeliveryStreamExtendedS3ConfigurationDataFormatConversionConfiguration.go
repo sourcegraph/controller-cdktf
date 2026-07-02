@@ -1,6 +1,5 @@
 package kinesisfirehosedeliverystream
 
-
 type KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration struct {
 	// input_format_configuration block.
 	//
@@ -15,6 +14,5 @@ type KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionCon
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_firehose_delivery_stream#schema_configuration KinesisFirehoseDeliveryStream#schema_configuration}
 	SchemaConfiguration *KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration `field:"required" json:"schemaConfiguration" yaml:"schemaConfiguration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRouteTables) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRouteTables) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsRouteTables) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRouteTables) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsRouteTables) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsRouteTables_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataAwsRouteTables_IsConstructParameters(x interface{}) error {
+func validateDataAwsRouteTables_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsRouteTables_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsRouteTables_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRouteTables_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsRouteTables_IsTerraformDataSourceParameters(x interface{}) e
 	return nil
 }
 
-func validateDataAwsRouteTables_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRouteTables_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -193,7 +193,7 @@ func validateDataAwsRouteTables_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRouteTables) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRouteTables) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -297,4 +297,3 @@ func validateNewDataAwsRouteTablesParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

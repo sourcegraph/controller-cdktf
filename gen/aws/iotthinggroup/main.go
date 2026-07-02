@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroup",
-		reflect.TypeOf((*IotThingGroup)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupConfig",
-		reflect.TypeOf((*IotThingGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadata",
-		reflect.TypeOf((*IotThingGroupMetadata)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList",
-		reflect.TypeOf((*IotThingGroupMetadataList)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupMetadataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroupMetadataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataOutputReference",
-		reflect.TypeOf((*IotThingGroupMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroupMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroups",
-		reflect.TypeOf((*IotThingGroupMetadataRootToParentGroups)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupMetadataRootToParentGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
-		reflect.TypeOf((*IotThingGroupMetadataRootToParentGroupsList)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupMetadataRootToParentGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroupMetadataRootToParentGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
-		reflect.TypeOf((*IotThingGroupMetadataRootToParentGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupMetadataRootToParentGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroupMetadataRootToParentGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,15 +205,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupProperties",
-		reflect.TypeOf((*IotThingGroupProperties)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayload",
-		reflect.TypeOf((*IotThingGroupPropertiesAttributePayload)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupPropertiesAttributePayload](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayloadOutputReference",
-		reflect.TypeOf((*IotThingGroupPropertiesAttributePayloadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupPropertiesAttributePayloadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
 			_jsii_.MemberProperty{JsiiProperty: "attributesInput", GoGetter: "AttributesInput"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroupPropertiesAttributePayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
-		reflect.TypeOf((*IotThingGroupPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotThingGroupPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePayload", GoGetter: "AttributePayload"},
 			_jsii_.MemberProperty{JsiiProperty: "attributePayloadInput", GoGetter: "AttributePayloadInput"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotThingGroupPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DbEventSubscription) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (d *jsiiProxy_DbEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DbEventSubscription) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DbEventSubscription) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (d *jsiiProxy_DbEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DbEventSubscription) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDbEventSubscription_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateDbEventSubscription_IsConstructParameters(x interface{}) error {
+func validateDbEventSubscription_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDbEventSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDbEventSubscription_IsTerraformElementParameters(x interface{}) error {
+func validateDbEventSubscription_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDbEventSubscription_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateDbEventSubscription_IsTerraformResourceParameters(x interface{}) error {
+func validateDbEventSubscription_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDbEventSubscription_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DbEventSubscription) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DbEventSubscription) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DbEventSubscription) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DbEventSubscription) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DbEventSubscription) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DbEventSubscription) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DbEventSubscription) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DbEventSubscription) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DbEventSubscription) validateSetNamePrefixParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DbEventSubscription) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DbEventSubscription) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewDbEventSubscriptionParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

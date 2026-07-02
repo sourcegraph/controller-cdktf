@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafregionalByteMatchSetByteMatchTuplesListParameters(terraformRe
 
 	return nil
 }
-

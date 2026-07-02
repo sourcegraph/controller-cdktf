@@ -12,17 +12,17 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CopyTagsToSnapshots() interface{}
-	SetCopyTagsToSnapshots(val interface{})
-	CopyTagsToSnapshotsInput() interface{}
+	CopyTagsToSnapshots() any
+	SetCopyTagsToSnapshots(val any)
+	CopyTagsToSnapshotsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,9 +37,9 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	SetInternalValue(val *FsxOpenzfsFileSystemRootVolumeConfiguration)
 	NfsExports() FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference
 	NfsExportsInput() *FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	RecordSizeKib() *float64
 	SetRecordSizeKib(val *float64)
 	RecordSizeKibInput() *float64
@@ -52,11 +52,11 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UserAndGroupQuotas() FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList
-	UserAndGroupQuotasInput() interface{}
+	UserAndGroupQuotasInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNfsExports(value *FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports)
-	PutUserAndGroupQuotas(value interface{})
+	PutUserAndGroupQuotas(value any)
 	ResetCopyTagsToSnapshots()
 	ResetDataCompressionType()
 	ResetNfsExports()
@@ -87,7 +87,7 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	ResetUserAndGroupQuotas()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) CopyTagsToSnapshots() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) CopyTagsToSnapshots() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshots",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) CopyTagsToSnapshotsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) CopyTagsToSnapshotsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshotsInput",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) N
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) R
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) U
 	return returns
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) UserAndGroupQuotasInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) UserAndGroupQuotasInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userAndGroupQuotasInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) U
 	)
 	return returns
 }
-
 
 func NewFsxOpenzfsFileSystemRootVolumeConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference {
 	_init_.Initialize()
@@ -301,7 +300,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationOutputReference_Override(f Fs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetCopyTagsToSnapshots(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetCopyTagsToSnapshots(val any) {
 	if err := j.validateSetCopyTagsToSnapshotsParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetDataCompressionType(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetDataCompressionType(val *string) {
 	if err := j.validateSetDataCompressionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetInternalValue(val *FsxOpenzfsFileSystemRootVolumeConfiguration) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetInternalValue(val *FsxOpenzfsFileSystemRootVolumeConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetRecordSizeKib(val *float64) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetRecordSizeKib(val *float64) {
 	if err := j.validateSetRecordSizeKibParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,16 +429,16 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) C
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) I
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -610,18 +609,18 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) P
 	_jsii_.InvokeVoid(
 		f,
 		"putNfsExports",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) PutUserAndGroupQuotas(value interface{}) {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) PutUserAndGroupQuotas(value any) {
 	if err := f.validatePutUserAndGroupQuotasParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putUserAndGroupQuotas",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) R
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) T
 
 	return returns
 }
-

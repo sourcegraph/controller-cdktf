@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessanalyzerArchiveRuleFilterListParameters(terraformResource 
 
 	return nil
 }
-

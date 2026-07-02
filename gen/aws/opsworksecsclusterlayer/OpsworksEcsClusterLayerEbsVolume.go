@@ -1,6 +1,5 @@
 package opsworksecsclusterlayer
 
-
 type OpsworksEcsClusterLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_ecs_cluster_layer#mount_point OpsworksEcsClusterLayer#mount_point}.
 	MountPoint *string `field:"required" json:"mountPoint" yaml:"mountPoint"`
@@ -9,7 +8,7 @@ type OpsworksEcsClusterLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_ecs_cluster_layer#size OpsworksEcsClusterLayer#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_ecs_cluster_layer#encrypted OpsworksEcsClusterLayer#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_ecs_cluster_layer#iops OpsworksEcsClusterLayer#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_ecs_cluster_layer#raid_level OpsworksEcsClusterLayer#raid_level}.
@@ -17,4 +16,3 @@ type OpsworksEcsClusterLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_ecs_cluster_layer#type OpsworksEcsClusterLayer#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

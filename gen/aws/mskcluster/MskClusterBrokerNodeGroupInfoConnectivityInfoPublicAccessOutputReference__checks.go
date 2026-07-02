@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutp
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputR
 
 	return nil
 }
-

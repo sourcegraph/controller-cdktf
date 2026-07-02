@@ -130,7 +130,7 @@ func (j *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateSetCodec
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewElastictranscoderPresetAudioOutputReferenceParameters(terraformR
 
 	return nil
 }
-

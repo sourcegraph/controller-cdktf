@@ -106,7 +106,7 @@ func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetAllocation
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEc2FleetOnDemandOptionsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

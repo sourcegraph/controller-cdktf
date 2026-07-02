@@ -12,9 +12,9 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,13 +27,13 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	CreationStack() *[]*string
 	CustomizedLoadMetricSpecification() AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference
 	CustomizedLoadMetricSpecificationInput() *AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification
-	DisableDynamicScaling() interface{}
-	SetDisableDynamicScaling(val interface{})
-	DisableDynamicScalingInput() interface{}
+	DisableDynamicScaling() any
+	SetDisableDynamicScaling(val any)
+	DisableDynamicScalingInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxCapacity() *float64
 	SetMaxCapacity(val *float64)
 	MaxCapacityInput() *float64
@@ -67,7 +67,7 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	SetServiceNamespace(val *string)
 	ServiceNamespaceInput() *string
 	TargetTrackingConfiguration() AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList
-	TargetTrackingConfigurationInput() interface{}
+	TargetTrackingConfigurationInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,7 +79,7 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomizedLoadMetricSpecification(value *AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification)
 	PutPredefinedLoadMetricSpecification(value *AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification)
-	PutTargetTrackingConfiguration(value interface{})
+	PutTargetTrackingConfiguration(value any)
 	ResetCustomizedLoadMetricSpecification()
 	ResetDisableDynamicScaling()
 	ResetPredefinedLoadMetricSpecification()
@@ -113,7 +113,7 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	ResetScheduledActionBufferTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -126,8 +126,8 @@ type jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) DisableDynamicScaling() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) DisableDynamicScaling() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDynamicScaling",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) DisableDynamicScalingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) DisableDynamicScalingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDynamicScalingInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) TargetTrackingConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) TargetTrackingConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetTrackingConfigurationInput",
@@ -476,7 +476,6 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-
 func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutoscalingplansScalingPlanScalingInstructionOutputReference {
 	_init_.Initialize()
 
@@ -487,7 +486,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -499,12 +498,12 @@ func NewAutoscalingplansScalingPlanScalingInstructionOutputReference_Override(a 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetDisableDynamicScaling(val interface{}) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetDisableDynamicScaling(val any) {
 	if err := j.validateSetDisableDynamicScalingParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetMaxCapacity(val *float64) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetMaxCapacity(val *float64) {
 	if err := j.validateSetMaxCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetMinCapacity(val *float64) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetMinCapacity(val *float64) {
 	if err := j.validateSetMinCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetPredictiveScalingMaxCapacityBehavior(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetPredictiveScalingMaxCapacityBehavior(val *string) {
 	if err := j.validateSetPredictiveScalingMaxCapacityBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetPredictiveScalingMaxCapacityBuffer(val *float64) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetPredictiveScalingMaxCapacityBuffer(val *float64) {
 	if err := j.validateSetPredictiveScalingMaxCapacityBufferParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetPredictiveScalingMode(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetPredictiveScalingMode(val *string) {
 	if err := j.validateSetPredictiveScalingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetResourceId(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetResourceId(val *string) {
 	if err := j.validateSetResourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetScalableDimension(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetScalableDimension(val *string) {
 	if err := j.validateSetScalableDimensionParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetScalingPolicyUpdateBehavior(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetScalingPolicyUpdateBehavior(val *string) {
 	if err := j.validateSetScalingPolicyUpdateBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetScheduledActionBufferTime(val *float64) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetScheduledActionBufferTime(val *float64) {
 	if err := j.validateSetScheduledActionBufferTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetServiceNamespace(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetServiceNamespace(val *string) {
 	if err := j.validateSetServiceNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,16 +692,16 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.InvokeVoid(
 		a,
 		"putCustomizedLoadMetricSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -884,18 +883,18 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.InvokeVoid(
 		a,
 		"putPredefinedLoadMetricSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) PutTargetTrackingConfiguration(value interface{}) {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) PutTargetTrackingConfiguration(value any) {
 	if err := a.validatePutTargetTrackingConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putTargetTrackingConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -963,16 +962,16 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -991,4 +990,3 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
-		reflect.TypeOf((*CodepipelineWebhook)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhook](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineWebhook{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,11 +87,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookAuthenticationConfiguration",
-		reflect.TypeOf((*CodepipelineWebhookAuthenticationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhookAuthenticationConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookAuthenticationConfigurationOutputReference",
-		reflect.TypeOf((*CodepipelineWebhookAuthenticationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhookAuthenticationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpRange", GoGetter: "AllowedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpRangeInput", GoGetter: "AllowedIpRangeInput"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,15 +129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookConfig",
-		reflect.TypeOf((*CodepipelineWebhookConfig)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhookConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilter",
-		reflect.TypeOf((*CodepipelineWebhookFilter)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhookFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterList",
-		reflect.TypeOf((*CodepipelineWebhookFilterList)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhookFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineWebhookFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference",
-		reflect.TypeOf((*CodepipelineWebhookFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodepipelineWebhookFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodepipelineWebhookFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

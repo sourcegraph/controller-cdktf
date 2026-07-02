@@ -98,7 +98,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputRef
 
 	return nil
 }
-

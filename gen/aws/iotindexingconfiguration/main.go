@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
-		reflect.TypeOf((*IotIndexingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,19 +72,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationConfig",
-		reflect.TypeOf((*IotIndexingConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationCustomField)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationCustomField](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationManagedField)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationManagedField](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,7 +208,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
-		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thingGroupIndexingModeInput", GoGetter: "ThingGroupIndexingModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,15 +250,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationCustomField)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationCustomField](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationCustomFieldList)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationCustomFieldList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -272,7 +272,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -280,7 +280,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -318,11 +318,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedField)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationManagedField](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldList",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedFieldList)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationManagedFieldList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFieldList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -344,7 +344,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,7 +382,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference",
-		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotIndexingConfigurationThingIndexingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -425,7 +425,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thingIndexingModeInput", GoGetter: "ThingIndexingModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -106,7 +106,7 @@ func (j *jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference) validateSetInClusterParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference) validateSetInClusterParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewMskClusterEncryptionInfoEncryptionInTransitOutputReferenceParame
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (t *jsiiProxy_TransferTag) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (t *jsiiProxy_TransferTag) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TransferTag) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TransferTag) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TransferTag) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateTransferTag_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateTransferTag_IsConstructParameters(x interface{}) error {
+func validateTransferTag_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateTransferTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTransferTag_IsTerraformElementParameters(x interface{}) error {
+func validateTransferTag_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateTransferTag_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTransferTag_IsTerraformResourceParameters(x interface{}) error {
+func validateTransferTag_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateTransferTag_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_TransferTag) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TransferTag) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_TransferTag) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_TransferTag) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TransferTag) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_TransferTag) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
-func (j *jsiiProxy_TransferTag) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TransferTag) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewTransferTagParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

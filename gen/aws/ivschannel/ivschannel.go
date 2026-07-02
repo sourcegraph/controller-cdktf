@@ -13,21 +13,21 @@ import (
 type IvsChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
-	Authorized() interface{}
-	SetAuthorized(val interface{})
-	AuthorizedInput() interface{}
+	Authorized() any
+	SetAuthorized(val any)
+	AuthorizedInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type IvsChannel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RecordingConfigurationArn() *string
 	SetRecordingConfigurationArn(val *string)
 	RecordingConfigurationArnInput() *string
@@ -79,11 +79,11 @@ type IvsChannel interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IvsChannelTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -91,9 +91,9 @@ type IvsChannel interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type IvsChannel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type IvsChannel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type IvsChannel interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IvsChannel
@@ -171,8 +171,8 @@ func (j *jsiiProxy_IvsChannel) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) Authorized() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsChannel) Authorized() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorized",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_IvsChannel) Authorized() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) AuthorizedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsChannel) AuthorizedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizedInput",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_IvsChannel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsChannel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_IvsChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IvsChannel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_IvsChannel) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsChannel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_IvsChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IvsChannel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_IvsChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsChannel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_IvsChannel) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IvsChannel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_IvsChannel) Timeouts() IvsChannelTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IvsChannel) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_IvsChannel) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelConfig) IvsChannel {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewIvsChannel_Override(i IvsChannel, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetAuthorized(val interface{}) {
+func (j *jsiiProxy_IvsChannel) SetAuthorized(val any) {
 	if err := j.validateSetAuthorizedParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_IvsChannel)SetAuthorized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetConnection(val interface{}) {
+func (j *jsiiProxy_IvsChannel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_IvsChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetCount(val interface{}) {
+func (j *jsiiProxy_IvsChannel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_IvsChannel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IvsChannel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_IvsChannel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IvsChannel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_IvsChannel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetId(val *string) {
+func (j *jsiiProxy_IvsChannel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_IvsChannel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetLatencyMode(val *string) {
+func (j *jsiiProxy_IvsChannel) SetLatencyMode(val *string) {
 	if err := j.validateSetLatencyModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_IvsChannel)SetLatencyMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IvsChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_IvsChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetName(val *string) {
+func (j *jsiiProxy_IvsChannel) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_IvsChannel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IvsChannel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -662,7 +661,7 @@ func (j *jsiiProxy_IvsChannel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IvsChannel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_IvsChannel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetRecordingConfigurationArn(val *string) {
+func (j *jsiiProxy_IvsChannel) SetRecordingConfigurationArn(val *string) {
 	if err := j.validateSetRecordingConfigurationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_IvsChannel)SetRecordingConfigurationArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_IvsChannel) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_IvsChannel)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_IvsChannel) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_IvsChannel)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetType(val *string) {
+func (j *jsiiProxy_IvsChannel) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func IvsChannel_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func IvsChannel_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IvsChannel_IsConstruct(x interface{}) *bool {
+func IvsChannel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIvsChannel_IsConstructParameters(x); err != nil {
@@ -764,7 +763,7 @@ func IvsChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func IvsChannel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IvsChannel_IsTerraformElement(x interface{}) *bool {
+func IvsChannel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIvsChannel_IsTerraformElementParameters(x); err != nil {
@@ -783,7 +782,7 @@ func IvsChannel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func IvsChannel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IvsChannel_IsTerraformResource(x interface{}) *bool {
+func IvsChannel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIvsChannel_IsTerraformResourceParameters(x); err != nil {
@@ -802,7 +801,7 @@ func IvsChannel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,31 +826,31 @@ func (i *jsiiProxy_IvsChannel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IvsChannel) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IvsChannel) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IvsChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IvsChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_IvsChannel) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (i *jsiiProxy_IvsChannel) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (i *jsiiProxy_IvsChannel) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (i *jsiiProxy_IvsChannel) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (i *jsiiProxy_IvsChannel) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_IvsChannel) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (i *jsiiProxy_IvsChannel) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,15 +978,15 @@ func (i *jsiiProxy_IvsChannel) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IvsChannel) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsChannel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1006,7 +1005,7 @@ func (i *jsiiProxy_IvsChannel) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (i *jsiiProxy_IvsChannel) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,18 +1032,18 @@ func (i *jsiiProxy_IvsChannel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IvsChannel) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IvsChannel) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (i *jsiiProxy_IvsChannel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (i *jsiiProxy_IvsChannel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (i *jsiiProxy_IvsChannel) PutTimeouts(value *IvsChannelTimeouts) {
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1161,8 +1160,8 @@ func (i *jsiiProxy_IvsChannel) ResetType() {
 	)
 }
 
-func (i *jsiiProxy_IvsChannel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IvsChannel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1174,8 +1173,8 @@ func (i *jsiiProxy_IvsChannel) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IvsChannel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IvsChannel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1187,8 +1186,8 @@ func (i *jsiiProxy_IvsChannel) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (i *jsiiProxy_IvsChannel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsChannel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1200,8 +1199,8 @@ func (i *jsiiProxy_IvsChannel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IvsChannel) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsChannel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1226,8 +1225,8 @@ func (i *jsiiProxy_IvsChannel) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IvsChannel) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IvsChannel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1238,4 +1237,3 @@ func (i *jsiiProxy_IvsChannel) ToTerraform() interface{} {
 
 	return returns
 }
-

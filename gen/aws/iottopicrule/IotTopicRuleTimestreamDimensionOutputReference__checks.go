@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIotTopicRuleTimestreamDimensionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type NetworkmanagerCustomerGatewayAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerGatewayArn() *string
 	SetCustomerGatewayArn(val *string)
 	CustomerGatewayArnInput() *string
@@ -62,26 +62,26 @@ type NetworkmanagerCustomerGatewayAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type NetworkmanagerCustomerGatewayAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type NetworkmanagerCustomerGatewayAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type NetworkmanagerCustomerGatewayAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkmanagerCustomerGatewayAssociation
@@ -153,8 +153,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Provisioners() *[]i
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) Timeouts() Networkm
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -422,7 +422,6 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TimeoutsInput() int
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association} Resource.
 func NewNetworkmanagerCustomerGatewayAssociation(scope constructs.Construct, id *string, config *NetworkmanagerCustomerGatewayAssociationConfig) NetworkmanagerCustomerGatewayAssociation {
@@ -435,7 +434,7 @@ func NewNetworkmanagerCustomerGatewayAssociation(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewNetworkmanagerCustomerGatewayAssociation_Override(n NetworkmanagerCustom
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetCustomerGatewayArn(val *string) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetCustomerGatewayArn(val *string) {
 	if err := j.validateSetCustomerGatewayArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetCustomerGatewayAr
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetDeviceId(val *string) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetDeviceId(val *string) {
 	if err := j.validateSetDeviceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetDeviceId(val *str
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetGlobalNetworkId(val *string) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetGlobalNetworkId(val *string) {
 	if err := j.validateSetGlobalNetworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetGlobalNetworkId(v
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetId(val *string) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetLinkId(val *string) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetLinkId(val *string) {
 	if err := j.validateSetLinkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetLinkId(val *strin
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func NetworkmanagerCustomerGatewayAssociation_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func NetworkmanagerCustomerGatewayAssociation_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkmanagerCustomerGatewayAssociation_IsConstruct(x interface{}) *bool {
+func NetworkmanagerCustomerGatewayAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerCustomerGatewayAssociation_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkmanagerCustomerGatewayAssociation_IsTerraformElement(x interface{}) *bool {
+func NetworkmanagerCustomerGatewayAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerCustomerGatewayAssociation_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func NetworkmanagerCustomerGatewayAssociation_IsTerraformResource(x interface{}) *bool {
+func NetworkmanagerCustomerGatewayAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkmanagerCustomerGatewayAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetBooleanAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetListAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetNumberAttribute(
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetNumberListAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetNumberMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetStringAttribute(
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) GetStringMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -865,7 +864,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) InterpolationForAtt
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,7 +924,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -936,7 +935,7 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) PutTimeouts(value *
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -972,8 +971,8 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -985,8 +984,8 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SynthesizeAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -998,8 +997,8 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) SynthesizeHclAttrib
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1011,8 +1010,8 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToHclTerraform() in
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1037,8 +1036,8 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToString() *string 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1049,4 +1048,3 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) ToTerraform() inter
 
 	return returns
 }
-

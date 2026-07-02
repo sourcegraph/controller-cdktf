@@ -15,9 +15,9 @@ type SagemakerCodeRepositoryGitConfigOutputReference interface {
 	BranchInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type SagemakerCodeRepositoryGitConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type SagemakerCodeRepositoryGitConfigOutputReference interface {
 	ResetSecretArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) BranchInput(
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewSagemakerCodeRepositoryGitConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerCodeRepositoryGitConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewSagemakerCodeRepositoryGitConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewSagemakerCodeRepositoryGitConfigOutputReference_Override(s SagemakerCode
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetBranch(val *string) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetBranch(val *string) {
 	if err := j.validateSetBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetBranch(val
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetInternalValue(val *SagemakerCodeRepositoryGitConfig) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetInternalValue(val *SagemakerCodeRepositoryGitConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetRepositoryUrl(val *string) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetRepositoryUrl(val *string) {
 	if err := j.validateSetRepositoryUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetRepository
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetSecretArn(val *string) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetSecretArn(val *string) {
 	if err := j.validateSetSecretArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetSecretArn(
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) ResetSecretA
 	)
 }
 
-func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) ToString() *
 
 	return returns
 }
-

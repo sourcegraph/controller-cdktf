@@ -12,9 +12,9 @@ type EcsTaskDefinitionVolumeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type EcsTaskDefinitionVolumeOutputReference interface {
 	HostPath() *string
 	SetHostPath(val *string)
 	HostPathInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type EcsTaskDefinitionVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type EcsTaskDefinitionVolumeOutputReference interface {
 	ResetHostPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_EcsTaskDefinitionVolumeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) HostPathInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewEcsTaskDefinitionVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EcsTaskDefinitionVolumeOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewEcsTaskDefinitionVolumeOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewEcsTaskDefinitionVolumeOutputReference_Override(e EcsTaskDefinitionVolum
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetHostPath(val *string) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetHostPath(val *string) {
 	if err := j.validateSetHostPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetHostPath(val *strin
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetName(val *string) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,16 +382,16 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) PutDockerVolumeConfig
 	_jsii_.InvokeVoid(
 		e,
 		"putDockerVolumeConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -574,7 +573,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) PutEfsVolumeConfigura
 	_jsii_.InvokeVoid(
 		e,
 		"putEfsVolumeConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -585,7 +584,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) PutFsxWindowsFileServ
 	_jsii_.InvokeVoid(
 		e,
 		"putFsxWindowsFileServerVolumeConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ResetHostPath() {
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ToString() *string {
 
 	return returns
 }
-

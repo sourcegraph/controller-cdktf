@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53RecordFailoverRoutingPolicyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordFailoverRoutingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordFailoverRoutingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRoute53RecordFailoverRoutingPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

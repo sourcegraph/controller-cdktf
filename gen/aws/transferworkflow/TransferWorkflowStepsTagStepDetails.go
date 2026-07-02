@@ -1,6 +1,5 @@
 package transferworkflow
 
-
 type TransferWorkflowStepsTagStepDetails struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/transfer_workflow#name TransferWorkflow#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
@@ -9,6 +8,5 @@ type TransferWorkflowStepsTagStepDetails struct {
 	// tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/transfer_workflow#tags TransferWorkflow#tags}
-	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
+	Tags any `field:"optional" json:"tags" yaml:"tags"`
 }
-

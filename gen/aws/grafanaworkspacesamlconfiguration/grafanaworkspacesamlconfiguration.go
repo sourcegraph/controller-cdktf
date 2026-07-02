@@ -21,15 +21,15 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -83,11 +83,11 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleAssertion() *string
 	SetRoleAssertion(val *string)
 	RoleAssertionInput() *string
@@ -95,11 +95,11 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	WorkspaceId() *string
 	SetWorkspaceId(val *string)
 	WorkspaceIdInput() *string
@@ -107,9 +107,9 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -163,17 +163,17 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	ResetOverrideLogicalId()
 	ResetRoleAssertion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GrafanaWorkspaceSamlConfiguration
@@ -231,8 +231,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -621,8 +621,8 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Timeouts() GrafanaWorkspac
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -651,7 +651,6 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) WorkspaceIdInput() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
 func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string, config *GrafanaWorkspaceSamlConfigurationConfig) GrafanaWorkspaceSamlConfiguration {
 	_init_.Initialize()
@@ -663,7 +662,7 @@ func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -676,12 +675,12 @@ func NewGrafanaWorkspaceSamlConfiguration_Override(g GrafanaWorkspaceSamlConfigu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetAdminRoleValues(val *[]*string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetAdminRoleValues(val *[]*string) {
 	if err := j.validateSetAdminRoleValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetAdminRoleValues(val *[]*
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetAllowedOrganizations(val *[]*string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetAllowedOrganizations(val *[]*string) {
 	if err := j.validateSetAllowedOrganizationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetAllowedOrganizations(val
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetEditorRoleValues(val *[]*string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetEditorRoleValues(val *[]*string) {
 	if err := j.validateSetEditorRoleValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetEditorRoleValues(val *[]
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetEmailAssertion(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetEmailAssertion(val *string) {
 	if err := j.validateSetEmailAssertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetEmailAssertion(val *stri
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -763,7 +762,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetGroupsAssertion(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetGroupsAssertion(val *string) {
 	if err := j.validateSetGroupsAssertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetGroupsAssertion(val *str
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetId(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetIdpMetadataUrl(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetIdpMetadataUrl(val *string) {
 	if err := j.validateSetIdpMetadataUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetIdpMetadataUrl(val *stri
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetIdpMetadataXml(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetIdpMetadataXml(val *string) {
 	if err := j.validateSetIdpMetadataXmlParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetIdpMetadataXml(val *stri
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetLoginAssertion(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetLoginAssertion(val *string) {
 	if err := j.validateSetLoginAssertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetLoginAssertion(val *stri
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetLoginValidityDuration(val *float64) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetLoginValidityDuration(val *float64) {
 	if err := j.validateSetLoginValidityDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetLoginValidityDuration(va
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetNameAssertion(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetNameAssertion(val *string) {
 	if err := j.validateSetNameAssertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetNameAssertion(val *strin
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetOrgAssertion(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetOrgAssertion(val *string) {
 	if err := j.validateSetOrgAssertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetOrgAssertion(val *string
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -870,7 +869,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -881,7 +880,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetRoleAssertion(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetRoleAssertion(val *string) {
 	if err := j.validateSetRoleAssertionParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +891,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetRoleAssertion(val *strin
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func GrafanaWorkspaceSamlConfiguration_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func GrafanaWorkspaceSamlConfiguration_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GrafanaWorkspaceSamlConfiguration_IsConstruct(x interface{}) *bool {
+func GrafanaWorkspaceSamlConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrafanaWorkspaceSamlConfiguration_IsConstructParameters(x); err != nil {
@@ -950,7 +949,7 @@ func GrafanaWorkspaceSamlConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func GrafanaWorkspaceSamlConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GrafanaWorkspaceSamlConfiguration_IsTerraformElement(x interface{}) *bool {
+func GrafanaWorkspaceSamlConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrafanaWorkspaceSamlConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -969,7 +968,7 @@ func GrafanaWorkspaceSamlConfiguration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func GrafanaWorkspaceSamlConfiguration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GrafanaWorkspaceSamlConfiguration_IsTerraformResource(x interface{}) *bool {
+func GrafanaWorkspaceSamlConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGrafanaWorkspaceSamlConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -988,7 +987,7 @@ func GrafanaWorkspaceSamlConfiguration_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1013,31 +1012,31 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,7 +1068,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1085,7 +1084,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,7 +1116,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,7 +1132,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1165,15 +1164,15 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1192,7 +1191,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1205,7 +1204,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1219,18 +1218,18 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1241,7 +1240,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1252,7 +1251,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1263,7 +1262,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) PutTimeouts(value *Grafana
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1379,8 +1378,8 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1392,8 +1391,8 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1405,8 +1404,8 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1418,8 +1417,8 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToHclTerraform() interface
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1444,8 +1443,8 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1456,4 +1455,3 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ToTerraform() interface{} 
 
 	return returns
 }
-

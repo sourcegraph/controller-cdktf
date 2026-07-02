@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
-		reflect.TypeOf((*ConnectInstance)(nil)).Elem(),
+		reflect.TypeFor[ConnectInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectInstance.ConnectInstanceConfig",
-		reflect.TypeOf((*ConnectInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectInstance.ConnectInstanceTimeouts",
-		reflect.TypeOf((*ConnectInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ConnectInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*ConnectInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

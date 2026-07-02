@@ -106,7 +106,7 @@ func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSagemakerCodeRepositoryGitConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

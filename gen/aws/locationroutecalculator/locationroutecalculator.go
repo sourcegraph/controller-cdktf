@@ -19,15 +19,15 @@ type LocationRouteCalculator interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataSource() *string
 	SetDataSource(val *string)
@@ -61,11 +61,11 @@ type LocationRouteCalculator interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -75,19 +75,19 @@ type LocationRouteCalculator interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LocationRouteCalculatorTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type LocationRouteCalculator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type LocationRouteCalculator interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type LocationRouteCalculator interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LocationRouteCalculator
@@ -191,8 +191,8 @@ func (j *jsiiProxy_LocationRouteCalculator) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationRouteCalculator) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_LocationRouteCalculator) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocationRouteCalculator) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_LocationRouteCalculator) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationRouteCalculator) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_LocationRouteCalculator) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LocationRouteCalculator) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_LocationRouteCalculator) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationRouteCalculator) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_LocationRouteCalculator) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocationRouteCalculator) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_LocationRouteCalculator) Timeouts() LocationRouteCalculatorTi
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationRouteCalculator) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_LocationRouteCalculator) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
 func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *LocationRouteCalculatorConfig) LocationRouteCalculator {
 	_init_.Initialize()
@@ -493,7 +492,7 @@ func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -506,12 +505,12 @@ func NewLocationRouteCalculator_Override(l LocationRouteCalculator, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetCalculatorName(val *string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetCalculatorName(val *string) {
 	if err := j.validateSetCalculatorNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetCalculatorName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetConnection(val interface{}) {
+func (j *jsiiProxy_LocationRouteCalculator) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetCount(val interface{}) {
+func (j *jsiiProxy_LocationRouteCalculator) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetDataSource(val *string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetDataSource(val *string) {
 	if err := j.validateSetDataSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetDataSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetDescription(val *string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LocationRouteCalculator) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetId(val *string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LocationRouteCalculator) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LocationRouteCalculator) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LocationRouteCalculator) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_LocationRouteCalculator)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_LocationRouteCalculator) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func LocationRouteCalculator_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func LocationRouteCalculator_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LocationRouteCalculator_IsConstruct(x interface{}) *bool {
+func LocationRouteCalculator_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationRouteCalculator_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func LocationRouteCalculator_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func LocationRouteCalculator_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LocationRouteCalculator_IsTerraformElement(x interface{}) *bool {
+func LocationRouteCalculator_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationRouteCalculator_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func LocationRouteCalculator_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func LocationRouteCalculator_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LocationRouteCalculator_IsTerraformResource(x interface{}) *bool {
+func LocationRouteCalculator_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationRouteCalculator_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func LocationRouteCalculator_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (l *jsiiProxy_LocationRouteCalculator) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LocationRouteCalculator) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LocationRouteCalculator) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (l *jsiiProxy_LocationRouteCalculator) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (l *jsiiProxy_LocationRouteCalculator) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationRouteCalculator) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -934,7 +933,7 @@ func (l *jsiiProxy_LocationRouteCalculator) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (l *jsiiProxy_LocationRouteCalculator) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (l *jsiiProxy_LocationRouteCalculator) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LocationRouteCalculator) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (l *jsiiProxy_LocationRouteCalculator) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,7 +993,7 @@ func (l *jsiiProxy_LocationRouteCalculator) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (l *jsiiProxy_LocationRouteCalculator) PutTimeouts(value *LocationRouteCalc
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1057,8 +1056,8 @@ func (l *jsiiProxy_LocationRouteCalculator) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocationRouteCalculator) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1070,8 +1069,8 @@ func (l *jsiiProxy_LocationRouteCalculator) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocationRouteCalculator) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1083,8 +1082,8 @@ func (l *jsiiProxy_LocationRouteCalculator) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationRouteCalculator) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1096,8 +1095,8 @@ func (l *jsiiProxy_LocationRouteCalculator) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationRouteCalculator) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1122,8 +1121,8 @@ func (l *jsiiProxy_LocationRouteCalculator) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculator) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationRouteCalculator) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1134,4 +1133,3 @@ func (l *jsiiProxy_LocationRouteCalculator) ToTerraform() interface{} {
 
 	return returns
 }
-

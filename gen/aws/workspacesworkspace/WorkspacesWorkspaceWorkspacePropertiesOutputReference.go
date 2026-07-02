@@ -12,9 +12,9 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	ResetUserVolumeSizeGib()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) UserVo
 	return returns
 }
 
-
 func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspacesWorkspaceWorkspacePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference_Override(w Workspa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetComputeTypeName(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetComputeTypeName(val *string) {
 	if err := j.validateSetComputeTypeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetInternalValue(val *WorkspacesWorkspaceWorkspaceProperties) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetInternalValue(val *WorkspacesWorkspaceWorkspaceProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetRootVolumeSizeGib(val *float64) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetRootVolumeSizeGib(val *float64) {
 	if err := j.validateSetRootVolumeSizeGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetRoot
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetRunningMode(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetRunningMode(val *string) {
 	if err := j.validateSetRunningModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetRunn
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetRunningModeAutoStopTimeoutInMinutes(val *float64) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetRunningModeAutoStopTimeoutInMinutes(val *float64) {
 	if err := j.validateSetRunningModeAutoStopTimeoutInMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetRunn
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetUserVolumeSizeGib(val *float64) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) SetUserVolumeSizeGib(val *float64) {
 	if err := j.validateSetUserVolumeSizeGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Comput
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetBoo
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetBoo
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetLis
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetNum
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetNum
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetNum
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetStr
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetStr
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Interp
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) ResetU
 	)
 }
 
-func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) ToStri
 
 	return returns
 }
-

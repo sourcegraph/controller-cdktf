@@ -15,11 +15,11 @@ type DataAwsConnectLambdaFunctionAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,17 +52,17 @@ type DataAwsConnectLambdaFunctionAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,18 +88,18 @@ type DataAwsConnectLambdaFunctionAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsConnectLambdaFunctionAssociation
@@ -117,8 +117,8 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -307,7 +307,6 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association} Data Source.
 func NewDataAwsConnectLambdaFunctionAssociation(scope constructs.Construct, id *string, config *DataAwsConnectLambdaFunctionAssociationConfig) DataAwsConnectLambdaFunctionAssociation {
 	_init_.Initialize()
@@ -319,7 +318,7 @@ func NewDataAwsConnectLambdaFunctionAssociation(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -332,12 +331,12 @@ func NewDataAwsConnectLambdaFunctionAssociation_Override(d DataAwsConnectLambdaF
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetFunctionArn(val *string) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetFunctionArn(val *string) {
 	if err := j.validateSetFunctionArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetFunctionArn(val *s
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetId(val *string) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetInstanceId(val *string) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetInstanceId(val *st
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -428,7 +427,7 @@ func DataAwsConnectLambdaFunctionAssociation_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func DataAwsConnectLambdaFunctionAssociation_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool {
+func DataAwsConnectLambdaFunctionAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectLambdaFunctionAssociation_IsConstructParameters(x); err != nil {
@@ -463,7 +462,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsConnectLambdaFunctionAssociation_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsConnectLambdaFunctionAssociation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectLambdaFunctionAssociation_IsTerraformDataSourceParameters(x); err != nil {
@@ -482,7 +481,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsTerraformDataSource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsTerraformDataSource(x interface{}
 }
 
 // Experimental.
-func DataAwsConnectLambdaFunctionAssociation_IsTerraformElement(x interface{}) *bool {
+func DataAwsConnectLambdaFunctionAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectLambdaFunctionAssociation_IsTerraformElementParameters(x); err != nil {
@@ -501,7 +500,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,27 +518,27 @@ func DataAwsConnectLambdaFunctionAssociation_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -717,8 +716,8 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ResetOverrideLogical
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -730,8 +729,8 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -743,8 +742,8 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -756,8 +755,8 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -782,8 +781,8 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -794,4 +793,3 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ToTerraform() interf
 
 	return returns
 }
-

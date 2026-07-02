@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksRdsDbInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksRdsDbInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateOpsworksRdsDbInstance_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateOpsworksRdsDbInstance_IsConstructParameters(x interface{}) error {
+func validateOpsworksRdsDbInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateOpsworksRdsDbInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksRdsDbInstance_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksRdsDbInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateOpsworksRdsDbInstance_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateOpsworksRdsDbInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksRdsDbInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateOpsworksRdsDbInstance_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewOpsworksRdsDbInstanceParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

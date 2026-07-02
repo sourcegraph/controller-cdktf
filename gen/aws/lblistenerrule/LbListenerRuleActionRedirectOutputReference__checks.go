@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbListenerRuleActionRedirectOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleActionRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleActionRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLbListenerRuleActionRedirectOutputReferenceParameters(terraformR
 
 	return nil
 }
-

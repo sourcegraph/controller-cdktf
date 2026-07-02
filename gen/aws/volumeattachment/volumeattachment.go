@@ -15,15 +15,15 @@ type VolumeAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,9 +31,9 @@ type VolumeAttachment interface {
 	DeviceName() *string
 	SetDeviceName(val *string)
 	DeviceNameInput() *string
-	ForceDetach() interface{}
-	SetForceDetach(val interface{})
-	ForceDetachInput() interface{}
+	ForceDetach() any
+	SetForceDetach(val any)
+	ForceDetachInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,25 +59,25 @@ type VolumeAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	SkipDestroy() interface{}
-	SetSkipDestroy(val interface{})
-	SkipDestroyInput() interface{}
-	StopInstanceBeforeDetaching() interface{}
-	SetStopInstanceBeforeDetaching(val interface{})
-	StopInstanceBeforeDetachingInput() interface{}
+	RawOverrides() any
+	SkipDestroy() any
+	SetSkipDestroy(val any)
+	SkipDestroyInput() any
+	StopInstanceBeforeDetaching() any
+	SetStopInstanceBeforeDetaching(val any)
+	StopInstanceBeforeDetachingInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VolumeAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VolumeId() *string
 	SetVolumeId(val *string)
 	VolumeIdInput() *string
@@ -85,9 +85,9 @@ type VolumeAttachment interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type VolumeAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type VolumeAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type VolumeAttachment interface {
 	ResetSkipDestroy()
 	ResetStopInstanceBeforeDetaching()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VolumeAttachment
@@ -161,8 +161,8 @@ func (j *jsiiProxy_VolumeAttachment) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_VolumeAttachment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VolumeAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_VolumeAttachment) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_VolumeAttachment) DeviceNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) ForceDetach() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) ForceDetach() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDetach",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_VolumeAttachment) ForceDetach() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) ForceDetachInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) ForceDetachInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDetachInput",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_VolumeAttachment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VolumeAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_VolumeAttachment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_VolumeAttachment) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) SkipDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) SkipDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDestroy",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_VolumeAttachment) SkipDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) SkipDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) SkipDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDestroyInput",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_VolumeAttachment) SkipDestroyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) StopInstanceBeforeDetaching() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) StopInstanceBeforeDetaching() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stopInstanceBeforeDetaching",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_VolumeAttachment) StopInstanceBeforeDetaching() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) StopInstanceBeforeDetachingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) StopInstanceBeforeDetachingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stopInstanceBeforeDetachingInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_VolumeAttachment) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VolumeAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_VolumeAttachment) Timeouts() VolumeAttachmentTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_VolumeAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VolumeAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -471,7 +471,6 @@ func (j *jsiiProxy_VolumeAttachment) VolumeIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/volume_attachment aws_volume_attachment} Resource.
 func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeAttachmentConfig) VolumeAttachment {
 	_init_.Initialize()
@@ -483,7 +482,7 @@ func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewVolumeAttachment_Override(v VolumeAttachment, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_VolumeAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_VolumeAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_VolumeAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_VolumeAttachment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VolumeAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_VolumeAttachment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetDeviceName(val *string) {
+func (j *jsiiProxy_VolumeAttachment) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_VolumeAttachment)SetDeviceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetForceDetach(val interface{}) {
+func (j *jsiiProxy_VolumeAttachment) SetForceDetach(val any) {
 	if err := j.validateSetForceDetachParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_VolumeAttachment)SetForceDetach(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VolumeAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -561,7 +560,7 @@ func (j *jsiiProxy_VolumeAttachment)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetId(val *string) {
+func (j *jsiiProxy_VolumeAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_VolumeAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetInstanceId(val *string) {
+func (j *jsiiProxy_VolumeAttachment) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_VolumeAttachment)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VolumeAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_VolumeAttachment)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VolumeAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_VolumeAttachment)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VolumeAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_VolumeAttachment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetSkipDestroy(val interface{}) {
+func (j *jsiiProxy_VolumeAttachment) SetSkipDestroy(val any) {
 	if err := j.validateSetSkipDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_VolumeAttachment)SetSkipDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetStopInstanceBeforeDetaching(val interface{}) {
+func (j *jsiiProxy_VolumeAttachment) SetStopInstanceBeforeDetaching(val any) {
 	if err := j.validateSetStopInstanceBeforeDetachingParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_VolumeAttachment)SetStopInstanceBeforeDetaching(val interface
 	)
 }
 
-func (j *jsiiProxy_VolumeAttachment)SetVolumeId(val *string) {
+func (j *jsiiProxy_VolumeAttachment) SetVolumeId(val *string) {
 	if err := j.validateSetVolumeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func VolumeAttachment_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func VolumeAttachment_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VolumeAttachment_IsConstruct(x interface{}) *bool {
+func VolumeAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVolumeAttachment_IsConstructParameters(x); err != nil {
@@ -693,7 +692,7 @@ func VolumeAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func VolumeAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VolumeAttachment_IsTerraformElement(x interface{}) *bool {
+func VolumeAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVolumeAttachment_IsTerraformElementParameters(x); err != nil {
@@ -712,7 +711,7 @@ func VolumeAttachment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func VolumeAttachment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VolumeAttachment_IsTerraformResource(x interface{}) *bool {
+func VolumeAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVolumeAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -731,7 +730,7 @@ func VolumeAttachment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,31 +755,31 @@ func (v *jsiiProxy_VolumeAttachment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VolumeAttachment) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VolumeAttachment) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VolumeAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VolumeAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (v *jsiiProxy_VolumeAttachment) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (v *jsiiProxy_VolumeAttachment) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (v *jsiiProxy_VolumeAttachment) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (v *jsiiProxy_VolumeAttachment) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (v *jsiiProxy_VolumeAttachment) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (v *jsiiProxy_VolumeAttachment) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (v *jsiiProxy_VolumeAttachment) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,15 +907,15 @@ func (v *jsiiProxy_VolumeAttachment) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VolumeAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VolumeAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -935,7 +934,7 @@ func (v *jsiiProxy_VolumeAttachment) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -948,7 +947,7 @@ func (v *jsiiProxy_VolumeAttachment) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,18 +961,18 @@ func (v *jsiiProxy_VolumeAttachment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VolumeAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VolumeAttachment) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -984,7 +983,7 @@ func (v *jsiiProxy_VolumeAttachment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -995,7 +994,7 @@ func (v *jsiiProxy_VolumeAttachment) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (v *jsiiProxy_VolumeAttachment) PutTimeouts(value *VolumeAttachmentTimeouts
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1058,8 +1057,8 @@ func (v *jsiiProxy_VolumeAttachment) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VolumeAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VolumeAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1071,8 +1070,8 @@ func (v *jsiiProxy_VolumeAttachment) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (v *jsiiProxy_VolumeAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VolumeAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1084,8 +1083,8 @@ func (v *jsiiProxy_VolumeAttachment) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (v *jsiiProxy_VolumeAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VolumeAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1097,8 +1096,8 @@ func (v *jsiiProxy_VolumeAttachment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VolumeAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VolumeAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1123,8 +1122,8 @@ func (v *jsiiProxy_VolumeAttachment) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VolumeAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VolumeAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1135,4 +1134,3 @@ func (v *jsiiProxy_VolumeAttachment) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package cloudfrontcachepolicy
 
-
 type CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin struct {
 	// cookies_config block.
 	//
@@ -15,8 +14,7 @@ type CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_cache_policy#query_strings_config CloudfrontCachePolicy#query_strings_config}
 	QueryStringsConfig *CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig `field:"required" json:"queryStringsConfig" yaml:"queryStringsConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_cache_policy#enable_accept_encoding_brotli CloudfrontCachePolicy#enable_accept_encoding_brotli}.
-	EnableAcceptEncodingBrotli interface{} `field:"optional" json:"enableAcceptEncodingBrotli" yaml:"enableAcceptEncodingBrotli"`
+	EnableAcceptEncodingBrotli any `field:"optional" json:"enableAcceptEncodingBrotli" yaml:"enableAcceptEncodingBrotli"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_cache_policy#enable_accept_encoding_gzip CloudfrontCachePolicy#enable_accept_encoding_gzip}.
-	EnableAcceptEncodingGzip interface{} `field:"optional" json:"enableAcceptEncodingGzip" yaml:"enableAcceptEncodingGzip"`
+	EnableAcceptEncodingGzip any `field:"optional" json:"enableAcceptEncodingGzip" yaml:"enableAcceptEncodingGzip"`
 }
-

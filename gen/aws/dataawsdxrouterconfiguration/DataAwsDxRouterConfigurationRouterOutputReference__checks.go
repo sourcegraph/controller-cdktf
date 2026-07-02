@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsDxRouterConfigurationRouterOutputReferenceParameters(terr
 
 	return nil
 }
-

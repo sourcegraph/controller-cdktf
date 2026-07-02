@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrManagedScalingPolicyComputeLimitsListParameters(terraformReso
 
 	return nil
 }
-

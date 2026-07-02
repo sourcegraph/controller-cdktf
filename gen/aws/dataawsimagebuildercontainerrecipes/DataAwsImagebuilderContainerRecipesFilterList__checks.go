@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipesFilterList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipesFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipesFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsImagebuilderContainerRecipesFilterListParameters(terrafor
 
 	return nil
 }
-

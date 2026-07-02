@@ -6,9 +6,9 @@ import (
 
 type Apigatewayv2IntegrationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Apigatewayv2IntegrationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration#api_id Apigatewayv2Integration#api_id}.
 	ApiId *string `field:"required" json:"apiId" yaml:"apiId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration#integration_type Apigatewayv2Integration#integration_type}.
@@ -55,7 +55,7 @@ type Apigatewayv2IntegrationConfig struct {
 	// response_parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration#response_parameters Apigatewayv2Integration#response_parameters}
-	ResponseParameters interface{} `field:"optional" json:"responseParameters" yaml:"responseParameters"`
+	ResponseParameters any `field:"optional" json:"responseParameters" yaml:"responseParameters"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration#template_selection_expression Apigatewayv2Integration#template_selection_expression}.
 	TemplateSelectionExpression *string `field:"optional" json:"templateSelectionExpression" yaml:"templateSelectionExpression"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration#timeout_milliseconds Apigatewayv2Integration#timeout_milliseconds}.
@@ -65,4 +65,3 @@ type Apigatewayv2IntegrationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration#tls_config Apigatewayv2Integration#tls_config}
 	TlsConfig *Apigatewayv2IntegrationTlsConfig `field:"optional" json:"tlsConfig" yaml:"tlsConfig"`
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRedirectAllRequestsToOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
 
 	return nil
 }
-

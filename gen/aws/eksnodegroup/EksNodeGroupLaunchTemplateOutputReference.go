@@ -12,9 +12,9 @@ type EksNodeGroupLaunchTemplateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type EksNodeGroupLaunchTemplateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type EksNodeGroupLaunchTemplateOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_EksNodeGroupLaunchTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) VersionInput() *st
 	return returns
 }
 
-
 func NewEksNodeGroupLaunchTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EksNodeGroupLaunchTemplateOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewEksNodeGroupLaunchTemplateOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewEksNodeGroupLaunchTemplateOutputReference_Override(e EksNodeGroupLaunchT
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetId(val *string) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetInternalValue(val *EksNodeGroupLaunchTemplate) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetInternalValue(val *EksNodeGroupLaunchTemplate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetName(val *string) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) ResetName() {
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) ToString() *string
 
 	return returns
 }
-

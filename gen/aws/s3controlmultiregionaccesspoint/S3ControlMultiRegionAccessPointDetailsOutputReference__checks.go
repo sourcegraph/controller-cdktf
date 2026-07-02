@@ -101,7 +101,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validatePutRegionParameters(value interface{}) error {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validatePutRegionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewS3ControlMultiRegionAccessPointDetailsOutputReferenceParameters(
 
 	return nil
 }
-

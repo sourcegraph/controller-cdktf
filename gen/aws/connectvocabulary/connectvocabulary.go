@@ -16,18 +16,18 @@ type ConnectVocabulary interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,11 +65,11 @@ type ConnectVocabulary interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -80,19 +80,19 @@ type ConnectVocabulary interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ConnectVocabularyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VocabularyId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ConnectVocabulary interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type ConnectVocabulary interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type ConnectVocabulary interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ConnectVocabulary
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ConnectVocabulary) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectVocabulary) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ConnectVocabulary) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConnectVocabulary) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ConnectVocabulary) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectVocabulary) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_ConnectVocabulary) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ConnectVocabulary) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_ConnectVocabulary) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectVocabulary) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_ConnectVocabulary) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConnectVocabulary) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_ConnectVocabulary) Timeouts() ConnectVocabularyTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_ConnectVocabulary) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectVocabulary) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -525,7 +525,6 @@ func (j *jsiiProxy_ConnectVocabulary) VocabularyId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/connect_vocabulary aws_connect_vocabulary} Resource.
 func NewConnectVocabulary(scope constructs.Construct, id *string, config *ConnectVocabularyConfig) ConnectVocabulary {
 	_init_.Initialize()
@@ -537,7 +536,7 @@ func NewConnectVocabulary(scope constructs.Construct, id *string, config *Connec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -550,12 +549,12 @@ func NewConnectVocabulary_Override(c ConnectVocabulary, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetConnection(val interface{}) {
+func (j *jsiiProxy_ConnectVocabulary) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetContent(val *string) {
+func (j *jsiiProxy_ConnectVocabulary) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetCount(val interface{}) {
+func (j *jsiiProxy_ConnectVocabulary) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ConnectVocabulary) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -596,7 +595,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConnectVocabulary) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetId(val *string) {
+func (j *jsiiProxy_ConnectVocabulary) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetInstanceId(val *string) {
+func (j *jsiiProxy_ConnectVocabulary) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetLanguageCode(val *string) {
+func (j *jsiiProxy_ConnectVocabulary) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConnectVocabulary) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetName(val *string) {
+func (j *jsiiProxy_ConnectVocabulary) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConnectVocabulary) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ConnectVocabulary) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ConnectVocabulary) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_ConnectVocabulary)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectVocabulary)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_ConnectVocabulary) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func ConnectVocabulary_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func ConnectVocabulary_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ConnectVocabulary_IsConstruct(x interface{}) *bool {
+func ConnectVocabulary_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectVocabulary_IsConstructParameters(x); err != nil {
@@ -747,7 +746,7 @@ func ConnectVocabulary_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func ConnectVocabulary_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ConnectVocabulary_IsTerraformElement(x interface{}) *bool {
+func ConnectVocabulary_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectVocabulary_IsTerraformElementParameters(x); err != nil {
@@ -766,7 +765,7 @@ func ConnectVocabulary_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func ConnectVocabulary_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ConnectVocabulary_IsTerraformResource(x interface{}) *bool {
+func ConnectVocabulary_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectVocabulary_IsTerraformResourceParameters(x); err != nil {
@@ -785,7 +784,7 @@ func ConnectVocabulary_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -810,31 +809,31 @@ func (c *jsiiProxy_ConnectVocabulary) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ConnectVocabulary) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ConnectVocabulary) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ConnectVocabulary) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectVocabulary) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (c *jsiiProxy_ConnectVocabulary) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,15 +961,15 @@ func (c *jsiiProxy_ConnectVocabulary) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectVocabulary) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectVocabulary) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -989,7 +988,7 @@ func (c *jsiiProxy_ConnectVocabulary) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1002,7 +1001,7 @@ func (c *jsiiProxy_ConnectVocabulary) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,18 +1015,18 @@ func (c *jsiiProxy_ConnectVocabulary) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ConnectVocabulary) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ConnectVocabulary) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (c *jsiiProxy_ConnectVocabulary) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (c *jsiiProxy_ConnectVocabulary) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1060,7 +1059,7 @@ func (c *jsiiProxy_ConnectVocabulary) PutTimeouts(value *ConnectVocabularyTimeou
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1104,8 +1103,8 @@ func (c *jsiiProxy_ConnectVocabulary) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ConnectVocabulary) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConnectVocabulary) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1117,8 +1116,8 @@ func (c *jsiiProxy_ConnectVocabulary) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_ConnectVocabulary) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConnectVocabulary) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1130,8 +1129,8 @@ func (c *jsiiProxy_ConnectVocabulary) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ConnectVocabulary) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectVocabulary) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1143,8 +1142,8 @@ func (c *jsiiProxy_ConnectVocabulary) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ConnectVocabulary) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectVocabulary) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1169,8 +1168,8 @@ func (c *jsiiProxy_ConnectVocabulary) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ConnectVocabulary) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectVocabulary) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1181,4 +1180,3 @@ func (c *jsiiProxy_ConnectVocabulary) ToTerraform() interface{} {
 
 	return returns
 }
-

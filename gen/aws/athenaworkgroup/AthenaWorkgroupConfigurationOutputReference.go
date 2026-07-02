@@ -15,9 +15,9 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	BytesScannedCutoffPerQueryInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnforceWorkgroupConfiguration() interface{}
-	SetEnforceWorkgroupConfiguration(val interface{})
-	EnforceWorkgroupConfigurationInput() interface{}
+	EnforceWorkgroupConfiguration() any
+	SetEnforceWorkgroupConfiguration(val any)
+	EnforceWorkgroupConfigurationInput() any
 	EngineVersion() AthenaWorkgroupConfigurationEngineVersionOutputReference
 	EngineVersionInput() *AthenaWorkgroupConfigurationEngineVersion
 	ExecutionRole() *string
@@ -40,12 +40,12 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	Fqn() *string
 	InternalValue() *AthenaWorkgroupConfiguration
 	SetInternalValue(val *AthenaWorkgroupConfiguration)
-	PublishCloudwatchMetricsEnabled() interface{}
-	SetPublishCloudwatchMetricsEnabled(val interface{})
-	PublishCloudwatchMetricsEnabledInput() interface{}
-	RequesterPaysEnabled() interface{}
-	SetRequesterPaysEnabled(val interface{})
-	RequesterPaysEnabledInput() interface{}
+	PublishCloudwatchMetricsEnabled() any
+	SetPublishCloudwatchMetricsEnabled(val any)
+	PublishCloudwatchMetricsEnabledInput() any
+	RequesterPaysEnabled() any
+	SetRequesterPaysEnabled(val any)
+	RequesterPaysEnabledInput() any
 	ResultConfiguration() AthenaWorkgroupConfigurationResultConfigurationOutputReference
 	ResultConfigurationInput() *AthenaWorkgroupConfigurationResultConfiguration
 	// Experimental.
@@ -59,7 +59,7 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	ResetResultConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) BytesScannedCuto
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) EnforceWorkgroupConfiguration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) EnforceWorkgroupConfiguration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceWorkgroupConfiguration",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) EnforceWorkgroup
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) EnforceWorkgroupConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) EnforceWorkgroupConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceWorkgroupConfigurationInput",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PublishCloudwatchMetricsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PublishCloudwatchMetricsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publishCloudwatchMetricsEnabled",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PublishCloudwatc
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PublishCloudwatchMetricsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PublishCloudwatchMetricsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publishCloudwatchMetricsEnabledInput",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PublishCloudwatc
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) RequesterPaysEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) RequesterPaysEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPaysEnabled",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) RequesterPaysEna
 	return returns
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) RequesterPaysEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) RequesterPaysEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requesterPaysEnabledInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewAthenaWorkgroupConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewAthenaWorkgroupConfigurationOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewAthenaWorkgroupConfigurationOutputReference_Override(a AthenaWorkgroupCo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetBytesScannedCutoffPerQuery(val *float64) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetBytesScannedCutoffPerQuery(val *float64) {
 	if err := j.validateSetBytesScannedCutoffPerQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetBytesScannedCu
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetEnforceWorkgroupConfiguration(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetEnforceWorkgroupConfiguration(val any) {
 	if err := j.validateSetEnforceWorkgroupConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetEnforceWorkgro
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetExecutionRole(val *string) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetExecutionRole(val *string) {
 	if err := j.validateSetExecutionRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetExecutionRole(
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetInternalValue(val *AthenaWorkgroupConfiguration) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetInternalValue(val *AthenaWorkgroupConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetPublishCloudwatchMetricsEnabled(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetPublishCloudwatchMetricsEnabled(val any) {
 	if err := j.validateSetPublishCloudwatchMetricsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetPublishCloudwa
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetRequesterPaysEnabled(val interface{}) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetRequesterPaysEnabled(val any) {
 	if err := j.validateSetRequesterPaysEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetRequesterPaysE
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,16 +464,16 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutEngineVersion
 	_jsii_.InvokeVoid(
 		a,
 		"putEngineVersion",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -656,7 +655,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutResultConfigu
 	_jsii_.InvokeVoid(
 		a,
 		"putResultConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetResultConfi
 	)
 }
 
-func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ToString() *stri
 
 	return returns
 }
-

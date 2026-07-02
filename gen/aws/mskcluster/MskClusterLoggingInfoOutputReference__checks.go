@@ -109,7 +109,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterLoggingInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewMskClusterLoggingInfoOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

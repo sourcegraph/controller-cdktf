@@ -13,20 +13,20 @@ import (
 type GlueTrigger interface {
 	cdktf.TerraformResource
 	Actions() GlueTriggerActionsList
-	ActionsInput() interface{}
+	ActionsInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,11 +34,11 @@ type GlueTrigger interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EventBatchingCondition() GlueTriggerEventBatchingConditionList
-	EventBatchingConditionInput() interface{}
+	EventBatchingConditionInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,17 +66,17 @@ type GlueTrigger interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleInput() *string
-	StartOnCreation() interface{}
-	SetStartOnCreation(val interface{})
-	StartOnCreationInput() interface{}
+	StartOnCreation() any
+	SetStartOnCreation(val any)
+	StartOnCreationInput() any
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -87,11 +87,11 @@ type GlueTrigger interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GlueTriggerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -102,9 +102,9 @@ type GlueTrigger interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type GlueTrigger interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,15 +134,15 @@ type GlueTrigger interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutActions(value interface{})
-	PutEventBatchingCondition(value interface{})
+	PutActions(value any)
+	PutEventBatchingCondition(value any)
 	PutPredicate(value *GlueTriggerPredicate)
 	PutTimeouts(value *GlueTriggerTimeouts)
 	ResetDescription()
@@ -159,17 +159,17 @@ type GlueTrigger interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetWorkflowName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlueTrigger
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GlueTrigger) Actions() GlueTriggerActionsList {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) ActionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) ActionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsInput",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_GlueTrigger) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_GlueTrigger) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueTrigger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_GlueTrigger) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_GlueTrigger) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_GlueTrigger) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_GlueTrigger) EventBatchingCondition() GlueTriggerEventBatchin
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) EventBatchingConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) EventBatchingConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventBatchingConditionInput",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_GlueTrigger) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlueTrigger) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_GlueTrigger) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_GlueTrigger) ScheduleInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) StartOnCreation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) StartOnCreation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startOnCreation",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_GlueTrigger) StartOnCreation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) StartOnCreationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) StartOnCreationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startOnCreationInput",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_GlueTrigger) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlueTrigger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_GlueTrigger) Timeouts() GlueTriggerTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTrigger) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -637,7 +637,6 @@ func (j *jsiiProxy_GlueTrigger) WorkflowNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_trigger aws_glue_trigger} Resource.
 func NewGlueTrigger(scope constructs.Construct, id *string, config *GlueTriggerConfig) GlueTrigger {
 	_init_.Initialize()
@@ -649,7 +648,7 @@ func NewGlueTrigger(scope constructs.Construct, id *string, config *GlueTriggerC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -662,12 +661,12 @@ func NewGlueTrigger_Override(g GlueTrigger, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlueTrigger) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_GlueTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetCount(val interface{}) {
+func (j *jsiiProxy_GlueTrigger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_GlueTrigger)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlueTrigger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_GlueTrigger)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetDescription(val *string) {
+func (j *jsiiProxy_GlueTrigger) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_GlueTrigger)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GlueTrigger) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_GlueTrigger)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlueTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -727,7 +726,7 @@ func (j *jsiiProxy_GlueTrigger)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetId(val *string) {
+func (j *jsiiProxy_GlueTrigger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_GlueTrigger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlueTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_GlueTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetName(val *string) {
+func (j *jsiiProxy_GlueTrigger) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_GlueTrigger)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlueTrigger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -768,7 +767,7 @@ func (j *jsiiProxy_GlueTrigger)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlueTrigger) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_GlueTrigger)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetSchedule(val *string) {
+func (j *jsiiProxy_GlueTrigger) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_GlueTrigger)SetSchedule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetStartOnCreation(val interface{}) {
+func (j *jsiiProxy_GlueTrigger) SetStartOnCreation(val any) {
 	if err := j.validateSetStartOnCreationParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_GlueTrigger)SetStartOnCreation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GlueTrigger) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_GlueTrigger)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GlueTrigger) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_GlueTrigger)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetType(val *string) {
+func (j *jsiiProxy_GlueTrigger) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_GlueTrigger)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetWorkflowName(val *string) {
+func (j *jsiiProxy_GlueTrigger) SetWorkflowName(val *string) {
 	if err := j.validateSetWorkflowNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func GlueTrigger_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func GlueTrigger_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlueTrigger_IsConstruct(x interface{}) *bool {
+func GlueTrigger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueTrigger_IsConstructParameters(x); err != nil {
@@ -892,7 +891,7 @@ func GlueTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func GlueTrigger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueTrigger_IsTerraformElement(x interface{}) *bool {
+func GlueTrigger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueTrigger_IsTerraformElementParameters(x); err != nil {
@@ -911,7 +910,7 @@ func GlueTrigger_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func GlueTrigger_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlueTrigger_IsTerraformResource(x interface{}) *bool {
+func GlueTrigger_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlueTrigger_IsTerraformResourceParameters(x); err != nil {
@@ -930,7 +929,7 @@ func GlueTrigger_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -955,31 +954,31 @@ func (g *jsiiProxy_GlueTrigger) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlueTrigger) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlueTrigger) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlueTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GlueTrigger) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (g *jsiiProxy_GlueTrigger) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (g *jsiiProxy_GlueTrigger) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (g *jsiiProxy_GlueTrigger) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,7 +1058,7 @@ func (g *jsiiProxy_GlueTrigger) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,7 +1074,7 @@ func (g *jsiiProxy_GlueTrigger) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (g *jsiiProxy_GlueTrigger) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1107,15 +1106,15 @@ func (g *jsiiProxy_GlueTrigger) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueTrigger) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueTrigger) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1134,7 +1133,7 @@ func (g *jsiiProxy_GlueTrigger) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (g *jsiiProxy_GlueTrigger) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,18 +1160,18 @@ func (g *jsiiProxy_GlueTrigger) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlueTrigger) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlueTrigger) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1183,7 +1182,7 @@ func (g *jsiiProxy_GlueTrigger) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1194,29 +1193,29 @@ func (g *jsiiProxy_GlueTrigger) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GlueTrigger) PutActions(value interface{}) {
+func (g *jsiiProxy_GlueTrigger) PutActions(value any) {
 	if err := g.validatePutActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GlueTrigger) PutEventBatchingCondition(value interface{}) {
+func (g *jsiiProxy_GlueTrigger) PutEventBatchingCondition(value any) {
 	if err := g.validatePutEventBatchingConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEventBatchingCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (g *jsiiProxy_GlueTrigger) PutPredicate(value *GlueTriggerPredicate) {
 	_jsii_.InvokeVoid(
 		g,
 		"putPredicate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (g *jsiiProxy_GlueTrigger) PutTimeouts(value *GlueTriggerTimeouts) {
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1338,8 +1337,8 @@ func (g *jsiiProxy_GlueTrigger) ResetWorkflowName() {
 	)
 }
 
-func (g *jsiiProxy_GlueTrigger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueTrigger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1351,8 +1350,8 @@ func (g *jsiiProxy_GlueTrigger) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueTrigger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlueTrigger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1364,8 +1363,8 @@ func (g *jsiiProxy_GlueTrigger) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (g *jsiiProxy_GlueTrigger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueTrigger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1377,8 +1376,8 @@ func (g *jsiiProxy_GlueTrigger) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlueTrigger) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueTrigger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1403,8 +1402,8 @@ func (g *jsiiProxy_GlueTrigger) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlueTrigger) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlueTrigger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1415,4 +1414,3 @@ func (g *jsiiProxy_GlueTrigger) ToTerraform() interface{} {
 
 	return returns
 }
-

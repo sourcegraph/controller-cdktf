@@ -12,9 +12,9 @@ type EcrReplicationConfigurationReplicationConfigurationRuleOutputReference inte
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,13 +26,13 @@ type EcrReplicationConfigurationReplicationConfigurationRuleOutputReference inte
 	// Experimental.
 	CreationStack() *[]*string
 	Destination() EcrReplicationConfigurationReplicationConfigurationRuleDestinationList
-	DestinationInput() interface{}
+	DestinationInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RepositoryFilter() EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList
-	RepositoryFilterInput() interface{}
+	RepositoryFilterInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type EcrReplicationConfigurationReplicationConfigurationRuleOutputReference inte
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,12 +65,12 @@ type EcrReplicationConfigurationReplicationConfigurationRuleOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDestination(value interface{})
-	PutRepositoryFilter(value interface{})
+	PutDestination(value any)
+	PutRepositoryFilter(value any)
 	ResetRepositoryFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputRefe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return returns
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) DestinationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) DestinationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"destinationInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return returns
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return returns
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) RepositoryFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) RepositoryFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"repositoryFilterInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return returns
 }
 
-
 func NewEcrReplicationConfigurationReplicationConfigurationRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationRuleOutputReference(t
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewEcrReplicationConfigurationReplicationConfigurationRuleOutputReference_O
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	)
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	)
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	)
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	)
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,16 +288,16 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return returns
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -314,7 +313,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -330,7 +329,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,32 +454,32 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) PutDestination(value interface{}) {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) PutDestination(value any) {
 	if err := e.validatePutDestinationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) PutRepositoryFilter(value interface{}) {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) PutRepositoryFilter(value any) {
 	if err := e.validatePutRepositoryFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putRepositoryFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	)
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 
 	return returns
 }
-

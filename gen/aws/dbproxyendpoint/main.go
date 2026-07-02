@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
-		reflect.TypeOf((*DbProxyEndpoint)(nil)).Elem(),
+		reflect.TypeFor[DbProxyEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIds", GoGetter: "VpcSubnetIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIdsInput", GoGetter: "VpcSubnetIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointConfig",
-		reflect.TypeOf((*DbProxyEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[DbProxyEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeouts",
-		reflect.TypeOf((*DbProxyEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DbProxyEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*DbProxyEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbProxyEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

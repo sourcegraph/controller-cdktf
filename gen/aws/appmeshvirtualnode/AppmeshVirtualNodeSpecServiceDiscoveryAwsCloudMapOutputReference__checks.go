@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference
 
 	return nil
 }
-

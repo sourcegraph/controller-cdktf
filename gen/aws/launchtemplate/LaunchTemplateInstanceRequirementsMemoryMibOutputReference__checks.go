@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLaunchTemplateInstanceRequirementsMemoryMibOutputReferenceParame
 
 	return nil
 }
-

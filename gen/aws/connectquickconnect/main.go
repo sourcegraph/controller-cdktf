@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
-		reflect.TypeOf((*ConnectQuickConnect)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnect](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnect{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectConfig",
-		reflect.TypeOf((*ConnectQuickConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userConfig", GoGetter: "UserConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "userConfigInput", GoGetter: "UserConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfig",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigPhoneConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigPhoneConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigPhoneConfigList)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigPhoneConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigPhoneConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -162,7 +162,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigQueueConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigQueueConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigList",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigQueueConfigList)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigQueueConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -222,7 +222,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -258,11 +258,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigUserConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigUserConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfigList",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigUserConfigList)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigUserConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -284,7 +284,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfigOutputReference",
-		reflect.TypeOf((*ConnectQuickConnectQuickConnectConfigUserConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectQuickConnectQuickConnectConfigUserConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

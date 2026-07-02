@@ -120,7 +120,7 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewApprunnerServiceNetworkConfigurationOutputReferenceParameters(te
 
 	return nil
 }
-

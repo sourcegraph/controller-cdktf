@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppmeshVirtualNodeSpecBackendListParameters(terraformResource cd
 
 	return nil
 }
-

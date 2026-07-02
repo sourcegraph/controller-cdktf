@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsDbProxyAuthOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbProxyAuthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDbProxyAuthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsDbProxyAuthOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

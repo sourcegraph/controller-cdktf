@@ -34,7 +34,7 @@ func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterParameterGroupParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterParameterGroupParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDocdbClusterParameterGroupParameterListParameters(terraformResou
 
 	return nil
 }
-

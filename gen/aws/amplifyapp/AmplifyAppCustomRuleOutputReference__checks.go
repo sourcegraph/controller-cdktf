@@ -98,7 +98,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) validateSetConditionPara
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppCustomRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewAmplifyAppCustomRuleOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

@@ -1,9 +1,8 @@
 package ecstaskdefinition
 
-
 type EcsTaskDefinitionVolumeDockerVolumeConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#autoprovision EcsTaskDefinition#autoprovision}.
-	Autoprovision interface{} `field:"optional" json:"autoprovision" yaml:"autoprovision"`
+	Autoprovision any `field:"optional" json:"autoprovision" yaml:"autoprovision"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#driver EcsTaskDefinition#driver}.
 	Driver *string `field:"optional" json:"driver" yaml:"driver"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}.
@@ -13,4 +12,3 @@ type EcsTaskDefinitionVolumeDockerVolumeConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition#scope EcsTaskDefinition#scope}.
 	Scope *string `field:"optional" json:"scope" yaml:"scope"`
 }
-

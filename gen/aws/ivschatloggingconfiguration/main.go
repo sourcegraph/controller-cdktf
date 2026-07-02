@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
-		reflect.TypeOf((*IvschatLoggingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatLoggingConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,19 +83,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationConfig",
-		reflect.TypeOf((*IvschatLoggingConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfiguration",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationFirehose",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationFirehose)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationFirehose](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationOutputReference",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogsInput", GoGetter: "CloudwatchLogsInput"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationS3)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
-		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationDestinationConfigurationS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeouts",
-		reflect.TypeOf((*IvschatLoggingConfigurationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
-		reflect.TypeOf((*IvschatLoggingConfigurationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvschatLoggingConfigurationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -286,7 +286,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
-		reflect.TypeOf((*VpcIpamPoolCidr)(nil)).Elem(),
+		reflect.TypeFor[VpcIpamPoolCidr](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcIpamPoolCidr{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext",
-		reflect.TypeOf((*VpcIpamPoolCidrCidrAuthorizationContext)(nil)).Elem(),
+		reflect.TypeFor[VpcIpamPoolCidrCidrAuthorizationContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
-		reflect.TypeOf((*VpcIpamPoolCidrCidrAuthorizationContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcIpamPoolCidrCidrAuthorizationContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,15 +123,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig",
-		reflect.TypeOf((*VpcIpamPoolCidrConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcIpamPoolCidrConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts",
-		reflect.TypeOf((*VpcIpamPoolCidrTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VpcIpamPoolCidrTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
-		reflect.TypeOf((*VpcIpamPoolCidrTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcIpamPoolCidrTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcIpamPoolCidrTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

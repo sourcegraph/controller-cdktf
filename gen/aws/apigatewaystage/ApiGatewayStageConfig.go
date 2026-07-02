@@ -6,9 +6,9 @@ import (
 
 type ApiGatewayStageConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApiGatewayStageConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#deployment_id ApiGatewayStage#deployment_id}.
 	DeploymentId *string `field:"required" json:"deploymentId" yaml:"deploymentId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#rest_api_id ApiGatewayStage#rest_api_id}.
@@ -30,7 +30,7 @@ type ApiGatewayStageConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#access_log_settings ApiGatewayStage#access_log_settings}
 	AccessLogSettings *ApiGatewayStageAccessLogSettings `field:"optional" json:"accessLogSettings" yaml:"accessLogSettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#cache_cluster_enabled ApiGatewayStage#cache_cluster_enabled}.
-	CacheClusterEnabled interface{} `field:"optional" json:"cacheClusterEnabled" yaml:"cacheClusterEnabled"`
+	CacheClusterEnabled any `field:"optional" json:"cacheClusterEnabled" yaml:"cacheClusterEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#cache_cluster_size ApiGatewayStage#cache_cluster_size}.
 	CacheClusterSize *string `field:"optional" json:"cacheClusterSize" yaml:"cacheClusterSize"`
 	// canary_settings block.
@@ -55,6 +55,5 @@ type ApiGatewayStageConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#variables ApiGatewayStage#variables}.
 	Variables *map[string]*string `field:"optional" json:"variables" yaml:"variables"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_stage#xray_tracing_enabled ApiGatewayStage#xray_tracing_enabled}.
-	XrayTracingEnabled interface{} `field:"optional" json:"xrayTracingEnabled" yaml:"xrayTracingEnabled"`
+	XrayTracingEnabled any `field:"optional" json:"xrayTracingEnabled" yaml:"xrayTracingEnabled"`
 }
-

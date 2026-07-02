@@ -6,9 +6,9 @@ import (
 
 type CloudwatchMetricStreamConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudwatchMetricStreamConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#firehose_arn CloudwatchMetricStream#firehose_arn}.
 	FirehoseArn *string `field:"required" json:"firehoseArn" yaml:"firehoseArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#output_format CloudwatchMetricStream#output_format}.
@@ -28,7 +28,7 @@ type CloudwatchMetricStreamConfig struct {
 	// exclude_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#exclude_filter CloudwatchMetricStream#exclude_filter}
-	ExcludeFilter interface{} `field:"optional" json:"excludeFilter" yaml:"excludeFilter"`
+	ExcludeFilter any `field:"optional" json:"excludeFilter" yaml:"excludeFilter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#id CloudwatchMetricStream#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -37,7 +37,7 @@ type CloudwatchMetricStreamConfig struct {
 	// include_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#include_filter CloudwatchMetricStream#include_filter}
-	IncludeFilter interface{} `field:"optional" json:"includeFilter" yaml:"includeFilter"`
+	IncludeFilter any `field:"optional" json:"includeFilter" yaml:"includeFilter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#name CloudwatchMetricStream#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#name_prefix CloudwatchMetricStream#name_prefix}.
@@ -45,7 +45,7 @@ type CloudwatchMetricStreamConfig struct {
 	// statistics_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#statistics_configuration CloudwatchMetricStream#statistics_configuration}
-	StatisticsConfiguration interface{} `field:"optional" json:"statisticsConfiguration" yaml:"statisticsConfiguration"`
+	StatisticsConfiguration any `field:"optional" json:"statisticsConfiguration" yaml:"statisticsConfiguration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#tags CloudwatchMetricStream#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#tags_all CloudwatchMetricStream#tags_all}.
@@ -55,4 +55,3 @@ type CloudwatchMetricStreamConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_metric_stream#timeouts CloudwatchMetricStream#timeouts}
 	Timeouts *CloudwatchMetricStreamTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -34,7 +34,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTempla
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewImagebuilderDistributionConfigurationDistributionLaunchTemplateC
 
 	return nil
 }
-

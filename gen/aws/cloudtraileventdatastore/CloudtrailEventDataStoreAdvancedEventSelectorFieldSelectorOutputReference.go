@@ -12,9 +12,9 @@ type CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference i
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference i
 	FieldInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotEndsWith() *[]*string
 	SetNotEndsWith(val *[]*string)
 	NotEndsWithInput() *[]*string
@@ -61,7 +61,7 @@ type CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference i
 	ResetStartsWith()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputR
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	return returns
 }
 
-
 func NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetEndsWith(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetEndsWith(val *[]*string) {
 	if err := j.validateSetEndsWithParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetEqualTo(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetEqualTo(val *[]*string) {
 	if err := j.validateSetEqualToParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetField(val *string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetField(val *string) {
 	if err := j.validateSetFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetNotEndsWith(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetNotEndsWith(val *[]*string) {
 	if err := j.validateSetNotEndsWithParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetNotEquals(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetNotEquals(val *[]*string) {
 	if err := j.validateSetNotEqualsParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetNotStartsWith(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetNotStartsWith(val *[]*string) {
 	if err := j.validateSetNotStartsWithParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetStartsWith(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetStartsWith(val *[]*string) {
 	if err := j.validateSetStartsWithParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOut
 
 	return returns
 }
-

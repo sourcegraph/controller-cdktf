@@ -12,9 +12,9 @@ type ImagebuilderImageImageTestsConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type ImagebuilderImageImageTestsConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	ImageTestsEnabled() interface{}
-	SetImageTestsEnabled(val interface{})
-	ImageTestsEnabledInput() interface{}
+	ImageTestsEnabled() any
+	SetImageTestsEnabled(val any)
+	ImageTestsEnabledInput() any
 	InternalValue() *ImagebuilderImageImageTestsConfiguration
 	SetInternalValue(val *ImagebuilderImageImageTestsConfiguration)
 	// Experimental.
@@ -46,7 +46,7 @@ type ImagebuilderImageImageTestsConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ImagebuilderImageImageTestsConfigurationOutputReference interface {
 	ResetTimeoutMinutes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ImageTestsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ImageTestsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"imageTestsEnabled",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Imag
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ImageTestsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ImageTestsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"imageTestsEnabledInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Time
 	return returns
 }
 
-
 func NewImagebuilderImageImageTestsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageTestsConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewImagebuilderImageImageTestsConfigurationOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewImagebuilderImageImageTestsConfigurationOutputReference_Override(i Image
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetImageTestsEnabled(val interface{}) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetImageTestsEnabled(val any) {
 	if err := j.validateSetImageTestsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetIm
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetInternalValue(val *ImagebuilderImageImageTestsConfiguration) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetInternalValue(val *ImagebuilderImageImageTestsConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference)SetTimeoutMinutes(val *float64) {
+func (j *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) SetTimeoutMinutes(val *float64) {
 	if err := j.validateSetTimeoutMinutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Comp
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetL
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Inte
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Rese
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_ImagebuilderImageImageTestsConfigurationOutputReference) ToSt
 
 	return returns
 }
-

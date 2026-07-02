@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
-		reflect.TypeOf((*Macie2Member)(nil)).Elem(),
+		reflect.TypeFor[Macie2Member](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2Member{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2Member.Macie2MemberConfig",
-		reflect.TypeOf((*Macie2MemberConfig)(nil)).Elem(),
+		reflect.TypeFor[Macie2MemberConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2Member.Macie2MemberTimeouts",
-		reflect.TypeOf((*Macie2MemberTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Macie2MemberTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2Member.Macie2MemberTimeoutsOutputReference",
-		reflect.TypeOf((*Macie2MemberTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2MemberTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2MemberTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

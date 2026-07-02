@@ -1,6 +1,5 @@
 package imagebuilderdistributionconfiguration
 
-
 type ImagebuilderDistributionConfigurationDistribution struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#region ImagebuilderDistributionConfiguration#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
@@ -15,12 +14,11 @@ type ImagebuilderDistributionConfigurationDistribution struct {
 	// fast_launch_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#fast_launch_configuration ImagebuilderDistributionConfiguration#fast_launch_configuration}
-	FastLaunchConfiguration interface{} `field:"optional" json:"fastLaunchConfiguration" yaml:"fastLaunchConfiguration"`
+	FastLaunchConfiguration any `field:"optional" json:"fastLaunchConfiguration" yaml:"fastLaunchConfiguration"`
 	// launch_template_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#launch_template_configuration ImagebuilderDistributionConfiguration#launch_template_configuration}
-	LaunchTemplateConfiguration interface{} `field:"optional" json:"launchTemplateConfiguration" yaml:"launchTemplateConfiguration"`
+	LaunchTemplateConfiguration any `field:"optional" json:"launchTemplateConfiguration" yaml:"launchTemplateConfiguration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/imagebuilder_distribution_configuration#license_configuration_arns ImagebuilderDistributionConfiguration#license_configuration_arns}.
 	LicenseConfigurationArns *[]*string `field:"optional" json:"licenseConfigurationArns" yaml:"licenseConfigurationArns"`
 }
-

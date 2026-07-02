@@ -98,7 +98,7 @@ func (a *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetDataTraceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetDataTraceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetDat
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetDetailedMetricsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetDetailedMetricsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetDet
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -294,4 +294,3 @@ func validateNewApigatewayv2StageRouteSettingsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

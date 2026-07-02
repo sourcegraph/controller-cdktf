@@ -12,9 +12,9 @@ type InstancePrivateDnsNameOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type InstancePrivateDnsNameOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableResourceNameDnsAaaaRecord() interface{}
-	SetEnableResourceNameDnsAaaaRecord(val interface{})
-	EnableResourceNameDnsAaaaRecordInput() interface{}
-	EnableResourceNameDnsARecord() interface{}
-	SetEnableResourceNameDnsARecord(val interface{})
-	EnableResourceNameDnsARecordInput() interface{}
+	EnableResourceNameDnsAaaaRecord() any
+	SetEnableResourceNameDnsAaaaRecord(val any)
+	EnableResourceNameDnsAaaaRecordInput() any
+	EnableResourceNameDnsARecord() any
+	SetEnableResourceNameDnsARecord(val any)
+	EnableResourceNameDnsARecordInput() any
 	// Experimental.
 	Fqn() *string
 	HostnameType() *string
@@ -49,7 +49,7 @@ type InstancePrivateDnsNameOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type InstancePrivateDnsNameOptionsOutputReference interface {
 	ResetHostnameType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_InstancePrivateDnsNameOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) CreationStack()
 	return returns
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecord() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecord() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsAaaaRecord",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceN
 	return returns
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsAaaaRecordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsAaaaRecordInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceN
 	return returns
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecord() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecord() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsARecord",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceN
 	return returns
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) EnableResourceNameDnsARecordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceNameDnsARecordInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewInstancePrivateDnsNameOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InstancePrivateDnsNameOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewInstancePrivateDnsNameOptionsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewInstancePrivateDnsNameOptionsOutputReference_Override(i InstancePrivateD
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetEnableResourceNameDnsAaaaRecord(val interface{}) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetEnableResourceNameDnsAaaaRecord(val any) {
 	if err := j.validateSetEnableResourceNameDnsAaaaRecordParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetEnableResourc
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetEnableResourceNameDnsARecord(val interface{}) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetEnableResourceNameDnsARecord(val any) {
 	if err := j.validateSetEnableResourceNameDnsARecordParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetEnableResourc
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetHostnameType(val *string) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetHostnameType(val *string) {
 	if err := j.validateSetHostnameTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetHostnameType(
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetInternalValue(val *InstancePrivateDnsNameOptions) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetInternalValue(val *InstancePrivateDnsNameOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) ResetHostnameTy
 	)
 }
 
-func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (i *jsiiProxy_InstancePrivateDnsNameOptionsOutputReference) ToString() *str
 
 	return returns
 }
-

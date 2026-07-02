@@ -19,7 +19,7 @@ func (r *jsiiProxy_RumMetricsDestination) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (r *jsiiProxy_RumMetricsDestination) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RumMetricsDestination) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RumMetricsDestination) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (r *jsiiProxy_RumMetricsDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RumMetricsDestination) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRumMetricsDestination_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateRumMetricsDestination_IsConstructParameters(x interface{}) error {
+func validateRumMetricsDestination_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRumMetricsDestination_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRumMetricsDestination_IsTerraformElementParameters(x interface{}) error {
+func validateRumMetricsDestination_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRumMetricsDestination_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateRumMetricsDestination_IsTerraformResourceParameters(x interface{}) error {
+func validateRumMetricsDestination_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_RumMetricsDestination) validateSetAppMonitorNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RumMetricsDestination) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RumMetricsDestination) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_RumMetricsDestination) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_RumMetricsDestination) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RumMetricsDestination) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_RumMetricsDestination) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_RumMetricsDestination) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RumMetricsDestination) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewRumMetricsDestinationParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

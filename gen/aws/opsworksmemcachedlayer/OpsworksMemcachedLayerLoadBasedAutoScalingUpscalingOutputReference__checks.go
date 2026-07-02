@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReferen
 
 	return nil
 }
-

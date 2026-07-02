@@ -18,17 +18,17 @@ type DataAwsEc2SpotPrice interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsEc2SpotPriceFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,21 +54,21 @@ type DataAwsEc2SpotPrice interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SpotPrice() *string
 	SpotPriceTimestamp() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2SpotPriceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type DataAwsEc2SpotPrice interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2SpotPriceTimeouts)
 	ResetAvailabilityZone()
 	ResetFilter()
@@ -100,18 +100,18 @@ type DataAwsEc2SpotPrice interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2SpotPrice
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2SpotPrice) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SpotPrice) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) Filter() DataAwsEc2SpotPriceFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SpotPrice) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SpotPrice) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2SpotPrice) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) Timeouts() DataAwsEc2SpotPriceTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2SpotPrice) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -378,7 +378,6 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price} Data Source.
 func NewDataAwsEc2SpotPrice(scope constructs.Construct, id *string, config *DataAwsEc2SpotPriceConfig) DataAwsEc2SpotPrice {
@@ -391,7 +390,7 @@ func NewDataAwsEc2SpotPrice(scope constructs.Construct, id *string, config *Data
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -404,12 +403,12 @@ func NewDataAwsEc2SpotPrice_Override(d DataAwsEc2SpotPrice, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetInstanceType(val *string) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2SpotPrice)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2SpotPrice) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -500,7 +499,7 @@ func DataAwsEc2SpotPrice_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func DataAwsEc2SpotPrice_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2SpotPrice_IsConstruct(x interface{}) *bool {
+func DataAwsEc2SpotPrice_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2SpotPrice_IsConstructParameters(x); err != nil {
@@ -535,7 +534,7 @@ func DataAwsEc2SpotPrice_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func DataAwsEc2SpotPrice_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2SpotPrice_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2SpotPrice_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2SpotPrice_IsTerraformDataSourceParameters(x); err != nil {
@@ -554,7 +553,7 @@ func DataAwsEc2SpotPrice_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func DataAwsEc2SpotPrice_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2SpotPrice_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2SpotPrice_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2SpotPrice_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func DataAwsEc2SpotPrice_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,27 +590,27 @@ func DataAwsEc2SpotPrice_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2SpotPrice) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2SpotPrice) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,18 +768,18 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2SpotPrice) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) PutTimeouts(value *DataAwsEc2SpotPriceTi
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -843,8 +842,8 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2SpotPrice) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2SpotPrice) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -869,8 +868,8 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2SpotPrice) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -882,8 +881,8 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2SpotPrice) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -908,8 +907,8 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPrice) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2SpotPrice) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,4 +919,3 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) ToTerraform() interface{} {
 
 	return returns
 }
-

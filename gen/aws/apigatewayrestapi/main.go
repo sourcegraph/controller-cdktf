@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
-		reflect.TypeOf((*ApiGatewayRestApi)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayRestApi](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayRestApi{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiConfig",
-		reflect.TypeOf((*ApiGatewayRestApiConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayRestApiConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfiguration",
-		reflect.TypeOf((*ApiGatewayRestApiEndpointConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayRestApiEndpointConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference",
-		reflect.TypeOf((*ApiGatewayRestApiEndpointConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayRestApiEndpointConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointIds", GoGetter: "VpcEndpointIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointIdsInput", GoGetter: "VpcEndpointIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

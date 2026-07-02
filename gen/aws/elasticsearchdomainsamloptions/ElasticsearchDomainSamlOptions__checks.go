@@ -19,7 +19,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateAddMoveTargetParamete
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveFromIdParameters(
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateElasticsearchDomainSamlOptions_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateElasticsearchDomainSamlOptions_IsConstructParameters(x interface{}) error {
+func validateElasticsearchDomainSamlOptions_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateElasticsearchDomainSamlOptions_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateElasticsearchDomainSamlOptions_IsTerraformElementParameters(x interface{}) error {
+func validateElasticsearchDomainSamlOptions_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateElasticsearchDomainSamlOptions_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateElasticsearchDomainSamlOptions_IsTerraformResourceParameters(x interface{}) error {
+func validateElasticsearchDomainSamlOptions_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateElasticsearchDomainSamlOptions_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -444,4 +444,3 @@ func validateNewElasticsearchDomainSamlOptionsParameters(scope constructs.Constr
 
 	return nil
 }
-

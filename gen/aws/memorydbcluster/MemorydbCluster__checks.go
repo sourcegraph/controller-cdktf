@@ -19,7 +19,7 @@ func (m *jsiiProxy_MemorydbCluster) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MemorydbCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MemorydbCluster) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MemorydbCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMemorydbCluster_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateMemorydbCluster_IsConstructParameters(x interface{}) error {
+func validateMemorydbCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMemorydbCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMemorydbCluster_IsTerraformElementParameters(x interface{}) error {
+func validateMemorydbCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMemorydbCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateMemorydbCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateMemorydbCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_MemorydbCluster) validateSetAclNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbCluster) validateSetAutoMinorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbCluster) validateSetAutoMinorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_MemorydbCluster) validateSetAutoMinorVersionUpgradeParameters
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_MemorydbCluster) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -373,7 +373,7 @@ func (j *jsiiProxy_MemorydbCluster) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbCluster) validateSetDataTieringParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbCluster) validateSetDataTieringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -505,7 +505,7 @@ func (j *jsiiProxy_MemorydbCluster) validateSetPortParameters(val *float64) erro
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MemorydbCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -623,7 +623,7 @@ func (j *jsiiProxy_MemorydbCluster) validateSetTagsAllParameters(val *map[string
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbCluster) validateSetTlsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbCluster) validateSetTlsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -661,4 +661,3 @@ func validateNewMemorydbClusterParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

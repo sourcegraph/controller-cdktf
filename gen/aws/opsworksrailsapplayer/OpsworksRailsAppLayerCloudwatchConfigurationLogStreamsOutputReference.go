@@ -21,9 +21,9 @@ type OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference inter
 	BufferDurationInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,8 +51,8 @@ type OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference inter
 	InitialPosition() *string
 	SetInitialPosition(val *string)
 	InitialPositionInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LogGroupName() *string
 	SetLogGroupName(val *string)
 	LogGroupNameInput() *string
@@ -73,7 +73,7 @@ type OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference inter
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -178,8 +178,8 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -408,7 +408,6 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return returns
 }
 
-
 func NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference {
 	_init_.Initialize()
 
@@ -419,7 +418,7 @@ func NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -431,12 +430,12 @@ func NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetBatchCount(val *float64) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetBatchCount(val *float64) {
 	if err := j.validateSetBatchCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetBatchSize(val *float64) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetBatchSize(val *float64) {
 	if err := j.validateSetBatchSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetBufferDuration(val *float64) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetBufferDuration(val *float64) {
 	if err := j.validateSetBufferDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetDatetimeFormat(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetDatetimeFormat(val *string) {
 	if err := j.validateSetDatetimeFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetFile(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetFile(val *string) {
 	if err := j.validateSetFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetFileFingerprintLines(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetFileFingerprintLines(val *string) {
 	if err := j.validateSetFileFingerprintLinesParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetInitialPosition(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetInitialPosition(val *string) {
 	if err := j.validateSetInitialPositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetLogGroupName(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetLogGroupName(val *string) {
 	if err := j.validateSetLogGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetMultilineStartPattern(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetMultilineStartPattern(val *string) {
 	if err := j.validateSetMultilineStartPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,16 +624,16 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -870,16 +869,16 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	)
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -898,4 +897,3 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 
 	return returns
 }
-

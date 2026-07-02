@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateSetUseLakeFormationCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateSetUseLakeFormationCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGlueCrawlerLakeFormationConfigurationOutputReferenceParameters(t
 
 	return nil
 }
-

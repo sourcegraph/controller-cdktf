@@ -34,7 +34,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCu
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCusto
 
 	return nil
 }
-

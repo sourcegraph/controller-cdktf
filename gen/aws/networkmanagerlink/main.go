@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
-		reflect.TypeOf((*NetworkmanagerLink)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerLink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerLink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,11 +91,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkBandwidth",
-		reflect.TypeOf((*NetworkmanagerLinkBandwidth)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerLinkBandwidth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
-		reflect.TypeOf((*NetworkmanagerLinkBandwidthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerLinkBandwidthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadSpeed", GoGetter: "UploadSpeed"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadSpeedInput", GoGetter: "UploadSpeedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerLinkBandwidthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkConfig",
-		reflect.TypeOf((*NetworkmanagerLinkConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerLinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkTimeouts",
-		reflect.TypeOf((*NetworkmanagerLinkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerLinkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerLinkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerLinkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerLinkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

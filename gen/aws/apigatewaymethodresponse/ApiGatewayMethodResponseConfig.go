@@ -6,9 +6,9 @@ import (
 
 type ApiGatewayMethodResponseConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApiGatewayMethodResponseConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method_response#http_method ApiGatewayMethodResponse#http_method}.
 	HttpMethod *string `field:"required" json:"httpMethod" yaml:"httpMethod"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method_response#resource_id ApiGatewayMethodResponse#resource_id}.
@@ -35,6 +35,5 @@ type ApiGatewayMethodResponseConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method_response#response_models ApiGatewayMethodResponse#response_models}.
 	ResponseModels *map[string]*string `field:"optional" json:"responseModels" yaml:"responseModels"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_method_response#response_parameters ApiGatewayMethodResponse#response_parameters}.
-	ResponseParameters *map[string]interface{} `field:"optional" json:"responseParameters" yaml:"responseParameters"`
+	ResponseParameters *map[string]any `field:"optional" json:"responseParameters" yaml:"responseParameters"`
 }
-

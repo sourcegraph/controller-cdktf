@@ -19,7 +19,7 @@ func (g *jsiiProxy_GlacierVaultLock) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (g *jsiiProxy_GlacierVaultLock) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GlacierVaultLock) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GlacierVaultLock) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (g *jsiiProxy_GlacierVaultLock) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GlacierVaultLock) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGlacierVaultLock_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateGlacierVaultLock_IsConstructParameters(x interface{}) error {
+func validateGlacierVaultLock_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGlacierVaultLock_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGlacierVaultLock_IsTerraformElementParameters(x interface{}) error {
+func validateGlacierVaultLock_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGlacierVaultLock_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateGlacierVaultLock_IsTerraformResourceParameters(x interface{}) error {
+func validateGlacierVaultLock_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGlacierVaultLock_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultLock) validateSetCompleteLockParameters(val interface{}) error {
+func (j *jsiiProxy_GlacierVaultLock) validateSetCompleteLockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GlacierVaultLock) validateSetCompleteLockParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultLock) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GlacierVaultLock) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -297,7 +297,7 @@ func (j *jsiiProxy_GlacierVaultLock) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultLock) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GlacierVaultLock) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -362,7 +362,7 @@ func (j *jsiiProxy_GlacierVaultLock) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultLock) validateSetIgnoreDeletionErrorParameters(val interface{}) error {
+func (j *jsiiProxy_GlacierVaultLock) validateSetIgnoreDeletionErrorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_GlacierVaultLock) validateSetPolicyParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultLock) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GlacierVaultLock) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -470,4 +470,3 @@ func validateNewGlacierVaultLockParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

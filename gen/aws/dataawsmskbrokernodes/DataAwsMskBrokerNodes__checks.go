@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsMskBrokerNodes) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsMskBrokerNodes) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsMskBrokerNodes_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataAwsMskBrokerNodes_IsConstructParameters(x interface{}) error {
+func validateDataAwsMskBrokerNodes_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsMskBrokerNodes_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsMskBrokerNodes_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsMskBrokerNodes_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsMskBrokerNodes_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsMskBrokerNodes_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsMskBrokerNodes_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsMskBrokerNodes) validateSetClusterArnParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMskBrokerNodes) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsMskBrokerNodes) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataAwsMskBrokerNodesParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

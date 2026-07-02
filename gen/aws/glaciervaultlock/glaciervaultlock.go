@@ -14,19 +14,19 @@ type GlacierVaultLock interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	CompleteLock() interface{}
-	SetCompleteLock(val interface{})
-	CompleteLockInput() interface{}
+	CompleteLock() any
+	SetCompleteLock(val any)
+	CompleteLockInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,9 +42,9 @@ type GlacierVaultLock interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreDeletionError() interface{}
-	SetIgnoreDeletionError(val interface{})
-	IgnoreDeletionErrorInput() interface{}
+	IgnoreDeletionError() any
+	SetIgnoreDeletionError(val any)
+	IgnoreDeletionErrorInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,15 +59,15 @@ type GlacierVaultLock interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VaultName() *string
@@ -77,9 +77,9 @@ type GlacierVaultLock interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GlacierVaultLock interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GlacierVaultLock interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type GlacierVaultLock interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlacierVaultLock
@@ -149,8 +149,8 @@ func (j *jsiiProxy_GlacierVaultLock) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) CompleteLock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) CompleteLock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"completeLock",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GlacierVaultLock) CompleteLock() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) CompleteLockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) CompleteLockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"completeLockInput",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GlacierVaultLock) CompleteLockInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GlacierVaultLock) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlacierVaultLock) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GlacierVaultLock) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_GlacierVaultLock) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) IgnoreDeletionError() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) IgnoreDeletionError() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreDeletionError",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_GlacierVaultLock) IgnoreDeletionError() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) IgnoreDeletionErrorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) IgnoreDeletionErrorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreDeletionErrorInput",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_GlacierVaultLock) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlacierVaultLock) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_GlacierVaultLock) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlacierVaultLock) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_GlacierVaultLock) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVaultLock) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlacierVaultLock) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_GlacierVaultLock) VaultNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource.
 func NewGlacierVaultLock(scope constructs.Construct, id *string, config *GlacierVaultLockConfig) GlacierVaultLock {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewGlacierVaultLock(scope constructs.Construct, id *string, config *Glacier
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewGlacierVaultLock_Override(g GlacierVaultLock, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetCompleteLock(val interface{}) {
+func (j *jsiiProxy_GlacierVaultLock) SetCompleteLock(val any) {
 	if err := j.validateSetCompleteLockParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetCompleteLock(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlacierVaultLock) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetCount(val interface{}) {
+func (j *jsiiProxy_GlacierVaultLock) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlacierVaultLock) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlacierVaultLock) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetId(val *string) {
+func (j *jsiiProxy_GlacierVaultLock) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetIgnoreDeletionError(val interface{}) {
+func (j *jsiiProxy_GlacierVaultLock) SetIgnoreDeletionError(val any) {
 	if err := j.validateSetIgnoreDeletionErrorParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetIgnoreDeletionError(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlacierVaultLock) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetPolicy(val *string) {
+func (j *jsiiProxy_GlacierVaultLock) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlacierVaultLock) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlacierVaultLock) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GlacierVaultLock)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVaultLock)SetVaultName(val *string) {
+func (j *jsiiProxy_GlacierVaultLock) SetVaultName(val *string) {
 	if err := j.validateSetVaultNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func GlacierVaultLock_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func GlacierVaultLock_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlacierVaultLock_IsConstruct(x interface{}) *bool {
+func GlacierVaultLock_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlacierVaultLock_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func GlacierVaultLock_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func GlacierVaultLock_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlacierVaultLock_IsTerraformElement(x interface{}) *bool {
+func GlacierVaultLock_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlacierVaultLock_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func GlacierVaultLock_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func GlacierVaultLock_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlacierVaultLock_IsTerraformResource(x interface{}) *bool {
+func GlacierVaultLock_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlacierVaultLock_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func GlacierVaultLock_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (g *jsiiProxy_GlacierVaultLock) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlacierVaultLock) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlacierVaultLock) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlacierVaultLock) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlacierVaultLock) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GlacierVaultLock) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (g *jsiiProxy_GlacierVaultLock) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlacierVaultLock) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlacierVaultLock) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GlacierVaultLock) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GlacierVaultLock) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (g *jsiiProxy_GlacierVaultLock) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlacierVaultLock) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlacierVaultLock) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GlacierVaultLock) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GlacierVaultLock) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -929,8 +928,8 @@ func (g *jsiiProxy_GlacierVaultLock) ResetOverrideLogicalId() {
 	)
 }
 
-func (g *jsiiProxy_GlacierVaultLock) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlacierVaultLock) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -942,8 +941,8 @@ func (g *jsiiProxy_GlacierVaultLock) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (g *jsiiProxy_GlacierVaultLock) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlacierVaultLock) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -955,8 +954,8 @@ func (g *jsiiProxy_GlacierVaultLock) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GlacierVaultLock) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlacierVaultLock) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -968,8 +967,8 @@ func (g *jsiiProxy_GlacierVaultLock) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlacierVaultLock) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlacierVaultLock) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -994,8 +993,8 @@ func (g *jsiiProxy_GlacierVaultLock) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlacierVaultLock) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlacierVaultLock) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1006,4 +1005,3 @@ func (g *jsiiProxy_GlacierVaultLock) ToTerraform() interface{} {
 
 	return returns
 }
-

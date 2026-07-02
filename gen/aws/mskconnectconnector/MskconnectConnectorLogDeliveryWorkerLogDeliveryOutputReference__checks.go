@@ -131,7 +131,7 @@ func (m *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewMskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReferencePa
 
 	return nil
 }
-

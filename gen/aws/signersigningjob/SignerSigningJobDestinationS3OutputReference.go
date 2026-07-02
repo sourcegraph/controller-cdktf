@@ -15,9 +15,9 @@ type SignerSigningJobDestinationS3OutputReference interface {
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type SignerSigningJobDestinationS3OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type SignerSigningJobDestinationS3OutputReference interface {
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) BucketInput() *
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) TerraformResour
 	return returns
 }
 
-
 func NewSignerSigningJobDestinationS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SignerSigningJobDestinationS3OutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewSignerSigningJobDestinationS3OutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobDestinationS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewSignerSigningJobDestinationS3OutputReference_Override(s SignerSigningJob
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobDestinationS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetBucket(val *s
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetInternalValue(val *SignerSigningJobDestinationS3) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetInternalValue(val *SignerSigningJobDestinationS3) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetPrefix(val *s
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetListAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) InterpolationFo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) ResetPrefix() {
 	)
 }
 
-func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (s *jsiiProxy_SignerSigningJobDestinationS3OutputReference) ToString() *str
 
 	return returns
 }
-

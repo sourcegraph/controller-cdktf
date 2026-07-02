@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
-		reflect.TypeOf((*AppmeshVirtualNode)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNode](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNode{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,27 +84,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeConfig",
-		reflect.TypeOf((*AppmeshVirtualNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpec",
-		reflect.TypeOf((*AppmeshVirtualNodeSpec)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackend",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackend)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackend](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaults",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaults)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaults](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicy",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicy)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,19 +140,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateChainInput", GoGetter: "CertificateChainInput"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -188,7 +188,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,7 +266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateInput", GoGetter: "CertificateInput"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validation", GoGetter: "Validation"},
 			_jsii_.MemberProperty{JsiiProperty: "validationInput", GoGetter: "ValidationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -311,11 +311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -346,7 +346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trust", GoGetter: "Trust"},
 			_jsii_.MemberProperty{JsiiProperty: "trustInput", GoGetter: "TrustInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -354,15 +354,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -396,7 +396,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -423,7 +423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -431,15 +431,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityArns", GoGetter: "CertificateAuthorityArns"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityArnsInput", GoGetter: "CertificateAuthorityArnsInput"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -473,11 +473,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateChainInput", GoGetter: "CertificateChainInput"},
@@ -503,7 +503,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -511,7 +511,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acm", GoGetter: "Acm"},
 			_jsii_.MemberProperty{JsiiProperty: "acmInput", GoGetter: "AcmInput"},
@@ -547,7 +547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -555,11 +555,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -585,7 +585,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -593,7 +593,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendDefaultsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendDefaultsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientPolicy", GoGetter: "ClientPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "clientPolicyInput", GoGetter: "ClientPolicyInput"},
@@ -621,7 +621,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -629,7 +629,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -643,7 +643,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -651,7 +651,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -678,7 +678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualService", GoGetter: "VirtualService"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualServiceInput", GoGetter: "VirtualServiceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -686,15 +686,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualService",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualService)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualService](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -722,7 +722,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -730,19 +730,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateChainInput", GoGetter: "CertificateChainInput"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -778,7 +778,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -810,7 +810,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -818,11 +818,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -848,7 +848,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -856,7 +856,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateInput", GoGetter: "CertificateInput"},
@@ -893,7 +893,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validation", GoGetter: "Validation"},
 			_jsii_.MemberProperty{JsiiProperty: "validationInput", GoGetter: "ValidationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -901,11 +901,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -936,7 +936,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trust", GoGetter: "Trust"},
 			_jsii_.MemberProperty{JsiiProperty: "trustInput", GoGetter: "TrustInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -944,15 +944,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -978,7 +978,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -986,7 +986,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1013,7 +1013,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1021,15 +1021,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityArns", GoGetter: "CertificateAuthorityArns"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityArnsInput", GoGetter: "CertificateAuthorityArnsInput"},
@@ -1055,7 +1055,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1063,11 +1063,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateChainInput", GoGetter: "CertificateChainInput"},
@@ -1093,7 +1093,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1101,7 +1101,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acm", GoGetter: "Acm"},
 			_jsii_.MemberProperty{JsiiProperty: "acmInput", GoGetter: "AcmInput"},
@@ -1137,7 +1137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1145,11 +1145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1175,7 +1175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1183,7 +1183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientPolicy", GoGetter: "ClientPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "clientPolicyInput", GoGetter: "ClientPolicyInput"},
@@ -1213,7 +1213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualServiceName", GoGetter: "VirtualServiceName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualServiceNameInput", GoGetter: "VirtualServiceNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1221,19 +1221,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListener",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListener)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListener](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPool",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPool)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpc",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolGrpc)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolGrpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1259,7 +1259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1267,15 +1267,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolHttp)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolHttp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1289,7 +1289,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1297,7 +1297,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1323,7 +1323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1331,7 +1331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpList",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolHttpList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolHttpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1345,7 +1345,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1353,7 +1353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1382,7 +1382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1390,7 +1390,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1430,7 +1430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1438,11 +1438,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcp",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolTcp)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolTcp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolTcpList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolTcpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1456,7 +1456,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1464,7 +1464,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1490,7 +1490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1498,11 +1498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheck",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerHealthCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerHealthCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerHealthCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1542,7 +1542,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1550,7 +1550,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerList",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerList)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1564,7 +1564,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1572,15 +1572,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetection",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutlierDetection)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutlierDetection](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1608,7 +1608,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1616,11 +1616,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionInterval",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutlierDetectionInterval)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutlierDetectionInterval](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1648,7 +1648,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1656,7 +1656,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseEjectionDuration", GoGetter: "BaseEjectionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "baseEjectionDurationInput", GoGetter: "BaseEjectionDurationInput"},
@@ -1690,7 +1690,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1698,7 +1698,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1745,7 +1745,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1753,11 +1753,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMapping",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerPortMapping)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerPortMapping](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerPortMappingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerPortMappingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1785,7 +1785,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerPortMappingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1793,19 +1793,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeout",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeout)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeout](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpc",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutGrpc)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutGrpc](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1833,7 +1833,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1841,7 +1841,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1873,7 +1873,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1881,11 +1881,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1913,7 +1913,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1921,19 +1921,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp2)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp2](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1961,7 +1961,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1969,7 +1969,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2001,7 +2001,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2009,11 +2009,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2041,7 +2041,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2049,11 +2049,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdle",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttpIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttpIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2081,7 +2081,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2089,7 +2089,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2121,7 +2121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2129,11 +2129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2161,7 +2161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2169,7 +2169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2209,7 +2209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2217,15 +2217,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcp",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutTcp)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutTcp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdle",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutTcpIdle)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutTcpIdle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2253,7 +2253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2261,7 +2261,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2289,7 +2289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2297,19 +2297,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTls",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTls)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTls](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificate",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificate)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcm",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateAcm)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateAcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateArnInput", GoGetter: "CertificateArnInput"},
@@ -2335,7 +2335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2343,11 +2343,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateChainInput", GoGetter: "CertificateChainInput"},
@@ -2375,7 +2375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2383,7 +2383,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acm", GoGetter: "Acm"},
 			_jsii_.MemberProperty{JsiiProperty: "acmInput", GoGetter: "AcmInput"},
@@ -2419,7 +2419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2427,11 +2427,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSds",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateSds)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateSds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2457,7 +2457,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2465,7 +2465,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateInput", GoGetter: "CertificateInput"},
@@ -2498,7 +2498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validation", GoGetter: "Validation"},
 			_jsii_.MemberProperty{JsiiProperty: "validationInput", GoGetter: "ValidationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2506,11 +2506,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidation",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidation)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2541,7 +2541,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trust", GoGetter: "Trust"},
 			_jsii_.MemberProperty{JsiiProperty: "trustInput", GoGetter: "TrustInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2549,15 +2549,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2583,7 +2583,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2591,7 +2591,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2618,7 +2618,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2626,15 +2626,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrust",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationTrust)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationTrust](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationTrustFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationTrustFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateChainInput", GoGetter: "CertificateChainInput"},
@@ -2660,7 +2660,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2668,7 +2668,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2700,7 +2700,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2708,11 +2708,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSds",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationTrustSds)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationTrustSds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2738,7 +2738,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2746,19 +2746,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLogging",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecLogging)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecLogging](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLog",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecLoggingAccessLog)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecLoggingAccessLog](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFile",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecLoggingAccessLogFile)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecLoggingAccessLogFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2784,7 +2784,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2792,7 +2792,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingAccessLogOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecLoggingAccessLogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecLoggingAccessLogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2820,7 +2820,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2828,7 +2828,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecLoggingOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecLoggingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecLoggingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLog", GoGetter: "AccessLog"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLogInput", GoGetter: "AccessLogInput"},
@@ -2856,7 +2856,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecLoggingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2864,7 +2864,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backend", GoGetter: "Backend"},
 			_jsii_.MemberProperty{JsiiProperty: "backendDefaults", GoGetter: "BackendDefaults"},
@@ -2908,7 +2908,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2916,15 +2916,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscovery",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecServiceDiscovery)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecServiceDiscovery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
 			_jsii_.MemberProperty{JsiiProperty: "attributesInput", GoGetter: "AttributesInput"},
@@ -2955,7 +2955,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2963,11 +2963,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDns",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecServiceDiscoveryDns)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecServiceDiscoveryDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2993,7 +2993,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3001,7 +3001,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryOutputReference",
-		reflect.TypeOf((*AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppmeshVirtualNodeSpecServiceDiscoveryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsCloudMap", GoGetter: "AwsCloudMap"},
 			_jsii_.MemberProperty{JsiiProperty: "awsCloudMapInput", GoGetter: "AwsCloudMapInput"},
@@ -3033,7 +3033,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -15,9 +15,9 @@ type TransferServerEndpointDetailsOutputReference interface {
 	AddressAllocationIdsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type TransferServerEndpointDetailsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type TransferServerEndpointDetailsOutputReference interface {
 	ResetVpcId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) AddressAllocati
 	return returns
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) VpcIdInput() *s
 	return returns
 }
 
-
 func NewTransferServerEndpointDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TransferServerEndpointDetailsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewTransferServerEndpointDetailsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewTransferServerEndpointDetailsOutputReference_Override(t TransferServerEn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetAddressAllocationIds(val *[]*string) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetAddressAllocationIds(val *[]*string) {
 	if err := j.validateSetAddressAllocationIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetAddressAlloca
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetInternalValue(val *TransferServerEndpointDetails) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetInternalValue(val *TransferServerEndpointDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetSecurityGroup
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetSubnetIds(val
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetVpcEndpointId(val *string) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetVpcEndpointId(val *string) {
 	if err := j.validateSetVpcEndpointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetVpcEndpointId
 	)
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference)SetVpcId(val *string) {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) ResetVpcId() {
 	)
 }
 
-func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (t *jsiiProxy_TransferServerEndpointDetailsOutputReference) ToString() *str
 
 	return returns
 }
-

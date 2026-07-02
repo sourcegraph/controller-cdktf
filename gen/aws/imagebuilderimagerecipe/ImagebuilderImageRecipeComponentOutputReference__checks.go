@@ -90,7 +90,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateInte
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validatePutParameterParameters(value interface{}) error {
+func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validatePutParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewImagebuilderImageRecipeComponentOutputReferenceParameters(terraf
 
 	return nil
 }
-

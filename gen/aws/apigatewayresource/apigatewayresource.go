@@ -15,15 +15,15 @@ type ApiGatewayResource interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,27 +57,27 @@ type ApiGatewayResource interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestApiId() *string
 	SetRestApiId(val *string)
 	RestApiIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ApiGatewayResource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type ApiGatewayResource interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type ApiGatewayResource interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiGatewayResource
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ApiGatewayResource) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayResource) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayResource) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ApiGatewayResource) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayResource) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiGatewayResource) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ApiGatewayResource) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayResource) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayResource) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_ApiGatewayResource) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayResource) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiGatewayResource) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_ApiGatewayResource) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayResource) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayResource) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_ApiGatewayResource) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayResource) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiGatewayResource) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_ApiGatewayResource) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/api_gateway_resource aws_api_gateway_resource} Resource.
 func NewApiGatewayResource(scope constructs.Construct, id *string, config *ApiGatewayResourceConfig) ApiGatewayResource {
 	_init_.Initialize()
@@ -398,7 +397,7 @@ func NewApiGatewayResource(scope constructs.Construct, id *string, config *ApiGa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -411,12 +410,12 @@ func NewApiGatewayResource_Override(a ApiGatewayResource, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiGatewayResource) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiGatewayResource) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiGatewayResource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiGatewayResource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetId(val *string) {
+func (j *jsiiProxy_ApiGatewayResource) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiGatewayResource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetParentId(val *string) {
+func (j *jsiiProxy_ApiGatewayResource) SetParentId(val *string) {
 	if err := j.validateSetParentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetParentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetPathPart(val *string) {
+func (j *jsiiProxy_ApiGatewayResource) SetPathPart(val *string) {
 	if err := j.validateSetPathPartParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetPathPart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiGatewayResource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiGatewayResource) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_ApiGatewayResource)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayResource)SetRestApiId(val *string) {
+func (j *jsiiProxy_ApiGatewayResource) SetRestApiId(val *string) {
 	if err := j.validateSetRestApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func ApiGatewayResource_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func ApiGatewayResource_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiGatewayResource_IsConstruct(x interface{}) *bool {
+func ApiGatewayResource_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayResource_IsConstructParameters(x); err != nil {
@@ -575,7 +574,7 @@ func ApiGatewayResource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func ApiGatewayResource_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiGatewayResource_IsTerraformElement(x interface{}) *bool {
+func ApiGatewayResource_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayResource_IsTerraformElementParameters(x); err != nil {
@@ -594,7 +593,7 @@ func ApiGatewayResource_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func ApiGatewayResource_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiGatewayResource_IsTerraformResource(x interface{}) *bool {
+func ApiGatewayResource_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiGatewayResource_IsTerraformResourceParameters(x); err != nil {
@@ -613,7 +612,7 @@ func ApiGatewayResource_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,31 +637,31 @@ func (a *jsiiProxy_ApiGatewayResource) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayResource) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiGatewayResource) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayResource) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiGatewayResource) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (a *jsiiProxy_ApiGatewayResource) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,15 +789,15 @@ func (a *jsiiProxy_ApiGatewayResource) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayResource) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayResource) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -817,7 +816,7 @@ func (a *jsiiProxy_ApiGatewayResource) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -830,7 +829,7 @@ func (a *jsiiProxy_ApiGatewayResource) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,18 +843,18 @@ func (a *jsiiProxy_ApiGatewayResource) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayResource) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiGatewayResource) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -866,7 +865,7 @@ func (a *jsiiProxy_ApiGatewayResource) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -877,7 +876,7 @@ func (a *jsiiProxy_ApiGatewayResource) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -897,8 +896,8 @@ func (a *jsiiProxy_ApiGatewayResource) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayResource) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiGatewayResource) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -910,8 +909,8 @@ func (a *jsiiProxy_ApiGatewayResource) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayResource) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiGatewayResource) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -923,8 +922,8 @@ func (a *jsiiProxy_ApiGatewayResource) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayResource) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayResource) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -936,8 +935,8 @@ func (a *jsiiProxy_ApiGatewayResource) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayResource) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayResource) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -962,8 +961,8 @@ func (a *jsiiProxy_ApiGatewayResource) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayResource) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiGatewayResource) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -974,4 +973,3 @@ func (a *jsiiProxy_ApiGatewayResource) ToTerraform() interface{} {
 
 	return returns
 }
-

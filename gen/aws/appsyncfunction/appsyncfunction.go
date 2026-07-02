@@ -22,15 +22,15 @@ type AppsyncFunction interface {
 	SetCode(val *string)
 	CodeInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataSource() *string
 	SetDataSource(val *string)
 	DataSourceInput() *string
@@ -73,11 +73,11 @@ type AppsyncFunction interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestMappingTemplate() *string
 	SetRequestMappingTemplate(val *string)
 	RequestMappingTemplateInput() *string
@@ -91,16 +91,16 @@ type AppsyncFunction interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type AppsyncFunction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type AppsyncFunction interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type AppsyncFunction interface {
 	ResetResponseMappingTemplate()
 	ResetRuntime()
 	ResetSyncConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppsyncFunction
@@ -229,8 +229,8 @@ func (j *jsiiProxy_AppsyncFunction) CodeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncFunction) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncFunction) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_AppsyncFunction) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncFunction) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppsyncFunction) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_AppsyncFunction) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncFunction) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncFunction) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_AppsyncFunction) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncFunction) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppsyncFunction) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_AppsyncFunction) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncFunction) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncFunction) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_AppsyncFunction) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncFunction) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppsyncFunction) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -589,7 +589,6 @@ func (j *jsiiProxy_AppsyncFunction) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appsync_function aws_appsync_function} Resource.
 func NewAppsyncFunction(scope constructs.Construct, id *string, config *AppsyncFunctionConfig) AppsyncFunction {
 	_init_.Initialize()
@@ -601,7 +600,7 @@ func NewAppsyncFunction(scope constructs.Construct, id *string, config *AppsyncF
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -614,12 +613,12 @@ func NewAppsyncFunction_Override(a AppsyncFunction, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetApiId(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetApiId(val *string) {
 	if err := j.validateSetApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_AppsyncFunction)SetApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetCode(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetCode(val *string) {
 	if err := j.validateSetCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_AppsyncFunction)SetCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppsyncFunction) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_AppsyncFunction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetCount(val interface{}) {
+func (j *jsiiProxy_AppsyncFunction) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_AppsyncFunction)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetDataSource(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetDataSource(val *string) {
 	if err := j.validateSetDataSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_AppsyncFunction)SetDataSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppsyncFunction) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_AppsyncFunction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetDescription(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_AppsyncFunction)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppsyncFunction) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -701,7 +700,7 @@ func (j *jsiiProxy_AppsyncFunction)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetFunctionVersion(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetFunctionVersion(val *string) {
 	if err := j.validateSetFunctionVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_AppsyncFunction)SetFunctionVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetId(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_AppsyncFunction)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppsyncFunction) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_AppsyncFunction)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetMaxBatchSize(val *float64) {
+func (j *jsiiProxy_AppsyncFunction) SetMaxBatchSize(val *float64) {
 	if err := j.validateSetMaxBatchSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_AppsyncFunction)SetMaxBatchSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetName(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_AppsyncFunction)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppsyncFunction) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -764,7 +763,7 @@ func (j *jsiiProxy_AppsyncFunction)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppsyncFunction) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_AppsyncFunction)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetRequestMappingTemplate(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetRequestMappingTemplate(val *string) {
 	if err := j.validateSetRequestMappingTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_AppsyncFunction)SetRequestMappingTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunction)SetResponseMappingTemplate(val *string) {
+func (j *jsiiProxy_AppsyncFunction) SetResponseMappingTemplate(val *string) {
 	if err := j.validateSetResponseMappingTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func AppsyncFunction_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func AppsyncFunction_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppsyncFunction_IsConstruct(x interface{}) *bool {
+func AppsyncFunction_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppsyncFunction_IsConstructParameters(x); err != nil {
@@ -844,7 +843,7 @@ func AppsyncFunction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func AppsyncFunction_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppsyncFunction_IsTerraformElement(x interface{}) *bool {
+func AppsyncFunction_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppsyncFunction_IsTerraformElementParameters(x); err != nil {
@@ -863,7 +862,7 @@ func AppsyncFunction_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func AppsyncFunction_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppsyncFunction_IsTerraformResource(x interface{}) *bool {
+func AppsyncFunction_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppsyncFunction_IsTerraformResourceParameters(x); err != nil {
@@ -882,7 +881,7 @@ func AppsyncFunction_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -907,31 +906,31 @@ func (a *jsiiProxy_AppsyncFunction) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppsyncFunction) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppsyncFunction) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppsyncFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppsyncFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (a *jsiiProxy_AppsyncFunction) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (a *jsiiProxy_AppsyncFunction) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (a *jsiiProxy_AppsyncFunction) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (a *jsiiProxy_AppsyncFunction) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (a *jsiiProxy_AppsyncFunction) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (a *jsiiProxy_AppsyncFunction) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (a *jsiiProxy_AppsyncFunction) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,15 +1058,15 @@ func (a *jsiiProxy_AppsyncFunction) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunction) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncFunction) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1086,7 +1085,7 @@ func (a *jsiiProxy_AppsyncFunction) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (a *jsiiProxy_AppsyncFunction) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,18 +1112,18 @@ func (a *jsiiProxy_AppsyncFunction) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppsyncFunction) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppsyncFunction) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (a *jsiiProxy_AppsyncFunction) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (a *jsiiProxy_AppsyncFunction) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (a *jsiiProxy_AppsyncFunction) PutRuntime(value *AppsyncFunctionRuntime) {
 	_jsii_.InvokeVoid(
 		a,
 		"putRuntime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (a *jsiiProxy_AppsyncFunction) PutSyncConfig(value *AppsyncFunctionSyncConf
 	_jsii_.InvokeVoid(
 		a,
 		"putSyncConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1252,8 +1251,8 @@ func (a *jsiiProxy_AppsyncFunction) ResetSyncConfig() {
 	)
 }
 
-func (a *jsiiProxy_AppsyncFunction) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppsyncFunction) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1265,8 +1264,8 @@ func (a *jsiiProxy_AppsyncFunction) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunction) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppsyncFunction) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1278,8 +1277,8 @@ func (a *jsiiProxy_AppsyncFunction) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunction) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncFunction) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1291,8 +1290,8 @@ func (a *jsiiProxy_AppsyncFunction) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunction) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncFunction) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1317,8 +1316,8 @@ func (a *jsiiProxy_AppsyncFunction) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunction) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppsyncFunction) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1329,4 +1328,3 @@ func (a *jsiiProxy_AppsyncFunction) ToTerraform() interface{} {
 
 	return returns
 }
-

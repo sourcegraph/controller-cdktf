@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
-		reflect.TypeOf((*MwaaEnvironment)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowStart", GoGetter: "WeeklyMaintenanceWindowStart"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowStartInput", GoGetter: "WeeklyMaintenanceWindowStartInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -134,19 +134,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig",
-		reflect.TypeOf((*MwaaEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdated",
-		reflect.TypeOf((*MwaaEnvironmentLastUpdated)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLastUpdated](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedError",
-		reflect.TypeOf((*MwaaEnvironmentLastUpdatedError)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLastUpdatedError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
-		reflect.TypeOf((*MwaaEnvironmentLastUpdatedErrorList)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLastUpdatedErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLastUpdatedErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLastUpdatedErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLastUpdatedErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -201,7 +201,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
-		reflect.TypeOf((*MwaaEnvironmentLastUpdatedList)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLastUpdatedList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLastUpdatedList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -222,7 +222,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLastUpdatedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLastUpdatedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,15 +257,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfiguration",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationDagProcessingLogs)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationDagProcessingLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -348,7 +348,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerLogs", GoGetter: "WorkerLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "workerLogsInput", GoGetter: "WorkerLogsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLoggingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -356,11 +356,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationSchedulerLogs)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationSchedulerLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -391,7 +391,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -399,11 +399,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogs",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationTaskLogs)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationTaskLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -434,7 +434,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -442,11 +442,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWebserverLogs)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationWebserverLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,11 +485,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWorkerLogs)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationWorkerLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -520,7 +520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -528,11 +528,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfiguration",
-		reflect.TypeOf((*MwaaEnvironmentNetworkConfiguration)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentNetworkConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentNetworkConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentNetworkConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -560,7 +560,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentNetworkConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -568,11 +568,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeouts",
-		reflect.TypeOf((*MwaaEnvironmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
-		reflect.TypeOf((*MwaaEnvironmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MwaaEnvironmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -605,7 +605,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MwaaEnvironmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

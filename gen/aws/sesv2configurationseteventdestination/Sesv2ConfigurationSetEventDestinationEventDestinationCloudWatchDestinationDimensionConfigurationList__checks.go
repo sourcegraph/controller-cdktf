@@ -34,7 +34,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWat
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSesv2ConfigurationSetEventDestinationEventDestinationCloudWatchD
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateInterp
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validatePutColumnsParameters(value interface{}) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validatePutColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validatePutSke
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validatePutSortColumnsParameters(value interface{}) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validatePutSortColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetBuc
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,7 +255,7 @@ func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetCompressedParameters(val interface{}) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetCompressedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetPar
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetStoredAsSubDirectoriesParameters(val interface{}) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetStoredAsSubDirectoriesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -370,4 +370,3 @@ func validateNewGluePartitionStorageDescriptorOutputReferenceParameters(terrafor
 
 	return nil
 }
-

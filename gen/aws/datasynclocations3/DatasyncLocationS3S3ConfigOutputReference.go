@@ -15,9 +15,9 @@ type DatasyncLocationS3S3ConfigOutputReference interface {
 	BucketAccessRoleArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type DatasyncLocationS3S3ConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type DatasyncLocationS3S3ConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) BucketAccessRoleAr
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewDatasyncLocationS3S3ConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatasyncLocationS3S3ConfigOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewDatasyncLocationS3S3ConfigOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewDatasyncLocationS3S3ConfigOutputReference_Override(d DatasyncLocationS3S
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetBucketAccessRoleArn(val *string) {
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) SetBucketAccessRoleArn(val *string) {
 	if err := j.validateSetBucketAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetBucketAccessRole
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetInternalValue(val *DatasyncLocationS3S3Config) {
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) SetInternalValue(val *DatasyncLocationS3S3Config) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (d *jsiiProxy_DatasyncLocationS3S3ConfigOutputReference) ToString() *string
 
 	return returns
 }
-

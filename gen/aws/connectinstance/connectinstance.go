@@ -13,27 +13,27 @@ import (
 type ConnectInstance interface {
 	cdktf.TerraformResource
 	Arn() *string
-	AutoResolveBestVoicesEnabled() interface{}
-	SetAutoResolveBestVoicesEnabled(val interface{})
-	AutoResolveBestVoicesEnabledInput() interface{}
+	AutoResolveBestVoicesEnabled() any
+	SetAutoResolveBestVoicesEnabled(val any)
+	AutoResolveBestVoicesEnabledInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	ContactFlowLogsEnabled() interface{}
-	SetContactFlowLogsEnabled(val interface{})
-	ContactFlowLogsEnabledInput() interface{}
-	ContactLensEnabled() interface{}
-	SetContactLensEnabled(val interface{})
-	ContactLensEnabledInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	ContactFlowLogsEnabled() any
+	SetContactFlowLogsEnabled(val any)
+	ContactFlowLogsEnabledInput() any
+	ContactLensEnabled() any
+	SetContactLensEnabled(val any)
+	ContactLensEnabledInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -42,9 +42,9 @@ type ConnectInstance interface {
 	DirectoryId() *string
 	SetDirectoryId(val *string)
 	DirectoryIdInput() *string
-	EarlyMediaEnabled() interface{}
-	SetEarlyMediaEnabled(val interface{})
-	EarlyMediaEnabledInput() interface{}
+	EarlyMediaEnabled() any
+	SetEarlyMediaEnabled(val any)
+	EarlyMediaEnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,9 +59,9 @@ type ConnectInstance interface {
 	SetIdentityManagementType(val *string)
 	IdentityManagementTypeInput() *string
 	IdInput() *string
-	InboundCallsEnabled() interface{}
-	SetInboundCallsEnabled(val interface{})
-	InboundCallsEnabledInput() interface{}
+	InboundCallsEnabled() any
+	SetInboundCallsEnabled(val any)
+	InboundCallsEnabledInput() any
 	InstanceAlias() *string
 	SetInstanceAlias(val *string)
 	InstanceAliasInput() *string
@@ -69,41 +69,41 @@ type ConnectInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MultiPartyConferenceEnabled() interface{}
-	SetMultiPartyConferenceEnabled(val interface{})
-	MultiPartyConferenceEnabledInput() interface{}
+	MultiPartyConferenceEnabled() any
+	SetMultiPartyConferenceEnabled(val any)
+	MultiPartyConferenceEnabledInput() any
 	// The tree node.
 	Node() constructs.Node
-	OutboundCallsEnabled() interface{}
-	SetOutboundCallsEnabled(val interface{})
-	OutboundCallsEnabledInput() interface{}
+	OutboundCallsEnabled() any
+	SetOutboundCallsEnabled(val any)
+	OutboundCallsEnabledInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceRole() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ConnectInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type ConnectInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type ConnectInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type ConnectInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ConnectInstance
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ConnectInstance) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) AutoResolveBestVoicesEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) AutoResolveBestVoicesEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoResolveBestVoicesEnabled",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ConnectInstance) AutoResolveBestVoicesEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) AutoResolveBestVoicesEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) AutoResolveBestVoicesEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoResolveBestVoicesEnabledInput",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ConnectInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ConnectInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConnectInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_ConnectInstance) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) ContactFlowLogsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) ContactFlowLogsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contactFlowLogsEnabled",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_ConnectInstance) ContactFlowLogsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) ContactFlowLogsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) ContactFlowLogsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contactFlowLogsEnabledInput",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_ConnectInstance) ContactFlowLogsEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) ContactLensEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) ContactLensEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contactLensEnabled",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_ConnectInstance) ContactLensEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) ContactLensEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) ContactLensEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contactLensEnabledInput",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_ConnectInstance) ContactLensEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_ConnectInstance) DirectoryIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) EarlyMediaEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) EarlyMediaEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"earlyMediaEnabled",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_ConnectInstance) EarlyMediaEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) EarlyMediaEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) EarlyMediaEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"earlyMediaEnabledInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_ConnectInstance) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) InboundCallsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) InboundCallsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inboundCallsEnabled",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_ConnectInstance) InboundCallsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) InboundCallsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) InboundCallsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inboundCallsEnabledInput",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_ConnectInstance) Lifecycle() *cdktf.TerraformResourceLifecycl
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiPartyConferenceEnabled",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiPartyConferenceEnabledInput",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_ConnectInstance) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) OutboundCallsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) OutboundCallsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"outboundCallsEnabled",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_ConnectInstance) OutboundCallsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) OutboundCallsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) OutboundCallsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"outboundCallsEnabledInput",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_ConnectInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ConnectInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_ConnectInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_ConnectInstance) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ConnectInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -601,8 +601,8 @@ func (j *jsiiProxy_ConnectInstance) Timeouts() ConnectInstanceTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -610,7 +610,6 @@ func (j *jsiiProxy_ConnectInstance) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/connect_instance aws_connect_instance} Resource.
 func NewConnectInstance(scope constructs.Construct, id *string, config *ConnectInstanceConfig) ConnectInstance {
@@ -623,7 +622,7 @@ func NewConnectInstance(scope constructs.Construct, id *string, config *ConnectI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -636,12 +635,12 @@ func NewConnectInstance_Override(c ConnectInstance, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetAutoResolveBestVoicesEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetAutoResolveBestVoicesEnabled(val any) {
 	if err := j.validateSetAutoResolveBestVoicesEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_ConnectInstance)SetAutoResolveBestVoicesEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_ConnectInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetContactFlowLogsEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetContactFlowLogsEnabled(val any) {
 	if err := j.validateSetContactFlowLogsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_ConnectInstance)SetContactFlowLogsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetContactLensEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetContactLensEnabled(val any) {
 	if err := j.validateSetContactLensEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_ConnectInstance)SetContactLensEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_ConnectInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ConnectInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -704,7 +703,7 @@ func (j *jsiiProxy_ConnectInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetDirectoryId(val *string) {
+func (j *jsiiProxy_ConnectInstance) SetDirectoryId(val *string) {
 	if err := j.validateSetDirectoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_ConnectInstance)SetDirectoryId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetEarlyMediaEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetEarlyMediaEnabled(val any) {
 	if err := j.validateSetEarlyMediaEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_ConnectInstance)SetEarlyMediaEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConnectInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -734,7 +733,7 @@ func (j *jsiiProxy_ConnectInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetId(val *string) {
+func (j *jsiiProxy_ConnectInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_ConnectInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetIdentityManagementType(val *string) {
+func (j *jsiiProxy_ConnectInstance) SetIdentityManagementType(val *string) {
 	if err := j.validateSetIdentityManagementTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_ConnectInstance)SetIdentityManagementType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetInboundCallsEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetInboundCallsEnabled(val any) {
 	if err := j.validateSetInboundCallsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_ConnectInstance)SetInboundCallsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetInstanceAlias(val *string) {
+func (j *jsiiProxy_ConnectInstance) SetInstanceAlias(val *string) {
 	if err := j.validateSetInstanceAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_ConnectInstance)SetInstanceAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConnectInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_ConnectInstance)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetMultiPartyConferenceEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetMultiPartyConferenceEnabled(val any) {
 	if err := j.validateSetMultiPartyConferenceEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_ConnectInstance)SetMultiPartyConferenceEnabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetOutboundCallsEnabled(val interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetOutboundCallsEnabled(val any) {
 	if err := j.validateSetOutboundCallsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_ConnectInstance)SetOutboundCallsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConnectInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -819,7 +818,7 @@ func (j *jsiiProxy_ConnectInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ConnectInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func ConnectInstance_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func ConnectInstance_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ConnectInstance_IsConstruct(x interface{}) *bool {
+func ConnectInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectInstance_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func ConnectInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func ConnectInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ConnectInstance_IsTerraformElement(x interface{}) *bool {
+func ConnectInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectInstance_IsTerraformElementParameters(x); err != nil {
@@ -896,7 +895,7 @@ func ConnectInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func ConnectInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ConnectInstance_IsTerraformResource(x interface{}) *bool {
+func ConnectInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConnectInstance_IsTerraformResourceParameters(x); err != nil {
@@ -915,7 +914,7 @@ func ConnectInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,31 +939,31 @@ func (c *jsiiProxy_ConnectInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ConnectInstance) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ConnectInstance) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ConnectInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (c *jsiiProxy_ConnectInstance) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (c *jsiiProxy_ConnectInstance) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (c *jsiiProxy_ConnectInstance) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (c *jsiiProxy_ConnectInstance) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (c *jsiiProxy_ConnectInstance) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (c *jsiiProxy_ConnectInstance) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (c *jsiiProxy_ConnectInstance) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,15 +1091,15 @@ func (c *jsiiProxy_ConnectInstance) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1119,7 +1118,7 @@ func (c *jsiiProxy_ConnectInstance) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (c *jsiiProxy_ConnectInstance) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,18 +1145,18 @@ func (c *jsiiProxy_ConnectInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ConnectInstance) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ConnectInstance) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (c *jsiiProxy_ConnectInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (c *jsiiProxy_ConnectInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (c *jsiiProxy_ConnectInstance) PutTimeouts(value *ConnectInstanceTimeouts) 
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1274,8 +1273,8 @@ func (c *jsiiProxy_ConnectInstance) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ConnectInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConnectInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1287,8 +1286,8 @@ func (c *jsiiProxy_ConnectInstance) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ConnectInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1300,8 +1299,8 @@ func (c *jsiiProxy_ConnectInstance) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1313,8 +1312,8 @@ func (c *jsiiProxy_ConnectInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1339,8 +1338,8 @@ func (c *jsiiProxy_ConnectInstance) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ConnectInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1351,4 +1350,3 @@ func (c *jsiiProxy_ConnectInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

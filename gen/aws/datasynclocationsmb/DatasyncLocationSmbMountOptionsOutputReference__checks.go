@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatasyncLocationSmbMountOptionsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationSmbMountOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncLocationSmbMountOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDatasyncLocationSmbMountOptionsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

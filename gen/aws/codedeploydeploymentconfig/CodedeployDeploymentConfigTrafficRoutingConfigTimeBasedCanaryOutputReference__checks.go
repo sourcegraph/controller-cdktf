@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOut
 
 	return nil
 }
-

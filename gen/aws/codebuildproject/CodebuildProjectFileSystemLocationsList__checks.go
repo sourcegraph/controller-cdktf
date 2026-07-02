@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodebuildProjectFileSystemLocationsListParameters(terraformResou
 
 	return nil
 }
-

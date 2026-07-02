@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomHeaderOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginCustomHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomHeaderOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginCustomHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudfrontDistributionOriginCustomHeaderOutputReferenceParameter
 
 	return nil
 }
-

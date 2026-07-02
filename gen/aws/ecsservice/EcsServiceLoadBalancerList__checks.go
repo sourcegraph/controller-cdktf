@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcsServiceLoadBalancerList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceLoadBalancerList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceLoadBalancerList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcsServiceLoadBalancerListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

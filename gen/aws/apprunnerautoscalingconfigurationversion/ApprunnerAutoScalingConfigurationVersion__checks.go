@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateAddMoveTarg
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMoveFromIdP
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApprunnerAutoScalingConfigurationVersion_GenerateConfigForImportPar
 	return nil
 }
 
-func validateApprunnerAutoScalingConfigurationVersion_IsConstructParameters(x interface{}) error {
+func validateApprunnerAutoScalingConfigurationVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApprunnerAutoScalingConfigurationVersion_IsConstructParameters(x in
 	return nil
 }
 
-func validateApprunnerAutoScalingConfigurationVersion_IsTerraformElementParameters(x interface{}) error {
+func validateApprunnerAutoScalingConfigurationVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApprunnerAutoScalingConfigurationVersion_IsTerraformElementParamete
 	return nil
 }
 
-func validateApprunnerAutoScalingConfigurationVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateApprunnerAutoScalingConfigurationVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetAutoScal
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetMinSizeP
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewApprunnerAutoScalingConfigurationVersionParameters(scope constru
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type MskServerlessClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MskServerlessClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// client_authentication block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
@@ -28,7 +28,7 @@ type MskServerlessClusterConfig struct {
 	// vpc_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
-	VpcConfig interface{} `field:"required" json:"vpcConfig" yaml:"vpcConfig"`
+	VpcConfig any `field:"required" json:"vpcConfig" yaml:"vpcConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_serverless_cluster#id MskServerlessCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -43,4 +43,3 @@ type MskServerlessClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
 	Timeouts *MskServerlessClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

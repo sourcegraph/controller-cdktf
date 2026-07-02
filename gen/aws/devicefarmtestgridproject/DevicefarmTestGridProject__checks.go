@@ -19,7 +19,7 @@ func (d *jsiiProxy_DevicefarmTestGridProject) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (d *jsiiProxy_DevicefarmTestGridProject) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DevicefarmTestGridProject) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DevicefarmTestGridProject) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (d *jsiiProxy_DevicefarmTestGridProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DevicefarmTestGridProject) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDevicefarmTestGridProject_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDevicefarmTestGridProject_IsConstructParameters(x interface{}) error {
+func validateDevicefarmTestGridProject_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDevicefarmTestGridProject_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDevicefarmTestGridProject_IsTerraformElementParameters(x interface{}) error {
+func validateDevicefarmTestGridProject_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDevicefarmTestGridProject_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateDevicefarmTestGridProject_IsTerraformResourceParameters(x interface{}) error {
+func validateDevicefarmTestGridProject_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDevicefarmTestGridProject_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmTestGridProject) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmTestGridProject) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DevicefarmTestGridProject) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmTestGridProject) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DevicefarmTestGridProject) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DevicefarmTestGridProject) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmTestGridProject) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DevicefarmTestGridProject) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewDevicefarmTestGridProjectParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package codedeploydeploymentgroup
 
-
 type CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo struct {
 	// prod_traffic_route block.
 	//
@@ -9,10 +8,9 @@ type CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo struct {
 	// target_group block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#target_group CodedeployDeploymentGroup#target_group}
-	TargetGroup interface{} `field:"required" json:"targetGroup" yaml:"targetGroup"`
+	TargetGroup any `field:"required" json:"targetGroup" yaml:"targetGroup"`
 	// test_traffic_route block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codedeploy_deployment_group#test_traffic_route CodedeployDeploymentGroup#test_traffic_route}
 	TestTrafficRoute *CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute `field:"optional" json:"testTrafficRoute" yaml:"testTrafficRoute"`
 }
-

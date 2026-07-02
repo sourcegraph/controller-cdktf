@@ -106,7 +106,7 @@ func (j *jsiiProxy_IotThingGroupPropertiesAttributePayloadOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IotThingGroupPropertiesAttributePayloadOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotThingGroupPropertiesAttributePayloadOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIotThingGroupPropertiesAttributePayloadOutputReferenceParameters
 
 	return nil
 }
-

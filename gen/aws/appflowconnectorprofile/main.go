@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
-		reflect.TypeOf((*AppflowConnectorProfile)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,23 +81,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig",
-		reflect.TypeOf((*AppflowConnectorProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,11 +178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,15 +259,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,7 +305,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -403,11 +403,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -443,11 +443,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiToken", GoGetter: "ApiToken"},
 			_jsii_.MemberProperty{JsiiProperty: "apiTokenInput", GoGetter: "ApiTokenInput"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -481,15 +481,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -519,7 +519,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -527,7 +527,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -565,7 +565,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -573,15 +573,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -611,7 +611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -619,7 +619,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -653,7 +653,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -661,11 +661,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
@@ -697,7 +697,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -705,15 +705,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -743,7 +743,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -751,7 +751,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -786,7 +786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -794,7 +794,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amplitude", GoGetter: "Amplitude"},
 			_jsii_.MemberProperty{JsiiProperty: "amplitudeInput", GoGetter: "AmplitudeInput"},
@@ -890,7 +890,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zendesk", GoGetter: "Zendesk"},
 			_jsii_.MemberProperty{JsiiProperty: "zendeskInput", GoGetter: "ZendeskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -898,11 +898,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -930,7 +930,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -938,15 +938,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -976,7 +976,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -984,7 +984,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -1021,7 +1021,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1029,15 +1029,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1065,7 +1065,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1073,15 +1073,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -1111,7 +1111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1119,7 +1119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -1157,7 +1157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1165,7 +1165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthCredentials", GoGetter: "BasicAuthCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthCredentialsInput", GoGetter: "BasicAuthCredentialsInput"},
@@ -1197,7 +1197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1205,11 +1205,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1237,7 +1237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1245,11 +1245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -1275,7 +1275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1283,15 +1283,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -1321,7 +1321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1329,7 +1329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -1364,7 +1364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1372,11 +1372,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1404,7 +1404,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1412,11 +1412,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiSecretKey", GoGetter: "ApiSecretKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiSecretKeyInput", GoGetter: "ApiSecretKeyInput"},
@@ -1442,7 +1442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1450,11 +1450,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1482,7 +1482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1490,15 +1490,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCode", GoGetter: "AuthCode"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeInput", GoGetter: "AuthCodeInput"},
@@ -1528,7 +1528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1536,7 +1536,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -1571,7 +1571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1579,15 +1579,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1611,7 +1611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1619,15 +1619,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1658,7 +1658,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenUrlInput", GoGetter: "TokenUrlInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1666,7 +1666,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1697,7 +1697,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1705,11 +1705,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1735,7 +1735,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1743,11 +1743,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1773,7 +1773,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1781,11 +1781,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1809,7 +1809,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1817,11 +1817,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1845,7 +1845,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1853,11 +1853,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1883,7 +1883,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1891,11 +1891,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1921,7 +1921,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1929,7 +1929,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amplitude", GoGetter: "Amplitude"},
 			_jsii_.MemberProperty{JsiiProperty: "amplitudeInput", GoGetter: "AmplitudeInput"},
@@ -2025,7 +2025,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zendesk", GoGetter: "Zendesk"},
 			_jsii_.MemberProperty{JsiiProperty: "zendeskInput", GoGetter: "ZendeskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2033,11 +2033,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -2080,7 +2080,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2088,11 +2088,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2122,7 +2122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2130,15 +2130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCodeUrl", GoGetter: "AuthCodeUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "authCodeUrlInput", GoGetter: "AuthCodeUrlInput"},
@@ -2168,7 +2168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenUrlInput", GoGetter: "TokenUrlInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2176,7 +2176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationHostUrl", GoGetter: "ApplicationHostUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationHostUrlInput", GoGetter: "ApplicationHostUrlInput"},
@@ -2218,7 +2218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2226,11 +2226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2256,7 +2256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2264,11 +2264,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2292,7 +2292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2300,11 +2300,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2330,7 +2330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2338,11 +2338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "accountNameInput", GoGetter: "AccountNameInput"},
@@ -2384,7 +2384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "warehouse", GoGetter: "Warehouse"},
 			_jsii_.MemberProperty{JsiiProperty: "warehouseInput", GoGetter: "WarehouseInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2392,11 +2392,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2420,7 +2420,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2428,11 +2428,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2458,7 +2458,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2466,11 +2466,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2496,7 +2496,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2504,7 +2504,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigOutputReference",
-		reflect.TypeOf((*AppflowConnectorProfileConnectorProfileConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppflowConnectorProfileConnectorProfileConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2534,7 +2534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

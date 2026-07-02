@@ -12,9 +12,9 @@ type ElbListenerOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ElbListenerOutputReference interface {
 	InstanceProtocol() *string
 	SetInstanceProtocol(val *string)
 	InstanceProtocolInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LbPort() *float64
 	SetLbPort(val *float64)
 	LbPortInput() *float64
@@ -55,7 +55,7 @@ type ElbListenerOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ElbListenerOutputReference interface {
 	ResetSslCertificateId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ElbListenerOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElbListenerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ElbListenerOutputReference) InstanceProtocolInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElbListenerOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_ElbListenerOutputReference) TerraformResource() cdktf.IInterp
 	return returns
 }
 
-
 func NewElbListenerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElbListenerOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewElbListenerOutputReference(terraformResource cdktf.IInterpolatingParent,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elb.ElbListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewElbListenerOutputReference_Override(e ElbListenerOutputReference, terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elb.ElbListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetComplexObjectIndex(val interfac
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetComplexObjectIsFromSet(val *boo
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetInstancePort(val *float64) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetInstancePort(val *float64) {
 	if err := j.validateSetInstancePortParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetInstancePort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetInstanceProtocol(val *string) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetInstanceProtocol(val *string) {
 	if err := j.validateSetInstanceProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetInstanceProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetLbPort(val *float64) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetLbPort(val *float64) {
 	if err := j.validateSetLbPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetLbPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetLbProtocol(val *string) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetLbProtocol(val *string) {
 	if err := j.validateSetLbProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetLbProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetSslCertificateId(val *string) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetSslCertificateId(val *string) {
 	if err := j.validateSetSslCertificateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetSslCertificateId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_ElbListenerOutputReference)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElbListenerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (e *jsiiProxy_ElbListenerOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_ElbListenerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElbListenerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) InterpolationForAttribute(propert
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (e *jsiiProxy_ElbListenerOutputReference) ResetSslCertificateId() {
 	)
 }
 
-func (e *jsiiProxy_ElbListenerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElbListenerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (e *jsiiProxy_ElbListenerOutputReference) ToString() *string {
 
 	return returns
 }
-

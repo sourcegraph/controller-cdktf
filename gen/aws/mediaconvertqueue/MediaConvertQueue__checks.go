@@ -19,7 +19,7 @@ func (m *jsiiProxy_MediaConvertQueue) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (m *jsiiProxy_MediaConvertQueue) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MediaConvertQueue) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MediaConvertQueue) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (m *jsiiProxy_MediaConvertQueue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MediaConvertQueue) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMediaConvertQueue_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateMediaConvertQueue_IsConstructParameters(x interface{}) error {
+func validateMediaConvertQueue_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMediaConvertQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMediaConvertQueue_IsTerraformElementParameters(x interface{}) error {
+func validateMediaConvertQueue_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMediaConvertQueue_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateMediaConvertQueue_IsTerraformResourceParameters(x interface{}) error {
+func validateMediaConvertQueue_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateMediaConvertQueue_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_MediaConvertQueue) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MediaConvertQueue) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_MediaConvertQueue) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_MediaConvertQueue) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MediaConvertQueue) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_MediaConvertQueue) validateSetPricingPlanParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MediaConvertQueue) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MediaConvertQueue) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewMediaConvertQueueParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

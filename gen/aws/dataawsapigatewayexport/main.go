@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
-		reflect.TypeOf((*DataAwsApiGatewayExport)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayExport](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepts", GoGetter: "Accepts"},
 			_jsii_.MemberProperty{JsiiProperty: "acceptsInput", GoGetter: "AcceptsInput"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsApiGatewayExport{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExportConfig",
-		reflect.TypeOf((*DataAwsApiGatewayExportConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsApiGatewayExportConfig](),
 	)
 }

@@ -15,15 +15,15 @@ type WafregionalRegexPatternSet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,27 +53,27 @@ type WafregionalRegexPatternSet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegexPatternStrings() *[]*string
 	SetRegexPatternStrings(val *[]*string)
 	RegexPatternStringsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type WafregionalRegexPatternSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type WafregionalRegexPatternSet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type WafregionalRegexPatternSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegexPatternStrings()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WafregionalRegexPatternSet
@@ -143,8 +143,8 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRegexPatternSet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalRegexPatternSet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRegexPatternSet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WafregionalRegexPatternSet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRegexPatternSet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WafregionalRegexPatternSet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set} Resource.
 func NewWafregionalRegexPatternSet(scope constructs.Construct, id *string, config *WafregionalRegexPatternSetConfig) WafregionalRegexPatternSet {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewWafregionalRegexPatternSet(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewWafregionalRegexPatternSet_Override(w WafregionalRegexPatternSet, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetConnection(val interface{}) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetCount(val interface{}) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetId(val *string) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetName(val *string) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_WafregionalRegexPatternSet)SetRegexPatternStrings(val *[]*string) {
+func (j *jsiiProxy_WafregionalRegexPatternSet) SetRegexPatternStrings(val *[]*string) {
 	if err := j.validateSetRegexPatternStringsParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func WafregionalRegexPatternSet_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func WafregionalRegexPatternSet_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WafregionalRegexPatternSet_IsConstruct(x interface{}) *bool {
+func WafregionalRegexPatternSet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalRegexPatternSet_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func WafregionalRegexPatternSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func WafregionalRegexPatternSet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalRegexPatternSet_IsTerraformElement(x interface{}) *bool {
+func WafregionalRegexPatternSet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalRegexPatternSet_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func WafregionalRegexPatternSet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func WafregionalRegexPatternSet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WafregionalRegexPatternSet_IsTerraformResource(x interface{}) *bool {
+func WafregionalRegexPatternSet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafregionalRegexPatternSet_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func WafregionalRegexPatternSet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WafregionalRegexPatternSet) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalRegexPatternSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRegexPatternSet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -773,7 +772,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WafregionalRegexPatternSet) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -861,8 +860,8 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) ResetRegexPatternStrings() {
 	)
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalRegexPatternSet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -874,8 +873,8 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WafregionalRegexPatternSet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -887,8 +886,8 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRegexPatternSet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -900,8 +899,8 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRegexPatternSet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -926,8 +925,8 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRegexPatternSet) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WafregionalRegexPatternSet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -938,4 +937,3 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
-		reflect.TypeOf((*BudgetsBudget)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudget](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -113,15 +113,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustData)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetAutoAdjustData](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustDataHistoricalOptions)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetAutoAdjustDataHistoricalOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "budgetAdjustmentPeriod", GoGetter: "BudgetAdjustmentPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "budgetAdjustmentPeriodInput", GoGetter: "BudgetAdjustmentPeriodInput"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,7 +156,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference",
-		reflect.TypeOf((*BudgetsBudgetAutoAdjustDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetAutoAdjustDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoAdjustType", GoGetter: "AutoAdjustType"},
 			_jsii_.MemberProperty{JsiiProperty: "autoAdjustTypeInput", GoGetter: "AutoAdjustTypeInput"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetAutoAdjustDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,15 +195,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetConfig",
-		reflect.TypeOf((*BudgetsBudgetConfig)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter",
-		reflect.TypeOf((*BudgetsBudgetCostFilter)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetCostFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterList",
-		reflect.TypeOf((*BudgetsBudgetCostFilterList)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetCostFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetCostFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference",
-		reflect.TypeOf((*BudgetsBudgetCostFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetCostFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetCostFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -261,11 +261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypes",
-		reflect.TypeOf((*BudgetsBudgetCostTypes)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetCostTypes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
-		reflect.TypeOf((*BudgetsBudgetCostTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetCostTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useBlended", GoGetter: "UseBlended"},
 			_jsii_.MemberProperty{JsiiProperty: "useBlendedInput", GoGetter: "UseBlendedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetCostTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,11 +330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification",
-		reflect.TypeOf((*BudgetsBudgetNotification)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetNotification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationList",
-		reflect.TypeOf((*BudgetsBudgetNotificationList)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetNotificationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -348,7 +348,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetNotificationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -356,7 +356,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
-		reflect.TypeOf((*BudgetsBudgetNotificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetNotificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperatorInput", GoGetter: "ComparisonOperatorInput"},
@@ -394,7 +394,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdTypeInput", GoGetter: "ThresholdTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetNotificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -402,11 +402,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit",
-		reflect.TypeOf((*BudgetsBudgetPlannedLimit)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetPlannedLimit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitList",
-		reflect.TypeOf((*BudgetsBudgetPlannedLimitList)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetPlannedLimitList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -420,7 +420,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetPlannedLimitList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -428,7 +428,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference",
-		reflect.TypeOf((*BudgetsBudgetPlannedLimitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BudgetsBudgetPlannedLimitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amount", GoGetter: "Amount"},
 			_jsii_.MemberProperty{JsiiProperty: "amountInput", GoGetter: "AmountInput"},
@@ -458,7 +458,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
 			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BudgetsBudgetPlannedLimitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

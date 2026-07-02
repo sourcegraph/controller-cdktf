@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2Stage",
-		reflect.TypeOf((*Apigatewayv2Stage)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2Stage](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogSettings", GoGetter: "AccessLogSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLogSettingsInput", GoGetter: "AccessLogSettingsInput"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2Stage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,11 +104,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageAccessLogSettings",
-		reflect.TypeOf((*Apigatewayv2StageAccessLogSettings)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageAccessLogSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageAccessLogSettingsOutputReference",
-		reflect.TypeOf((*Apigatewayv2StageAccessLogSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageAccessLogSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2StageAccessLogSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,15 +144,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageConfig",
-		reflect.TypeOf((*Apigatewayv2StageConfig)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettings",
-		reflect.TypeOf((*Apigatewayv2StageDefaultRouteSettings)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageDefaultRouteSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
-		reflect.TypeOf((*Apigatewayv2StageDefaultRouteSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageDefaultRouteSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "throttlingRateLimitInput", GoGetter: "ThrottlingRateLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings",
-		reflect.TypeOf((*Apigatewayv2StageRouteSettings)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageRouteSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
-		reflect.TypeOf((*Apigatewayv2StageRouteSettingsList)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageRouteSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2StageRouteSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference",
-		reflect.TypeOf((*Apigatewayv2StageRouteSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2StageRouteSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "throttlingRateLimitInput", GoGetter: "ThrottlingRateLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

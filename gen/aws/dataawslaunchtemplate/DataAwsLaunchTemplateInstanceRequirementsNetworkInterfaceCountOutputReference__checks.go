@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCoun
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountOu
 
 	return nil
 }
-

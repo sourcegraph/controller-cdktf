@@ -98,7 +98,7 @@ func (r *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewRdsClusterServerlessv2ScalingConfigurationOutputReferenceParamet
 
 	return nil
 }
-

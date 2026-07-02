@@ -19,7 +19,7 @@ func (k *jsiiProxy_KeyspacesTable) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTable) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KeyspacesTable) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KeyspacesTable) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KeyspacesTable) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateKeyspacesTable_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateKeyspacesTable_IsConstructParameters(x interface{}) error {
+func validateKeyspacesTable_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validateKeyspacesTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKeyspacesTable_IsTerraformElementParameters(x interface{}) error {
+func validateKeyspacesTable_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateKeyspacesTable_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateKeyspacesTable_IsTerraformResourceParameters(x interface{}) error {
+func validateKeyspacesTable_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateKeyspacesTable_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTable) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTable) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -354,7 +354,7 @@ func (j *jsiiProxy_KeyspacesTable) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTable) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTable) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_KeyspacesTable) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTable) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KeyspacesTable) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,4 +531,3 @@ func validateNewKeyspacesTableParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRoute53ResolverRuleTargetIpOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

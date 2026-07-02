@@ -6,9 +6,9 @@ import (
 
 type BackupSelectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BackupSelectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}.
 	IamRoleArn *string `field:"required" json:"iamRoleArn" yaml:"iamRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_selection#name BackupSelection#name}.
@@ -28,7 +28,7 @@ type BackupSelectionConfig struct {
 	// condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_selection#condition BackupSelection#condition}
-	Condition interface{} `field:"optional" json:"condition" yaml:"condition"`
+	Condition any `field:"optional" json:"condition" yaml:"condition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_selection#id BackupSelection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -41,6 +41,5 @@ type BackupSelectionConfig struct {
 	// selection_tag block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
-	SelectionTag interface{} `field:"optional" json:"selectionTag" yaml:"selectionTag"`
+	SelectionTag any `field:"optional" json:"selectionTag" yaml:"selectionTag"`
 }
-

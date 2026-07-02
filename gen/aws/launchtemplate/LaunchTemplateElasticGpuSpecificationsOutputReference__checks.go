@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLaunchTemplateElasticGpuSpecificationsOutputReferenceParameters(
 
 	return nil
 }
-

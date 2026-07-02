@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroupRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesIpGroupRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkspacesIpGroupRulesListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

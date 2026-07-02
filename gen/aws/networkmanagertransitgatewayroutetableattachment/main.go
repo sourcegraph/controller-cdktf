@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayRouteTableAttachment)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayRouteTableAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayRouteTableArn", GoGetter: "TransitGatewayRouteTableArn"},
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayRouteTableArnInput", GoGetter: "TransitGatewayRouteTableArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentConfig",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayRouteTableAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayRouteTableAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

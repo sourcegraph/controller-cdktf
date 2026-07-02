@@ -98,7 +98,7 @@ func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobUserPausedDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationJobUserPausedDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMacie2ClassificationJobUserPausedDetailsOutputReferenceParameter
 
 	return nil
 }
-

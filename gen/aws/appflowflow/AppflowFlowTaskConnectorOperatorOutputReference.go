@@ -15,9 +15,9 @@ type AppflowFlowTaskConnectorOperatorOutputReference interface {
 	AmplitudeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,8 +45,8 @@ type AppflowFlowTaskConnectorOperatorOutputReference interface {
 	InforNexus() *string
 	SetInforNexus(val *string)
 	InforNexusInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Marketo() *string
 	SetMarketo(val *string)
 	MarketoInput() *string
@@ -88,7 +88,7 @@ type AppflowFlowTaskConnectorOperatorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type AppflowFlowTaskConnectorOperatorOutputReference interface {
 	ResetZendesk()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) AmplitudeInp
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) InforNexusIn
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) ZendeskInput
 	return returns
 }
 
-
 func NewAppflowFlowTaskConnectorOperatorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppflowFlowTaskConnectorOperatorOutputReference {
 	_init_.Initialize()
 
@@ -541,7 +540,7 @@ func NewAppflowFlowTaskConnectorOperatorOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewAppflowFlowTaskConnectorOperatorOutputReference_Override(a AppflowFlowTa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetAmplitude(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetAmplitude(val *string) {
 	if err := j.validateSetAmplitudeParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetAmplitude(
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetCustomConnector(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetCustomConnector(val *string) {
 	if err := j.validateSetCustomConnectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetCustomConn
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetDatadog(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetDatadog(val *string) {
 	if err := j.validateSetDatadogParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetDatadog(va
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetDynatrace(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetDynatrace(val *string) {
 	if err := j.validateSetDynatraceParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetDynatrace(
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetGoogleAnalytics(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetGoogleAnalytics(val *string) {
 	if err := j.validateSetGoogleAnalyticsParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetGoogleAnal
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetInforNexus(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetInforNexus(val *string) {
 	if err := j.validateSetInforNexusParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetInforNexus
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetMarketo(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetMarketo(val *string) {
 	if err := j.validateSetMarketoParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetMarketo(va
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetS3(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetS3(val *string) {
 	if err := j.validateSetS3Parameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetS3(val *st
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSalesforce(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetSalesforce(val *string) {
 	if err := j.validateSetSalesforceParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSalesforce
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSapoData(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetSapoData(val *string) {
 	if err := j.validateSetSapoDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSapoData(v
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetServiceNow(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetServiceNow(val *string) {
 	if err := j.validateSetServiceNowParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetServiceNow
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSingular(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetSingular(val *string) {
 	if err := j.validateSetSingularParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSingular(v
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSlack(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetSlack(val *string) {
 	if err := j.validateSetSlackParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetSlack(val 
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetTrendmicro(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetTrendmicro(val *string) {
 	if err := j.validateSetTrendmicroParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetTrendmicro
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetVeeva(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetVeeva(val *string) {
 	if err := j.validateSetVeevaParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetVeeva(val 
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference)SetZendesk(val *string) {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) SetZendesk(val *string) {
 	if err := j.validateSetZendeskParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,16 +801,16 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) ComputeFqn()
 	return returns
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetListAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) GetStringMap
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1103,16 +1102,16 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) ResetZendesk
 	)
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1131,4 +1130,3 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) ToString() *
 
 	return returns
 }
-

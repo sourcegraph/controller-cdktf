@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQuer
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryAr
 
 	return nil
 }
-

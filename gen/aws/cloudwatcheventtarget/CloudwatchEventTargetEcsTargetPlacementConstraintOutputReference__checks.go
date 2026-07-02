@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference
 
 	return nil
 }
-

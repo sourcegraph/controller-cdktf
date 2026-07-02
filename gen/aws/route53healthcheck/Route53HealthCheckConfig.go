@@ -6,9 +6,9 @@ import (
 
 type Route53HealthCheckConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Route53HealthCheckConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#type Route53HealthCheck#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#child_healthchecks Route53HealthCheck#child_healthchecks}.
@@ -30,9 +30,9 @@ type Route53HealthCheckConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#cloudwatch_alarm_region Route53HealthCheck#cloudwatch_alarm_region}.
 	CloudwatchAlarmRegion *string `field:"optional" json:"cloudwatchAlarmRegion" yaml:"cloudwatchAlarmRegion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#disabled Route53HealthCheck#disabled}.
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#enable_sni Route53HealthCheck#enable_sni}.
-	EnableSni interface{} `field:"optional" json:"enableSni" yaml:"enableSni"`
+	EnableSni any `field:"optional" json:"enableSni" yaml:"enableSni"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#failure_threshold Route53HealthCheck#failure_threshold}.
 	FailureThreshold *float64 `field:"optional" json:"failureThreshold" yaml:"failureThreshold"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#fqdn Route53HealthCheck#fqdn}.
@@ -45,11 +45,11 @@ type Route53HealthCheckConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#insufficient_data_health_status Route53HealthCheck#insufficient_data_health_status}.
 	InsufficientDataHealthStatus *string `field:"optional" json:"insufficientDataHealthStatus" yaml:"insufficientDataHealthStatus"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#invert_healthcheck Route53HealthCheck#invert_healthcheck}.
-	InvertHealthcheck interface{} `field:"optional" json:"invertHealthcheck" yaml:"invertHealthcheck"`
+	InvertHealthcheck any `field:"optional" json:"invertHealthcheck" yaml:"invertHealthcheck"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#ip_address Route53HealthCheck#ip_address}.
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#measure_latency Route53HealthCheck#measure_latency}.
-	MeasureLatency interface{} `field:"optional" json:"measureLatency" yaml:"measureLatency"`
+	MeasureLatency any `field:"optional" json:"measureLatency" yaml:"measureLatency"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#port Route53HealthCheck#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#reference_name Route53HealthCheck#reference_name}.
@@ -69,4 +69,3 @@ type Route53HealthCheckConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_health_check#tags_all Route53HealthCheck#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

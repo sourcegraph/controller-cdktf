@@ -106,7 +106,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBl
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueI
 
 	return nil
 }
-

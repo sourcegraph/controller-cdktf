@@ -109,7 +109,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewS3BucketAclAccessControlPolicyGrantOutputReferenceParameters(ter
 
 	return nil
 }
-

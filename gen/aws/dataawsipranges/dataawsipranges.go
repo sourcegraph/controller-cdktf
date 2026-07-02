@@ -16,11 +16,11 @@ type DataAwsIpRanges interface {
 	CdktfStack() cdktf.TerraformStack
 	CidrBlocks() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -49,7 +49,7 @@ type DataAwsIpRanges interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Regions() *[]*string
 	SetRegions(val *[]*string)
 	RegionsInput() *[]*string
@@ -60,16 +60,16 @@ type DataAwsIpRanges interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataAwsIpRanges interface {
 	ResetOverrideLogicalId()
 	ResetRegions()
 	ResetUrl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsIpRanges
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsIpRanges) CidrBlocks() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIpRanges) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsIpRanges) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsIpRanges) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIpRanges) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIpRanges) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DataAwsIpRanges) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIpRanges) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIpRanges) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_DataAwsIpRanges) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIpRanges) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsIpRanges) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_DataAwsIpRanges) UrlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ip_ranges aws_ip_ranges} Data Source.
 func NewDataAwsIpRanges(scope constructs.Construct, id *string, config *DataAwsIpRangesConfig) DataAwsIpRanges {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewDataAwsIpRanges(scope constructs.Construct, id *string, config *DataAwsI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewDataAwsIpRanges_Override(d DataAwsIpRanges, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsIpRanges) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsIpRanges) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsIpRanges) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetId(val *string) {
+func (j *jsiiProxy_DataAwsIpRanges) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsIpRanges) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsIpRanges) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetRegions(val *[]*string) {
+func (j *jsiiProxy_DataAwsIpRanges) SetRegions(val *[]*string) {
 	if err := j.validateSetRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetRegions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetServices(val *[]*string) {
+func (j *jsiiProxy_DataAwsIpRanges) SetServices(val *[]*string) {
 	if err := j.validateSetServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_DataAwsIpRanges)SetServices(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIpRanges)SetUrl(val *string) {
+func (j *jsiiProxy_DataAwsIpRanges) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func DataAwsIpRanges_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataAwsIpRanges_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsIpRanges_IsConstruct(x interface{}) *bool {
+func DataAwsIpRanges_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsIpRanges_IsConstructParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataAwsIpRanges_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func DataAwsIpRanges_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsIpRanges_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsIpRanges_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsIpRanges_IsTerraformDataSourceParameters(x); err != nil {
@@ -562,7 +561,7 @@ func DataAwsIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func DataAwsIpRanges_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsIpRanges_IsTerraformElement(x interface{}) *bool {
+func DataAwsIpRanges_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsIpRanges_IsTerraformElementParameters(x); err != nil {
@@ -581,7 +580,7 @@ func DataAwsIpRanges_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -599,27 +598,27 @@ func DataAwsIpRanges_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsIpRanges) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsIpRanges) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (d *jsiiProxy_DataAwsIpRanges) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (d *jsiiProxy_DataAwsIpRanges) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (d *jsiiProxy_DataAwsIpRanges) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -813,8 +812,8 @@ func (d *jsiiProxy_DataAwsIpRanges) ResetUrl() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsIpRanges) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -826,8 +825,8 @@ func (d *jsiiProxy_DataAwsIpRanges) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsIpRanges) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -839,8 +838,8 @@ func (d *jsiiProxy_DataAwsIpRanges) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsIpRanges) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -852,8 +851,8 @@ func (d *jsiiProxy_DataAwsIpRanges) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsIpRanges) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -878,8 +877,8 @@ func (d *jsiiProxy_DataAwsIpRanges) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIpRanges) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsIpRanges) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -890,4 +889,3 @@ func (d *jsiiProxy_DataAwsIpRanges) ToTerraform() interface{} {
 
 	return returns
 }
-

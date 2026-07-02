@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetLogEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetLogEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewVpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReferenc
 
 	return nil
 }
-

@@ -15,18 +15,18 @@ type ControltowerControl interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlIdentifier() *string
 	SetControlIdentifier(val *string)
 	ControlIdentifierInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,29 +53,29 @@ type ControltowerControl interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetIdentifier() *string
 	SetTargetIdentifier(val *string)
 	TargetIdentifierInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ControltowerControlTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type ControltowerControl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type ControltowerControl interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type ControltowerControl interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ControltowerControl
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ControltowerControl) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ControltowerControl) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ControltowerControl) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ControltowerControl) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ControltowerControl) ControlIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ControltowerControl) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_ControltowerControl) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ControltowerControl) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_ControltowerControl) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ControltowerControl) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_ControltowerControl) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ControltowerControl) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_ControltowerControl) Timeouts() ControltowerControlTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ControltowerControl) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_ControltowerControl) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl(scope constructs.Construct, id *string, config *ControltowerControlConfig) ControltowerControl {
@@ -388,7 +387,7 @@ func NewControltowerControl(scope constructs.Construct, id *string, config *Cont
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewControltowerControl_Override(c ControltowerControl, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetConnection(val interface{}) {
+func (j *jsiiProxy_ControltowerControl) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ControltowerControl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetControlIdentifier(val *string) {
+func (j *jsiiProxy_ControltowerControl) SetControlIdentifier(val *string) {
 	if err := j.validateSetControlIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ControltowerControl)SetControlIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetCount(val interface{}) {
+func (j *jsiiProxy_ControltowerControl) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_ControltowerControl)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ControltowerControl) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ControltowerControl)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ControltowerControl) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_ControltowerControl)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetId(val *string) {
+func (j *jsiiProxy_ControltowerControl) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_ControltowerControl)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ControltowerControl) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_ControltowerControl)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ControltowerControl) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_ControltowerControl)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ControltowerControl) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_ControltowerControl)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetTargetIdentifier(val *string) {
+func (j *jsiiProxy_ControltowerControl) SetTargetIdentifier(val *string) {
 	if err := j.validateSetTargetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func ControltowerControl_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func ControltowerControl_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ControltowerControl_IsConstruct(x interface{}) *bool {
+func ControltowerControl_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateControltowerControl_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func ControltowerControl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func ControltowerControl_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ControltowerControl_IsTerraformElement(x interface{}) *bool {
+func ControltowerControl_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateControltowerControl_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func ControltowerControl_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func ControltowerControl_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ControltowerControl_IsTerraformResource(x interface{}) *bool {
+func ControltowerControl_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateControltowerControl_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func ControltowerControl_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (c *jsiiProxy_ControltowerControl) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ControltowerControl) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ControltowerControl) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ControltowerControl) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ControltowerControl) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (c *jsiiProxy_ControltowerControl) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (c *jsiiProxy_ControltowerControl) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (c *jsiiProxy_ControltowerControl) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (c *jsiiProxy_ControltowerControl) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (c *jsiiProxy_ControltowerControl) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (c *jsiiProxy_ControltowerControl) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (c *jsiiProxy_ControltowerControl) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (c *jsiiProxy_ControltowerControl) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ControltowerControl) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ControltowerControl) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -796,7 +795,7 @@ func (c *jsiiProxy_ControltowerControl) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_ControltowerControl) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (c *jsiiProxy_ControltowerControl) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ControltowerControl) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ControltowerControl) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (c *jsiiProxy_ControltowerControl) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_ControltowerControl) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_ControltowerControl) PutTimeouts(value *ControltowerControlTi
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (c *jsiiProxy_ControltowerControl) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ControltowerControl) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ControltowerControl) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -908,8 +907,8 @@ func (c *jsiiProxy_ControltowerControl) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ControltowerControl) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ControltowerControl) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -921,8 +920,8 @@ func (c *jsiiProxy_ControltowerControl) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_ControltowerControl) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ControltowerControl) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -934,8 +933,8 @@ func (c *jsiiProxy_ControltowerControl) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ControltowerControl) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ControltowerControl) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -960,8 +959,8 @@ func (c *jsiiProxy_ControltowerControl) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ControltowerControl) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ControltowerControl) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -972,4 +971,3 @@ func (c *jsiiProxy_ControltowerControl) ToTerraform() interface{} {
 
 	return returns
 }
-

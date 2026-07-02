@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorIpSetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorIpSetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGlobalacceleratorAcceleratorIpSetsOutputReferenceParameters(terr
 
 	return nil
 }
-

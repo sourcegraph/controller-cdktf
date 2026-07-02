@@ -12,9 +12,9 @@ type AppstreamStackStorageConnectorsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type AppstreamStackStorageConnectorsOutputReference interface {
 	DomainsInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ResourceIdentifier() *string
 	SetResourceIdentifier(val *string)
 	ResourceIdentifierInput() *string
@@ -49,7 +49,7 @@ type AppstreamStackStorageConnectorsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type AppstreamStackStorageConnectorsOutputReference interface {
 	ResetResourceIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_AppstreamStackStorageConnectorsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewAppstreamStackStorageConnectorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppstreamStackStorageConnectorsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewAppstreamStackStorageConnectorsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewAppstreamStackStorageConnectorsOutputReference_Override(a AppstreamStack
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetConnectorType(val *string) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetConnectorType(val *string) {
 	if err := j.validateSetConnectorTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetConnectorTy
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetDomains(val *[]*string) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetDomains(val *[]*string) {
 	if err := j.validateSetDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetDomains(val
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetResourceIdentifier(val *string) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetResourceIdentifier(val *string) {
 	if err := j.validateSetResourceIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetResourceIde
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) Interpolation
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) ResetResource
 	)
 }
 
-func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) ToString() *s
 
 	return returns
 }
-

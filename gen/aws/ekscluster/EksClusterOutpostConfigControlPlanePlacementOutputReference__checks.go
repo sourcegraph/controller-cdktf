@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEksClusterOutpostConfigControlPlanePlacementOutputReferenceParam
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewTransferWorkflowStepsCopyStepDetailsOutputReferenceParameters(te
 
 	return nil
 }
-

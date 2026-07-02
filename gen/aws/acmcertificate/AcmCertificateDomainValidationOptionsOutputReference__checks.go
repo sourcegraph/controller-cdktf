@@ -98,7 +98,7 @@ func (a *jsiiProxy_AcmCertificateDomainValidationOptionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateDomainValidationOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AcmCertificateDomainValidationOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAcmCertificateDomainValidationOptionsOutputReferenceParameters(t
 
 	return nil
 }
-

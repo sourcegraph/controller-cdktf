@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionParameterObjectAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOut
 
 	return nil
 }
-

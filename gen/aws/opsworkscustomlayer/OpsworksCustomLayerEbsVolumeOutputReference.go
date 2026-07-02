@@ -12,9 +12,9 @@ type OpsworksCustomLayerEbsVolumeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type OpsworksCustomLayerEbsVolumeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Iops() *float64
 	SetIops(val *float64)
 	IopsInput() *float64
@@ -61,7 +61,7 @@ type OpsworksCustomLayerEbsVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type OpsworksCustomLayerEbsVolumeOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ type jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) Encrypted() inte
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -311,7 +311,6 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) TypeInput() *str
 	return returns
 }
 
-
 func NewOpsworksCustomLayerEbsVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksCustomLayerEbsVolumeOutputReference {
 	_init_.Initialize()
 
@@ -322,7 +321,7 @@ func NewOpsworksCustomLayerEbsVolumeOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -334,12 +333,12 @@ func NewOpsworksCustomLayerEbsVolumeOutputReference_Override(o OpsworksCustomLay
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetEncrypted(val 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetIops(val *floa
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetMountPoint(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetMountPoint(val *string) {
 	if err := j.validateSetMountPointParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetMountPoint(val
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetNumberOfDisks(val *float64) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetNumberOfDisks(val *float64) {
 	if err := j.validateSetNumberOfDisksParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetNumberOfDisks(
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetRaidLevel(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetRaidLevel(val *string) {
 	if err := j.validateSetRaidLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetRaidLevel(val 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetSize(val *float64) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetSize(val *floa
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference)SetType(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,16 +483,16 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -689,16 +688,16 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) ResetType() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -717,4 +716,3 @@ func (o *jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference) ToString() *stri
 
 	return returns
 }
-

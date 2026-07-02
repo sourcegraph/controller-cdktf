@@ -19,15 +19,15 @@ type MediaPackageChannel interface {
 	SetChannelId(val *string)
 	ChannelIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,11 +58,11 @@ type MediaPackageChannel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -72,16 +72,16 @@ type MediaPackageChannel interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type MediaPackageChannel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type MediaPackageChannel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type MediaPackageChannel interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MediaPackageChannel
@@ -183,8 +183,8 @@ func (j *jsiiProxy_MediaPackageChannel) ChannelIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MediaPackageChannel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MediaPackageChannel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_MediaPackageChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MediaPackageChannel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MediaPackageChannel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_MediaPackageChannel) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MediaPackageChannel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MediaPackageChannel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_MediaPackageChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MediaPackageChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MediaPackageChannel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_MediaPackageChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MediaPackageChannel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MediaPackageChannel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_MediaPackageChannel) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_MediaPackageChannel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MediaPackageChannel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_MediaPackageChannel) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
 func NewMediaPackageChannel(scope constructs.Construct, id *string, config *MediaPackageChannelConfig) MediaPackageChannel {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewMediaPackageChannel(scope constructs.Construct, id *string, config *Medi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewMediaPackageChannel_Override(m MediaPackageChannel, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetChannelId(val *string) {
+func (j *jsiiProxy_MediaPackageChannel) SetChannelId(val *string) {
 	if err := j.validateSetChannelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetChannelId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetConnection(val interface{}) {
+func (j *jsiiProxy_MediaPackageChannel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetCount(val interface{}) {
+func (j *jsiiProxy_MediaPackageChannel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MediaPackageChannel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetDescription(val *string) {
+func (j *jsiiProxy_MediaPackageChannel) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MediaPackageChannel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetId(val *string) {
+func (j *jsiiProxy_MediaPackageChannel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MediaPackageChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MediaPackageChannel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MediaPackageChannel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MediaPackageChannel) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_MediaPackageChannel)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannel)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MediaPackageChannel) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func MediaPackageChannel_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func MediaPackageChannel_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MediaPackageChannel_IsConstruct(x interface{}) *bool {
+func MediaPackageChannel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMediaPackageChannel_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func MediaPackageChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func MediaPackageChannel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MediaPackageChannel_IsTerraformElement(x interface{}) *bool {
+func MediaPackageChannel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMediaPackageChannel_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func MediaPackageChannel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func MediaPackageChannel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MediaPackageChannel_IsTerraformResource(x interface{}) *bool {
+func MediaPackageChannel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMediaPackageChannel_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func MediaPackageChannel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (m *jsiiProxy_MediaPackageChannel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MediaPackageChannel) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MediaPackageChannel) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MediaPackageChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MediaPackageChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (m *jsiiProxy_MediaPackageChannel) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (m *jsiiProxy_MediaPackageChannel) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MediaPackageChannel) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MediaPackageChannel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -865,7 +864,7 @@ func (m *jsiiProxy_MediaPackageChannel) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (m *jsiiProxy_MediaPackageChannel) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (m *jsiiProxy_MediaPackageChannel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MediaPackageChannel) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MediaPackageChannel) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (m *jsiiProxy_MediaPackageChannel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,7 +924,7 @@ func (m *jsiiProxy_MediaPackageChannel) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -969,8 +968,8 @@ func (m *jsiiProxy_MediaPackageChannel) ResetTagsAll() {
 	)
 }
 
-func (m *jsiiProxy_MediaPackageChannel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MediaPackageChannel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -982,8 +981,8 @@ func (m *jsiiProxy_MediaPackageChannel) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MediaPackageChannel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MediaPackageChannel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -995,8 +994,8 @@ func (m *jsiiProxy_MediaPackageChannel) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (m *jsiiProxy_MediaPackageChannel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MediaPackageChannel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1008,8 +1007,8 @@ func (m *jsiiProxy_MediaPackageChannel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MediaPackageChannel) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MediaPackageChannel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1034,8 +1033,8 @@ func (m *jsiiProxy_MediaPackageChannel) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MediaPackageChannel) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MediaPackageChannel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1046,4 +1045,3 @@ func (m *jsiiProxy_MediaPackageChannel) ToTerraform() interface{} {
 
 	return returns
 }
-

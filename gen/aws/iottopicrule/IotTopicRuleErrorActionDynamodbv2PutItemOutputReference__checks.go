@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2PutItemOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2PutItemOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2PutItemOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIotTopicRuleErrorActionDynamodbv2PutItemOutputReferenceParameter
 
 	return nil
 }
-

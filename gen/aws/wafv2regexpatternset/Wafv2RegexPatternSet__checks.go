@@ -19,7 +19,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RegexPatternSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RegexPatternSet) validatePutRegularExpressionParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2RegexPatternSet) validatePutRegularExpressionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWafv2RegexPatternSet_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateWafv2RegexPatternSet_IsConstructParameters(x interface{}) error {
+func validateWafv2RegexPatternSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWafv2RegexPatternSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafv2RegexPatternSet_IsTerraformElementParameters(x interface{}) error {
+func validateWafv2RegexPatternSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWafv2RegexPatternSet_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateWafv2RegexPatternSet_IsTerraformResourceParameters(x interface{}) error {
+func validateWafv2RegexPatternSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateWafv2RegexPatternSet_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewWafv2RegexPatternSetParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

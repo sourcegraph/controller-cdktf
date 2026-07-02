@@ -131,7 +131,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -255,4 +255,3 @@ func validateNewCeAnomalySubscriptionThresholdExpressionAndOutputReferenceParame
 
 	return nil
 }
-

@@ -19,15 +19,15 @@ type WorkspacesWorkspace interface {
 	CdktfStack() cdktf.TerraformStack
 	ComputerName() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,14 +58,14 @@ type WorkspacesWorkspace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RootVolumeEncryptionEnabled() interface{}
-	SetRootVolumeEncryptionEnabled(val interface{})
-	RootVolumeEncryptionEnabledInput() interface{}
+	RawOverrides() any
+	RootVolumeEncryptionEnabled() any
+	SetRootVolumeEncryptionEnabled(val any)
+	RootVolumeEncryptionEnabledInput() any
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -76,17 +76,17 @@ type WorkspacesWorkspace interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() WorkspacesWorkspaceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
-	UserVolumeEncryptionEnabled() interface{}
-	SetUserVolumeEncryptionEnabled(val interface{})
-	UserVolumeEncryptionEnabledInput() interface{}
+	UserVolumeEncryptionEnabled() any
+	SetUserVolumeEncryptionEnabled(val any)
+	UserVolumeEncryptionEnabledInput() any
 	VolumeEncryptionKey() *string
 	SetVolumeEncryptionKey(val *string)
 	VolumeEncryptionKeyInput() *string
@@ -96,9 +96,9 @@ type WorkspacesWorkspace interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type WorkspacesWorkspace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type WorkspacesWorkspace interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type WorkspacesWorkspace interface {
 	ResetUserVolumeEncryptionEnabled()
 	ResetVolumeEncryptionKey()
 	ResetWorkspaceProperties()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkspacesWorkspace
@@ -206,8 +206,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) ComputerName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) RootVolumeEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) RootVolumeEncryptionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rootVolumeEncryptionEnabled",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) RootVolumeEncryptionEnabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) RootVolumeEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) RootVolumeEncryptionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rootVolumeEncryptionEnabledInput",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) Timeouts() WorkspacesWorkspaceTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) UserNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) UserVolumeEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) UserVolumeEncryptionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userVolumeEncryptionEnabled",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_WorkspacesWorkspace) UserVolumeEncryptionEnabled() interface{
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace) UserVolumeEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesWorkspace) UserVolumeEncryptionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userVolumeEncryptionEnabledInput",
@@ -576,7 +576,6 @@ func (j *jsiiProxy_WorkspacesWorkspace) WorkspacePropertiesInput() *WorkspacesWo
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/workspaces_workspace aws_workspaces_workspace} Resource.
 func NewWorkspacesWorkspace(scope constructs.Construct, id *string, config *WorkspacesWorkspaceConfig) WorkspacesWorkspace {
 	_init_.Initialize()
@@ -588,7 +587,7 @@ func NewWorkspacesWorkspace(scope constructs.Construct, id *string, config *Work
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -601,12 +600,12 @@ func NewWorkspacesWorkspace_Override(w WorkspacesWorkspace, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetBundleId(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetBundleId(val *string) {
 	if err := j.validateSetBundleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetBundleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -647,7 +646,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetDirectoryId(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetDirectoryId(val *string) {
 	if err := j.validateSetDirectoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetDirectoryId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -666,7 +665,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetId(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetRootVolumeEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetRootVolumeEncryptionEnabled(val any) {
 	if err := j.validateSetRootVolumeEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetRootVolumeEncryptionEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetUserName(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetUserName(val *string) {
 	if err := j.validateSetUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetUserName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetUserVolumeEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetUserVolumeEncryptionEnabled(val any) {
 	if err := j.validateSetUserVolumeEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetUserVolumeEncryptionEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspace)SetVolumeEncryptionKey(val *string) {
+func (j *jsiiProxy_WorkspacesWorkspace) SetVolumeEncryptionKey(val *string) {
 	if err := j.validateSetVolumeEncryptionKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func WorkspacesWorkspace_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func WorkspacesWorkspace_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkspacesWorkspace_IsConstruct(x interface{}) *bool {
+func WorkspacesWorkspace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkspacesWorkspace_IsConstructParameters(x); err != nil {
@@ -820,7 +819,7 @@ func WorkspacesWorkspace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func WorkspacesWorkspace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkspacesWorkspace_IsTerraformElement(x interface{}) *bool {
+func WorkspacesWorkspace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkspacesWorkspace_IsTerraformElementParameters(x); err != nil {
@@ -839,7 +838,7 @@ func WorkspacesWorkspace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func WorkspacesWorkspace_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkspacesWorkspace_IsTerraformResource(x interface{}) *bool {
+func WorkspacesWorkspace_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkspacesWorkspace_IsTerraformResourceParameters(x); err != nil {
@@ -858,7 +857,7 @@ func WorkspacesWorkspace_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -883,31 +882,31 @@ func (w *jsiiProxy_WorkspacesWorkspace) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkspacesWorkspace) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspacesWorkspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,15 +1034,15 @@ func (w *jsiiProxy_WorkspacesWorkspace) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkspacesWorkspace) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1062,7 +1061,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1075,7 +1074,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,18 +1088,18 @@ func (w *jsiiProxy_WorkspacesWorkspace) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkspacesWorkspace) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) PutTimeouts(value *WorkspacesWorkspaceTi
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (w *jsiiProxy_WorkspacesWorkspace) PutWorkspaceProperties(value *Workspaces
 	_jsii_.InvokeVoid(
 		w,
 		"putWorkspaceProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1220,8 +1219,8 @@ func (w *jsiiProxy_WorkspacesWorkspace) ResetWorkspaceProperties() {
 	)
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkspacesWorkspace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1233,8 +1232,8 @@ func (w *jsiiProxy_WorkspacesWorkspace) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkspacesWorkspace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1246,8 +1245,8 @@ func (w *jsiiProxy_WorkspacesWorkspace) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkspacesWorkspace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1259,8 +1258,8 @@ func (w *jsiiProxy_WorkspacesWorkspace) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkspacesWorkspace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1285,8 +1284,8 @@ func (w *jsiiProxy_WorkspacesWorkspace) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspace) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkspacesWorkspace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1297,4 +1296,3 @@ func (w *jsiiProxy_WorkspacesWorkspace) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DefaultSecurityGroupEgressList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DefaultSecurityGroupEgressList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultSecurityGroupEgressList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDefaultSecurityGroupEgressListParameters(terraformResource cdktf
 
 	return nil
 }
-

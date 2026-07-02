@@ -19,7 +19,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KeyspacesKeyspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KeyspacesKeyspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateKeyspacesKeyspace_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateKeyspacesKeyspace_IsConstructParameters(x interface{}) error {
+func validateKeyspacesKeyspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateKeyspacesKeyspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKeyspacesKeyspace_IsTerraformElementParameters(x interface{}) error {
+func validateKeyspacesKeyspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateKeyspacesKeyspace_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateKeyspacesKeyspace_IsTerraformResourceParameters(x interface{}) error {
+func validateKeyspacesKeyspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateKeyspacesKeyspace_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesKeyspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_KeyspacesKeyspace) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesKeyspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_KeyspacesKeyspace) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KeyspacesKeyspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewKeyspacesKeyspaceParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppstreamFleetComputeCapacityOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GrafanaLicenseAssociationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GrafanaLicenseAssociationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/grafana_license_association#license_type GrafanaLicenseAssociation#license_type}.
 	LicenseType *string `field:"required" json:"licenseType" yaml:"licenseType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/grafana_license_association#workspace_id GrafanaLicenseAssociation#workspace_id}.
@@ -33,4 +33,3 @@ type GrafanaLicenseAssociationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/grafana_license_association#timeouts GrafanaLicenseAssociation#timeouts}
 	Timeouts *GrafanaLicenseAssociationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

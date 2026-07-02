@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafregionalRegexMatchSetRegexMatchTupleListParameters(terraformR
 
 	return nil
 }
-

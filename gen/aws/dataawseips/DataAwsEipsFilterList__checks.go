@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsEipsFilterList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEipsFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEipsFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsEipsFilterListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

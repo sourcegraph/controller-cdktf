@@ -109,7 +109,7 @@ func (e *jsiiProxy_EvidentlyFeatureVariationsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeatureVariationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyFeatureVariationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_EvidentlyFeatureVariationsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeatureVariationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyFeatureVariationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewEvidentlyFeatureVariationsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIotTopicRuleErrorActionCloudwatchMetricOutputReferenceParameters
 
 	return nil
 }
-

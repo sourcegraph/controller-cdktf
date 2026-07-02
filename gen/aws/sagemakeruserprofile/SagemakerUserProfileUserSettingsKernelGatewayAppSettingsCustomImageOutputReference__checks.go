@@ -106,7 +106,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCusto
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCusto
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomIm
 
 	return nil
 }
-

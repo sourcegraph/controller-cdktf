@@ -106,7 +106,7 @@ func (j *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCodepipelineWebhookAuthenticationConfigurationOutputReferencePar
 
 	return nil
 }
-

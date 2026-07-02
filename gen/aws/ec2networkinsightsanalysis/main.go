@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysis)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysis](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForCompletionInput", GoGetter: "WaitForCompletionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warningMessage", GoGetter: "WarningMessage"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysis{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHints",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisAlternatePathHints)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisAlternatePathHints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisAlternatePathHintsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisAlternatePathHintsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisAlternatePathHintsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,19 +147,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisConfig",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanations",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanations)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanations](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAcl",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAcl)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAcl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,11 +215,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRule",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRuleList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -240,7 +240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -278,11 +278,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -303,7 +303,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,11 +337,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedTo",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAttachedTo)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAttachedTo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedToList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAttachedToList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAttachedToList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -354,7 +354,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAttachedToList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -362,7 +362,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -397,11 +397,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -422,7 +422,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,11 +456,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponent",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsComponent)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsComponent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponentList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsComponentList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsComponentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsComponentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -481,7 +481,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -516,11 +516,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsCustomerGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsCustomerGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -533,7 +533,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -541,7 +541,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -576,11 +576,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestination",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestination)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsDestinationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsDestinationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -601,7 +601,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -628,7 +628,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -636,11 +636,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsDestinationVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -653,7 +653,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -661,7 +661,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -688,7 +688,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -696,11 +696,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -713,7 +713,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -721,7 +721,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -756,11 +756,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -773,7 +773,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -781,7 +781,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -808,7 +808,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -816,11 +816,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsInternetGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsInternetGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -833,7 +833,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -841,7 +841,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -868,7 +868,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -876,7 +876,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -889,7 +889,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -897,11 +897,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -914,7 +914,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -922,7 +922,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -949,7 +949,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -957,11 +957,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -974,7 +974,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -982,7 +982,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1009,7 +1009,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1017,11 +1017,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNatGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsNatGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNatGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsNatGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1034,7 +1034,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsNatGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1042,7 +1042,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1069,7 +1069,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1077,11 +1077,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterface",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsNetworkInterface](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1094,7 +1094,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1102,7 +1102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1129,7 +1129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1137,7 +1137,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
 			_jsii_.MemberProperty{JsiiProperty: "aclRule", GoGetter: "AclRule"},
@@ -1209,7 +1209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnConnection", GoGetter: "VpnConnection"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGateway", GoGetter: "VpnGateway"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1217,11 +1217,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsPortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsPortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1234,7 +1234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1242,7 +1242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1268,7 +1268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1276,11 +1276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1293,7 +1293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1301,7 +1301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1328,7 +1328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1336,11 +1336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTable",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTable)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsRouteTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsRouteTableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1353,7 +1353,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1361,7 +1361,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1388,7 +1388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1396,11 +1396,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1413,7 +1413,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1421,7 +1421,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1455,7 +1455,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayId", GoGetter: "TransitGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionId", GoGetter: "VpcPeeringConnectionId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1463,11 +1463,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroup",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroup)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1480,7 +1480,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1488,7 +1488,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1515,7 +1515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1523,11 +1523,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1540,7 +1540,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1548,7 +1548,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1578,7 +1578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1586,11 +1586,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1603,7 +1603,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1611,7 +1611,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1637,7 +1637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1645,11 +1645,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroups",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroups)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1662,7 +1662,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1670,7 +1670,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1697,7 +1697,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1705,11 +1705,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSourceVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSourceVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSourceVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSourceVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1722,7 +1722,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSourceVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1730,7 +1730,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1757,7 +1757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1765,11 +1765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnet",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnet)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSubnet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSubnetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1782,7 +1782,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1790,7 +1790,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1817,7 +1817,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1825,11 +1825,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1842,7 +1842,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1850,7 +1850,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1877,7 +1877,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1885,15 +1885,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGateway](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1906,7 +1906,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1914,7 +1914,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1941,7 +1941,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1949,7 +1949,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1962,7 +1962,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1970,7 +1970,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1997,7 +1997,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2005,11 +2005,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2022,7 +2022,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2030,7 +2030,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2057,7 +2057,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2065,11 +2065,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2082,7 +2082,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2090,7 +2090,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2121,7 +2121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2129,15 +2129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpc](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2150,7 +2150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2158,7 +2158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2185,7 +2185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2193,7 +2193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2206,7 +2206,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2214,7 +2214,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2241,7 +2241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2249,11 +2249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2266,7 +2266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2274,7 +2274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2301,7 +2301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2309,11 +2309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnection",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnConnection)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpnConnection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2326,7 +2326,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2334,7 +2334,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2361,7 +2361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2369,11 +2369,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpnGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2386,7 +2386,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2394,7 +2394,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2421,7 +2421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2429,15 +2429,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponents",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponents)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponents](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2450,7 +2450,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2458,7 +2458,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2488,7 +2488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2496,11 +2496,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2513,7 +2513,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2521,7 +2521,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2547,7 +2547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2555,15 +2555,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2576,7 +2576,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2584,7 +2584,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2611,7 +2611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2619,7 +2619,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2632,7 +2632,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2640,7 +2640,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalDetailType", GoGetter: "AdditionalDetailType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2666,7 +2666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2674,11 +2674,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2691,7 +2691,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2699,7 +2699,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2726,7 +2726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2734,11 +2734,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponent",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsComponent)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsComponent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2751,7 +2751,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2759,7 +2759,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2786,7 +2786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2794,11 +2794,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2811,7 +2811,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2819,7 +2819,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2846,7 +2846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2854,15 +2854,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2875,7 +2875,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2883,7 +2883,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2909,7 +2909,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2917,7 +2917,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2930,7 +2930,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2938,7 +2938,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2967,7 +2967,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2975,11 +2975,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2992,7 +2992,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3000,7 +3000,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3026,7 +3026,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3034,7 +3034,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3047,7 +3047,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3055,15 +3055,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3076,7 +3076,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3084,7 +3084,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3110,7 +3110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3118,7 +3118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3131,7 +3131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3139,7 +3139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3168,7 +3168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3176,11 +3176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3193,7 +3193,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3201,7 +3201,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3227,7 +3227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3235,7 +3235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclRule", GoGetter: "AclRule"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalDetails", GoGetter: "AdditionalDetails"},
@@ -3274,7 +3274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayRouteTableRoute", GoGetter: "TransitGatewayRouteTableRoute"},
 			_jsii_.MemberProperty{JsiiProperty: "vpc", GoGetter: "Vpc"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3282,11 +3282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3299,7 +3299,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3307,7 +3307,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3341,7 +3341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayId", GoGetter: "TransitGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionId", GoGetter: "VpcPeeringConnectionId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3349,11 +3349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3366,7 +3366,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3374,7 +3374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3404,7 +3404,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3412,11 +3412,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3429,7 +3429,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3437,7 +3437,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3463,7 +3463,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3471,11 +3471,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3488,7 +3488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3496,7 +3496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3523,7 +3523,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3531,11 +3531,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3548,7 +3548,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3556,7 +3556,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3583,7 +3583,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3591,11 +3591,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3608,7 +3608,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3616,7 +3616,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3643,7 +3643,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3651,11 +3651,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3668,7 +3668,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3676,7 +3676,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3707,7 +3707,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3715,11 +3715,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3732,7 +3732,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3740,7 +3740,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3767,7 +3767,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3775,15 +3775,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponents",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponents)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponents](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3796,7 +3796,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3804,7 +3804,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3834,7 +3834,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3842,11 +3842,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3859,7 +3859,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3867,7 +3867,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3893,7 +3893,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3901,15 +3901,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3922,7 +3922,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3930,7 +3930,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3957,7 +3957,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3965,7 +3965,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3978,7 +3978,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3986,7 +3986,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalDetailType", GoGetter: "AdditionalDetailType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4012,7 +4012,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4020,11 +4020,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4037,7 +4037,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4045,7 +4045,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4072,7 +4072,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4080,11 +4080,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponent",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsComponent)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsComponent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4097,7 +4097,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4105,7 +4105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4132,7 +4132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4140,11 +4140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4157,7 +4157,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4165,7 +4165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4192,7 +4192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4200,15 +4200,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4221,7 +4221,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4229,7 +4229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4255,7 +4255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4263,7 +4263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4276,7 +4276,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4284,7 +4284,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4313,7 +4313,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4321,11 +4321,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4338,7 +4338,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4346,7 +4346,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4372,7 +4372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4380,7 +4380,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4393,7 +4393,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4401,15 +4401,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4422,7 +4422,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4430,7 +4430,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4456,7 +4456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4464,7 +4464,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4477,7 +4477,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4485,7 +4485,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4514,7 +4514,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4522,11 +4522,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4539,7 +4539,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4547,7 +4547,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4573,7 +4573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4581,7 +4581,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclRule", GoGetter: "AclRule"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalDetails", GoGetter: "AdditionalDetails"},
@@ -4620,7 +4620,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayRouteTableRoute", GoGetter: "TransitGatewayRouteTableRoute"},
 			_jsii_.MemberProperty{JsiiProperty: "vpc", GoGetter: "Vpc"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4628,11 +4628,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4645,7 +4645,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4653,7 +4653,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4687,7 +4687,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayId", GoGetter: "TransitGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionId", GoGetter: "VpcPeeringConnectionId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4695,11 +4695,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4712,7 +4712,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4720,7 +4720,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4750,7 +4750,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4758,11 +4758,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4775,7 +4775,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4783,7 +4783,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4809,7 +4809,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4817,11 +4817,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4834,7 +4834,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4842,7 +4842,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4869,7 +4869,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4877,11 +4877,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4894,7 +4894,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4902,7 +4902,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4929,7 +4929,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4937,11 +4937,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4954,7 +4954,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4962,7 +4962,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4989,7 +4989,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4997,11 +4997,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5014,7 +5014,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5022,7 +5022,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5053,7 +5053,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5061,11 +5061,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpc",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsVpc)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsVpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5078,7 +5078,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5086,7 +5086,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5113,7 +5113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

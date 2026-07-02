@@ -12,9 +12,9 @@ type CloudsearchDomainScalingParametersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type CloudsearchDomainScalingParametersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type CloudsearchDomainScalingParametersOutputReference interface {
 	ResetDesiredReplicationCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_CloudsearchDomainScalingParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) TerraformR
 	return returns
 }
 
-
 func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudsearchDomainScalingParametersOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewCloudsearchDomainScalingParametersOutputReference_Override(c Cloudsearch
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetDesiredInstanceType(val *string) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetDesiredInstanceType(val *string) {
 	if err := j.validateSetDesiredInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetDesiredI
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetDesiredPartitionCount(val *float64) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetDesiredPartitionCount(val *float64) {
 	if err := j.validateSetDesiredPartitionCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetDesiredP
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetDesiredReplicationCount(val *float64) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetDesiredReplicationCount(val *float64) {
 	if err := j.validateSetDesiredReplicationCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetDesiredR
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetInternalValue(val *CloudsearchDomainScalingParameters) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetInternalValue(val *CloudsearchDomainScalingParameters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ResetDesir
 	)
 }
 
-func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ToString()
 
 	return returns
 }
-

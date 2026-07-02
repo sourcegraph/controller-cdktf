@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsVpc) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsVpc) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsVpc) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpc) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsVpc) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsVpc_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateDataAwsVpc_IsConstructParameters(x interface{}) error {
+func validateDataAwsVpc_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsVpc_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsVpc_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsVpc_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsVpc_IsTerraformDataSourceParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsVpc_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsVpc_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_DataAwsVpc) validateSetCidrBlockParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpc) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpc) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,7 +258,7 @@ func (j *jsiiProxy_DataAwsVpc) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpc) validateSetDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpc) validateSetDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -333,4 +333,3 @@ func validateNewDataAwsVpcParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type DataAwsSecretsmanagerSecretsFilterList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataAwsSecretsmanagerSecretsFilterList interface {
 	Get(index *float64) DataAwsSecretsmanagerSecretsFilterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataAwsSecretsmanagerSecretsFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecretsmanagerSecretsFilterList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataAwsSecretsmanagerSecretsFilterList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataAwsSecretsmanagerSecretsFilterList_Override(d DataAwsSecretsmanagerS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) Get(index *float64) D
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) ToString() *string {
 
 	return returns
 }
-

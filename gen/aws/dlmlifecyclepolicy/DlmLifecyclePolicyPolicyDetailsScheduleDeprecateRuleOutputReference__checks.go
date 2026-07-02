@@ -98,7 +98,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputRefere
 
 	return nil
 }
-

@@ -14,27 +14,27 @@ type FsxDataRepositoryAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
 	AssociationId() *string
-	BatchImportMetaDataOnCreate() interface{}
-	SetBatchImportMetaDataOnCreate(val interface{})
-	BatchImportMetaDataOnCreateInput() interface{}
+	BatchImportMetaDataOnCreate() any
+	SetBatchImportMetaDataOnCreate(val any)
+	BatchImportMetaDataOnCreateInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataRepositoryPath() *string
 	SetDataRepositoryPath(val *string)
 	DataRepositoryPathInput() *string
-	DeleteDataInFilesystem() interface{}
-	SetDeleteDataInFilesystem(val interface{})
-	DeleteDataInFilesystemInput() interface{}
+	DeleteDataInFilesystem() any
+	SetDeleteDataInFilesystem(val any)
+	DeleteDataInFilesystemInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,11 +70,11 @@ type FsxDataRepositoryAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3() FsxDataRepositoryAssociationS3OutputReference
 	S3Input() *FsxDataRepositoryAssociationS3
 	Tags() *map[string]*string
@@ -86,18 +86,18 @@ type FsxDataRepositoryAssociation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FsxDataRepositoryAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type FsxDataRepositoryAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type FsxDataRepositoryAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type FsxDataRepositoryAssociation interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxDataRepositoryAssociation
@@ -185,8 +185,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) AssociationId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) BatchImportMetaDataOnCreate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) BatchImportMetaDataOnCreate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"batchImportMetaDataOnCreate",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) BatchImportMetaDataOnCreate() i
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) BatchImportMetaDataOnCreateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) BatchImportMetaDataOnCreateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"batchImportMetaDataOnCreateInput",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) DataRepositoryPathInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) DeleteDataInFilesystem() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) DeleteDataInFilesystem() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteDataInFilesystem",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) DeleteDataInFilesystem() interf
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) DeleteDataInFilesystemInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) DeleteDataInFilesystemInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteDataInFilesystemInput",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) Timeouts() FsxDataRepositoryAss
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxDataRepositoryAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -564,7 +564,6 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
 func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, config *FsxDataRepositoryAssociationConfig) FsxDataRepositoryAssociation {
@@ -577,7 +576,7 @@ func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -590,12 +589,12 @@ func NewFsxDataRepositoryAssociation_Override(f FsxDataRepositoryAssociation, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetBatchImportMetaDataOnCreate(val interface{}) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetBatchImportMetaDataOnCreate(val any) {
 	if err := j.validateSetBatchImportMetaDataOnCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetBatchImportMetaDataOnCreate(v
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetDataRepositoryPath(val *string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetDataRepositoryPath(val *string) {
 	if err := j.validateSetDataRepositoryPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetDataRepositoryPath(val *strin
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetDeleteDataInFilesystem(val interface{}) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetDeleteDataInFilesystem(val any) {
 	if err := j.validateSetDeleteDataInFilesystemParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetDeleteDataInFilesystem(val in
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetFileSystemId(val *string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetFileSystemId(val *string) {
 	if err := j.validateSetFileSystemIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetFileSystemId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetFileSystemPath(val *string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetFileSystemPath(val *string) {
 	if err := j.validateSetFileSystemPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetFileSystemPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -688,7 +687,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetId(val *string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetImportedFileChunkSize(val *float64) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetImportedFileChunkSize(val *float64) {
 	if err := j.validateSetImportedFileChunkSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetImportedFileChunkSize(val *fl
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -729,7 +728,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetTags(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func FsxDataRepositoryAssociation_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func FsxDataRepositoryAssociation_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxDataRepositoryAssociation_IsConstruct(x interface{}) *bool {
+func FsxDataRepositoryAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxDataRepositoryAssociation_IsConstructParameters(x); err != nil {
@@ -809,7 +808,7 @@ func FsxDataRepositoryAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func FsxDataRepositoryAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxDataRepositoryAssociation_IsTerraformElement(x interface{}) *bool {
+func FsxDataRepositoryAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxDataRepositoryAssociation_IsTerraformElementParameters(x); err != nil {
@@ -828,7 +827,7 @@ func FsxDataRepositoryAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func FsxDataRepositoryAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxDataRepositoryAssociation_IsTerraformResource(x interface{}) *bool {
+func FsxDataRepositoryAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxDataRepositoryAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -847,7 +846,7 @@ func FsxDataRepositoryAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -872,31 +871,31 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxDataRepositoryAssociation) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxDataRepositoryAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,15 +1023,15 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxDataRepositoryAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1051,7 +1050,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,18 +1077,18 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxDataRepositoryAssociation) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) PutS3(value *FsxDataRepositoryA
 	_jsii_.InvokeVoid(
 		f,
 		"putS3",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) PutTimeouts(value *FsxDataRepos
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1209,8 +1208,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxDataRepositoryAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1222,8 +1221,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxDataRepositoryAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1235,8 +1234,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxDataRepositoryAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1248,8 +1247,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxDataRepositoryAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1274,8 +1273,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxDataRepositoryAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1286,4 +1285,3 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

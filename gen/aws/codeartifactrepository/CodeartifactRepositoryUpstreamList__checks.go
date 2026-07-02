@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodeartifactRepositoryUpstreamList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodeartifactRepositoryUpstreamListParameters(terraformResource c
 
 	return nil
 }
-

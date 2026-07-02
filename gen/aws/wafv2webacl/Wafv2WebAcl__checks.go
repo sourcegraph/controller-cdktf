@@ -19,7 +19,7 @@ func (w *jsiiProxy_Wafv2WebAcl) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAcl) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAcl) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_Wafv2WebAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_Wafv2WebAcl) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_Wafv2WebAcl) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAcl) validatePutCustomResponseBodyParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAcl) validatePutCustomResponseBodyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (w *jsiiProxy_Wafv2WebAcl) validatePutDefaultActionParameters(value *Wafv2W
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAcl) validatePutRuleParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAcl) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateWafv2WebAcl_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateWafv2WebAcl_IsConstructParameters(x interface{}) error {
+func validateWafv2WebAcl_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateWafv2WebAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafv2WebAcl_IsTerraformElementParameters(x interface{}) error {
+func validateWafv2WebAcl_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateWafv2WebAcl_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafv2WebAcl_IsTerraformResourceParameters(x interface{}) error {
+func validateWafv2WebAcl_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateWafv2WebAcl_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAcl) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAcl) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAcl) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAcl) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -450,7 +450,7 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAcl) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Wafv2WebAcl) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -538,4 +538,3 @@ func validateNewWafv2WebAclParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type FsxFileCacheLustreConfigurationList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type FsxFileCacheLustreConfigurationList interface {
 	Get(index *float64) FsxFileCacheLustreConfigurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewFsxFileCacheLustreConfigurationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxFileCacheLustreConfigurationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewFsxFileCacheLustreConfigurationList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewFsxFileCacheLustreConfigurationList_Override(f FsxFileCacheLustreConfigu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) Get(index *float64) FsxF
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) ToString() *string {
 
 	return returns
 }
-

@@ -122,7 +122,7 @@ func (j *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateSetAuthTyp
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDmsEndpointMongodbSettingsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

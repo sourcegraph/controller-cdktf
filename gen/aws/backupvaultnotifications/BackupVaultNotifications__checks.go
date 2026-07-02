@@ -19,7 +19,7 @@ func (b *jsiiProxy_BackupVaultNotifications) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (b *jsiiProxy_BackupVaultNotifications) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BackupVaultNotifications) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BackupVaultNotifications) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (b *jsiiProxy_BackupVaultNotifications) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BackupVaultNotifications) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateBackupVaultNotifications_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateBackupVaultNotifications_IsConstructParameters(x interface{}) error {
+func validateBackupVaultNotifications_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateBackupVaultNotifications_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateBackupVaultNotifications_IsTerraformElementParameters(x interface{}) error {
+func validateBackupVaultNotifications_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateBackupVaultNotifications_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateBackupVaultNotifications_IsTerraformResourceParameters(x interface{}) error {
+func validateBackupVaultNotifications_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_BackupVaultNotifications) validateSetBackupVaultNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_BackupVaultNotifications) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BackupVaultNotifications) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_BackupVaultNotifications) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_BackupVaultNotifications) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BackupVaultNotifications) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_BackupVaultNotifications) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_BackupVaultNotifications) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BackupVaultNotifications) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewBackupVaultNotificationsParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package mqbroker
 
-
 type MqBrokerLdapServerMetadata struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#hosts MqBroker#hosts}.
 	Hosts *[]*string `field:"optional" json:"hosts" yaml:"hosts"`
@@ -11,7 +10,7 @@ type MqBrokerLdapServerMetadata struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#role_search_matching MqBroker#role_search_matching}.
 	RoleSearchMatching *string `field:"optional" json:"roleSearchMatching" yaml:"roleSearchMatching"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#role_search_subtree MqBroker#role_search_subtree}.
-	RoleSearchSubtree interface{} `field:"optional" json:"roleSearchSubtree" yaml:"roleSearchSubtree"`
+	RoleSearchSubtree any `field:"optional" json:"roleSearchSubtree" yaml:"roleSearchSubtree"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#service_account_password MqBroker#service_account_password}.
 	ServiceAccountPassword *string `field:"optional" json:"serviceAccountPassword" yaml:"serviceAccountPassword"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#service_account_username MqBroker#service_account_username}.
@@ -23,6 +22,5 @@ type MqBrokerLdapServerMetadata struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#user_search_matching MqBroker#user_search_matching}.
 	UserSearchMatching *string `field:"optional" json:"userSearchMatching" yaml:"userSearchMatching"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/mq_broker#user_search_subtree MqBroker#user_search_subtree}.
-	UserSearchSubtree interface{} `field:"optional" json:"userSearchSubtree" yaml:"userSearchSubtree"`
+	UserSearchSubtree any `field:"optional" json:"userSearchSubtree" yaml:"userSearchSubtree"`
 }
-

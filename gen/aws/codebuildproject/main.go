@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
-		reflect.TypeOf((*CodebuildProject)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProject](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifacts",
-		reflect.TypeOf((*CodebuildProjectArtifacts)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectArtifacts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
-		reflect.TypeOf((*CodebuildProjectArtifactsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectArtifactsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdentifier", GoGetter: "ArtifactIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdentifierInput", GoGetter: "ArtifactIdentifierInput"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectArtifactsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfig",
-		reflect.TypeOf((*CodebuildProjectBuildBatchConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectBuildBatchConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectBuildBatchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectBuildBatchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "combineArtifacts", GoGetter: "CombineArtifacts"},
 			_jsii_.MemberProperty{JsiiProperty: "combineArtifactsInput", GoGetter: "CombineArtifactsInput"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInMinsInput", GoGetter: "TimeoutInMinsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -258,11 +258,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictions",
-		reflect.TypeOf((*CodebuildProjectBuildBatchConfigRestrictions)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectBuildBatchConfigRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
-		reflect.TypeOf((*CodebuildProjectBuildBatchConfigRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectBuildBatchConfigRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -300,11 +300,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectCache",
-		reflect.TypeOf((*CodebuildProjectCache)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectCache](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectCacheOutputReference",
-		reflect.TypeOf((*CodebuildProjectCacheOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectCacheOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectCacheOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -345,19 +345,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectConfig",
-		reflect.TypeOf((*CodebuildProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironment",
-		reflect.TypeOf((*CodebuildProjectEnvironment)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironment](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariable",
-		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariable)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironmentEnvironmentVariable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
-		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariableList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironmentEnvironmentVariableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -371,7 +371,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -379,7 +379,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
-		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironmentEnvironmentVariableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,7 +418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentOutputReference",
-		reflect.TypeOf((*CodebuildProjectEnvironmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateInput", GoGetter: "CertificateInput"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectEnvironmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -473,11 +473,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredential",
-		reflect.TypeOf((*CodebuildProjectEnvironmentRegistryCredential)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironmentRegistryCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
-		reflect.TypeOf((*CodebuildProjectEnvironmentRegistryCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectEnvironmentRegistryCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -505,7 +505,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectEnvironmentRegistryCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -513,11 +513,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocations",
-		reflect.TypeOf((*CodebuildProjectFileSystemLocations)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectFileSystemLocations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
-		reflect.TypeOf((*CodebuildProjectFileSystemLocationsList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectFileSystemLocationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -531,7 +531,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectFileSystemLocationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -539,7 +539,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
-		reflect.TypeOf((*CodebuildProjectFileSystemLocationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectFileSystemLocationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -586,15 +586,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfig",
-		reflect.TypeOf((*CodebuildProjectLogsConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectLogsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogs",
-		reflect.TypeOf((*CodebuildProjectLogsConfigCloudwatchLogs)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectLogsConfigCloudwatchLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogsOutputReference",
-		reflect.TypeOf((*CodebuildProjectLogsConfigCloudwatchLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectLogsConfigCloudwatchLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,7 +635,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectLogsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectLogsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogsInput", GoGetter: "CloudwatchLogsInput"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectLogsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -675,11 +675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3Logs",
-		reflect.TypeOf((*CodebuildProjectLogsConfigS3Logs)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectLogsConfigS3Logs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
-		reflect.TypeOf((*CodebuildProjectLogsConfigS3LogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectLogsConfigS3LogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketOwnerAccess", GoGetter: "BucketOwnerAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketOwnerAccessInput", GoGetter: "BucketOwnerAccessInput"},
@@ -715,7 +715,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -723,11 +723,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifacts",
-		reflect.TypeOf((*CodebuildProjectSecondaryArtifacts)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondaryArtifacts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
-		reflect.TypeOf((*CodebuildProjectSecondaryArtifactsList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondaryArtifactsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -741,7 +741,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondaryArtifactsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -749,7 +749,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
-		reflect.TypeOf((*CodebuildProjectSecondaryArtifactsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondaryArtifactsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdentifier", GoGetter: "ArtifactIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdentifierInput", GoGetter: "ArtifactIdentifierInput"},
@@ -801,7 +801,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -809,11 +809,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersion",
-		reflect.TypeOf((*CodebuildProjectSecondarySourceVersion)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourceVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
-		reflect.TypeOf((*CodebuildProjectSecondarySourceVersionList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourceVersionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -827,7 +827,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourceVersionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -835,7 +835,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
-		reflect.TypeOf((*CodebuildProjectSecondarySourceVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourceVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -863,7 +863,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -871,15 +871,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySources",
-		reflect.TypeOf((*CodebuildProjectSecondarySources)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuth",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesAuth)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesAuth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesAuthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesAuthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -908,7 +908,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -916,11 +916,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesBuildStatusConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesBuildStatusConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -950,7 +950,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -958,11 +958,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfig",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesGitSubmodulesConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesGitSubmodulesConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -988,7 +988,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -996,7 +996,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesList",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesList)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1018,7 +1018,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference",
-		reflect.TypeOf((*CodebuildProjectSecondarySourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSecondarySourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
 			_jsii_.MemberProperty{JsiiProperty: "authInput", GoGetter: "AuthInput"},
@@ -1073,7 +1073,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSecondarySourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1081,15 +1081,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSource",
-		reflect.TypeOf((*CodebuildProjectSource)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceAuth",
-		reflect.TypeOf((*CodebuildProjectSourceAuth)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceAuth](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceAuthOutputReference",
-		reflect.TypeOf((*CodebuildProjectSourceAuthOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceAuthOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1118,7 +1118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSourceAuthOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1126,11 +1126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfig",
-		reflect.TypeOf((*CodebuildProjectSourceBuildStatusConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceBuildStatusConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectSourceBuildStatusConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceBuildStatusConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1160,7 +1160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSourceBuildStatusConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1168,11 +1168,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfig",
-		reflect.TypeOf((*CodebuildProjectSourceGitSubmodulesConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceGitSubmodulesConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectSourceGitSubmodulesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceGitSubmodulesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1198,7 +1198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSourceGitSubmodulesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1206,7 +1206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceOutputReference",
-		reflect.TypeOf((*CodebuildProjectSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
 			_jsii_.MemberProperty{JsiiProperty: "authInput", GoGetter: "AuthInput"},
@@ -1259,7 +1259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1267,11 +1267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfig",
-		reflect.TypeOf((*CodebuildProjectVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
-		reflect.TypeOf((*CodebuildProjectVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodebuildProjectVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1301,7 +1301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodebuildProjectVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

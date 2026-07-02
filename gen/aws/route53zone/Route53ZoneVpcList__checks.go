@@ -34,7 +34,7 @@ func (r *jsiiProxy_Route53ZoneVpcList) validateResolveParameters(_context cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneVpcList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ZoneVpcList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRoute53ZoneVpcListParameters(terraformResource cdktf.IInterpolat
 
 	return nil
 }
-

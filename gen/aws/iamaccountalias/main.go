@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAlias",
-		reflect.TypeOf((*IamAccountAlias)(nil)).Elem(),
+		reflect.TypeFor[IamAccountAlias](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountAlias", GoGetter: "AccountAlias"},
 			_jsii_.MemberProperty{JsiiProperty: "accountAliasInput", GoGetter: "AccountAliasInput"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamAccountAlias{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig",
-		reflect.TypeOf((*IamAccountAliasConfig)(nil)).Elem(),
+		reflect.TypeFor[IamAccountAliasConfig](),
 	)
 }

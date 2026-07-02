@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateAddMoveTargetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateMoveFromIdParameters
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNetworkmanagerConnectAttachment_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateNetworkmanagerConnectAttachment_IsConstructParameters(x interface{}) error {
+func validateNetworkmanagerConnectAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNetworkmanagerConnectAttachment_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateNetworkmanagerConnectAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkmanagerConnectAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNetworkmanagerConnectAttachment_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateNetworkmanagerConnectAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkmanagerConnectAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateNetworkmanagerConnectAttachment_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetCoreNetworkIdPara
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetLifecycleParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkmanagerConnectAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewNetworkmanagerConnectAttachmentParameters(scope constructs.Const
 
 	return nil
 }
-

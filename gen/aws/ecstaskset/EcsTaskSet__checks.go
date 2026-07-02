@@ -19,7 +19,7 @@ func (e *jsiiProxy_EcsTaskSet) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EcsTaskSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EcsTaskSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EcsTaskSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EcsTaskSet) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSet) validatePutCapacityProviderStrategyParameters(value interface{}) error {
+func (e *jsiiProxy_EcsTaskSet) validatePutCapacityProviderStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (e *jsiiProxy_EcsTaskSet) validatePutCapacityProviderStrategyParameters(val
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSet) validatePutLoadBalancerParameters(value interface{}) error {
+func (e *jsiiProxy_EcsTaskSet) validatePutLoadBalancerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateEcsTaskSet_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateEcsTaskSet_IsConstructParameters(x interface{}) error {
+func validateEcsTaskSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateEcsTaskSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcsTaskSet_IsTerraformElementParameters(x interface{}) error {
+func validateEcsTaskSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateEcsTaskSet_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcsTaskSet_IsTerraformResourceParameters(x interface{}) error {
+func validateEcsTaskSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -347,7 +347,7 @@ func (j *jsiiProxy_EcsTaskSet) validateSetClusterParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_EcsTaskSet) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -445,7 +445,7 @@ func (j *jsiiProxy_EcsTaskSet) validateSetExternalIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSet) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSet) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -497,7 +497,7 @@ func (j *jsiiProxy_EcsTaskSet) validateSetPlatformVersionParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EcsTaskSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -575,7 +575,7 @@ func (j *jsiiProxy_EcsTaskSet) validateSetTaskDefinitionParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSet) validateSetWaitUntilStableParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskSet) validateSetWaitUntilStableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -621,4 +621,3 @@ func validateNewEcsTaskSetParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

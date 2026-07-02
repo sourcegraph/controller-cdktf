@@ -19,7 +19,7 @@ func (a *jsiiProxy_Ami) validateAddMoveTargetParameters(moveTarget *string) erro
 	return nil
 }
 
-func (a *jsiiProxy_Ami) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Ami) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_Ami) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Ami) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_Ami) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_Ami) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
-func (a *jsiiProxy_Ami) validatePutEbsBlockDeviceParameters(value interface{}) error {
+func (a *jsiiProxy_Ami) validatePutEbsBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (a *jsiiProxy_Ami) validatePutEbsBlockDeviceParameters(value interface{}) e
 	return nil
 }
 
-func (a *jsiiProxy_Ami) validatePutEphemeralBlockDeviceParameters(value interface{}) error {
+func (a *jsiiProxy_Ami) validatePutEphemeralBlockDeviceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateAmi_GenerateConfigForImportParameters(scope constructs.Construct, i
 	return nil
 }
 
-func validateAmi_IsConstructParameters(x interface{}) error {
+func validateAmi_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateAmi_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAmi_IsTerraformElementParameters(x interface{}) error {
+func validateAmi_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateAmi_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAmi_IsTerraformResourceParameters(x interface{}) error {
+func validateAmi_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func (j *jsiiProxy_Ami) validateSetBootModeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Ami) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ami) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Ami) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Ami) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ami) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -439,7 +439,7 @@ func (j *jsiiProxy_Ami) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Ami) validateSetEnaSupportParameters(val interface{}) error {
+func (j *jsiiProxy_Ami) validateSetEnaSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -507,7 +507,7 @@ func (j *jsiiProxy_Ami) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Ami) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ami) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -627,4 +627,3 @@ func validateNewAmiParameters(scope constructs.Construct, id *string, config *Am
 
 	return nil
 }
-

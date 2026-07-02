@@ -16,15 +16,15 @@ type CloudwatchEventBus interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,11 +57,11 @@ type CloudwatchEventBus interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -71,16 +71,16 @@ type CloudwatchEventBus interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type CloudwatchEventBus interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type CloudwatchEventBus interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type CloudwatchEventBus interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudwatchEventBus
@@ -162,8 +162,8 @@ func (j *jsiiProxy_CloudwatchEventBus) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventBus) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventBus) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_CloudwatchEventBus) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventBus) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchEventBus) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_CloudwatchEventBus) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventBus) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventBus) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_CloudwatchEventBus) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventBus) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudwatchEventBus) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_CloudwatchEventBus) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventBus) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventBus) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_CloudwatchEventBus) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventBus) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchEventBus) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_CloudwatchEventBus) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource.
 func NewCloudwatchEventBus(scope constructs.Construct, id *string, config *CloudwatchEventBusConfig) CloudwatchEventBus {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewCloudwatchEventBus(scope constructs.Construct, id *string, config *Cloud
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewCloudwatchEventBus_Override(c CloudwatchEventBus, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventBus) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventBus) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudwatchEventBus) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetEventSourceName(val *string) {
+func (j *jsiiProxy_CloudwatchEventBus) SetEventSourceName(val *string) {
 	if err := j.validateSetEventSourceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetEventSourceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudwatchEventBus) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -491,7 +490,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetId(val *string) {
+func (j *jsiiProxy_CloudwatchEventBus) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudwatchEventBus) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetName(val *string) {
+func (j *jsiiProxy_CloudwatchEventBus) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudwatchEventBus) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudwatchEventBus) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchEventBus) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_CloudwatchEventBus)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventBus)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchEventBus) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func CloudwatchEventBus_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func CloudwatchEventBus_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudwatchEventBus_IsConstruct(x interface{}) *bool {
+func CloudwatchEventBus_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventBus_IsConstructParameters(x); err != nil {
@@ -612,7 +611,7 @@ func CloudwatchEventBus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func CloudwatchEventBus_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchEventBus_IsTerraformElement(x interface{}) *bool {
+func CloudwatchEventBus_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventBus_IsTerraformElementParameters(x); err != nil {
@@ -631,7 +630,7 @@ func CloudwatchEventBus_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func CloudwatchEventBus_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchEventBus_IsTerraformResource(x interface{}) *bool {
+func CloudwatchEventBus_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventBus_IsTerraformResourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func CloudwatchEventBus_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,31 +674,31 @@ func (c *jsiiProxy_CloudwatchEventBus) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudwatchEventBus) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudwatchEventBus) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (c *jsiiProxy_CloudwatchEventBus) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,15 +826,15 @@ func (c *jsiiProxy_CloudwatchEventBus) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventBus) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -854,7 +853,7 @@ func (c *jsiiProxy_CloudwatchEventBus) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_CloudwatchEventBus) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,18 +880,18 @@ func (c *jsiiProxy_CloudwatchEventBus) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudwatchEventBus) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -903,7 +902,7 @@ func (c *jsiiProxy_CloudwatchEventBus) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -914,7 +913,7 @@ func (c *jsiiProxy_CloudwatchEventBus) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -958,8 +957,8 @@ func (c *jsiiProxy_CloudwatchEventBus) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchEventBus) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -971,8 +970,8 @@ func (c *jsiiProxy_CloudwatchEventBus) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchEventBus) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -984,8 +983,8 @@ func (c *jsiiProxy_CloudwatchEventBus) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventBus) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -997,8 +996,8 @@ func (c *jsiiProxy_CloudwatchEventBus) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventBus) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1023,8 +1022,8 @@ func (c *jsiiProxy_CloudwatchEventBus) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventBus) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventBus) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1035,4 +1034,3 @@ func (c *jsiiProxy_CloudwatchEventBus) ToTerraform() interface{} {
 
 	return returns
 }
-

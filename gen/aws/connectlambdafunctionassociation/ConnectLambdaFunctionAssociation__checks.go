@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateAddMoveTargetParame
 	return nil
 }
 
-func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateMoveFromIdParameter
 	return nil
 }
 
-func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateConnectLambdaFunctionAssociation_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateConnectLambdaFunctionAssociation_IsConstructParameters(x interface{}) error {
+func validateConnectLambdaFunctionAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateConnectLambdaFunctionAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateConnectLambdaFunctionAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateConnectLambdaFunctionAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateConnectLambdaFunctionAssociation_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateConnectLambdaFunctionAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateConnectLambdaFunctionAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateConnectLambdaFunctionAssociation_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetLifecycleParamet
 	return nil
 }
 
-func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewConnectLambdaFunctionAssociationParameters(scope constructs.Cons
 
 	return nil
 }
-

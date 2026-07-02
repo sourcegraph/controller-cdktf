@@ -21,15 +21,15 @@ type KinesisAnalyticsApplication interface {
 	SetCode(val *string)
 	CodeInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,22 +62,22 @@ type KinesisAnalyticsApplication interface {
 	// The tree node.
 	Node() constructs.Node
 	Outputs() KinesisAnalyticsApplicationOutputsList
-	OutputsInput() interface{}
+	OutputsInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReferenceDataSources() KinesisAnalyticsApplicationReferenceDataSourcesOutputReference
 	ReferenceDataSourcesInput() *KinesisAnalyticsApplicationReferenceDataSources
-	StartApplication() interface{}
-	SetStartApplication(val interface{})
-	StartApplicationInput() interface{}
+	StartApplication() any
+	SetStartApplication(val any)
+	StartApplicationInput() any
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -88,7 +88,7 @@ type KinesisAnalyticsApplication interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *float64
@@ -96,9 +96,9 @@ type KinesisAnalyticsApplication interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type KinesisAnalyticsApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type KinesisAnalyticsApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,7 +137,7 @@ type KinesisAnalyticsApplication interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchLoggingOptions(value *KinesisAnalyticsApplicationCloudwatchLoggingOptions)
 	PutInputs(value *KinesisAnalyticsApplicationInputs)
-	PutOutputs(value interface{})
+	PutOutputs(value any)
 	PutReferenceDataSources(value *KinesisAnalyticsApplicationReferenceDataSources)
 	ResetCloudwatchLoggingOptions()
 	ResetCode()
@@ -152,17 +152,17 @@ type KinesisAnalyticsApplication interface {
 	ResetStartApplication()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KinesisAnalyticsApplication
@@ -230,8 +230,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) CodeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) Outputs() KinesisAnalyticsApplic
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) OutputsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) OutputsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"outputsInput",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) ReferenceDataSourcesInput() *Kin
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) StartApplication() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) StartApplication() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startApplication",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) StartApplication() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) StartApplicationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) StartApplicationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startApplicationInput",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -600,7 +600,6 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) Version() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_analytics_application aws_kinesis_analytics_application} Resource.
 func NewKinesisAnalyticsApplication(scope constructs.Construct, id *string, config *KinesisAnalyticsApplicationConfig) KinesisAnalyticsApplication {
 	_init_.Initialize()
@@ -612,7 +611,7 @@ func NewKinesisAnalyticsApplication(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -625,12 +624,12 @@ func NewKinesisAnalyticsApplication_Override(k KinesisAnalyticsApplication, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetCode(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetCode(val *string) {
 	if err := j.validateSetCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -671,7 +670,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetDescription(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetId(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetName(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetStartApplication(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetStartApplication(val any) {
 	if err := j.validateSetStartApplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetStartApplication(val interface
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication)SetTags(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KinesisAnalyticsApplication) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func KinesisAnalyticsApplication_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func KinesisAnalyticsApplication_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KinesisAnalyticsApplication_IsConstruct(x interface{}) *bool {
+func KinesisAnalyticsApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisAnalyticsApplication_IsConstructParameters(x); err != nil {
@@ -822,7 +821,7 @@ func KinesisAnalyticsApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func KinesisAnalyticsApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisAnalyticsApplication_IsTerraformElement(x interface{}) *bool {
+func KinesisAnalyticsApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisAnalyticsApplication_IsTerraformElementParameters(x); err != nil {
@@ -841,7 +840,7 @@ func KinesisAnalyticsApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func KinesisAnalyticsApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisAnalyticsApplication_IsTerraformResource(x interface{}) *bool {
+func KinesisAnalyticsApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisAnalyticsApplication_IsTerraformResourceParameters(x); err != nil {
@@ -860,7 +859,7 @@ func KinesisAnalyticsApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,31 +884,31 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KinesisAnalyticsApplication) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,15 +1036,15 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisAnalyticsApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1064,7 +1063,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,18 +1090,18 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KinesisAnalyticsApplication) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) PutCloudwatchLoggingOptions(valu
 	_jsii_.InvokeVoid(
 		k,
 		"putCloudwatchLoggingOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,18 +1145,18 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) PutInputs(value *KinesisAnalytic
 	_jsii_.InvokeVoid(
 		k,
 		"putInputs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) PutOutputs(value interface{}) {
+func (k *jsiiProxy_KinesisAnalyticsApplication) PutOutputs(value any) {
 	if err := k.validatePutOutputsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putOutputs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) PutReferenceDataSources(value *K
 	_jsii_.InvokeVoid(
 		k,
 		"putReferenceDataSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1260,8 +1259,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) ResetTagsAll() {
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisAnalyticsApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1273,8 +1272,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisAnalyticsApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1286,8 +1285,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisAnalyticsApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1299,8 +1298,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisAnalyticsApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1325,8 +1324,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisAnalyticsApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1337,4 +1336,3 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

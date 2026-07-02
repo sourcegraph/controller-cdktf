@@ -98,7 +98,7 @@ func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewTransferWorkflowStepsTagStepDetailsTagsOutputReferenceParameters
 
 	return nil
 }
-

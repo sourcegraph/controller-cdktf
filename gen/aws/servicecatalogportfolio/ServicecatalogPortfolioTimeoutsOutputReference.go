@@ -12,9 +12,9 @@ type ServicecatalogPortfolioTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ServicecatalogPortfolioTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Read() *string
 	SetRead(val *string)
 	ReadInput() *string
@@ -52,7 +52,7 @@ type ServicecatalogPortfolioTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ServicecatalogPortfolioTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) UpdateInput()
 	return returns
 }
 
-
 func NewServicecatalogPortfolioTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicecatalogPortfolioTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewServicecatalogPortfolioTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewServicecatalogPortfolioTimeoutsOutputReference_Override(s Servicecatalog
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetRead(val *string) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetRead(val *string) {
 	if err := j.validateSetReadParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetRead(val *s
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (s *jsiiProxy_ServicecatalogPortfolioTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

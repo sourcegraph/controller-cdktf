@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBackupReportPlanReportDeliveryChannelOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveChannelCdiInputSpecificationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelCdiInputSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelCdiInputSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMedialiveChannelCdiInputSpecificationOutputReferenceParameters(t
 
 	return nil
 }
-

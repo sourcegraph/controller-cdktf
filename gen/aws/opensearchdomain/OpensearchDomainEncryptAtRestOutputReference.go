@@ -12,9 +12,9 @@ type OpensearchDomainEncryptAtRestOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type OpensearchDomainEncryptAtRestOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OpensearchDomainEncryptAtRest
@@ -46,7 +46,7 @@ type OpensearchDomainEncryptAtRestOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type OpensearchDomainEncryptAtRestOutputReference interface {
 	ResetKmsKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_OpensearchDomainEncryptAtRestOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) CreationStack()
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) Enabled() inter
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewOpensearchDomainEncryptAtRestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainEncryptAtRestOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewOpensearchDomainEncryptAtRestOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewOpensearchDomainEncryptAtRestOutputReference_Override(o OpensearchDomain
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetInternalValue(val *OpensearchDomainEncryptAtRest) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetInternalValue(val *OpensearchDomainEncryptAtRest) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetKmsKeyId(val 
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) ResetKmsKeyId()
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (o *jsiiProxy_OpensearchDomainEncryptAtRestOutputReference) ToString() *str
 
 	return returns
 }
-

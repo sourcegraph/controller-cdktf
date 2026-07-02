@@ -16,13 +16,13 @@ type DataAwsApiGatewaySdk interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentDisposition() *string
 	ContentType() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,7 +52,7 @@ type DataAwsApiGatewaySdk interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestApiId() *string
 	SetRestApiId(val *string)
 	RestApiIdInput() *string
@@ -65,13 +65,13 @@ type DataAwsApiGatewaySdk interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataAwsApiGatewaySdk interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsApiGatewaySdk
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsApiGatewaySdk) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk) ContentType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApiGatewaySdk) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsApiGatewaySdk) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsApiGatewaySdk) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/api_gateway_sdk aws_api_gateway_sdk} Data Source.
 func NewDataAwsApiGatewaySdk(scope constructs.Construct, id *string, config *DataAwsApiGatewaySdkConfig) DataAwsApiGatewaySdk {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewDataAwsApiGatewaySdk(scope constructs.Construct, id *string, config *Dat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewDataAwsApiGatewaySdk_Override(d DataAwsApiGatewaySdk, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetId(val *string) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetParameters(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetParameters(val *map[string]*string) {
 	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetParameters(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetRestApiId(val *string) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetRestApiId(val *string) {
 	if err := j.validateSetRestApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetRestApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetSdkType(val *string) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetSdkType(val *string) {
 	if err := j.validateSetSdkTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk)SetSdkType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewaySdk)SetStageName(val *string) {
+func (j *jsiiProxy_DataAwsApiGatewaySdk) SetStageName(val *string) {
 	if err := j.validateSetStageNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func DataAwsApiGatewaySdk_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func DataAwsApiGatewaySdk_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsApiGatewaySdk_IsConstruct(x interface{}) *bool {
+func DataAwsApiGatewaySdk_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApiGatewaySdk_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func DataAwsApiGatewaySdk_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func DataAwsApiGatewaySdk_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsApiGatewaySdk_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsApiGatewaySdk_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApiGatewaySdk_IsTerraformDataSourceParameters(x); err != nil {
@@ -584,7 +583,7 @@ func DataAwsApiGatewaySdk_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func DataAwsApiGatewaySdk_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsApiGatewaySdk_IsTerraformElement(x interface{}) *bool {
+func DataAwsApiGatewaySdk_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsApiGatewaySdk_IsTerraformElementParameters(x); err != nil {
@@ -603,7 +602,7 @@ func DataAwsApiGatewaySdk_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApiGatewaySdk.DataAwsApiGatewaySdk",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -621,27 +620,27 @@ func DataAwsApiGatewaySdk_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsApiGatewaySdk) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsApiGatewaySdk) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -827,8 +826,8 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) ResetParameters() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsApiGatewaySdk) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -840,8 +839,8 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsApiGatewaySdk) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -853,8 +852,8 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApiGatewaySdk) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -866,8 +865,8 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApiGatewaySdk) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsApiGatewaySdk) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsApiGatewaySdk) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -904,4 +903,3 @@ func (d *jsiiProxy_DataAwsApiGatewaySdk) ToTerraform() interface{} {
 
 	return returns
 }
-

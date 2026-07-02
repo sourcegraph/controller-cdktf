@@ -6,9 +6,9 @@ import (
 
 type SubnetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type SubnetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
 	VpcId *string `field:"required" json:"vpcId" yaml:"vpcId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
-	AssignIpv6AddressOnCreation interface{} `field:"optional" json:"assignIpv6AddressOnCreation" yaml:"assignIpv6AddressOnCreation"`
+	AssignIpv6AddressOnCreation any `field:"optional" json:"assignIpv6AddressOnCreation" yaml:"assignIpv6AddressOnCreation"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
 	AvailabilityZone *string `field:"optional" json:"availabilityZone" yaml:"availabilityZone"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
@@ -32,11 +32,11 @@ type SubnetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
 	CustomerOwnedIpv4Pool *string `field:"optional" json:"customerOwnedIpv4Pool" yaml:"customerOwnedIpv4Pool"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
-	EnableDns64 interface{} `field:"optional" json:"enableDns64" yaml:"enableDns64"`
+	EnableDns64 any `field:"optional" json:"enableDns64" yaml:"enableDns64"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
-	EnableResourceNameDnsAaaaRecordOnLaunch interface{} `field:"optional" json:"enableResourceNameDnsAaaaRecordOnLaunch" yaml:"enableResourceNameDnsAaaaRecordOnLaunch"`
+	EnableResourceNameDnsAaaaRecordOnLaunch any `field:"optional" json:"enableResourceNameDnsAaaaRecordOnLaunch" yaml:"enableResourceNameDnsAaaaRecordOnLaunch"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
-	EnableResourceNameDnsARecordOnLaunch interface{} `field:"optional" json:"enableResourceNameDnsARecordOnLaunch" yaml:"enableResourceNameDnsARecordOnLaunch"`
+	EnableResourceNameDnsARecordOnLaunch any `field:"optional" json:"enableResourceNameDnsARecordOnLaunch" yaml:"enableResourceNameDnsARecordOnLaunch"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#id Subnet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -45,11 +45,11 @@ type SubnetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
 	Ipv6CidrBlock *string `field:"optional" json:"ipv6CidrBlock" yaml:"ipv6CidrBlock"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
-	Ipv6Native interface{} `field:"optional" json:"ipv6Native" yaml:"ipv6Native"`
+	Ipv6Native any `field:"optional" json:"ipv6Native" yaml:"ipv6Native"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
-	MapCustomerOwnedIpOnLaunch interface{} `field:"optional" json:"mapCustomerOwnedIpOnLaunch" yaml:"mapCustomerOwnedIpOnLaunch"`
+	MapCustomerOwnedIpOnLaunch any `field:"optional" json:"mapCustomerOwnedIpOnLaunch" yaml:"mapCustomerOwnedIpOnLaunch"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
-	MapPublicIpOnLaunch interface{} `field:"optional" json:"mapPublicIpOnLaunch" yaml:"mapPublicIpOnLaunch"`
+	MapPublicIpOnLaunch any `field:"optional" json:"mapPublicIpOnLaunch" yaml:"mapPublicIpOnLaunch"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
 	OutpostArn *string `field:"optional" json:"outpostArn" yaml:"outpostArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
@@ -63,4 +63,3 @@ type SubnetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/subnet#timeouts Subnet#timeouts}
 	Timeouts *SubnetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

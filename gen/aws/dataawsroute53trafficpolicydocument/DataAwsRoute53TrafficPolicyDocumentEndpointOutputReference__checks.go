@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentEndpointOutputReferenceParame
 
 	return nil
 }
-

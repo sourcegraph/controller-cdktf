@@ -1,10 +1,8 @@
 package networkfirewallrulegroup
 
-
 type NetworkfirewallRuleGroupRuleGroupReferenceSets struct {
 	// ip_set_references block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/networkfirewall_rule_group#ip_set_references NetworkfirewallRuleGroup#ip_set_references}
-	IpSetReferences interface{} `field:"optional" json:"ipSetReferences" yaml:"ipSetReferences"`
+	IpSetReferences any `field:"optional" json:"ipSetReferences" yaml:"ipSetReferences"`
 }
-

@@ -12,9 +12,9 @@ type EbsSnapshotImportDiskContainerOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type EbsSnapshotImportDiskContainerOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type EbsSnapshotImportDiskContainerOutputReference interface {
 	ResetUserBucket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_EbsSnapshotImportDiskContainerOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) UserBucketInpu
 	return returns
 }
 
-
 func NewEbsSnapshotImportDiskContainerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EbsSnapshotImportDiskContainerOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewEbsSnapshotImportDiskContainerOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewEbsSnapshotImportDiskContainerOutputReference_Override(e EbsSnapshotImpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetDescription(
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetFormat(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetFormat(val *string) {
 	if err := j.validateSetFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetFormat(val *
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetInternalValue(val *EbsSnapshotImportDiskContainer) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetInternalValue(val *EbsSnapshotImportDiskContainer) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference)SetUrl(val *string) {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) InterpolationF
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) PutUserBucket(
 	_jsii_.InvokeVoid(
 		e,
 		"putUserBucket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) ResetUserBucke
 	)
 }
 
-func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) ToString() *st
 
 	return returns
 }
-

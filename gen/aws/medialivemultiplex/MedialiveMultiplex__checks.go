@@ -19,7 +19,7 @@ func (m *jsiiProxy_MedialiveMultiplex) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MedialiveMultiplex) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MedialiveMultiplex) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MedialiveMultiplex) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateMedialiveMultiplex_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateMedialiveMultiplex_IsConstructParameters(x interface{}) error {
+func validateMedialiveMultiplex_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateMedialiveMultiplex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMedialiveMultiplex_IsTerraformElementParameters(x interface{}) error {
+func validateMedialiveMultiplex_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateMedialiveMultiplex_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateMedialiveMultiplex_IsTerraformResourceParameters(x interface{}) error {
+func validateMedialiveMultiplex_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_MedialiveMultiplex) validateSetAvailabilityZonesParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplex) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_MedialiveMultiplex) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplex) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_MedialiveMultiplex) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplex) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -434,7 +434,7 @@ func (j *jsiiProxy_MedialiveMultiplex) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplex) validateSetStartMultiplexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveMultiplex) validateSetStartMultiplexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -488,4 +488,3 @@ func validateNewMedialiveMultiplexParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

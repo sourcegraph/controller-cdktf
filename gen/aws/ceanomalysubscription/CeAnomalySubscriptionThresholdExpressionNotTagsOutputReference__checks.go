@@ -98,7 +98,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotTagsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCeAnomalySubscriptionThresholdExpressionNotTagsOutputReferencePa
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type EvidentlyProject interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	DataDelivery() EvidentlyProjectDataDeliveryOutputReference
 	DataDeliveryInput() *EvidentlyProjectDataDelivery
@@ -66,11 +66,11 @@ type EvidentlyProject interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -81,18 +81,18 @@ type EvidentlyProject interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EvidentlyProjectTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type EvidentlyProject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type EvidentlyProject interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type EvidentlyProject interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EvidentlyProject
@@ -198,8 +198,8 @@ func (j *jsiiProxy_EvidentlyProject) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyProject) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_EvidentlyProject) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EvidentlyProject) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_EvidentlyProject) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyProject) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_EvidentlyProject) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EvidentlyProject) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_EvidentlyProject) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyProject) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_EvidentlyProject) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EvidentlyProject) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_EvidentlyProject) Timeouts() EvidentlyProjectTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyProject) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlyProject) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -547,7 +547,6 @@ func (j *jsiiProxy_EvidentlyProject) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_project aws_evidently_project} Resource.
 func NewEvidentlyProject(scope constructs.Construct, id *string, config *EvidentlyProjectConfig) EvidentlyProject {
@@ -560,7 +559,7 @@ func NewEvidentlyProject(scope constructs.Construct, id *string, config *Evident
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -573,12 +572,12 @@ func NewEvidentlyProject_Override(e EvidentlyProject, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetConnection(val interface{}) {
+func (j *jsiiProxy_EvidentlyProject) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_EvidentlyProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetCount(val interface{}) {
+func (j *jsiiProxy_EvidentlyProject) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_EvidentlyProject)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EvidentlyProject) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_EvidentlyProject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetDescription(val *string) {
+func (j *jsiiProxy_EvidentlyProject) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_EvidentlyProject)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EvidentlyProject) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_EvidentlyProject)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetId(val *string) {
+func (j *jsiiProxy_EvidentlyProject) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_EvidentlyProject)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EvidentlyProject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_EvidentlyProject)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetName(val *string) {
+func (j *jsiiProxy_EvidentlyProject) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_EvidentlyProject)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EvidentlyProject) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_EvidentlyProject)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EvidentlyProject) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_EvidentlyProject)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EvidentlyProject) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_EvidentlyProject)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlyProject)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EvidentlyProject) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func EvidentlyProject_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func EvidentlyProject_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EvidentlyProject_IsConstruct(x interface{}) *bool {
+func EvidentlyProject_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlyProject_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func EvidentlyProject_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func EvidentlyProject_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EvidentlyProject_IsTerraformElement(x interface{}) *bool {
+func EvidentlyProject_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlyProject_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func EvidentlyProject_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func EvidentlyProject_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EvidentlyProject_IsTerraformResource(x interface{}) *bool {
+func EvidentlyProject_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlyProject_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func EvidentlyProject_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (e *jsiiProxy_EvidentlyProject) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyProject) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EvidentlyProject) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EvidentlyProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (e *jsiiProxy_EvidentlyProject) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (e *jsiiProxy_EvidentlyProject) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (e *jsiiProxy_EvidentlyProject) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (e *jsiiProxy_EvidentlyProject) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (e *jsiiProxy_EvidentlyProject) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (e *jsiiProxy_EvidentlyProject) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (e *jsiiProxy_EvidentlyProject) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (e *jsiiProxy_EvidentlyProject) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyProject) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyProject) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -990,7 +989,7 @@ func (e *jsiiProxy_EvidentlyProject) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (e *jsiiProxy_EvidentlyProject) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (e *jsiiProxy_EvidentlyProject) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EvidentlyProject) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EvidentlyProject) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (e *jsiiProxy_EvidentlyProject) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (e *jsiiProxy_EvidentlyProject) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (e *jsiiProxy_EvidentlyProject) PutDataDelivery(value *EvidentlyProjectData
 	_jsii_.InvokeVoid(
 		e,
 		"putDataDelivery",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (e *jsiiProxy_EvidentlyProject) PutTimeouts(value *EvidentlyProjectTimeouts
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1132,8 +1131,8 @@ func (e *jsiiProxy_EvidentlyProject) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EvidentlyProject) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EvidentlyProject) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1145,8 +1144,8 @@ func (e *jsiiProxy_EvidentlyProject) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyProject) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EvidentlyProject) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1158,8 +1157,8 @@ func (e *jsiiProxy_EvidentlyProject) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyProject) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyProject) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1171,8 +1170,8 @@ func (e *jsiiProxy_EvidentlyProject) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyProject) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyProject) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1197,8 +1196,8 @@ func (e *jsiiProxy_EvidentlyProject) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyProject) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlyProject) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1209,4 +1208,3 @@ func (e *jsiiProxy_EvidentlyProject) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -286,4 +286,3 @@ func validateNewMacie2FindingsFilterFindingCriteriaCriterionOutputReferenceParam
 
 	return nil
 }
-

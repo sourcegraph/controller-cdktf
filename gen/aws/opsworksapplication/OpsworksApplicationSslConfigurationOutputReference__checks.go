@@ -114,7 +114,7 @@ func (j *jsiiProxy_OpsworksApplicationSslConfigurationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationSslConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationSslConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OpsworksApplicationSslConfigurationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationSslConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationSslConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewOpsworksApplicationSslConfigurationOutputReferenceParameters(ter
 
 	return nil
 }
-

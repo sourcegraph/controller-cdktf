@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eip.Eip",
-		reflect.TypeOf((*Eip)(nil)).Elem(),
+		reflect.TypeFor[Eip](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpc", GoGetter: "Vpc"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcInput", GoGetter: "VpcInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Eip{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eip.EipConfig",
-		reflect.TypeOf((*EipConfig)(nil)).Elem(),
+		reflect.TypeFor[EipConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.eip.EipTimeouts",
-		reflect.TypeOf((*EipTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EipTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.eip.EipTimeoutsOutputReference",
-		reflect.TypeOf((*EipTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EipTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EipTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

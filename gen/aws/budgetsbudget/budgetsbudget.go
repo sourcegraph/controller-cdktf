@@ -24,22 +24,22 @@ type BudgetsBudget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CostFilter() BudgetsBudgetCostFilterList
-	CostFilterInput() interface{}
+	CostFilterInput() any
 	CostFilters() *map[string]*string
 	SetCostFilters(val *map[string]*string)
 	CostFiltersInput() *map[string]*string
 	CostTypes() BudgetsBudgetCostTypesOutputReference
 	CostTypesInput() *BudgetsBudgetCostTypes
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -74,23 +74,23 @@ type BudgetsBudget interface {
 	// The tree node.
 	Node() constructs.Node
 	Notification() BudgetsBudgetNotificationList
-	NotificationInput() interface{}
+	NotificationInput() any
 	PlannedLimit() BudgetsBudgetPlannedLimitList
-	PlannedLimitInput() interface{}
+	PlannedLimitInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimePeriodEnd() *string
@@ -106,9 +106,9 @@ type BudgetsBudget interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type BudgetsBudget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,7 +138,7 @@ type BudgetsBudget interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,10 +146,10 @@ type BudgetsBudget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoAdjustData(value *BudgetsBudgetAutoAdjustData)
-	PutCostFilter(value interface{})
+	PutCostFilter(value any)
 	PutCostTypes(value *BudgetsBudgetCostTypes)
-	PutNotification(value interface{})
-	PutPlannedLimit(value interface{})
+	PutNotification(value any)
+	PutPlannedLimit(value any)
 	ResetAccountId()
 	ResetAutoAdjustData()
 	ResetCostFilter()
@@ -167,17 +167,17 @@ type BudgetsBudget interface {
 	ResetPlannedLimit()
 	ResetTimePeriodEnd()
 	ResetTimePeriodStart()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BudgetsBudget
@@ -265,8 +265,8 @@ func (j *jsiiProxy_BudgetsBudget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudget) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_BudgetsBudget) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BudgetsBudget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_BudgetsBudget) CostFilter() BudgetsBudgetCostFilterList {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) CostFilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudget) CostFilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"costFilterInput",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_BudgetsBudget) CostTypesInput() *BudgetsBudgetCostTypes {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_BudgetsBudget) Notification() BudgetsBudgetNotificationList {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) NotificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudget) NotificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notificationInput",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_BudgetsBudget) PlannedLimit() BudgetsBudgetPlannedLimitList {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) PlannedLimitInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudget) PlannedLimitInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"plannedLimitInput",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_BudgetsBudget) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BudgetsBudget) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -575,8 +575,8 @@ func (j *jsiiProxy_BudgetsBudget) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -595,8 +595,8 @@ func (j *jsiiProxy_BudgetsBudget) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BudgetsBudget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -675,7 +675,6 @@ func (j *jsiiProxy_BudgetsBudget) TimeUnitInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBudgetConfig) BudgetsBudget {
 	_init_.Initialize()
@@ -687,7 +686,7 @@ func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBud
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -700,12 +699,12 @@ func NewBudgetsBudget_Override(b BudgetsBudget, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetAccountId(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_BudgetsBudget)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetBudgetType(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetBudgetType(val *string) {
 	if err := j.validateSetBudgetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_BudgetsBudget)SetBudgetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetConnection(val interface{}) {
+func (j *jsiiProxy_BudgetsBudget) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_BudgetsBudget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetCostFilters(val *map[string]*string) {
+func (j *jsiiProxy_BudgetsBudget) SetCostFilters(val *map[string]*string) {
 	if err := j.validateSetCostFiltersParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_BudgetsBudget)SetCostFilters(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetCount(val interface{}) {
+func (j *jsiiProxy_BudgetsBudget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_BudgetsBudget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BudgetsBudget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -768,7 +767,7 @@ func (j *jsiiProxy_BudgetsBudget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BudgetsBudget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -776,7 +775,7 @@ func (j *jsiiProxy_BudgetsBudget)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetId(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_BudgetsBudget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BudgetsBudget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_BudgetsBudget)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetLimitAmount(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetLimitAmount(val *string) {
 	if err := j.validateSetLimitAmountParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_BudgetsBudget)SetLimitAmount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetLimitUnit(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetLimitUnit(val *string) {
 	if err := j.validateSetLimitUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_BudgetsBudget)SetLimitUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetName(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_BudgetsBudget)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetNamePrefix(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_BudgetsBudget)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BudgetsBudget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -850,7 +849,7 @@ func (j *jsiiProxy_BudgetsBudget)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BudgetsBudget) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_BudgetsBudget)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetTimePeriodEnd(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetTimePeriodEnd(val *string) {
 	if err := j.validateSetTimePeriodEndParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_BudgetsBudget)SetTimePeriodEnd(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetTimePeriodStart(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetTimePeriodStart(val *string) {
 	if err := j.validateSetTimePeriodStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +882,7 @@ func (j *jsiiProxy_BudgetsBudget)SetTimePeriodStart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudget)SetTimeUnit(val *string) {
+func (j *jsiiProxy_BudgetsBudget) SetTimeUnit(val *string) {
 	if err := j.validateSetTimeUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func BudgetsBudget_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func BudgetsBudget_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BudgetsBudget_IsConstruct(x interface{}) *bool {
+func BudgetsBudget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudgetsBudget_IsConstructParameters(x); err != nil {
@@ -941,7 +940,7 @@ func BudgetsBudget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func BudgetsBudget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BudgetsBudget_IsTerraformElement(x interface{}) *bool {
+func BudgetsBudget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudgetsBudget_IsTerraformElementParameters(x); err != nil {
@@ -960,7 +959,7 @@ func BudgetsBudget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func BudgetsBudget_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BudgetsBudget_IsTerraformResource(x interface{}) *bool {
+func BudgetsBudget_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudgetsBudget_IsTerraformResourceParameters(x); err != nil {
@@ -979,7 +978,7 @@ func BudgetsBudget_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1004,31 +1003,31 @@ func (b *jsiiProxy_BudgetsBudget) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BudgetsBudget) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BudgetsBudget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (b *jsiiProxy_BudgetsBudget) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (b *jsiiProxy_BudgetsBudget) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (b *jsiiProxy_BudgetsBudget) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (b *jsiiProxy_BudgetsBudget) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (b *jsiiProxy_BudgetsBudget) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,7 +1123,7 @@ func (b *jsiiProxy_BudgetsBudget) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,7 +1139,7 @@ func (b *jsiiProxy_BudgetsBudget) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1156,15 +1155,15 @@ func (b *jsiiProxy_BudgetsBudget) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudget) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetsBudget) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1183,7 +1182,7 @@ func (b *jsiiProxy_BudgetsBudget) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1196,7 +1195,7 @@ func (b *jsiiProxy_BudgetsBudget) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1210,18 +1209,18 @@ func (b *jsiiProxy_BudgetsBudget) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BudgetsBudget) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1232,7 +1231,7 @@ func (b *jsiiProxy_BudgetsBudget) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1243,7 +1242,7 @@ func (b *jsiiProxy_BudgetsBudget) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1254,18 +1253,18 @@ func (b *jsiiProxy_BudgetsBudget) PutAutoAdjustData(value *BudgetsBudgetAutoAdju
 	_jsii_.InvokeVoid(
 		b,
 		"putAutoAdjustData",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) PutCostFilter(value interface{}) {
+func (b *jsiiProxy_BudgetsBudget) PutCostFilter(value any) {
 	if err := b.validatePutCostFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putCostFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1276,29 +1275,29 @@ func (b *jsiiProxy_BudgetsBudget) PutCostTypes(value *BudgetsBudgetCostTypes) {
 	_jsii_.InvokeVoid(
 		b,
 		"putCostTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) PutNotification(value interface{}) {
+func (b *jsiiProxy_BudgetsBudget) PutNotification(value any) {
 	if err := b.validatePutNotificationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putNotification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) PutPlannedLimit(value interface{}) {
+func (b *jsiiProxy_BudgetsBudget) PutPlannedLimit(value any) {
 	if err := b.validatePutPlannedLimitParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putPlannedLimit",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1422,8 +1421,8 @@ func (b *jsiiProxy_BudgetsBudget) ResetTimePeriodStart() {
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BudgetsBudget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1435,8 +1434,8 @@ func (b *jsiiProxy_BudgetsBudget) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BudgetsBudget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1448,8 +1447,8 @@ func (b *jsiiProxy_BudgetsBudget) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetsBudget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1461,8 +1460,8 @@ func (b *jsiiProxy_BudgetsBudget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudget) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetsBudget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1487,8 +1486,8 @@ func (b *jsiiProxy_BudgetsBudget) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudget) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetsBudget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1499,4 +1498,3 @@ func (b *jsiiProxy_BudgetsBudget) ToTerraform() interface{} {
 
 	return returns
 }
-

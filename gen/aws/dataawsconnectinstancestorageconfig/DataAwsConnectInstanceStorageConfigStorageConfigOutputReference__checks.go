@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectInstanceStorageConfigStorageConfigOutputReferenceP
 
 	return nil
 }
-

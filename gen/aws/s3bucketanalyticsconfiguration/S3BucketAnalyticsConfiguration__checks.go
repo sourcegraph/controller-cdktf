@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateS3BucketAnalyticsConfiguration_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateS3BucketAnalyticsConfiguration_IsConstructParameters(x interface{}) error {
+func validateS3BucketAnalyticsConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateS3BucketAnalyticsConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateS3BucketAnalyticsConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateS3BucketAnalyticsConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateS3BucketAnalyticsConfiguration_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateS3BucketAnalyticsConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateS3BucketAnalyticsConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetBucketParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewS3BucketAnalyticsConfigurationParameters(scope constructs.Constr
 
 	return nil
 }
-

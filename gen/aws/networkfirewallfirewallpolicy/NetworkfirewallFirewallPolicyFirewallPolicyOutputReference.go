@@ -12,9 +12,9 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	StatefulEngineOptions() NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference
 	StatefulEngineOptionsInput() *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions
 	StatefulRuleGroupReference() NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList
-	StatefulRuleGroupReferenceInput() interface{}
+	StatefulRuleGroupReferenceInput() any
 	StatelessCustomAction() NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList
-	StatelessCustomActionInput() interface{}
+	StatelessCustomActionInput() any
 	StatelessDefaultActions() *[]*string
 	SetStatelessDefaultActions(val *[]*string)
 	StatelessDefaultActionsInput() *[]*string
@@ -45,7 +45,7 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	SetStatelessFragmentDefaultActions(val *[]*string)
 	StatelessFragmentDefaultActionsInput() *[]*string
 	StatelessRuleGroupReference() NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList
-	StatelessRuleGroupReferenceInput() interface{}
+	StatelessRuleGroupReferenceInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -57,7 +57,7 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,9 +79,9 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutStatefulEngineOptions(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions)
-	PutStatefulRuleGroupReference(value interface{})
-	PutStatelessCustomAction(value interface{})
-	PutStatelessRuleGroupReference(value interface{})
+	PutStatefulRuleGroupReference(value any)
+	PutStatelessCustomAction(value any)
+	PutStatelessRuleGroupReference(value any)
 	ResetStatefulDefaultActions()
 	ResetStatefulEngineOptions()
 	ResetStatefulRuleGroupReference()
@@ -89,7 +89,7 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	ResetStatelessRuleGroupReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ type jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) S
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) StatefulRuleGroupReferenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) StatefulRuleGroupReferenceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statefulRuleGroupReferenceInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) S
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) StatelessCustomActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) StatelessCustomActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statelessCustomActionInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) S
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) StatelessRuleGroupReferenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) StatelessRuleGroupReferenceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"statelessRuleGroupReferenceInput",
@@ -312,7 +312,6 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) T
 	return returns
 }
 
-
 func NewNetworkfirewallFirewallPolicyFirewallPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyOutputReference {
 	_init_.Initialize()
 
@@ -323,7 +322,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -335,12 +334,12 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyOutputReference_Override(n Ne
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetInternalValue(val *NetworkfirewallFirewallPolicyFirewallPolicy) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetInternalValue(val *NetworkfirewallFirewallPolicyFirewallPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetStatefulDefaultActions(val *[]*string) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetStatefulDefaultActions(val *[]*string) {
 	if err := j.validateSetStatefulDefaultActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetStatelessDefaultActions(val *[]*string) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetStatelessDefaultActions(val *[]*string) {
 	if err := j.validateSetStatelessDefaultActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetStatelessFragmentDefaultActions(val *[]*string) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetStatelessFragmentDefaultActions(val *[]*string) {
 	if err := j.validateSetStatelessFragmentDefaultActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) C
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) I
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,40 +620,40 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) P
 	_jsii_.InvokeVoid(
 		n,
 		"putStatefulEngineOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatefulRuleGroupReference(value interface{}) {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatefulRuleGroupReference(value any) {
 	if err := n.validatePutStatefulRuleGroupReferenceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putStatefulRuleGroupReference",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatelessCustomAction(value interface{}) {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatelessCustomAction(value any) {
 	if err := n.validatePutStatelessCustomActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putStatelessCustomAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatelessRuleGroupReference(value interface{}) {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatelessRuleGroupReference(value any) {
 	if err := n.validatePutStatelessRuleGroupReferenceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putStatelessRuleGroupReference",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -698,16 +697,16 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) R
 	)
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -726,4 +725,3 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) T
 
 	return returns
 }
-

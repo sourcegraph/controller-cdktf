@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectPeer) validateAddMoveTargetParameters
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayConnectPeer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayConnectPeer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectPeer) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayConnectPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayConnectPeer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateEc2TransitGatewayConnectPeer_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateEc2TransitGatewayConnectPeer_IsConstructParameters(x interface{}) error {
+func validateEc2TransitGatewayConnectPeer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateEc2TransitGatewayConnectPeer_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateEc2TransitGatewayConnectPeer_IsTerraformElementParameters(x interface{}) error {
+func validateEc2TransitGatewayConnectPeer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateEc2TransitGatewayConnectPeer_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateEc2TransitGatewayConnectPeer_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2TransitGatewayConnectPeer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetBgpAsnParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetPeerAddressParameter
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewEc2TransitGatewayConnectPeerParameters(scope constructs.Construc
 
 	return nil
 }
-

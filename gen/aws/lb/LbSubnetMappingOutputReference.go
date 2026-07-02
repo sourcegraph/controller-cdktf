@@ -15,9 +15,9 @@ type LbSubnetMappingOutputReference interface {
 	AllocationIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type LbSubnetMappingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv6Address() *string
 	SetIpv6Address(val *string)
 	Ipv6AddressInput() *string
@@ -53,7 +53,7 @@ type LbSubnetMappingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type LbSubnetMappingOutputReference interface {
 	ResetPrivateIpv4Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) AllocationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbSubnetMappingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbSubnetMappingOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -252,7 +252,6 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) TerraformResource() cdktf.IIn
 	return returns
 }
 
-
 func NewLbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbSubnetMappingOutputReference {
 	_init_.Initialize()
 
@@ -263,7 +262,7 @@ func NewLbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lb.LbSubnetMappingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -275,12 +274,12 @@ func NewLbSubnetMappingOutputReference_Override(l LbSubnetMappingOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lb.LbSubnetMappingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetAllocationId(val *string) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetAllocationId(val *string) {
 	if err := j.validateSetAllocationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetAllocationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetIpv6Address(val *string) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetIpv6Address(val *string) {
 	if err := j.validateSetIpv6AddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetIpv6Address(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetPrivateIpv4Address(val *string) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetPrivateIpv4Address(val *string) {
 	if err := j.validateSetPrivateIpv4AddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetPrivateIpv4Address(val *str
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,16 +391,16 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -589,16 +588,16 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) ResetPrivateIpv4Address() {
 	)
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -617,4 +616,3 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) ToString() *string {
 
 	return returns
 }
-

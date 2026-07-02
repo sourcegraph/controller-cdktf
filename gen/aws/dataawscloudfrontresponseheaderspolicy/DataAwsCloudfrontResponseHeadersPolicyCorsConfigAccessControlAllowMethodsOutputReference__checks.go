@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControl
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAll
 
 	return nil
 }
-

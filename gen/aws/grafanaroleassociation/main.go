@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
-		reflect.TypeOf((*GrafanaRoleAssociation)(nil)).Elem(),
+		reflect.TypeFor[GrafanaRoleAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaRoleAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationConfig",
-		reflect.TypeOf((*GrafanaRoleAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[GrafanaRoleAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeouts",
-		reflect.TypeOf((*GrafanaRoleAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GrafanaRoleAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*GrafanaRoleAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GrafanaRoleAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

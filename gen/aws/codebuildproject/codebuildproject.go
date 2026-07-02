@@ -15,9 +15,9 @@ type CodebuildProject interface {
 	Arn() *string
 	Artifacts() CodebuildProjectArtifactsOutputReference
 	ArtifactsInput() *CodebuildProjectArtifacts
-	BadgeEnabled() interface{}
-	SetBadgeEnabled(val interface{})
-	BadgeEnabledInput() interface{}
+	BadgeEnabled() any
+	SetBadgeEnabled(val any)
+	BadgeEnabledInput() any
 	BadgeUrl() *string
 	BuildBatchConfig() CodebuildProjectBuildBatchConfigOutputReference
 	BuildBatchConfigInput() *CodebuildProjectBuildBatchConfig
@@ -32,15 +32,15 @@ type CodebuildProject interface {
 	SetConcurrentBuildLimit(val *float64)
 	ConcurrentBuildLimitInput() *float64
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,7 +54,7 @@ type CodebuildProject interface {
 	Environment() CodebuildProjectEnvironmentOutputReference
 	EnvironmentInput() *CodebuildProjectEnvironment
 	FileSystemLocations() CodebuildProjectFileSystemLocationsList
-	FileSystemLocationsInput() interface{}
+	FileSystemLocationsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,24 +85,24 @@ type CodebuildProject interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicProjectAlias() *string
 	QueuedTimeout() *float64
 	SetQueuedTimeout(val *float64)
 	QueuedTimeoutInput() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceAccessRole() *string
 	SetResourceAccessRole(val *string)
 	ResourceAccessRoleInput() *string
 	SecondaryArtifacts() CodebuildProjectSecondaryArtifactsList
-	SecondaryArtifactsInput() interface{}
+	SecondaryArtifactsInput() any
 	SecondarySources() CodebuildProjectSecondarySourcesList
-	SecondarySourcesInput() interface{}
+	SecondarySourcesInput() any
 	SecondarySourceVersion() CodebuildProjectSecondarySourceVersionList
-	SecondarySourceVersionInput() interface{}
+	SecondarySourceVersionInput() any
 	ServiceRole() *string
 	SetServiceRole(val *string)
 	ServiceRoleInput() *string
@@ -120,7 +120,7 @@ type CodebuildProject interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcConfig() CodebuildProjectVpcConfigOutputReference
@@ -129,9 +129,9 @@ type CodebuildProject interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -149,7 +149,7 @@ type CodebuildProject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -161,7 +161,7 @@ type CodebuildProject interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -172,11 +172,11 @@ type CodebuildProject interface {
 	PutBuildBatchConfig(value *CodebuildProjectBuildBatchConfig)
 	PutCache(value *CodebuildProjectCache)
 	PutEnvironment(value *CodebuildProjectEnvironment)
-	PutFileSystemLocations(value interface{})
+	PutFileSystemLocations(value any)
 	PutLogsConfig(value *CodebuildProjectLogsConfig)
-	PutSecondaryArtifacts(value interface{})
-	PutSecondarySources(value interface{})
-	PutSecondarySourceVersion(value interface{})
+	PutSecondaryArtifacts(value any)
+	PutSecondarySources(value any)
+	PutSecondarySourceVersion(value any)
 	PutSource(value *CodebuildProjectSource)
 	PutVpcConfig(value *CodebuildProjectVpcConfig)
 	ResetBadgeEnabled()
@@ -202,17 +202,17 @@ type CodebuildProject interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetVpcConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodebuildProject
@@ -250,8 +250,8 @@ func (j *jsiiProxy_CodebuildProject) ArtifactsInput() *CodebuildProjectArtifacts
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) BadgeEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) BadgeEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"badgeEnabled",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_CodebuildProject) BadgeEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) BadgeEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) BadgeEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"badgeEnabledInput",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_CodebuildProject) ConcurrentBuildLimitInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_CodebuildProject) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodebuildProject) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_CodebuildProject) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_CodebuildProject) FileSystemLocations() CodebuildProjectFileS
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) FileSystemLocationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) FileSystemLocationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fileSystemLocationsInput",
@@ -630,8 +630,8 @@ func (j *jsiiProxy_CodebuildProject) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodebuildProject) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -670,8 +670,8 @@ func (j *jsiiProxy_CodebuildProject) QueuedTimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -710,8 +710,8 @@ func (j *jsiiProxy_CodebuildProject) SecondaryArtifacts() CodebuildProjectSecond
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) SecondaryArtifactsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) SecondaryArtifactsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondaryArtifactsInput",
@@ -730,8 +730,8 @@ func (j *jsiiProxy_CodebuildProject) SecondarySources() CodebuildProjectSecondar
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) SecondarySourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) SecondarySourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondarySourcesInput",
@@ -750,8 +750,8 @@ func (j *jsiiProxy_CodebuildProject) SecondarySourceVersion() CodebuildProjectSe
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) SecondarySourceVersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProject) SecondarySourceVersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondarySourceVersionInput",
@@ -870,8 +870,8 @@ func (j *jsiiProxy_CodebuildProject) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProject) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodebuildProject) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -910,7 +910,6 @@ func (j *jsiiProxy_CodebuildProject) VpcConfigInput() *CodebuildProjectVpcConfig
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
 func NewCodebuildProject(scope constructs.Construct, id *string, config *CodebuildProjectConfig) CodebuildProject {
 	_init_.Initialize()
@@ -922,7 +921,7 @@ func NewCodebuildProject(scope constructs.Construct, id *string, config *Codebui
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -935,12 +934,12 @@ func NewCodebuildProject_Override(c CodebuildProject, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetBadgeEnabled(val interface{}) {
+func (j *jsiiProxy_CodebuildProject) SetBadgeEnabled(val any) {
 	if err := j.validateSetBadgeEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_CodebuildProject)SetBadgeEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetBuildTimeout(val *float64) {
+func (j *jsiiProxy_CodebuildProject) SetBuildTimeout(val *float64) {
 	if err := j.validateSetBuildTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_CodebuildProject)SetBuildTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetConcurrentBuildLimit(val *float64) {
+func (j *jsiiProxy_CodebuildProject) SetConcurrentBuildLimit(val *float64) {
 	if err := j.validateSetConcurrentBuildLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_CodebuildProject)SetConcurrentBuildLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodebuildProject) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_CodebuildProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetCount(val interface{}) {
+func (j *jsiiProxy_CodebuildProject) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_CodebuildProject)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodebuildProject) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1003,7 +1002,7 @@ func (j *jsiiProxy_CodebuildProject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetDescription(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1014,7 +1013,7 @@ func (j *jsiiProxy_CodebuildProject)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetEncryptionKey(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetEncryptionKey(val *string) {
 	if err := j.validateSetEncryptionKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1025,7 +1024,7 @@ func (j *jsiiProxy_CodebuildProject)SetEncryptionKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodebuildProject) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_CodebuildProject)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetId(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_CodebuildProject)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodebuildProject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_CodebuildProject)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetName(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_CodebuildProject)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetProjectVisibility(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetProjectVisibility(val *string) {
 	if err := j.validateSetProjectVisibilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_CodebuildProject)SetProjectVisibility(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodebuildProject) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_CodebuildProject)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodebuildProject) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_CodebuildProject)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetQueuedTimeout(val *float64) {
+func (j *jsiiProxy_CodebuildProject) SetQueuedTimeout(val *float64) {
 	if err := j.validateSetQueuedTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_CodebuildProject)SetQueuedTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetResourceAccessRole(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetResourceAccessRole(val *string) {
 	if err := j.validateSetResourceAccessRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_CodebuildProject)SetResourceAccessRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetServiceRole(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetServiceRole(val *string) {
 	if err := j.validateSetServiceRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_CodebuildProject)SetServiceRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetSourceVersion(val *string) {
+func (j *jsiiProxy_CodebuildProject) SetSourceVersion(val *string) {
 	if err := j.validateSetSourceVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_CodebuildProject)SetSourceVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CodebuildProject) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_CodebuildProject)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildProject)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CodebuildProject) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1174,7 +1173,7 @@ func CodebuildProject_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func CodebuildProject_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodebuildProject_IsConstruct(x interface{}) *bool {
+func CodebuildProject_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodebuildProject_IsConstructParameters(x); err != nil {
@@ -1209,7 +1208,7 @@ func CodebuildProject_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1217,7 +1216,7 @@ func CodebuildProject_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CodebuildProject_IsTerraformElement(x interface{}) *bool {
+func CodebuildProject_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodebuildProject_IsTerraformElementParameters(x); err != nil {
@@ -1228,7 +1227,7 @@ func CodebuildProject_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1236,7 +1235,7 @@ func CodebuildProject_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CodebuildProject_IsTerraformResource(x interface{}) *bool {
+func CodebuildProject_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodebuildProject_IsTerraformResourceParameters(x); err != nil {
@@ -1247,7 +1246,7 @@ func CodebuildProject_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1272,31 +1271,31 @@ func (c *jsiiProxy_CodebuildProject) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodebuildProject) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1312,7 +1311,7 @@ func (c *jsiiProxy_CodebuildProject) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1328,7 +1327,7 @@ func (c *jsiiProxy_CodebuildProject) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1344,7 +1343,7 @@ func (c *jsiiProxy_CodebuildProject) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1360,7 +1359,7 @@ func (c *jsiiProxy_CodebuildProject) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1376,7 +1375,7 @@ func (c *jsiiProxy_CodebuildProject) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1392,7 +1391,7 @@ func (c *jsiiProxy_CodebuildProject) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1408,7 +1407,7 @@ func (c *jsiiProxy_CodebuildProject) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1424,15 +1423,15 @@ func (c *jsiiProxy_CodebuildProject) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProject) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodebuildProject) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1451,7 +1450,7 @@ func (c *jsiiProxy_CodebuildProject) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1464,7 +1463,7 @@ func (c *jsiiProxy_CodebuildProject) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1478,18 +1477,18 @@ func (c *jsiiProxy_CodebuildProject) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodebuildProject) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1500,7 +1499,7 @@ func (c *jsiiProxy_CodebuildProject) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1511,7 +1510,7 @@ func (c *jsiiProxy_CodebuildProject) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1522,7 +1521,7 @@ func (c *jsiiProxy_CodebuildProject) PutArtifacts(value *CodebuildProjectArtifac
 	_jsii_.InvokeVoid(
 		c,
 		"putArtifacts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1533,7 +1532,7 @@ func (c *jsiiProxy_CodebuildProject) PutBuildBatchConfig(value *CodebuildProject
 	_jsii_.InvokeVoid(
 		c,
 		"putBuildBatchConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1544,7 +1543,7 @@ func (c *jsiiProxy_CodebuildProject) PutCache(value *CodebuildProjectCache) {
 	_jsii_.InvokeVoid(
 		c,
 		"putCache",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1555,18 +1554,18 @@ func (c *jsiiProxy_CodebuildProject) PutEnvironment(value *CodebuildProjectEnvir
 	_jsii_.InvokeVoid(
 		c,
 		"putEnvironment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) PutFileSystemLocations(value interface{}) {
+func (c *jsiiProxy_CodebuildProject) PutFileSystemLocations(value any) {
 	if err := c.validatePutFileSystemLocationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFileSystemLocations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1577,40 +1576,40 @@ func (c *jsiiProxy_CodebuildProject) PutLogsConfig(value *CodebuildProjectLogsCo
 	_jsii_.InvokeVoid(
 		c,
 		"putLogsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) PutSecondaryArtifacts(value interface{}) {
+func (c *jsiiProxy_CodebuildProject) PutSecondaryArtifacts(value any) {
 	if err := c.validatePutSecondaryArtifactsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecondaryArtifacts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) PutSecondarySources(value interface{}) {
+func (c *jsiiProxy_CodebuildProject) PutSecondarySources(value any) {
 	if err := c.validatePutSecondarySourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecondarySources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) PutSecondarySourceVersion(value interface{}) {
+func (c *jsiiProxy_CodebuildProject) PutSecondarySourceVersion(value any) {
 	if err := c.validatePutSecondarySourceVersionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecondarySourceVersion",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1621,7 +1620,7 @@ func (c *jsiiProxy_CodebuildProject) PutSource(value *CodebuildProjectSource) {
 	_jsii_.InvokeVoid(
 		c,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1632,7 +1631,7 @@ func (c *jsiiProxy_CodebuildProject) PutVpcConfig(value *CodebuildProjectVpcConf
 	_jsii_.InvokeVoid(
 		c,
 		"putVpcConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1804,8 +1803,8 @@ func (c *jsiiProxy_CodebuildProject) ResetVpcConfig() {
 	)
 }
 
-func (c *jsiiProxy_CodebuildProject) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodebuildProject) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1817,8 +1816,8 @@ func (c *jsiiProxy_CodebuildProject) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProject) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodebuildProject) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1830,8 +1829,8 @@ func (c *jsiiProxy_CodebuildProject) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProject) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodebuildProject) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1843,8 +1842,8 @@ func (c *jsiiProxy_CodebuildProject) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProject) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodebuildProject) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1869,8 +1868,8 @@ func (c *jsiiProxy_CodebuildProject) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProject) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodebuildProject) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1881,4 +1880,3 @@ func (c *jsiiProxy_CodebuildProject) ToTerraform() interface{} {
 
 	return returns
 }
-

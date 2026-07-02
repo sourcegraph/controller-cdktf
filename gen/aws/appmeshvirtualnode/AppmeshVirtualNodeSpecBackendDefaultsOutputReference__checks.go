@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewAppmeshVirtualNodeSpecBackendDefaultsOutputReferenceParameters(t
 
 	return nil
 }
-

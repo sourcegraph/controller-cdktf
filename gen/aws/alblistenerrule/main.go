@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
-		reflect.TypeOf((*AlbListenerRule)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction",
-		reflect.TypeOf((*AlbListenerRuleAction)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito",
-		reflect.TypeOf((*AlbListenerRuleActionAuthenticateCognito)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionAuthenticateCognito](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognitoOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionAuthenticateCognitoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionAuthenticateCognitoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParamsInput", GoGetter: "AuthenticationRequestExtraParamsInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolDomain", GoGetter: "UserPoolDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolDomainInput", GoGetter: "UserPoolDomainInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc",
-		reflect.TypeOf((*AlbListenerRuleActionAuthenticateOidc)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionAuthenticateOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidcOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionAuthenticateOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionAuthenticateOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParamsInput", GoGetter: "AuthenticationRequestExtraParamsInput"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpoint", GoGetter: "UserInfoEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "userInfoEndpointInput", GoGetter: "UserInfoEndpointInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionAuthenticateOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,11 +206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse",
-		reflect.TypeOf((*AlbListenerRuleActionFixedResponse)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionFixedResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponseOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionFixedResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionFixedResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionFixedResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,11 +250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForward",
-		reflect.TypeOf((*AlbListenerRuleActionForward)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForward](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionForwardOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForwardOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionForwardOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,11 +293,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickiness",
-		reflect.TypeOf((*AlbListenerRuleActionForwardStickiness)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForwardStickiness](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickinessOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionForwardStickinessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForwardStickinessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -334,11 +334,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup",
-		reflect.TypeOf((*AlbListenerRuleActionForwardTargetGroup)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForwardTargetGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupList",
-		reflect.TypeOf((*AlbListenerRuleActionForwardTargetGroupList)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForwardTargetGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -352,7 +352,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionForwardTargetGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -360,7 +360,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionForwardTargetGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionForwardTargetGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionForwardTargetGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -397,7 +397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionList",
-		reflect.TypeOf((*AlbListenerRuleActionList)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -419,7 +419,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognito", GoGetter: "AuthenticateCognito"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognitoInput", GoGetter: "AuthenticateCognitoInput"},
@@ -471,7 +471,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -479,11 +479,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirect",
-		reflect.TypeOf((*AlbListenerRuleActionRedirect)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionRedirectOutputReference",
-		reflect.TypeOf((*AlbListenerRuleActionRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleActionRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -524,7 +524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleActionRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -532,15 +532,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition",
-		reflect.TypeOf((*AlbListenerRuleCondition)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleCondition](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHostHeader",
-		reflect.TypeOf((*AlbListenerRuleConditionHostHeader)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionHostHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHostHeaderOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionHostHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionHostHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -566,7 +566,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionHostHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -574,11 +574,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeader",
-		reflect.TypeOf((*AlbListenerRuleConditionHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeaderOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -606,7 +606,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -614,11 +614,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethod",
-		reflect.TypeOf((*AlbListenerRuleConditionHttpRequestMethod)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionHttpRequestMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethodOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionHttpRequestMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionHttpRequestMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -644,7 +644,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionHttpRequestMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -652,7 +652,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionList",
-		reflect.TypeOf((*AlbListenerRuleConditionList)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -674,7 +674,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -722,7 +722,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -730,11 +730,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPattern",
-		reflect.TypeOf((*AlbListenerRuleConditionPathPattern)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionPathPattern](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPatternOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionPathPatternOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionPathPatternOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -760,7 +760,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -768,11 +768,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString",
-		reflect.TypeOf((*AlbListenerRuleConditionQueryString)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionQueryString](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringList",
-		reflect.TypeOf((*AlbListenerRuleConditionQueryStringList)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionQueryStringList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -786,7 +786,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionQueryStringList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -794,7 +794,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionQueryStringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionQueryStringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -823,7 +823,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionQueryStringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -831,11 +831,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIp",
-		reflect.TypeOf((*AlbListenerRuleConditionSourceIp)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionSourceIp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
-		reflect.TypeOf((*AlbListenerRuleConditionSourceIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConditionSourceIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -861,7 +861,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -869,6 +869,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConfig",
-		reflect.TypeOf((*AlbListenerRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[AlbListenerRuleConfig](),
 	)
 }

@@ -12,9 +12,9 @@ type KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *KinesisFirehoseDeliveryStreamServerSideEncryption
@@ -49,7 +49,7 @@ type KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference interface 
 	ResetKeyType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	return returns
 }
 
-
 func NewKinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewKinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewKinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetInternalValue(val *KinesisFirehoseDeliveryStreamServerSideEncryption) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetInternalValue(val *KinesisFirehoseDeliveryStreamServerSideEncryption) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetKeyArn(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetKeyArn(val *string) {
 	if err := j.validateSetKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetKeyType(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetKeyType(val *string) {
 	if err := j.validateSetKeyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputRefere
 
 	return returns
 }
-

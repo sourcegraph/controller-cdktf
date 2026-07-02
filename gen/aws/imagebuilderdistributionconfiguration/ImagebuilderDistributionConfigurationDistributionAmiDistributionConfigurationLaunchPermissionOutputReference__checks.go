@@ -98,7 +98,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewImagebuilderDistributionConfigurationDistributionAmiDistribution
 
 	return nil
 }
-

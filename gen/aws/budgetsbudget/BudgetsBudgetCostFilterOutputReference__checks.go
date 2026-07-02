@@ -98,7 +98,7 @@ func (b *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBudgetsBudgetCostFilterOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

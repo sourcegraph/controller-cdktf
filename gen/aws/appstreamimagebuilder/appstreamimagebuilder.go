@@ -13,7 +13,7 @@ import (
 type AppstreamImageBuilder interface {
 	cdktf.TerraformResource
 	AccessEndpoint() AppstreamImageBuilderAccessEndpointList
-	AccessEndpointInput() interface{}
+	AccessEndpointInput() any
 	AppstreamAgentVersion() *string
 	SetAppstreamAgentVersion(val *string)
 	AppstreamAgentVersionInput() *string
@@ -21,15 +21,15 @@ type AppstreamImageBuilder interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -43,9 +43,9 @@ type AppstreamImageBuilder interface {
 	DisplayNameInput() *string
 	DomainJoinInfo() AppstreamImageBuilderDomainJoinInfoOutputReference
 	DomainJoinInfoInput() *AppstreamImageBuilderDomainJoinInfo
-	EnableDefaultInternetAccess() interface{}
-	SetEnableDefaultInternetAccess(val interface{})
-	EnableDefaultInternetAccessInput() interface{}
+	EnableDefaultInternetAccess() any
+	SetEnableDefaultInternetAccess(val any)
+	EnableDefaultInternetAccessInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -83,11 +83,11 @@ type AppstreamImageBuilder interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -98,7 +98,7 @@ type AppstreamImageBuilder interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcConfig() AppstreamImageBuilderVpcConfigOutputReference
@@ -107,9 +107,9 @@ type AppstreamImageBuilder interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type AppstreamImageBuilder interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,14 +139,14 @@ type AppstreamImageBuilder interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAccessEndpoint(value interface{})
+	PutAccessEndpoint(value any)
 	PutDomainJoinInfo(value *AppstreamImageBuilderDomainJoinInfo)
 	PutVpcConfig(value *AppstreamImageBuilderVpcConfig)
 	ResetAccessEndpoint()
@@ -165,17 +165,17 @@ type AppstreamImageBuilder interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetVpcConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppstreamImageBuilder
@@ -193,8 +193,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) AccessEndpoint() AppstreamImageBuilder
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) AccessEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) AccessEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessEndpointInput",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) DomainJoinInfoInput() *AppstreamImageB
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) EnableDefaultInternetAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) EnableDefaultInternetAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDefaultInternetAccess",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) EnableDefaultInternetAccess() interfac
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) EnableDefaultInternetAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) EnableDefaultInternetAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDefaultInternetAccessInput",
@@ -553,8 +553,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppstreamImageBuilder) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -673,7 +673,6 @@ func (j *jsiiProxy_AppstreamImageBuilder) VpcConfigInput() *AppstreamImageBuilde
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
 func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *AppstreamImageBuilderConfig) AppstreamImageBuilder {
 	_init_.Initialize()
@@ -685,7 +684,7 @@ func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *Ap
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -698,12 +697,12 @@ func NewAppstreamImageBuilder_Override(a AppstreamImageBuilder, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetAppstreamAgentVersion(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetAppstreamAgentVersion(val *string) {
 	if err := j.validateSetAppstreamAgentVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetAppstreamAgentVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetCount(val interface{}) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -744,7 +743,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetDescription(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetDisplayName(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetEnableDefaultInternetAccess(val interface{}) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetEnableDefaultInternetAccess(val any) {
 	if err := j.validateSetEnableDefaultInternetAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetEnableDefaultInternetAccess(val inte
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -785,7 +784,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetIamRoleArn(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetIamRoleArn(val *string) {
 	if err := j.validateSetIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetId(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetImageArn(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetImageArn(val *string) {
 	if err := j.validateSetImageArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetImageArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetImageName(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetImageName(val *string) {
 	if err := j.validateSetImageNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetImageName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetInstanceType(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetName(val *string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -870,7 +869,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -881,7 +880,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +891,7 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AppstreamImageBuilder) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func AppstreamImageBuilder_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func AppstreamImageBuilder_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppstreamImageBuilder_IsConstruct(x interface{}) *bool {
+func AppstreamImageBuilder_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppstreamImageBuilder_IsConstructParameters(x); err != nil {
@@ -950,7 +949,7 @@ func AppstreamImageBuilder_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func AppstreamImageBuilder_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppstreamImageBuilder_IsTerraformElement(x interface{}) *bool {
+func AppstreamImageBuilder_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppstreamImageBuilder_IsTerraformElementParameters(x); err != nil {
@@ -969,7 +968,7 @@ func AppstreamImageBuilder_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func AppstreamImageBuilder_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppstreamImageBuilder_IsTerraformResource(x interface{}) *bool {
+func AppstreamImageBuilder_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppstreamImageBuilder_IsTerraformResourceParameters(x); err != nil {
@@ -988,7 +987,7 @@ func AppstreamImageBuilder_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1013,31 +1012,31 @@ func (a *jsiiProxy_AppstreamImageBuilder) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppstreamImageBuilder) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppstreamImageBuilder) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,7 +1068,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1085,7 +1084,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,7 +1116,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,7 +1132,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1165,15 +1164,15 @@ func (a *jsiiProxy_AppstreamImageBuilder) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamImageBuilder) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1192,7 +1191,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1205,7 +1204,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1219,18 +1218,18 @@ func (a *jsiiProxy_AppstreamImageBuilder) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppstreamImageBuilder) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1241,7 +1240,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1252,18 +1251,18 @@ func (a *jsiiProxy_AppstreamImageBuilder) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) PutAccessEndpoint(value interface{}) {
+func (a *jsiiProxy_AppstreamImageBuilder) PutAccessEndpoint(value any) {
 	if err := a.validatePutAccessEndpointParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAccessEndpoint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1274,7 +1273,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) PutDomainJoinInfo(value *AppstreamImag
 	_jsii_.InvokeVoid(
 		a,
 		"putDomainJoinInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1285,7 +1284,7 @@ func (a *jsiiProxy_AppstreamImageBuilder) PutVpcConfig(value *AppstreamImageBuil
 	_jsii_.InvokeVoid(
 		a,
 		"putVpcConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1401,8 +1400,8 @@ func (a *jsiiProxy_AppstreamImageBuilder) ResetVpcConfig() {
 	)
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppstreamImageBuilder) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1414,8 +1413,8 @@ func (a *jsiiProxy_AppstreamImageBuilder) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppstreamImageBuilder) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1427,8 +1426,8 @@ func (a *jsiiProxy_AppstreamImageBuilder) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamImageBuilder) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1440,8 +1439,8 @@ func (a *jsiiProxy_AppstreamImageBuilder) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamImageBuilder) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1466,8 +1465,8 @@ func (a *jsiiProxy_AppstreamImageBuilder) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamImageBuilder) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamImageBuilder) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1478,4 +1477,3 @@ func (a *jsiiProxy_AppstreamImageBuilder) ToTerraform() interface{} {
 
 	return returns
 }
-

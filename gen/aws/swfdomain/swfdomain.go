@@ -16,15 +16,15 @@ type SwfDomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,11 +60,11 @@ type SwfDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -74,7 +74,7 @@ type SwfDomain interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkflowExecutionRetentionPeriodInDays() *string
@@ -84,9 +84,9 @@ type SwfDomain interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type SwfDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type SwfDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type SwfDomain interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SwfDomain
@@ -170,8 +170,8 @@ func (j *jsiiProxy_SwfDomain) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SwfDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SwfDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_SwfDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SwfDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SwfDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_SwfDomain) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SwfDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SwfDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_SwfDomain) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SwfDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SwfDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_SwfDomain) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SwfDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SwfDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_SwfDomain) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_SwfDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SwfDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -460,7 +460,6 @@ func (j *jsiiProxy_SwfDomain) WorkflowExecutionRetentionPeriodInDaysInput() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/swf_domain aws_swf_domain} Resource.
 func NewSwfDomain(scope constructs.Construct, id *string, config *SwfDomainConfig) SwfDomain {
 	_init_.Initialize()
@@ -472,7 +471,7 @@ func NewSwfDomain(scope constructs.Construct, id *string, config *SwfDomainConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.swfDomain.SwfDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -485,12 +484,12 @@ func NewSwfDomain_Override(s SwfDomain, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.swfDomain.SwfDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_SwfDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SwfDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_SwfDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SwfDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SwfDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SwfDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetDescription(val *string) {
+func (j *jsiiProxy_SwfDomain) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_SwfDomain)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SwfDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_SwfDomain)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetId(val *string) {
+func (j *jsiiProxy_SwfDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_SwfDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SwfDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_SwfDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetName(val *string) {
+func (j *jsiiProxy_SwfDomain) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_SwfDomain)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetNamePrefix(val *string) {
+func (j *jsiiProxy_SwfDomain) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_SwfDomain)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SwfDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_SwfDomain)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SwfDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_SwfDomain)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SwfDomain) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_SwfDomain)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SwfDomain) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_SwfDomain)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SwfDomain)SetWorkflowExecutionRetentionPeriodInDays(val *string) {
+func (j *jsiiProxy_SwfDomain) SetWorkflowExecutionRetentionPeriodInDays(val *string) {
 	if err := j.validateSetWorkflowExecutionRetentionPeriodInDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func SwfDomain_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func SwfDomain_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SwfDomain_IsConstruct(x interface{}) *bool {
+func SwfDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSwfDomain_IsConstructParameters(x); err != nil {
@@ -682,7 +681,7 @@ func SwfDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func SwfDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SwfDomain_IsTerraformElement(x interface{}) *bool {
+func SwfDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSwfDomain_IsTerraformElementParameters(x); err != nil {
@@ -701,7 +700,7 @@ func SwfDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func SwfDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SwfDomain_IsTerraformResource(x interface{}) *bool {
+func SwfDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSwfDomain_IsTerraformResourceParameters(x); err != nil {
@@ -720,7 +719,7 @@ func SwfDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,31 +744,31 @@ func (s *jsiiProxy_SwfDomain) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SwfDomain) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SwfDomain) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SwfDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SwfDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (s *jsiiProxy_SwfDomain) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (s *jsiiProxy_SwfDomain) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (s *jsiiProxy_SwfDomain) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (s *jsiiProxy_SwfDomain) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (s *jsiiProxy_SwfDomain) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (s *jsiiProxy_SwfDomain) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (s *jsiiProxy_SwfDomain) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,15 +896,15 @@ func (s *jsiiProxy_SwfDomain) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SwfDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SwfDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -924,7 +923,7 @@ func (s *jsiiProxy_SwfDomain) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -937,7 +936,7 @@ func (s *jsiiProxy_SwfDomain) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,18 +950,18 @@ func (s *jsiiProxy_SwfDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SwfDomain) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SwfDomain) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -973,7 +972,7 @@ func (s *jsiiProxy_SwfDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -984,7 +983,7 @@ func (s *jsiiProxy_SwfDomain) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1044,8 +1043,8 @@ func (s *jsiiProxy_SwfDomain) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SwfDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SwfDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1057,8 +1056,8 @@ func (s *jsiiProxy_SwfDomain) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SwfDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SwfDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1070,8 +1069,8 @@ func (s *jsiiProxy_SwfDomain) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (s *jsiiProxy_SwfDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SwfDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1083,8 +1082,8 @@ func (s *jsiiProxy_SwfDomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SwfDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SwfDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1109,8 +1108,8 @@ func (s *jsiiProxy_SwfDomain) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SwfDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SwfDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1121,4 +1120,3 @@ func (s *jsiiProxy_SwfDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

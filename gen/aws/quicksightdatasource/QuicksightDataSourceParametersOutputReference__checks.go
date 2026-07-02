@@ -318,7 +318,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -418,4 +418,3 @@ func validateNewQuicksightDataSourceParametersOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMskServerlessClusterVpcConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

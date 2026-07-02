@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigClientConfi
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOu
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type WafregionalRateBasedRulePredicateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type WafregionalRateBasedRulePredicateOutputReference interface {
 	DataIdInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Negated() interface{}
-	SetNegated(val interface{})
-	NegatedInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Negated() any
+	SetNegated(val any)
+	NegatedInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type WafregionalRateBasedRulePredicateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type WafregionalRateBasedRulePredicateOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_WafregionalRateBasedRulePredicateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) InternalVal
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Negated() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Negated() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negated",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Negated() i
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) NegatedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) NegatedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negatedInput",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) TypeInput()
 	return returns
 }
 
-
 func NewWafregionalRateBasedRulePredicateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WafregionalRateBasedRulePredicateOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewWafregionalRateBasedRulePredicateOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewWafregionalRateBasedRulePredicateOutputReference_Override(w WafregionalR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetDataId(val *string) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetDataId(val *string) {
 	if err := j.validateSetDataIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetDataId(va
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetNegated(val interface{}) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetNegated(val any) {
 	if err := j.validateSetNegatedParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetNegated(v
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference)SetType(val *string) {
+func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) ComputeFqn(
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetListAttr
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetStringAt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) GetStringMa
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Interpolati
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (w *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) ToString() 
 
 	return returns
 }
-

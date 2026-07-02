@@ -12,9 +12,9 @@ type S3BucketReplicationConfigurationRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,8 +38,8 @@ type S3BucketReplicationConfigurationRuleOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
@@ -62,7 +62,7 @@ type S3BucketReplicationConfigurationRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type S3BucketReplicationConfigurationRuleOutputReference interface {
 	ResetSourceSelectionCriteria()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ type jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) IdInput(
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -360,7 +360,6 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) Terrafor
 	return returns
 }
 
-
 func NewS3BucketReplicationConfigurationRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketReplicationConfigurationRuleOutputReference {
 	_init_.Initialize()
 
@@ -371,7 +370,7 @@ func NewS3BucketReplicationConfigurationRuleOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -383,12 +382,12 @@ func NewS3BucketReplicationConfigurationRuleOutputReference_Override(s S3BucketR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetId(val *string) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetId(val
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetPrefix
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetPriori
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetStatus(val *string) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetStatus
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,16 +499,16 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) PutDelet
 	_jsii_.InvokeVoid(
 		s,
 		"putDeleteMarkerReplication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -691,7 +690,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) PutDesti
 	_jsii_.InvokeVoid(
 		s,
 		"putDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -702,7 +701,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) PutExist
 	_jsii_.InvokeVoid(
 		s,
 		"putExistingObjectReplication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -713,7 +712,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) PutFilte
 	_jsii_.InvokeVoid(
 		s,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -724,7 +723,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) PutSourc
 	_jsii_.InvokeVoid(
 		s,
 		"putSourceSelectionCriteria",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -784,16 +783,16 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) ResetSou
 	)
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -812,4 +811,3 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleOutputReference) ToString
 
 	return returns
 }
-

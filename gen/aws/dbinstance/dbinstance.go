@@ -16,16 +16,16 @@ type DbInstance interface {
 	AllocatedStorage() *float64
 	SetAllocatedStorage(val *float64)
 	AllocatedStorageInput() *float64
-	AllowMajorVersionUpgrade() interface{}
-	SetAllowMajorVersionUpgrade(val interface{})
-	AllowMajorVersionUpgradeInput() interface{}
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	AllowMajorVersionUpgrade() any
+	SetAllowMajorVersionUpgrade(val any)
+	AllowMajorVersionUpgradeInput() any
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	Arn() *string
-	AutoMinorVersionUpgrade() interface{}
-	SetAutoMinorVersionUpgrade(val interface{})
-	AutoMinorVersionUpgradeInput() interface{}
+	AutoMinorVersionUpgrade() any
+	SetAutoMinorVersionUpgrade(val any)
+	AutoMinorVersionUpgradeInput() any
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -46,21 +46,21 @@ type DbInstance interface {
 	SetCharacterSetName(val *string)
 	CharacterSetNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToSnapshot() interface{}
-	SetCopyTagsToSnapshot(val interface{})
-	CopyTagsToSnapshotInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToSnapshot() any
+	SetCopyTagsToSnapshot(val any)
+	CopyTagsToSnapshotInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CustomerOwnedIpEnabled() interface{}
-	SetCustomerOwnedIpEnabled(val interface{})
-	CustomerOwnedIpEnabledInput() interface{}
+	SetCount(val any)
+	CustomerOwnedIpEnabled() any
+	SetCustomerOwnedIpEnabled(val any)
+	CustomerOwnedIpEnabledInput() any
 	CustomIamInstanceProfile() *string
 	SetCustomIamInstanceProfile(val *string)
 	CustomIamInstanceProfileInput() *string
@@ -70,12 +70,12 @@ type DbInstance interface {
 	DbSubnetGroupName() *string
 	SetDbSubnetGroupName(val *string)
 	DbSubnetGroupNameInput() *string
-	DeleteAutomatedBackups() interface{}
-	SetDeleteAutomatedBackups(val interface{})
-	DeleteAutomatedBackupsInput() interface{}
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeleteAutomatedBackups() any
+	SetDeleteAutomatedBackups(val any)
+	DeleteAutomatedBackupsInput() any
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -109,9 +109,9 @@ type DbInstance interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HostedZoneId() *string
-	IamDatabaseAuthenticationEnabled() interface{}
-	SetIamDatabaseAuthenticationEnabled(val interface{})
-	IamDatabaseAuthenticationEnabledInput() interface{}
+	IamDatabaseAuthenticationEnabled() any
+	SetIamDatabaseAuthenticationEnabled(val any)
+	IamDatabaseAuthenticationEnabledInput() any
 	Id() *string
 	SetId(val *string)
 	Identifier() *string
@@ -150,9 +150,9 @@ type DbInstance interface {
 	MonitoringRoleArn() *string
 	SetMonitoringRoleArn(val *string)
 	MonitoringRoleArnInput() *string
-	MultiAz() interface{}
-	SetMultiAz(val interface{})
-	MultiAzInput() interface{}
+	MultiAz() any
+	SetMultiAz(val any)
+	MultiAzInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -173,9 +173,9 @@ type DbInstance interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
-	PerformanceInsightsEnabled() interface{}
-	SetPerformanceInsightsEnabled(val interface{})
-	PerformanceInsightsEnabledInput() interface{}
+	PerformanceInsightsEnabled() any
+	SetPerformanceInsightsEnabled(val any)
+	PerformanceInsightsEnabledInput() any
 	PerformanceInsightsKmsKeyId() *string
 	SetPerformanceInsightsKmsKeyId(val *string)
 	PerformanceInsightsKmsKeyIdInput() *string
@@ -190,14 +190,14 @@ type DbInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	PubliclyAccessible() interface{}
-	SetPubliclyAccessible(val interface{})
-	PubliclyAccessibleInput() interface{}
+	SetProvisioners(val *[]any)
+	PubliclyAccessible() any
+	SetPubliclyAccessible(val any)
+	PubliclyAccessibleInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicaMode() *string
 	SetReplicaMode(val *string)
 	ReplicaModeInput() *string
@@ -213,16 +213,16 @@ type DbInstance interface {
 	SecurityGroupNames() *[]*string
 	SetSecurityGroupNames(val *[]*string)
 	SecurityGroupNamesInput() *[]*string
-	SkipFinalSnapshot() interface{}
-	SetSkipFinalSnapshot(val interface{})
-	SkipFinalSnapshotInput() interface{}
+	SkipFinalSnapshot() any
+	SetSkipFinalSnapshot(val any)
+	SkipFinalSnapshotInput() any
 	SnapshotIdentifier() *string
 	SetSnapshotIdentifier(val *string)
 	SnapshotIdentifierInput() *string
 	Status() *string
-	StorageEncrypted() interface{}
-	SetStorageEncrypted(val interface{})
-	StorageEncryptedInput() interface{}
+	StorageEncrypted() any
+	SetStorageEncrypted(val any)
+	StorageEncryptedInput() any
 	StorageThroughput() *float64
 	SetStorageThroughput(val *float64)
 	StorageThroughputInput() *float64
@@ -238,11 +238,11 @@ type DbInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DbInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Timezone() *string
 	SetTimezone(val *string)
 	TimezoneInput() *string
@@ -256,9 +256,9 @@ type DbInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -276,7 +276,7 @@ type DbInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -288,7 +288,7 @@ type DbInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -364,17 +364,17 @@ type DbInstance interface {
 	ResetTimezone()
 	ResetUsername()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DbInstance
@@ -412,8 +412,8 @@ func (j *jsiiProxy_DbInstance) AllocatedStorageInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) AllowMajorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) AllowMajorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowMajorVersionUpgrade",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_DbInstance) AllowMajorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) AllowMajorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) AllowMajorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowMajorVersionUpgradeInput",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_DbInstance) AllowMajorVersionUpgradeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_DbInstance) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_DbInstance) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) AutoMinorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) AutoMinorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgrade",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_DbInstance) AutoMinorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) AutoMinorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) AutoMinorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgradeInput",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_DbInstance) CharacterSetNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_DbInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_DbInstance) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) CopyTagsToSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) CopyTagsToSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshot",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_DbInstance) CopyTagsToSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) CopyTagsToSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) CopyTagsToSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToSnapshotInput",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_DbInstance) CopyTagsToSnapshotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_DbInstance) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) CustomerOwnedIpEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) CustomerOwnedIpEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customerOwnedIpEnabled",
@@ -672,8 +672,8 @@ func (j *jsiiProxy_DbInstance) CustomerOwnedIpEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) CustomerOwnedIpEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) CustomerOwnedIpEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customerOwnedIpEnabledInput",
@@ -742,8 +742,8 @@ func (j *jsiiProxy_DbInstance) DbSubnetGroupNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) DeleteAutomatedBackups() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) DeleteAutomatedBackups() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteAutomatedBackups",
@@ -752,8 +752,8 @@ func (j *jsiiProxy_DbInstance) DeleteAutomatedBackups() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) DeleteAutomatedBackupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) DeleteAutomatedBackupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteAutomatedBackupsInput",
@@ -762,8 +762,8 @@ func (j *jsiiProxy_DbInstance) DeleteAutomatedBackupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_DbInstance) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -972,8 +972,8 @@ func (j *jsiiProxy_DbInstance) HostedZoneId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) IamDatabaseAuthenticationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) IamDatabaseAuthenticationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"iamDatabaseAuthenticationEnabled",
@@ -982,8 +982,8 @@ func (j *jsiiProxy_DbInstance) IamDatabaseAuthenticationEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) IamDatabaseAuthenticationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) IamDatabaseAuthenticationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"iamDatabaseAuthenticationEnabledInput",
@@ -1232,8 +1232,8 @@ func (j *jsiiProxy_DbInstance) MonitoringRoleArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) MultiAz() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) MultiAz() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAz",
@@ -1242,8 +1242,8 @@ func (j *jsiiProxy_DbInstance) MultiAz() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) MultiAzInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) MultiAzInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiAzInput",
@@ -1382,8 +1382,8 @@ func (j *jsiiProxy_DbInstance) PasswordInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) PerformanceInsightsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) PerformanceInsightsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"performanceInsightsEnabled",
@@ -1392,8 +1392,8 @@ func (j *jsiiProxy_DbInstance) PerformanceInsightsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) PerformanceInsightsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) PerformanceInsightsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"performanceInsightsEnabledInput",
@@ -1472,8 +1472,8 @@ func (j *jsiiProxy_DbInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DbInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1482,8 +1482,8 @@ func (j *jsiiProxy_DbInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) PubliclyAccessible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) PubliclyAccessible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessible",
@@ -1492,8 +1492,8 @@ func (j *jsiiProxy_DbInstance) PubliclyAccessible() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) PubliclyAccessibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) PubliclyAccessibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessibleInput",
@@ -1502,8 +1502,8 @@ func (j *jsiiProxy_DbInstance) PubliclyAccessibleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1632,8 +1632,8 @@ func (j *jsiiProxy_DbInstance) SecurityGroupNamesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) SkipFinalSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) SkipFinalSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalSnapshot",
@@ -1642,8 +1642,8 @@ func (j *jsiiProxy_DbInstance) SkipFinalSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) SkipFinalSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) SkipFinalSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalSnapshotInput",
@@ -1682,8 +1682,8 @@ func (j *jsiiProxy_DbInstance) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) StorageEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) StorageEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageEncrypted",
@@ -1692,8 +1692,8 @@ func (j *jsiiProxy_DbInstance) StorageEncrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) StorageEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) StorageEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageEncryptedInput",
@@ -1792,8 +1792,8 @@ func (j *jsiiProxy_DbInstance) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1822,8 +1822,8 @@ func (j *jsiiProxy_DbInstance) Timeouts() DbInstanceTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1892,7 +1892,6 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
@@ -1904,7 +1903,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbInstance.DbInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1917,12 +1916,12 @@ func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbInstance.DbInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetAllocatedStorage(val *float64) {
+func (j *jsiiProxy_DbInstance) SetAllocatedStorage(val *float64) {
 	if err := j.validateSetAllocatedStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1933,7 +1932,7 @@ func (j *jsiiProxy_DbInstance)SetAllocatedStorage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetAllowMajorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetAllowMajorVersionUpgrade(val any) {
 	if err := j.validateSetAllowMajorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1944,7 +1943,7 @@ func (j *jsiiProxy_DbInstance)SetAllowMajorVersionUpgrade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1955,7 +1954,7 @@ func (j *jsiiProxy_DbInstance)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetAutoMinorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetAutoMinorVersionUpgrade(val any) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1966,7 +1965,7 @@ func (j *jsiiProxy_DbInstance)SetAutoMinorVersionUpgrade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_DbInstance) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1977,7 +1976,7 @@ func (j *jsiiProxy_DbInstance)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetBackupRetentionPeriod(val *float64) {
+func (j *jsiiProxy_DbInstance) SetBackupRetentionPeriod(val *float64) {
 	if err := j.validateSetBackupRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1988,7 +1987,7 @@ func (j *jsiiProxy_DbInstance)SetBackupRetentionPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetBackupWindow(val *string) {
+func (j *jsiiProxy_DbInstance) SetBackupWindow(val *string) {
 	if err := j.validateSetBackupWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1999,7 +1998,7 @@ func (j *jsiiProxy_DbInstance)SetBackupWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCaCertIdentifier(val *string) {
+func (j *jsiiProxy_DbInstance) SetCaCertIdentifier(val *string) {
 	if err := j.validateSetCaCertIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -2010,7 +2009,7 @@ func (j *jsiiProxy_DbInstance)SetCaCertIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCharacterSetName(val *string) {
+func (j *jsiiProxy_DbInstance) SetCharacterSetName(val *string) {
 	if err := j.validateSetCharacterSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2021,7 +2020,7 @@ func (j *jsiiProxy_DbInstance)SetCharacterSetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2032,7 +2031,7 @@ func (j *jsiiProxy_DbInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCopyTagsToSnapshot(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetCopyTagsToSnapshot(val any) {
 	if err := j.validateSetCopyTagsToSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -2043,7 +2042,7 @@ func (j *jsiiProxy_DbInstance)SetCopyTagsToSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -2054,7 +2053,7 @@ func (j *jsiiProxy_DbInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCustomerOwnedIpEnabled(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetCustomerOwnedIpEnabled(val any) {
 	if err := j.validateSetCustomerOwnedIpEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -2065,7 +2064,7 @@ func (j *jsiiProxy_DbInstance)SetCustomerOwnedIpEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCustomIamInstanceProfile(val *string) {
+func (j *jsiiProxy_DbInstance) SetCustomIamInstanceProfile(val *string) {
 	if err := j.validateSetCustomIamInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -2076,7 +2075,7 @@ func (j *jsiiProxy_DbInstance)SetCustomIamInstanceProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDbName(val *string) {
+func (j *jsiiProxy_DbInstance) SetDbName(val *string) {
 	if err := j.validateSetDbNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2087,7 +2086,7 @@ func (j *jsiiProxy_DbInstance)SetDbName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDbSubnetGroupName(val *string) {
+func (j *jsiiProxy_DbInstance) SetDbSubnetGroupName(val *string) {
 	if err := j.validateSetDbSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2098,7 +2097,7 @@ func (j *jsiiProxy_DbInstance)SetDbSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDeleteAutomatedBackups(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetDeleteAutomatedBackups(val any) {
 	if err := j.validateSetDeleteAutomatedBackupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2109,7 +2108,7 @@ func (j *jsiiProxy_DbInstance)SetDeleteAutomatedBackups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2120,7 +2119,7 @@ func (j *jsiiProxy_DbInstance)SetDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DbInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -2128,7 +2127,7 @@ func (j *jsiiProxy_DbInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDomain(val *string) {
+func (j *jsiiProxy_DbInstance) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -2139,7 +2138,7 @@ func (j *jsiiProxy_DbInstance)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetDomainIamRoleName(val *string) {
+func (j *jsiiProxy_DbInstance) SetDomainIamRoleName(val *string) {
 	if err := j.validateSetDomainIamRoleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2150,7 +2149,7 @@ func (j *jsiiProxy_DbInstance)SetDomainIamRoleName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetEnabledCloudwatchLogsExports(val *[]*string) {
+func (j *jsiiProxy_DbInstance) SetEnabledCloudwatchLogsExports(val *[]*string) {
 	if err := j.validateSetEnabledCloudwatchLogsExportsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2161,7 +2160,7 @@ func (j *jsiiProxy_DbInstance)SetEnabledCloudwatchLogsExports(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetEngine(val *string) {
+func (j *jsiiProxy_DbInstance) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -2172,7 +2171,7 @@ func (j *jsiiProxy_DbInstance)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetEngineVersion(val *string) {
+func (j *jsiiProxy_DbInstance) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2183,7 +2182,7 @@ func (j *jsiiProxy_DbInstance)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetFinalSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_DbInstance) SetFinalSnapshotIdentifier(val *string) {
 	if err := j.validateSetFinalSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -2194,7 +2193,7 @@ func (j *jsiiProxy_DbInstance)SetFinalSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DbInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -2202,7 +2201,7 @@ func (j *jsiiProxy_DbInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetIamDatabaseAuthenticationEnabled(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetIamDatabaseAuthenticationEnabled(val any) {
 	if err := j.validateSetIamDatabaseAuthenticationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -2213,7 +2212,7 @@ func (j *jsiiProxy_DbInstance)SetIamDatabaseAuthenticationEnabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetId(val *string) {
+func (j *jsiiProxy_DbInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2224,7 +2223,7 @@ func (j *jsiiProxy_DbInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetIdentifier(val *string) {
+func (j *jsiiProxy_DbInstance) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -2235,7 +2234,7 @@ func (j *jsiiProxy_DbInstance)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetIdentifierPrefix(val *string) {
+func (j *jsiiProxy_DbInstance) SetIdentifierPrefix(val *string) {
 	if err := j.validateSetIdentifierPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -2246,7 +2245,7 @@ func (j *jsiiProxy_DbInstance)SetIdentifierPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetInstanceClass(val *string) {
+func (j *jsiiProxy_DbInstance) SetInstanceClass(val *string) {
 	if err := j.validateSetInstanceClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -2257,7 +2256,7 @@ func (j *jsiiProxy_DbInstance)SetInstanceClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetIops(val *float64) {
+func (j *jsiiProxy_DbInstance) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2268,7 +2267,7 @@ func (j *jsiiProxy_DbInstance)SetIops(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_DbInstance) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2279,7 +2278,7 @@ func (j *jsiiProxy_DbInstance)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetLicenseModel(val *string) {
+func (j *jsiiProxy_DbInstance) SetLicenseModel(val *string) {
 	if err := j.validateSetLicenseModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -2290,7 +2289,7 @@ func (j *jsiiProxy_DbInstance)SetLicenseModel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DbInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2301,7 +2300,7 @@ func (j *jsiiProxy_DbInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetMaintenanceWindow(val *string) {
+func (j *jsiiProxy_DbInstance) SetMaintenanceWindow(val *string) {
 	if err := j.validateSetMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -2312,7 +2311,7 @@ func (j *jsiiProxy_DbInstance)SetMaintenanceWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetMaxAllocatedStorage(val *float64) {
+func (j *jsiiProxy_DbInstance) SetMaxAllocatedStorage(val *float64) {
 	if err := j.validateSetMaxAllocatedStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -2323,7 +2322,7 @@ func (j *jsiiProxy_DbInstance)SetMaxAllocatedStorage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetMonitoringInterval(val *float64) {
+func (j *jsiiProxy_DbInstance) SetMonitoringInterval(val *float64) {
 	if err := j.validateSetMonitoringIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -2334,7 +2333,7 @@ func (j *jsiiProxy_DbInstance)SetMonitoringInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetMonitoringRoleArn(val *string) {
+func (j *jsiiProxy_DbInstance) SetMonitoringRoleArn(val *string) {
 	if err := j.validateSetMonitoringRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -2345,7 +2344,7 @@ func (j *jsiiProxy_DbInstance)SetMonitoringRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetMultiAz(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetMultiAz(val any) {
 	if err := j.validateSetMultiAzParameters(val); err != nil {
 		panic(err)
 	}
@@ -2356,7 +2355,7 @@ func (j *jsiiProxy_DbInstance)SetMultiAz(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetName(val *string) {
+func (j *jsiiProxy_DbInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2367,7 +2366,7 @@ func (j *jsiiProxy_DbInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetNcharCharacterSetName(val *string) {
+func (j *jsiiProxy_DbInstance) SetNcharCharacterSetName(val *string) {
 	if err := j.validateSetNcharCharacterSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2378,7 +2377,7 @@ func (j *jsiiProxy_DbInstance)SetNcharCharacterSetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetNetworkType(val *string) {
+func (j *jsiiProxy_DbInstance) SetNetworkType(val *string) {
 	if err := j.validateSetNetworkTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2389,7 +2388,7 @@ func (j *jsiiProxy_DbInstance)SetNetworkType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetOptionGroupName(val *string) {
+func (j *jsiiProxy_DbInstance) SetOptionGroupName(val *string) {
 	if err := j.validateSetOptionGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2400,7 +2399,7 @@ func (j *jsiiProxy_DbInstance)SetOptionGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetParameterGroupName(val *string) {
+func (j *jsiiProxy_DbInstance) SetParameterGroupName(val *string) {
 	if err := j.validateSetParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2411,7 +2410,7 @@ func (j *jsiiProxy_DbInstance)SetParameterGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetPassword(val *string) {
+func (j *jsiiProxy_DbInstance) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -2422,7 +2421,7 @@ func (j *jsiiProxy_DbInstance)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetPerformanceInsightsEnabled(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetPerformanceInsightsEnabled(val any) {
 	if err := j.validateSetPerformanceInsightsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -2433,7 +2432,7 @@ func (j *jsiiProxy_DbInstance)SetPerformanceInsightsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetPerformanceInsightsKmsKeyId(val *string) {
+func (j *jsiiProxy_DbInstance) SetPerformanceInsightsKmsKeyId(val *string) {
 	if err := j.validateSetPerformanceInsightsKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2444,7 +2443,7 @@ func (j *jsiiProxy_DbInstance)SetPerformanceInsightsKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetPerformanceInsightsRetentionPeriod(val *float64) {
+func (j *jsiiProxy_DbInstance) SetPerformanceInsightsRetentionPeriod(val *float64) {
 	if err := j.validateSetPerformanceInsightsRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -2455,7 +2454,7 @@ func (j *jsiiProxy_DbInstance)SetPerformanceInsightsRetentionPeriod(val *float64
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetPort(val *float64) {
+func (j *jsiiProxy_DbInstance) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -2466,7 +2465,7 @@ func (j *jsiiProxy_DbInstance)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DbInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2474,7 +2473,7 @@ func (j *jsiiProxy_DbInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DbInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2485,7 +2484,7 @@ func (j *jsiiProxy_DbInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetPubliclyAccessible(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetPubliclyAccessible(val any) {
 	if err := j.validateSetPubliclyAccessibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -2496,7 +2495,7 @@ func (j *jsiiProxy_DbInstance)SetPubliclyAccessible(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetReplicaMode(val *string) {
+func (j *jsiiProxy_DbInstance) SetReplicaMode(val *string) {
 	if err := j.validateSetReplicaModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2507,7 +2506,7 @@ func (j *jsiiProxy_DbInstance)SetReplicaMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetReplicateSourceDb(val *string) {
+func (j *jsiiProxy_DbInstance) SetReplicateSourceDb(val *string) {
 	if err := j.validateSetReplicateSourceDbParameters(val); err != nil {
 		panic(err)
 	}
@@ -2518,7 +2517,7 @@ func (j *jsiiProxy_DbInstance)SetReplicateSourceDb(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetSecurityGroupNames(val *[]*string) {
+func (j *jsiiProxy_DbInstance) SetSecurityGroupNames(val *[]*string) {
 	if err := j.validateSetSecurityGroupNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -2529,7 +2528,7 @@ func (j *jsiiProxy_DbInstance)SetSecurityGroupNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetSkipFinalSnapshot(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetSkipFinalSnapshot(val any) {
 	if err := j.validateSetSkipFinalSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -2540,7 +2539,7 @@ func (j *jsiiProxy_DbInstance)SetSkipFinalSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_DbInstance) SetSnapshotIdentifier(val *string) {
 	if err := j.validateSetSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -2551,7 +2550,7 @@ func (j *jsiiProxy_DbInstance)SetSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetStorageEncrypted(val interface{}) {
+func (j *jsiiProxy_DbInstance) SetStorageEncrypted(val any) {
 	if err := j.validateSetStorageEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -2562,7 +2561,7 @@ func (j *jsiiProxy_DbInstance)SetStorageEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetStorageThroughput(val *float64) {
+func (j *jsiiProxy_DbInstance) SetStorageThroughput(val *float64) {
 	if err := j.validateSetStorageThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -2573,7 +2572,7 @@ func (j *jsiiProxy_DbInstance)SetStorageThroughput(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetStorageType(val *string) {
+func (j *jsiiProxy_DbInstance) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2584,7 +2583,7 @@ func (j *jsiiProxy_DbInstance)SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DbInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2595,7 +2594,7 @@ func (j *jsiiProxy_DbInstance)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DbInstance) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -2606,7 +2605,7 @@ func (j *jsiiProxy_DbInstance)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetTimezone(val *string) {
+func (j *jsiiProxy_DbInstance) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -2617,7 +2616,7 @@ func (j *jsiiProxy_DbInstance)SetTimezone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetUsername(val *string) {
+func (j *jsiiProxy_DbInstance) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -2628,7 +2627,7 @@ func (j *jsiiProxy_DbInstance)SetUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_DbInstance) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2651,7 +2650,7 @@ func DbInstance_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbInstance.DbInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -2675,7 +2674,7 @@ func DbInstance_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DbInstance_IsConstruct(x interface{}) *bool {
+func DbInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbInstance_IsConstructParameters(x); err != nil {
@@ -2686,7 +2685,7 @@ func DbInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbInstance.DbInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2694,7 +2693,7 @@ func DbInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DbInstance_IsTerraformElement(x interface{}) *bool {
+func DbInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbInstance_IsTerraformElementParameters(x); err != nil {
@@ -2705,7 +2704,7 @@ func DbInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbInstance.DbInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2713,7 +2712,7 @@ func DbInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DbInstance_IsTerraformResource(x interface{}) *bool {
+func DbInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbInstance_IsTerraformResourceParameters(x); err != nil {
@@ -2724,7 +2723,7 @@ func DbInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbInstance.DbInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2749,31 +2748,31 @@ func (d *jsiiProxy_DbInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DbInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DbInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DbInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2789,7 +2788,7 @@ func (d *jsiiProxy_DbInstance) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2805,7 +2804,7 @@ func (d *jsiiProxy_DbInstance) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2821,7 +2820,7 @@ func (d *jsiiProxy_DbInstance) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2837,7 +2836,7 @@ func (d *jsiiProxy_DbInstance) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2853,7 +2852,7 @@ func (d *jsiiProxy_DbInstance) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2869,7 +2868,7 @@ func (d *jsiiProxy_DbInstance) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2885,7 +2884,7 @@ func (d *jsiiProxy_DbInstance) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2901,15 +2900,15 @@ func (d *jsiiProxy_DbInstance) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DbInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -2928,7 +2927,7 @@ func (d *jsiiProxy_DbInstance) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2941,7 +2940,7 @@ func (d *jsiiProxy_DbInstance) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2955,18 +2954,18 @@ func (d *jsiiProxy_DbInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DbInstance) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DbInstance) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2977,7 +2976,7 @@ func (d *jsiiProxy_DbInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2988,7 +2987,7 @@ func (d *jsiiProxy_DbInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2999,7 +2998,7 @@ func (d *jsiiProxy_DbInstance) PutBlueGreenUpdate(value *DbInstanceBlueGreenUpda
 	_jsii_.InvokeVoid(
 		d,
 		"putBlueGreenUpdate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3010,7 +3009,7 @@ func (d *jsiiProxy_DbInstance) PutRestoreToPointInTime(value *DbInstanceRestoreT
 	_jsii_.InvokeVoid(
 		d,
 		"putRestoreToPointInTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3021,7 +3020,7 @@ func (d *jsiiProxy_DbInstance) PutS3Import(value *DbInstanceS3Import) {
 	_jsii_.InvokeVoid(
 		d,
 		"putS3Import",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3032,7 +3031,7 @@ func (d *jsiiProxy_DbInstance) PutTimeouts(value *DbInstanceTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3540,8 +3539,8 @@ func (d *jsiiProxy_DbInstance) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (d *jsiiProxy_DbInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -3553,8 +3552,8 @@ func (d *jsiiProxy_DbInstance) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -3566,8 +3565,8 @@ func (d *jsiiProxy_DbInstance) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DbInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -3579,8 +3578,8 @@ func (d *jsiiProxy_DbInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -3605,8 +3604,8 @@ func (d *jsiiProxy_DbInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DbInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -3617,4 +3616,3 @@ func (d *jsiiProxy_DbInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

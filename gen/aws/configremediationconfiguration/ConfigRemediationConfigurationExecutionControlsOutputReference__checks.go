@@ -109,7 +109,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewConfigRemediationConfigurationExecutionControlsOutputReferencePa
 
 	return nil
 }
-

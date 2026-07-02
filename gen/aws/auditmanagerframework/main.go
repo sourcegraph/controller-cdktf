@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
-		reflect.TypeOf((*AuditmanagerFramework)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFramework](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerFramework{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,19 +80,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig",
-		reflect.TypeOf((*AuditmanagerFrameworkConfig)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets",
-		reflect.TypeOf((*AuditmanagerFrameworkControlSets)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkControlSets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControls",
-		reflect.TypeOf((*AuditmanagerFrameworkControlSetsControls)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkControlSetsControls](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsList",
-		reflect.TypeOf((*AuditmanagerFrameworkControlSetsControlsList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkControlSetsControlsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerFrameworkControlSetsControlsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsOutputReference",
-		reflect.TypeOf((*AuditmanagerFrameworkControlSetsControlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkControlSetsControlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,7 +148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsList",
-		reflect.TypeOf((*AuditmanagerFrameworkControlSetsList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkControlSetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerFrameworkControlSetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsOutputReference",
-		reflect.TypeOf((*AuditmanagerFrameworkControlSetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerFrameworkControlSetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

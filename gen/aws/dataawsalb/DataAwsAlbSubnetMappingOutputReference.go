@@ -13,9 +13,9 @@ type DataAwsAlbSubnetMappingOutputReference interface {
 	AllocationId() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type DataAwsAlbSubnetMappingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,7 +68,7 @@ type DataAwsAlbSubnetMappingOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) AllocationId() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,7 +201,6 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewDataAwsAlbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsAlbSubnetMappingOutputReference {
 	_init_.Initialize()
 
@@ -212,7 +211,7 @@ func NewDataAwsAlbSubnetMappingOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlbSubnetMappingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -224,12 +223,12 @@ func NewDataAwsAlbSubnetMappingOutputReference_Override(d DataAwsAlbSubnetMappin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlbSubnetMappingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetInternalValue(val *DataAwsAlbSubnetMapping) {
+func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) SetInternalValue(val *DataAwsAlbSubnetMapping) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,16 +296,16 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,23 +462,23 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -498,4 +497,3 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingOutputReference) ToString() *string {
 
 	return returns
 }
-

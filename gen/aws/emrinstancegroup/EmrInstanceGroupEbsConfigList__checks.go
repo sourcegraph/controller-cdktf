@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceGroupEbsConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrInstanceGroupEbsConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrInstanceGroupEbsConfigListParameters(terraformResource cdktf.
 
 	return nil
 }
-

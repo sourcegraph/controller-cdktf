@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateAddMoveTarge
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveFromIdPa
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSsoadminCustomerManagedPolicyAttachment_GenerateConfigForImportPara
 	return nil
 }
 
-func validateSsoadminCustomerManagedPolicyAttachment_IsConstructParameters(x interface{}) error {
+func validateSsoadminCustomerManagedPolicyAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSsoadminCustomerManagedPolicyAttachment_IsConstructParameters(x int
 	return nil
 }
 
-func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformElementParameter
 	return nil
 }
 
-func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetPermissio
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewSsoadminCustomerManagedPolicyAttachmentParameters(scope construc
 
 	return nil
 }
-

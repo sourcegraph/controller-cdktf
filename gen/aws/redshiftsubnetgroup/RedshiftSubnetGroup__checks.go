@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftSubnetGroup) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftSubnetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftSubnetGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftSubnetGroup) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftSubnetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftSubnetGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftSubnetGroup_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateRedshiftSubnetGroup_IsConstructParameters(x interface{}) error {
+func validateRedshiftSubnetGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRedshiftSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftSubnetGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftSubnetGroup_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateRedshiftSubnetGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftSubnetGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRedshiftSubnetGroup_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSubnetGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftSubnetGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RedshiftSubnetGroup) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSubnetGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftSubnetGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_RedshiftSubnetGroup) validateSetNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSubnetGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftSubnetGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewRedshiftSubnetGroupParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

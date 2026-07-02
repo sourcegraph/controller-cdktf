@@ -18,11 +18,11 @@ type DataAwsElasticacheUser interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,9 +47,9 @@ type DataAwsElasticacheUser interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	NoPasswordRequired() interface{}
-	SetNoPasswordRequired(val interface{})
-	NoPasswordRequiredInput() interface{}
+	NoPasswordRequired() any
+	SetNoPasswordRequired(val any)
+	NoPasswordRequiredInput() any
 	Passwords() *[]*string
 	SetPasswords(val *[]*string)
 	PasswordsInput() *[]*string
@@ -58,11 +58,11 @@ type DataAwsElasticacheUser interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserId() *string
@@ -72,9 +72,9 @@ type DataAwsElasticacheUser interface {
 	SetUserName(val *string)
 	UserNameInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,18 +105,18 @@ type DataAwsElasticacheUser interface {
 	ResetOverrideLogicalId()
 	ResetPasswords()
 	ResetUserName()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsElasticacheUser
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataAwsElasticacheUser) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElasticacheUser) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataAwsElasticacheUser) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticacheUser) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataAwsElasticacheUser) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser) NoPasswordRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticacheUser) NoPasswordRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noPasswordRequired",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataAwsElasticacheUser) NoPasswordRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser) NoPasswordRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticacheUser) NoPasswordRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noPasswordRequiredInput",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_DataAwsElasticacheUser) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsElasticacheUser) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_DataAwsElasticacheUser) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsElasticacheUser) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -404,7 +404,6 @@ func (j *jsiiProxy_DataAwsElasticacheUser) UserNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/elasticache_user aws_elasticache_user} Data Source.
 func NewDataAwsElasticacheUser(scope constructs.Construct, id *string, config *DataAwsElasticacheUserConfig) DataAwsElasticacheUser {
 	_init_.Initialize()
@@ -416,7 +415,7 @@ func NewDataAwsElasticacheUser(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -429,12 +428,12 @@ func NewDataAwsElasticacheUser_Override(d DataAwsElasticacheUser, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetAccessString(val *string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetAccessString(val *string) {
 	if err := j.validateSetAccessStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetAccessString(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetEngine(val *string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetId(val *string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetNoPasswordRequired(val interface{}) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetNoPasswordRequired(val any) {
 	if err := j.validateSetNoPasswordRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetNoPasswordRequired(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetPasswords(val *[]*string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetPasswords(val *[]*string) {
 	if err := j.validateSetPasswordsParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetPasswords(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -535,7 +534,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetUserId(val *string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetUserId(val *string) {
 	if err := j.validateSetUserIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetUserId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticacheUser)SetUserName(val *string) {
+func (j *jsiiProxy_DataAwsElasticacheUser) SetUserName(val *string) {
 	if err := j.validateSetUserNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func DataAwsElasticacheUser_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func DataAwsElasticacheUser_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsElasticacheUser_IsConstruct(x interface{}) *bool {
+func DataAwsElasticacheUser_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticacheUser_IsConstructParameters(x); err != nil {
@@ -604,7 +603,7 @@ func DataAwsElasticacheUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func DataAwsElasticacheUser_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElasticacheUser_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsElasticacheUser_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticacheUser_IsTerraformDataSourceParameters(x); err != nil {
@@ -623,7 +622,7 @@ func DataAwsElasticacheUser_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func DataAwsElasticacheUser_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsElasticacheUser_IsTerraformElement(x interface{}) *bool {
+func DataAwsElasticacheUser_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsElasticacheUser_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func DataAwsElasticacheUser_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,27 +659,27 @@ func DataAwsElasticacheUser_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsElasticacheUser) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsElasticacheUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (d *jsiiProxy_DataAwsElasticacheUser) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -898,8 +897,8 @@ func (d *jsiiProxy_DataAwsElasticacheUser) ResetUserName() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElasticacheUser) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -911,8 +910,8 @@ func (d *jsiiProxy_DataAwsElasticacheUser) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsElasticacheUser) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -924,8 +923,8 @@ func (d *jsiiProxy_DataAwsElasticacheUser) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticacheUser) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -937,8 +936,8 @@ func (d *jsiiProxy_DataAwsElasticacheUser) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticacheUser) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -963,8 +962,8 @@ func (d *jsiiProxy_DataAwsElasticacheUser) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticacheUser) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsElasticacheUser) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -975,4 +974,3 @@ func (d *jsiiProxy_DataAwsElasticacheUser) ToTerraform() interface{} {
 
 	return returns
 }
-

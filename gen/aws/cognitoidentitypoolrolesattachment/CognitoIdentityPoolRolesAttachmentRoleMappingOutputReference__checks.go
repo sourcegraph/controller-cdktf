@@ -90,7 +90,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validatePutMappingRuleParameters(value interface{}) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validatePutMappingRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewCognitoIdentityPoolRolesAttachmentRoleMappingOutputReferencePara
 
 	return nil
 }
-

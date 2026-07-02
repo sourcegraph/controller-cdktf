@@ -12,9 +12,9 @@ type ConnectHoursOfOperationConfigAOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type ConnectHoursOfOperationConfigAOutputReference interface {
 	EndTimeInput() *ConnectHoursOfOperationConfigEndTime
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	StartTime() ConnectHoursOfOperationConfigStartTimeOutputReference
 	StartTimeInput() *ConnectHoursOfOperationConfigStartTime
 	// Experimental.
@@ -47,7 +47,7 @@ type ConnectHoursOfOperationConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ConnectHoursOfOperationConfigAOutputReference interface {
 	PutStartTime(value *ConnectHoursOfOperationConfigStartTime)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_ConnectHoursOfOperationConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewConnectHoursOfOperationConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConnectHoursOfOperationConfigAOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewConnectHoursOfOperationConfigAOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewConnectHoursOfOperationConfigAOutputReference_Override(c ConnectHoursOfO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetDay(val *string) {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) SetDay(val *string) {
 	if err := j.validateSetDayParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetDay(val *str
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,16 +321,16 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) PutEndTime(val
 	_jsii_.InvokeVoid(
 		c,
 		"putEndTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -513,20 +512,20 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) PutStartTime(v
 	_jsii_.InvokeVoid(
 		c,
 		"putStartTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) ToString() *st
 
 	return returns
 }
-

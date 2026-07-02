@@ -12,9 +12,9 @@ type InstanceEbsBlockDeviceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,19 +25,19 @@ type InstanceEbsBlockDeviceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeleteOnTermination() interface{}
-	SetDeleteOnTermination(val interface{})
-	DeleteOnTerminationInput() interface{}
+	DeleteOnTermination() any
+	SetDeleteOnTermination(val any)
+	DeleteOnTerminationInput() any
 	DeviceName() *string
 	SetDeviceName(val *string)
 	DeviceNameInput() *string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Iops() *float64
 	SetIops(val *float64)
 	IopsInput() *float64
@@ -71,7 +71,7 @@ type InstanceEbsBlockDeviceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type InstanceEbsBlockDeviceOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ type jsiiProxy_InstanceEbsBlockDeviceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) CreationStack() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) DeleteOnTermination() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) DeleteOnTermination() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOnTermination",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) DeleteOnTermination() 
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) DeleteOnTerminationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) DeleteOnTerminationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOnTerminationInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) DeviceNameInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Encrypted() interface{
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -396,7 +396,6 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) VolumeTypeInput() *str
 	return returns
 }
 
-
 func NewInstanceEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InstanceEbsBlockDeviceOutputReference {
 	_init_.Initialize()
 
@@ -407,7 +406,7 @@ func NewInstanceEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceEbsBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -419,12 +418,12 @@ func NewInstanceEbsBlockDeviceOutputReference_Override(i InstanceEbsBlockDeviceO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.instance.InstanceEbsBlockDeviceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetDeleteOnTermination(val interface{}) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetDeleteOnTermination(val any) {
 	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetDeleteOnTermination(
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetDeviceName(val *string) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetDeviceName(val *string) {
 	if err := j.validateSetDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetDeviceName(val *stri
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetEncrypted(val interf
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetIops(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetKmsKeyId(val *string
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetSnapshotId(val *string) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetSnapshotId(val *string) {
 	if err := j.validateSetSnapshotIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetSnapshotId(val *stri
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTags(val *map[string
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetThroughput(val *float64) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetThroughput(val *floa
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetVolumeSize(val *float64) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetVolumeSize(val *float64) {
 	if err := j.validateSetVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetVolumeSize(val *floa
 	)
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,16 +601,16 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -847,16 +846,16 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ResetVolumeType() {
 	)
 }
 
-func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -875,4 +874,3 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ToString() *string {
 
 	return returns
 }
-

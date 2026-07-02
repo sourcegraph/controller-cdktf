@@ -6,9 +6,9 @@ import (
 
 type DataAwsEc2HostConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type DataAwsEc2HostConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_host#filter DataAwsEc2Host#filter}
-	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
+	Filter any `field:"optional" json:"filter" yaml:"filter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}.
 	HostId *string `field:"optional" json:"hostId" yaml:"hostId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}.
@@ -37,4 +37,3 @@ type DataAwsEc2HostConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_host#timeouts DataAwsEc2Host#timeouts}
 	Timeouts *DataAwsEc2HostTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

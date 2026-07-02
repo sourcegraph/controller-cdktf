@@ -90,7 +90,7 @@ func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateInterpolationFor
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAbortStatementOutputReference) validatePutMessageParameters(value interface{}) error {
+func (l *jsiiProxy_LexBotAbortStatementOutputReference) validatePutMessageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAbortStatementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexBotAbortStatementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewLexBotAbortStatementOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

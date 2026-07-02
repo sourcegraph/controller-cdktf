@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServicecatalogConstraint) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogConstraint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServicecatalogConstraint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServicecatalogConstraint) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogConstraint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServicecatalogConstraint) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServicecatalogConstraint_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateServicecatalogConstraint_IsConstructParameters(x interface{}) error {
+func validateServicecatalogConstraint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServicecatalogConstraint_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateServicecatalogConstraint_IsTerraformElementParameters(x interface{}) error {
+func validateServicecatalogConstraint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServicecatalogConstraint_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateServicecatalogConstraint_IsTerraformResourceParameters(x interface{}) error {
+func validateServicecatalogConstraint_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ServicecatalogConstraint) validateSetAcceptLanguageParameters
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogConstraint) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogConstraint) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ServicecatalogConstraint) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogConstraint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogConstraint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ServicecatalogConstraint) validateSetProductIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogConstraint) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServicecatalogConstraint) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewServicecatalogConstraintParameters(scope constructs.Construct, i
 
 	return nil
 }
-

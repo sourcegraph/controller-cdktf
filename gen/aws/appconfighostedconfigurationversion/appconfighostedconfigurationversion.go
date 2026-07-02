@@ -22,11 +22,11 @@ type AppconfigHostedConfigurationVersion interface {
 	SetConfigurationProfileId(val *string)
 	ConfigurationProfileIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentInput() *string
@@ -34,9 +34,9 @@ type AppconfigHostedConfigurationVersion interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,15 +66,15 @@ type AppconfigHostedConfigurationVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VersionNumber() *float64
@@ -82,9 +82,9 @@ type AppconfigHostedConfigurationVersion interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type AppconfigHostedConfigurationVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type AppconfigHostedConfigurationVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type AppconfigHostedConfigurationVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppconfigHostedConfigurationVersion
@@ -204,8 +204,8 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) ConfigurationProfileIdIn
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) ContentTypeInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -444,7 +444,6 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) VersionNumber() *float64
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appconfig_hosted_configuration_version aws_appconfig_hosted_configuration_version} Resource.
 func NewAppconfigHostedConfigurationVersion(scope constructs.Construct, id *string, config *AppconfigHostedConfigurationVersionConfig) AppconfigHostedConfigurationVersion {
 	_init_.Initialize()
@@ -456,7 +455,7 @@ func NewAppconfigHostedConfigurationVersion(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -469,12 +468,12 @@ func NewAppconfigHostedConfigurationVersion_Override(a AppconfigHostedConfigurat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetApplicationId(val *string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetApplicationId(val *string) {
 	if err := j.validateSetApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetApplicationId(val *str
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetConfigurationProfileId(val *string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetConfigurationProfileId(val *string) {
 	if err := j.validateSetConfigurationProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetConfigurationProfileId
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetContent(val *string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetContentType(val *string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetContentType(val *strin
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -548,7 +547,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetDescription(val *string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetDescription(val *strin
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetId(val *string) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_AppconfigHostedConfigurationVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func AppconfigHostedConfigurationVersion_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func AppconfigHostedConfigurationVersion_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppconfigHostedConfigurationVersion_IsConstruct(x interface{}) *bool {
+func AppconfigHostedConfigurationVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppconfigHostedConfigurationVersion_IsConstructParameters(x); err != nil {
@@ -655,7 +654,7 @@ func AppconfigHostedConfigurationVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func AppconfigHostedConfigurationVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppconfigHostedConfigurationVersion_IsTerraformElement(x interface{}) *bool {
+func AppconfigHostedConfigurationVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppconfigHostedConfigurationVersion_IsTerraformElementParameters(x); err != nil {
@@ -674,7 +673,7 @@ func AppconfigHostedConfigurationVersion_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func AppconfigHostedConfigurationVersion_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func AppconfigHostedConfigurationVersion_IsTerraformResource(x interface{}) *bool {
+func AppconfigHostedConfigurationVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppconfigHostedConfigurationVersion_IsTerraformResourceParameters(x); err != nil {
@@ -693,7 +692,7 @@ func AppconfigHostedConfigurationVersion_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,31 +717,31 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetStringAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,15 +869,15 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -897,7 +896,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -910,7 +909,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) InterpolationForAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,18 +923,18 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -946,7 +945,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -957,7 +956,7 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -985,8 +984,8 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ResetOverrideLogicalId()
 	)
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -998,8 +997,8 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) SynthesizeAttributes() *
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1011,8 +1010,8 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) SynthesizeHclAttributes(
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1024,8 +1023,8 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToHclTerraform() interfa
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1050,8 +1049,8 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1062,4 +1061,3 @@ func (a *jsiiProxy_AppconfigHostedConfigurationVersion) ToTerraform() interface{
 
 	return returns
 }
-

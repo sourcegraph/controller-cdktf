@@ -36,7 +36,7 @@ type ElasticacheGlobalReplicationGroupGlobalNodeGroupsList interface {
 	Get(index *float64) ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) WrapsS
 	return returns
 }
 
-
 func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheGlobalReplicationGroupGlobalNodeGroupsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList_Override(e Elastic
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) AllWit
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Get(in
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) ToStri
 
 	return returns
 }
-

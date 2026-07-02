@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksMysqlLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksMysqlLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validatePutCloudwatchConfigurationParamet
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksMysqlLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksMysqlLayer_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateOpsworksMysqlLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksMysqlLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksMysqlLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksMysqlLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksMysqlLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksMysqlLayer_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateOpsworksMysqlLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksMysqlLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateOpsworksMysqlLayer_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignElasticIpsParameters
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignPublicIpsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoHealingParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -511,7 +511,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetCustomUndeployRecipesParameter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -591,7 +591,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -645,7 +645,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetRootPasswordParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetRootPasswordOnAllInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetRootPasswordOnAllInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -697,7 +697,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetTagsAllParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -735,4 +735,3 @@ func validateNewOpsworksMysqlLayerParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

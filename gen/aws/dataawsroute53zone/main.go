@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
-		reflect.TypeOf((*DataAwsRoute53Zone)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRoute53Zone](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsRoute53Zone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -81,6 +81,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53ZoneConfig",
-		reflect.TypeOf((*DataAwsRoute53ZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsRoute53ZoneConfig](),
 	)
 }

@@ -6,9 +6,9 @@ import (
 
 type S3BucketConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type S3BucketConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}.
 	AccelerationStatus *string `field:"optional" json:"accelerationStatus" yaml:"accelerationStatus"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#acl S3Bucket#acl}.
@@ -30,13 +30,13 @@ type S3BucketConfig struct {
 	// cors_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#cors_rule S3Bucket#cors_rule}
-	CorsRule interface{} `field:"optional" json:"corsRule" yaml:"corsRule"`
+	CorsRule any `field:"optional" json:"corsRule" yaml:"corsRule"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}.
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// grant block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#grant S3Bucket#grant}
-	Grant interface{} `field:"optional" json:"grant" yaml:"grant"`
+	Grant any `field:"optional" json:"grant" yaml:"grant"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#id S3Bucket#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -45,7 +45,7 @@ type S3BucketConfig struct {
 	// lifecycle_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
-	LifecycleRule interface{} `field:"optional" json:"lifecycleRule" yaml:"lifecycleRule"`
+	LifecycleRule any `field:"optional" json:"lifecycleRule" yaml:"lifecycleRule"`
 	// logging block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#logging S3Bucket#logging}
@@ -55,7 +55,7 @@ type S3BucketConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#object_lock_configuration S3Bucket#object_lock_configuration}
 	ObjectLockConfiguration *S3BucketObjectLockConfiguration `field:"optional" json:"objectLockConfiguration" yaml:"objectLockConfiguration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}.
-	ObjectLockEnabled interface{} `field:"optional" json:"objectLockEnabled" yaml:"objectLockEnabled"`
+	ObjectLockEnabled any `field:"optional" json:"objectLockEnabled" yaml:"objectLockEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#policy S3Bucket#policy}.
 	Policy *string `field:"optional" json:"policy" yaml:"policy"`
 	// replication_configuration block.
@@ -85,4 +85,3 @@ type S3BucketConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#website S3Bucket#website}
 	Website *S3BucketWebsite `field:"optional" json:"website" yaml:"website"`
 }
-

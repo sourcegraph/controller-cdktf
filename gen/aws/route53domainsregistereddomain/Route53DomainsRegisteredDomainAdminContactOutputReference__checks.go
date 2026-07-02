@@ -122,7 +122,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainAdminContactOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomainAdminContactOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53DomainsRegisteredDomainAdminContactOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -310,4 +310,3 @@ func validateNewRoute53DomainsRegisteredDomainAdminContactOutputReferenceParamet
 
 	return nil
 }
-

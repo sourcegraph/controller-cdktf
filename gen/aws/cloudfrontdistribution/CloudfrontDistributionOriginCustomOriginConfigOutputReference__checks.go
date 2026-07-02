@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudfrontDistributionOriginCustomOriginConfigOutputReferencePar
 
 	return nil
 }
-

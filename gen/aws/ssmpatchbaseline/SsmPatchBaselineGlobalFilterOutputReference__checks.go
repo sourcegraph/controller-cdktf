@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSsmPatchBaselineGlobalFilterOutputReferenceParameters(terraformR
 
 	return nil
 }
-

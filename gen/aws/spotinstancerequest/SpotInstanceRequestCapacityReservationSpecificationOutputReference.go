@@ -17,9 +17,9 @@ type SpotInstanceRequestCapacityReservationSpecificationOutputReference interfac
 	CapacityReservationTargetInput() *SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type SpotInstanceRequestCapacityReservationSpecificationOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type SpotInstanceRequestCapacityReservationSpecificationOutputReference interfac
 	ResetCapacityReservationTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	return returns
 }
 
-
 func NewSpotInstanceRequestCapacityReservationSpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestCapacityReservationSpecificationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewSpotInstanceRequestCapacityReservationSpecificationOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewSpotInstanceRequestCapacityReservationSpecificationOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference)SetCapacityReservationPreference(val *string) {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) SetCapacityReservationPreference(val *string) {
 	if err := j.validateSetCapacityReservationPreferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference)SetInternalValue(val *SpotInstanceRequestCapacityReservationSpecification) {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) SetInternalValue(val *SpotInstanceRequestCapacityReservationSpecification) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	)
 }
 
-func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	return returns
 }
 
-func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	_jsii_.InvokeVoid(
 		s,
 		"putCapacityReservationTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 	)
 }
 
-func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (s *jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationOutputRefe
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type OpsworksApplicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OpsworksApplicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#name OpsworksApplication#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#stack_id OpsworksApplication#stack_id}.
@@ -28,7 +28,7 @@ type OpsworksApplicationConfig struct {
 	// app_source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#app_source OpsworksApplication#app_source}
-	AppSource interface{} `field:"optional" json:"appSource" yaml:"appSource"`
+	AppSource any `field:"optional" json:"appSource" yaml:"appSource"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#auto_bundle_on_deploy OpsworksApplication#auto_bundle_on_deploy}.
 	AutoBundleOnDeploy *string `field:"optional" json:"autoBundleOnDeploy" yaml:"autoBundleOnDeploy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#aws_flow_ruby_settings OpsworksApplication#aws_flow_ruby_settings}.
@@ -46,11 +46,11 @@ type OpsworksApplicationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#domains OpsworksApplication#domains}.
 	Domains *[]*string `field:"optional" json:"domains" yaml:"domains"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#enable_ssl OpsworksApplication#enable_ssl}.
-	EnableSsl interface{} `field:"optional" json:"enableSsl" yaml:"enableSsl"`
+	EnableSsl any `field:"optional" json:"enableSsl" yaml:"enableSsl"`
 	// environment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#environment OpsworksApplication#environment}
-	Environment interface{} `field:"optional" json:"environment" yaml:"environment"`
+	Environment any `field:"optional" json:"environment" yaml:"environment"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#id OpsworksApplication#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -63,6 +63,5 @@ type OpsworksApplicationConfig struct {
 	// ssl_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application#ssl_configuration OpsworksApplication#ssl_configuration}
-	SslConfiguration interface{} `field:"optional" json:"sslConfiguration" yaml:"sslConfiguration"`
+	SslConfiguration any `field:"optional" json:"sslConfiguration" yaml:"sslConfiguration"`
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetRoleSea
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetRoleSearchSubtreeParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetRoleSearchSubtreeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetUserSea
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetUserSearchSubtreeParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetUserSearchSubtreeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,4 +310,3 @@ func validateNewMqBrokerLdapServerMetadataOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

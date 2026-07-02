@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftCluster) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftCluster) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateRedshiftCluster_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateRedshiftCluster_IsConstructParameters(x interface{}) error {
+func validateRedshiftCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateRedshiftCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRedshiftCluster_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateRedshiftCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRedshiftCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateRedshiftCluster_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetAllowVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetAllowVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetAllowVersionUpgradeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetAvailabilityZoneParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetAvailabilityZoneRelocationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetAvailabilityZoneRelocationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -425,7 +425,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetClusterVersionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -458,7 +458,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -539,7 +539,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetElasticIpParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -567,7 +567,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetEndpointParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetEnhancedVpcRoutingParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetEnhancedVpcRoutingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -699,7 +699,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetPreferredMaintenanceWindowParamet
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -745,7 +745,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetPubliclyAccessibleParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetPubliclyAccessibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -765,7 +765,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetPubliclyAccessibleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetSkipFinalSnapshotParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetSkipFinalSnapshotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -843,4 +843,3 @@ func validateNewRedshiftClusterParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

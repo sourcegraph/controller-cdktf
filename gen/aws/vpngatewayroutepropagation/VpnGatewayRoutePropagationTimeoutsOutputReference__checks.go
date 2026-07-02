@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVpnGatewayRoutePropagationTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

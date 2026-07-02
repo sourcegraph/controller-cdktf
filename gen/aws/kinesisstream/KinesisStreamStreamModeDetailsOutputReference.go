@@ -12,9 +12,9 @@ type KinesisStreamStreamModeDetailsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type KinesisStreamStreamModeDetailsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type KinesisStreamStreamModeDetailsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_KinesisStreamStreamModeDetailsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewKinesisStreamStreamModeDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisStreamStreamModeDetailsOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewKinesisStreamStreamModeDetailsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewKinesisStreamStreamModeDetailsOutputReference_Override(k KinesisStreamSt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetInternalValue(val *KinesisStreamStreamModeDetails) {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) SetInternalValue(val *KinesisStreamStreamModeDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetStreamMode(val *string) {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) SetStreamMode(val *string) {
 	if err := j.validateSetStreamModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetStreamMode(v
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) ToString() *st
 
 	return returns
 }
-

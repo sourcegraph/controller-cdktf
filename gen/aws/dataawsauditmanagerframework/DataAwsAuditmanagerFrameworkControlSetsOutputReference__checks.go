@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validatePutControlsParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validatePutControlsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewDataAwsAuditmanagerFrameworkControlSetsOutputReferenceParameters
 
 	return nil
 }
-

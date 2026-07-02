@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsCallerIdentity) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsCallerIdentity) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsCallerIdentity_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataAwsCallerIdentity_IsConstructParameters(x interface{}) error {
+func validateDataAwsCallerIdentity_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsCallerIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsCallerIdentity_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsCallerIdentity_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsCallerIdentity_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsCallerIdentity_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsCallerIdentity_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsCallerIdentity_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCallerIdentity) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -239,4 +239,3 @@ func validateNewDataAwsCallerIdentityParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

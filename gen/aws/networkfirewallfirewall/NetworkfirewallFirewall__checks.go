@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewall) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallFirewall) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewall) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkfirewallFirewall) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validatePutEncryptionConfigurationPa
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewall) validatePutSubnetMappingParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallFirewall) validatePutSubnetMappingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateNetworkfirewallFirewall_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateNetworkfirewallFirewall_IsConstructParameters(x interface{}) error {
+func validateNetworkfirewallFirewall_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateNetworkfirewallFirewall_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateNetworkfirewallFirewall_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkfirewallFirewall_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateNetworkfirewallFirewall_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateNetworkfirewallFirewall_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkfirewallFirewall_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateNetworkfirewallFirewall_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewall) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewall) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -376,7 +376,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewall) validateSetDeleteProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetDeleteProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -412,7 +412,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetFirewallPolicyArnParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewall) validateSetFirewallPolicyChangeProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetFirewallPolicyChangeProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -456,7 +456,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewall) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -502,7 +502,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewall) validateSetSubnetChangeProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetSubnetChangeProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -564,4 +564,3 @@ func validateNewNetworkfirewallFirewallParameters(scope constructs.Construct, id
 
 	return nil
 }
-

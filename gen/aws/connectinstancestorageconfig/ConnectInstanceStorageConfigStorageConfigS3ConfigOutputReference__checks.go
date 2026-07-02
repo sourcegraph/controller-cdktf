@@ -125,7 +125,7 @@ func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference
 
 	return nil
 }
-

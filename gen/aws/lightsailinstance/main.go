@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailInstance.LightsailInstance",
-		reflect.TypeOf((*LightsailInstance)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "addOn", GoGetter: "AddOn"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userDataInput", GoGetter: "UserDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,11 +101,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOn",
-		reflect.TypeOf((*LightsailInstanceAddOn)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstanceAddOn](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
-		reflect.TypeOf((*LightsailInstanceAddOnOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstanceAddOnOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LightsailInstanceAddOnOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,6 +143,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceConfig",
-		reflect.TypeOf((*LightsailInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[LightsailInstanceConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewEmrManagedScalingPolicyComputeLimitsOutputReferenceParameters(te
 
 	return nil
 }
-

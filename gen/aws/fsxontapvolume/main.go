@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
-		reflect.TypeOf((*FsxOntapVolume)(nil)).Elem(),
+		reflect.TypeFor[FsxOntapVolume](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOntapVolume{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig",
-		reflect.TypeOf((*FsxOntapVolumeConfig)(nil)).Elem(),
+		reflect.TypeFor[FsxOntapVolumeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy",
-		reflect.TypeOf((*FsxOntapVolumeTieringPolicy)(nil)).Elem(),
+		reflect.TypeFor[FsxOntapVolumeTieringPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
-		reflect.TypeOf((*FsxOntapVolumeTieringPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOntapVolumeTieringPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts",
-		reflect.TypeOf((*FsxOntapVolumeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FsxOntapVolumeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
-		reflect.TypeOf((*FsxOntapVolumeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxOntapVolumeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxOntapVolumeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

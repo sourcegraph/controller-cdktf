@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMskconnectCustomPluginTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

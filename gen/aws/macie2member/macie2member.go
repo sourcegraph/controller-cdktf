@@ -20,15 +20,15 @@ type Macie2Member interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,16 +47,16 @@ type Macie2Member interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InvitationDisableEmailNotification() interface{}
-	SetInvitationDisableEmailNotification(val interface{})
-	InvitationDisableEmailNotificationInput() interface{}
+	InvitationDisableEmailNotification() any
+	SetInvitationDisableEmailNotification(val any)
+	InvitationDisableEmailNotificationInput() any
 	InvitationMessage() *string
 	SetInvitationMessage(val *string)
 	InvitationMessageInput() *string
-	Invite() interface{}
-	SetInvite(val interface{})
+	Invite() any
+	SetInvite(val any)
 	InvitedAt() *string
-	InviteInput() interface{}
+	InviteInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,11 +69,11 @@ type Macie2Member interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RelationshipStatus() *string
 	Status() *string
 	SetStatus(val *string)
@@ -87,19 +87,19 @@ type Macie2Member interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() Macie2MemberTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type Macie2Member interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type Macie2Member interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type Macie2Member interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Macie2Member
@@ -216,8 +216,8 @@ func (j *jsiiProxy_Macie2Member) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_Macie2Member) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Macie2Member) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_Macie2Member) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_Macie2Member) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) InvitationDisableEmailNotification() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) InvitationDisableEmailNotification() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invitationDisableEmailNotification",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_Macie2Member) InvitationDisableEmailNotification() interface{
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) InvitationDisableEmailNotificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) InvitationDisableEmailNotificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invitationDisableEmailNotificationInput",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_Macie2Member) InvitationMessageInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) Invite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) Invite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invite",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_Macie2Member) InvitedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) InviteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) InviteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inviteInput",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_Macie2Member) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Macie2Member) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_Macie2Member) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_Macie2Member) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Macie2Member) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_Macie2Member) Timeouts() Macie2MemberTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Member) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2Member) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -586,7 +586,6 @@ func (j *jsiiProxy_Macie2Member) UpdatedAt() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_member aws_macie2_member} Resource.
 func NewMacie2Member(scope constructs.Construct, id *string, config *Macie2MemberConfig) Macie2Member {
 	_init_.Initialize()
@@ -598,7 +597,7 @@ func NewMacie2Member(scope constructs.Construct, id *string, config *Macie2Membe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -611,12 +610,12 @@ func NewMacie2Member_Override(m Macie2Member, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetAccountId(val *string) {
+func (j *jsiiProxy_Macie2Member) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_Macie2Member)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetConnection(val interface{}) {
+func (j *jsiiProxy_Macie2Member) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_Macie2Member)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetCount(val interface{}) {
+func (j *jsiiProxy_Macie2Member) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_Macie2Member)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Macie2Member) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_Macie2Member)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetEmail(val *string) {
+func (j *jsiiProxy_Macie2Member) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_Macie2Member)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Macie2Member) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_Macie2Member)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetId(val *string) {
+func (j *jsiiProxy_Macie2Member) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_Macie2Member)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetInvitationDisableEmailNotification(val interface{}) {
+func (j *jsiiProxy_Macie2Member) SetInvitationDisableEmailNotification(val any) {
 	if err := j.validateSetInvitationDisableEmailNotificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_Macie2Member)SetInvitationDisableEmailNotification(val interf
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetInvitationMessage(val *string) {
+func (j *jsiiProxy_Macie2Member) SetInvitationMessage(val *string) {
 	if err := j.validateSetInvitationMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_Macie2Member)SetInvitationMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetInvite(val interface{}) {
+func (j *jsiiProxy_Macie2Member) SetInvite(val any) {
 	if err := j.validateSetInviteParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_Macie2Member)SetInvite(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Macie2Member) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_Macie2Member)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Macie2Member) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -739,7 +738,7 @@ func (j *jsiiProxy_Macie2Member)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Macie2Member) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_Macie2Member)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetStatus(val *string) {
+func (j *jsiiProxy_Macie2Member) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_Macie2Member)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Macie2Member) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_Macie2Member)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Member)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Macie2Member) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func Macie2Member_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func Macie2Member_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Macie2Member_IsConstruct(x interface{}) *bool {
+func Macie2Member_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2Member_IsConstructParameters(x); err != nil {
@@ -830,7 +829,7 @@ func Macie2Member_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func Macie2Member_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Macie2Member_IsTerraformElement(x interface{}) *bool {
+func Macie2Member_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2Member_IsTerraformElementParameters(x); err != nil {
@@ -849,7 +848,7 @@ func Macie2Member_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func Macie2Member_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Macie2Member_IsTerraformResource(x interface{}) *bool {
+func Macie2Member_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2Member_IsTerraformResourceParameters(x); err != nil {
@@ -868,7 +867,7 @@ func Macie2Member_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -893,31 +892,31 @@ func (m *jsiiProxy_Macie2Member) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_Macie2Member) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_Macie2Member) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_Macie2Member) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_Macie2Member) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (m *jsiiProxy_Macie2Member) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (m *jsiiProxy_Macie2Member) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (m *jsiiProxy_Macie2Member) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (m *jsiiProxy_Macie2Member) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (m *jsiiProxy_Macie2Member) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (m *jsiiProxy_Macie2Member) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (m *jsiiProxy_Macie2Member) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,15 +1044,15 @@ func (m *jsiiProxy_Macie2Member) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_Macie2Member) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2Member) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1072,7 +1071,7 @@ func (m *jsiiProxy_Macie2Member) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (m *jsiiProxy_Macie2Member) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,18 +1098,18 @@ func (m *jsiiProxy_Macie2Member) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_Macie2Member) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_Macie2Member) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1121,7 +1120,7 @@ func (m *jsiiProxy_Macie2Member) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (m *jsiiProxy_Macie2Member) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (m *jsiiProxy_Macie2Member) PutTimeouts(value *Macie2MemberTimeouts) {
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1219,8 +1218,8 @@ func (m *jsiiProxy_Macie2Member) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_Macie2Member) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Macie2Member) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1232,8 +1231,8 @@ func (m *jsiiProxy_Macie2Member) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (m *jsiiProxy_Macie2Member) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Macie2Member) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1245,8 +1244,8 @@ func (m *jsiiProxy_Macie2Member) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (m *jsiiProxy_Macie2Member) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2Member) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1258,8 +1257,8 @@ func (m *jsiiProxy_Macie2Member) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_Macie2Member) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2Member) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1284,8 +1283,8 @@ func (m *jsiiProxy_Macie2Member) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_Macie2Member) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2Member) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1296,4 +1295,3 @@ func (m *jsiiProxy_Macie2Member) ToTerraform() interface{} {
 
 	return returns
 }
-

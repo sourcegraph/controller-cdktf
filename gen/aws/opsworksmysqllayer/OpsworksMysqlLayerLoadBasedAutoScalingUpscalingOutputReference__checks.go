@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReferencePa
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
-		reflect.TypeOf((*ServicecatalogPortfolioShare)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogPortfolioShare](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepted", GoGetter: "Accepted"},
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForAcceptance", GoGetter: "WaitForAcceptance"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForAcceptanceInput", GoGetter: "WaitForAcceptanceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogPortfolioShare{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareConfig",
-		reflect.TypeOf((*ServicecatalogPortfolioShareConfig)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogPortfolioShareConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeouts",
-		reflect.TypeOf((*ServicecatalogPortfolioShareTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogPortfolioShareTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
-		reflect.TypeOf((*ServicecatalogPortfolioShareTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServicecatalogPortfolioShareTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

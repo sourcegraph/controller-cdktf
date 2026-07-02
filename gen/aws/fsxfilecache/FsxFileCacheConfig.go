@@ -6,9 +6,9 @@ import (
 
 type FsxFileCacheConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type FsxFileCacheConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}.
 	FileCacheType *string `field:"required" json:"fileCacheType" yaml:"fileCacheType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}.
@@ -28,11 +28,11 @@ type FsxFileCacheConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}.
 	SubnetIds *[]*string `field:"required" json:"subnetIds" yaml:"subnetIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}.
-	CopyTagsToDataRepositoryAssociations interface{} `field:"optional" json:"copyTagsToDataRepositoryAssociations" yaml:"copyTagsToDataRepositoryAssociations"`
+	CopyTagsToDataRepositoryAssociations any `field:"optional" json:"copyTagsToDataRepositoryAssociations" yaml:"copyTagsToDataRepositoryAssociations"`
 	// data_repository_association block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
-	DataRepositoryAssociation interface{} `field:"optional" json:"dataRepositoryAssociation" yaml:"dataRepositoryAssociation"`
+	DataRepositoryAssociation any `field:"optional" json:"dataRepositoryAssociation" yaml:"dataRepositoryAssociation"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#id FsxFileCache#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -43,7 +43,7 @@ type FsxFileCacheConfig struct {
 	// lustre_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
-	LustreConfiguration interface{} `field:"optional" json:"lustreConfiguration" yaml:"lustreConfiguration"`
+	LustreConfiguration any `field:"optional" json:"lustreConfiguration" yaml:"lustreConfiguration"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}.
 	SecurityGroupIds *[]*string `field:"optional" json:"securityGroupIds" yaml:"securityGroupIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}.
@@ -55,4 +55,3 @@ type FsxFileCacheConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
 	Timeouts *FsxFileCacheTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

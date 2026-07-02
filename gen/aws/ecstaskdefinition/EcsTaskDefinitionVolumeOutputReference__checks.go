@@ -131,7 +131,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -204,7 +204,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetHostPathPa
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -271,4 +271,3 @@ func validateNewEcsTaskDefinitionVolumeOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

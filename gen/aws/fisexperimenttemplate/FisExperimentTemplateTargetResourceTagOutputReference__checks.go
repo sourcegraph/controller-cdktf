@@ -98,7 +98,7 @@ func (f *jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFisExperimentTemplateTargetResourceTagOutputReferenceParameters(
 
 	return nil
 }
-

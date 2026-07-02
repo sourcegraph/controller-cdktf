@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
-		reflect.TypeOf((*DataAwsWafv2IpSet)(nil)).Elem(),
+		reflect.TypeFor[DataAwsWafv2IpSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "addresses", GoGetter: "Addresses"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsWafv2IpSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig",
-		reflect.TypeOf((*DataAwsWafv2IpSetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsWafv2IpSetConfig](),
 	)
 }

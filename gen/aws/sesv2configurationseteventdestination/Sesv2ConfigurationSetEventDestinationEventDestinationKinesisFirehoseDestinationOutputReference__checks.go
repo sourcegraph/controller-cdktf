@@ -98,7 +98,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisF
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSesv2ConfigurationSetEventDestinationEventDestinationKinesisFire
 
 	return nil
 }
-

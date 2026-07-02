@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
-		reflect.TypeOf((*KmsExternalKey)(nil)).Elem(),
+		reflect.TypeFor[KmsExternalKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validTo", GoGetter: "ValidTo"},
 			_jsii_.MemberProperty{JsiiProperty: "validToInput", GoGetter: "ValidToInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsExternalKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,6 +98,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig",
-		reflect.TypeOf((*KmsExternalKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[KmsExternalKeyConfig](),
 	)
 }

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupVault.BackupVault",
-		reflect.TypeOf((*BackupVault)(nil)).Elem(),
+		reflect.TypeFor[BackupVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupVault.BackupVaultConfig",
-		reflect.TypeOf((*BackupVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupVault.BackupVaultTimeouts",
-		reflect.TypeOf((*BackupVaultTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BackupVaultTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupVault.BackupVaultTimeoutsOutputReference",
-		reflect.TypeOf((*BackupVaultTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupVaultTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupVaultTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

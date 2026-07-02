@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafWebAclRulesList) validateResolveParameters(_context cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_WafWebAclRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafWebAclRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafWebAclRulesListParameters(terraformResource cdktf.IInterpolat
 
 	return nil
 }
-

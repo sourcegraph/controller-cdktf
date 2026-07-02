@@ -15,11 +15,11 @@ type DataAwsSqsQueues interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,17 +50,17 @@ type DataAwsSqsQueues interface {
 	QueueNamePrefixInput() *string
 	QueueUrls() *[]*string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataAwsSqsQueues interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueueNamePrefix()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSqsQueues
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataAwsSqsQueues) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSqsQueues) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAwsSqsQueues) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSqsQueues) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataAwsSqsQueues) QueueUrls() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSqsQueues) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataAwsSqsQueues) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSqsQueues) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -296,7 +296,6 @@ func (j *jsiiProxy_DataAwsSqsQueues) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
 func NewDataAwsSqsQueues(scope constructs.Construct, id *string, config *DataAwsSqsQueuesConfig) DataAwsSqsQueues {
 	_init_.Initialize()
@@ -308,7 +307,7 @@ func NewDataAwsSqsQueues(scope constructs.Construct, id *string, config *DataAws
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataAwsSqsQueues_Override(d DataAwsSqsQueues, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSqsQueues)SetQueueNamePrefix(val *string) {
+func (j *jsiiProxy_DataAwsSqsQueues) SetQueueNamePrefix(val *string) {
 	if err := j.validateSetQueueNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func DataAwsSqsQueues_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func DataAwsSqsQueues_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSqsQueues_IsConstruct(x interface{}) *bool {
+func DataAwsSqsQueues_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSqsQueues_IsConstructParameters(x); err != nil {
@@ -441,7 +440,7 @@ func DataAwsSqsQueues_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func DataAwsSqsQueues_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSqsQueues_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSqsQueues_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSqsQueues_IsTerraformDataSourceParameters(x); err != nil {
@@ -460,7 +459,7 @@ func DataAwsSqsQueues_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func DataAwsSqsQueues_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSqsQueues_IsTerraformElement(x interface{}) *bool {
+func DataAwsSqsQueues_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSqsQueues_IsTerraformElementParameters(x); err != nil {
@@ -479,7 +478,7 @@ func DataAwsSqsQueues_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -497,27 +496,27 @@ func DataAwsSqsQueues_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSqsQueues) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSqsQueues) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsSqsQueues) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataAwsSqsQueues) ResetQueueNamePrefix() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSqsQueues) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataAwsSqsQueues) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSqsQueues) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataAwsSqsQueues) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSqsQueues) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataAwsSqsQueues) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSqsQueues) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataAwsSqsQueues) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSqsQueues) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSqsQueues) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataAwsSqsQueues) ToTerraform() interface{} {
 
 	return returns
 }
-

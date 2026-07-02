@@ -90,7 +90,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validatePutTagFilterParameters(value interface{}) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validatePutTagFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewAutoscalingplansScalingPlanApplicationSourceOutputReferenceParam
 
 	return nil
 }
-

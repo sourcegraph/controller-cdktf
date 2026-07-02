@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAuroraOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAuroraOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersAuroraOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersAuroraOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTransferWorkflowOnExceptionStepsListParameters(terraformResource
 
 	return nil
 }
-

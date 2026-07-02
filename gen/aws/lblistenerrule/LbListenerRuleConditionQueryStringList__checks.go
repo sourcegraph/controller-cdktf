@@ -34,7 +34,7 @@ func (l *jsiiProxy_LbListenerRuleConditionQueryStringList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionQueryStringList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionQueryStringList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLbListenerRuleConditionQueryStringListParameters(terraformResour
 
 	return nil
 }
-

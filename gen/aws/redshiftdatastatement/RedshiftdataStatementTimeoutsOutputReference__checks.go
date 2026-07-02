@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftdataStatementTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftdataStatementTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftdataStatementTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RedshiftdataStatementTimeoutsOutputReference) validateSetCrea
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftdataStatementTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftdataStatementTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewRedshiftdataStatementTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

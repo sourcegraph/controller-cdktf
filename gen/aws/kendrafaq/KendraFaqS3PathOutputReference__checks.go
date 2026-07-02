@@ -106,7 +106,7 @@ func (j *jsiiProxy_KendraFaqS3PathOutputReference) validateSetBucketParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_KendraFaqS3PathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraFaqS3PathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKendraFaqS3PathOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

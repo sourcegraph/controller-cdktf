@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsLbTargetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsLbTargetGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataAwsLbTargetGroup_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDataAwsLbTargetGroup_IsConstructParameters(x interface{}) error {
+func validateDataAwsLbTargetGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataAwsLbTargetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsLbTargetGroup_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsLbTargetGroup_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataAwsLbTargetGroup_IsTerraformDataSourceParameters(x interface{})
 	return nil
 }
 
-func validateDataAwsLbTargetGroup_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsLbTargetGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetArnParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataAwsLbTargetGroupParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

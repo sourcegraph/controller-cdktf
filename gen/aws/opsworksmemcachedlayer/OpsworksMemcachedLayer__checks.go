@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutCloudwatchConfigurationPar
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutEbsVolumeParameters(value interface{}) error {
+func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutEbsVolumeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateOpsworksMemcachedLayer_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateOpsworksMemcachedLayer_IsConstructParameters(x interface{}) error {
+func validateOpsworksMemcachedLayer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateOpsworksMemcachedLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOpsworksMemcachedLayer_IsTerraformElementParameters(x interface{}) error {
+func validateOpsworksMemcachedLayer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateOpsworksMemcachedLayer_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateOpsworksMemcachedLayer_IsTerraformResourceParameters(x interface{}) error {
+func validateOpsworksMemcachedLayer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAllocatedMemoryParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoAssignElasticIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoAssignElasticIpsParame
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoAssignPublicIpsParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoAssignPublicIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoAssignPublicIpsParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoHealingParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoHealingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAutoHealingParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -398,7 +398,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -519,7 +519,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetCustomUndeployRecipesParam
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetDrainElbOnShutdownParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetDrainElbOnShutdownParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -555,7 +555,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetInstallUpdatesOnBootParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetInstallUpdatesOnBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,7 +599,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -677,7 +677,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetTagsAllParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetUseEbsOptimizedInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetUseEbsOptimizedInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -715,4 +715,3 @@ func validateNewOpsworksMemcachedLayerParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

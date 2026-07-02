@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
-		reflect.TypeOf((*DetectiveInvitationAccepter)(nil)).Elem(),
+		reflect.TypeFor[DetectiveInvitationAccepter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DetectiveInvitationAccepter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig",
-		reflect.TypeOf((*DetectiveInvitationAccepterConfig)(nil)).Elem(),
+		reflect.TypeFor[DetectiveInvitationAccepterConfig](),
 	)
 }

@@ -90,7 +90,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateInterpo
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validatePutMessageParameters(value interface{}) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validatePutMessageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewLexIntentFollowUpPromptPromptOutputReferenceParameters(terraform
 
 	return nil
 }
-

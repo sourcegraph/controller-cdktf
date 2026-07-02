@@ -36,7 +36,7 @@ type DataAwsEc2InstanceTypeFpgasList interface {
 	Get(index *float64) DataAwsEc2InstanceTypeFpgasOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataAwsEc2InstanceTypeFpgasList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeFpgasList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataAwsEc2InstanceTypeFpgasList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataAwsEc2InstanceTypeFpgasList_Override(d DataAwsEc2InstanceTypeFpgasLi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) Get(index *float64) DataAwsE
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeFpgasList) ToString() *string {
 
 	return returns
 }
-

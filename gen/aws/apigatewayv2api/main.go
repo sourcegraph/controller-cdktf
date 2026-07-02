@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api",
-		reflect.TypeOf((*Apigatewayv2Api)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2Api](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2Api{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -111,15 +111,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig",
-		reflect.TypeOf((*Apigatewayv2ApiConfig)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2ApiConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration",
-		reflect.TypeOf((*Apigatewayv2ApiCorsConfiguration)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2ApiCorsConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
-		reflect.TypeOf((*Apigatewayv2ApiCorsConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2ApiCorsConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

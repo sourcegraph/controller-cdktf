@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleNotOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleNotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleNotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCeCostCategoryRuleRuleNotOutputReferenceParameters(terraf
 
 	return nil
 }
-

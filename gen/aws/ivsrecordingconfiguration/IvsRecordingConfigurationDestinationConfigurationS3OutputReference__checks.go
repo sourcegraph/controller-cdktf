@@ -106,7 +106,7 @@ func (j *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationS3OutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIvsRecordingConfigurationDestinationConfigurationS3OutputReferen
 
 	return nil
 }
-

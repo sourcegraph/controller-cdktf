@@ -1,9 +1,8 @@
 package opensearchdomain
 
-
 type OpensearchDomainEbsOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#ebs_enabled OpensearchDomain#ebs_enabled}.
-	EbsEnabled interface{} `field:"required" json:"ebsEnabled" yaml:"ebsEnabled"`
+	EbsEnabled any `field:"required" json:"ebsEnabled" yaml:"ebsEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#iops OpensearchDomain#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#throughput OpensearchDomain#throughput}.
@@ -13,4 +12,3 @@ type OpensearchDomainEbsOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain#volume_type OpensearchDomain#volume_type}.
 	VolumeType *string `field:"optional" json:"volumeType" yaml:"volumeType"`
 }
-

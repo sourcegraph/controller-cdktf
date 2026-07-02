@@ -153,7 +153,7 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewMwaaEnvironmentLoggingConfigurationOutputReferenceParameters(ter
 
 	return nil
 }
-

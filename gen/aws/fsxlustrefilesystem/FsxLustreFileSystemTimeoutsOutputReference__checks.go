@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFsxLustreFileSystemTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference) validatePutInsertHeaderParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference) validatePutInsertHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewWafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReferenc
 
 	return nil
 }
-

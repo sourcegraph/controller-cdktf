@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuC
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCoun
 
 	return nil
 }
-

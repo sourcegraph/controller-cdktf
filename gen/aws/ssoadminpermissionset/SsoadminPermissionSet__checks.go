@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsoadminPermissionSet) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsoadminPermissionSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsoadminPermissionSet) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsoadminPermissionSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSsoadminPermissionSet_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateSsoadminPermissionSet_IsConstructParameters(x interface{}) error {
+func validateSsoadminPermissionSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSsoadminPermissionSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSsoadminPermissionSet_IsTerraformElementParameters(x interface{}) error {
+func validateSsoadminPermissionSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSsoadminPermissionSet_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateSsoadminPermissionSet_IsTerraformResourceParameters(x interface{}) error {
+func validateSsoadminPermissionSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSsoadminPermissionSet_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SsoadminPermissionSet) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_SsoadminPermissionSet) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -470,4 +470,3 @@ func validateNewSsoadminPermissionSetParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

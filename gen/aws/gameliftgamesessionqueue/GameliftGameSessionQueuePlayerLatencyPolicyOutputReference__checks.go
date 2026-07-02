@@ -98,7 +98,7 @@ func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGameliftGameSessionQueuePlayerLatencyPolicyOutputReferenceParame
 
 	return nil
 }
-

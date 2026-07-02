@@ -98,7 +98,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeControlDetailsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeControlDetailsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetInclude
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeNullAndEmptyParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeNullAndEmptyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetInclude
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludePartitionValueParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludePartitionValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetInclude
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeTableAlterOperationsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeTableAlterOperationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetInclude
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeTransactionDetailsParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetIncludeTransactionDetailsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetMessage
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetPartitionIncludeSchemaTableParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetPartitionIncludeSchemaTableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -342,4 +342,3 @@ func validateNewDmsEndpointKinesisSettingsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

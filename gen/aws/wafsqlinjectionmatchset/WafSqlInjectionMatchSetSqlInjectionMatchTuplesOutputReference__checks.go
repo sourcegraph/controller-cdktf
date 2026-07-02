@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewWafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReferencePar
 
 	return nil
 }
-

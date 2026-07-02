@@ -90,7 +90,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validatePutTagsParameters(value interface{}) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validatePutTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewTransferWorkflowOnExceptionStepsTagStepDetailsOutputReferencePar
 
 	return nil
 }
-

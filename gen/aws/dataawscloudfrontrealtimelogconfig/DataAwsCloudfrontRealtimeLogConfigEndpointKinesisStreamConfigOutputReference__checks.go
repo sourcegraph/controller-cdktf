@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOut
 
 	return nil
 }
-

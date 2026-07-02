@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheUser.ElasticacheUser",
-		reflect.TypeOf((*ElasticacheUser)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessString", GoGetter: "AccessString"},
 			_jsii_.MemberProperty{JsiiProperty: "accessStringInput", GoGetter: "AccessStringInput"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,6 +87,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheUser.ElasticacheUserConfig",
-		reflect.TypeOf((*ElasticacheUserConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheUserConfig](),
 	)
 }

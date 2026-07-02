@@ -112,7 +112,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validatePutFastLaunchConfigurationParameters(value interface{}) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validatePutFastLaunchConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validatePutLaunchTemplateConfigurationParameters(value interface{}) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validatePutLaunchTemplateConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -322,4 +322,3 @@ func validateNewImagebuilderDistributionConfigurationDistributionOutputReference
 
 	return nil
 }
-

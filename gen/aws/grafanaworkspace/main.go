@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
-		reflect.TypeOf((*GrafanaWorkspace)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspace](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountAccessType", GoGetter: "AccountAccessType"},
 			_jsii_.MemberProperty{JsiiProperty: "accountAccessTypeInput", GoGetter: "AccountAccessTypeInput"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfiguration", GoGetter: "VpcConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigurationInput", GoGetter: "VpcConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaWorkspace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -115,15 +115,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceConfig",
-		reflect.TypeOf((*GrafanaWorkspaceConfig)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceTimeouts",
-		reflect.TypeOf((*GrafanaWorkspaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
-		reflect.TypeOf((*GrafanaWorkspaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceVpcConfiguration",
-		reflect.TypeOf((*GrafanaWorkspaceVpcConfiguration)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceVpcConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
-		reflect.TypeOf((*GrafanaWorkspaceVpcConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GrafanaWorkspaceVpcConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GrafanaWorkspaceVpcConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
-		reflect.TypeOf((*DataAwsIdentitystoreUser)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "addresses", GoGetter: "Addresses"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -83,11 +83,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddresses",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAddresses)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAddresses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAddressesList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAddressesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserAddressesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -108,7 +108,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAddressesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAddressesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserAddressesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,15 +148,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifier",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifier)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAlternateIdentifier](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalId",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierExternalId)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAlternateIdentifierExternalId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,7 +192,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAlternateIdentifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueAttribute", GoGetter: "UniqueAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueAttributeInput", GoGetter: "UniqueAttributeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePath", GoGetter: "AttributePath"},
 			_jsii_.MemberProperty{JsiiProperty: "attributePathInput", GoGetter: "AttributePathInput"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,15 +272,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserConfig",
-		reflect.TypeOf((*DataAwsIdentitystoreUserConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmails",
-		reflect.TypeOf((*DataAwsIdentitystoreUserEmails)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserEmails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmailsList",
-		reflect.TypeOf((*DataAwsIdentitystoreUserEmailsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserEmailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserEmailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -301,7 +301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmailsOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserEmailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserEmailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,11 +336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIds",
-		reflect.TypeOf((*DataAwsIdentitystoreUserExternalIds)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserExternalIds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
-		reflect.TypeOf((*DataAwsIdentitystoreUserExternalIdsList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserExternalIdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserExternalIdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -361,7 +361,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserExternalIdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserExternalIdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserExternalIdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -395,11 +395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilter",
-		reflect.TypeOf((*DataAwsIdentitystoreUserFilter)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePath", GoGetter: "AttributePath"},
 			_jsii_.MemberProperty{JsiiProperty: "attributePathInput", GoGetter: "AttributePathInput"},
@@ -427,7 +427,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -435,11 +435,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserName",
-		reflect.TypeOf((*DataAwsIdentitystoreUserName)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserNameList",
-		reflect.TypeOf((*DataAwsIdentitystoreUserNameList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserNameList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserNameList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -460,7 +460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserNameOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -490,7 +490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -498,11 +498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbers",
-		reflect.TypeOf((*DataAwsIdentitystoreUserPhoneNumbers)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserPhoneNumbers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
-		reflect.TypeOf((*DataAwsIdentitystoreUserPhoneNumbersList)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserPhoneNumbersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -515,7 +515,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -523,7 +523,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersOutputReference",
-		reflect.TypeOf((*DataAwsIdentitystoreUserPhoneNumbersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIdentitystoreUserPhoneNumbersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -550,7 +550,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

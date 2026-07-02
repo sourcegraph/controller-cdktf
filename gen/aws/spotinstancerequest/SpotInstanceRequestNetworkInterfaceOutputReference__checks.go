@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewSpotInstanceRequestNetworkInterfaceOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFi
 
 	return nil
 }
-

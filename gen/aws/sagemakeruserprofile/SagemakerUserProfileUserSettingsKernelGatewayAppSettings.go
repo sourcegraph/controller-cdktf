@@ -1,6 +1,5 @@
 package sagemakeruserprofile
 
-
 type SagemakerUserProfileUserSettingsKernelGatewayAppSettings struct {
 	// default_resource_spec block.
 	//
@@ -9,8 +8,7 @@ type SagemakerUserProfileUserSettingsKernelGatewayAppSettings struct {
 	// custom_image block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
-	CustomImage interface{} `field:"optional" json:"customImage" yaml:"customImage"`
+	CustomImage any `field:"optional" json:"customImage" yaml:"customImage"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
 	LifecycleConfigArns *[]*string `field:"optional" json:"lifecycleConfigArns" yaml:"lifecycleConfigArns"`
 }
-

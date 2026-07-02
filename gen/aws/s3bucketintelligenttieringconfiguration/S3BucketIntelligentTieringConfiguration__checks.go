@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateAddMoveTarge
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveFromIdPa
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validatePutFilterPar
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validatePutTieringParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validatePutTieringParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateS3BucketIntelligentTieringConfiguration_GenerateConfigForImportPara
 	return nil
 }
 
-func validateS3BucketIntelligentTieringConfiguration_IsConstructParameters(x interface{}) error {
+func validateS3BucketIntelligentTieringConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateS3BucketIntelligentTieringConfiguration_IsConstructParameters(x int
 	return nil
 }
 
-func validateS3BucketIntelligentTieringConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateS3BucketIntelligentTieringConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateS3BucketIntelligentTieringConfiguration_IsTerraformElementParameter
 	return nil
 }
 
-func validateS3BucketIntelligentTieringConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateS3BucketIntelligentTieringConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetBucketPar
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetNameParam
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -480,4 +480,3 @@ func validateNewS3BucketIntelligentTieringConfigurationParameters(scope construc
 
 	return nil
 }
-

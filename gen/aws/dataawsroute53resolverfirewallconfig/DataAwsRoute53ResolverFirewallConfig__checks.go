@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsRoute53ResolverFirewallConfig_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateDataAwsRoute53ResolverFirewallConfig_IsConstructParameters(x interface{}) error {
+func validateDataAwsRoute53ResolverFirewallConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsRoute53ResolverFirewallConfig_IsConstructParameters(x interf
 	return nil
 }
 
-func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformDataSourceParameter
 	return nil
 }
 
-func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformElementParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataAwsRoute53ResolverFirewallConfigParameters(scope constructs.
 
 	return nil
 }
-

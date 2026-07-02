@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
-		reflect.TypeOf((*Route53HostedZoneDnssec)(nil)).Elem(),
+		reflect.TypeFor[Route53HostedZoneDnssec](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53HostedZoneDnssec{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssecConfig",
-		reflect.TypeOf((*Route53HostedZoneDnssecConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53HostedZoneDnssecConfig](),
 	)
 }

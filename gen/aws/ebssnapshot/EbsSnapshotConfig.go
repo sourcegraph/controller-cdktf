@@ -6,9 +6,9 @@ import (
 
 type EbsSnapshotConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EbsSnapshotConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#volume_id EbsSnapshot#volume_id}.
 	VolumeId *string `field:"required" json:"volumeId" yaml:"volumeId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#description EbsSnapshot#description}.
@@ -31,7 +31,7 @@ type EbsSnapshotConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#outpost_arn EbsSnapshot#outpost_arn}.
 	OutpostArn *string `field:"optional" json:"outpostArn" yaml:"outpostArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#permanent_restore EbsSnapshot#permanent_restore}.
-	PermanentRestore interface{} `field:"optional" json:"permanentRestore" yaml:"permanentRestore"`
+	PermanentRestore any `field:"optional" json:"permanentRestore" yaml:"permanentRestore"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#storage_tier EbsSnapshot#storage_tier}.
 	StorageTier *string `field:"optional" json:"storageTier" yaml:"storageTier"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#tags EbsSnapshot#tags}.
@@ -45,4 +45,3 @@ type EbsSnapshotConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot#timeouts EbsSnapshot#timeouts}
 	Timeouts *EbsSnapshotTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

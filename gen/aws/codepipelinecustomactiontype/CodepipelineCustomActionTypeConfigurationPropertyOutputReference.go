@@ -12,9 +12,9 @@ type CodepipelineCustomActionTypeConfigurationPropertyOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,23 +30,23 @@ type CodepipelineCustomActionTypeConfigurationPropertyOutputReference interface 
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Key() interface{}
-	SetKey(val interface{})
-	KeyInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Key() any
+	SetKey(val any)
+	KeyInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Queryable() interface{}
-	SetQueryable(val interface{})
-	QueryableInput() interface{}
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
-	Secret() interface{}
-	SetSecret(val interface{})
-	SecretInput() interface{}
+	Queryable() any
+	SetQueryable(val any)
+	QueryableInput() any
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
+	Secret() any
+	SetSecret(val any)
+	SecretInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type CodepipelineCustomActionTypeConfigurationPropertyOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type CodepipelineCustomActionTypeConfigurationPropertyOutputReference interface 
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Key() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Key() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"key",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) KeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) KeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keyInput",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Queryable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Queryable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryable",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) QueryableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) QueryableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryableInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Secret() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Secret() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secret",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SecretInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SecretInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretInput",
@@ -310,7 +310,6 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-
 func NewCodepipelineCustomActionTypeConfigurationPropertyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodepipelineCustomActionTypeConfigurationPropertyOutputReference {
 	_init_.Initialize()
 
@@ -321,7 +320,7 @@ func NewCodepipelineCustomActionTypeConfigurationPropertyOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -333,12 +332,12 @@ func NewCodepipelineCustomActionTypeConfigurationPropertyOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetKey(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetKey(val any) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetQueryable(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetQueryable(val any) {
 	if err := j.validateSetQueryableParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetRequired(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetSecret(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetSecret(val any) {
 	if err := j.validateSetSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,7 +436,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,16 +482,16 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -680,16 +679,16 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -708,4 +707,3 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 
 	return returns
 }
-

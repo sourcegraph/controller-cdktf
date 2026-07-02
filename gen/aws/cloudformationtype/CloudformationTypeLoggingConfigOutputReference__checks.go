@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudformationTypeLoggingConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationTypeLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationTypeLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudformationTypeLoggingConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReferencePar
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudwatchMetricStreamExcludeFilterOutputReferenceParameters(ter
 
 	return nil
 }
-

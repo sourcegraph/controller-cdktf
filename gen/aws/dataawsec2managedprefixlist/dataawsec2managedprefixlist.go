@@ -17,18 +17,18 @@ type DataAwsEc2ManagedPrefixList interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Entries() DataAwsEc2ManagedPrefixListEntriesList
 	Filter() DataAwsEc2ManagedPrefixListFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,23 +56,23 @@ type DataAwsEc2ManagedPrefixList interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2ManagedPrefixListTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *float64
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type DataAwsEc2ManagedPrefixList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2ManagedPrefixListTimeouts)
 	ResetFilter()
 	ResetId()
@@ -104,18 +104,18 @@ type DataAwsEc2ManagedPrefixList interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2ManagedPrefixList
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) Filter() DataAwsEc2ManagedPrefix
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) Timeouts() DataAwsEc2ManagedPref
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) Version() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Data Source.
 func NewDataAwsEc2ManagedPrefixList(scope constructs.Construct, id *string, config *DataAwsEc2ManagedPrefixListConfig) DataAwsEc2ManagedPrefixList {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewDataAwsEc2ManagedPrefixList(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewDataAwsEc2ManagedPrefixList_Override(d DataAwsEc2ManagedPrefixList, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetName(val *string) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func DataAwsEc2ManagedPrefixList_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func DataAwsEc2ManagedPrefixList_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2ManagedPrefixList_IsConstruct(x interface{}) *bool {
+func DataAwsEc2ManagedPrefixList_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2ManagedPrefixList_IsConstructParameters(x); err != nil {
@@ -579,7 +578,7 @@ func DataAwsEc2ManagedPrefixList_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func DataAwsEc2ManagedPrefixList_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2ManagedPrefixList_IsTerraformDataSourceParameters(x); err != nil {
@@ -598,7 +597,7 @@ func DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2ManagedPrefixList_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2ManagedPrefixList_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2ManagedPrefixList_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func DataAwsEc2ManagedPrefixList_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -635,27 +634,27 @@ func DataAwsEc2ManagedPrefixList_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,18 +812,18 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -835,7 +834,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) PutTimeouts(value *DataAwsEc2Man
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -887,8 +886,8 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -900,8 +899,8 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -913,8 +912,8 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -926,8 +925,8 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -952,8 +951,8 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -964,4 +963,3 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixList) ToTerraform() interface{} {
 
 	return returns
 }
-

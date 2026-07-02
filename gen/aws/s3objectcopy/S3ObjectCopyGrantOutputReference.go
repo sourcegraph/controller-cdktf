@@ -12,9 +12,9 @@ type S3ObjectCopyGrantOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type S3ObjectCopyGrantOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Permissions() *[]*string
 	SetPermissions(val *[]*string)
 	PermissionsInput() *[]*string
@@ -55,7 +55,7 @@ type S3ObjectCopyGrantOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type S3ObjectCopyGrantOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_S3ObjectCopyGrantOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) UriInput() *string {
 	return returns
 }
 
-
 func NewS3ObjectCopyGrantOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3ObjectCopyGrantOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewS3ObjectCopyGrantOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewS3ObjectCopyGrantOutputReference_Override(s S3ObjectCopyGrantOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetEmail(val *string) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetId(val *string) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetPermissions(val *[]*string) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetPermissions(val *[]*string) {
 	if err := j.validateSetPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetPermissions(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetType(val *string) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) ResetUri() {
 	)
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) ToString() *string {
 
 	return returns
 }
-

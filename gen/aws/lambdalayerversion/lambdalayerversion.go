@@ -22,15 +22,15 @@ type LambdaLayerVersion interface {
 	SetCompatibleRuntimes(val *[]*string)
 	CompatibleRuntimesInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -71,11 +71,11 @@ type LambdaLayerVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3Bucket() *string
 	SetS3Bucket(val *string)
 	S3BucketInput() *string
@@ -87,9 +87,9 @@ type LambdaLayerVersion interface {
 	S3ObjectVersionInput() *string
 	SigningJobArn() *string
 	SigningProfileVersionArn() *string
-	SkipDestroy() interface{}
-	SetSkipDestroy(val interface{})
-	SkipDestroyInput() interface{}
+	SkipDestroy() any
+	SetSkipDestroy(val any)
+	SkipDestroyInput() any
 	SourceCodeHash() *string
 	SetSourceCodeHash(val *string)
 	SourceCodeHashInput() *string
@@ -97,7 +97,7 @@ type LambdaLayerVersion interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
@@ -105,9 +105,9 @@ type LambdaLayerVersion interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type LambdaLayerVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type LambdaLayerVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,17 +158,17 @@ type LambdaLayerVersion interface {
 	ResetS3ObjectVersion()
 	ResetSkipDestroy()
 	ResetSourceCodeHash()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LambdaLayerVersion
@@ -236,8 +236,8 @@ func (j *jsiiProxy_LambdaLayerVersion) CompatibleRuntimesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_LambdaLayerVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaLayerVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_LambdaLayerVersion) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_LambdaLayerVersion) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LambdaLayerVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_LambdaLayerVersion) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_LambdaLayerVersion) SigningProfileVersionArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) SkipDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersion) SkipDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDestroy",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_LambdaLayerVersion) SkipDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) SkipDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaLayerVersion) SkipDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDestroyInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_LambdaLayerVersion) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_LambdaLayerVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LambdaLayerVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -646,7 +646,6 @@ func (j *jsiiProxy_LambdaLayerVersion) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
 func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *LambdaLayerVersionConfig) LambdaLayerVersion {
 	_init_.Initialize()
@@ -658,7 +657,7 @@ func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *Lambd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -671,12 +670,12 @@ func NewLambdaLayerVersion_Override(l LambdaLayerVersion, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetCompatibleArchitectures(val *[]*string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetCompatibleArchitectures(val *[]*string) {
 	if err := j.validateSetCompatibleArchitecturesParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetCompatibleArchitectures(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetCompatibleRuntimes(val *[]*string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetCompatibleRuntimes(val *[]*string) {
 	if err := j.validateSetCompatibleRuntimesParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetCompatibleRuntimes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_LambdaLayerVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_LambdaLayerVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -728,7 +727,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetDescription(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetFilename(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetFilename(val *string) {
 	if err := j.validateSetFilenameParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetFilename(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LambdaLayerVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -758,7 +757,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetId(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetLayerName(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetLayerName(val *string) {
 	if err := j.validateSetLayerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetLayerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetLicenseInfo(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetLicenseInfo(val *string) {
 	if err := j.validateSetLicenseInfoParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetLicenseInfo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LambdaLayerVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LambdaLayerVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -810,7 +809,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LambdaLayerVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetS3Bucket(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetS3Bucket(val *string) {
 	if err := j.validateSetS3BucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetS3Bucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetS3Key(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetS3Key(val *string) {
 	if err := j.validateSetS3KeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetS3Key(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetS3ObjectVersion(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetS3ObjectVersion(val *string) {
 	if err := j.validateSetS3ObjectVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetS3ObjectVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetSkipDestroy(val interface{}) {
+func (j *jsiiProxy_LambdaLayerVersion) SetSkipDestroy(val any) {
 	if err := j.validateSetSkipDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func (j *jsiiProxy_LambdaLayerVersion)SetSkipDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaLayerVersion)SetSourceCodeHash(val *string) {
+func (j *jsiiProxy_LambdaLayerVersion) SetSourceCodeHash(val *string) {
 	if err := j.validateSetSourceCodeHashParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func LambdaLayerVersion_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func LambdaLayerVersion_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LambdaLayerVersion_IsConstruct(x interface{}) *bool {
+func LambdaLayerVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaLayerVersion_IsConstructParameters(x); err != nil {
@@ -923,7 +922,7 @@ func LambdaLayerVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func LambdaLayerVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaLayerVersion_IsTerraformElement(x interface{}) *bool {
+func LambdaLayerVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaLayerVersion_IsTerraformElementParameters(x); err != nil {
@@ -942,7 +941,7 @@ func LambdaLayerVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func LambdaLayerVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LambdaLayerVersion_IsTerraformResource(x interface{}) *bool {
+func LambdaLayerVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLambdaLayerVersion_IsTerraformResourceParameters(x); err != nil {
@@ -961,7 +960,7 @@ func LambdaLayerVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -986,31 +985,31 @@ func (l *jsiiProxy_LambdaLayerVersion) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LambdaLayerVersion) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaLayerVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,7 +1121,7 @@ func (l *jsiiProxy_LambdaLayerVersion) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1138,15 +1137,15 @@ func (l *jsiiProxy_LambdaLayerVersion) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1165,7 +1164,7 @@ func (l *jsiiProxy_LambdaLayerVersion) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (l *jsiiProxy_LambdaLayerVersion) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1192,18 +1191,18 @@ func (l *jsiiProxy_LambdaLayerVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LambdaLayerVersion) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (l *jsiiProxy_LambdaLayerVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (l *jsiiProxy_LambdaLayerVersion) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1325,8 +1324,8 @@ func (l *jsiiProxy_LambdaLayerVersion) ResetSourceCodeHash() {
 	)
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaLayerVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1338,8 +1337,8 @@ func (l *jsiiProxy_LambdaLayerVersion) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LambdaLayerVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1351,8 +1350,8 @@ func (l *jsiiProxy_LambdaLayerVersion) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1364,8 +1363,8 @@ func (l *jsiiProxy_LambdaLayerVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1390,8 +1389,8 @@ func (l *jsiiProxy_LambdaLayerVersion) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LambdaLayerVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LambdaLayerVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1402,4 +1401,3 @@ func (l *jsiiProxy_LambdaLayerVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

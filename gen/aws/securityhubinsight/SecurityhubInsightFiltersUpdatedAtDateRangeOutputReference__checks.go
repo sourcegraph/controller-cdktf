@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSecurityhubInsightFiltersUpdatedAtDateRangeOutputReferenceParame
 
 	return nil
 }
-

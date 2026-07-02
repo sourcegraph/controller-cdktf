@@ -34,7 +34,7 @@ func (l *jsiiProxy_LakeformationDataLakeSettingsCreateTableDefaultPermissionsLis
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationDataLakeSettingsCreateTableDefaultPermissionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationDataLakeSettingsCreateTableDefaultPermissionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLakeformationDataLakeSettingsCreateTableDefaultPermissionsListPa
 
 	return nil
 }
-

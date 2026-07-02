@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewDynamodbTableServerSideEncryptionOutputReferenceParameters(terra
 
 	return nil
 }
-

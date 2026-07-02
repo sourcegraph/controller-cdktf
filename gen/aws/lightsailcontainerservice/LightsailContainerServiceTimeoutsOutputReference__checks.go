@@ -98,7 +98,7 @@ func (l *jsiiProxy_LightsailContainerServiceTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailContainerServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LightsailContainerServiceTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailContainerServiceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLightsailContainerServiceTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

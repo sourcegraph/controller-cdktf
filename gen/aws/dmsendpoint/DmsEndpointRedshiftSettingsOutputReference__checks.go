@@ -114,7 +114,7 @@ func (j *jsiiProxy_DmsEndpointRedshiftSettingsOutputReference) validateSetBucket
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointRedshiftSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DmsEndpointRedshiftSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDmsEndpointRedshiftSettingsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

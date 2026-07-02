@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafIpset.WafIpset",
-		reflect.TypeOf((*WafIpset)(nil)).Elem(),
+		reflect.TypeFor[WafIpset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafIpset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,15 +71,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafIpset.WafIpsetConfig",
-		reflect.TypeOf((*WafIpsetConfig)(nil)).Elem(),
+		reflect.TypeFor[WafIpsetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptors",
-		reflect.TypeOf((*WafIpsetIpSetDescriptors)(nil)).Elem(),
+		reflect.TypeFor[WafIpsetIpSetDescriptors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsList",
-		reflect.TypeOf((*WafIpsetIpSetDescriptorsList)(nil)).Elem(),
+		reflect.TypeFor[WafIpsetIpSetDescriptorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafIpsetIpSetDescriptorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -101,7 +101,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
-		reflect.TypeOf((*WafIpsetIpSetDescriptorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafIpsetIpSetDescriptorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafIpsetIpSetDescriptorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

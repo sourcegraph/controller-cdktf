@@ -98,7 +98,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAuditmanagerAssessmentAssessmentReportsDestinationOutputReferenc
 
 	return nil
 }
-

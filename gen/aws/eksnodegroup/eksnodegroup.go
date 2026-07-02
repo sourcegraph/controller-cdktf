@@ -25,15 +25,15 @@ type EksNodeGroup interface {
 	SetClusterName(val *string)
 	ClusterNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,9 +41,9 @@ type EksNodeGroup interface {
 	DiskSize() *float64
 	SetDiskSize(val *float64)
 	DiskSizeInput() *float64
-	ForceUpdateVersion() interface{}
-	SetForceUpdateVersion(val interface{})
-	ForceUpdateVersionInput() interface{}
+	ForceUpdateVersion() any
+	SetForceUpdateVersion(val any)
+	ForceUpdateVersionInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -83,11 +83,11 @@ type EksNodeGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseVersion() *string
 	SetReleaseVersion(val *string)
 	ReleaseVersionInput() *string
@@ -107,15 +107,15 @@ type EksNodeGroup interface {
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	Taint() EksNodeGroupTaintList
-	TaintInput() interface{}
+	TaintInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EksNodeGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateConfig() EksNodeGroupUpdateConfigOutputReference
 	UpdateConfigInput() *EksNodeGroupUpdateConfig
 	Version() *string
@@ -125,9 +125,9 @@ type EksNodeGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -145,7 +145,7 @@ type EksNodeGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -157,7 +157,7 @@ type EksNodeGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -167,7 +167,7 @@ type EksNodeGroup interface {
 	PutLaunchTemplate(value *EksNodeGroupLaunchTemplate)
 	PutRemoteAccess(value *EksNodeGroupRemoteAccess)
 	PutScalingConfig(value *EksNodeGroupScalingConfig)
-	PutTaint(value interface{})
+	PutTaint(value any)
 	PutTimeouts(value *EksNodeGroupTimeouts)
 	PutUpdateConfig(value *EksNodeGroupUpdateConfig)
 	ResetAmiType()
@@ -191,17 +191,17 @@ type EksNodeGroup interface {
 	ResetTimeouts()
 	ResetUpdateConfig()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EksNodeGroup
@@ -289,8 +289,8 @@ func (j *jsiiProxy_EksNodeGroup) ClusterNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_EksNodeGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EksNodeGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_EksNodeGroup) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_EksNodeGroup) DiskSizeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) ForceUpdateVersion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) ForceUpdateVersion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceUpdateVersion",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_EksNodeGroup) ForceUpdateVersion() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) ForceUpdateVersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) ForceUpdateVersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceUpdateVersionInput",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_EksNodeGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EksNodeGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_EksNodeGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -739,8 +739,8 @@ func (j *jsiiProxy_EksNodeGroup) Taint() EksNodeGroupTaintList {
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) TaintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) TaintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"taintInput",
@@ -759,8 +759,8 @@ func (j *jsiiProxy_EksNodeGroup) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EksNodeGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -789,8 +789,8 @@ func (j *jsiiProxy_EksNodeGroup) Timeouts() EksNodeGroupTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_EksNodeGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -839,7 +839,6 @@ func (j *jsiiProxy_EksNodeGroup) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_node_group aws_eks_node_group} Resource.
 func NewEksNodeGroup(scope constructs.Construct, id *string, config *EksNodeGroupConfig) EksNodeGroup {
 	_init_.Initialize()
@@ -851,7 +850,7 @@ func NewEksNodeGroup(scope constructs.Construct, id *string, config *EksNodeGrou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -864,12 +863,12 @@ func NewEksNodeGroup_Override(e EksNodeGroup, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetAmiType(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetAmiType(val *string) {
 	if err := j.validateSetAmiTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_EksNodeGroup)SetAmiType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetCapacityType(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetCapacityType(val *string) {
 	if err := j.validateSetCapacityTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func (j *jsiiProxy_EksNodeGroup)SetCapacityType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetClusterName(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_EksNodeGroup)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_EksNodeGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func (j *jsiiProxy_EksNodeGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_EksNodeGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -924,7 +923,7 @@ func (j *jsiiProxy_EksNodeGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EksNodeGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -932,7 +931,7 @@ func (j *jsiiProxy_EksNodeGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetDiskSize(val *float64) {
+func (j *jsiiProxy_EksNodeGroup) SetDiskSize(val *float64) {
 	if err := j.validateSetDiskSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_EksNodeGroup)SetDiskSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetForceUpdateVersion(val interface{}) {
+func (j *jsiiProxy_EksNodeGroup) SetForceUpdateVersion(val any) {
 	if err := j.validateSetForceUpdateVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_EksNodeGroup)SetForceUpdateVersion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EksNodeGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -962,7 +961,7 @@ func (j *jsiiProxy_EksNodeGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetId(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_EksNodeGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_EksNodeGroup) SetInstanceTypes(val *[]*string) {
 	if err := j.validateSetInstanceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_EksNodeGroup)SetInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EksNodeGroup) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_EksNodeGroup)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EksNodeGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_EksNodeGroup)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetNodeGroupName(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetNodeGroupName(val *string) {
 	if err := j.validateSetNodeGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1017,7 +1016,7 @@ func (j *jsiiProxy_EksNodeGroup)SetNodeGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetNodeGroupNamePrefix(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetNodeGroupNamePrefix(val *string) {
 	if err := j.validateSetNodeGroupNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1028,7 +1027,7 @@ func (j *jsiiProxy_EksNodeGroup)SetNodeGroupNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetNodeRoleArn(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetNodeRoleArn(val *string) {
 	if err := j.validateSetNodeRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1039,7 +1038,7 @@ func (j *jsiiProxy_EksNodeGroup)SetNodeRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EksNodeGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_EksNodeGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EksNodeGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_EksNodeGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetReleaseVersion(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetReleaseVersion(val *string) {
 	if err := j.validateSetReleaseVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_EksNodeGroup)SetReleaseVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_EksNodeGroup) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_EksNodeGroup)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EksNodeGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_EksNodeGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EksNodeGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func (j *jsiiProxy_EksNodeGroup)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroup)SetVersion(val *string) {
+func (j *jsiiProxy_EksNodeGroup) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1125,7 +1124,7 @@ func EksNodeGroup_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func EksNodeGroup_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EksNodeGroup_IsConstruct(x interface{}) *bool {
+func EksNodeGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksNodeGroup_IsConstructParameters(x); err != nil {
@@ -1160,7 +1159,7 @@ func EksNodeGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1168,7 +1167,7 @@ func EksNodeGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EksNodeGroup_IsTerraformElement(x interface{}) *bool {
+func EksNodeGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksNodeGroup_IsTerraformElementParameters(x); err != nil {
@@ -1179,7 +1178,7 @@ func EksNodeGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func EksNodeGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EksNodeGroup_IsTerraformResource(x interface{}) *bool {
+func EksNodeGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksNodeGroup_IsTerraformResourceParameters(x); err != nil {
@@ -1198,7 +1197,7 @@ func EksNodeGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1223,31 +1222,31 @@ func (e *jsiiProxy_EksNodeGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroup) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EksNodeGroup) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksNodeGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1263,7 +1262,7 @@ func (e *jsiiProxy_EksNodeGroup) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1279,7 +1278,7 @@ func (e *jsiiProxy_EksNodeGroup) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1295,7 +1294,7 @@ func (e *jsiiProxy_EksNodeGroup) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1311,7 +1310,7 @@ func (e *jsiiProxy_EksNodeGroup) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1327,7 +1326,7 @@ func (e *jsiiProxy_EksNodeGroup) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1343,7 +1342,7 @@ func (e *jsiiProxy_EksNodeGroup) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1359,7 +1358,7 @@ func (e *jsiiProxy_EksNodeGroup) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1375,15 +1374,15 @@ func (e *jsiiProxy_EksNodeGroup) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksNodeGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1402,7 +1401,7 @@ func (e *jsiiProxy_EksNodeGroup) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1415,7 +1414,7 @@ func (e *jsiiProxy_EksNodeGroup) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1429,18 +1428,18 @@ func (e *jsiiProxy_EksNodeGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroup) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EksNodeGroup) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1451,7 +1450,7 @@ func (e *jsiiProxy_EksNodeGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1462,7 +1461,7 @@ func (e *jsiiProxy_EksNodeGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1473,7 +1472,7 @@ func (e *jsiiProxy_EksNodeGroup) PutLaunchTemplate(value *EksNodeGroupLaunchTemp
 	_jsii_.InvokeVoid(
 		e,
 		"putLaunchTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1484,7 +1483,7 @@ func (e *jsiiProxy_EksNodeGroup) PutRemoteAccess(value *EksNodeGroupRemoteAccess
 	_jsii_.InvokeVoid(
 		e,
 		"putRemoteAccess",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1495,18 +1494,18 @@ func (e *jsiiProxy_EksNodeGroup) PutScalingConfig(value *EksNodeGroupScalingConf
 	_jsii_.InvokeVoid(
 		e,
 		"putScalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroup) PutTaint(value interface{}) {
+func (e *jsiiProxy_EksNodeGroup) PutTaint(value any) {
 	if err := e.validatePutTaintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putTaint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1517,7 +1516,7 @@ func (e *jsiiProxy_EksNodeGroup) PutTimeouts(value *EksNodeGroupTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1528,7 +1527,7 @@ func (e *jsiiProxy_EksNodeGroup) PutUpdateConfig(value *EksNodeGroupUpdateConfig
 	_jsii_.InvokeVoid(
 		e,
 		"putUpdateConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1684,8 +1683,8 @@ func (e *jsiiProxy_EksNodeGroup) ResetVersion() {
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EksNodeGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1697,8 +1696,8 @@ func (e *jsiiProxy_EksNodeGroup) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EksNodeGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1710,8 +1709,8 @@ func (e *jsiiProxy_EksNodeGroup) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksNodeGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1723,8 +1722,8 @@ func (e *jsiiProxy_EksNodeGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksNodeGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1749,8 +1748,8 @@ func (e *jsiiProxy_EksNodeGroup) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksNodeGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1761,4 +1760,3 @@ func (e *jsiiProxy_EksNodeGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -15,9 +15,9 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 	CompletedInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 	ResetWarning()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Comple
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Warnin
 	return returns
 }
 
-
 func NewElastictranscoderPipelineNotificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastictranscoderPipelineNotificationsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewElastictranscoderPipelineNotificationsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewElastictranscoderPipelineNotificationsOutputReference_Override(e Elastic
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetCompleted(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetCompleted(val *string) {
 	if err := j.validateSetCompletedParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetError(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetError(val *string) {
 	if err := j.validateSetErrorParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetErro
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetInternalValue(val *ElastictranscoderPipelineNotifications) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetInternalValue(val *ElastictranscoderPipelineNotifications) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetProgressing(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetProgressing(val *string) {
 	if err := j.validateSetProgressingParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetProg
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetWarning(val *string) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) SetWarning(val *string) {
 	if err := j.validateSetWarningParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Comput
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetBoo
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetBoo
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetLis
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetStr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetStr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Interp
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) ResetW
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) ToStri
 
 	return returns
 }
-

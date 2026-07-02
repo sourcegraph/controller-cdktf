@@ -6,9 +6,9 @@ import (
 
 type EbsVolumeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type EbsVolumeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#availability_zone EbsVolume#availability_zone}.
 	AvailabilityZone *string `field:"required" json:"availabilityZone" yaml:"availabilityZone"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#encrypted EbsVolume#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#final_snapshot EbsVolume#final_snapshot}.
-	FinalSnapshot interface{} `field:"optional" json:"finalSnapshot" yaml:"finalSnapshot"`
+	FinalSnapshot any `field:"optional" json:"finalSnapshot" yaml:"finalSnapshot"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#id EbsVolume#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -35,7 +35,7 @@ type EbsVolumeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#kms_key_id EbsVolume#kms_key_id}.
 	KmsKeyId *string `field:"optional" json:"kmsKeyId" yaml:"kmsKeyId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#multi_attach_enabled EbsVolume#multi_attach_enabled}.
-	MultiAttachEnabled interface{} `field:"optional" json:"multiAttachEnabled" yaml:"multiAttachEnabled"`
+	MultiAttachEnabled any `field:"optional" json:"multiAttachEnabled" yaml:"multiAttachEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#outpost_arn EbsVolume#outpost_arn}.
 	OutpostArn *string `field:"optional" json:"outpostArn" yaml:"outpostArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#size EbsVolume#size}.
@@ -55,4 +55,3 @@ type EbsVolumeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_volume#type EbsVolume#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

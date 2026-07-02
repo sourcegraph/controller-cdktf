@@ -15,9 +15,9 @@ type DbParameterGroupParameterOutputReference interface {
 	ApplyMethodInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DbParameterGroupParameterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type DbParameterGroupParameterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type DbParameterGroupParameterOutputReference interface {
 	ResetApplyMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference) ApplyMethodInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference) ValueInput() *strin
 	return returns
 }
 
-
 func NewDbParameterGroupParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DbParameterGroupParameterOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewDbParameterGroupParameterOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewDbParameterGroupParameterOutputReference_Override(d DbParameterGroupPara
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetApplyMethod(val *string) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetApplyMethod(val *string) {
 	if err := j.validateSetApplyMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetApplyMethod(val *
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetName(val *string)
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_DbParameterGroupParameterOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) ResetApplyMethod() 
 	)
 }
 
-func (d *jsiiProxy_DbParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DbParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (d *jsiiProxy_DbParameterGroupParameterOutputReference) ToString() *string 
 
 	return returns
 }
-

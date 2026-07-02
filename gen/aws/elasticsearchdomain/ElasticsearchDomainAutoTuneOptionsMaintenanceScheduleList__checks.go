@@ -34,7 +34,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) va
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewElasticsearchDomainAutoTuneOptionsMaintenanceScheduleListParamet
 
 	return nil
 }
-

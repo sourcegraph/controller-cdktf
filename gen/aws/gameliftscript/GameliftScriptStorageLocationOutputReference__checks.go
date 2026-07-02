@@ -106,7 +106,7 @@ func (j *jsiiProxy_GameliftScriptStorageLocationOutputReference) validateSetBuck
 	return nil
 }
 
-func (j *jsiiProxy_GameliftScriptStorageLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftScriptStorageLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGameliftScriptStorageLocationOutputReferenceParameters(terraform
 
 	return nil
 }
-

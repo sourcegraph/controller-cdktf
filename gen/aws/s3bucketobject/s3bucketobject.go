@@ -18,20 +18,20 @@ type S3BucketObject interface {
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
-	BucketKeyEnabled() interface{}
-	SetBucketKeyEnabled(val interface{})
-	BucketKeyEnabledInput() interface{}
+	BucketKeyEnabled() any
+	SetBucketKeyEnabled(val any)
+	BucketKeyEnabledInput() any
 	CacheControl() *string
 	SetCacheControl(val *string)
 	CacheControlInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentBase64() *string
@@ -51,9 +51,9 @@ type S3BucketObject interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,9 +61,9 @@ type S3BucketObject interface {
 	Etag() *string
 	SetEtag(val *string)
 	EtagInput() *string
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -104,11 +104,11 @@ type S3BucketObject interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServerSideEncryption() *string
 	SetServerSideEncryption(val *string)
 	ServerSideEncryptionInput() *string
@@ -130,7 +130,7 @@ type S3BucketObject interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VersionId() *string
@@ -141,9 +141,9 @@ type S3BucketObject interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -161,7 +161,7 @@ type S3BucketObject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -173,7 +173,7 @@ type S3BucketObject interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -207,17 +207,17 @@ type S3BucketObject interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetWebsiteRedirect()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketObject
@@ -265,8 +265,8 @@ func (j *jsiiProxy_S3BucketObject) BucketInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) BucketKeyEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) BucketKeyEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bucketKeyEnabled",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_S3BucketObject) BucketKeyEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) BucketKeyEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) BucketKeyEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bucketKeyEnabledInput",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_S3BucketObject) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_S3BucketObject) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketObject) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_S3BucketObject) ContentTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_S3BucketObject) EtagInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_S3BucketObject) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -715,8 +715,8 @@ func (j *jsiiProxy_S3BucketObject) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketObject) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -725,8 +725,8 @@ func (j *jsiiProxy_S3BucketObject) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketObject) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -865,8 +865,8 @@ func (j *jsiiProxy_S3BucketObject) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketObject) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketObject) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -915,7 +915,6 @@ func (j *jsiiProxy_S3BucketObject) WebsiteRedirectInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_object aws_s3_bucket_object} Resource.
 func NewS3BucketObject(scope constructs.Construct, id *string, config *S3BucketObjectConfig) S3BucketObject {
 	_init_.Initialize()
@@ -927,7 +926,7 @@ func NewS3BucketObject(scope constructs.Construct, id *string, config *S3BucketO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketObject.S3BucketObject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -940,12 +939,12 @@ func NewS3BucketObject_Override(s S3BucketObject, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketObject.S3BucketObject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetAcl(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetAcl(val *string) {
 	if err := j.validateSetAclParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_S3BucketObject)SetAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_S3BucketObject)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetBucketKeyEnabled(val interface{}) {
+func (j *jsiiProxy_S3BucketObject) SetBucketKeyEnabled(val any) {
 	if err := j.validateSetBucketKeyEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_S3BucketObject)SetBucketKeyEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetCacheControl(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetCacheControl(val *string) {
 	if err := j.validateSetCacheControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_S3BucketObject)SetCacheControl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketObject) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_S3BucketObject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetContent(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_S3BucketObject)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetContentBase64(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetContentBase64(val *string) {
 	if err := j.validateSetContentBase64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_S3BucketObject)SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetContentDisposition(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetContentDisposition(val *string) {
 	if err := j.validateSetContentDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_S3BucketObject)SetContentDisposition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetContentEncoding(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetContentEncoding(val *string) {
 	if err := j.validateSetContentEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_S3BucketObject)SetContentEncoding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetContentLanguage(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetContentLanguage(val *string) {
 	if err := j.validateSetContentLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_S3BucketObject)SetContentLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetContentType(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_S3BucketObject)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketObject) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_S3BucketObject)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketObject) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_S3BucketObject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetEtag(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetEtag(val *string) {
 	if err := j.validateSetEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_S3BucketObject)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_S3BucketObject) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_S3BucketObject)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketObject) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_S3BucketObject)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetId(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_S3BucketObject)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetKey(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_S3BucketObject)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_S3BucketObject)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketObject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_S3BucketObject)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_S3BucketObject) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_S3BucketObject)SetMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetObjectLockLegalHoldStatus(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetObjectLockLegalHoldStatus(val *string) {
 	if err := j.validateSetObjectLockLegalHoldStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_S3BucketObject)SetObjectLockLegalHoldStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetObjectLockMode(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetObjectLockMode(val *string) {
 	if err := j.validateSetObjectLockModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_S3BucketObject)SetObjectLockMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetObjectLockRetainUntilDate(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetObjectLockRetainUntilDate(val *string) {
 	if err := j.validateSetObjectLockRetainUntilDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_S3BucketObject)SetObjectLockRetainUntilDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketObject) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_S3BucketObject)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketObject) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_S3BucketObject)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetServerSideEncryption(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetServerSideEncryption(val *string) {
 	if err := j.validateSetServerSideEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func (j *jsiiProxy_S3BucketObject)SetServerSideEncryption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetSource(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func (j *jsiiProxy_S3BucketObject)SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetSourceHash(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetSourceHash(val *string) {
 	if err := j.validateSetSourceHashParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1254,7 @@ func (j *jsiiProxy_S3BucketObject)SetSourceHash(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetStorageClass(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetStorageClass(val *string) {
 	if err := j.validateSetStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_S3BucketObject)SetStorageClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_S3BucketObject) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func (j *jsiiProxy_S3BucketObject)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_S3BucketObject) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1288,7 +1287,7 @@ func (j *jsiiProxy_S3BucketObject)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketObject)SetWebsiteRedirect(val *string) {
+func (j *jsiiProxy_S3BucketObject) SetWebsiteRedirect(val *string) {
 	if err := j.validateSetWebsiteRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1311,7 +1310,7 @@ func S3BucketObject_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObject.S3BucketObject",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1335,7 +1334,7 @@ func S3BucketObject_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketObject_IsConstruct(x interface{}) *bool {
+func S3BucketObject_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketObject_IsConstructParameters(x); err != nil {
@@ -1346,7 +1345,7 @@ func S3BucketObject_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObject.S3BucketObject",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1354,7 +1353,7 @@ func S3BucketObject_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketObject_IsTerraformElement(x interface{}) *bool {
+func S3BucketObject_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketObject_IsTerraformElementParameters(x); err != nil {
@@ -1365,7 +1364,7 @@ func S3BucketObject_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObject.S3BucketObject",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1373,7 +1372,7 @@ func S3BucketObject_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketObject_IsTerraformResource(x interface{}) *bool {
+func S3BucketObject_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketObject_IsTerraformResourceParameters(x); err != nil {
@@ -1384,7 +1383,7 @@ func S3BucketObject_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketObject.S3BucketObject",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1409,31 +1408,31 @@ func (s *jsiiProxy_S3BucketObject) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketObject) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketObject) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketObject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketObject) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1449,7 +1448,7 @@ func (s *jsiiProxy_S3BucketObject) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1465,7 +1464,7 @@ func (s *jsiiProxy_S3BucketObject) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1481,7 +1480,7 @@ func (s *jsiiProxy_S3BucketObject) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1497,7 +1496,7 @@ func (s *jsiiProxy_S3BucketObject) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1513,7 +1512,7 @@ func (s *jsiiProxy_S3BucketObject) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1529,7 +1528,7 @@ func (s *jsiiProxy_S3BucketObject) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1545,7 +1544,7 @@ func (s *jsiiProxy_S3BucketObject) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1561,15 +1560,15 @@ func (s *jsiiProxy_S3BucketObject) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObject) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObject) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1588,7 +1587,7 @@ func (s *jsiiProxy_S3BucketObject) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1601,7 +1600,7 @@ func (s *jsiiProxy_S3BucketObject) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1615,18 +1614,18 @@ func (s *jsiiProxy_S3BucketObject) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketObject) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketObject) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1637,7 +1636,7 @@ func (s *jsiiProxy_S3BucketObject) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1648,7 +1647,7 @@ func (s *jsiiProxy_S3BucketObject) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1852,8 +1851,8 @@ func (s *jsiiProxy_S3BucketObject) ResetWebsiteRedirect() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketObject) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketObject) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1865,8 +1864,8 @@ func (s *jsiiProxy_S3BucketObject) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObject) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketObject) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1878,8 +1877,8 @@ func (s *jsiiProxy_S3BucketObject) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObject) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObject) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1891,8 +1890,8 @@ func (s *jsiiProxy_S3BucketObject) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObject) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObject) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1917,8 +1916,8 @@ func (s *jsiiProxy_S3BucketObject) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketObject) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketObject) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1929,4 +1928,3 @@ func (s *jsiiProxy_S3BucketObject) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
-		reflect.TypeOf((*Inspector2DelegatedAdminAccount)(nil)).Elem(),
+		reflect.TypeFor[Inspector2DelegatedAdminAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Inspector2DelegatedAdminAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,15 +71,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountConfig",
-		reflect.TypeOf((*Inspector2DelegatedAdminAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[Inspector2DelegatedAdminAccountConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeouts",
-		reflect.TypeOf((*Inspector2DelegatedAdminAccountTimeouts)(nil)).Elem(),
+		reflect.TypeFor[Inspector2DelegatedAdminAccountTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
-		reflect.TypeOf((*Inspector2DelegatedAdminAccountTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Inspector2DelegatedAdminAccountTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

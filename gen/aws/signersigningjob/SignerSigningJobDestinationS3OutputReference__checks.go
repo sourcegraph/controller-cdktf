@@ -106,7 +106,7 @@ func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) validateSetBuck
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SignerSigningJobDestinationS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSignerSigningJobDestinationS3OutputReferenceParameters(terraform
 
 	return nil
 }
-

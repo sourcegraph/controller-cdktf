@@ -15,15 +15,15 @@ type SecurityhubStandardsSubscription interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,27 +50,27 @@ type SecurityhubStandardsSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StandardsArn() *string
 	SetStandardsArn(val *string)
 	StandardsArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type SecurityhubStandardsSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type SecurityhubStandardsSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type SecurityhubStandardsSubscription interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecurityhubStandardsSubscription
@@ -139,8 +139,8 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubStandardsSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityhubStandardsSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubStandardsSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecurityhubStandardsSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubStandardsSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityhubStandardsSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription} Resource.
 func NewSecurityhubStandardsSubscription(scope constructs.Construct, id *string, config *SecurityhubStandardsSubscriptionConfig) SecurityhubStandardsSubscription {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewSecurityhubStandardsSubscription(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewSecurityhubStandardsSubscription_Override(s SecurityhubStandardsSubscrip
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetId(val *string) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -427,7 +426,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_SecurityhubStandardsSubscription)SetStandardsArn(val *string) {
+func (j *jsiiProxy_SecurityhubStandardsSubscription) SetStandardsArn(val *string) {
 	if err := j.validateSetStandardsArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func SecurityhubStandardsSubscription_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func SecurityhubStandardsSubscription_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecurityhubStandardsSubscription_IsConstruct(x interface{}) *bool {
+func SecurityhubStandardsSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubStandardsSubscription_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func SecurityhubStandardsSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func SecurityhubStandardsSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityhubStandardsSubscription_IsTerraformElement(x interface{}) *bool {
+func SecurityhubStandardsSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubStandardsSubscription_IsTerraformElementParameters(x); err != nil {
@@ -515,7 +514,7 @@ func SecurityhubStandardsSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func SecurityhubStandardsSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityhubStandardsSubscription_IsTerraformResource(x interface{}) *bool {
+func SecurityhubStandardsSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityhubStandardsSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -534,7 +533,7 @@ func SecurityhubStandardsSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,31 +558,31 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecurityhubStandardsSubscription) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityhubStandardsSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,15 +710,15 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubStandardsSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -738,7 +737,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -751,7 +750,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,18 +764,18 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecurityhubStandardsSubscription) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -798,7 +797,7 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -818,8 +817,8 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityhubStandardsSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -831,8 +830,8 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) SynthesizeAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityhubStandardsSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -844,8 +843,8 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubStandardsSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -857,8 +856,8 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) ToHclTerraform() interface{
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubStandardsSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -883,8 +882,8 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubStandardsSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityhubStandardsSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -895,4 +894,3 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

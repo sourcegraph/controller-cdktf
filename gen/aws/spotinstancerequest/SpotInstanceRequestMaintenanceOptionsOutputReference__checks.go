@@ -106,7 +106,7 @@ func (j *jsiiProxy_SpotInstanceRequestMaintenanceOptionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestMaintenanceOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpotInstanceRequestMaintenanceOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSpotInstanceRequestMaintenanceOptionsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersServiceNowOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersServiceNowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersServiceNowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewQuicksightDataSourceParametersServiceNowOutputReferenceParameter
 
 	return nil
 }
-

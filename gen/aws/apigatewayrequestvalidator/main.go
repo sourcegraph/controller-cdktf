@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
-		reflect.TypeOf((*ApiGatewayRequestValidator)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayRequestValidator](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateRequestParameters", GoGetter: "ValidateRequestParameters"},
 			_jsii_.MemberProperty{JsiiProperty: "validateRequestParametersInput", GoGetter: "ValidateRequestParametersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayRequestValidator{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig",
-		reflect.TypeOf((*ApiGatewayRequestValidatorConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayRequestValidatorConfig](),
 	)
 }

@@ -6,9 +6,9 @@ import (
 
 type LaunchConfigurationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,25 +18,25 @@ type LaunchConfigurationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#image_id LaunchConfiguration#image_id}.
 	ImageId *string `field:"required" json:"imageId" yaml:"imageId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#instance_type LaunchConfiguration#instance_type}.
 	InstanceType *string `field:"required" json:"instanceType" yaml:"instanceType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}.
-	AssociatePublicIpAddress interface{} `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
+	AssociatePublicIpAddress any `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
 	// ebs_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#ebs_block_device LaunchConfiguration#ebs_block_device}
-	EbsBlockDevice interface{} `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
+	EbsBlockDevice any `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#ebs_optimized LaunchConfiguration#ebs_optimized}.
-	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
+	EbsOptimized any `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#enable_monitoring LaunchConfiguration#enable_monitoring}.
-	EnableMonitoring interface{} `field:"optional" json:"enableMonitoring" yaml:"enableMonitoring"`
+	EnableMonitoring any `field:"optional" json:"enableMonitoring" yaml:"enableMonitoring"`
 	// ephemeral_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#ephemeral_block_device LaunchConfiguration#ephemeral_block_device}
-	EphemeralBlockDevice interface{} `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
+	EphemeralBlockDevice any `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#iam_instance_profile LaunchConfiguration#iam_instance_profile}.
 	IamInstanceProfile *string `field:"optional" json:"iamInstanceProfile" yaml:"iamInstanceProfile"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#id LaunchConfiguration#id}.
@@ -73,4 +73,3 @@ type LaunchConfigurationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/launch_configuration#vpc_classic_link_security_groups LaunchConfiguration#vpc_classic_link_security_groups}.
 	VpcClassicLinkSecurityGroups *[]*string `field:"optional" json:"vpcClassicLinkSecurityGroups" yaml:"vpcClassicLinkSecurityGroups"`
 }
-

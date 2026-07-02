@@ -15,9 +15,9 @@ type IotTopicRuleErrorActionKafkaOutputReference interface {
 	ClientPropertiesInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type IotTopicRuleErrorActionKafkaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type IotTopicRuleErrorActionKafkaOutputReference interface {
 	ResetPartition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) ClientProperties
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) TopicInput() *st
 	return returns
 }
 
-
 func NewIotTopicRuleErrorActionKafkaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionKafkaOutputReference {
 	_init_.Initialize()
 
@@ -274,7 +273,7 @@ func NewIotTopicRuleErrorActionKafkaOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -286,12 +285,12 @@ func NewIotTopicRuleErrorActionKafkaOutputReference_Override(i IotTopicRuleError
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetClientProperties(val *map[string]*string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetClientProperties(val *map[string]*string) {
 	if err := j.validateSetClientPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetClientProperti
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetDestinationArn(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetDestinationArn(val *string) {
 	if err := j.validateSetDestinationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetDestinationArn
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetInternalValue(val *IotTopicRuleErrorActionKafka) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetInternalValue(val *IotTopicRuleErrorActionKafka) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetKey(val *strin
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetPartition(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetPartition(val *string) {
 	if err := j.validateSetPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetPartition(val 
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,7 +378,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,16 +413,16 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -603,16 +602,16 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) ResetPartition()
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -631,4 +630,3 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) ToString() *stri
 
 	return returns
 }
-

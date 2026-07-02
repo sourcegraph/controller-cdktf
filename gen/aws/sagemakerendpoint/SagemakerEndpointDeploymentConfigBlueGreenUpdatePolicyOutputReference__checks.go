@@ -109,7 +109,7 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputRefe
 
 	return nil
 }
-

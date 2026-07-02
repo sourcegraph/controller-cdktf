@@ -114,7 +114,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) validateSetCannedAc
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIotTopicRuleErrorActionS3OutputReferenceParameters(terraformReso
 
 	return nil
 }
-

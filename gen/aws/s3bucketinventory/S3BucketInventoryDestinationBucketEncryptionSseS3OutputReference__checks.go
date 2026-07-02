@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseS3OutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewS3BucketInventoryDestinationBucketEncryptionSseS3OutputReference
 
 	return nil
 }
-

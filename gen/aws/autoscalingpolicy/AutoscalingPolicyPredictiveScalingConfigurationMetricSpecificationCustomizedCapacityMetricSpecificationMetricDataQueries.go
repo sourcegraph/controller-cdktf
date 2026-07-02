@@ -1,6 +1,5 @@
 package autoscalingpolicy
 
-
 type AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy#id AutoscalingPolicy#id}.
 	//
@@ -16,6 +15,5 @@ type AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomize
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy#metric_stat AutoscalingPolicy#metric_stat}
 	MetricStat *AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat `field:"optional" json:"metricStat" yaml:"metricStat"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/autoscaling_policy#return_data AutoscalingPolicy#return_data}.
-	ReturnData interface{} `field:"optional" json:"returnData" yaml:"returnData"`
+	ReturnData any `field:"optional" json:"returnData" yaml:"returnData"`
 }
-

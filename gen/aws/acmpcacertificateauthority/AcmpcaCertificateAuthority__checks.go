@@ -19,7 +19,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthority) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthority) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AcmpcaCertificateAuthority) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AcmpcaCertificateAuthority) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthority) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AcmpcaCertificateAuthority) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateAcmpcaCertificateAuthority_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateAcmpcaCertificateAuthority_IsConstructParameters(x interface{}) error {
+func validateAcmpcaCertificateAuthority_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateAcmpcaCertificateAuthority_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateAcmpcaCertificateAuthority_IsTerraformElementParameters(x interface{}) error {
+func validateAcmpcaCertificateAuthority_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateAcmpcaCertificateAuthority_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateAcmpcaCertificateAuthority_IsTerraformResourceParameters(x interface{}) error {
+func validateAcmpcaCertificateAuthority_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateAcmpcaCertificateAuthority_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -367,7 +367,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetPermanentDeletionTimeI
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -507,4 +507,3 @@ func validateNewAcmpcaCertificateAuthorityParameters(scope constructs.Construct,
 
 	return nil
 }
-

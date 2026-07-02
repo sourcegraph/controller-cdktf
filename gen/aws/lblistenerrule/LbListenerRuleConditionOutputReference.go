@@ -12,9 +12,9 @@ type LbListenerRuleConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,12 +33,12 @@ type LbListenerRuleConditionOutputReference interface {
 	HttpHeaderInput() *LbListenerRuleConditionHttpHeader
 	HttpRequestMethod() LbListenerRuleConditionHttpRequestMethodOutputReference
 	HttpRequestMethodInput() *LbListenerRuleConditionHttpRequestMethod
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PathPattern() LbListenerRuleConditionPathPatternOutputReference
 	PathPatternInput() *LbListenerRuleConditionPathPattern
 	QueryString() LbListenerRuleConditionQueryStringList
-	QueryStringInput() interface{}
+	QueryStringInput() any
 	SourceIp() LbListenerRuleConditionSourceIpOutputReference
 	SourceIpInput() *LbListenerRuleConditionSourceIp
 	// Experimental.
@@ -52,7 +52,7 @@ type LbListenerRuleConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type LbListenerRuleConditionOutputReference interface {
 	PutHttpHeader(value *LbListenerRuleConditionHttpHeader)
 	PutHttpRequestMethod(value *LbListenerRuleConditionHttpRequestMethod)
 	PutPathPattern(value *LbListenerRuleConditionPathPattern)
-	PutQueryString(value interface{})
+	PutQueryString(value any)
 	PutSourceIp(value *LbListenerRuleConditionSourceIp)
 	ResetHostHeader()
 	ResetHttpHeader()
@@ -87,7 +87,7 @@ type LbListenerRuleConditionOutputReference interface {
 	ResetSourceIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_LbListenerRuleConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference) HttpRequestMethodInpu
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference) QueryString() LbListe
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference) QueryStringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) QueryStringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryStringInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewLbListenerRuleConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbListenerRuleConditionOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewLbListenerRuleConditionOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewLbListenerRuleConditionOutputReference_Override(l LbListenerRuleConditio
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbListenerRuleConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,16 +385,16 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutHostHeader(value *
 	_jsii_.InvokeVoid(
 		l,
 		"putHostHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -577,7 +576,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutHttpHeader(value *
 	_jsii_.InvokeVoid(
 		l,
 		"putHttpHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -588,7 +587,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutHttpRequestMethod(
 	_jsii_.InvokeVoid(
 		l,
 		"putHttpRequestMethod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -599,18 +598,18 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutPathPattern(value 
 	_jsii_.InvokeVoid(
 		l,
 		"putPathPattern",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutQueryString(value interface{}) {
+func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutQueryString(value any) {
 	if err := l.validatePutQueryStringParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putQueryString",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) PutSourceIp(value *Lb
 	_jsii_.InvokeVoid(
 		l,
 		"putSourceIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) ResetSourceIp() {
 	)
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbListenerRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) ToString() *string {
 
 	return returns
 }
-

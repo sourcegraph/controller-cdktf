@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
-		reflect.TypeOf((*DmsS3Endpoint)(nil)).Elem(),
+		reflect.TypeFor[DmsS3Endpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
 			_jsii_.MemberProperty{JsiiProperty: "addColumnNameInput", GoGetter: "AddColumnNameInput"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestamp", GoGetter: "UseTaskStartTimeForFullLoadTimestamp"},
 			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestampInput", GoGetter: "UseTaskStartTimeForFullLoadTimestampInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsS3Endpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -209,15 +209,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig",
-		reflect.TypeOf((*DmsS3EndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[DmsS3EndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts",
-		reflect.TypeOf((*DmsS3EndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DmsS3EndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
-		reflect.TypeOf((*DmsS3EndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DmsS3EndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -247,7 +247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DmsS3EndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

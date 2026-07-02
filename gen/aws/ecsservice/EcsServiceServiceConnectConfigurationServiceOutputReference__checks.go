@@ -90,7 +90,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) 
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validatePutClientAliasParameters(value interface{}) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validatePutClientAliasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewEcsServiceServiceConnectConfigurationServiceOutputReferenceParam
 
 	return nil
 }
-

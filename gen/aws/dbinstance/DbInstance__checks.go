@@ -19,7 +19,7 @@ func (d *jsiiProxy_DbInstance) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (d *jsiiProxy_DbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DbInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DbInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DbInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateDbInstance_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateDbInstance_IsConstructParameters(x interface{}) error {
+func validateDbInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateDbInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDbInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDbInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateDbInstance_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDbInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateDbInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DbInstance) validateSetAllocatedStorageParameters(val *float6
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetAllowMajorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetAllowMajorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DbInstance) validateSetAllowMajorVersionUpgradeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DbInstance) validateSetApplyImmediatelyParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetAutoMinorVersionUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetAutoMinorVersionUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DbInstance) validateSetCharacterSetNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DbInstance) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetCopyTagsToSnapshotParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetCopyTagsToSnapshotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DbInstance) validateSetCopyTagsToSnapshotParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -506,7 +506,7 @@ func (j *jsiiProxy_DbInstance) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetCustomerOwnedIpEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetCustomerOwnedIpEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -550,7 +550,7 @@ func (j *jsiiProxy_DbInstance) validateSetDbSubnetGroupNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetDeleteAutomatedBackupsParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetDeleteAutomatedBackupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -570,7 +570,7 @@ func (j *jsiiProxy_DbInstance) validateSetDeleteAutomatedBackupsParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -638,7 +638,7 @@ func (j *jsiiProxy_DbInstance) validateSetFinalSnapshotIdentifierParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetIamDatabaseAuthenticationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetIamDatabaseAuthenticationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -754,7 +754,7 @@ func (j *jsiiProxy_DbInstance) validateSetMonitoringRoleArnParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetMultiAzParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetMultiAzParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -822,7 +822,7 @@ func (j *jsiiProxy_DbInstance) validateSetPasswordParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetPerformanceInsightsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetPerformanceInsightsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -866,7 +866,7 @@ func (j *jsiiProxy_DbInstance) validateSetPortParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -912,7 +912,7 @@ func (j *jsiiProxy_DbInstance) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetPubliclyAccessibleParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetPubliclyAccessibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -956,7 +956,7 @@ func (j *jsiiProxy_DbInstance) validateSetSecurityGroupNamesParameters(val *[]*s
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetSkipFinalSnapshotParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetSkipFinalSnapshotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -984,7 +984,7 @@ func (j *jsiiProxy_DbInstance) validateSetSnapshotIdentifierParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetStorageEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_DbInstance) validateSetStorageEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1078,4 +1078,3 @@ func validateNewDbInstanceParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

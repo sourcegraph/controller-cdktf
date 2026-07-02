@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
-		reflect.TypeOf((*DevicefarmNetworkProfile)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmNetworkProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uplinkLossPercent", GoGetter: "UplinkLossPercent"},
 			_jsii_.MemberProperty{JsiiProperty: "uplinkLossPercentInput", GoGetter: "UplinkLossPercentInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmNetworkProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,6 +105,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig",
-		reflect.TypeOf((*DevicefarmNetworkProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmNetworkProfileConfig](),
 	)
 }

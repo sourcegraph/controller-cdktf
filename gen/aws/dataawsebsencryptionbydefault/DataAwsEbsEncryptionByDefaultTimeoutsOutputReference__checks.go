@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsEbsEncryptionByDefaultTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

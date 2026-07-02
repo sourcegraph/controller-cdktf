@@ -19,7 +19,7 @@ func (a *jsiiProxy_Apigatewayv2RouteResponse) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2RouteResponse) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Apigatewayv2RouteResponse) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_Apigatewayv2RouteResponse) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2RouteResponse) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_Apigatewayv2RouteResponse) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApigatewayv2RouteResponse_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateApigatewayv2RouteResponse_IsConstructParameters(x interface{}) error {
+func validateApigatewayv2RouteResponse_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApigatewayv2RouteResponse_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateApigatewayv2RouteResponse_IsTerraformElementParameters(x interface{}) error {
+func validateApigatewayv2RouteResponse_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApigatewayv2RouteResponse_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateApigatewayv2RouteResponse_IsTerraformResourceParameters(x interface{}) error {
+func validateApigatewayv2RouteResponse_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetApiIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetModelSelectionExpressio
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewApigatewayv2RouteResponseParameters(scope constructs.Construct, 
 
 	return nil
 }
-

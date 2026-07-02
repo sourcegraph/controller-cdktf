@@ -16,15 +16,15 @@ type TransferWorkflow interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,19 +50,19 @@ type TransferWorkflow interface {
 	// The tree node.
 	Node() constructs.Node
 	OnExceptionSteps() TransferWorkflowOnExceptionStepsList
-	OnExceptionStepsInput() interface{}
+	OnExceptionStepsInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Steps() TransferWorkflowStepsList
-	StepsInput() interface{}
+	StepsInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -72,16 +72,16 @@ type TransferWorkflow interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type TransferWorkflow interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,15 +111,15 @@ type TransferWorkflow interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutOnExceptionSteps(value interface{})
-	PutSteps(value interface{})
+	PutOnExceptionSteps(value any)
+	PutSteps(value any)
 	ResetDescription()
 	ResetId()
 	ResetOnExceptionSteps()
@@ -128,17 +128,17 @@ type TransferWorkflow interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TransferWorkflow
@@ -166,8 +166,8 @@ func (j *jsiiProxy_TransferWorkflow) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflow) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_TransferWorkflow) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TransferWorkflow) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_TransferWorkflow) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflow) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_TransferWorkflow) OnExceptionSteps() TransferWorkflowOnExcept
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) OnExceptionStepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflow) OnExceptionStepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onExceptionStepsInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_TransferWorkflow) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TransferWorkflow) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_TransferWorkflow) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflow) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_TransferWorkflow) Steps() TransferWorkflowStepsList {
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) StepsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflow) StepsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stepsInput",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_TransferWorkflow) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TransferWorkflow) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -436,7 +436,6 @@ func (j *jsiiProxy_TransferWorkflow) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/transfer_workflow aws_transfer_workflow} Resource.
 func NewTransferWorkflow(scope constructs.Construct, id *string, config *TransferWorkflowConfig) TransferWorkflow {
 	_init_.Initialize()
@@ -448,7 +447,7 @@ func NewTransferWorkflow(scope constructs.Construct, id *string, config *Transfe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -461,12 +460,12 @@ func NewTransferWorkflow_Override(t TransferWorkflow, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetConnection(val interface{}) {
+func (j *jsiiProxy_TransferWorkflow) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_TransferWorkflow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetCount(val interface{}) {
+func (j *jsiiProxy_TransferWorkflow) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_TransferWorkflow)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TransferWorkflow) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_TransferWorkflow)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetDescription(val *string) {
+func (j *jsiiProxy_TransferWorkflow) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_TransferWorkflow)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TransferWorkflow) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_TransferWorkflow)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetId(val *string) {
+func (j *jsiiProxy_TransferWorkflow) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_TransferWorkflow)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TransferWorkflow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_TransferWorkflow)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TransferWorkflow) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_TransferWorkflow)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TransferWorkflow) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_TransferWorkflow)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_TransferWorkflow) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_TransferWorkflow)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_TransferWorkflow) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func TransferWorkflow_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func TransferWorkflow_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TransferWorkflow_IsConstruct(x interface{}) *bool {
+func TransferWorkflow_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTransferWorkflow_IsConstructParameters(x); err != nil {
@@ -625,7 +624,7 @@ func TransferWorkflow_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func TransferWorkflow_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TransferWorkflow_IsTerraformElement(x interface{}) *bool {
+func TransferWorkflow_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTransferWorkflow_IsTerraformElementParameters(x); err != nil {
@@ -644,7 +643,7 @@ func TransferWorkflow_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func TransferWorkflow_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TransferWorkflow_IsTerraformResource(x interface{}) *bool {
+func TransferWorkflow_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTransferWorkflow_IsTerraformResourceParameters(x); err != nil {
@@ -663,7 +662,7 @@ func TransferWorkflow_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,31 +687,31 @@ func (t *jsiiProxy_TransferWorkflow) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflow) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TransferWorkflow) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TransferWorkflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (t *jsiiProxy_TransferWorkflow) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (t *jsiiProxy_TransferWorkflow) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (t *jsiiProxy_TransferWorkflow) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (t *jsiiProxy_TransferWorkflow) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (t *jsiiProxy_TransferWorkflow) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (t *jsiiProxy_TransferWorkflow) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (t *jsiiProxy_TransferWorkflow) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,15 +839,15 @@ func (t *jsiiProxy_TransferWorkflow) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflow) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TransferWorkflow) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -867,7 +866,7 @@ func (t *jsiiProxy_TransferWorkflow) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -880,7 +879,7 @@ func (t *jsiiProxy_TransferWorkflow) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,18 +893,18 @@ func (t *jsiiProxy_TransferWorkflow) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflow) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TransferWorkflow) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -916,7 +915,7 @@ func (t *jsiiProxy_TransferWorkflow) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -927,29 +926,29 @@ func (t *jsiiProxy_TransferWorkflow) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflow) PutOnExceptionSteps(value interface{}) {
+func (t *jsiiProxy_TransferWorkflow) PutOnExceptionSteps(value any) {
 	if err := t.validatePutOnExceptionStepsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putOnExceptionSteps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflow) PutSteps(value interface{}) {
+func (t *jsiiProxy_TransferWorkflow) PutSteps(value any) {
 	if err := t.validatePutStepsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putSteps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1001,8 +1000,8 @@ func (t *jsiiProxy_TransferWorkflow) ResetTagsAll() {
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflow) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TransferWorkflow) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1014,8 +1013,8 @@ func (t *jsiiProxy_TransferWorkflow) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflow) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TransferWorkflow) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1027,8 +1026,8 @@ func (t *jsiiProxy_TransferWorkflow) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflow) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TransferWorkflow) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1040,8 +1039,8 @@ func (t *jsiiProxy_TransferWorkflow) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflow) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TransferWorkflow) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1066,8 +1065,8 @@ func (t *jsiiProxy_TransferWorkflow) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflow) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TransferWorkflow) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1078,4 +1077,3 @@ func (t *jsiiProxy_TransferWorkflow) ToTerraform() interface{} {
 
 	return returns
 }
-

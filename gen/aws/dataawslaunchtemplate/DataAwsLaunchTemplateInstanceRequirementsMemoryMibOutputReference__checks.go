@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateInstanceRequirementsMemoryMibOutputReferenc
 
 	return nil
 }
-

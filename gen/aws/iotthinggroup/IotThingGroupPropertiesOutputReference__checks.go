@@ -109,7 +109,7 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewIotThingGroupPropertiesOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

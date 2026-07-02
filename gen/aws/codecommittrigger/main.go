@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
-		reflect.TypeOf((*CodecommitTrigger)(nil)).Elem(),
+		reflect.TypeFor[CodecommitTrigger](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerInput", GoGetter: "TriggerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodecommitTrigger{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerConfig",
-		reflect.TypeOf((*CodecommitTriggerConfig)(nil)).Elem(),
+		reflect.TypeFor[CodecommitTriggerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTrigger",
-		reflect.TypeOf((*CodecommitTriggerTrigger)(nil)).Elem(),
+		reflect.TypeFor[CodecommitTriggerTrigger](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerList",
-		reflect.TypeOf((*CodecommitTriggerTriggerList)(nil)).Elem(),
+		reflect.TypeFor[CodecommitTriggerTriggerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodecommitTriggerTriggerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -100,7 +100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
-		reflect.TypeOf((*CodecommitTriggerTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CodecommitTriggerTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branches", GoGetter: "Branches"},
 			_jsii_.MemberProperty{JsiiProperty: "branchesInput", GoGetter: "BranchesInput"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CodecommitTriggerTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

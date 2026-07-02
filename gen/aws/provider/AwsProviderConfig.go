@@ -1,6 +1,5 @@
 package provider
 
-
 type AwsProviderConfig struct {
 	// The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 	//
@@ -15,11 +14,11 @@ type AwsProviderConfig struct {
 	// assume_role block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#assume_role AwsProvider#assume_role}
-	AssumeRole interface{} `field:"optional" json:"assumeRole" yaml:"assumeRole"`
+	AssumeRole any `field:"optional" json:"assumeRole" yaml:"assumeRole"`
 	// assume_role_with_web_identity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
-	AssumeRoleWithWebIdentity interface{} `field:"optional" json:"assumeRoleWithWebIdentity" yaml:"assumeRoleWithWebIdentity"`
+	AssumeRoleWithWebIdentity any `field:"optional" json:"assumeRoleWithWebIdentity" yaml:"assumeRoleWithWebIdentity"`
 	// File containing custom root and intermediate certificates.
 	//
 	// Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.)
@@ -29,7 +28,7 @@ type AwsProviderConfig struct {
 	// default_tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#default_tags AwsProvider#default_tags}
-	DefaultTags interface{} `field:"optional" json:"defaultTags" yaml:"defaultTags"`
+	DefaultTags any `field:"optional" json:"defaultTags" yaml:"defaultTags"`
 	// Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
@@ -41,7 +40,7 @@ type AwsProviderConfig struct {
 	// endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#endpoints AwsProvider#endpoints}
-	Endpoints interface{} `field:"optional" json:"endpoints" yaml:"endpoints"`
+	Endpoints any `field:"optional" json:"endpoints" yaml:"endpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
 	ForbiddenAccountIds *[]*string `field:"optional" json:"forbiddenAccountIds" yaml:"forbiddenAccountIds"`
 	// The address of an HTTP proxy to use when accessing the AWS API.
@@ -53,11 +52,11 @@ type AwsProviderConfig struct {
 	// ignore_tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#ignore_tags AwsProvider#ignore_tags}
-	IgnoreTags interface{} `field:"optional" json:"ignoreTags" yaml:"ignoreTags"`
+	IgnoreTags any `field:"optional" json:"ignoreTags" yaml:"ignoreTags"`
 	// Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#insecure AwsProvider#insecure}
-	Insecure interface{} `field:"optional" json:"insecure" yaml:"insecure"`
+	Insecure any `field:"optional" json:"insecure" yaml:"insecure"`
 	// The maximum number of times an AWS API request is being executed.
 	//
 	// If the API request still fails, an error is
@@ -76,11 +75,11 @@ type AwsProviderConfig struct {
 	// Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#s3_force_path_style AwsProvider#s3_force_path_style}
-	S3ForcePathStyle interface{} `field:"optional" json:"s3ForcePathStyle" yaml:"s3ForcePathStyle"`
+	S3ForcePathStyle any `field:"optional" json:"s3ForcePathStyle" yaml:"s3ForcePathStyle"`
 	// Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#s3_use_path_style AwsProvider#s3_use_path_style}
-	S3UsePathStyle interface{} `field:"optional" json:"s3UsePathStyle" yaml:"s3UsePathStyle"`
+	S3UsePathStyle any `field:"optional" json:"s3UsePathStyle" yaml:"s3UsePathStyle"`
 	// The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#secret_key AwsProvider#secret_key}
@@ -100,11 +99,11 @@ type AwsProviderConfig struct {
 	// Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
-	SkipCredentialsValidation interface{} `field:"optional" json:"skipCredentialsValidation" yaml:"skipCredentialsValidation"`
+	SkipCredentialsValidation any `field:"optional" json:"skipCredentialsValidation" yaml:"skipCredentialsValidation"`
 	// Skip getting the supported EC2 platforms. Used by users that don't have ec2:DescribeAccountAttributes permissions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#skip_get_ec2_platforms AwsProvider#skip_get_ec2_platforms}
-	SkipGetEc2Platforms interface{} `field:"optional" json:"skipGetEc2Platforms" yaml:"skipGetEc2Platforms"`
+	SkipGetEc2Platforms any `field:"optional" json:"skipGetEc2Platforms" yaml:"skipGetEc2Platforms"`
 	// Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
@@ -114,11 +113,11 @@ type AwsProviderConfig struct {
 	// Used by users of alternative AWS-like APIs or users w/ access to regions that are not public (yet).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#skip_region_validation AwsProvider#skip_region_validation}
-	SkipRegionValidation interface{} `field:"optional" json:"skipRegionValidation" yaml:"skipRegionValidation"`
+	SkipRegionValidation any `field:"optional" json:"skipRegionValidation" yaml:"skipRegionValidation"`
 	// Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
-	SkipRequestingAccountId interface{} `field:"optional" json:"skipRequestingAccountId" yaml:"skipRequestingAccountId"`
+	SkipRequestingAccountId any `field:"optional" json:"skipRequestingAccountId" yaml:"skipRequestingAccountId"`
 	// The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#sts_region AwsProvider#sts_region}
@@ -130,10 +129,9 @@ type AwsProviderConfig struct {
 	// Resolve an endpoint with DualStack capability.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
-	UseDualstackEndpoint interface{} `field:"optional" json:"useDualstackEndpoint" yaml:"useDualstackEndpoint"`
+	UseDualstackEndpoint any `field:"optional" json:"useDualstackEndpoint" yaml:"useDualstackEndpoint"`
 	// Resolve an endpoint with FIPS capability.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
-	UseFipsEndpoint interface{} `field:"optional" json:"useFipsEndpoint" yaml:"useFipsEndpoint"`
+	UseFipsEndpoint any `field:"optional" json:"useFipsEndpoint" yaml:"useFipsEndpoint"`
 }
-

@@ -19,7 +19,7 @@ func (e *jsiiProxy_EksAddon) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (e *jsiiProxy_EksAddon) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EksAddon) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EksAddon) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksAddon) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EksAddon) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateEksAddon_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateEksAddon_IsConstructParameters(x interface{}) error {
+func validateEksAddon_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateEksAddon_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEksAddon_IsTerraformElementParameters(x interface{}) error {
+func validateEksAddon_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateEksAddon_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEksAddon_IsTerraformResourceParameters(x interface{}) error {
+func validateEksAddon_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_EksAddon) validateSetConfigurationValuesParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_EksAddon) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EksAddon) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_EksAddon) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_EksAddon) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EksAddon) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_EksAddon) validateSetLifecycleParameters(val *cdktf.Terraform
 	return nil
 }
 
-func (j *jsiiProxy_EksAddon) validateSetPreserveParameters(val interface{}) error {
+func (j *jsiiProxy_EksAddon) validateSetPreserveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -413,7 +413,7 @@ func (j *jsiiProxy_EksAddon) validateSetPreserveParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_EksAddon) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EksAddon) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewEksAddonParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

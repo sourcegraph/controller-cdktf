@@ -21,15 +21,15 @@ type AccountAlternateContact interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,19 +65,19 @@ type AccountAlternateContact interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AccountAlternateContactTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -85,9 +85,9 @@ type AccountAlternateContact interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type AccountAlternateContact interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type AccountAlternateContact interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type AccountAlternateContact interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AccountAlternateContact
@@ -199,8 +199,8 @@ func (j *jsiiProxy_AccountAlternateContact) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountAlternateContact) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_AccountAlternateContact) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccountAlternateContact) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_AccountAlternateContact) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountAlternateContact) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_AccountAlternateContact) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AccountAlternateContact) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_AccountAlternateContact) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountAlternateContact) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_AccountAlternateContact) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccountAlternateContact) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_AccountAlternateContact) Timeouts() AccountAlternateContactTi
 	return returns
 }
 
-func (j *jsiiProxy_AccountAlternateContact) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccountAlternateContact) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_AccountAlternateContact) TitleInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/account_alternate_contact aws_account_alternate_contact} Resource.
 func NewAccountAlternateContact(scope constructs.Construct, id *string, config *AccountAlternateContactConfig) AccountAlternateContact {
 	_init_.Initialize()
@@ -481,7 +480,7 @@ func NewAccountAlternateContact(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -494,12 +493,12 @@ func NewAccountAlternateContact_Override(a AccountAlternateContact, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetAccountId(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetAlternateContactType(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetAlternateContactType(val *string) {
 	if err := j.validateSetAlternateContactTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetAlternateContactType(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetConnection(val interface{}) {
+func (j *jsiiProxy_AccountAlternateContact) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetCount(val interface{}) {
+func (j *jsiiProxy_AccountAlternateContact) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccountAlternateContact) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetEmailAddress(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetEmailAddress(val *string) {
 	if err := j.validateSetEmailAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetEmailAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccountAlternateContact) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetId(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccountAlternateContact) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetName(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetPhoneNumber(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetPhoneNumber(val *string) {
 	if err := j.validateSetPhoneNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetPhoneNumber(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccountAlternateContact) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccountAlternateContact) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_AccountAlternateContact)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccountAlternateContact)SetTitle(val *string) {
+func (j *jsiiProxy_AccountAlternateContact) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func AccountAlternateContact_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func AccountAlternateContact_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AccountAlternateContact_IsConstruct(x interface{}) *bool {
+func AccountAlternateContact_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccountAlternateContact_IsConstructParameters(x); err != nil {
@@ -691,7 +690,7 @@ func AccountAlternateContact_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func AccountAlternateContact_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AccountAlternateContact_IsTerraformElement(x interface{}) *bool {
+func AccountAlternateContact_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccountAlternateContact_IsTerraformElementParameters(x); err != nil {
@@ -710,7 +709,7 @@ func AccountAlternateContact_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func AccountAlternateContact_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AccountAlternateContact_IsTerraformResource(x interface{}) *bool {
+func AccountAlternateContact_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccountAlternateContact_IsTerraformResourceParameters(x); err != nil {
@@ -729,7 +728,7 @@ func AccountAlternateContact_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,31 +753,31 @@ func (a *jsiiProxy_AccountAlternateContact) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AccountAlternateContact) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AccountAlternateContact) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AccountAlternateContact) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccountAlternateContact) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (a *jsiiProxy_AccountAlternateContact) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,15 +905,15 @@ func (a *jsiiProxy_AccountAlternateContact) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccountAlternateContact) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccountAlternateContact) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -933,7 +932,7 @@ func (a *jsiiProxy_AccountAlternateContact) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -946,7 +945,7 @@ func (a *jsiiProxy_AccountAlternateContact) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,18 +959,18 @@ func (a *jsiiProxy_AccountAlternateContact) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AccountAlternateContact) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AccountAlternateContact) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -982,7 +981,7 @@ func (a *jsiiProxy_AccountAlternateContact) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -993,7 +992,7 @@ func (a *jsiiProxy_AccountAlternateContact) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (a *jsiiProxy_AccountAlternateContact) PutTimeouts(value *AccountAlternateC
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1040,8 +1039,8 @@ func (a *jsiiProxy_AccountAlternateContact) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AccountAlternateContact) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccountAlternateContact) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1053,8 +1052,8 @@ func (a *jsiiProxy_AccountAlternateContact) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (a *jsiiProxy_AccountAlternateContact) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccountAlternateContact) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1066,8 +1065,8 @@ func (a *jsiiProxy_AccountAlternateContact) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (a *jsiiProxy_AccountAlternateContact) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccountAlternateContact) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1079,8 +1078,8 @@ func (a *jsiiProxy_AccountAlternateContact) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AccountAlternateContact) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccountAlternateContact) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1105,8 +1104,8 @@ func (a *jsiiProxy_AccountAlternateContact) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccountAlternateContact) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccountAlternateContact) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1117,4 +1116,3 @@ func (a *jsiiProxy_AccountAlternateContact) ToTerraform() interface{} {
 
 	return returns
 }
-

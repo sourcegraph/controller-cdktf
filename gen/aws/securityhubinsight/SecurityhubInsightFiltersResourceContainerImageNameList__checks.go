@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList) vali
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityhubInsightFiltersResourceContainerImageNameListParameter
 
 	return nil
 }
-

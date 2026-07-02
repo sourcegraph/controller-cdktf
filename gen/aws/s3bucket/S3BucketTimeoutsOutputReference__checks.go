@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketTimeoutsOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_S3BucketTimeoutsOutputReference) validateSetDeleteParameters(
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewS3BucketTimeoutsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

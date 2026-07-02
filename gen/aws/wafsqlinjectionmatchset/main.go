@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
-		reflect.TypeOf((*WafSqlInjectionMatchSet)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSqlInjectionMatchSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,19 +70,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetConfig",
-		reflect.TypeOf((*WafSqlInjectionMatchSetConfig)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuples",
-		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuples)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSetSqlInjectionMatchTuples](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch",
-		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
-		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
-		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesList)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSetSqlInjectionMatchTuplesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference",
-		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textTransformationInput", GoGetter: "TextTransformationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

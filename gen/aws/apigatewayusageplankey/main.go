@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey",
-		reflect.TypeOf((*ApiGatewayUsagePlanKey)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usagePlanIdInput", GoGetter: "UsagePlanIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiGatewayUsagePlanKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKeyConfig",
-		reflect.TypeOf((*ApiGatewayUsagePlanKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiGatewayUsagePlanKeyConfig](),
 	)
 }

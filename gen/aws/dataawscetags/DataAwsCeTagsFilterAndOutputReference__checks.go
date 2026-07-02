@@ -131,7 +131,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataAwsCeTagsFilterAndOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

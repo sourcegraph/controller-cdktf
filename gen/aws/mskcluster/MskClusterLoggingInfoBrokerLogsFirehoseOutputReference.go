@@ -12,9 +12,9 @@ type MskClusterLoggingInfoBrokerLogsFirehoseOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type MskClusterLoggingInfoBrokerLogsFirehoseOutputReference interface {
 	DeliveryStream() *string
 	SetDeliveryStream(val *string)
 	DeliveryStreamInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MskClusterLoggingInfoBrokerLogsFirehose
@@ -46,7 +46,7 @@ type MskClusterLoggingInfoBrokerLogsFirehoseOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type MskClusterLoggingInfoBrokerLogsFirehoseOutputReference interface {
 	ResetDeliveryStream()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Deliv
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Terra
 	return returns
 }
 
-
 func NewMskClusterLoggingInfoBrokerLogsFirehoseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsFirehoseOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewMskClusterLoggingInfoBrokerLogsFirehoseOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehoseOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewMskClusterLoggingInfoBrokerLogsFirehoseOutputReference_Override(m MskClu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehoseOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetDeliveryStream(val *string) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetDeliveryStream(val *string) {
 	if err := j.validateSetDeliveryStreamParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetDel
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetInternalValue(val *MskClusterLoggingInfoBrokerLogsFirehose) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetInternalValue(val *MskClusterLoggingInfoBrokerLogsFirehose) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Compu
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetBo
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetBo
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetLi
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetNu
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetNu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetNu
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetSt
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) GetSt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Inter
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Reset
 	)
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) ToStr
 
 	return returns
 }
-

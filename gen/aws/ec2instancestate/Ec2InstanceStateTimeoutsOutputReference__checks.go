@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2InstanceStateTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_Ec2InstanceStateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2InstanceStateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Ec2InstanceStateTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_Ec2InstanceStateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2InstanceStateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEc2InstanceStateTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

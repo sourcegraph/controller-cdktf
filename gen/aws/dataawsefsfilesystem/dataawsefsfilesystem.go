@@ -18,11 +18,11 @@ type DataAwsEfsFileSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationToken() *string
 	SetCreationToken(val *string)
 	CreationTokenInput() *string
@@ -61,7 +61,7 @@ type DataAwsEfsFileSystem interface {
 	SetProvider(val cdktf.TerraformProvider)
 	ProvisionedThroughputInMibps() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SizeInBytes() *float64
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -69,14 +69,14 @@ type DataAwsEfsFileSystem interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThroughputMode() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,18 +105,18 @@ type DataAwsEfsFileSystem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEfsFileSystem
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEfsFileSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEfsFileSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) ProvisionedThroughputInMibps() *float64
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEfsFileSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEfsFileSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -454,7 +454,6 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) ThroughputMode() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/efs_file_system aws_efs_file_system} Data Source.
 func NewDataAwsEfsFileSystem(scope constructs.Construct, id *string, config *DataAwsEfsFileSystemConfig) DataAwsEfsFileSystem {
 	_init_.Initialize()
@@ -466,7 +465,7 @@ func NewDataAwsEfsFileSystem(scope constructs.Construct, id *string, config *Dat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -479,12 +478,12 @@ func NewDataAwsEfsFileSystem_Override(d DataAwsEfsFileSystem, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetCreationToken(val *string) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetCreationToken(val *string) {
 	if err := j.validateSetCreationTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetCreationToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -514,7 +513,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetFileSystemId(val *string) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetFileSystemId(val *string) {
 	if err := j.validateSetFileSystemIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetFileSystemId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsFileSystem)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEfsFileSystem) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func DataAwsEfsFileSystem_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func DataAwsEfsFileSystem_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEfsFileSystem_IsConstruct(x interface{}) *bool {
+func DataAwsEfsFileSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEfsFileSystem_IsConstructParameters(x); err != nil {
@@ -621,7 +620,7 @@ func DataAwsEfsFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func DataAwsEfsFileSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEfsFileSystem_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEfsFileSystem_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEfsFileSystem_IsTerraformDataSourceParameters(x); err != nil {
@@ -640,7 +639,7 @@ func DataAwsEfsFileSystem_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func DataAwsEfsFileSystem_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEfsFileSystem_IsTerraformElement(x interface{}) *bool {
+func DataAwsEfsFileSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEfsFileSystem_IsTerraformElementParameters(x); err != nil {
@@ -659,7 +658,7 @@ func DataAwsEfsFileSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,27 +676,27 @@ func DataAwsEfsFileSystem_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEfsFileSystem) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEfsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -899,8 +898,8 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEfsFileSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -912,8 +911,8 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEfsFileSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -925,8 +924,8 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEfsFileSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -938,8 +937,8 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEfsFileSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -964,8 +963,8 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEfsFileSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -976,4 +975,3 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

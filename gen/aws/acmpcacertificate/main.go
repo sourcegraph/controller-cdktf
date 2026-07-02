@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
-		reflect.TypeOf((*AcmpcaCertificate)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validity", GoGetter: "Validity"},
 			_jsii_.MemberProperty{JsiiProperty: "validityInput", GoGetter: "ValidityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig",
-		reflect.TypeOf((*AcmpcaCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity",
-		reflect.TypeOf((*AcmpcaCertificateValidity)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateValidity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
-		reflect.TypeOf((*AcmpcaCertificateValidityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AcmpcaCertificateValidityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AcmpcaCertificateValidityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

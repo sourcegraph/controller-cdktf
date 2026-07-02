@@ -12,9 +12,9 @@ type GlueCrawlerDynamodbTargetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,14 +27,14 @@ type GlueCrawlerDynamodbTargetOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	ScanAll() interface{}
-	SetScanAll(val interface{})
-	ScanAllInput() interface{}
+	ScanAll() any
+	SetScanAll(val any)
+	ScanAllInput() any
 	ScanRate() *float64
 	SetScanRate(val *float64)
 	ScanRateInput() *float64
@@ -49,7 +49,7 @@ type GlueCrawlerDynamodbTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type GlueCrawlerDynamodbTargetOutputReference interface {
 	ResetScanRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_GlueCrawlerDynamodbTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) PathInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ScanAll() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ScanAll() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scanAll",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ScanAll() interface
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ScanAllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ScanAllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scanAllInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewGlueCrawlerDynamodbTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GlueCrawlerDynamodbTargetOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewGlueCrawlerDynamodbTargetOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewGlueCrawlerDynamodbTargetOutputReference_Override(g GlueCrawlerDynamodbT
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetPath(val *string)
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetScanAll(val interface{}) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetScanAll(val any) {
 	if err := j.validateSetScanAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetScanAll(val inter
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetScanRate(val *float64) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetScanRate(val *float64) {
 	if err := j.validateSetScanRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetScanRate(val *flo
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ResetScanRate() {
 	)
 }
 
-func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) ToString() *string 
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (k *jsiiProxy_KendraFaq) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (k *jsiiProxy_KendraFaq) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KendraFaq) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KendraFaq) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraFaq) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KendraFaq) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateKendraFaq_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateKendraFaq_IsConstructParameters(x interface{}) error {
+func validateKendraFaq_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateKendraFaq_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKendraFaq_IsTerraformElementParameters(x interface{}) error {
+func validateKendraFaq_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateKendraFaq_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateKendraFaq_IsTerraformResourceParameters(x interface{}) error {
+func validateKendraFaq_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateKendraFaq_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_KendraFaq) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KendraFaq) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_KendraFaq) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_KendraFaq) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KendraFaq) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_KendraFaq) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_KendraFaq) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KendraFaq) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewKendraFaqParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

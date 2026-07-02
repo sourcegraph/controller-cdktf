@@ -139,7 +139,7 @@ func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetBuildspecPa
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -212,7 +212,7 @@ func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetGitCloneDep
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetInsecureSslParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetInsecureSslParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetLocationPar
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetReportBuildStatusParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetReportBuildStatusParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,4 +303,3 @@ func validateNewCodebuildProjectSourceOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

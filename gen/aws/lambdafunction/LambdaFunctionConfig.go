@@ -6,9 +6,9 @@ import (
 
 type LambdaFunctionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LambdaFunctionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#function_name LambdaFunction#function_name}.
 	FunctionName *string `field:"required" json:"functionName" yaml:"functionName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#role LambdaFunction#role}.
@@ -69,11 +69,11 @@ type LambdaFunctionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#package_type LambdaFunction#package_type}.
 	PackageType *string `field:"optional" json:"packageType" yaml:"packageType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#publish LambdaFunction#publish}.
-	Publish interface{} `field:"optional" json:"publish" yaml:"publish"`
+	Publish any `field:"optional" json:"publish" yaml:"publish"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#replacement_security_group_ids LambdaFunction#replacement_security_group_ids}.
 	ReplacementSecurityGroupIds *[]*string `field:"optional" json:"replacementSecurityGroupIds" yaml:"replacementSecurityGroupIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#replace_security_groups_on_destroy LambdaFunction#replace_security_groups_on_destroy}.
-	ReplaceSecurityGroupsOnDestroy interface{} `field:"optional" json:"replaceSecurityGroupsOnDestroy" yaml:"replaceSecurityGroupsOnDestroy"`
+	ReplaceSecurityGroupsOnDestroy any `field:"optional" json:"replaceSecurityGroupsOnDestroy" yaml:"replaceSecurityGroupsOnDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}.
 	ReservedConcurrentExecutions *float64 `field:"optional" json:"reservedConcurrentExecutions" yaml:"reservedConcurrentExecutions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#runtime LambdaFunction#runtime}.
@@ -109,4 +109,3 @@ type LambdaFunctionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lambda_function#vpc_config LambdaFunction#vpc_config}
 	VpcConfig *LambdaFunctionVpcConfig `field:"optional" json:"vpcConfig" yaml:"vpcConfig"`
 }
-

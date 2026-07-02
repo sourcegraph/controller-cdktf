@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
-		reflect.TypeOf((*DataAwsEfsMountTarget)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsMountTarget](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPointId", GoGetter: "AccessPointId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessPointIdInput", GoGetter: "AccessPointIdInput"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEfsMountTarget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTargetConfig",
-		reflect.TypeOf((*DataAwsEfsMountTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEfsMountTargetConfig](),
 	)
 }

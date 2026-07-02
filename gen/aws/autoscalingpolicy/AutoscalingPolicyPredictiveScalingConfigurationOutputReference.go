@@ -12,9 +12,9 @@ type AutoscalingPolicyPredictiveScalingConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,7 +54,7 @@ type AutoscalingPolicyPredictiveScalingConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type AutoscalingPolicyPredictiveScalingConfigurationOutputReference interface {
 	ResetSchedulingBufferTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	return returns
 }
 
-
 func NewAutoscalingPolicyPredictiveScalingConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewAutoscalingPolicyPredictiveScalingConfigurationOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewAutoscalingPolicyPredictiveScalingConfigurationOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetInternalValue(val *AutoscalingPolicyPredictiveScalingConfiguration) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetInternalValue(val *AutoscalingPolicyPredictiveScalingConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetMaxCapacityBreachBehavior(val *string) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetMaxCapacityBreachBehavior(val *string) {
 	if err := j.validateSetMaxCapacityBreachBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetMaxCapacityBuffer(val *string) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetMaxCapacityBuffer(val *string) {
 	if err := j.validateSetMaxCapacityBufferParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetSchedulingBufferTime(val *string) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetSchedulingBufferTime(val *string) {
 	if err := j.validateSetSchedulingBufferTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,16 +404,16 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	_jsii_.InvokeVoid(
 		a,
 		"putMetricSpecification",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 	)
 }
 
-func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (a *jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationOutputReferenc
 
 	return returns
 }
-

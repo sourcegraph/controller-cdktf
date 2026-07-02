@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
-		reflect.TypeOf((*DataAwsImagebuilderComponent)(nil)).Elem(),
+		reflect.TypeFor[DataAwsImagebuilderComponent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsImagebuilderComponent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig",
-		reflect.TypeOf((*DataAwsImagebuilderComponentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsImagebuilderComponentConfig](),
 	)
 }

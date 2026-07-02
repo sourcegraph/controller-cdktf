@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2TrafficMirrorSession) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TrafficMirrorSession) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2TrafficMirrorSession) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2TrafficMirrorSession) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TrafficMirrorSession) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2TrafficMirrorSession) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEc2TrafficMirrorSession_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateEc2TrafficMirrorSession_IsConstructParameters(x interface{}) error {
+func validateEc2TrafficMirrorSession_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEc2TrafficMirrorSession_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateEc2TrafficMirrorSession_IsTerraformElementParameters(x interface{}) error {
+func validateEc2TrafficMirrorSession_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEc2TrafficMirrorSession_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateEc2TrafficMirrorSession_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2TrafficMirrorSession_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEc2TrafficMirrorSession_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetPacketLengthParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -486,4 +486,3 @@ func validateNewEc2TrafficMirrorSessionParameters(scope constructs.Construct, id
 
 	return nil
 }
-

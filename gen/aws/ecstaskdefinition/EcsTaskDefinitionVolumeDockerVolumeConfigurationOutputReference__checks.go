@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateSetAutoprovisionParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateSetAutoprovisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReferenceP
 
 	return nil
 }
-

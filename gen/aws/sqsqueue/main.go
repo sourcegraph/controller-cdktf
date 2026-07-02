@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
-		reflect.TypeOf((*SqsQueue)(nil)).Elem(),
+		reflect.TypeFor[SqsQueue](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibilityTimeoutSeconds", GoGetter: "VisibilityTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityTimeoutSecondsInput", GoGetter: "VisibilityTimeoutSecondsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqsQueue{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -123,6 +123,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sqsQueue.SqsQueueConfig",
-		reflect.TypeOf((*SqsQueueConfig)(nil)).Elem(),
+		reflect.TypeFor[SqsQueueConfig](),
 	)
 }

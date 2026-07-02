@@ -106,7 +106,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) validateSetAllRegionsParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) validateSetAllRegionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -234,4 +234,3 @@ func validateNewConfigConfigurationAggregatorAccountAggregationSourceOutputRefer
 
 	return nil
 }
-

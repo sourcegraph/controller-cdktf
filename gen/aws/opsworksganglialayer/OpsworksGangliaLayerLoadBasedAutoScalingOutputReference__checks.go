@@ -120,7 +120,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -240,4 +240,3 @@ func validateNewOpsworksGangliaLayerLoadBasedAutoScalingOutputReferenceParameter
 
 	return nil
 }
-

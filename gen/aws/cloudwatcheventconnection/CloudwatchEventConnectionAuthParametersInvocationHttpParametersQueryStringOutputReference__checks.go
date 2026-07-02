@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParamete
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParamete
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParamete
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference) validateSetIsValueSecretParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference) validateSetIsValueSecretParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQ
 
 	return nil
 }
-

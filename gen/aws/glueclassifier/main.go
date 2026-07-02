@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
-		reflect.TypeOf((*GlueClassifier)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifier](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xmlClassifier", GoGetter: "XmlClassifier"},
 			_jsii_.MemberProperty{JsiiProperty: "xmlClassifierInput", GoGetter: "XmlClassifierInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueClassifier{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierConfig",
-		reflect.TypeOf((*GlueClassifierConfig)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier",
-		reflect.TypeOf((*GlueClassifierCsvClassifier)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierCsvClassifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference",
-		reflect.TypeOf((*GlueClassifierCsvClassifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierCsvClassifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowSingleColumn", GoGetter: "AllowSingleColumn"},
 			_jsii_.MemberProperty{JsiiProperty: "allowSingleColumnInput", GoGetter: "AllowSingleColumnInput"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueClassifierCsvClassifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier",
-		reflect.TypeOf((*GlueClassifierGrokClassifier)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierGrokClassifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
-		reflect.TypeOf((*GlueClassifierGrokClassifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierGrokClassifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
 			_jsii_.MemberProperty{JsiiProperty: "classificationInput", GoGetter: "ClassificationInput"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueClassifierGrokClassifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,11 +189,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier",
-		reflect.TypeOf((*GlueClassifierJsonClassifier)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierJsonClassifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
-		reflect.TypeOf((*GlueClassifierJsonClassifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierJsonClassifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueClassifierJsonClassifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,11 +227,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier",
-		reflect.TypeOf((*GlueClassifierXmlClassifier)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierXmlClassifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference",
-		reflect.TypeOf((*GlueClassifierXmlClassifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GlueClassifierXmlClassifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
 			_jsii_.MemberProperty{JsiiProperty: "classificationInput", GoGetter: "ClassificationInput"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GlueClassifierXmlClassifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

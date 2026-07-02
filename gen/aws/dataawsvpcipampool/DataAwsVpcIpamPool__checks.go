@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcIpamPool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPool) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPool) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsVpcIpamPool) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsVpcIpamPool_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataAwsVpcIpamPool_IsConstructParameters(x interface{}) error {
+func validateDataAwsVpcIpamPool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsVpcIpamPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsVpcIpamPool_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsVpcIpamPool_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsVpcIpamPool_IsTerraformDataSourceParameters(x interface{}) e
 	return nil
 }
 
-func validateDataAwsVpcIpamPool_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsVpcIpamPool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetAllocationResourceTagsParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -305,4 +305,3 @@ func validateNewDataAwsVpcIpamPoolParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

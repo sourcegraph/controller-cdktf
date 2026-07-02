@@ -15,9 +15,9 @@ type GlueTriggerActionsOutputReference interface {
 	ArgumentsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GlueTriggerActionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	JobName() *string
 	SetJobName(val *string)
 	JobNameInput() *string
@@ -57,7 +57,7 @@ type GlueTriggerActionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type GlueTriggerActionsOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) ArgumentsInput() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) TimeoutInput() *float64 {
 	return returns
 }
 
-
 func NewGlueTriggerActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GlueTriggerActionsOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewGlueTriggerActionsOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewGlueTriggerActionsOutputReference_Override(g GlueTriggerActionsOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetArguments(val *map[string]*string) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetArguments(val *map[string]*string) {
 	if err := j.validateSetArgumentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetArguments(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetCrawlerName(val *string) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetCrawlerName(val *string) {
 	if err := j.validateSetCrawlerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetCrawlerName(val *string)
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetJobName(val *string) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetJobName(val *string) {
 	if err := j.validateSetJobNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetJobName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetSecurityConfiguration(val *string) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetSecurityConfiguration(val *string) {
 	if err := j.validateSetSecurityConfigurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetSecurityConfiguration(va
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference)SetTimeout(val *float64) {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) PutNotificationProperty(va
 	_jsii_.InvokeVoid(
 		g,
 		"putNotificationProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) ResetTimeout() {
 	)
 }
 
-func (g *jsiiProxy_GlueTriggerActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueTriggerActionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) ToString() *string {
 
 	return returns
 }
-

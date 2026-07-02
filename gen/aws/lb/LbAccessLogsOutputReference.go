@@ -15,9 +15,9 @@ type LbAccessLogsOutputReference interface {
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type LbAccessLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *LbAccessLogs
@@ -49,7 +49,7 @@ type LbAccessLogsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type LbAccessLogsOutputReference interface {
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_LbAccessLogsOutputReference) BucketInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbAccessLogsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_LbAccessLogsOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbAccessLogsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_LbAccessLogsOutputReference) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LbAccessLogsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_LbAccessLogsOutputReference) TerraformResource() cdktf.IInter
 	return returns
 }
 
-
 func NewLbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbAccessLogsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewLbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lb.LbAccessLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewLbAccessLogsOutputReference_Override(l LbAccessLogsOutputReference, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lb.LbAccessLogsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetInternalValue(val *LbAccessLogs) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetInternalValue(val *LbAccessLogs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetInternalValue(val *LbAccessLog
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbAccessLogsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LbAccessLogsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) ResetPrefix() {
 	)
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LbAccessLogsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) ToString() *string {
 
 	return returns
 }
-

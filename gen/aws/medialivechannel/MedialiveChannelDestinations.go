@@ -1,6 +1,5 @@
 package medialivechannel
 
-
 type MedialiveChannelDestinations struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#id MedialiveChannel#id}.
 	//
@@ -10,7 +9,7 @@ type MedialiveChannelDestinations struct {
 	// media_package_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#media_package_settings MedialiveChannel#media_package_settings}
-	MediaPackageSettings interface{} `field:"optional" json:"mediaPackageSettings" yaml:"mediaPackageSettings"`
+	MediaPackageSettings any `field:"optional" json:"mediaPackageSettings" yaml:"mediaPackageSettings"`
 	// multiplex_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#multiplex_settings MedialiveChannel#multiplex_settings}
@@ -18,6 +17,5 @@ type MedialiveChannelDestinations struct {
 	// settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#settings MedialiveChannel#settings}
-	Settings interface{} `field:"optional" json:"settings" yaml:"settings"`
+	Settings any `field:"optional" json:"settings" yaml:"settings"`
 }
-

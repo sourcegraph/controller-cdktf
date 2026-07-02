@@ -98,7 +98,7 @@ func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessPosixProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferAccessPosixProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewTransferAccessPosixProfileOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

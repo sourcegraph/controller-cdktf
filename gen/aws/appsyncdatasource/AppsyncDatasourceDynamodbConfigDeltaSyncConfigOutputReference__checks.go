@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReferencePar
 
 	return nil
 }
-

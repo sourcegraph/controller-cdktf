@@ -33,9 +33,9 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	BurstablePerformanceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -74,9 +74,9 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
 	SetOnDemandMaxPricePercentageOverLowestPrice(val *float64)
 	OnDemandMaxPricePercentageOverLowestPriceInput() *float64
-	RequireHibernateSupport() interface{}
-	SetRequireHibernateSupport(val interface{})
-	RequireHibernateSupportInput() interface{}
+	RequireHibernateSupport() any
+	SetRequireHibernateSupport(val any)
+	RequireHibernateSupportInput() any
 	SpotMaxPricePercentageOverLowestPrice() *float64
 	SetSpotMaxPricePercentageOverLowestPrice(val *float64)
 	SpotMaxPricePercentageOverLowestPriceInput() *float64
@@ -95,7 +95,7 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -145,7 +145,7 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	ResetTotalLocalStorageGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -318,8 +318,8 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) RequireHibernateSupport() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) RequireHibernateSupport() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireHibernateSupport",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) RequireHibernateSupportInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) RequireHibernateSupportInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireHibernateSupportInput",
@@ -648,7 +648,6 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return returns
 }
 
-
 func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference {
 	_init_.Initialize()
 
@@ -659,7 +658,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -671,12 +670,12 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetAcceleratorManufacturers(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetAcceleratorManufacturers(val *[]*string) {
 	if err := j.validateSetAcceleratorManufacturersParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetAcceleratorNames(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetAcceleratorNames(val *[]*string) {
 	if err := j.validateSetAcceleratorNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetAcceleratorTypes(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetAcceleratorTypes(val *[]*string) {
 	if err := j.validateSetAcceleratorTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetBareMetal(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetBareMetal(val *string) {
 	if err := j.validateSetBareMetalParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetBurstablePerformance(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetBurstablePerformance(val *string) {
 	if err := j.validateSetBurstablePerformanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetCpuManufacturers(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetCpuManufacturers(val *[]*string) {
 	if err := j.validateSetCpuManufacturersParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetExcludedInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetExcludedInstanceTypes(val *[]*string) {
 	if err := j.validateSetExcludedInstanceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetInstanceGenerations(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetInstanceGenerations(val *[]*string) {
 	if err := j.validateSetInstanceGenerationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetInternalValue(val *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetInternalValue(val *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetLocalStorage(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetLocalStorage(val *string) {
 	if err := j.validateSetLocalStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetLocalStorageTypes(val *[]*string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetLocalStorageTypes(val *[]*string) {
 	if err := j.validateSetLocalStorageTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetOnDemandMaxPricePercentageOverLowestPrice(val *float64) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetOnDemandMaxPricePercentageOverLowestPrice(val *float64) {
 	if err := j.validateSetOnDemandMaxPricePercentageOverLowestPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetRequireHibernateSupport(val interface{}) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetRequireHibernateSupport(val any) {
 	if err := j.validateSetRequireHibernateSupportParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetSpotMaxPricePercentageOverLowestPrice(val *float64) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetSpotMaxPricePercentageOverLowestPrice(val *float64) {
 	if err := j.validateSetSpotMaxPricePercentageOverLowestPriceParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,16 +886,16 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return returns
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putAcceleratorCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putAcceleratorTotalMemoryMib",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putBaselineEbsBandwidthMbps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putMemoryGibPerVcpu",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putMemoryMib",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworkInterfaceCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putTotalLocalStorageGb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"putVcpuCount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1300,16 +1299,16 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1328,4 +1327,3 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 
 	return returns
 }
-

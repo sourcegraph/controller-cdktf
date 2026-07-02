@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsAcmCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsAcmCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsAcmCertificate_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataAwsAcmCertificate_IsConstructParameters(x interface{}) error {
+func validateDataAwsAcmCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsAcmCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsAcmCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsAcmCertificate_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsAcmCertificate_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsAcmCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsAcmCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsAcmCertificate_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAcmCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataAwsAcmCertificate) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmCertificate) validateSetMostRecentParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAcmCertificate) validateSetMostRecentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -302,4 +302,3 @@ func validateNewDataAwsAcmCertificateParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

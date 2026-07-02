@@ -15,9 +15,9 @@ type KendraThesaurusSourceS3PathOutputReference interface {
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type KendraThesaurusSourceS3PathOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type KendraThesaurusSourceS3PathOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) BucketInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewKendraThesaurusSourceS3PathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KendraThesaurusSourceS3PathOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewKendraThesaurusSourceS3PathOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewKendraThesaurusSourceS3PathOutputReference_Override(k KendraThesaurusSou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetBucket(val *str
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetInternalValue(val *KendraThesaurusSourceS3Path) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetInternalValue(val *KendraThesaurusSourceS3Path) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetKey(val *string
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) ToString() *strin
 
 	return returns
 }
-

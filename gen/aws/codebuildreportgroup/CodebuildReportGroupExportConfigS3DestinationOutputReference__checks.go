@@ -106,7 +106,7 @@ func (j *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateSetEncryptionDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateSetEncryptionDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewCodebuildReportGroupExportConfigS3DestinationOutputReferencePara
 
 	return nil
 }
-

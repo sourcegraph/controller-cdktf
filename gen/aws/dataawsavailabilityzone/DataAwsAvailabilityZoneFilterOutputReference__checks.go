@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZoneFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsAvailabilityZoneFilterOutputReferenceParameters(terraform
 
 	return nil
 }
-

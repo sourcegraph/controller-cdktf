@@ -15,9 +15,9 @@ type ElastictranscoderPresetThumbnailsOutputReference interface {
 	AspectRatioInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -64,7 +64,7 @@ type ElastictranscoderPresetThumbnailsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ElastictranscoderPresetThumbnailsOutputReference interface {
 	ResetSizingPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) AspectRatio
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewElastictranscoderPresetThumbnailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastictranscoderPresetThumbnailsOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewElastictranscoderPresetThumbnailsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewElastictranscoderPresetThumbnailsOutputReference_Override(e Elastictrans
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetAspectRatio(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetAspectRatio(val *string) {
 	if err := j.validateSetAspectRatioParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetAspectRat
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetFormat(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetFormat(val *string) {
 	if err := j.validateSetFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetFormat(va
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetInternalValue(val *ElastictranscoderPresetThumbnails) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetInternalValue(val *ElastictranscoderPresetThumbnails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetInterval(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetInterval(val *string) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetInterval(
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetMaxHeight(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetMaxHeight(val *string) {
 	if err := j.validateSetMaxHeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetMaxHeight
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetMaxWidth(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetMaxWidth(val *string) {
 	if err := j.validateSetMaxWidthParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetMaxWidth(
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetPaddingPolicy(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetPaddingPolicy(val *string) {
 	if err := j.validateSetPaddingPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetPaddingPo
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetResolution(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetResolution(val *string) {
 	if err := j.validateSetResolutionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetResolutio
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetSizingPolicy(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetSizingPolicy(val *string) {
 	if err := j.validateSetSizingPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetSizingPol
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) Interpolati
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) ResetSizing
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) ToString() 
 
 	return returns
 }
-

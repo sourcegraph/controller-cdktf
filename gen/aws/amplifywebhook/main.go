@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
-		reflect.TypeOf((*AmplifyWebhook)(nil)).Elem(),
+		reflect.TypeFor[AmplifyWebhook](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmplifyWebhook{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig",
-		reflect.TypeOf((*AmplifyWebhookConfig)(nil)).Elem(),
+		reflect.TypeFor[AmplifyWebhookConfig](),
 	)
 }

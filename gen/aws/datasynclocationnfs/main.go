@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfs",
-		reflect.TypeOf((*DatasyncLocationNfs)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationNfs](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationNfs{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig",
-		reflect.TypeOf((*DatasyncLocationNfsConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationNfsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions",
-		reflect.TypeOf((*DatasyncLocationNfsMountOptions)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationNfsMountOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
-		reflect.TypeOf((*DatasyncLocationNfsMountOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationNfsMountOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig",
-		reflect.TypeOf((*DatasyncLocationNfsOnPremConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationNfsOnPremConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
-		reflect.TypeOf((*DatasyncLocationNfsOnPremConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasyncLocationNfsOnPremConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentArns", GoGetter: "AgentArns"},
 			_jsii_.MemberProperty{JsiiProperty: "agentArnsInput", GoGetter: "AgentArnsInput"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasyncLocationNfsOnPremConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

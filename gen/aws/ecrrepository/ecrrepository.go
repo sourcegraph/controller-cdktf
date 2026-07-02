@@ -16,24 +16,24 @@ type EcrRepository interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EncryptionConfiguration() EcrRepositoryEncryptionConfigurationList
-	EncryptionConfigurationInput() interface{}
-	ForceDelete() interface{}
-	SetForceDelete(val interface{})
-	ForceDeleteInput() interface{}
+	EncryptionConfigurationInput() any
+	ForceDelete() any
+	SetForceDelete(val any)
+	ForceDeleteInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -64,11 +64,11 @@ type EcrRepository interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistryId() *string
 	RepositoryUrl() *string
 	Tags() *map[string]*string
@@ -80,18 +80,18 @@ type EcrRepository interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EcrRepositoryTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type EcrRepository interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,14 +121,14 @@ type EcrRepository interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEncryptionConfiguration(value interface{})
+	PutEncryptionConfiguration(value any)
 	PutImageScanningConfiguration(value *EcrRepositoryImageScanningConfiguration)
 	PutTimeouts(value *EcrRepositoryTimeouts)
 	ResetEncryptionConfiguration()
@@ -142,17 +142,17 @@ type EcrRepository interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EcrRepository
@@ -180,8 +180,8 @@ func (j *jsiiProxy_EcrRepository) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_EcrRepository) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcrRepository) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_EcrRepository) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_EcrRepository) EncryptionConfiguration() EcrRepositoryEncrypt
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) EncryptionConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) EncryptionConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptionConfigurationInput",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_EcrRepository) EncryptionConfigurationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) ForceDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) ForceDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDelete",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_EcrRepository) ForceDelete() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) ForceDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) ForceDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDeleteInput",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_EcrRepository) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EcrRepository) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_EcrRepository) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_EcrRepository) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcrRepository) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_EcrRepository) Timeouts() EcrRepositoryTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepository) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrRepository) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -529,7 +529,6 @@ func (j *jsiiProxy_EcrRepository) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
 func NewEcrRepository(scope constructs.Construct, id *string, config *EcrRepositoryConfig) EcrRepository {
@@ -542,7 +541,7 @@ func NewEcrRepository(scope constructs.Construct, id *string, config *EcrReposit
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewEcrRepository_Override(e EcrRepository, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetConnection(val interface{}) {
+func (j *jsiiProxy_EcrRepository) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_EcrRepository)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetCount(val interface{}) {
+func (j *jsiiProxy_EcrRepository) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_EcrRepository)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcrRepository) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_EcrRepository)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetForceDelete(val interface{}) {
+func (j *jsiiProxy_EcrRepository) SetForceDelete(val any) {
 	if err := j.validateSetForceDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_EcrRepository)SetForceDelete(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcrRepository) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_EcrRepository)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetId(val *string) {
+func (j *jsiiProxy_EcrRepository) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_EcrRepository)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetImageTagMutability(val *string) {
+func (j *jsiiProxy_EcrRepository) SetImageTagMutability(val *string) {
 	if err := j.validateSetImageTagMutabilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_EcrRepository)SetImageTagMutability(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcrRepository) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_EcrRepository)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetName(val *string) {
+func (j *jsiiProxy_EcrRepository) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_EcrRepository)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcrRepository) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_EcrRepository)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcrRepository) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_EcrRepository)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EcrRepository) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_EcrRepository)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcrRepository)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EcrRepository) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func EcrRepository_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func EcrRepository_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EcrRepository_IsConstruct(x interface{}) *bool {
+func EcrRepository_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrRepository_IsConstructParameters(x); err != nil {
@@ -741,7 +740,7 @@ func EcrRepository_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func EcrRepository_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EcrRepository_IsTerraformElement(x interface{}) *bool {
+func EcrRepository_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrRepository_IsTerraformElementParameters(x); err != nil {
@@ -760,7 +759,7 @@ func EcrRepository_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func EcrRepository_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EcrRepository_IsTerraformResource(x interface{}) *bool {
+func EcrRepository_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrRepository_IsTerraformResourceParameters(x); err != nil {
@@ -779,7 +778,7 @@ func EcrRepository_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrRepository.EcrRepository",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -804,31 +803,31 @@ func (e *jsiiProxy_EcrRepository) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EcrRepository) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EcrRepository) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EcrRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcrRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (e *jsiiProxy_EcrRepository) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (e *jsiiProxy_EcrRepository) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (e *jsiiProxy_EcrRepository) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (e *jsiiProxy_EcrRepository) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (e *jsiiProxy_EcrRepository) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (e *jsiiProxy_EcrRepository) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (e *jsiiProxy_EcrRepository) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,15 +955,15 @@ func (e *jsiiProxy_EcrRepository) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepository) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrRepository) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -983,7 +982,7 @@ func (e *jsiiProxy_EcrRepository) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -996,7 +995,7 @@ func (e *jsiiProxy_EcrRepository) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,18 +1009,18 @@ func (e *jsiiProxy_EcrRepository) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EcrRepository) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EcrRepository) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (e *jsiiProxy_EcrRepository) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1043,18 +1042,18 @@ func (e *jsiiProxy_EcrRepository) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_EcrRepository) PutEncryptionConfiguration(value interface{}) {
+func (e *jsiiProxy_EcrRepository) PutEncryptionConfiguration(value any) {
 	if err := e.validatePutEncryptionConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putEncryptionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (e *jsiiProxy_EcrRepository) PutImageScanningConfiguration(value *EcrReposi
 	_jsii_.InvokeVoid(
 		e,
 		"putImageScanningConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (e *jsiiProxy_EcrRepository) PutTimeouts(value *EcrRepositoryTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,8 +1151,8 @@ func (e *jsiiProxy_EcrRepository) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EcrRepository) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcrRepository) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1165,8 +1164,8 @@ func (e *jsiiProxy_EcrRepository) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepository) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcrRepository) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1178,8 +1177,8 @@ func (e *jsiiProxy_EcrRepository) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepository) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrRepository) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1191,8 +1190,8 @@ func (e *jsiiProxy_EcrRepository) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepository) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrRepository) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1217,8 +1216,8 @@ func (e *jsiiProxy_EcrRepository) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepository) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrRepository) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1229,4 +1228,3 @@ func (e *jsiiProxy_EcrRepository) ToTerraform() interface{} {
 
 	return returns
 }
-

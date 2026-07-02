@@ -15,17 +15,17 @@ type DataAwsPricingProduct interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filters() DataAwsPricingProductFiltersList
-	FiltersInput() interface{}
+	FiltersInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,7 +48,7 @@ type DataAwsPricingProduct interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() *string
 	ServiceCode() *string
 	SetServiceCode(val *string)
@@ -56,13 +56,13 @@ type DataAwsPricingProduct interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,23 +84,23 @@ type DataAwsPricingProduct interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilters(value interface{})
+	PutFilters(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsPricingProduct
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataAwsPricingProduct) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPricingProduct) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAwsPricingProduct) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPricingProduct) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataAwsPricingProduct) Filters() DataAwsPricingProductFilters
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct) FiltersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPricingProduct) FiltersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filtersInput",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataAwsPricingProduct) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPricingProduct) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_DataAwsPricingProduct) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPricingProduct) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -318,7 +318,6 @@ func (j *jsiiProxy_DataAwsPricingProduct) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/pricing_product aws_pricing_product} Data Source.
 func NewDataAwsPricingProduct(scope constructs.Construct, id *string, config *DataAwsPricingProductConfig) DataAwsPricingProduct {
 	_init_.Initialize()
@@ -330,7 +329,7 @@ func NewDataAwsPricingProduct(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -343,12 +342,12 @@ func NewDataAwsPricingProduct_Override(d DataAwsPricingProduct, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DataAwsPricingProduct)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -367,7 +366,7 @@ func (j *jsiiProxy_DataAwsPricingProduct)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataAwsPricingProduct)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetId(val *string) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataAwsPricingProduct)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataAwsPricingProduct)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataAwsPricingProduct)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DataAwsPricingProduct)SetServiceCode(val *string) {
+func (j *jsiiProxy_DataAwsPricingProduct) SetServiceCode(val *string) {
 	if err := j.validateSetServiceCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func DataAwsPricingProduct_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func DataAwsPricingProduct_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsPricingProduct_IsConstruct(x interface{}) *bool {
+func DataAwsPricingProduct_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPricingProduct_IsConstructParameters(x); err != nil {
@@ -463,7 +462,7 @@ func DataAwsPricingProduct_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func DataAwsPricingProduct_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPricingProduct_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsPricingProduct_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPricingProduct_IsTerraformDataSourceParameters(x); err != nil {
@@ -482,7 +481,7 @@ func DataAwsPricingProduct_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func DataAwsPricingProduct_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPricingProduct_IsTerraformElement(x interface{}) *bool {
+func DataAwsPricingProduct_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPricingProduct_IsTerraformElementParameters(x); err != nil {
@@ -501,7 +500,7 @@ func DataAwsPricingProduct_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,27 +518,27 @@ func DataAwsPricingProduct_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsPricingProduct) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsPricingProduct) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataAwsPricingProduct) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,18 +696,18 @@ func (d *jsiiProxy_DataAwsPricingProduct) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) PutFilters(value interface{}) {
+func (d *jsiiProxy_DataAwsPricingProduct) PutFilters(value any) {
 	if err := d.validatePutFiltersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -728,8 +727,8 @@ func (d *jsiiProxy_DataAwsPricingProduct) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPricingProduct) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -741,8 +740,8 @@ func (d *jsiiProxy_DataAwsPricingProduct) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPricingProduct) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -754,8 +753,8 @@ func (d *jsiiProxy_DataAwsPricingProduct) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPricingProduct) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -767,8 +766,8 @@ func (d *jsiiProxy_DataAwsPricingProduct) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPricingProduct) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataAwsPricingProduct) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPricingProduct) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPricingProduct) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -805,4 +804,3 @@ func (d *jsiiProxy_DataAwsPricingProduct) ToTerraform() interface{} {
 
 	return returns
 }
-

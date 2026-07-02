@@ -25,15 +25,15 @@ type DxGatewayAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,19 +68,19 @@ type DxGatewayAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DxGatewayAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpnGatewayId() *string
 	SetVpnGatewayId(val *string)
 	VpnGatewayIdInput() *string
@@ -88,9 +88,9 @@ type DxGatewayAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type DxGatewayAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type DxGatewayAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type DxGatewayAssociation interface {
 	ResetProposalId()
 	ResetTimeouts()
 	ResetVpnGatewayId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DxGatewayAssociation
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DxGatewayAssociation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxGatewayAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DxGatewayAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DxGatewayAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DxGatewayAssociation) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxGatewayAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_DxGatewayAssociation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DxGatewayAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_DxGatewayAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxGatewayAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_DxGatewayAssociation) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DxGatewayAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_DxGatewayAssociation) Timeouts() DxGatewayAssociationTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DxGatewayAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_DxGatewayAssociation) VpnGatewayIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) DxGatewayAssociation {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxG
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewDxGatewayAssociation_Override(d DxGatewayAssociation, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetAllowedPrefixes(val *[]*string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetAllowedPrefixes(val *[]*string) {
 	if err := j.validateSetAllowedPrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetAllowedPrefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetAssociatedGatewayId(val *string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetAssociatedGatewayId(val *string) {
 	if err := j.validateSetAssociatedGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetAssociatedGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetAssociatedGatewayOwnerAccountId(val *string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetAssociatedGatewayOwnerAccountId(val *string) {
 	if err := j.validateSetAssociatedGatewayOwnerAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetAssociatedGatewayOwnerAccountId(val *
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_DxGatewayAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_DxGatewayAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetDxGatewayId(val *string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetDxGatewayId(val *string) {
 	if err := j.validateSetDxGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetDxGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DxGatewayAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetId(val *string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DxGatewayAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetProposalId(val *string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetProposalId(val *string) {
 	if err := j.validateSetProposalIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetProposalId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DxGatewayAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -659,7 +658,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DxGatewayAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_DxGatewayAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetVpnGatewayId(val *string) {
+func (j *jsiiProxy_DxGatewayAssociation) SetVpnGatewayId(val *string) {
 	if err := j.validateSetVpnGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func DxGatewayAssociation_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func DxGatewayAssociation_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DxGatewayAssociation_IsConstruct(x interface{}) *bool {
+func DxGatewayAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxGatewayAssociation_IsConstructParameters(x); err != nil {
@@ -728,7 +727,7 @@ func DxGatewayAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func DxGatewayAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DxGatewayAssociation_IsTerraformElement(x interface{}) *bool {
+func DxGatewayAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxGatewayAssociation_IsTerraformElementParameters(x); err != nil {
@@ -747,7 +746,7 @@ func DxGatewayAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func DxGatewayAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DxGatewayAssociation_IsTerraformResource(x interface{}) *bool {
+func DxGatewayAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDxGatewayAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -766,7 +765,7 @@ func DxGatewayAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,31 +790,31 @@ func (d *jsiiProxy_DxGatewayAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DxGatewayAssociation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DxGatewayAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (d *jsiiProxy_DxGatewayAssociation) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,15 +942,15 @@ func (d *jsiiProxy_DxGatewayAssociation) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxGatewayAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -970,7 +969,7 @@ func (d *jsiiProxy_DxGatewayAssociation) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -983,7 +982,7 @@ func (d *jsiiProxy_DxGatewayAssociation) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,18 +996,18 @@ func (d *jsiiProxy_DxGatewayAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DxGatewayAssociation) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (d *jsiiProxy_DxGatewayAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (d *jsiiProxy_DxGatewayAssociation) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (d *jsiiProxy_DxGatewayAssociation) PutTimeouts(value *DxGatewayAssociation
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1109,8 +1108,8 @@ func (d *jsiiProxy_DxGatewayAssociation) ResetVpnGatewayId() {
 	)
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DxGatewayAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1122,8 +1121,8 @@ func (d *jsiiProxy_DxGatewayAssociation) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DxGatewayAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1135,8 +1134,8 @@ func (d *jsiiProxy_DxGatewayAssociation) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxGatewayAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1148,8 +1147,8 @@ func (d *jsiiProxy_DxGatewayAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxGatewayAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1174,8 +1173,8 @@ func (d *jsiiProxy_DxGatewayAssociation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DxGatewayAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1186,4 +1185,3 @@ func (d *jsiiProxy_DxGatewayAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

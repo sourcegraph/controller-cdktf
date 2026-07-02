@@ -106,7 +106,7 @@ func (j *jsiiProxy_BatchJobDefinitionTimeoutOutputReference) validateSetAttemptD
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinitionTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinitionTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBatchJobDefinitionTimeoutOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DataAwsRdsOrderableDbInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataAwsRdsOrderableDbInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#engine DataAwsRdsOrderableDbInstance#engine}.
 	Engine *string `field:"required" json:"engine" yaml:"engine"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#availability_zone_group DataAwsRdsOrderableDbInstance#availability_zone_group}.
@@ -41,22 +41,21 @@ type DataAwsRdsOrderableDbInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#storage_type DataAwsRdsOrderableDbInstance#storage_type}.
 	StorageType *string `field:"optional" json:"storageType" yaml:"storageType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_enhanced_monitoring DataAwsRdsOrderableDbInstance#supports_enhanced_monitoring}.
-	SupportsEnhancedMonitoring interface{} `field:"optional" json:"supportsEnhancedMonitoring" yaml:"supportsEnhancedMonitoring"`
+	SupportsEnhancedMonitoring any `field:"optional" json:"supportsEnhancedMonitoring" yaml:"supportsEnhancedMonitoring"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_global_databases DataAwsRdsOrderableDbInstance#supports_global_databases}.
-	SupportsGlobalDatabases interface{} `field:"optional" json:"supportsGlobalDatabases" yaml:"supportsGlobalDatabases"`
+	SupportsGlobalDatabases any `field:"optional" json:"supportsGlobalDatabases" yaml:"supportsGlobalDatabases"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_iam_database_authentication DataAwsRdsOrderableDbInstance#supports_iam_database_authentication}.
-	SupportsIamDatabaseAuthentication interface{} `field:"optional" json:"supportsIamDatabaseAuthentication" yaml:"supportsIamDatabaseAuthentication"`
+	SupportsIamDatabaseAuthentication any `field:"optional" json:"supportsIamDatabaseAuthentication" yaml:"supportsIamDatabaseAuthentication"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_iops DataAwsRdsOrderableDbInstance#supports_iops}.
-	SupportsIops interface{} `field:"optional" json:"supportsIops" yaml:"supportsIops"`
+	SupportsIops any `field:"optional" json:"supportsIops" yaml:"supportsIops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_kerberos_authentication DataAwsRdsOrderableDbInstance#supports_kerberos_authentication}.
-	SupportsKerberosAuthentication interface{} `field:"optional" json:"supportsKerberosAuthentication" yaml:"supportsKerberosAuthentication"`
+	SupportsKerberosAuthentication any `field:"optional" json:"supportsKerberosAuthentication" yaml:"supportsKerberosAuthentication"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_performance_insights DataAwsRdsOrderableDbInstance#supports_performance_insights}.
-	SupportsPerformanceInsights interface{} `field:"optional" json:"supportsPerformanceInsights" yaml:"supportsPerformanceInsights"`
+	SupportsPerformanceInsights any `field:"optional" json:"supportsPerformanceInsights" yaml:"supportsPerformanceInsights"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_storage_autoscaling DataAwsRdsOrderableDbInstance#supports_storage_autoscaling}.
-	SupportsStorageAutoscaling interface{} `field:"optional" json:"supportsStorageAutoscaling" yaml:"supportsStorageAutoscaling"`
+	SupportsStorageAutoscaling any `field:"optional" json:"supportsStorageAutoscaling" yaml:"supportsStorageAutoscaling"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#supports_storage_encryption DataAwsRdsOrderableDbInstance#supports_storage_encryption}.
-	SupportsStorageEncryption interface{} `field:"optional" json:"supportsStorageEncryption" yaml:"supportsStorageEncryption"`
+	SupportsStorageEncryption any `field:"optional" json:"supportsStorageEncryption" yaml:"supportsStorageEncryption"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/rds_orderable_db_instance#vpc DataAwsRdsOrderableDbInstance#vpc}.
-	Vpc interface{} `field:"optional" json:"vpc" yaml:"vpc"`
+	Vpc any `field:"optional" json:"vpc" yaml:"vpc"`
 }
-

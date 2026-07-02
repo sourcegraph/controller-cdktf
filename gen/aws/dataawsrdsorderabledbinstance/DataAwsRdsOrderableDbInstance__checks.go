@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsRdsOrderableDbInstance_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateDataAwsRdsOrderableDbInstance_IsConstructParameters(x interface{}) error {
+func validateDataAwsRdsOrderableDbInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsRdsOrderableDbInstance_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateDataAwsRdsOrderableDbInstance_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRdsOrderableDbInstance_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsRdsOrderableDbInstance_IsTerraformDataSourceParameters(x int
 	return nil
 }
 
-func validateDataAwsRdsOrderableDbInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRdsOrderableDbInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetAvailabilityZoneGro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetStorageTypeParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsEnhancedMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsEnhancedMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsEnhancedMon
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsGlobalDatabasesParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsGlobalDatabasesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsGlobalDatab
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIamDatabaseAuthenticationParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIamDatabaseAuthenticationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIamDatabase
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIopsParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIopsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIopsParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsKerberosAuthenticationParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsKerberosAuthenticationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsKerberosAut
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsPerformanceInsightsParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsPerformanceInsightsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsPerformance
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsStorageAutoscalingParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsStorageAutoscalingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -428,7 +428,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsStorageAuto
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsStorageEncryptionParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsStorageEncryptionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsStorageEncr
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetVpcParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetVpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -486,4 +486,3 @@ func validateNewDataAwsRdsOrderableDbInstanceParameters(scope constructs.Constru
 
 	return nil
 }
-

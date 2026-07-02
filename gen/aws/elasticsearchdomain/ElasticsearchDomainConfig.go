@@ -6,9 +6,9 @@ import (
 
 type ElasticsearchDomainConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ElasticsearchDomainConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#domain_name ElasticsearchDomain#domain_name}.
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#access_policies ElasticsearchDomain#access_policies}.
@@ -63,7 +63,7 @@ type ElasticsearchDomainConfig struct {
 	// log_publishing_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#log_publishing_options ElasticsearchDomain#log_publishing_options}
-	LogPublishingOptions interface{} `field:"optional" json:"logPublishingOptions" yaml:"logPublishingOptions"`
+	LogPublishingOptions any `field:"optional" json:"logPublishingOptions" yaml:"logPublishingOptions"`
 	// node_to_node_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#node_to_node_encryption ElasticsearchDomain#node_to_node_encryption}
@@ -85,4 +85,3 @@ type ElasticsearchDomainConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#vpc_options ElasticsearchDomain#vpc_options}
 	VpcOptions *ElasticsearchDomainVpcOptions `field:"optional" json:"vpcOptions" yaml:"vpcOptions"`
 }
-

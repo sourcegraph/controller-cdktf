@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
-		reflect.TypeOf((*EvidentlyLaunch)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunch](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunch{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig",
-		reflect.TypeOf((*EvidentlyLaunchConfig)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecution",
-		reflect.TypeOf((*EvidentlyLaunchExecution)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
-		reflect.TypeOf((*EvidentlyLaunchExecutionList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups",
-		reflect.TypeOf((*EvidentlyLaunchGroups)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
-		reflect.TypeOf((*EvidentlyLaunchGroupsList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,7 +191,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variation", GoGetter: "Variation"},
 			_jsii_.MemberProperty{JsiiProperty: "variationInput", GoGetter: "VariationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitors",
-		reflect.TypeOf((*EvidentlyLaunchMetricMonitors)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchMetricMonitors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
-		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchMetricMonitorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchMetricMonitorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -258,11 +258,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition",
-		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsMetricDefinition)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchMetricMonitorsMetricDefinition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueKey", GoGetter: "ValueKey"},
 			_jsii_.MemberProperty{JsiiProperty: "valueKeyInput", GoGetter: "ValueKeyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,7 +306,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchMetricMonitorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -341,11 +341,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfig)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -380,11 +380,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigSteps)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigSteps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -406,7 +406,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -446,11 +446,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -464,7 +464,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -472,7 +472,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -502,7 +502,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weights", GoGetter: "Weights"},
 			_jsii_.MemberProperty{JsiiProperty: "weightsInput", GoGetter: "WeightsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -510,11 +510,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts",
-		reflect.TypeOf((*EvidentlyLaunchTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
-		reflect.TypeOf((*EvidentlyLaunchTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyLaunchTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -547,7 +547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyLaunchTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

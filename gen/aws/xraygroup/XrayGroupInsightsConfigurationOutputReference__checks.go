@@ -98,7 +98,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetInsightsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetInsightsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetInt
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetNotificationsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetNotificationsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewXrayGroupInsightsConfigurationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

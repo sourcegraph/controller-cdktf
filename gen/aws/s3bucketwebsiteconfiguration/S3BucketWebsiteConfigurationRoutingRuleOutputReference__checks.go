@@ -120,7 +120,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewS3BucketWebsiteConfigurationRoutingRuleOutputReferenceParameters
 
 	return nil
 }
-

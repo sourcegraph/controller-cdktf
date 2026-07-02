@@ -19,7 +19,7 @@ func (a *jsiiProxy_AutoscalingGroup) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AutoscalingGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AutoscalingGroup) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AutoscalingGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AutoscalingGroup) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroup) validatePutInitialLifecycleHookParameters(value interface{}) error {
+func (a *jsiiProxy_AutoscalingGroup) validatePutInitialLifecycleHookParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (a *jsiiProxy_AutoscalingGroup) validatePutMixedInstancesPolicyParameters(v
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroup) validatePutTagParameters(value interface{}) error {
+func (a *jsiiProxy_AutoscalingGroup) validatePutTagParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -337,7 +337,7 @@ func validateAutoscalingGroup_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateAutoscalingGroup_IsConstructParameters(x interface{}) error {
+func validateAutoscalingGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func validateAutoscalingGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAutoscalingGroup_IsTerraformElementParameters(x interface{}) error {
+func validateAutoscalingGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func validateAutoscalingGroup_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateAutoscalingGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateAutoscalingGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetAvailabilityZonesParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetCapacityRebalanceParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetCapacityRebalanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -389,7 +389,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetCapacityRebalanceParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -430,7 +430,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetContextParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -527,7 +527,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetEnabledMetricsParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -547,7 +547,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetForceDeleteParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetForceDeleteWarmPoolParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetForceDeleteWarmPoolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -679,7 +679,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetPlacementGroupParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetProtectFromScaleInParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetProtectFromScaleInParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -699,7 +699,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetProtectFromScaleInParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -761,7 +761,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetSuspendedProcessesParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetTagsParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -839,4 +839,3 @@ func validateNewAutoscalingGroupParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

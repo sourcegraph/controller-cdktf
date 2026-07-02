@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_association aws_ssm_association}.
 type SsmAssociation interface {
 	cdktf.TerraformResource
-	ApplyOnlyAtCronInterval() interface{}
-	SetApplyOnlyAtCronInterval(val interface{})
-	ApplyOnlyAtCronIntervalInput() interface{}
+	ApplyOnlyAtCronInterval() any
+	SetApplyOnlyAtCronInterval(val any)
+	ApplyOnlyAtCronIntervalInput() any
 	Arn() *string
 	AssociationId() *string
 	AssociationName() *string
@@ -29,15 +29,15 @@ type SsmAssociation interface {
 	SetComplianceSeverity(val *string)
 	ComplianceSeverityInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -84,20 +84,20 @@ type SsmAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScheduleExpression() *string
 	SetScheduleExpression(val *string)
 	ScheduleExpressionInput() *string
 	Targets() SsmAssociationTargetsList
-	TargetsInput() interface{}
+	TargetsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WaitForSuccessTimeoutSeconds() *float64
@@ -107,9 +107,9 @@ type SsmAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type SsmAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type SsmAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,7 +147,7 @@ type SsmAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOutputLocation(value *SsmAssociationOutputLocation)
-	PutTargets(value interface{})
+	PutTargets(value any)
 	ResetApplyOnlyAtCronInterval()
 	ResetAssociationName()
 	ResetAutomationTargetParameterName()
@@ -165,17 +165,17 @@ type SsmAssociation interface {
 	ResetScheduleExpression()
 	ResetTargets()
 	ResetWaitForSuccessTimeoutSeconds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SsmAssociation
@@ -183,8 +183,8 @@ type jsiiProxy_SsmAssociation struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_SsmAssociation) ApplyOnlyAtCronInterval() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmAssociation) ApplyOnlyAtCronInterval() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyOnlyAtCronInterval",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_SsmAssociation) ApplyOnlyAtCronInterval() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) ApplyOnlyAtCronIntervalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmAssociation) ApplyOnlyAtCronIntervalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyOnlyAtCronIntervalInput",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_SsmAssociation) ComplianceSeverityInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_SsmAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_SsmAssociation) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -553,8 +553,8 @@ func (j *jsiiProxy_SsmAssociation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SsmAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_SsmAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_SsmAssociation) Targets() SsmAssociationTargetsList {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) TargetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmAssociation) TargetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetsInput",
@@ -623,8 +623,8 @@ func (j *jsiiProxy_SsmAssociation) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -663,7 +663,6 @@ func (j *jsiiProxy_SsmAssociation) WaitForSuccessTimeoutSecondsInput() *float64 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssociationConfig) SsmAssociation {
 	_init_.Initialize()
@@ -675,7 +674,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -688,12 +687,12 @@ func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetApplyOnlyAtCronInterval(val interface{}) {
+func (j *jsiiProxy_SsmAssociation) SetApplyOnlyAtCronInterval(val any) {
 	if err := j.validateSetApplyOnlyAtCronIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_SsmAssociation)SetApplyOnlyAtCronInterval(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetAssociationName(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetAssociationName(val *string) {
 	if err := j.validateSetAssociationNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_SsmAssociation)SetAssociationName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetAutomationTargetParameterName(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetAutomationTargetParameterName(val *string) {
 	if err := j.validateSetAutomationTargetParameterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_SsmAssociation)SetAutomationTargetParameterName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetComplianceSeverity(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetComplianceSeverity(val *string) {
 	if err := j.validateSetComplianceSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_SsmAssociation)SetComplianceSeverity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_SsmAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_SsmAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_SsmAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_SsmAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SsmAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -767,7 +766,7 @@ func (j *jsiiProxy_SsmAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetDocumentVersion(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetDocumentVersion(val *string) {
 	if err := j.validateSetDocumentVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_SsmAssociation)SetDocumentVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsmAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -786,7 +785,7 @@ func (j *jsiiProxy_SsmAssociation)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetId(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_SsmAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetInstanceId(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_SsmAssociation)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsmAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_SsmAssociation)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetMaxConcurrency(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetMaxConcurrency(val *string) {
 	if err := j.validateSetMaxConcurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_SsmAssociation)SetMaxConcurrency(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetMaxErrors(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetMaxErrors(val *string) {
 	if err := j.validateSetMaxErrorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_SsmAssociation)SetMaxErrors(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetName(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_SsmAssociation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetParameters(val *map[string]*string) {
+func (j *jsiiProxy_SsmAssociation) SetParameters(val *map[string]*string) {
 	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_SsmAssociation)SetParameters(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsmAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -871,7 +870,7 @@ func (j *jsiiProxy_SsmAssociation)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SsmAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_SsmAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetScheduleExpression(val *string) {
+func (j *jsiiProxy_SsmAssociation) SetScheduleExpression(val *string) {
 	if err := j.validateSetScheduleExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_SsmAssociation)SetScheduleExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetWaitForSuccessTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_SsmAssociation) SetWaitForSuccessTimeoutSeconds(val *float64) {
 	if err := j.validateSetWaitForSuccessTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -916,7 +915,7 @@ func SsmAssociation_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func SsmAssociation_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SsmAssociation_IsConstruct(x interface{}) *bool {
+func SsmAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmAssociation_IsConstructParameters(x); err != nil {
@@ -951,7 +950,7 @@ func SsmAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func SsmAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmAssociation_IsTerraformElement(x interface{}) *bool {
+func SsmAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmAssociation_IsTerraformElementParameters(x); err != nil {
@@ -970,7 +969,7 @@ func SsmAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func SsmAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmAssociation_IsTerraformResource(x interface{}) *bool {
+func SsmAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -989,7 +988,7 @@ func SsmAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1014,31 +1013,31 @@ func (s *jsiiProxy_SsmAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SsmAssociation) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SsmAssociation) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SsmAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsmAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (s *jsiiProxy_SsmAssociation) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func (s *jsiiProxy_SsmAssociation) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (s *jsiiProxy_SsmAssociation) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (s *jsiiProxy_SsmAssociation) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (s *jsiiProxy_SsmAssociation) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (s *jsiiProxy_SsmAssociation) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func (s *jsiiProxy_SsmAssociation) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,15 +1165,15 @@ func (s *jsiiProxy_SsmAssociation) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsmAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1193,7 +1192,7 @@ func (s *jsiiProxy_SsmAssociation) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (s *jsiiProxy_SsmAssociation) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1220,18 +1219,18 @@ func (s *jsiiProxy_SsmAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SsmAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SsmAssociation) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1242,7 +1241,7 @@ func (s *jsiiProxy_SsmAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1253,7 +1252,7 @@ func (s *jsiiProxy_SsmAssociation) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1264,18 +1263,18 @@ func (s *jsiiProxy_SsmAssociation) PutOutputLocation(value *SsmAssociationOutput
 	_jsii_.InvokeVoid(
 		s,
 		"putOutputLocation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SsmAssociation) PutTargets(value interface{}) {
+func (s *jsiiProxy_SsmAssociation) PutTargets(value any) {
 	if err := s.validatePutTargetsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTargets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1399,8 +1398,8 @@ func (s *jsiiProxy_SsmAssociation) ResetWaitForSuccessTimeoutSeconds() {
 	)
 }
 
-func (s *jsiiProxy_SsmAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1412,8 +1411,8 @@ func (s *jsiiProxy_SsmAssociation) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_SsmAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1425,8 +1424,8 @@ func (s *jsiiProxy_SsmAssociation) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_SsmAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1438,8 +1437,8 @@ func (s *jsiiProxy_SsmAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsmAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1464,8 +1463,8 @@ func (s *jsiiProxy_SsmAssociation) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SsmAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1476,4 +1475,3 @@ func (s *jsiiProxy_SsmAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

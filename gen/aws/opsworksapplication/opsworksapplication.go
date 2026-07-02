@@ -13,7 +13,7 @@ import (
 type OpsworksApplication interface {
 	cdktf.TerraformResource
 	AppSource() OpsworksApplicationAppSourceList
-	AppSourceInput() interface{}
+	AppSourceInput() any
 	AutoBundleOnDeploy() *string
 	SetAutoBundleOnDeploy(val *string)
 	AutoBundleOnDeployInput() *string
@@ -23,15 +23,15 @@ type OpsworksApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataSourceArn() *string
 	SetDataSourceArn(val *string)
 	DataSourceArnInput() *string
@@ -54,11 +54,11 @@ type OpsworksApplication interface {
 	Domains() *[]*string
 	SetDomains(val *[]*string)
 	DomainsInput() *[]*string
-	EnableSsl() interface{}
-	SetEnableSsl(val interface{})
-	EnableSslInput() interface{}
+	EnableSsl() any
+	SetEnableSsl(val any)
+	EnableSslInput() any
 	Environment() OpsworksApplicationEnvironmentList
-	EnvironmentInput() interface{}
+	EnvironmentInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -84,26 +84,26 @@ type OpsworksApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RailsEnv() *string
 	SetRailsEnv(val *string)
 	RailsEnvInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ShortName() *string
 	SetShortName(val *string)
 	ShortNameInput() *string
 	SslConfiguration() OpsworksApplicationSslConfigurationList
-	SslConfigurationInput() interface{}
+	SslConfigurationInput() any
 	StackId() *string
 	SetStackId(val *string)
 	StackIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -113,9 +113,9 @@ type OpsworksApplication interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -133,7 +133,7 @@ type OpsworksApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -145,16 +145,16 @@ type OpsworksApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAppSource(value interface{})
-	PutEnvironment(value interface{})
-	PutSslConfiguration(value interface{})
+	PutAppSource(value any)
+	PutEnvironment(value any)
+	PutSslConfiguration(value any)
 	ResetAppSource()
 	ResetAutoBundleOnDeploy()
 	ResetAwsFlowRubySettings()
@@ -173,17 +173,17 @@ type OpsworksApplication interface {
 	ResetRailsEnv()
 	ResetShortName()
 	ResetSslConfiguration()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksApplication
@@ -201,8 +201,8 @@ func (j *jsiiProxy_OpsworksApplication) AppSource() OpsworksApplicationAppSource
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) AppSourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) AppSourceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"appSourceInput",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_OpsworksApplication) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_OpsworksApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_OpsworksApplication) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_OpsworksApplication) DomainsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) EnableSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) EnableSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSsl",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_OpsworksApplication) EnableSsl() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) EnableSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) EnableSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSslInput",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_OpsworksApplication) Environment() OpsworksApplicationEnviron
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) EnvironmentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) EnvironmentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"environmentInput",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_OpsworksApplication) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_OpsworksApplication) RailsEnvInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -631,8 +631,8 @@ func (j *jsiiProxy_OpsworksApplication) SslConfiguration() OpsworksApplicationSs
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) SslConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksApplication) SslConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sslConfigurationInput",
@@ -671,8 +671,8 @@ func (j *jsiiProxy_OpsworksApplication) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -711,7 +711,6 @@ func (j *jsiiProxy_OpsworksApplication) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_application aws_opsworks_application} Resource.
 func NewOpsworksApplication(scope constructs.Construct, id *string, config *OpsworksApplicationConfig) OpsworksApplication {
 	_init_.Initialize()
@@ -723,7 +722,7 @@ func NewOpsworksApplication(scope constructs.Construct, id *string, config *Opsw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -736,12 +735,12 @@ func NewOpsworksApplication_Override(o OpsworksApplication, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetAutoBundleOnDeploy(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetAutoBundleOnDeploy(val *string) {
 	if err := j.validateSetAutoBundleOnDeployParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_OpsworksApplication)SetAutoBundleOnDeploy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetAwsFlowRubySettings(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetAwsFlowRubySettings(val *string) {
 	if err := j.validateSetAwsFlowRubySettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_OpsworksApplication)SetAwsFlowRubySettings(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_OpsworksApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_OpsworksApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDataSourceArn(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetDataSourceArn(val *string) {
 	if err := j.validateSetDataSourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDataSourceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDataSourceDatabaseName(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetDataSourceDatabaseName(val *string) {
 	if err := j.validateSetDataSourceDatabaseNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDataSourceDatabaseName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDataSourceType(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetDataSourceType(val *string) {
 	if err := j.validateSetDataSourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDataSourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -826,7 +825,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDescription(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDocumentRoot(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetDocumentRoot(val *string) {
 	if err := j.validateSetDocumentRootParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDocumentRoot(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetDomains(val *[]*string) {
+func (j *jsiiProxy_OpsworksApplication) SetDomains(val *[]*string) {
 	if err := j.validateSetDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_OpsworksApplication)SetDomains(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetEnableSsl(val interface{}) {
+func (j *jsiiProxy_OpsworksApplication) SetEnableSsl(val any) {
 	if err := j.validateSetEnableSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +869,7 @@ func (j *jsiiProxy_OpsworksApplication)SetEnableSsl(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -878,7 +877,7 @@ func (j *jsiiProxy_OpsworksApplication)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetId(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -889,7 +888,7 @@ func (j *jsiiProxy_OpsworksApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -900,7 +899,7 @@ func (j *jsiiProxy_OpsworksApplication)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetName(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -911,7 +910,7 @@ func (j *jsiiProxy_OpsworksApplication)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -919,7 +918,7 @@ func (j *jsiiProxy_OpsworksApplication)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -930,7 +929,7 @@ func (j *jsiiProxy_OpsworksApplication)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetRailsEnv(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetRailsEnv(val *string) {
 	if err := j.validateSetRailsEnvParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +940,7 @@ func (j *jsiiProxy_OpsworksApplication)SetRailsEnv(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetShortName(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetShortName(val *string) {
 	if err := j.validateSetShortNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -952,7 +951,7 @@ func (j *jsiiProxy_OpsworksApplication)SetShortName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetStackId(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetStackId(val *string) {
 	if err := j.validateSetStackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +962,7 @@ func (j *jsiiProxy_OpsworksApplication)SetStackId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksApplication)SetType(val *string) {
+func (j *jsiiProxy_OpsworksApplication) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func OpsworksApplication_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func OpsworksApplication_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksApplication_IsConstruct(x interface{}) *bool {
+func OpsworksApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksApplication_IsConstructParameters(x); err != nil {
@@ -1021,7 +1020,7 @@ func OpsworksApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func OpsworksApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksApplication_IsTerraformElement(x interface{}) *bool {
+func OpsworksApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksApplication_IsTerraformElementParameters(x); err != nil {
@@ -1040,7 +1039,7 @@ func OpsworksApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func OpsworksApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksApplication_IsTerraformResource(x interface{}) *bool {
+func OpsworksApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksApplication_IsTerraformResourceParameters(x); err != nil {
@@ -1059,7 +1058,7 @@ func OpsworksApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1084,31 +1083,31 @@ func (o *jsiiProxy_OpsworksApplication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksApplication) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,7 +1123,7 @@ func (o *jsiiProxy_OpsworksApplication) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,7 +1139,7 @@ func (o *jsiiProxy_OpsworksApplication) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1156,7 +1155,7 @@ func (o *jsiiProxy_OpsworksApplication) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1172,7 +1171,7 @@ func (o *jsiiProxy_OpsworksApplication) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1188,7 +1187,7 @@ func (o *jsiiProxy_OpsworksApplication) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1204,7 +1203,7 @@ func (o *jsiiProxy_OpsworksApplication) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1220,7 +1219,7 @@ func (o *jsiiProxy_OpsworksApplication) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1236,15 +1235,15 @@ func (o *jsiiProxy_OpsworksApplication) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1263,7 +1262,7 @@ func (o *jsiiProxy_OpsworksApplication) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1276,7 +1275,7 @@ func (o *jsiiProxy_OpsworksApplication) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1290,18 +1289,18 @@ func (o *jsiiProxy_OpsworksApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksApplication) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1312,7 +1311,7 @@ func (o *jsiiProxy_OpsworksApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1323,40 +1322,40 @@ func (o *jsiiProxy_OpsworksApplication) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) PutAppSource(value interface{}) {
+func (o *jsiiProxy_OpsworksApplication) PutAppSource(value any) {
 	if err := o.validatePutAppSourceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAppSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) PutEnvironment(value interface{}) {
+func (o *jsiiProxy_OpsworksApplication) PutEnvironment(value any) {
 	if err := o.validatePutEnvironmentParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putEnvironment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) PutSslConfiguration(value interface{}) {
+func (o *jsiiProxy_OpsworksApplication) PutSslConfiguration(value any) {
 	if err := o.validatePutSslConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putSslConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1488,8 +1487,8 @@ func (o *jsiiProxy_OpsworksApplication) ResetSslConfiguration() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1501,8 +1500,8 @@ func (o *jsiiProxy_OpsworksApplication) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1514,8 +1513,8 @@ func (o *jsiiProxy_OpsworksApplication) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1527,8 +1526,8 @@ func (o *jsiiProxy_OpsworksApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1553,8 +1552,8 @@ func (o *jsiiProxy_OpsworksApplication) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1565,4 +1564,3 @@ func (o *jsiiProxy_OpsworksApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

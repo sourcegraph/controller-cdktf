@@ -18,15 +18,15 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,11 +70,11 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedshiftConfiguration() KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference
 	RedshiftConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfiguration
 	S3Configuration() KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference
@@ -92,7 +92,7 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VersionId() *string
@@ -102,9 +102,9 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type KinesisFirehoseDeliveryStream interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -166,17 +166,17 @@ type KinesisFirehoseDeliveryStream interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetVersionId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KinesisFirehoseDeliveryStream
@@ -214,8 +214,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -624,8 +624,8 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -664,7 +664,6 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
@@ -676,7 +675,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -689,12 +688,12 @@ func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetArn(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetConnection(val interface{}) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetCount(val interface{}) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -735,7 +734,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetDestination(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetDestinationId(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetDestinationId(val *string) {
 	if err := j.validateSetDestinationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetDestinationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -765,7 +764,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetId(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetName(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -806,7 +805,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetTags(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetTagsAll(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetVersionId(val *string) {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SetVersionId(val *string) {
 	if err := j.validateSetVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func KinesisFirehoseDeliveryStream_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func KinesisFirehoseDeliveryStream_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool {
+func KinesisFirehoseDeliveryStream_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisFirehoseDeliveryStream_IsConstructParameters(x); err != nil {
@@ -897,7 +896,7 @@ func KinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func KinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool {
+func KinesisFirehoseDeliveryStream_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisFirehoseDeliveryStream_IsTerraformElementParameters(x); err != nil {
@@ -916,7 +915,7 @@ func KinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func KinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KinesisFirehoseDeliveryStream_IsTerraformResource(x interface{}) *bool {
+func KinesisFirehoseDeliveryStream_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKinesisFirehoseDeliveryStream_IsTerraformResourceParameters(x); err != nil {
@@ -935,7 +934,7 @@ func KinesisFirehoseDeliveryStream_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -960,31 +959,31 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,15 +1111,15 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1139,7 +1138,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,18 +1165,18 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1210,7 +1209,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutElasticsearchConfiguration(
 	_jsii_.InvokeVoid(
 		k,
 		"putElasticsearchConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1221,7 +1220,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutExtendedS3Configuration(val
 	_jsii_.InvokeVoid(
 		k,
 		"putExtendedS3Configuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1232,7 +1231,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutHttpEndpointConfiguration(v
 	_jsii_.InvokeVoid(
 		k,
 		"putHttpEndpointConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1243,7 +1242,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutKinesisSourceConfiguration(
 	_jsii_.InvokeVoid(
 		k,
 		"putKinesisSourceConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1254,7 +1253,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutRedshiftConfiguration(value
 	_jsii_.InvokeVoid(
 		k,
 		"putRedshiftConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1265,7 +1264,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutS3Configuration(value *Kine
 	_jsii_.InvokeVoid(
 		k,
 		"putS3Configuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1276,7 +1275,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutServerSideEncryption(value 
 	_jsii_.InvokeVoid(
 		k,
 		"putServerSideEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1287,7 +1286,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutSplunkConfiguration(value *
 	_jsii_.InvokeVoid(
 		k,
 		"putSplunkConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1411,8 +1410,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetVersionId() {
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1424,8 +1423,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1437,8 +1436,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1450,8 +1449,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1476,8 +1475,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1488,4 +1487,3 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ToTerraform() interface{} {
 
 	return returns
 }
-

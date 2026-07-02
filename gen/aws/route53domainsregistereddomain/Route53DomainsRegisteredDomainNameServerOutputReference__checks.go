@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRoute53DomainsRegisteredDomainNameServerOutputReferenceParameter
 
 	return nil
 }
-

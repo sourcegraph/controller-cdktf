@@ -114,7 +114,7 @@ func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnableAutoBuildParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnableAutoBuildParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnableBasicAuthParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnableBasicAuthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnablePerformanceModeParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnablePerformanceModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnablePullRequestPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetEnablePullRequestPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,4 +326,3 @@ func validateNewAmplifyAppAutoBranchCreationConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

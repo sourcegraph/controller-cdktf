@@ -12,9 +12,9 @@ type DmsEndpointElasticsearchSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type DmsEndpointElasticsearchSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type DmsEndpointElasticsearchSettingsOutputReference interface {
 	ResetFullLoadErrorPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewDmsEndpointElasticsearchSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointElasticsearchSettingsOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewDmsEndpointElasticsearchSettingsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewDmsEndpointElasticsearchSettingsOutputReference_Override(d DmsEndpointEl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetEndpointUri(val *string) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetEndpointUri(val *string) {
 	if err := j.validateSetEndpointUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetEndpointUr
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetErrorRetryDuration(val *float64) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetErrorRetryDuration(val *float64) {
 	if err := j.validateSetErrorRetryDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetErrorRetry
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetFullLoadErrorPercentage(val *float64) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetFullLoadErrorPercentage(val *float64) {
 	if err := j.validateSetFullLoadErrorPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetFullLoadEr
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetInternalValue(val *DmsEndpointElasticsearchSettings) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetInternalValue(val *DmsEndpointElasticsearchSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetServiceAccessRoleArn(val *string) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetServiceAccessRoleArn(val *string) {
 	if err := j.validateSetServiceAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetServiceAcc
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ResetFullLoa
 	)
 }
 
-func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ToString() *
 
 	return returns
 }
-

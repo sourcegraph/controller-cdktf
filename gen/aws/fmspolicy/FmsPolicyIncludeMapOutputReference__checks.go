@@ -106,7 +106,7 @@ func (j *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateSetAccountParamet
 	return nil
 }
 
-func (j *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFmsPolicyIncludeMapOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

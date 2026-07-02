@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateBlockDeviceMappingsOutputReferenceParameter
 
 	return nil
 }
-

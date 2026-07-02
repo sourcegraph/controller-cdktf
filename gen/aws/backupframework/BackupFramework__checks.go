@@ -19,7 +19,7 @@ func (b *jsiiProxy_BackupFramework) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (b *jsiiProxy_BackupFramework) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BackupFramework) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BackupFramework) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (b *jsiiProxy_BackupFramework) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BackupFramework) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (b *jsiiProxy_BackupFramework) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (b *jsiiProxy_BackupFramework) validatePutControlParameters(value interface{}) error {
+func (b *jsiiProxy_BackupFramework) validatePutControlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateBackupFramework_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateBackupFramework_IsConstructParameters(x interface{}) error {
+func validateBackupFramework_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateBackupFramework_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBackupFramework_IsTerraformElementParameters(x interface{}) error {
+func validateBackupFramework_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateBackupFramework_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateBackupFramework_IsTerraformResourceParameters(x interface{}) error {
+func validateBackupFramework_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateBackupFramework_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_BackupFramework) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BackupFramework) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_BackupFramework) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_BackupFramework) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BackupFramework) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_BackupFramework) validateSetNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_BackupFramework) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BackupFramework) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -488,4 +488,3 @@ func validateNewBackupFrameworkParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

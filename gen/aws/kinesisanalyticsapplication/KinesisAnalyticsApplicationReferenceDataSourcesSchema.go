@@ -1,11 +1,10 @@
 package kinesisanalyticsapplication
 
-
 type KinesisAnalyticsApplicationReferenceDataSourcesSchema struct {
 	// record_columns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_analytics_application#record_columns KinesisAnalyticsApplication#record_columns}
-	RecordColumns interface{} `field:"required" json:"recordColumns" yaml:"recordColumns"`
+	RecordColumns any `field:"required" json:"recordColumns" yaml:"recordColumns"`
 	// record_format block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_analytics_application#record_format KinesisAnalyticsApplication#record_format}
@@ -13,4 +12,3 @@ type KinesisAnalyticsApplicationReferenceDataSourcesSchema struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_analytics_application#record_encoding KinesisAnalyticsApplication#record_encoding}.
 	RecordEncoding *string `field:"optional" json:"recordEncoding" yaml:"recordEncoding"`
 }
-

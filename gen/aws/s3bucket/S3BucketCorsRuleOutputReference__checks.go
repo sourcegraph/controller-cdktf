@@ -122,7 +122,7 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetAllowedOriginsPar
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetExposeHeadersPara
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewS3BucketCorsRuleOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

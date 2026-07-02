@@ -16,15 +16,15 @@ type SagemakerHumanTaskUi interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type SagemakerHumanTaskUi interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -68,7 +68,7 @@ type SagemakerHumanTaskUi interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UiTemplate() SagemakerHumanTaskUiUiTemplateOutputReference
@@ -77,9 +77,9 @@ type SagemakerHumanTaskUi interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type SagemakerHumanTaskUi interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type SagemakerHumanTaskUi interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type SagemakerHumanTaskUi interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SagemakerHumanTaskUi
@@ -161,8 +161,8 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUi) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUi) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUi) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUi) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUi) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SagemakerHumanTaskUi) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) UiTemplateInput() *SagemakerHumanTaskUi
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_human_task_ui aws_sagemaker_human_task_ui} Resource.
 func NewSagemakerHumanTaskUi(scope constructs.Construct, id *string, config *SagemakerHumanTaskUiConfig) SagemakerHumanTaskUi {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewSagemakerHumanTaskUi(scope constructs.Construct, id *string, config *Sag
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewSagemakerHumanTaskUi_Override(s SagemakerHumanTaskUi, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetConnection(val interface{}) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetCount(val interface{}) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetHumanTaskUiName(val *string) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetHumanTaskUiName(val *string) {
 	if err := j.validateSetHumanTaskUiNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetHumanTaskUiName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetId(val *string) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SagemakerHumanTaskUi) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func SagemakerHumanTaskUi_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func SagemakerHumanTaskUi_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SagemakerHumanTaskUi_IsConstruct(x interface{}) *bool {
+func SagemakerHumanTaskUi_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerHumanTaskUi_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func SagemakerHumanTaskUi_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func SagemakerHumanTaskUi_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *bool {
+func SagemakerHumanTaskUi_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerHumanTaskUi_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SagemakerHumanTaskUi_IsTerraformResource(x interface{}) *bool {
+func SagemakerHumanTaskUi_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSagemakerHumanTaskUi_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func SagemakerHumanTaskUi_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SagemakerHumanTaskUi) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerHumanTaskUi) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerHumanTaskUi) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -842,7 +841,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SagemakerHumanTaskUi) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) PutUiTemplate(value *SagemakerHumanTask
 	_jsii_.InvokeVoid(
 		s,
 		"putUiTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerHumanTaskUi) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SagemakerHumanTaskUi) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -975,8 +974,8 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerHumanTaskUi) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -988,8 +987,8 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerHumanTaskUi) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1014,8 +1013,8 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUi) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SagemakerHumanTaskUi) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1026,4 +1025,3 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_CodepipelineWebhookFilterList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineWebhookFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineWebhookFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCodepipelineWebhookFilterListParameters(terraformResource cdktf.
 
 	return nil
 }
-

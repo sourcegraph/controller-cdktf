@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
-		reflect.TypeOf((*MemorydbSubnetGroup)(nil)).Elem(),
+		reflect.TypeFor[MemorydbSubnetGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorydbSubnetGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,6 +83,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig",
-		reflect.TypeOf((*MemorydbSubnetGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorydbSubnetGroupConfig](),
 	)
 }

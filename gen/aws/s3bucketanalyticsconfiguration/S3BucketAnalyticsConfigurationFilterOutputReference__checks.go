@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3BucketAnalyticsConfigurationFilterOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksPhpAppLayerEbsVolumeListParameters(terraformResource cdk
 
 	return nil
 }
-

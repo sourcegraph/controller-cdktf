@@ -19,7 +19,7 @@ func (i *jsiiProxy_IotTopicRule) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IotTopicRule) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_IotTopicRule) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchAlarmParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchAlarmParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchAlarmParameters(value inte
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchLogsParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchLogsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchLogsParameters(value inter
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchMetricParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchMetricParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutCloudwatchMetricParameters(value int
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutDynamodbParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutDynamodbParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutDynamodbParameters(value interface{}
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutDynamodbv2Parameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutDynamodbv2Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutDynamodbv2Parameters(value interface
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutElasticsearchParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutElasticsearchParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutErrorActionParameters(value *IotTopi
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutFirehoseParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutFirehoseParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -432,7 +432,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutFirehoseParameters(value interface{}
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutHttpParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutHttpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -463,7 +463,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutHttpParameters(value interface{}) er
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutIotAnalyticsParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutIotAnalyticsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -494,7 +494,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutIotAnalyticsParameters(value interfa
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutIotEventsParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutIotEventsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -525,7 +525,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutIotEventsParameters(value interface{
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutKafkaParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutKafkaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -556,7 +556,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutKafkaParameters(value interface{}) e
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutKinesisParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutKinesisParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -587,7 +587,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutKinesisParameters(value interface{})
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutLambdaParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutLambdaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -618,7 +618,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutLambdaParameters(value interface{}) 
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutRepublishParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutRepublishParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -649,7 +649,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutRepublishParameters(value interface{
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutS3Parameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutS3Parameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -680,7 +680,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutS3Parameters(value interface{}) erro
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutSnsParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutSnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -711,7 +711,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutSnsParameters(value interface{}) err
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutSqsParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutSqsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -742,7 +742,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutSqsParameters(value interface{}) err
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutStepFunctionsParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutStepFunctionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -773,7 +773,7 @@ func (i *jsiiProxy_IotTopicRule) validatePutStepFunctionsParameters(value interf
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRule) validatePutTimestreamParameters(value interface{}) error {
+func (i *jsiiProxy_IotTopicRule) validatePutTimestreamParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -820,7 +820,7 @@ func validateIotTopicRule_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateIotTopicRule_IsConstructParameters(x interface{}) error {
+func validateIotTopicRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -828,7 +828,7 @@ func validateIotTopicRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIotTopicRule_IsTerraformElementParameters(x interface{}) error {
+func validateIotTopicRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -836,7 +836,7 @@ func validateIotTopicRule_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIotTopicRule_IsTerraformResourceParameters(x interface{}) error {
+func validateIotTopicRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -844,7 +844,7 @@ func validateIotTopicRule_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -877,7 +877,7 @@ func (j *jsiiProxy_IotTopicRule) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -942,7 +942,7 @@ func (j *jsiiProxy_IotTopicRule) validateSetDescriptionParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRule) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRule) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -986,7 +986,7 @@ func (j *jsiiProxy_IotTopicRule) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IotTopicRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -1082,4 +1082,3 @@ func validateNewIotTopicRuleParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

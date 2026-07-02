@@ -90,7 +90,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateInterp
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutClusteringKeyParameters(value interface{}) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutClusteringKeyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutClu
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutColumnParameters(value interface{}) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutColumnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutCol
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutPartitionKeyParameters(value interface{}) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutPartitionKeyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutPar
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutStaticColumnParameters(value interface{}) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutStaticColumnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -322,4 +322,3 @@ func validateNewKeyspacesTableSchemaDefinitionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationMap.LocationMap",
-		reflect.TypeOf((*LocationMap)(nil)).Elem(),
+		reflect.TypeFor[LocationMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationMap.LocationMapConfig",
-		reflect.TypeOf((*LocationMapConfig)(nil)).Elem(),
+		reflect.TypeFor[LocationMapConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationMap.LocationMapConfiguration",
-		reflect.TypeOf((*LocationMapConfiguration)(nil)).Elem(),
+		reflect.TypeFor[LocationMapConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationMap.LocationMapConfigurationOutputReference",
-		reflect.TypeOf((*LocationMapConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LocationMapConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationMapConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

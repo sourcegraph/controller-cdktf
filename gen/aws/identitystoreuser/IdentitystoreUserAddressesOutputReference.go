@@ -12,9 +12,9 @@ type IdentitystoreUserAddressesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,9 +41,9 @@ type IdentitystoreUserAddressesOutputReference interface {
 	PostalCode() *string
 	SetPostalCode(val *string)
 	PostalCodeInput() *string
-	Primary() interface{}
-	SetPrimary(val interface{})
-	PrimaryInput() interface{}
+	Primary() any
+	SetPrimary(val any)
+	PrimaryInput() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -64,7 +64,7 @@ type IdentitystoreUserAddressesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type IdentitystoreUserAddressesOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_IdentitystoreUserAddressesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) PostalCodeInput() 
 	return returns
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) Primary() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) Primary() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primary",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) Primary() interfac
 	return returns
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) PrimaryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) PrimaryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primaryInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) TypeInput() *strin
 	return returns
 }
 
-
 func NewIdentitystoreUserAddressesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentitystoreUserAddressesOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewIdentitystoreUserAddressesOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewIdentitystoreUserAddressesOutputReference_Override(i IdentitystoreUserAd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetCountry(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetCountry(val *string) {
 	if err := j.validateSetCountryParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetCountry(val *str
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetFormatted(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetFormatted(val *string) {
 	if err := j.validateSetFormattedParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetFormatted(val *s
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetInternalValue(val *IdentitystoreUserAddresses) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetInternalValue(val *IdentitystoreUserAddresses) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetLocality(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetLocality(val *string) {
 	if err := j.validateSetLocalityParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetLocality(val *st
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetPostalCode(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetPostalCode(val *string) {
 	if err := j.validateSetPostalCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetPostalCode(val *
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetPrimary(val interface{}) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetPrimary(val any) {
 	if err := j.validateSetPrimaryParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetPrimary(val inte
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetRegion(val *stri
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetStreetAddress(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetStreetAddress(val *string) {
 	if err := j.validateSetStreetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetStreetAddress(va
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference)SetType(val *string) {
+func (j *jsiiProxy_IdentitystoreUserAddressesOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) ResetType() {
 	)
 }
 
-func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (i *jsiiProxy_IdentitystoreUserAddressesOutputReference) ToString() *string
 
 	return returns
 }
-

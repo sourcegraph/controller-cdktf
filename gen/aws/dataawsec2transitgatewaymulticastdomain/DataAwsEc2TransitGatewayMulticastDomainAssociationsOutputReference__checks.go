@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReferen
 
 	return nil
 }
-

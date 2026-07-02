@@ -98,7 +98,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewWafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference
 
 	return nil
 }
-

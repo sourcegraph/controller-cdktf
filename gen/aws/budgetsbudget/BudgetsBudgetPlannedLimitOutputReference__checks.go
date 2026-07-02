@@ -106,7 +106,7 @@ func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetAmountPa
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewBudgetsBudgetPlannedLimitOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

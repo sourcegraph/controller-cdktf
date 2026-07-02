@@ -20,15 +20,15 @@ type AmplifyDomainAssociation interface {
 	CdktfStack() cdktf.TerraformStack
 	CertificateVerificationDnsRecord() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,29 +58,29 @@ type AmplifyDomainAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubDomain() AmplifyDomainAssociationSubDomainList
-	SubDomainInput() interface{}
+	SubDomainInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	WaitForVerification() interface{}
-	SetWaitForVerification(val interface{})
-	WaitForVerificationInput() interface{}
+	WaitForVerification() any
+	SetWaitForVerification(val any)
+	WaitForVerificationInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type AmplifyDomainAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,30 +110,30 @@ type AmplifyDomainAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSubDomain(value interface{})
+	PutSubDomain(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWaitForVerification()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AmplifyDomainAssociation
@@ -191,8 +191,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) CertificateVerificationDnsRecord() 
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) SubDomain() AmplifyDomainAssociatio
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) SubDomainInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) SubDomainInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"subDomainInput",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerification() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerification() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForVerification",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerification() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForVerificationInput",
@@ -420,7 +420,6 @@ func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerificationInput() interfac
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
 func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config *AmplifyDomainAssociationConfig) AmplifyDomainAssociation {
@@ -433,7 +432,7 @@ func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewAmplifyDomainAssociation_Override(a AmplifyDomainAssociation, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetAppId(val *string) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetDomainName(val *string) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -511,7 +510,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetId(val *string) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociation)SetWaitForVerification(val interface{}) {
+func (j *jsiiProxy_AmplifyDomainAssociation) SetWaitForVerification(val any) {
 	if err := j.validateSetWaitForVerificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func AmplifyDomainAssociation_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func AmplifyDomainAssociation_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AmplifyDomainAssociation_IsConstruct(x interface{}) *bool {
+func AmplifyDomainAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmplifyDomainAssociation_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func AmplifyDomainAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func AmplifyDomainAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AmplifyDomainAssociation_IsTerraformElement(x interface{}) *bool {
+func AmplifyDomainAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmplifyDomainAssociation_IsTerraformElementParameters(x); err != nil {
@@ -629,7 +628,7 @@ func AmplifyDomainAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func AmplifyDomainAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AmplifyDomainAssociation_IsTerraformResource(x interface{}) *bool {
+func AmplifyDomainAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAmplifyDomainAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -648,7 +647,7 @@ func AmplifyDomainAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,31 +672,31 @@ func (a *jsiiProxy_AmplifyDomainAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AmplifyDomainAssociation) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AmplifyDomainAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,15 +824,15 @@ func (a *jsiiProxy_AmplifyDomainAssociation) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyDomainAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -852,7 +851,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -865,7 +864,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,18 +878,18 @@ func (a *jsiiProxy_AmplifyDomainAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AmplifyDomainAssociation) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -901,7 +900,7 @@ func (a *jsiiProxy_AmplifyDomainAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -912,18 +911,18 @@ func (a *jsiiProxy_AmplifyDomainAssociation) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) PutSubDomain(value interface{}) {
+func (a *jsiiProxy_AmplifyDomainAssociation) PutSubDomain(value any) {
 	if err := a.validatePutSubDomainParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putSubDomain",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -951,8 +950,8 @@ func (a *jsiiProxy_AmplifyDomainAssociation) ResetWaitForVerification() {
 	)
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AmplifyDomainAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -964,8 +963,8 @@ func (a *jsiiProxy_AmplifyDomainAssociation) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AmplifyDomainAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -977,8 +976,8 @@ func (a *jsiiProxy_AmplifyDomainAssociation) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyDomainAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -990,8 +989,8 @@ func (a *jsiiProxy_AmplifyDomainAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyDomainAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1016,8 +1015,8 @@ func (a *jsiiProxy_AmplifyDomainAssociation) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AmplifyDomainAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1028,4 +1027,3 @@ func (a *jsiiProxy_AmplifyDomainAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCatalogTableStorageDescriptorColumnsListParameters(terraform
 
 	return nil
 }
-

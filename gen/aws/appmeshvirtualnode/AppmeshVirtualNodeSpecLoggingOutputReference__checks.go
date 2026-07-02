@@ -109,7 +109,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecLoggingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewAppmeshVirtualNodeSpecLoggingOutputReferenceParameters(terraform
 
 	return nil
 }
-

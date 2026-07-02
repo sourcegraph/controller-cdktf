@@ -19,7 +19,7 @@ func (a *jsiiProxy_AmiLaunchPermission) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_AmiLaunchPermission) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AmiLaunchPermission) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AmiLaunchPermission) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_AmiLaunchPermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AmiLaunchPermission) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAmiLaunchPermission_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateAmiLaunchPermission_IsConstructParameters(x interface{}) error {
+func validateAmiLaunchPermission_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAmiLaunchPermission_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAmiLaunchPermission_IsTerraformElementParameters(x interface{}) error {
+func validateAmiLaunchPermission_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAmiLaunchPermission_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateAmiLaunchPermission_IsTerraformResourceParameters(x interface{}) error {
+func validateAmiLaunchPermission_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AmiLaunchPermission) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AmiLaunchPermission) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AmiLaunchPermission) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AmiLaunchPermission) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AmiLaunchPermission) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AmiLaunchPermission) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_AmiLaunchPermission) validateSetOrganizationArnParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AmiLaunchPermission) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AmiLaunchPermission) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewAmiLaunchPermissionParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

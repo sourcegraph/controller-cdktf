@@ -17,15 +17,15 @@ type LightsailContainerService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -42,9 +42,9 @@ type LightsailContainerService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsDisabled() interface{}
-	SetIsDisabled(val interface{})
-	IsDisabledInput() interface{}
+	IsDisabled() any
+	SetIsDisabled(val any)
+	IsDisabledInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,13 +67,13 @@ type LightsailContainerService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicDomainNames() LightsailContainerServicePublicDomainNamesOutputReference
 	PublicDomainNamesInput() *LightsailContainerServicePublicDomainNames
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceType() *string
 	Scale() *float64
 	SetScale(val *float64)
@@ -88,19 +88,19 @@ type LightsailContainerService interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LightsailContainerServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Url() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type LightsailContainerService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type LightsailContainerService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type LightsailContainerService interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LightsailContainerService
@@ -198,8 +198,8 @@ func (j *jsiiProxy_LightsailContainerService) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_LightsailContainerService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailContainerService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_LightsailContainerService) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_LightsailContainerService) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) IsDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerService) IsDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDisabled",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_LightsailContainerService) IsDisabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) IsDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerService) IsDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDisabledInput",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_LightsailContainerService) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LightsailContainerService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_LightsailContainerService) PublicDomainNamesInput() *Lightsai
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_LightsailContainerService) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailContainerService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_LightsailContainerService) Timeouts() LightsailContainerServi
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -618,7 +618,6 @@ func (j *jsiiProxy_LightsailContainerService) Url() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
 func NewLightsailContainerService(scope constructs.Construct, id *string, config *LightsailContainerServiceConfig) LightsailContainerService {
 	_init_.Initialize()
@@ -630,7 +629,7 @@ func NewLightsailContainerService(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -643,12 +642,12 @@ func NewLightsailContainerService_Override(l LightsailContainerService, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetConnection(val interface{}) {
+func (j *jsiiProxy_LightsailContainerService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_LightsailContainerService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetCount(val interface{}) {
+func (j *jsiiProxy_LightsailContainerService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_LightsailContainerService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LightsailContainerService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -678,7 +677,7 @@ func (j *jsiiProxy_LightsailContainerService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LightsailContainerService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_LightsailContainerService)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetId(val *string) {
+func (j *jsiiProxy_LightsailContainerService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_LightsailContainerService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetIsDisabled(val interface{}) {
+func (j *jsiiProxy_LightsailContainerService) SetIsDisabled(val any) {
 	if err := j.validateSetIsDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_LightsailContainerService)SetIsDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LightsailContainerService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_LightsailContainerService)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetName(val *string) {
+func (j *jsiiProxy_LightsailContainerService) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_LightsailContainerService)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetPower(val *string) {
+func (j *jsiiProxy_LightsailContainerService) SetPower(val *string) {
 	if err := j.validateSetPowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_LightsailContainerService)SetPower(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LightsailContainerService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -749,7 +748,7 @@ func (j *jsiiProxy_LightsailContainerService)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LightsailContainerService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_LightsailContainerService)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetScale(val *float64) {
+func (j *jsiiProxy_LightsailContainerService) SetScale(val *float64) {
 	if err := j.validateSetScaleParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_LightsailContainerService)SetScale(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LightsailContainerService) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_LightsailContainerService)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerService)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_LightsailContainerService) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func LightsailContainerService_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func LightsailContainerService_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LightsailContainerService_IsConstruct(x interface{}) *bool {
+func LightsailContainerService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailContainerService_IsConstructParameters(x); err != nil {
@@ -840,7 +839,7 @@ func LightsailContainerService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func LightsailContainerService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailContainerService_IsTerraformElement(x interface{}) *bool {
+func LightsailContainerService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailContainerService_IsTerraformElementParameters(x); err != nil {
@@ -859,7 +858,7 @@ func LightsailContainerService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func LightsailContainerService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailContainerService_IsTerraformResource(x interface{}) *bool {
+func LightsailContainerService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailContainerService_IsTerraformResourceParameters(x); err != nil {
@@ -878,7 +877,7 @@ func LightsailContainerService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -903,31 +902,31 @@ func (l *jsiiProxy_LightsailContainerService) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LightsailContainerService) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LightsailContainerService) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LightsailContainerService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailContainerService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (l *jsiiProxy_LightsailContainerService) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (l *jsiiProxy_LightsailContainerService) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (l *jsiiProxy_LightsailContainerService) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (l *jsiiProxy_LightsailContainerService) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (l *jsiiProxy_LightsailContainerService) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (l *jsiiProxy_LightsailContainerService) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (l *jsiiProxy_LightsailContainerService) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,15 +1054,15 @@ func (l *jsiiProxy_LightsailContainerService) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerService) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailContainerService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1082,7 +1081,7 @@ func (l *jsiiProxy_LightsailContainerService) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (l *jsiiProxy_LightsailContainerService) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,18 +1108,18 @@ func (l *jsiiProxy_LightsailContainerService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LightsailContainerService) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LightsailContainerService) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1131,7 +1130,7 @@ func (l *jsiiProxy_LightsailContainerService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1142,7 +1141,7 @@ func (l *jsiiProxy_LightsailContainerService) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1153,7 +1152,7 @@ func (l *jsiiProxy_LightsailContainerService) PutPrivateRegistryAccess(value *Li
 	_jsii_.InvokeVoid(
 		l,
 		"putPrivateRegistryAccess",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (l *jsiiProxy_LightsailContainerService) PutPublicDomainNames(value *Lights
 	_jsii_.InvokeVoid(
 		l,
 		"putPublicDomainNames",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (l *jsiiProxy_LightsailContainerService) PutTimeouts(value *LightsailContai
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1243,8 +1242,8 @@ func (l *jsiiProxy_LightsailContainerService) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LightsailContainerService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailContainerService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1256,8 +1255,8 @@ func (l *jsiiProxy_LightsailContainerService) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailContainerService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1269,8 +1268,8 @@ func (l *jsiiProxy_LightsailContainerService) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailContainerService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1282,8 +1281,8 @@ func (l *jsiiProxy_LightsailContainerService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerService) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailContainerService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1308,8 +1307,8 @@ func (l *jsiiProxy_LightsailContainerService) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerService) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailContainerService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1320,4 +1319,3 @@ func (l *jsiiProxy_LightsailContainerService) ToTerraform() interface{} {
 
 	return returns
 }
-

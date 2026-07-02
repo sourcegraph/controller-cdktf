@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCrawlerRecrawlPolicyOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerRecrawlPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerRecrawlPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGlueCrawlerRecrawlPolicyOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

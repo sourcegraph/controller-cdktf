@@ -16,11 +16,11 @@ type DataAwsSfnStateMachine interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationDate() *string
 	Definition() *string
 	// Experimental.
@@ -52,19 +52,19 @@ type DataAwsSfnStateMachine interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataAwsSfnStateMachine interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSfnStateMachine
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSfnStateMachine) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSfnStateMachine) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSfnStateMachine) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSfnStateMachine) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/sfn_state_machine aws_sfn_state_machine} Data Source.
 func NewDataAwsSfnStateMachine(scope constructs.Construct, id *string, config *DataAwsSfnStateMachineConfig) DataAwsSfnStateMachine {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewDataAwsSfnStateMachine(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewDataAwsSfnStateMachine_Override(d DataAwsSfnStateMachine, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetName(val *string) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnStateMachine)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSfnStateMachine) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func DataAwsSfnStateMachine_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func DataAwsSfnStateMachine_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSfnStateMachine_IsConstruct(x interface{}) *bool {
+func DataAwsSfnStateMachine_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSfnStateMachine_IsConstructParameters(x); err != nil {
@@ -484,7 +483,7 @@ func DataAwsSfnStateMachine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func DataAwsSfnStateMachine_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSfnStateMachine_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSfnStateMachine_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSfnStateMachine_IsTerraformDataSourceParameters(x); err != nil {
@@ -503,7 +502,7 @@ func DataAwsSfnStateMachine_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func DataAwsSfnStateMachine_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSfnStateMachine_IsTerraformElement(x interface{}) *bool {
+func DataAwsSfnStateMachine_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSfnStateMachine_IsTerraformElementParameters(x); err != nil {
@@ -522,7 +521,7 @@ func DataAwsSfnStateMachine_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,27 +539,27 @@ func DataAwsSfnStateMachine_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSfnStateMachine) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSfnStateMachine) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -738,8 +737,8 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSfnStateMachine) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSfnStateMachine) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSfnStateMachine) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -777,8 +776,8 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSfnStateMachine) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -803,8 +802,8 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSfnStateMachine) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSfnStateMachine) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -815,4 +814,3 @@ func (d *jsiiProxy_DataAwsSfnStateMachine) ToTerraform() interface{} {
 
 	return returns
 }
-

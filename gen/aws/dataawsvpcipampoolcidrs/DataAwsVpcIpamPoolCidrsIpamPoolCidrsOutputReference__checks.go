@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReferenceParameters(te
 
 	return nil
 }
-

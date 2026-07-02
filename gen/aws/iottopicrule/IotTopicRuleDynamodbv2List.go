@@ -17,8 +17,8 @@ type IotTopicRuleDynamodbv2List interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IotTopicRuleDynamodbv2List interface {
 	Get(index *float64) IotTopicRuleDynamodbv2OutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2List) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2List) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleDynamodbv2List) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2List) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewIotTopicRuleDynamodbv2List(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleDynamodbv2List {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIotTopicRuleDynamodbv2List(terraformResource cdktf.IInterpolatingParent,
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIotTopicRuleDynamodbv2List_Override(i IotTopicRuleDynamodbv2List, terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleDynamodbv2List) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbv2List) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleDynamodbv2List) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2List)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleDynamodbv2List) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2List) AllWithMapKey(mapKeyAttributeName
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2List) Get(index *float64) IotTopicRuleD
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2List) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2List) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2List) ToString() *string {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsNetworkInterfaceAttachmentOutputReferenceParameters(terra
 
 	return nil
 }
-

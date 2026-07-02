@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDirectoryServiceRadiusSettingsTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

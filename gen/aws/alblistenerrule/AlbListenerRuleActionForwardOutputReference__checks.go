@@ -101,7 +101,7 @@ func (a *jsiiProxy_AlbListenerRuleActionForwardOutputReference) validatePutStick
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionForwardOutputReference) validatePutTargetGroupParameters(value interface{}) error {
+func (a *jsiiProxy_AlbListenerRuleActionForwardOutputReference) validatePutTargetGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AlbListenerRuleActionForwardOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionForwardOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerRuleActionForwardOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewAlbListenerRuleActionForwardOutputReferenceParameters(terraformR
 
 	return nil
 }
-

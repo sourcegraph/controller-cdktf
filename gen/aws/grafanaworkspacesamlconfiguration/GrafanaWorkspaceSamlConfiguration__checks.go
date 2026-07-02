@@ -19,7 +19,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGrafanaWorkspaceSamlConfiguration_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGrafanaWorkspaceSamlConfiguration_IsConstructParameters(x interface{}) error {
+func validateGrafanaWorkspaceSamlConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGrafanaWorkspaceSamlConfiguration_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGrafanaWorkspaceSamlConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateGrafanaWorkspaceSamlConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGrafanaWorkspaceSamlConfiguration_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGrafanaWorkspaceSamlConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateGrafanaWorkspaceSamlConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetAllowedOrganiza
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -449,7 +449,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetOrgAssertionPar
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -529,4 +529,3 @@ func validateNewGrafanaWorkspaceSamlConfigurationParameters(scope constructs.Con
 
 	return nil
 }
-

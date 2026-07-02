@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ami.Ami",
-		reflect.TypeOf((*Ami)(nil)).Elem(),
+		reflect.TypeFor[Ami](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualizationType", GoGetter: "VirtualizationType"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualizationTypeInput", GoGetter: "VirtualizationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ami{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -134,15 +134,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ami.AmiConfig",
-		reflect.TypeOf((*AmiConfig)(nil)).Elem(),
+		reflect.TypeFor[AmiConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ami.AmiEbsBlockDevice",
-		reflect.TypeOf((*AmiEbsBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[AmiEbsBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ami.AmiEbsBlockDeviceList",
-		reflect.TypeOf((*AmiEbsBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[AmiEbsBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmiEbsBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference",
-		reflect.TypeOf((*AmiEbsBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmiEbsBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmiEbsBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ami.AmiEphemeralBlockDevice",
-		reflect.TypeOf((*AmiEphemeralBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[AmiEphemeralBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList",
-		reflect.TypeOf((*AmiEphemeralBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[AmiEphemeralBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmiEphemeralBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference",
-		reflect.TypeOf((*AmiEphemeralBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmiEphemeralBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNameInput", GoGetter: "VirtualNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmiEphemeralBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ami.AmiTimeouts",
-		reflect.TypeOf((*AmiTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AmiTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ami.AmiTimeoutsOutputReference",
-		reflect.TypeOf((*AmiTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AmiTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AmiTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

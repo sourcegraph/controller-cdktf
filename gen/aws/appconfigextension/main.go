@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
-		reflect.TypeOf((*AppconfigExtension)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtension](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionPoint", GoGetter: "ActionPoint"},
 			_jsii_.MemberProperty{JsiiProperty: "actionPointInput", GoGetter: "ActionPointInput"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtension{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint",
-		reflect.TypeOf((*AppconfigExtensionActionPoint)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionActionPoint](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction",
-		reflect.TypeOf((*AppconfigExtensionActionPointAction)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionActionPointAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionList",
-		reflect.TypeOf((*AppconfigExtensionActionPointActionList)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionActionPointActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionActionPointActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference",
-		reflect.TypeOf((*AppconfigExtensionActionPointActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionActionPointActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionActionPointActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointList",
-		reflect.TypeOf((*AppconfigExtensionActionPointList)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionActionPointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionActionPointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -177,7 +177,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
-		reflect.TypeOf((*AppconfigExtensionActionPointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionActionPointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionActionPointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -214,15 +214,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig",
-		reflect.TypeOf((*AppconfigExtensionConfig)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter",
-		reflect.TypeOf((*AppconfigExtensionParameter)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterList",
-		reflect.TypeOf((*AppconfigExtensionParameterList)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -244,7 +244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
-		reflect.TypeOf((*AppconfigExtensionParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppconfigExtensionParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppconfigExtensionParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

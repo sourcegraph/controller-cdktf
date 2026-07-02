@@ -90,7 +90,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference) validatePutStepsParameters(value interface{}) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference) validatePutStepsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewEvidentlyLaunchScheduledSplitsConfigOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsSmbOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsSmbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsSmbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFsxOntapStorageVirtualMachineEndpointsSmbOutputReferenceParamete
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type DbSecurityGroupIngressOutputReference interface {
 	CidrInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DbSecurityGroupIngressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
@@ -52,7 +52,7 @@ type DbSecurityGroupIngressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DbSecurityGroupIngressOutputReference interface {
 	ResetSecurityGroupOwnerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) CidrInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewDbSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DbSecurityGroupIngressOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDbSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDbSecurityGroupIngressOutputReference_Override(d DbSecurityGroupIngressO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetCidr(val *string) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetSecurityGroupId(val *string) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetSecurityGroupId(val *string) {
 	if err := j.validateSetSecurityGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetSecurityGroupId(val 
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetSecurityGroupName(val *string) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetSecurityGroupName(val *string) {
 	if err := j.validateSetSecurityGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetSecurityGroupName(va
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetSecurityGroupOwnerId(val *string) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetSecurityGroupOwnerId(val *string) {
 	if err := j.validateSetSecurityGroupOwnerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetSecurityGroupOwnerId
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) ResetSecurityGroupOwne
 	)
 }
 
-func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) ToString() *string {
 
 	return returns
 }
-

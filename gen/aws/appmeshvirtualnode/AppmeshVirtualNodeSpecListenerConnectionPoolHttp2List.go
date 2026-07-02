@@ -17,8 +17,8 @@ type AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List interface {
 	Get(index *float64) AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) WrapsS
 	return returns
 }
 
-
 func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2List(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2List(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttp2List_Override(a Appmesh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetInte
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetTerr
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetTerr
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) AllWit
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) Get(in
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) ToStri
 
 	return returns
 }
-

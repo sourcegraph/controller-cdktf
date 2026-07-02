@@ -10,14 +10,14 @@ import (
 
 type RdsClusterScalingConfigurationOutputReference interface {
 	cdktf.ComplexObject
-	AutoPause() interface{}
-	SetAutoPause(val interface{})
-	AutoPauseInput() interface{}
+	AutoPause() any
+	SetAutoPause(val any)
+	AutoPauseInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type RdsClusterScalingConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type RdsClusterScalingConfigurationOutputReference interface {
 	ResetTimeoutAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_RdsClusterScalingConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) AutoPause() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) AutoPause() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoPause",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) AutoPause() in
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) AutoPauseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) AutoPauseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoPauseInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) AutoPauseInput
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) TimeoutActionI
 	return returns
 }
 
-
 func NewRdsClusterScalingConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RdsClusterScalingConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewRdsClusterScalingConfigurationOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewRdsClusterScalingConfigurationOutputReference_Override(r RdsClusterScali
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetAutoPause(val interface{}) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetAutoPause(val any) {
 	if err := j.validateSetAutoPauseParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetAutoPause(va
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetInternalValue(val *RdsClusterScalingConfiguration) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetInternalValue(val *RdsClusterScalingConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetMaxCapacity(val *float64) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetMaxCapacity(val *float64) {
 	if err := j.validateSetMaxCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetMaxCapacity(
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetMinCapacity(val *float64) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetMinCapacity(val *float64) {
 	if err := j.validateSetMinCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetMinCapacity(
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetSecondsUntilAutoPause(val *float64) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetSecondsUntilAutoPause(val *float64) {
 	if err := j.validateSetSecondsUntilAutoPauseParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetSecondsUntil
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetTimeoutAction(val *string) {
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SetTimeoutAction(val *string) {
 	if err := j.validateSetTimeoutActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) InterpolationF
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ResetTimeoutAc
 	)
 }
 
-func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ToString() *st
 
 	return returns
 }
-

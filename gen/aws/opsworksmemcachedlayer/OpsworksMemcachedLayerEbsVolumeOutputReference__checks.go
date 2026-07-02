@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetEn
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -290,4 +290,3 @@ func validateNewOpsworksMemcachedLayerEbsVolumeOutputReferenceParameters(terrafo
 
 	return nil
 }
-

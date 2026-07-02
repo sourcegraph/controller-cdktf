@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
-		reflect.TypeOf((*ElastictranscoderPreset)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPreset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "videoWatermarks", GoGetter: "VideoWatermarks"},
 			_jsii_.MemberProperty{JsiiProperty: "videoWatermarksInput", GoGetter: "VideoWatermarksInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPreset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudio",
-		reflect.TypeOf((*ElastictranscoderPresetAudio)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetAudio](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptions",
-		reflect.TypeOf((*ElastictranscoderPresetAudioCodecOptions)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetAudioCodecOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPresetAudioCodecOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetAudioCodecOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitDepth", GoGetter: "BitDepth"},
 			_jsii_.MemberProperty{JsiiProperty: "bitDepthInput", GoGetter: "BitDepthInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,7 +151,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioOutputReference",
-		reflect.TypeOf((*ElastictranscoderPresetAudioOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetAudioOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioPackingMode", GoGetter: "AudioPackingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "audioPackingModeInput", GoGetter: "AudioPackingModeInput"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPresetAudioOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,15 +198,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetConfig",
-		reflect.TypeOf((*ElastictranscoderPresetConfig)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnails",
-		reflect.TypeOf((*ElastictranscoderPresetThumbnails)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetThumbnails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
-		reflect.TypeOf((*ElastictranscoderPresetThumbnailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetThumbnailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aspectRatio", GoGetter: "AspectRatio"},
 			_jsii_.MemberProperty{JsiiProperty: "aspectRatioInput", GoGetter: "AspectRatioInput"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,11 +262,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideo",
-		reflect.TypeOf((*ElastictranscoderPresetVideo)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetVideo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
-		reflect.TypeOf((*ElastictranscoderPresetVideoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetVideoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aspectRatio", GoGetter: "AspectRatio"},
 			_jsii_.MemberProperty{JsiiProperty: "aspectRatioInput", GoGetter: "AspectRatioInput"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPresetVideoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,11 +337,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarks",
-		reflect.TypeOf((*ElastictranscoderPresetVideoWatermarks)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetVideoWatermarks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksList",
-		reflect.TypeOf((*ElastictranscoderPresetVideoWatermarksList)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetVideoWatermarksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPresetVideoWatermarksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -363,7 +363,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
-		reflect.TypeOf((*ElastictranscoderPresetVideoWatermarksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElastictranscoderPresetVideoWatermarksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -417,7 +417,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verticalOffset", GoGetter: "VerticalOffset"},
 			_jsii_.MemberProperty{JsiiProperty: "verticalOffsetInput", GoGetter: "VerticalOffsetInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

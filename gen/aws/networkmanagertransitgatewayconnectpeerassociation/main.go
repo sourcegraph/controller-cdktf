@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayConnectPeerAssociation)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayConnectPeerAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayConnectPeerArn", GoGetter: "TransitGatewayConnectPeerArn"},
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayConnectPeerArnInput", GoGetter: "TransitGatewayConnectPeerArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationConfig",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayConnectPeerAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayConnectPeerAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationTimeouts",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayConnectPeerAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayConnectPeerAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

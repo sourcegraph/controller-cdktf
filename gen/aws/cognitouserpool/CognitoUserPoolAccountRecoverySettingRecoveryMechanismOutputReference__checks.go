@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputR
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputR
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputRefe
 
 	return nil
 }
-

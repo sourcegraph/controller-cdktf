@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
-		reflect.TypeOf((*DataAwsEksAddon)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksAddon](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonName", GoGetter: "AddonName"},
 			_jsii_.MemberProperty{JsiiProperty: "addonNameInput", GoGetter: "AddonNameInput"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsEksAddon{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddonConfig",
-		reflect.TypeOf((*DataAwsEksAddonConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsEksAddonConfig](),
 	)
 }

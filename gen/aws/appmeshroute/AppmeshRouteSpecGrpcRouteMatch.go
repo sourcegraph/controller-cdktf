@@ -1,11 +1,10 @@
 package appmeshroute
 
-
 type AppmeshRouteSpecGrpcRouteMatch struct {
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_route#metadata AppmeshRoute#metadata}
-	Metadata interface{} `field:"optional" json:"metadata" yaml:"metadata"`
+	Metadata any `field:"optional" json:"metadata" yaml:"metadata"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_route#method_name AppmeshRoute#method_name}.
 	MethodName *string `field:"optional" json:"methodName" yaml:"methodName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
@@ -15,4 +14,3 @@ type AppmeshRouteSpecGrpcRouteMatch struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_route#service_name AppmeshRoute#service_name}.
 	ServiceName *string `field:"optional" json:"serviceName" yaml:"serviceName"`
 }
-

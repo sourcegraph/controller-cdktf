@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComprehendDocumentClassifierTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

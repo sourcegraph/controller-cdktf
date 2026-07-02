@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateAddMoveTargetPar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveFromIdParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkmanagerTransitGatewayPeering_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateNetworkmanagerTransitGatewayPeering_IsConstructParameters(x interface{}) error {
+func validateNetworkmanagerTransitGatewayPeering_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkmanagerTransitGatewayPeering_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateNetworkmanagerTransitGatewayPeering_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkmanagerTransitGatewayPeering_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkmanagerTransitGatewayPeering_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateNetworkmanagerTransitGatewayPeering_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkmanagerTransitGatewayPeering_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkmanagerTransitGatewayPeering_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetCoreNetworkId
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewNetworkmanagerTransitGatewayPeeringParameters(scope constructs.C
 
 	return nil
 }
-

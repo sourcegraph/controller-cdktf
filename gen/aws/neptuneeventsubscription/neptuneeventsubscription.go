@@ -16,23 +16,23 @@ type NeptuneEventSubscription interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerAwsId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EventCategories() *[]*string
 	SetEventCategories(val *[]*string)
 	EventCategoriesInput() *[]*string
@@ -64,11 +64,11 @@ type NeptuneEventSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnsTopicArn() *string
 	SetSnsTopicArn(val *string)
 	SnsTopicArnInput() *string
@@ -87,18 +87,18 @@ type NeptuneEventSubscription interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NeptuneEventSubscriptionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type NeptuneEventSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type NeptuneEventSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type NeptuneEventSubscription interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NeptuneEventSubscription
@@ -187,8 +187,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_NeptuneEventSubscription) Timeouts() NeptuneEventSubscription
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NeptuneEventSubscription) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_NeptuneEventSubscription) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource.
 func NewNeptuneEventSubscription(scope constructs.Construct, id *string, config *NeptuneEventSubscriptionConfig) NeptuneEventSubscription {
@@ -579,7 +578,7 @@ func NewNeptuneEventSubscription(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -592,12 +591,12 @@ func NewNeptuneEventSubscription_Override(n NeptuneEventSubscription, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetEnabled(val interface{}) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetEventCategories(val *[]*string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetEventCategories(val *[]*string) {
 	if err := j.validateSetEventCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetEventCategories(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetId(val *string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetName(val *string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetNamePrefix(val *string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetSnsTopicArn(val *string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetSnsTopicArn(val *string) {
 	if err := j.validateSetSnsTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetSnsTopicArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetSourceIds(val *[]*string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetSourceIds(val *[]*string) {
 	if err := j.validateSetSourceIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetSourceIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetSourceType(val *string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetSourceType(val *string) {
 	if err := j.validateSetSourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetSourceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_NeptuneEventSubscription)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_NeptuneEventSubscription) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func NeptuneEventSubscription_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func NeptuneEventSubscription_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NeptuneEventSubscription_IsConstruct(x interface{}) *bool {
+func NeptuneEventSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneEventSubscription_IsConstructParameters(x); err != nil {
@@ -822,7 +821,7 @@ func NeptuneEventSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func NeptuneEventSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NeptuneEventSubscription_IsTerraformElement(x interface{}) *bool {
+func NeptuneEventSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneEventSubscription_IsTerraformElementParameters(x); err != nil {
@@ -841,7 +840,7 @@ func NeptuneEventSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func NeptuneEventSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NeptuneEventSubscription_IsTerraformResource(x interface{}) *bool {
+func NeptuneEventSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNeptuneEventSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -860,7 +859,7 @@ func NeptuneEventSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,31 +884,31 @@ func (n *jsiiProxy_NeptuneEventSubscription) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NeptuneEventSubscription) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NeptuneEventSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,15 +1036,15 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneEventSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1064,7 +1063,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,18 +1090,18 @@ func (n *jsiiProxy_NeptuneEventSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NeptuneEventSubscription) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (n *jsiiProxy_NeptuneEventSubscription) PutTimeouts(value *NeptuneEventSubs
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,8 +1226,8 @@ func (n *jsiiProxy_NeptuneEventSubscription) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NeptuneEventSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1240,8 +1239,8 @@ func (n *jsiiProxy_NeptuneEventSubscription) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NeptuneEventSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1253,8 +1252,8 @@ func (n *jsiiProxy_NeptuneEventSubscription) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneEventSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1266,8 +1265,8 @@ func (n *jsiiProxy_NeptuneEventSubscription) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneEventSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1292,8 +1291,8 @@ func (n *jsiiProxy_NeptuneEventSubscription) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneEventSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NeptuneEventSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1304,4 +1303,3 @@ func (n *jsiiProxy_NeptuneEventSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

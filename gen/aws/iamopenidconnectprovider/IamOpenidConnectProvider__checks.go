@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamOpenidConnectProvider) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (i *jsiiProxy_IamOpenidConnectProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamOpenidConnectProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamOpenidConnectProvider) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (i *jsiiProxy_IamOpenidConnectProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamOpenidConnectProvider) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIamOpenidConnectProvider_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateIamOpenidConnectProvider_IsConstructParameters(x interface{}) error {
+func validateIamOpenidConnectProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIamOpenidConnectProvider_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateIamOpenidConnectProvider_IsTerraformElementParameters(x interface{}) error {
+func validateIamOpenidConnectProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIamOpenidConnectProvider_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateIamOpenidConnectProvider_IsTerraformResourceParameters(x interface{}) error {
+func validateIamOpenidConnectProvider_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IamOpenidConnectProvider) validateSetClientIdListParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_IamOpenidConnectProvider) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamOpenidConnectProvider) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_IamOpenidConnectProvider) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IamOpenidConnectProvider) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamOpenidConnectProvider) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_IamOpenidConnectProvider) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_IamOpenidConnectProvider) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamOpenidConnectProvider) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewIamOpenidConnectProviderParameters(scope constructs.Construct, i
 
 	return nil
 }
-

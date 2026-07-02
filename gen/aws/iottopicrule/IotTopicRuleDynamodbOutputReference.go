@@ -12,9 +12,9 @@ type IotTopicRuleDynamodbOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type IotTopicRuleDynamodbOutputReference interface {
 	HashKeyValue() *string
 	SetHashKeyValue(val *string)
 	HashKeyValueInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Operation() *string
 	SetOperation(val *string)
 	OperationInput() *string
@@ -70,7 +70,7 @@ type IotTopicRuleDynamodbOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type IotTopicRuleDynamodbOutputReference interface {
 	ResetRangeKeyValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_IotTopicRuleDynamodbOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) HashKeyValueInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -382,7 +382,6 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewIotTopicRuleDynamodbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IotTopicRuleDynamodbOutputReference {
 	_init_.Initialize()
 
@@ -393,7 +392,7 @@ func NewIotTopicRuleDynamodbOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -405,12 +404,12 @@ func NewIotTopicRuleDynamodbOutputReference_Override(i IotTopicRuleDynamodbOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetHashKeyField(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetHashKeyField(val *string) {
 	if err := j.validateSetHashKeyFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetHashKeyField(val *stri
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetHashKeyType(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetHashKeyType(val *string) {
 	if err := j.validateSetHashKeyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetHashKeyType(val *strin
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetHashKeyValue(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetHashKeyValue(val *string) {
 	if err := j.validateSetHashKeyValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetHashKeyValue(val *stri
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetOperation(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetOperation(val *string) {
 	if err := j.validateSetOperationParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetOperation(val *string)
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetPayloadField(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetPayloadField(val *string) {
 	if err := j.validateSetPayloadFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetPayloadField(val *stri
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRangeKeyField(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetRangeKeyField(val *string) {
 	if err := j.validateSetRangeKeyFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRangeKeyField(val *str
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRangeKeyType(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetRangeKeyType(val *string) {
 	if err := j.validateSetRangeKeyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRangeKeyType(val *stri
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRangeKeyValue(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetRangeKeyValue(val *string) {
 	if err := j.validateSetRangeKeyValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRangeKeyValue(val *str
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRoleArn(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetTableName(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetTableName(val *string) {
 	if err := j.validateSetTableNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetTableName(val *string)
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleDynamodbOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,16 +587,16 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -809,16 +808,16 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) ResetRangeKeyValue() {
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -837,4 +836,3 @@ func (i *jsiiProxy_IotTopicRuleDynamodbOutputReference) ToString() *string {
 
 	return returns
 }
-

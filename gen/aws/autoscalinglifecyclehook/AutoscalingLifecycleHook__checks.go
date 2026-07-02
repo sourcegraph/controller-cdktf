@@ -19,7 +19,7 @@ func (a *jsiiProxy_AutoscalingLifecycleHook) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingLifecycleHook) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AutoscalingLifecycleHook) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AutoscalingLifecycleHook) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingLifecycleHook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AutoscalingLifecycleHook) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAutoscalingLifecycleHook_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateAutoscalingLifecycleHook_IsConstructParameters(x interface{}) error {
+func validateAutoscalingLifecycleHook_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAutoscalingLifecycleHook_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateAutoscalingLifecycleHook_IsTerraformElementParameters(x interface{}) error {
+func validateAutoscalingLifecycleHook_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAutoscalingLifecycleHook_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateAutoscalingLifecycleHook_IsTerraformResourceParameters(x interface{}) error {
+func validateAutoscalingLifecycleHook_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetAutoscalingGroupNamePara
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetNotificationTargetArnPar
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -478,4 +478,3 @@ func validateNewAutoscalingLifecycleHookParameters(scope constructs.Construct, i
 
 	return nil
 }
-

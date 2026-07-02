@@ -19,7 +19,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) validateAddMoveTargetParameters
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WafregionalWebAclAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WafregionalWebAclAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateWafregionalWebAclAssociation_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateWafregionalWebAclAssociation_IsConstructParameters(x interface{}) error {
+func validateWafregionalWebAclAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateWafregionalWebAclAssociation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateWafregionalWebAclAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateWafregionalWebAclAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateWafregionalWebAclAssociation_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateWafregionalWebAclAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateWafregionalWebAclAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateWafregionalWebAclAssociation_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewWafregionalWebAclAssociationParameters(scope constructs.Construc
 
 	return nil
 }
-

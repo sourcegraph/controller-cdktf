@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBackupReportPlanReportSettingOutputReferenceParameters(terraform
 
 	return nil
 }
-

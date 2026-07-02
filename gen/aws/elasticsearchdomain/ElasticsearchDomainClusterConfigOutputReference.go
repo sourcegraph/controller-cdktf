@@ -14,9 +14,9 @@ type ElasticsearchDomainClusterConfigOutputReference interface {
 	ColdStorageOptionsInput() *ElasticsearchDomainClusterConfigColdStorageOptions
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type ElasticsearchDomainClusterConfigOutputReference interface {
 	DedicatedMasterCount() *float64
 	SetDedicatedMasterCount(val *float64)
 	DedicatedMasterCountInput() *float64
-	DedicatedMasterEnabled() interface{}
-	SetDedicatedMasterEnabled(val interface{})
-	DedicatedMasterEnabledInput() interface{}
+	DedicatedMasterEnabled() any
+	SetDedicatedMasterEnabled(val any)
+	DedicatedMasterEnabledInput() any
 	DedicatedMasterType() *string
 	SetDedicatedMasterType(val *string)
 	DedicatedMasterTypeInput() *string
@@ -57,21 +57,21 @@ type ElasticsearchDomainClusterConfigOutputReference interface {
 	WarmCount() *float64
 	SetWarmCount(val *float64)
 	WarmCountInput() *float64
-	WarmEnabled() interface{}
-	SetWarmEnabled(val interface{})
-	WarmEnabledInput() interface{}
+	WarmEnabled() any
+	SetWarmEnabled(val any)
+	WarmEnabledInput() any
 	WarmType() *string
 	SetWarmType(val *string)
 	WarmTypeInput() *string
 	ZoneAwarenessConfig() ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference
 	ZoneAwarenessConfigInput() *ElasticsearchDomainClusterConfigZoneAwarenessConfig
-	ZoneAwarenessEnabled() interface{}
-	SetZoneAwarenessEnabled(val interface{})
-	ZoneAwarenessEnabledInput() interface{}
+	ZoneAwarenessEnabled() any
+	SetZoneAwarenessEnabled(val any)
+	ZoneAwarenessEnabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ElasticsearchDomainClusterConfigOutputReference interface {
 	ResetZoneAwarenessEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ColdStorageO
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) DedicatedMas
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) DedicatedMasterEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) DedicatedMasterEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dedicatedMasterEnabled",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) DedicatedMas
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) DedicatedMasterEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) DedicatedMasterEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dedicatedMasterEnabledInput",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) WarmCountInp
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) WarmEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) WarmEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"warmEnabled",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) WarmEnabled(
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) WarmEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) WarmEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"warmEnabledInput",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenes
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenessEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenessEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"zoneAwarenessEnabled",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenes
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenessEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenessEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"zoneAwarenessEnabledInput",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ZoneAwarenes
 	)
 	return returns
 }
-
 
 func NewElasticsearchDomainClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainClusterConfigOutputReference {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewElasticsearchDomainClusterConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewElasticsearchDomainClusterConfigOutputReference_Override(e Elasticsearch
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetDedicatedMasterCount(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetDedicatedMasterCount(val *float64) {
 	if err := j.validateSetDedicatedMasterCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetDedicatedM
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetDedicatedMasterEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetDedicatedMasterEnabled(val any) {
 	if err := j.validateSetDedicatedMasterEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetDedicatedM
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetDedicatedMasterType(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetDedicatedMasterType(val *string) {
 	if err := j.validateSetDedicatedMasterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetDedicatedM
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetInstanceCount(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetInstanceCount(val *float64) {
 	if err := j.validateSetInstanceCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetInstanceCo
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetInstanceTy
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetInternalValue(val *ElasticsearchDomainClusterConfig) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetInternalValue(val *ElasticsearchDomainClusterConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetWarmCount(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetWarmCount(val *float64) {
 	if err := j.validateSetWarmCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetWarmCount(
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetWarmEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetWarmEnabled(val any) {
 	if err := j.validateSetWarmEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetWarmEnable
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetWarmType(val *string) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetWarmType(val *string) {
 	if err := j.validateSetWarmTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetWarmType(v
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference)SetZoneAwarenessEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) SetZoneAwarenessEnabled(val any) {
 	if err := j.validateSetZoneAwarenessEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,16 +604,16 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) PutColdStora
 	_jsii_.InvokeVoid(
 		e,
 		"putColdStorageOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -796,7 +795,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) PutZoneAware
 	_jsii_.InvokeVoid(
 		e,
 		"putZoneAwarenessConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -888,16 +887,16 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ResetZoneAwa
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) ToString() *
 
 	return returns
 }
-

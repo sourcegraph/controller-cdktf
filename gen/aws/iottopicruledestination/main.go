@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination",
-		reflect.TypeOf((*IotTopicRuleDestination)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDestination](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfiguration", GoGetter: "VpcConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigurationInput", GoGetter: "VpcConfigurationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDestination{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationConfig",
-		reflect.TypeOf((*IotTopicRuleDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeouts",
-		reflect.TypeOf((*IotTopicRuleDestinationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDestinationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
-		reflect.TypeOf((*IotTopicRuleDestinationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDestinationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfiguration",
-		reflect.TypeOf((*IotTopicRuleDestinationVpcConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDestinationVpcConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
-		reflect.TypeOf((*IotTopicRuleDestinationVpcConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IotTopicRuleDestinationVpcConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

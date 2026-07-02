@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKendraIndexCapacityUnitsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraIndexCapacityUnitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKendraIndexCapacityUnitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKendraIndexCapacityUnitsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

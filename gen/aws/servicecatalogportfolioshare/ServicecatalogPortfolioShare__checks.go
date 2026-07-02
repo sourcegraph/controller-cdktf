@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) validateAddMoveTargetParameters
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioShare) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServicecatalogPortfolioShare_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateServicecatalogPortfolioShare_IsConstructParameters(x interface{}) error {
+func validateServicecatalogPortfolioShare_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServicecatalogPortfolioShare_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateServicecatalogPortfolioShare_IsTerraformElementParameters(x interface{}) error {
+func validateServicecatalogPortfolioShare_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServicecatalogPortfolioShare_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateServicecatalogPortfolioShare_IsTerraformResourceParameters(x interface{}) error {
+func validateServicecatalogPortfolioShare_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetAcceptLanguageParame
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetPrincipalIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -431,7 +431,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetProvisionersParamete
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetSharePrincipalsParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetSharePrincipalsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetSharePrincipalsParam
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetShareTagOptionsParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetShareTagOptionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -479,7 +479,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetTypeParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetWaitForAcceptanceParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetWaitForAcceptanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -517,4 +517,3 @@ func validateNewServicecatalogPortfolioShareParameters(scope constructs.Construc
 
 	return nil
 }
-

@@ -15,11 +15,11 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -27,18 +27,18 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	ExcludeCharacters() *string
 	SetExcludeCharacters(val *string)
 	ExcludeCharactersInput() *string
-	ExcludeLowercase() interface{}
-	SetExcludeLowercase(val interface{})
-	ExcludeLowercaseInput() interface{}
-	ExcludeNumbers() interface{}
-	SetExcludeNumbers(val interface{})
-	ExcludeNumbersInput() interface{}
-	ExcludePunctuation() interface{}
-	SetExcludePunctuation(val interface{})
-	ExcludePunctuationInput() interface{}
-	ExcludeUppercase() interface{}
-	SetExcludeUppercase(val interface{})
-	ExcludeUppercaseInput() interface{}
+	ExcludeLowercase() any
+	SetExcludeLowercase(val any)
+	ExcludeLowercaseInput() any
+	ExcludeNumbers() any
+	SetExcludeNumbers(val any)
+	ExcludeNumbersInput() any
+	ExcludePunctuation() any
+	SetExcludePunctuation(val any)
+	ExcludePunctuationInput() any
+	ExcludeUppercase() any
+	SetExcludeUppercase(val any)
+	ExcludeUppercaseInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,9 +50,9 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeSpace() interface{}
-	SetIncludeSpace(val interface{})
-	IncludeSpaceInput() interface{}
+	IncludeSpace() any
+	SetIncludeSpace(val any)
+	IncludeSpaceInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -70,20 +70,20 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	SetRandomPassword(val *string)
 	RandomPasswordInput() *string
 	// Experimental.
-	RawOverrides() interface{}
-	RequireEachIncludedType() interface{}
-	SetRequireEachIncludedType(val interface{})
-	RequireEachIncludedTypeInput() interface{}
+	RawOverrides() any
+	RequireEachIncludedType() any
+	SetRequireEachIncludedType(val any)
+	RequireEachIncludedTypeInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,18 +118,18 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	ResetPasswordLength()
 	ResetRandomPassword()
 	ResetRequireEachIncludedType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsSecretsmanagerRandomPassword
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeCharactersInput()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeLowercase() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeLowercase() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeLowercase",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeLowercase() inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeLowercaseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeLowercaseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeLowercaseInput",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeLowercaseInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeNumbers() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeNumbers() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeNumbers",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeNumbers() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeNumbersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeNumbersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeNumbersInput",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeNumbersInput() in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludePunctuation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludePunctuation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludePunctuation",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludePunctuation() int
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludePunctuationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludePunctuationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludePunctuationInput",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludePunctuationInput(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeUppercase() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeUppercase() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeUppercase",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeUppercase() inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeUppercaseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ExcludeUppercaseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeUppercaseInput",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) IncludeSpace() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) IncludeSpace() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSpace",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) IncludeSpace() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) IncludeSpaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) IncludeSpaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSpaceInput",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RandomPasswordInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RequireEachIncludedType() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RequireEachIncludedType() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireEachIncludedType",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RequireEachIncludedType(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RequireEachIncludedTypeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RequireEachIncludedTypeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireEachIncludedTypeInput",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -477,7 +477,6 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformResourceType() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) DataAwsSecretsmanagerRandomPassword {
 	_init_.Initialize()
@@ -489,7 +488,7 @@ func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -502,12 +501,12 @@ func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRand
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeCharacters(val *string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetExcludeCharacters(val *string) {
 	if err := j.validateSetExcludeCharactersParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeCharacters(val 
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeLowercase(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetExcludeLowercase(val any) {
 	if err := j.validateSetExcludeLowercaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeLowercase(val i
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeNumbers(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetExcludeNumbers(val any) {
 	if err := j.validateSetExcludeNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeNumbers(val int
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludePunctuation(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetExcludePunctuation(val any) {
 	if err := j.validateSetExcludePunctuationParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludePunctuation(val
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeUppercase(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetExcludeUppercase(val any) {
 	if err := j.validateSetExcludeUppercaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetExcludeUppercase(val i
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetId(val *string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetIncludeSpace(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetIncludeSpace(val any) {
 	if err := j.validateSetIncludeSpaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetIncludeSpace(val inter
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetPasswordLength(val *float64) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetPasswordLength(val *float64) {
 	if err := j.validateSetPasswordLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetPasswordLength(val *fl
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -641,7 +640,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetRandomPassword(val *string) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetRandomPassword(val *string) {
 	if err := j.validateSetRandomPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetRandomPassword(val *st
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetRequireEachIncludedType(val interface{}) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SetRequireEachIncludedType(val any) {
 	if err := j.validateSetRequireEachIncludedTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func DataAwsSecretsmanagerRandomPassword_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func DataAwsSecretsmanagerRandomPassword_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsSecretsmanagerRandomPassword_IsConstruct(x interface{}) *bool {
+func DataAwsSecretsmanagerRandomPassword_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecretsmanagerRandomPassword_IsConstructParameters(x); err != nil {
@@ -710,7 +709,7 @@ func DataAwsSecretsmanagerRandomPassword_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func DataAwsSecretsmanagerRandomPassword_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsSecretsmanagerRandomPassword_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsSecretsmanagerRandomPassword_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecretsmanagerRandomPassword_IsTerraformDataSourceParameters(x); err != nil {
@@ -729,7 +728,7 @@ func DataAwsSecretsmanagerRandomPassword_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func DataAwsSecretsmanagerRandomPassword_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataAwsSecretsmanagerRandomPassword_IsTerraformElement(x interface{}) *bool {
+func DataAwsSecretsmanagerRandomPassword_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsSecretsmanagerRandomPassword_IsTerraformElementParameters(x); err != nil {
@@ -748,7 +747,7 @@ func DataAwsSecretsmanagerRandomPassword_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,27 +765,27 @@ func DataAwsSecretsmanagerRandomPassword_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1036,8 +1035,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ResetRequireEachIncluded
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1049,8 +1048,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1062,8 +1061,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1075,8 +1074,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1101,8 +1100,8 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1113,4 +1112,3 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ToTerraform() interface{
 
 	return returns
 }
-

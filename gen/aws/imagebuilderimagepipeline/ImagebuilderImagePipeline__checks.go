@@ -19,7 +19,7 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipeline) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_ImagebuilderImagePipeline) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_ImagebuilderImagePipeline) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateImagebuilderImagePipeline_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateImagebuilderImagePipeline_IsConstructParameters(x interface{}) error {
+func validateImagebuilderImagePipeline_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateImagebuilderImagePipeline_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateImagebuilderImagePipeline_IsTerraformElementParameters(x interface{}) error {
+func validateImagebuilderImagePipeline_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateImagebuilderImagePipeline_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateImagebuilderImagePipeline_IsTerraformResourceParameters(x interface{}) error {
+func validateImagebuilderImagePipeline_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateImagebuilderImagePipeline_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetContainerRecipeArnParam
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetDistributionConfigurati
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetEnhancedImageMetadataEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetEnhancedImageMetadataEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -528,4 +528,3 @@ func validateNewImagebuilderImagePipelineParameters(scope constructs.Construct, 
 
 	return nil
 }
-

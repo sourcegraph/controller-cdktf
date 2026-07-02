@@ -109,7 +109,7 @@ func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewMskconnectConnectorLogDeliveryOutputReferenceParameters(terrafor
 
 	return nil
 }
-

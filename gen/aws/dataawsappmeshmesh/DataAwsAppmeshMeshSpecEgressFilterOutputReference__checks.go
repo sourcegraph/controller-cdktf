@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAppmeshMeshSpecEgressFilterOutputReferenceParameters(terr
 
 	return nil
 }
-

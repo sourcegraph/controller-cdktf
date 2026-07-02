@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupFrameworkControlInputParameterList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_BackupFrameworkControlInputParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupFrameworkControlInputParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupFrameworkControlInputParameterListParameters(terraformReso
 
 	return nil
 }
-

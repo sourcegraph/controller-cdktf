@@ -120,7 +120,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewMacie2ClassificationJobS3JobDefinitionScopingOutputReferencePara
 
 	return nil
 }
-

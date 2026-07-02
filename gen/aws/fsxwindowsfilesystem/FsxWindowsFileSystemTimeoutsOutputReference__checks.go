@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFsxWindowsFileSystemTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

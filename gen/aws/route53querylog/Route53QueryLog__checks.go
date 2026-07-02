@@ -19,7 +19,7 @@ func (r *jsiiProxy_Route53QueryLog) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (r *jsiiProxy_Route53QueryLog) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Route53QueryLog) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Route53QueryLog) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (r *jsiiProxy_Route53QueryLog) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Route53QueryLog) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRoute53QueryLog_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateRoute53QueryLog_IsConstructParameters(x interface{}) error {
+func validateRoute53QueryLog_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRoute53QueryLog_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRoute53QueryLog_IsTerraformElementParameters(x interface{}) error {
+func validateRoute53QueryLog_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRoute53QueryLog_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRoute53QueryLog_IsTerraformResourceParameters(x interface{}) error {
+func validateRoute53QueryLog_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Route53QueryLog) validateSetCloudwatchLogGroupArnParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_Route53QueryLog) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Route53QueryLog) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_Route53QueryLog) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_Route53QueryLog) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Route53QueryLog) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_Route53QueryLog) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_Route53QueryLog) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Route53QueryLog) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewRoute53QueryLogParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

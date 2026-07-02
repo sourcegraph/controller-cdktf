@@ -98,7 +98,7 @@ func (l *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLocationTrackerAssociationTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

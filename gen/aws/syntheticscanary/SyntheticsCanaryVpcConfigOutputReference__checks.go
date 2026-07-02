@@ -98,7 +98,7 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSyntheticsCanaryVpcConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

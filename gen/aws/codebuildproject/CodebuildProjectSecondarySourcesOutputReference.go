@@ -19,9 +19,9 @@ type CodebuildProjectSecondarySourcesOutputReference interface {
 	BuildStatusConfigInput() *CodebuildProjectSecondarySourcesBuildStatusConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,17 +39,17 @@ type CodebuildProjectSecondarySourcesOutputReference interface {
 	GitCloneDepthInput() *float64
 	GitSubmodulesConfig() CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference
 	GitSubmodulesConfigInput() *CodebuildProjectSecondarySourcesGitSubmodulesConfig
-	InsecureSsl() interface{}
-	SetInsecureSsl(val interface{})
-	InsecureSslInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InsecureSsl() any
+	SetInsecureSsl(val any)
+	InsecureSslInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
-	ReportBuildStatus() interface{}
-	SetReportBuildStatus(val interface{})
-	ReportBuildStatusInput() interface{}
+	ReportBuildStatus() any
+	SetReportBuildStatus(val any)
+	ReportBuildStatusInput() any
 	SourceIdentifier() *string
 	SetSourceIdentifier(val *string)
 	SourceIdentifierInput() *string
@@ -67,7 +67,7 @@ type CodebuildProjectSecondarySourcesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type CodebuildProjectSecondarySourcesOutputReference interface {
 	ResetReportBuildStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) BuildStatusC
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GitSubmodule
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InsecureSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InsecureSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureSsl",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InsecureSsl(
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InsecureSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InsecureSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insecureSslInput",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InsecureSslI
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) LocationInpu
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ReportBuildStatus() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ReportBuildStatus() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reportBuildStatus",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ReportBuildS
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ReportBuildStatusInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ReportBuildStatusInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reportBuildStatusInput",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) TypeInput() 
 	return returns
 }
 
-
 func NewCodebuildProjectSecondarySourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodebuildProjectSecondarySourcesOutputReference {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewCodebuildProjectSecondarySourcesOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -407,12 +406,12 @@ func NewCodebuildProjectSecondarySourcesOutputReference_Override(c CodebuildProj
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetBuildspec(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetBuildspec(val *string) {
 	if err := j.validateSetBuildspecParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetBuildspec(
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetGitCloneDepth(val *float64) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetGitCloneDepth(val *float64) {
 	if err := j.validateSetGitCloneDepthParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetGitCloneDe
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetInsecureSsl(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetInsecureSsl(val any) {
 	if err := j.validateSetInsecureSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetInsecureSs
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetLocation(v
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetReportBuildStatus(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetReportBuildStatus(val any) {
 	if err := j.validateSetReportBuildStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetReportBuil
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetSourceIdentifier(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetSourceIdentifier(val *string) {
 	if err := j.validateSetSourceIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetSourceIden
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) PutAuth(valu
 	_jsii_.InvokeVoid(
 		c,
 		"putAuth",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) PutBuildStat
 	_jsii_.InvokeVoid(
 		c,
 		"putBuildStatusConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,7 +758,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) PutGitSubmod
 	_jsii_.InvokeVoid(
 		c,
 		"putGitSubmodulesConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -827,16 +826,16 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ResetReportB
 	)
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -855,4 +854,3 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ToString() *
 
 	return returns
 }
-

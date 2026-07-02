@@ -90,7 +90,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validatePutCapacityProviderStrategyParameters(value interface{}) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validatePutCapacityProviderStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validatePutPlacementConstraintsParameters(value interface{}) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validatePutPlacementConstraintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validatePutPlacementStrategyParameters(value interface{}) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validatePutPlacementStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetEnableEcsManagedTagsParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetEnableEcsManagedTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetEnableExecuteCommandParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetEnableExecuteCommandParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,4 +406,3 @@ func validateNewSchedulerScheduleTargetEcsParametersOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -16,15 +16,15 @@ type SsmActivation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,11 +64,11 @@ type SsmActivation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistrationCount() *float64
 	RegistrationLimit() *float64
 	SetRegistrationLimit(val *float64)
@@ -82,16 +82,16 @@ type SsmActivation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type SsmActivation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type SsmActivation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type SsmActivation interface {
 	ResetRegistrationLimit()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SsmActivation
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SsmActivation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SsmActivation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmActivation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_SsmActivation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmActivation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmActivation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_SsmActivation) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_SsmActivation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmActivation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_SsmActivation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SsmActivation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SsmActivation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_SsmActivation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmActivation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmActivation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_SsmActivation) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_SsmActivation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmActivation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_SsmActivation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
 func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivationConfig) SsmActivation {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmActivation.SsmActivation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewSsmActivation_Override(s SsmActivation, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmActivation.SsmActivation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetConnection(val interface{}) {
+func (j *jsiiProxy_SsmActivation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_SsmActivation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetCount(val interface{}) {
+func (j *jsiiProxy_SsmActivation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_SsmActivation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SsmActivation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_SsmActivation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetDescription(val *string) {
+func (j *jsiiProxy_SsmActivation) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_SsmActivation)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetExpirationDate(val *string) {
+func (j *jsiiProxy_SsmActivation) SetExpirationDate(val *string) {
 	if err := j.validateSetExpirationDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_SsmActivation)SetExpirationDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsmActivation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -596,7 +595,7 @@ func (j *jsiiProxy_SsmActivation)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetIamRole(val *string) {
+func (j *jsiiProxy_SsmActivation) SetIamRole(val *string) {
 	if err := j.validateSetIamRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_SsmActivation)SetIamRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetId(val *string) {
+func (j *jsiiProxy_SsmActivation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_SsmActivation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsmActivation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_SsmActivation)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetName(val *string) {
+func (j *jsiiProxy_SsmActivation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_SsmActivation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsmActivation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_SsmActivation)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SsmActivation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_SsmActivation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetRegistrationLimit(val *float64) {
+func (j *jsiiProxy_SsmActivation) SetRegistrationLimit(val *float64) {
 	if err := j.validateSetRegistrationLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_SsmActivation)SetRegistrationLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SsmActivation) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_SsmActivation)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmActivation)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SsmActivation) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func SsmActivation_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func SsmActivation_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SsmActivation_IsConstruct(x interface{}) *bool {
+func SsmActivation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmActivation_IsConstructParameters(x); err != nil {
@@ -739,7 +738,7 @@ func SsmActivation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func SsmActivation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmActivation_IsTerraformElement(x interface{}) *bool {
+func SsmActivation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmActivation_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func SsmActivation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func SsmActivation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmActivation_IsTerraformResource(x interface{}) *bool {
+func SsmActivation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmActivation_IsTerraformResourceParameters(x); err != nil {
@@ -777,7 +776,7 @@ func SsmActivation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,31 +801,31 @@ func (s *jsiiProxy_SsmActivation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SsmActivation) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SsmActivation) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SsmActivation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsmActivation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (s *jsiiProxy_SsmActivation) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (s *jsiiProxy_SsmActivation) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (s *jsiiProxy_SsmActivation) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_SsmActivation) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (s *jsiiProxy_SsmActivation) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (s *jsiiProxy_SsmActivation) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (s *jsiiProxy_SsmActivation) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,15 +953,15 @@ func (s *jsiiProxy_SsmActivation) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsmActivation) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmActivation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -981,7 +980,7 @@ func (s *jsiiProxy_SsmActivation) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -994,7 +993,7 @@ func (s *jsiiProxy_SsmActivation) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,18 +1007,18 @@ func (s *jsiiProxy_SsmActivation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SsmActivation) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SsmActivation) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (s *jsiiProxy_SsmActivation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (s *jsiiProxy_SsmActivation) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1109,8 +1108,8 @@ func (s *jsiiProxy_SsmActivation) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SsmActivation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmActivation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1122,8 +1121,8 @@ func (s *jsiiProxy_SsmActivation) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (s *jsiiProxy_SsmActivation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmActivation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1135,8 +1134,8 @@ func (s *jsiiProxy_SsmActivation) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SsmActivation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmActivation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1148,8 +1147,8 @@ func (s *jsiiProxy_SsmActivation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsmActivation) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmActivation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1174,8 +1173,8 @@ func (s *jsiiProxy_SsmActivation) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SsmActivation) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmActivation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1186,4 +1185,3 @@ func (s *jsiiProxy_SsmActivation) ToTerraform() interface{} {
 
 	return returns
 }
-

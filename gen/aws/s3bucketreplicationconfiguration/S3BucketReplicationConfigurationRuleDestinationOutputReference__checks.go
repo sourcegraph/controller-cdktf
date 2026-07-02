@@ -158,7 +158,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -266,4 +266,3 @@ func validateNewS3BucketReplicationConfigurationRuleDestinationOutputReferencePa
 
 	return nil
 }
-

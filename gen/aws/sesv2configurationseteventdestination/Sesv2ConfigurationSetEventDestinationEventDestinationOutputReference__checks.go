@@ -142,7 +142,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewSesv2ConfigurationSetEventDestinationEventDestinationOutputRefer
 
 	return nil
 }
-

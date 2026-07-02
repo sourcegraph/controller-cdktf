@@ -6,9 +6,9 @@ import (
 
 type ElastictranscoderPipelineConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ElastictranscoderPipelineConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline#input_bucket ElastictranscoderPipeline#input_bucket}.
 	InputBucket *string `field:"required" json:"inputBucket" yaml:"inputBucket"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline#role ElastictranscoderPipeline#role}.
@@ -32,7 +32,7 @@ type ElastictranscoderPipelineConfig struct {
 	// content_config_permissions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline#content_config_permissions ElastictranscoderPipeline#content_config_permissions}
-	ContentConfigPermissions interface{} `field:"optional" json:"contentConfigPermissions" yaml:"contentConfigPermissions"`
+	ContentConfigPermissions any `field:"optional" json:"contentConfigPermissions" yaml:"contentConfigPermissions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline#id ElastictranscoderPipeline#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -53,6 +53,5 @@ type ElastictranscoderPipelineConfig struct {
 	// thumbnail_config_permissions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elastictranscoder_pipeline#thumbnail_config_permissions ElastictranscoderPipeline#thumbnail_config_permissions}
-	ThumbnailConfigPermissions interface{} `field:"optional" json:"thumbnailConfigPermissions" yaml:"thumbnailConfigPermissions"`
+	ThumbnailConfigPermissions any `field:"optional" json:"thumbnailConfigPermissions" yaml:"thumbnailConfigPermissions"`
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpensearchDomainSnapshotOptionsOutputReference) validateSetAu
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainSnapshotOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainSnapshotOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOpensearchDomainSnapshotOptionsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

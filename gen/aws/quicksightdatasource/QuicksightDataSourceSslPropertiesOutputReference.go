@@ -12,9 +12,9 @@ type QuicksightDataSourceSslPropertiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type QuicksightDataSourceSslPropertiesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableSsl() interface{}
-	SetDisableSsl(val interface{})
-	DisableSslInput() interface{}
+	DisableSsl() any
+	SetDisableSsl(val any)
+	DisableSslInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *QuicksightDataSourceSslProperties
@@ -43,7 +43,7 @@ type QuicksightDataSourceSslPropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type QuicksightDataSourceSslPropertiesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) DisableSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) DisableSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableSsl",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) DisableSsl(
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) DisableSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) DisableSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableSslInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewQuicksightDataSourceSslPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceSslPropertiesOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewQuicksightDataSourceSslPropertiesOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewQuicksightDataSourceSslPropertiesOutputReference_Override(q QuicksightDa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetDisableSsl(val interface{}) {
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) SetDisableSsl(val any) {
 	if err := j.validateSetDisableSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetDisableSs
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetInternalValue(val *QuicksightDataSourceSslProperties) {
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) SetInternalValue(val *QuicksightDataSourceSslProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) ComputeFqn(
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetListAttr
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetStringAt
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) GetStringMa
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) Interpolati
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (q *jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference) ToString() 
 
 	return returns
 }
-

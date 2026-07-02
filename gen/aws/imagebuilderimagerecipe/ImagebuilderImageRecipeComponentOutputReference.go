@@ -12,9 +12,9 @@ type ImagebuilderImageRecipeComponentOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,10 +30,10 @@ type ImagebuilderImageRecipeComponentOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Parameter() ImagebuilderImageRecipeComponentParameterList
-	ParameterInput() interface{}
+	ParameterInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type ImagebuilderImageRecipeComponentOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type ImagebuilderImageRecipeComponentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutParameter(value interface{})
+	PutParameter(value any)
 	ResetParameter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ImagebuilderImageRecipeComponentOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) Parameter() 
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewImagebuilderImageRecipeComponentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ImagebuilderImageRecipeComponentOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewImagebuilderImageRecipeComponentOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewImagebuilderImageRecipeComponentOutputReference_Override(i ImagebuilderI
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetComponentArn(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) SetComponentArn(val *string) {
 	if err := j.validateSetComponentArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetComponentA
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ComputeFqn()
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetListAttri
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) GetStringMap
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) Interpolatio
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) PutParameter(value interface{}) {
+func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) PutParameter(value any) {
 	if err := i.validatePutParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ResetParamet
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) ToString() *
 
 	return returns
 }
-

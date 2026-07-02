@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroup",
-		reflect.TypeOf((*DbSecurityGroup)(nil)).Elem(),
+		reflect.TypeFor[DbSecurityGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbSecurityGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupConfig",
-		reflect.TypeOf((*DbSecurityGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DbSecurityGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress",
-		reflect.TypeOf((*DbSecurityGroupIngress)(nil)).Elem(),
+		reflect.TypeFor[DbSecurityGroupIngress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressList",
-		reflect.TypeOf((*DbSecurityGroupIngressList)(nil)).Elem(),
+		reflect.TypeFor[DbSecurityGroupIngressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbSecurityGroupIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
-		reflect.TypeOf((*DbSecurityGroupIngressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbSecurityGroupIngressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbSecurityGroupIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -290,4 +290,3 @@ func validateNewOpsworksEcsClusterLayerEbsVolumeOutputReferenceParameters(terraf
 
 	return nil
 }
-

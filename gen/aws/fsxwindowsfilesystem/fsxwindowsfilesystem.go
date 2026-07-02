@@ -30,18 +30,18 @@ type FsxWindowsFileSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	CopyTagsToBackups() interface{}
-	SetCopyTagsToBackups(val interface{})
-	CopyTagsToBackupsInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	CopyTagsToBackups() any
+	SetCopyTagsToBackups(val any)
+	CopyTagsToBackupsInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DailyAutomaticBackupStartTime() *string
 	SetDailyAutomaticBackupStartTime(val *string)
 	DailyAutomaticBackupStartTimeInput() *string
@@ -84,20 +84,20 @@ type FsxWindowsFileSystem interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteAdministrationEndpoint() *string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
 	SelfManagedActiveDirectory() FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference
 	SelfManagedActiveDirectoryInput() *FsxWindowsFileSystemSelfManagedActiveDirectory
-	SkipFinalBackup() interface{}
-	SetSkipFinalBackup(val interface{})
-	SkipFinalBackupInput() interface{}
+	SkipFinalBackup() any
+	SetSkipFinalBackup(val any)
+	SkipFinalBackupInput() any
 	StorageCapacity() *float64
 	SetStorageCapacity(val *float64)
 	StorageCapacityInput() *float64
@@ -116,14 +116,14 @@ type FsxWindowsFileSystem interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThroughputCapacity() *float64
 	SetThroughputCapacity(val *float64)
 	ThroughputCapacityInput() *float64
 	Timeouts() FsxWindowsFileSystemTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	WeeklyMaintenanceStartTime() *string
 	SetWeeklyMaintenanceStartTime(val *string)
@@ -132,9 +132,9 @@ type FsxWindowsFileSystem interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -152,7 +152,7 @@ type FsxWindowsFileSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -164,7 +164,7 @@ type FsxWindowsFileSystem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -197,17 +197,17 @@ type FsxWindowsFileSystem interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetWeeklyMaintenanceStartTime()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FsxWindowsFileSystem
@@ -335,8 +335,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackups() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackups() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToBackups",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackups() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"copyTagsToBackupsInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -595,8 +595,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -665,8 +665,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) SelfManagedActiveDirectoryInput() *FsxW
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) SkipFinalBackup() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) SkipFinalBackup() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalBackup",
@@ -675,8 +675,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) SkipFinalBackup() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) SkipFinalBackupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) SkipFinalBackupInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalBackupInput",
@@ -795,8 +795,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -845,8 +845,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) Timeouts() FsxWindowsFileSystemTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FsxWindowsFileSystem) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -885,7 +885,6 @@ func (j *jsiiProxy_FsxWindowsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) FsxWindowsFileSystem {
 	_init_.Initialize()
@@ -897,7 +896,7 @@ func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *Fsx
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -910,12 +909,12 @@ func NewFsxWindowsFileSystem_Override(f FsxWindowsFileSystem, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetActiveDirectoryId(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetActiveDirectoryId(val *string) {
 	if err := j.validateSetActiveDirectoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetActiveDirectoryId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetAliases(val *[]*string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetAliases(val *[]*string) {
 	if err := j.validateSetAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetAliases(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetAutomaticBackupRetentionDays(val *float64) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetAutomaticBackupRetentionDays(val *float64) {
 	if err := j.validateSetAutomaticBackupRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetAutomaticBackupRetentionDays(val *flo
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetBackupId(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetBackupId(val *string) {
 	if err := j.validateSetBackupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetBackupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetConnection(val interface{}) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetCopyTagsToBackups(val interface{}) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetCopyTagsToBackups(val any) {
 	if err := j.validateSetCopyTagsToBackupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetCopyTagsToBackups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +991,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetDailyAutomaticBackupStartTime(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetDailyAutomaticBackupStartTime(val *string) {
 	if err := j.validateSetDailyAutomaticBackupStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1003,7 +1002,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetDailyAutomaticBackupStartTime(val *st
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetDeploymentType(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetDeploymentType(val *string) {
 	if err := j.validateSetDeploymentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetDeploymentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetId(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetPreferredSubnetId(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetPreferredSubnetId(val *string) {
 	if err := j.validateSetPreferredSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetPreferredSubnetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetSkipFinalBackup(val interface{}) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetSkipFinalBackup(val any) {
 	if err := j.validateSetSkipFinalBackupParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetSkipFinalBackup(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetStorageCapacity(val *float64) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetStorageCapacity(val *float64) {
 	if err := j.validateSetStorageCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetStorageCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetStorageType(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetThroughputCapacity(val *float64) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetThroughputCapacity(val *float64) {
 	if err := j.validateSetThroughputCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetThroughputCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetWeeklyMaintenanceStartTime(val *string) {
+func (j *jsiiProxy_FsxWindowsFileSystem) SetWeeklyMaintenanceStartTime(val *string) {
 	if err := j.validateSetWeeklyMaintenanceStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1204,7 +1203,7 @@ func FsxWindowsFileSystem_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1228,7 +1227,7 @@ func FsxWindowsFileSystem_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FsxWindowsFileSystem_IsConstruct(x interface{}) *bool {
+func FsxWindowsFileSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxWindowsFileSystem_IsConstructParameters(x); err != nil {
@@ -1239,7 +1238,7 @@ func FsxWindowsFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1247,7 +1246,7 @@ func FsxWindowsFileSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool {
+func FsxWindowsFileSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxWindowsFileSystem_IsTerraformElementParameters(x); err != nil {
@@ -1258,7 +1257,7 @@ func FsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1266,7 +1265,7 @@ func FsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FsxWindowsFileSystem_IsTerraformResource(x interface{}) *bool {
+func FsxWindowsFileSystem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFsxWindowsFileSystem_IsTerraformResourceParameters(x); err != nil {
@@ -1277,7 +1276,7 @@ func FsxWindowsFileSystem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1302,31 +1301,31 @@ func (f *jsiiProxy_FsxWindowsFileSystem) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FsxWindowsFileSystem) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FsxWindowsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1342,7 +1341,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1358,7 +1357,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1374,7 +1373,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1390,7 +1389,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1406,7 +1405,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1422,7 +1421,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1438,7 +1437,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1454,15 +1453,15 @@ func (f *jsiiProxy_FsxWindowsFileSystem) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxWindowsFileSystem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1481,7 +1480,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1494,7 +1493,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1508,18 +1507,18 @@ func (f *jsiiProxy_FsxWindowsFileSystem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FsxWindowsFileSystem) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1530,7 +1529,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1541,7 +1540,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1552,7 +1551,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) PutAuditLogConfiguration(value *FsxWind
 	_jsii_.InvokeVoid(
 		f,
 		"putAuditLogConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1563,7 +1562,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) PutSelfManagedActiveDirectory(value *Fs
 	_jsii_.InvokeVoid(
 		f,
 		"putSelfManagedActiveDirectory",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1574,7 +1573,7 @@ func (f *jsiiProxy_FsxWindowsFileSystem) PutTimeouts(value *FsxWindowsFileSystem
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1746,8 +1745,8 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ResetWeeklyMaintenanceStartTime() {
 	)
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxWindowsFileSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1759,8 +1758,8 @@ func (f *jsiiProxy_FsxWindowsFileSystem) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FsxWindowsFileSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1772,8 +1771,8 @@ func (f *jsiiProxy_FsxWindowsFileSystem) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxWindowsFileSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1785,8 +1784,8 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxWindowsFileSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1811,8 +1810,8 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FsxWindowsFileSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1823,4 +1822,3 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

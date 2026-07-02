@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAlbTargetGroupStickinessOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudhsmV2Hsm) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateCloudhsmV2Hsm_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateCloudhsmV2Hsm_IsConstructParameters(x interface{}) error {
+func validateCloudhsmV2Hsm_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateCloudhsmV2Hsm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudhsmV2Hsm_IsTerraformElementParameters(x interface{}) error {
+func validateCloudhsmV2Hsm_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateCloudhsmV2Hsm_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudhsmV2Hsm_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudhsmV2Hsm_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm) validateSetClusterIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudhsmV2Hsm) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudhsmV2Hsm) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudhsmV2Hsm) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewCloudhsmV2HsmParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

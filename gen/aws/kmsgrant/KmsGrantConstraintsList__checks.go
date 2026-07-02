@@ -34,7 +34,7 @@ func (k *jsiiProxy_KmsGrantConstraintsList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_KmsGrantConstraintsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsGrantConstraintsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKmsGrantConstraintsListParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type Ec2ClientVpnEndpointAuthenticationOptionsOutputReference interface {
 	ActiveDirectoryIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type Ec2ClientVpnEndpointAuthenticationOptionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RootCertificateChainArn() *string
 	SetRootCertificateChainArn(val *string)
 	RootCertificateChainArnInput() *string
@@ -55,7 +55,7 @@ type Ec2ClientVpnEndpointAuthenticationOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type Ec2ClientVpnEndpointAuthenticationOptionsOutputReference interface {
 	ResetSelfServiceSamlProviderArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Act
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Typ
 	return returns
 }
 
-
 func NewEc2ClientVpnEndpointAuthenticationOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Ec2ClientVpnEndpointAuthenticationOptionsOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewEc2ClientVpnEndpointAuthenticationOptionsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewEc2ClientVpnEndpointAuthenticationOptionsOutputReference_Override(e Ec2C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetActiveDirectoryId(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetActiveDirectoryId(val *string) {
 	if err := j.validateSetActiveDirectoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetRootCertificateChainArn(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetRootCertificateChainArn(val *string) {
 	if err := j.validateSetRootCertificateChainArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetSamlProviderArn(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetSamlProviderArn(val *string) {
 	if err := j.validateSetSamlProviderArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetSelfServiceSamlProviderArn(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetSelfServiceSamlProviderArn(val *string) {
 	if err := j.validateSetSelfServiceSamlProviderArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Com
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Get
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Int
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Res
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference) ToS
 
 	return returns
 }
-

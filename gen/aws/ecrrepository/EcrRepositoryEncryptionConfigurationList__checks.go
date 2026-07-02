@@ -34,7 +34,7 @@ func (e *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEcrRepositoryEncryptionConfigurationListParameters(terraformReso
 
 	return nil
 }
-

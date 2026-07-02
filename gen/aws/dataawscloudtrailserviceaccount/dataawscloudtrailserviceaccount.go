@@ -16,11 +16,11 @@ type DataAwsCloudtrailServiceAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,20 +47,20 @@ type DataAwsCloudtrailServiceAccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataAwsCloudtrailServiceAccount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCloudtrailServiceAccount
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -296,7 +296,6 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/cloudtrail_service_account aws_cloudtrail_service_account} Data Source.
 func NewDataAwsCloudtrailServiceAccount(scope constructs.Construct, id *string, config *DataAwsCloudtrailServiceAccountConfig) DataAwsCloudtrailServiceAccount {
 	_init_.Initialize()
@@ -308,7 +307,7 @@ func NewDataAwsCloudtrailServiceAccount(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataAwsCloudtrailServiceAccount_Override(d DataAwsCloudtrailServiceAccou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudtrailServiceAccount)SetRegion(val *string) {
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func DataAwsCloudtrailServiceAccount_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func DataAwsCloudtrailServiceAccount_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCloudtrailServiceAccount_IsConstruct(x interface{}) *bool {
+func DataAwsCloudtrailServiceAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudtrailServiceAccount_IsConstructParameters(x); err != nil {
@@ -441,7 +440,7 @@ func DataAwsCloudtrailServiceAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func DataAwsCloudtrailServiceAccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCloudtrailServiceAccount_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCloudtrailServiceAccount_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudtrailServiceAccount_IsTerraformDataSourceParameters(x); err != nil {
@@ -460,7 +459,7 @@ func DataAwsCloudtrailServiceAccount_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func DataAwsCloudtrailServiceAccount_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataAwsCloudtrailServiceAccount_IsTerraformElement(x interface{}) *bool {
+func DataAwsCloudtrailServiceAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCloudtrailServiceAccount_IsTerraformElementParameters(x); err != nil {
@@ -479,7 +478,7 @@ func DataAwsCloudtrailServiceAccount_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -497,27 +496,27 @@ func DataAwsCloudtrailServiceAccount_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) ToTerraform() interface{} {
 
 	return returns
 }
-

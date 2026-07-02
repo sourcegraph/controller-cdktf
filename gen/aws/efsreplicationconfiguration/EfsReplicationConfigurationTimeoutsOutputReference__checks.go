@@ -98,7 +98,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEfsReplicationConfigurationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

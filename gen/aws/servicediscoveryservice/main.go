@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
-		reflect.TypeOf((*ServiceDiscoveryService)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDiscoveryService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,19 +97,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig",
-		reflect.TypeOf((*ServiceDiscoveryServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig",
-		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceDnsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords",
-		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigDnsRecords)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceDnsConfigDnsRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsList",
-		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigDnsRecordsList)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceDnsConfigDnsRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
-		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
-		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceDnsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,11 +207,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig",
-		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceHealthCheckConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfigOutputReference",
-		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceHealthCheckConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig",
-		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckCustomConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceHealthCheckCustomConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
-		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

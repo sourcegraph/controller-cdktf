@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsLocationTrackerAssociations) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsLocationTrackerAssociations) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsLocationTrackerAssociations_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataAwsLocationTrackerAssociations_IsConstructParameters(x interface{}) error {
+func validateDataAwsLocationTrackerAssociations_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsLocationTrackerAssociations_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataAwsLocationTrackerAssociations_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsLocationTrackerAssociations_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsLocationTrackerAssociations_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataAwsLocationTrackerAssociations_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsLocationTrackerAssociations_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsLocationTrackerAssociations_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataAwsLocationTrackerAssociationsParameters(scope constructs.Co
 
 	return nil
 }
-

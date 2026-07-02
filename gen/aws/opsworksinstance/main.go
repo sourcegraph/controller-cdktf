@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
-		reflect.TypeOf((*OpsworksInstance)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualizationType", GoGetter: "VirtualizationType"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualizationTypeInput", GoGetter: "VirtualizationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -174,15 +174,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceConfig",
-		reflect.TypeOf((*OpsworksInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDevice",
-		reflect.TypeOf((*OpsworksInstanceEbsBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceEbsBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
-		reflect.TypeOf((*OpsworksInstanceEbsBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceEbsBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceEbsBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -204,7 +204,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
-		reflect.TypeOf((*OpsworksInstanceEbsBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceEbsBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,11 +253,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDevice",
-		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceEphemeralBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
-		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceEphemeralBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceEphemeralBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -279,7 +279,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
-		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceEphemeralBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNameInput", GoGetter: "VirtualNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceEphemeralBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,11 +315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDevice",
-		reflect.TypeOf((*OpsworksInstanceRootBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceRootBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
-		reflect.TypeOf((*OpsworksInstanceRootBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceRootBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceRootBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -341,7 +341,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
-		reflect.TypeOf((*OpsworksInstanceRootBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceRootBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -385,11 +385,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceTimeouts",
-		reflect.TypeOf((*OpsworksInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*OpsworksInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -422,7 +422,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

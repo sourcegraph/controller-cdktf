@@ -98,7 +98,7 @@ func (a *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAmiFromInstanceEphemeralBlockDeviceOutputReferenceParameters(ter
 
 	return nil
 }
-

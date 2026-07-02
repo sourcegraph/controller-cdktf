@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsLakeformationPermissionsLfTagPolicyExpressionOutputRefere
 
 	return nil
 }
-

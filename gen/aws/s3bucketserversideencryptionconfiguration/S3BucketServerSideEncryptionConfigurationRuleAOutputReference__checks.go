@@ -109,7 +109,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetBucketKeyEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetBucketKeyEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewS3BucketServerSideEncryptionConfigurationRuleAOutputReferencePar
 
 	return nil
 }
-

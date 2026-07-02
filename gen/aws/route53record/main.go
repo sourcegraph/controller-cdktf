@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Record.Route53Record",
-		reflect.TypeOf((*Route53Record)(nil)).Elem(),
+		reflect.TypeFor[Route53Record](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53Record{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,11 +109,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Record.Route53RecordAlias",
-		reflect.TypeOf((*Route53RecordAlias)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordAlias](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
-		reflect.TypeOf((*Route53RecordAliasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordAliasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecordAliasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,15 +151,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Record.Route53RecordConfig",
-		reflect.TypeOf((*Route53RecordConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Record.Route53RecordFailoverRoutingPolicy",
-		reflect.TypeOf((*Route53RecordFailoverRoutingPolicy)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordFailoverRoutingPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
-		reflect.TypeOf((*Route53RecordFailoverRoutingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordFailoverRoutingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecordFailoverRoutingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicy",
-		reflect.TypeOf((*Route53RecordGeolocationRoutingPolicy)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordGeolocationRoutingPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
-		reflect.TypeOf((*Route53RecordGeolocationRoutingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordGeolocationRoutingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,11 +238,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicy",
-		reflect.TypeOf((*Route53RecordLatencyRoutingPolicy)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordLatencyRoutingPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
-		reflect.TypeOf((*Route53RecordLatencyRoutingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordLatencyRoutingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -276,11 +276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicy",
-		reflect.TypeOf((*Route53RecordWeightedRoutingPolicy)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordWeightedRoutingPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
-		reflect.TypeOf((*Route53RecordWeightedRoutingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53RecordWeightedRoutingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

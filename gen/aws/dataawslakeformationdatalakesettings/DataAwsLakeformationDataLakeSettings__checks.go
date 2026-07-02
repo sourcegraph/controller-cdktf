@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsLakeformationDataLakeSettings_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateDataAwsLakeformationDataLakeSettings_IsConstructParameters(x interface{}) error {
+func validateDataAwsLakeformationDataLakeSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsLakeformationDataLakeSettings_IsConstructParameters(x interf
 	return nil
 }
 
-func validateDataAwsLakeformationDataLakeSettings_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsLakeformationDataLakeSettings_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsLakeformationDataLakeSettings_IsTerraformDataSourceParameter
 	return nil
 }
 
-func validateDataAwsLakeformationDataLakeSettings_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsLakeformationDataLakeSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) validateSetCatalogIdPar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDataAwsLakeformationDataLakeSettingsParameters(scope constructs.
 
 	return nil
 }
-

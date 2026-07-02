@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
-		reflect.TypeOf((*DocdbClusterSnapshot)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterSnapshot](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbClusterSnapshot{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshotConfig",
-		reflect.TypeOf((*DocdbClusterSnapshotConfig)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterSnapshotConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshotTimeouts",
-		reflect.TypeOf((*DocdbClusterSnapshotTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterSnapshotTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshotTimeoutsOutputReference",
-		reflect.TypeOf((*DocdbClusterSnapshotTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterSnapshotTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbClusterSnapshotTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

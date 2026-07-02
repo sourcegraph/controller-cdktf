@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSsmDocumentAttachmentsSourceOutputReferenceParameters(terraformR
 
 	return nil
 }
-

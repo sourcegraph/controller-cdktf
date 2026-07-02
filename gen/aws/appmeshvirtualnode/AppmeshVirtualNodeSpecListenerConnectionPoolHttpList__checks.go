@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpList) validat
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppmeshVirtualNodeSpecListenerConnectionPoolHttpListParameters(t
 
 	return nil
 }
-

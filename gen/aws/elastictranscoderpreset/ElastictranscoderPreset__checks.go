@@ -19,7 +19,7 @@ func (e *jsiiProxy_ElastictranscoderPreset) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPreset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPreset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_ElastictranscoderPreset) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPreset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPreset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoParameters(value *El
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoWatermarksParameters(value interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoWatermarksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateElastictranscoderPreset_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateElastictranscoderPreset_IsConstructParameters(x interface{}) error {
+func validateElastictranscoderPreset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateElastictranscoderPreset_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateElastictranscoderPreset_IsTerraformElementParameters(x interface{}) error {
+func validateElastictranscoderPreset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateElastictranscoderPreset_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateElastictranscoderPreset_IsTerraformResourceParameters(x interface{}) error {
+func validateElastictranscoderPreset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateElastictranscoderPreset_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPreset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPreset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -360,7 +360,7 @@ func (j *jsiiProxy_ElastictranscoderPreset) validateSetContainerParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPreset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPreset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ElastictranscoderPreset) validateSetNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPreset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPreset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -529,4 +529,3 @@ func validateNewElastictranscoderPresetParameters(scope constructs.Construct, id
 
 	return nil
 }
-

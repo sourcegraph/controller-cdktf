@@ -16,17 +16,17 @@ type VpnConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CoreNetworkArn() *string
 	CoreNetworkAttachmentArn() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerGatewayConfiguration() *string
 	CustomerGatewayId() *string
 	SetCustomerGatewayId(val *string)
@@ -35,9 +35,9 @@ type VpnConnection interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableAcceleration() interface{}
-	SetEnableAcceleration(val interface{})
-	EnableAccelerationInput() interface{}
+	EnableAcceleration() any
+	SetEnableAcceleration(val any)
+	EnableAccelerationInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,11 +69,11 @@ type VpnConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteIpv4NetworkCidr() *string
 	SetRemoteIpv4NetworkCidr(val *string)
 	RemoteIpv4NetworkCidrInput() *string
@@ -81,9 +81,9 @@ type VpnConnection interface {
 	SetRemoteIpv6NetworkCidr(val *string)
 	RemoteIpv6NetworkCidrInput() *string
 	Routes() VpnConnectionRoutesList
-	StaticRoutesOnly() interface{}
-	SetStaticRoutesOnly(val interface{})
-	StaticRoutesOnlyInput() interface{}
+	StaticRoutesOnly() any
+	SetStaticRoutesOnly(val any)
+	StaticRoutesOnlyInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -93,7 +93,7 @@ type VpnConnection interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TransitGatewayAttachmentId() *string
@@ -239,9 +239,9 @@ type VpnConnection interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -259,7 +259,7 @@ type VpnConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -271,7 +271,7 @@ type VpnConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -335,17 +335,17 @@ type VpnConnection interface {
 	ResetTunnel2StartupAction()
 	ResetTunnelInsideIpVersion()
 	ResetVpnGatewayId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpnConnection
@@ -373,8 +373,8 @@ func (j *jsiiProxy_VpnConnection) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_VpnConnection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpnConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_VpnConnection) CoreNetworkAttachmentArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_VpnConnection) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) EnableAcceleration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) EnableAcceleration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAcceleration",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_VpnConnection) EnableAcceleration() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) EnableAccelerationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) EnableAccelerationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAccelerationInput",
@@ -623,8 +623,8 @@ func (j *jsiiProxy_VpnConnection) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpnConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_VpnConnection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -693,8 +693,8 @@ func (j *jsiiProxy_VpnConnection) Routes() VpnConnectionRoutesList {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) StaticRoutesOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) StaticRoutesOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"staticRoutesOnly",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_VpnConnection) StaticRoutesOnly() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) StaticRoutesOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpnConnection) StaticRoutesOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"staticRoutesOnlyInput",
@@ -763,8 +763,8 @@ func (j *jsiiProxy_VpnConnection) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_VpnConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpnConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1763,7 +1763,6 @@ func (j *jsiiProxy_VpnConnection) VpnGatewayIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnectionConfig) VpnConnection {
 	_init_.Initialize()
@@ -1775,7 +1774,7 @@ func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnect
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1788,12 +1787,12 @@ func NewVpnConnection_Override(v VpnConnection, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpnConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1804,7 +1803,7 @@ func (j *jsiiProxy_VpnConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_VpnConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1815,7 +1814,7 @@ func (j *jsiiProxy_VpnConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetCustomerGatewayId(val *string) {
+func (j *jsiiProxy_VpnConnection) SetCustomerGatewayId(val *string) {
 	if err := j.validateSetCustomerGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1826,7 +1825,7 @@ func (j *jsiiProxy_VpnConnection)SetCustomerGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1834,7 +1833,7 @@ func (j *jsiiProxy_VpnConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetEnableAcceleration(val interface{}) {
+func (j *jsiiProxy_VpnConnection) SetEnableAcceleration(val any) {
 	if err := j.validateSetEnableAccelerationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1845,7 +1844,7 @@ func (j *jsiiProxy_VpnConnection)SetEnableAcceleration(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpnConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1853,7 +1852,7 @@ func (j *jsiiProxy_VpnConnection)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetId(val *string) {
+func (j *jsiiProxy_VpnConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1864,7 +1863,7 @@ func (j *jsiiProxy_VpnConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpnConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1875,7 +1874,7 @@ func (j *jsiiProxy_VpnConnection)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetLocalIpv4NetworkCidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetLocalIpv4NetworkCidr(val *string) {
 	if err := j.validateSetLocalIpv4NetworkCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -1886,7 +1885,7 @@ func (j *jsiiProxy_VpnConnection)SetLocalIpv4NetworkCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetLocalIpv6NetworkCidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetLocalIpv6NetworkCidr(val *string) {
 	if err := j.validateSetLocalIpv6NetworkCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -1897,7 +1896,7 @@ func (j *jsiiProxy_VpnConnection)SetLocalIpv6NetworkCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetOutsideIpAddressType(val *string) {
+func (j *jsiiProxy_VpnConnection) SetOutsideIpAddressType(val *string) {
 	if err := j.validateSetOutsideIpAddressTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1908,7 +1907,7 @@ func (j *jsiiProxy_VpnConnection)SetOutsideIpAddressType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpnConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1916,7 +1915,7 @@ func (j *jsiiProxy_VpnConnection)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpnConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1927,7 +1926,7 @@ func (j *jsiiProxy_VpnConnection)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetRemoteIpv4NetworkCidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetRemoteIpv4NetworkCidr(val *string) {
 	if err := j.validateSetRemoteIpv4NetworkCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -1938,7 +1937,7 @@ func (j *jsiiProxy_VpnConnection)SetRemoteIpv4NetworkCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetRemoteIpv6NetworkCidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetRemoteIpv6NetworkCidr(val *string) {
 	if err := j.validateSetRemoteIpv6NetworkCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -1949,7 +1948,7 @@ func (j *jsiiProxy_VpnConnection)SetRemoteIpv6NetworkCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetStaticRoutesOnly(val interface{}) {
+func (j *jsiiProxy_VpnConnection) SetStaticRoutesOnly(val any) {
 	if err := j.validateSetStaticRoutesOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1960,7 +1959,7 @@ func (j *jsiiProxy_VpnConnection)SetStaticRoutesOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_VpnConnection) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1971,7 +1970,7 @@ func (j *jsiiProxy_VpnConnection)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_VpnConnection) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1982,7 +1981,7 @@ func (j *jsiiProxy_VpnConnection)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTransitGatewayId(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTransitGatewayId(val *string) {
 	if err := j.validateSetTransitGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1993,7 +1992,7 @@ func (j *jsiiProxy_VpnConnection)SetTransitGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTransportTransitGatewayAttachmentId(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTransportTransitGatewayAttachmentId(val *string) {
 	if err := j.validateSetTransportTransitGatewayAttachmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2004,7 +2003,7 @@ func (j *jsiiProxy_VpnConnection)SetTransportTransitGatewayAttachmentId(val *str
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1DpdTimeoutAction(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1DpdTimeoutAction(val *string) {
 	if err := j.validateSetTunnel1DpdTimeoutActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2015,7 +2014,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1DpdTimeoutAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1DpdTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1DpdTimeoutSeconds(val *float64) {
 	if err := j.validateSetTunnel1DpdTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2026,7 +2025,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1DpdTimeoutSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1IkeVersions(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1IkeVersions(val *[]*string) {
 	if err := j.validateSetTunnel1IkeVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2037,7 +2036,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1IkeVersions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1InsideCidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1InsideCidr(val *string) {
 	if err := j.validateSetTunnel1InsideCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -2048,7 +2047,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1InsideCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1InsideIpv6Cidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1InsideIpv6Cidr(val *string) {
 	if err := j.validateSetTunnel1InsideIpv6CidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -2059,7 +2058,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1InsideIpv6Cidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1DhGroupNumbers(val *[]*float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase1DhGroupNumbers(val *[]*float64) {
 	if err := j.validateSetTunnel1Phase1DhGroupNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2070,7 +2069,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1DhGroupNumbers(val *[]*float64)
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1EncryptionAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase1EncryptionAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel1Phase1EncryptionAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2081,7 +2080,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1EncryptionAlgorithms(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1IntegrityAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase1IntegrityAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel1Phase1IntegrityAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2092,7 +2091,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1IntegrityAlgorithms(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1LifetimeSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase1LifetimeSeconds(val *float64) {
 	if err := j.validateSetTunnel1Phase1LifetimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2103,7 +2102,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase1LifetimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2DhGroupNumbers(val *[]*float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase2DhGroupNumbers(val *[]*float64) {
 	if err := j.validateSetTunnel1Phase2DhGroupNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2114,7 +2113,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2DhGroupNumbers(val *[]*float64)
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2EncryptionAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase2EncryptionAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel1Phase2EncryptionAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2125,7 +2124,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2EncryptionAlgorithms(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2IntegrityAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase2IntegrityAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel1Phase2IntegrityAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2136,7 +2135,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2IntegrityAlgorithms(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2LifetimeSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1Phase2LifetimeSeconds(val *float64) {
 	if err := j.validateSetTunnel1Phase2LifetimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2147,7 +2146,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1Phase2LifetimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1PresharedKey(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1PresharedKey(val *string) {
 	if err := j.validateSetTunnel1PresharedKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -2158,7 +2157,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1PresharedKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1RekeyFuzzPercentage(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1RekeyFuzzPercentage(val *float64) {
 	if err := j.validateSetTunnel1RekeyFuzzPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -2169,7 +2168,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1RekeyFuzzPercentage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1RekeyMarginTimeSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1RekeyMarginTimeSeconds(val *float64) {
 	if err := j.validateSetTunnel1RekeyMarginTimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2180,7 +2179,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1RekeyMarginTimeSeconds(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1ReplayWindowSize(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1ReplayWindowSize(val *float64) {
 	if err := j.validateSetTunnel1ReplayWindowSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2191,7 +2190,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1ReplayWindowSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel1StartupAction(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel1StartupAction(val *string) {
 	if err := j.validateSetTunnel1StartupActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2202,7 +2201,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1StartupAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2DpdTimeoutAction(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2DpdTimeoutAction(val *string) {
 	if err := j.validateSetTunnel2DpdTimeoutActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2213,7 +2212,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2DpdTimeoutAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2DpdTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2DpdTimeoutSeconds(val *float64) {
 	if err := j.validateSetTunnel2DpdTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2224,7 +2223,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2DpdTimeoutSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2IkeVersions(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2IkeVersions(val *[]*string) {
 	if err := j.validateSetTunnel2IkeVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2235,7 +2234,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2IkeVersions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2InsideCidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2InsideCidr(val *string) {
 	if err := j.validateSetTunnel2InsideCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -2246,7 +2245,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2InsideCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2InsideIpv6Cidr(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2InsideIpv6Cidr(val *string) {
 	if err := j.validateSetTunnel2InsideIpv6CidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -2257,7 +2256,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2InsideIpv6Cidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1DhGroupNumbers(val *[]*float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase1DhGroupNumbers(val *[]*float64) {
 	if err := j.validateSetTunnel2Phase1DhGroupNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2268,7 +2267,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1DhGroupNumbers(val *[]*float64)
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1EncryptionAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase1EncryptionAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel2Phase1EncryptionAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2279,7 +2278,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1EncryptionAlgorithms(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1IntegrityAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase1IntegrityAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel2Phase1IntegrityAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2290,7 +2289,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1IntegrityAlgorithms(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1LifetimeSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase1LifetimeSeconds(val *float64) {
 	if err := j.validateSetTunnel2Phase1LifetimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2301,7 +2300,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase1LifetimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2DhGroupNumbers(val *[]*float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase2DhGroupNumbers(val *[]*float64) {
 	if err := j.validateSetTunnel2Phase2DhGroupNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -2312,7 +2311,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2DhGroupNumbers(val *[]*float64)
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2EncryptionAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase2EncryptionAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel2Phase2EncryptionAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2323,7 +2322,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2EncryptionAlgorithms(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2IntegrityAlgorithms(val *[]*string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase2IntegrityAlgorithms(val *[]*string) {
 	if err := j.validateSetTunnel2Phase2IntegrityAlgorithmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2334,7 +2333,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2IntegrityAlgorithms(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2LifetimeSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2Phase2LifetimeSeconds(val *float64) {
 	if err := j.validateSetTunnel2Phase2LifetimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2345,7 +2344,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2Phase2LifetimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2PresharedKey(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2PresharedKey(val *string) {
 	if err := j.validateSetTunnel2PresharedKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -2356,7 +2355,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2PresharedKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2RekeyFuzzPercentage(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2RekeyFuzzPercentage(val *float64) {
 	if err := j.validateSetTunnel2RekeyFuzzPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -2367,7 +2366,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2RekeyFuzzPercentage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2RekeyMarginTimeSeconds(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2RekeyMarginTimeSeconds(val *float64) {
 	if err := j.validateSetTunnel2RekeyMarginTimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -2378,7 +2377,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2RekeyMarginTimeSeconds(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2ReplayWindowSize(val *float64) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2ReplayWindowSize(val *float64) {
 	if err := j.validateSetTunnel2ReplayWindowSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2389,7 +2388,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2ReplayWindowSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnel2StartupAction(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnel2StartupAction(val *string) {
 	if err := j.validateSetTunnel2StartupActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2400,7 +2399,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2StartupAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetTunnelInsideIpVersion(val *string) {
+func (j *jsiiProxy_VpnConnection) SetTunnelInsideIpVersion(val *string) {
 	if err := j.validateSetTunnelInsideIpVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -2411,7 +2410,7 @@ func (j *jsiiProxy_VpnConnection)SetTunnelInsideIpVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetType(val *string) {
+func (j *jsiiProxy_VpnConnection) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2422,7 +2421,7 @@ func (j *jsiiProxy_VpnConnection)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpnConnection)SetVpnGatewayId(val *string) {
+func (j *jsiiProxy_VpnConnection) SetVpnGatewayId(val *string) {
 	if err := j.validateSetVpnGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -2445,7 +2444,7 @@ func VpnConnection_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -2469,7 +2468,7 @@ func VpnConnection_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpnConnection_IsConstruct(x interface{}) *bool {
+func VpnConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpnConnection_IsConstructParameters(x); err != nil {
@@ -2480,7 +2479,7 @@ func VpnConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2488,7 +2487,7 @@ func VpnConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpnConnection_IsTerraformElement(x interface{}) *bool {
+func VpnConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpnConnection_IsTerraformElementParameters(x); err != nil {
@@ -2499,7 +2498,7 @@ func VpnConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2507,7 +2506,7 @@ func VpnConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpnConnection_IsTerraformResource(x interface{}) *bool {
+func VpnConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpnConnection_IsTerraformResourceParameters(x); err != nil {
@@ -2518,7 +2517,7 @@ func VpnConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpnConnection.VpnConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2543,31 +2542,31 @@ func (v *jsiiProxy_VpnConnection) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpnConnection) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpnConnection) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpnConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpnConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2583,7 +2582,7 @@ func (v *jsiiProxy_VpnConnection) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2599,7 +2598,7 @@ func (v *jsiiProxy_VpnConnection) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2615,7 +2614,7 @@ func (v *jsiiProxy_VpnConnection) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2631,7 +2630,7 @@ func (v *jsiiProxy_VpnConnection) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2647,7 +2646,7 @@ func (v *jsiiProxy_VpnConnection) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2663,7 +2662,7 @@ func (v *jsiiProxy_VpnConnection) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2679,7 +2678,7 @@ func (v *jsiiProxy_VpnConnection) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2695,15 +2694,15 @@ func (v *jsiiProxy_VpnConnection) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -2722,7 +2721,7 @@ func (v *jsiiProxy_VpnConnection) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2735,7 +2734,7 @@ func (v *jsiiProxy_VpnConnection) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2749,18 +2748,18 @@ func (v *jsiiProxy_VpnConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpnConnection) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpnConnection) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2771,7 +2770,7 @@ func (v *jsiiProxy_VpnConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2782,7 +2781,7 @@ func (v *jsiiProxy_VpnConnection) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2793,7 +2792,7 @@ func (v *jsiiProxy_VpnConnection) PutTunnel1LogOptions(value *VpnConnectionTunne
 	_jsii_.InvokeVoid(
 		v,
 		"putTunnel1LogOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2804,7 +2803,7 @@ func (v *jsiiProxy_VpnConnection) PutTunnel2LogOptions(value *VpnConnectionTunne
 	_jsii_.InvokeVoid(
 		v,
 		"putTunnel2LogOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -3232,8 +3231,8 @@ func (v *jsiiProxy_VpnConnection) ResetVpnGatewayId() {
 	)
 }
 
-func (v *jsiiProxy_VpnConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpnConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -3245,8 +3244,8 @@ func (v *jsiiProxy_VpnConnection) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpnConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -3258,8 +3257,8 @@ func (v *jsiiProxy_VpnConnection) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -3271,8 +3270,8 @@ func (v *jsiiProxy_VpnConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -3297,8 +3296,8 @@ func (v *jsiiProxy_VpnConnection) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpnConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpnConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -3309,4 +3308,3 @@ func (v *jsiiProxy_VpnConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

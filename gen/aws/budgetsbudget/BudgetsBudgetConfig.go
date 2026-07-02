@@ -6,9 +6,9 @@ import (
 
 type BudgetsBudgetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BudgetsBudgetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}.
 	BudgetType *string `field:"required" json:"budgetType" yaml:"budgetType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}.
@@ -32,7 +32,7 @@ type BudgetsBudgetConfig struct {
 	// cost_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
-	CostFilter interface{} `field:"optional" json:"costFilter" yaml:"costFilter"`
+	CostFilter any `field:"optional" json:"costFilter" yaml:"costFilter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#cost_filters BudgetsBudget#cost_filters}.
 	CostFilters *map[string]*string `field:"optional" json:"costFilters" yaml:"costFilters"`
 	// cost_types block.
@@ -55,14 +55,13 @@ type BudgetsBudgetConfig struct {
 	// notification block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
-	Notification interface{} `field:"optional" json:"notification" yaml:"notification"`
+	Notification any `field:"optional" json:"notification" yaml:"notification"`
 	// planned_limit block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
-	PlannedLimit interface{} `field:"optional" json:"plannedLimit" yaml:"plannedLimit"`
+	PlannedLimit any `field:"optional" json:"plannedLimit" yaml:"plannedLimit"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}.
 	TimePeriodEnd *string `field:"optional" json:"timePeriodEnd" yaml:"timePeriodEnd"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}.
 	TimePeriodStart *string `field:"optional" json:"timePeriodStart" yaml:"timePeriodStart"`
 }
-

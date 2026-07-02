@@ -13,29 +13,29 @@ import (
 type OpsworksCustomLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
-	AutoAssignElasticIps() interface{}
-	SetAutoAssignElasticIps(val interface{})
-	AutoAssignElasticIpsInput() interface{}
-	AutoAssignPublicIps() interface{}
-	SetAutoAssignPublicIps(val interface{})
-	AutoAssignPublicIpsInput() interface{}
-	AutoHealing() interface{}
-	SetAutoHealing(val interface{})
-	AutoHealingInput() interface{}
+	AutoAssignElasticIps() any
+	SetAutoAssignElasticIps(val any)
+	AutoAssignElasticIpsInput() any
+	AutoAssignPublicIps() any
+	SetAutoAssignPublicIps(val any)
+	AutoAssignPublicIpsInput() any
+	AutoHealing() any
+	SetAutoHealing(val any)
+	AutoHealingInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudwatchConfiguration() OpsworksCustomLayerCloudwatchConfigurationOutputReference
 	CloudwatchConfigurationInput() *OpsworksCustomLayerCloudwatchConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomConfigureRecipes() *[]*string
 	SetCustomConfigureRecipes(val *[]*string)
 	CustomConfigureRecipesInput() *[]*string
@@ -64,11 +64,11 @@ type OpsworksCustomLayer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DrainElbOnShutdown() interface{}
-	SetDrainElbOnShutdown(val interface{})
-	DrainElbOnShutdownInput() interface{}
+	DrainElbOnShutdown() any
+	SetDrainElbOnShutdown(val any)
+	DrainElbOnShutdownInput() any
 	EbsVolume() OpsworksCustomLayerEbsVolumeList
-	EbsVolumeInput() interface{}
+	EbsVolumeInput() any
 	ElasticLoadBalancer() *string
 	SetElasticLoadBalancer(val *string)
 	ElasticLoadBalancerInput() *string
@@ -83,9 +83,9 @@ type OpsworksCustomLayer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InstallUpdatesOnBoot() interface{}
-	SetInstallUpdatesOnBoot(val interface{})
-	InstallUpdatesOnBootInput() interface{}
+	InstallUpdatesOnBoot() any
+	SetInstallUpdatesOnBoot(val any)
+	InstallUpdatesOnBootInput() any
 	InstanceShutdownTimeout() *float64
 	SetInstanceShutdownTimeout(val *float64)
 	InstanceShutdownTimeoutInput() *float64
@@ -105,11 +105,11 @@ type OpsworksCustomLayer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ShortName() *string
 	SetShortName(val *string)
 	ShortNameInput() *string
@@ -128,19 +128,19 @@ type OpsworksCustomLayer interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	UseEbsOptimizedInstances() interface{}
-	SetUseEbsOptimizedInstances(val interface{})
-	UseEbsOptimizedInstancesInput() interface{}
+	UseEbsOptimizedInstances() any
+	SetUseEbsOptimizedInstances(val any)
+	UseEbsOptimizedInstancesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -158,7 +158,7 @@ type OpsworksCustomLayer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -170,7 +170,7 @@ type OpsworksCustomLayer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -178,7 +178,7 @@ type OpsworksCustomLayer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksCustomLayerCloudwatchConfiguration)
-	PutEbsVolume(value interface{})
+	PutEbsVolume(value any)
 	PutLoadBasedAutoScaling(value *OpsworksCustomLayerLoadBasedAutoScaling)
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
@@ -206,17 +206,17 @@ type OpsworksCustomLayer interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetUseEbsOptimizedInstances()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksCustomLayer
@@ -234,8 +234,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignElasticIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignElasticIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignElasticIps",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignElasticIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignElasticIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignElasticIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignElasticIpsInput",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignElasticIpsInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignPublicIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignPublicIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignPublicIps",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignPublicIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignPublicIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignPublicIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignPublicIpsInput",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) AutoAssignPublicIpsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) AutoHealing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) AutoHealing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoHealing",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) AutoHealing() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) AutoHealingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) AutoHealingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoHealingInput",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) CloudwatchConfigurationInput() *Opsworks
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -524,8 +524,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) DrainElbOnShutdown() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) DrainElbOnShutdown() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"drainElbOnShutdown",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) DrainElbOnShutdown() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) DrainElbOnShutdownInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) DrainElbOnShutdownInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"drainElbOnShutdownInput",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) EbsVolume() OpsworksCustomLayerEbsVolume
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) EbsVolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) EbsVolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsVolumeInput",
@@ -634,8 +634,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) InstallUpdatesOnBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) InstallUpdatesOnBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBoot",
@@ -644,8 +644,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) InstallUpdatesOnBoot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) InstallUpdatesOnBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) InstallUpdatesOnBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBootInput",
@@ -744,8 +744,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -754,8 +754,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -874,8 +874,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -894,8 +894,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstances() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstances() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useEbsOptimizedInstances",
@@ -904,8 +904,8 @@ func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstances() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useEbsOptimizedInstancesInput",
@@ -913,7 +913,6 @@ func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstancesInput() interfac
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer} Resource.
 func NewOpsworksCustomLayer(scope constructs.Construct, id *string, config *OpsworksCustomLayerConfig) OpsworksCustomLayer {
@@ -926,7 +925,7 @@ func NewOpsworksCustomLayer(scope constructs.Construct, id *string, config *Opsw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -939,12 +938,12 @@ func NewOpsworksCustomLayer_Override(o OpsworksCustomLayer, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetAutoAssignElasticIps(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetAutoAssignElasticIps(val any) {
 	if err := j.validateSetAutoAssignElasticIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -955,7 +954,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetAutoAssignElasticIps(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetAutoAssignPublicIps(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetAutoAssignPublicIps(val any) {
 	if err := j.validateSetAutoAssignPublicIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetAutoAssignPublicIps(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetAutoHealing(val any) {
 	if err := j.validateSetAutoHealingParameters(val); err != nil {
 		panic(err)
 	}
@@ -977,7 +976,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetAutoHealing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomConfigureRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomConfigureRecipes(val *[]*string) {
 	if err := j.validateSetCustomConfigureRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomConfigureRecipes(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomDeployRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomDeployRecipes(val *[]*string) {
 	if err := j.validateSetCustomDeployRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomDeployRecipes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomInstanceProfileArn(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomInstanceProfileArn(val *string) {
 	if err := j.validateSetCustomInstanceProfileArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomInstanceProfileArn(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomJson(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomJson(val *string) {
 	if err := j.validateSetCustomJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetCustomSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomSecurityGroupIds(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomSetupRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomSetupRecipes(val *[]*string) {
 	if err := j.validateSetCustomSetupRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomSetupRecipes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomShutdownRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomShutdownRecipes(val *[]*string) {
 	if err := j.validateSetCustomShutdownRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomShutdownRecipes(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetCustomUndeployRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetCustomUndeployRecipes(val *[]*string) {
 	if err := j.validateSetCustomUndeployRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetCustomUndeployRecipes(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetDrainElbOnShutdown(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetDrainElbOnShutdown(val any) {
 	if err := j.validateSetDrainElbOnShutdownParameters(val); err != nil {
 		panic(err)
 	}
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetDrainElbOnShutdown(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetElasticLoadBalancer(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetElasticLoadBalancer(val *string) {
 	if err := j.validateSetElasticLoadBalancerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetElasticLoadBalancer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetId(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetInstallUpdatesOnBoot(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetInstallUpdatesOnBoot(val any) {
 	if err := j.validateSetInstallUpdatesOnBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetInstallUpdatesOnBoot(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetInstanceShutdownTimeout(val *float64) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetInstanceShutdownTimeout(val *float64) {
 	if err := j.validateSetInstanceShutdownTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetInstanceShutdownTimeout(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetName(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetShortName(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetShortName(val *string) {
 	if err := j.validateSetShortNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetShortName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetStackId(val *string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetStackId(val *string) {
 	if err := j.validateSetStackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetStackId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetSystemPackages(val *[]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetSystemPackages(val *[]*string) {
 	if err := j.validateSetSystemPackagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetSystemPackages(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_OpsworksCustomLayer)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayer)SetUseEbsOptimizedInstances(val interface{}) {
+func (j *jsiiProxy_OpsworksCustomLayer) SetUseEbsOptimizedInstances(val any) {
 	if err := j.validateSetUseEbsOptimizedInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func OpsworksCustomLayer_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1301,7 +1300,7 @@ func OpsworksCustomLayer_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksCustomLayer_IsConstruct(x interface{}) *bool {
+func OpsworksCustomLayer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksCustomLayer_IsConstructParameters(x); err != nil {
@@ -1312,7 +1311,7 @@ func OpsworksCustomLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1320,7 +1319,7 @@ func OpsworksCustomLayer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool {
+func OpsworksCustomLayer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksCustomLayer_IsTerraformElementParameters(x); err != nil {
@@ -1331,7 +1330,7 @@ func OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1339,7 +1338,7 @@ func OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool {
+func OpsworksCustomLayer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksCustomLayer_IsTerraformResourceParameters(x); err != nil {
@@ -1350,7 +1349,7 @@ func OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1375,31 +1374,31 @@ func (o *jsiiProxy_OpsworksCustomLayer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksCustomLayer) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksCustomLayer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1415,7 +1414,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1431,7 +1430,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1447,7 +1446,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1463,7 +1462,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1479,7 +1478,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1495,7 +1494,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1511,7 +1510,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1527,15 +1526,15 @@ func (o *jsiiProxy_OpsworksCustomLayer) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksCustomLayer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1554,7 +1553,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1567,7 +1566,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1581,18 +1580,18 @@ func (o *jsiiProxy_OpsworksCustomLayer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksCustomLayer) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1603,7 +1602,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1614,7 +1613,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1625,18 +1624,18 @@ func (o *jsiiProxy_OpsworksCustomLayer) PutCloudwatchConfiguration(value *Opswor
 	_jsii_.InvokeVoid(
 		o,
 		"putCloudwatchConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) PutEbsVolume(value interface{}) {
+func (o *jsiiProxy_OpsworksCustomLayer) PutEbsVolume(value any) {
 	if err := o.validatePutEbsVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putEbsVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1647,7 +1646,7 @@ func (o *jsiiProxy_OpsworksCustomLayer) PutLoadBasedAutoScaling(value *OpsworksC
 	_jsii_.InvokeVoid(
 		o,
 		"putLoadBasedAutoScaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1843,8 +1842,8 @@ func (o *jsiiProxy_OpsworksCustomLayer) ResetUseEbsOptimizedInstances() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksCustomLayer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1856,8 +1855,8 @@ func (o *jsiiProxy_OpsworksCustomLayer) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksCustomLayer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1869,8 +1868,8 @@ func (o *jsiiProxy_OpsworksCustomLayer) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksCustomLayer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1882,8 +1881,8 @@ func (o *jsiiProxy_OpsworksCustomLayer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksCustomLayer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1908,8 +1907,8 @@ func (o *jsiiProxy_OpsworksCustomLayer) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayer) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksCustomLayer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1920,4 +1919,3 @@ func (o *jsiiProxy_OpsworksCustomLayer) ToTerraform() interface{} {
 
 	return returns
 }
-

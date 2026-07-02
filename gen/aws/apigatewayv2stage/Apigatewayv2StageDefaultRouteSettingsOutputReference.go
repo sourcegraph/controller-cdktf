@@ -12,9 +12,9 @@ type Apigatewayv2StageDefaultRouteSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type Apigatewayv2StageDefaultRouteSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DataTraceEnabled() interface{}
-	SetDataTraceEnabled(val interface{})
-	DataTraceEnabledInput() interface{}
-	DetailedMetricsEnabled() interface{}
-	SetDetailedMetricsEnabled(val interface{})
-	DetailedMetricsEnabledInput() interface{}
+	DataTraceEnabled() any
+	SetDataTraceEnabled(val any)
+	DataTraceEnabledInput() any
+	DetailedMetricsEnabled() any
+	SetDetailedMetricsEnabled(val any)
+	DetailedMetricsEnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *Apigatewayv2StageDefaultRouteSettings
@@ -55,7 +55,7 @@ type Apigatewayv2StageDefaultRouteSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type Apigatewayv2StageDefaultRouteSettingsOutputReference interface {
 	ResetThrottlingRateLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DataTraceEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DataTraceEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTraceEnabled",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DataTra
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DataTraceEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DataTraceEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTraceEnabledInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DataTra
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DetailedMetricsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DetailedMetricsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"detailedMetricsEnabled",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Detaile
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DetailedMetricsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) DetailedMetricsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"detailedMetricsEnabledInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Throttl
 	return returns
 }
 
-
 func NewApigatewayv2StageDefaultRouteSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Apigatewayv2StageDefaultRouteSettingsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewApigatewayv2StageDefaultRouteSettingsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewApigatewayv2StageDefaultRouteSettingsOutputReference_Override(a Apigatew
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetDataTraceEnabled(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetDataTraceEnabled(val any) {
 	if err := j.validateSetDataTraceEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetDataT
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetDetailedMetricsEnabled(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetDetailedMetricsEnabled(val any) {
 	if err := j.validateSetDetailedMetricsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetDetai
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetInternalValue(val *Apigatewayv2StageDefaultRouteSettings) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetInternalValue(val *Apigatewayv2StageDefaultRouteSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetLoggingLevel(val *string) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetLoggingLevel(val *string) {
 	if err := j.validateSetLoggingLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetLoggi
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetThrottlingBurstLimit(val *float64) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetThrottlingBurstLimit(val *float64) {
 	if err := j.validateSetThrottlingBurstLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetThrot
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference)SetThrottlingRateLimit(val *float64) {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) SetThrottlingRateLimit(val *float64) {
 	if err := j.validateSetThrottlingRateLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Compute
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetList
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Interpo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) ResetTh
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) ToStrin
 
 	return returns
 }
-

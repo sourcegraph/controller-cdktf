@@ -21,11 +21,11 @@ type DataAwsNetworkmanagerConnection interface {
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,20 +58,20 @@ type DataAwsNetworkmanagerConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataAwsNetworkmanagerConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsNetworkmanagerConnection
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) ConnectionIdInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_connection aws_networkmanager_connection} Data Source.
 func NewDataAwsNetworkmanagerConnection(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerConnectionConfig) DataAwsNetworkmanagerConnection {
 	_init_.Initialize()
@@ -409,7 +408,7 @@ func NewDataAwsNetworkmanagerConnection(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -422,12 +421,12 @@ func NewDataAwsNetworkmanagerConnection_Override(d DataAwsNetworkmanagerConnecti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetConnectionId(val *string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetConnectionId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -457,7 +456,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetGlobalNetworkId(val *string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetGlobalNetworkId(val *string) {
 	if err := j.validateSetGlobalNetworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetGlobalNetworkId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetId(val *string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func DataAwsNetworkmanagerConnection_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func DataAwsNetworkmanagerConnection_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsNetworkmanagerConnection_IsConstruct(x interface{}) *bool {
+func DataAwsNetworkmanagerConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkmanagerConnection_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func DataAwsNetworkmanagerConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func DataAwsNetworkmanagerConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsNetworkmanagerConnection_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsNetworkmanagerConnection_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkmanagerConnection_IsTerraformDataSourceParameters(x); err != nil {
@@ -583,7 +582,7 @@ func DataAwsNetworkmanagerConnection_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func DataAwsNetworkmanagerConnection_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataAwsNetworkmanagerConnection_IsTerraformElement(x interface{}) *bool {
+func DataAwsNetworkmanagerConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkmanagerConnection_IsTerraformElementParameters(x); err != nil {
@@ -602,7 +601,7 @@ func DataAwsNetworkmanagerConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,27 +619,27 @@ func DataAwsNetworkmanagerConnection_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -826,8 +825,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -839,8 +838,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -852,8 +851,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -865,8 +864,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -891,8 +890,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -903,4 +902,3 @@ func (d *jsiiProxy_DataAwsNetworkmanagerConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

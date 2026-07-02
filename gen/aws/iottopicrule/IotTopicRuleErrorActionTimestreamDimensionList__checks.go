@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleErrorActionTimestreamDimensionListParameters(terrafo
 
 	return nil
 }
-

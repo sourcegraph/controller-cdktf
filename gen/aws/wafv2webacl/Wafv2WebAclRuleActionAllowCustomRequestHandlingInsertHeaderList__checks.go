@@ -34,7 +34,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderLi
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderListP
 
 	return nil
 }
-

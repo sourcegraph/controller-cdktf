@@ -15,17 +15,17 @@ type DataAwsEc2TransitGatewayRouteTables interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsEc2TransitGatewayRouteTablesFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,22 +49,22 @@ type DataAwsEc2TransitGatewayRouteTables interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type DataAwsEc2TransitGatewayRouteTables interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEc2TransitGatewayRouteTablesTimeouts)
 	ResetFilter()
 	ResetId()
@@ -95,18 +95,18 @@ type DataAwsEc2TransitGatewayRouteTables interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEc2TransitGatewayRouteTables
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) Filter() DataAwsEc2Trans
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) Timeouts() DataAwsEc2Tra
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -343,7 +343,6 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) TimeoutsInput() interfac
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ec2_transit_gateway_route_tables aws_ec2_transit_gateway_route_tables} Data Source.
 func NewDataAwsEc2TransitGatewayRouteTables(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayRouteTablesConfig) DataAwsEc2TransitGatewayRouteTables {
@@ -356,7 +355,7 @@ func NewDataAwsEc2TransitGatewayRouteTables(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -369,12 +368,12 @@ func NewDataAwsEc2TransitGatewayRouteTables_Override(d DataAwsEc2TransitGatewayR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func DataAwsEc2TransitGatewayRouteTables_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func DataAwsEc2TransitGatewayRouteTables_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEc2TransitGatewayRouteTables_IsConstruct(x interface{}) *bool {
+func DataAwsEc2TransitGatewayRouteTables_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGatewayRouteTables_IsConstructParameters(x); err != nil {
@@ -489,7 +488,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEc2TransitGatewayRouteTables_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEc2TransitGatewayRouteTables_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGatewayRouteTables_IsTerraformDataSourceParameters(x); err != nil {
@@ -508,7 +507,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataAwsEc2TransitGatewayRouteTables_IsTerraformElement(x interface{}) *bool {
+func DataAwsEc2TransitGatewayRouteTables_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEc2TransitGatewayRouteTables_IsTerraformElementParameters(x); err != nil {
@@ -527,7 +526,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -545,27 +544,27 @@ func DataAwsEc2TransitGatewayRouteTables_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,18 +722,18 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) PutTimeouts(value *DataA
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -789,8 +788,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -854,8 +853,8 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -866,4 +865,3 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) ToTerraform() interface{
 
 	return returns
 }
-

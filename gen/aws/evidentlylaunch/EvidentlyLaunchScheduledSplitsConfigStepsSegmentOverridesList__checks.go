@@ -34,7 +34,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesListPar
 
 	return nil
 }
-

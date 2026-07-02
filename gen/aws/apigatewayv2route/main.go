@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2Route",
-		reflect.TypeOf((*Apigatewayv2Route)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2Route](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2Route{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteConfig",
-		reflect.TypeOf((*Apigatewayv2RouteConfig)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2RouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter",
-		reflect.TypeOf((*Apigatewayv2RouteRequestParameter)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2RouteRequestParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
-		reflect.TypeOf((*Apigatewayv2RouteRequestParameterList)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2RouteRequestParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2RouteRequestParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
-		reflect.TypeOf((*Apigatewayv2RouteRequestParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Apigatewayv2RouteRequestParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

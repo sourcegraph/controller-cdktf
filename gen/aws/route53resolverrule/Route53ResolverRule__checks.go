@@ -19,7 +19,7 @@ func (r *jsiiProxy_Route53ResolverRule) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Route53ResolverRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Route53ResolverRule) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Route53ResolverRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (r *jsiiProxy_Route53ResolverRule) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverRule) validatePutTargetIpParameters(value interface{}) error {
+func (r *jsiiProxy_Route53ResolverRule) validatePutTargetIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateRoute53ResolverRule_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateRoute53ResolverRule_IsConstructParameters(x interface{}) error {
+func validateRoute53ResolverRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateRoute53ResolverRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRoute53ResolverRule_IsTerraformElementParameters(x interface{}) error {
+func validateRoute53ResolverRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateRoute53ResolverRule_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateRoute53ResolverRule_IsTerraformResourceParameters(x interface{}) error {
+func validateRoute53ResolverRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateRoute53ResolverRule_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_Route53ResolverRule) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ResolverRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_Route53ResolverRule) validateSetNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Route53ResolverRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewRoute53ResolverRuleParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

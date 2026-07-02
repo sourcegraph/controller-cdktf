@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
-		reflect.TypeOf((*RdsClusterParameterGroup)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterParameterGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsClusterParameterGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupConfig",
-		reflect.TypeOf((*RdsClusterParameterGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterParameterGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter",
-		reflect.TypeOf((*RdsClusterParameterGroupParameter)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterParameterGroupParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
-		reflect.TypeOf((*RdsClusterParameterGroupParameterList)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterParameterGroupParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsClusterParameterGroupParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
-		reflect.TypeOf((*RdsClusterParameterGroupParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RdsClusterParameterGroupParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "applyMethodInput", GoGetter: "ApplyMethodInput"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RdsClusterParameterGroupParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

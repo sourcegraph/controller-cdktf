@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociation",
-		reflect.TypeOf((*WorklinkWebsiteCertificateAuthorityAssociation)(nil)).Elem(),
+		reflect.TypeFor[WorklinkWebsiteCertificateAuthorityAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteCaId", GoGetter: "WebsiteCaId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.worklinkWebsiteCertificateAuthorityAssociation.WorklinkWebsiteCertificateAuthorityAssociationConfig",
-		reflect.TypeOf((*WorklinkWebsiteCertificateAuthorityAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[WorklinkWebsiteCertificateAuthorityAssociationConfig](),
 	)
 }

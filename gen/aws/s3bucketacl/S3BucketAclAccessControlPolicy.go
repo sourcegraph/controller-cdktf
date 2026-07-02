@@ -1,6 +1,5 @@
 package s3bucketacl
 
-
 type S3BucketAclAccessControlPolicy struct {
 	// owner block.
 	//
@@ -9,6 +8,5 @@ type S3BucketAclAccessControlPolicy struct {
 	// grant block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_acl#grant S3BucketAcl#grant}
-	Grant interface{} `field:"optional" json:"grant" yaml:"grant"`
+	Grant any `field:"optional" json:"grant" yaml:"grant"`
 }
-

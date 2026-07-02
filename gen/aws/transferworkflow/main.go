@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
-		reflect.TypeOf((*TransferWorkflow)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,27 +81,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowConfig",
-		reflect.TypeOf((*TransferWorkflowConfig)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionSteps",
-		reflect.TypeOf((*TransferWorkflowOnExceptionSteps)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionSteps](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetails",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,7 +221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,11 +266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCustomStepDetails",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCustomStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCustomStepDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -314,11 +314,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDeleteStepDetails",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsDeleteStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsDeleteStepDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -348,7 +348,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -356,7 +356,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsList",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsList)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -370,7 +370,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -378,7 +378,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -420,7 +420,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -428,11 +428,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetails",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsTagStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsTagStepDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -466,7 +466,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -474,11 +474,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTags",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsTagStepDetailsTags)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsTagStepDetailsTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsList",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsTagStepDetailsTagsList)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsTagStepDetailsTagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -492,7 +492,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -500,7 +500,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference",
-		reflect.TypeOf((*TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -528,7 +528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -536,23 +536,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowSteps",
-		reflect.TypeOf((*TransferWorkflowSteps)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowSteps](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetails",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocation",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsDestinationFileLocation)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsDestinationFileLocation](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -582,7 +582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -590,7 +590,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -622,7 +622,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -630,11 +630,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -664,7 +664,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -672,7 +672,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsCopyStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCopyStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -709,7 +709,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsCopyStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -717,11 +717,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCustomStepDetails",
-		reflect.TypeOf((*TransferWorkflowStepsCustomStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCustomStepDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCustomStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsCustomStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsCustomStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -757,7 +757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsCustomStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -765,11 +765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetails",
-		reflect.TypeOf((*TransferWorkflowStepsDeleteStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsDeleteStepDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsDeleteStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsDeleteStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -799,7 +799,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsDeleteStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -807,7 +807,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsList",
-		reflect.TypeOf((*TransferWorkflowStepsList)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -821,7 +821,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -829,7 +829,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -871,7 +871,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -879,11 +879,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetails",
-		reflect.TypeOf((*TransferWorkflowStepsTagStepDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsTagStepDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsTagStepDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsTagStepDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -917,7 +917,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsTagStepDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -925,11 +925,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTags",
-		reflect.TypeOf((*TransferWorkflowStepsTagStepDetailsTags)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsTagStepDetailsTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsList",
-		reflect.TypeOf((*TransferWorkflowStepsTagStepDetailsTagsList)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsTagStepDetailsTagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -943,7 +943,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -951,7 +951,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsOutputReference",
-		reflect.TypeOf((*TransferWorkflowStepsTagStepDetailsTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferWorkflowStepsTagStepDetailsTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -979,7 +979,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

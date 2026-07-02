@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewWafregionalXssMatchSetXssMatchTupleOutputReferenceParameters(ter
 
 	return nil
 }
-

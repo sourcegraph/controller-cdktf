@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafregionalGeoMatchSetGeoMatchConstraintListParameters(terraform
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReferencePara
 
 	return nil
 }
-

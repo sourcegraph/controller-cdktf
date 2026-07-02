@@ -1,6 +1,5 @@
 package backupplan
 
-
 type BackupPlanRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
 	RuleName *string `field:"required" json:"ruleName" yaml:"ruleName"`
@@ -11,9 +10,9 @@ type BackupPlanRule struct {
 	// copy_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
-	CopyAction interface{} `field:"optional" json:"copyAction" yaml:"copyAction"`
+	CopyAction any `field:"optional" json:"copyAction" yaml:"copyAction"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
-	EnableContinuousBackup interface{} `field:"optional" json:"enableContinuousBackup" yaml:"enableContinuousBackup"`
+	EnableContinuousBackup any `field:"optional" json:"enableContinuousBackup" yaml:"enableContinuousBackup"`
 	// lifecycle block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
@@ -25,4 +24,3 @@ type BackupPlanRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#start_window BackupPlan#start_window}.
 	StartWindow *float64 `field:"optional" json:"startWindow" yaml:"startWindow"`
 }
-

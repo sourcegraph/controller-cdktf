@@ -17,8 +17,8 @@ type KinesisAnalyticsApplicationInputsStartingPositionConfigurationList interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type KinesisAnalyticsApplicationInputsStartingPositionConfigurationList interfac
 	Get(index *float64) KinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return returns
 }
 
-
 func NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAnalyticsApplicationInputsStartingPositionConfigurationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationList(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationList_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	_jsii_.Invoke(
 		k,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	_jsii_.Invoke(
 		k,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 
 	return returns
 }
-

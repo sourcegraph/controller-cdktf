@@ -131,7 +131,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewAppmeshVirtualNodeSpecListenerTlsCertificateOutputReferenceParam
 
 	return nil
 }
-

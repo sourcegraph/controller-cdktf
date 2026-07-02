@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateEnclaveOptionsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateEnclaveOptionsOutputReferenceParameters(ter
 
 	return nil
 }
-

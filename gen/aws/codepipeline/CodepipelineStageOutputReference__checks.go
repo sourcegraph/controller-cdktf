@@ -90,7 +90,7 @@ func (c *jsiiProxy_CodepipelineStageOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOutputReference) validatePutActionParameters(value interface{}) error {
+func (c *jsiiProxy_CodepipelineStageOutputReference) validatePutActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CodepipelineStageOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineStageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineStageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CodepipelineStageOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineStageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodepipelineStageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewCodepipelineStageOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

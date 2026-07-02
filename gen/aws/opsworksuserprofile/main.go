@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
-		reflect.TypeOf((*OpsworksUserProfile)(nil)).Elem(),
+		reflect.TypeFor[OpsworksUserProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userArn", GoGetter: "UserArn"},
 			_jsii_.MemberProperty{JsiiProperty: "userArnInput", GoGetter: "UserArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksUserProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfileConfig",
-		reflect.TypeOf((*OpsworksUserProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[OpsworksUserProfileConfig](),
 	)
 }

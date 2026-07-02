@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLbTargetGroupTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbTargetGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbTargetGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsLbTargetGroupTimeoutsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbTargetGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbTargetGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsLbTargetGroupTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

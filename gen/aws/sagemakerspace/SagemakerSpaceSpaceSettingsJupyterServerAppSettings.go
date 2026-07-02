@@ -1,6 +1,5 @@
 package sagemakerspace
 
-
 type SagemakerSpaceSpaceSettingsJupyterServerAppSettings struct {
 	// default_resource_spec block.
 	//
@@ -9,8 +8,7 @@ type SagemakerSpaceSpaceSettingsJupyterServerAppSettings struct {
 	// code_repository block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_space#code_repository SagemakerSpace#code_repository}
-	CodeRepository interface{} `field:"optional" json:"codeRepository" yaml:"codeRepository"`
+	CodeRepository any `field:"optional" json:"codeRepository" yaml:"codeRepository"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sagemaker_space#lifecycle_config_arns SagemakerSpace#lifecycle_config_arns}.
 	LifecycleConfigArns *[]*string `field:"optional" json:"lifecycleConfigArns" yaml:"lifecycleConfigArns"`
 }
-

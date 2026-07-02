@@ -13,9 +13,9 @@ type DirectoryServiceDirectoryVpcSettingsOutputReference interface {
 	AvailabilityZones() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type DirectoryServiceDirectoryVpcSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type DirectoryServiceDirectoryVpcSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) Availabi
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -203,7 +203,6 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) VpcIdInp
 	return returns
 }
 
-
 func NewDirectoryServiceDirectoryVpcSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectoryServiceDirectoryVpcSettingsOutputReference {
 	_init_.Initialize()
 
@@ -214,7 +213,7 @@ func NewDirectoryServiceDirectoryVpcSettingsOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -226,12 +225,12 @@ func NewDirectoryServiceDirectoryVpcSettingsOutputReference_Override(d Directory
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetInternalValue(val *DirectoryServiceDirectoryVpcSettings) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetInternalValue(val *DirectoryServiceDirectoryVpcSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetSubnet
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,7 +296,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference)SetVpcId(val *string) {
+func (j *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,16 +320,16 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) ComputeF
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetListA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,23 +486,23 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -522,4 +521,3 @@ func (d *jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference) ToString
 
 	return returns
 }
-

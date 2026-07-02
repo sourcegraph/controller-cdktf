@@ -6,9 +6,9 @@ import (
 
 type DataAwsLakeformationPermissionsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type DataAwsLakeformationPermissionsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#principal DataAwsLakeformationPermissions#principal}.
 	Principal *string `field:"required" json:"principal" yaml:"principal"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}.
 	CatalogId *string `field:"optional" json:"catalogId" yaml:"catalogId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#catalog_resource DataAwsLakeformationPermissions#catalog_resource}.
-	CatalogResource interface{} `field:"optional" json:"catalogResource" yaml:"catalogResource"`
+	CatalogResource any `field:"optional" json:"catalogResource" yaml:"catalogResource"`
 	// database block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#database DataAwsLakeformationPermissions#database}
@@ -55,4 +55,3 @@ type DataAwsLakeformationPermissionsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#table_with_columns DataAwsLakeformationPermissions#table_with_columns}
 	TableWithColumns *DataAwsLakeformationPermissionsTableWithColumns `field:"optional" json:"tableWithColumns" yaml:"tableWithColumns"`
 }
-

@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetKey
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetSecureParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksApplicationEnvironmentOutputReference) validateSetSecureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewOpsworksApplicationEnvironmentOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteRequestParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2RouteRequestParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApigatewayv2RouteRequestParameterListParameters(terraformResourc
 
 	return nil
 }
-

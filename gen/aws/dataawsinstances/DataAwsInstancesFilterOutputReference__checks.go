@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsInstancesFilterOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInstancesFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsInstancesFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsInstancesFilterOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInstancesFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsInstancesFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsInstancesFilterOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

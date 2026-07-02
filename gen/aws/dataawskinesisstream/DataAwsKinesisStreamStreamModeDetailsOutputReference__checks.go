@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKinesisStreamStreamModeDetailsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DbSecurityGroup) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (d *jsiiProxy_DbSecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DbSecurityGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DbSecurityGroup) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (d *jsiiProxy_DbSecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DbSecurityGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DbSecurityGroup) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (d *jsiiProxy_DbSecurityGroup) validatePutIngressParameters(value interface{}) error {
+func (d *jsiiProxy_DbSecurityGroup) validatePutIngressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateDbSecurityGroup_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateDbSecurityGroup_IsConstructParameters(x interface{}) error {
+func validateDbSecurityGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateDbSecurityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDbSecurityGroup_IsTerraformElementParameters(x interface{}) error {
+func validateDbSecurityGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateDbSecurityGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDbSecurityGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateDbSecurityGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateDbSecurityGroup_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DbSecurityGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DbSecurityGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DbSecurityGroup) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DbSecurityGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DbSecurityGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DbSecurityGroup) validateSetNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DbSecurityGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DbSecurityGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewDbSecurityGroupParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

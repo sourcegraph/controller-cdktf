@@ -12,9 +12,9 @@ type LaunchTemplateTagSpecificationsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type LaunchTemplateTagSpecificationsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
@@ -46,7 +46,7 @@ type LaunchTemplateTagSpecificationsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type LaunchTemplateTagSpecificationsOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_LaunchTemplateTagSpecificationsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewLaunchTemplateTagSpecificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LaunchTemplateTagSpecificationsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewLaunchTemplateTagSpecificationsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewLaunchTemplateTagSpecificationsOutputReference_Override(l LaunchTemplate
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetResourceType(val *string) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetResourceTyp
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetTags(val *m
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) Interpolation
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) ResetTags() {
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) ToString() *s
 
 	return returns
 }
-

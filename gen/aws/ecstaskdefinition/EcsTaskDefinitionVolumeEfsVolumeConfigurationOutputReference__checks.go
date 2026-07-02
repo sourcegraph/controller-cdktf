@@ -109,7 +109,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReferencePara
 
 	return nil
 }
-

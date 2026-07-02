@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
-		reflect.TypeOf((*Route53ResolverFirewallDomainList)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverFirewallDomainList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53ResolverFirewallDomainList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig",
-		reflect.TypeOf((*Route53ResolverFirewallDomainListConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53ResolverFirewallDomainListConfig](),
 	)
 }

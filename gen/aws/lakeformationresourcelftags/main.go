@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
-		reflect.TypeOf((*LakeformationResourceLfTags)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTags](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTags{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig",
-		reflect.TypeOf((*LakeformationResourceLfTagsConfig)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase",
-		reflect.TypeOf((*LakeformationResourceLfTagsDatabase)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsDatabase](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabaseOutputReference",
-		reflect.TypeOf((*LakeformationResourceLfTagsDatabaseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsDatabaseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTagsDatabaseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag",
-		reflect.TypeOf((*LakeformationResourceLfTagsLfTag)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsLfTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
-		reflect.TypeOf((*LakeformationResourceLfTagsLfTagList)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsLfTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTagsLfTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagOutputReference",
-		reflect.TypeOf((*LakeformationResourceLfTagsLfTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsLfTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTagsLfTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable",
-		reflect.TypeOf((*LakeformationResourceLfTagsTable)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
-		reflect.TypeOf((*LakeformationResourceLfTagsTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wildcard", GoGetter: "Wildcard"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardInput", GoGetter: "WildcardInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTagsTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,11 +243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns",
-		reflect.TypeOf((*LakeformationResourceLfTagsTableWithColumns)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsTableWithColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
-		reflect.TypeOf((*LakeformationResourceLfTagsTableWithColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsTableWithColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wildcard", GoGetter: "Wildcard"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardInput", GoGetter: "WildcardInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,11 +295,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts",
-		reflect.TypeOf((*LakeformationResourceLfTagsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
-		reflect.TypeOf((*LakeformationResourceLfTagsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LakeformationResourceLfTagsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

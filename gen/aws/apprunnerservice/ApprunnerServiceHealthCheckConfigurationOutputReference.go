@@ -12,9 +12,9 @@ type ApprunnerServiceHealthCheckConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type ApprunnerServiceHealthCheckConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type ApprunnerServiceHealthCheckConfigurationOutputReference interface {
 	ResetUnhealthyThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) Unhe
 	return returns
 }
 
-
 func NewApprunnerServiceHealthCheckConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApprunnerServiceHealthCheckConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewApprunnerServiceHealthCheckConfigurationOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewApprunnerServiceHealthCheckConfigurationOutputReference_Override(a Appru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetHealthyThreshold(val *float64) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetHealthyThreshold(val *float64) {
 	if err := j.validateSetHealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetHe
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetInternalValue(val *ApprunnerServiceHealthCheckConfiguration) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetInternalValue(val *ApprunnerServiceHealthCheckConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetInterval(val *float64) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetInterval(val *float64) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetPa
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetPr
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetTimeout(val *float64) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetTi
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference)SetUnhealthyThreshold(val *float64) {
+func (j *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) SetUnhealthyThreshold(val *float64) {
 	if err := j.validateSetUnhealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) Comp
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetL
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) Inte
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) ToSt
 
 	return returns
 }
-

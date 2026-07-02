@@ -18,9 +18,9 @@ type MskClusterBrokerNodeGroupInfoOutputReference interface {
 	ClientSubnetsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,7 +59,7 @@ type MskClusterBrokerNodeGroupInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type MskClusterBrokerNodeGroupInfoOutputReference interface {
 	ResetStorageInfo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ClientSubnetsIn
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -311,7 +311,6 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewMskClusterBrokerNodeGroupInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskClusterBrokerNodeGroupInfoOutputReference {
 	_init_.Initialize()
 
@@ -322,7 +321,7 @@ func NewMskClusterBrokerNodeGroupInfoOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -334,12 +333,12 @@ func NewMskClusterBrokerNodeGroupInfoOutputReference_Override(m MskClusterBroker
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetAzDistribution(val *string) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetAzDistribution(val *string) {
 	if err := j.validateSetAzDistributionParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetAzDistributio
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetClientSubnets(val *[]*string) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetClientSubnets(val *[]*string) {
 	if err := j.validateSetClientSubnetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetClientSubnets
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetEbsVolumeSize(val *float64) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetEbsVolumeSize(val *float64) {
 	if err := j.validateSetEbsVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetEbsVolumeSize
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetInstanceType(
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetInternalValue(val *MskClusterBrokerNodeGroupInfo) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetInternalValue(val *MskClusterBrokerNodeGroupInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetSecurityGroups(val *[]*string) {
 	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetSecurityGroup
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,16 +461,16 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) PutConnectivity
 	_jsii_.InvokeVoid(
 		m,
 		"putConnectivityInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -653,7 +652,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) PutStorageInfo(
 	_jsii_.InvokeVoid(
 		m,
 		"putStorageInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -689,16 +688,16 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ResetStorageInf
 	)
 }
 
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -717,4 +716,3 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ToString() *str
 
 	return returns
 }
-

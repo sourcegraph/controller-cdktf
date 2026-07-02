@@ -10,14 +10,14 @@ import (
 
 type WorkspacesDirectorySelfServicePermissionsOutputReference interface {
 	cdktf.ComplexObject
-	ChangeComputeType() interface{}
-	SetChangeComputeType(val interface{})
-	ChangeComputeTypeInput() interface{}
+	ChangeComputeType() any
+	SetChangeComputeType(val any)
+	ChangeComputeTypeInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,20 +30,20 @@ type WorkspacesDirectorySelfServicePermissionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncreaseVolumeSize() interface{}
-	SetIncreaseVolumeSize(val interface{})
-	IncreaseVolumeSizeInput() interface{}
+	IncreaseVolumeSize() any
+	SetIncreaseVolumeSize(val any)
+	IncreaseVolumeSizeInput() any
 	InternalValue() *WorkspacesDirectorySelfServicePermissions
 	SetInternalValue(val *WorkspacesDirectorySelfServicePermissions)
-	RebuildWorkspace() interface{}
-	SetRebuildWorkspace(val interface{})
-	RebuildWorkspaceInput() interface{}
-	RestartWorkspace() interface{}
-	SetRestartWorkspace(val interface{})
-	RestartWorkspaceInput() interface{}
-	SwitchRunningMode() interface{}
-	SetSwitchRunningMode(val interface{})
-	SwitchRunningModeInput() interface{}
+	RebuildWorkspace() any
+	SetRebuildWorkspace(val any)
+	RebuildWorkspaceInput() any
+	RestartWorkspace() any
+	SetRestartWorkspace(val any)
+	RestartWorkspaceInput() any
+	SwitchRunningMode() any
+	SetSwitchRunningMode(val any)
+	SwitchRunningModeInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type WorkspacesDirectorySelfServicePermissionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type WorkspacesDirectorySelfServicePermissionsOutputReference interface {
 	ResetSwitchRunningMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ChangeComputeType() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ChangeComputeType() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"changeComputeType",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Cha
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ChangeComputeTypeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ChangeComputeTypeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"changeComputeTypeInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Cha
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) IncreaseVolumeSize() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) IncreaseVolumeSize() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"increaseVolumeSize",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Inc
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) IncreaseVolumeSizeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) IncreaseVolumeSizeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"increaseVolumeSizeInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RebuildWorkspace() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RebuildWorkspace() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rebuildWorkspace",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Reb
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RebuildWorkspaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RebuildWorkspaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rebuildWorkspaceInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Reb
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RestartWorkspace() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RestartWorkspace() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restartWorkspace",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Res
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RestartWorkspaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) RestartWorkspaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restartWorkspaceInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Res
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SwitchRunningMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SwitchRunningMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"switchRunningMode",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Swi
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SwitchRunningModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SwitchRunningModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"switchRunningModeInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Ter
 	return returns
 }
 
-
 func NewWorkspacesDirectorySelfServicePermissionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspacesDirectorySelfServicePermissionsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewWorkspacesDirectorySelfServicePermissionsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewWorkspacesDirectorySelfServicePermissionsOutputReference_Override(w Work
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetChangeComputeType(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetChangeComputeType(val any) {
 	if err := j.validateSetChangeComputeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetIncreaseVolumeSize(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetIncreaseVolumeSize(val any) {
 	if err := j.validateSetIncreaseVolumeSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetInternalValue(val *WorkspacesDirectorySelfServicePermissions) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetInternalValue(val *WorkspacesDirectorySelfServicePermissions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetRebuildWorkspace(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetRebuildWorkspace(val any) {
 	if err := j.validateSetRebuildWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetRestartWorkspace(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetRestartWorkspace(val any) {
 	if err := j.validateSetRestartWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetSwitchRunningMode(val interface{}) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetSwitchRunningMode(val any) {
 	if err := j.validateSetSwitchRunningModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Com
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Get
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Int
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Res
 	)
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) ToS
 
 	return returns
 }
-

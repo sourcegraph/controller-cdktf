@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogTablePartitionIndexList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCatalogTablePartitionIndexList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlueCatalogTablePartitionIndexListParameters(terraformResource c
 
 	return nil
 }
-

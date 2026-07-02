@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganization",
-		reflect.TypeOf((*OrganizationsOrganization)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganization](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accounts", GoGetter: "Accounts"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,11 +80,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccounts",
-		reflect.TypeOf((*OrganizationsOrganizationAccounts)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationAccounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsList",
-		reflect.TypeOf((*OrganizationsOrganizationAccountsList)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationAccountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationAccountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsOutputReference",
-		reflect.TypeOf((*OrganizationsOrganizationAccountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationAccountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationAccountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,15 +142,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig",
-		reflect.TypeOf((*OrganizationsOrganizationConfig)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationNonMasterAccounts",
-		reflect.TypeOf((*OrganizationsOrganizationNonMasterAccounts)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationNonMasterAccounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationNonMasterAccountsList",
-		reflect.TypeOf((*OrganizationsOrganizationNonMasterAccountsList)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationNonMasterAccountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationNonMasterAccountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationNonMasterAccountsOutputReference",
-		reflect.TypeOf((*OrganizationsOrganizationNonMasterAccountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationNonMasterAccountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationNonMasterAccountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,11 +208,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRoots",
-		reflect.TypeOf((*OrganizationsOrganizationRoots)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationRoots](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsList",
-		reflect.TypeOf((*OrganizationsOrganizationRootsList)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationRootsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationRootsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -233,7 +233,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsOutputReference",
-		reflect.TypeOf((*OrganizationsOrganizationRootsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationRootsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationRootsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,11 +269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypes",
-		reflect.TypeOf((*OrganizationsOrganizationRootsPolicyTypes)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationRootsPolicyTypes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypesList",
-		reflect.TypeOf((*OrganizationsOrganizationRootsPolicyTypesList)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationRootsPolicyTypesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -286,7 +286,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -294,7 +294,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsPolicyTypesOutputReference",
-		reflect.TypeOf((*OrganizationsOrganizationRootsPolicyTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OrganizationsOrganizationRootsPolicyTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationsOrganizationRootsPolicyTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

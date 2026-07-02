@@ -109,7 +109,7 @@ func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateSetDestinati
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewBackupPlanRuleCopyActionOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

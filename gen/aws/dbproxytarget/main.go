@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
-		reflect.TypeOf((*DbProxyTarget)(nil)).Elem(),
+		reflect.TypeFor[DbProxyTarget](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trackedClusterId", GoGetter: "TrackedClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbProxyTarget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,6 +80,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTargetConfig",
-		reflect.TypeOf((*DbProxyTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[DbProxyTargetConfig](),
 	)
 }

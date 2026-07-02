@@ -12,9 +12,9 @@ type Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,7 +28,7 @@ type Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference interfa
 	// Experimental.
 	Fqn() *string
 	InsertHeader() Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList
-	InsertHeaderInput() interface{}
+	InsertHeaderInput() any
 	InternalValue() *Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling
 	SetInternalValue(val *Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling)
 	// Experimental.
@@ -42,7 +42,7 @@ type Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,10 +63,10 @@ type Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutInsertHeader(value interface{})
+	PutInsertHeader(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) InsertHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) InsertHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"insertHeaderInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	return returns
 }
 
-
 func NewWafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewWafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewWafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference)SetInternalValue(val *Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) SetInternalValue(val *Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	)
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,34 +430,34 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) PutInsertHeader(value interface{}) {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) PutInsertHeader(value any) {
 	if err := w.validatePutInsertHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putInsertHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputRef
 
 	return returns
 }
-

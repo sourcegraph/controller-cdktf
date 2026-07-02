@@ -34,7 +34,7 @@ func (f *jsiiProxy_FisExperimentTemplateStopConditionList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateStopConditionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateStopConditionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFisExperimentTemplateStopConditionListParameters(terraformResour
 
 	return nil
 }
-

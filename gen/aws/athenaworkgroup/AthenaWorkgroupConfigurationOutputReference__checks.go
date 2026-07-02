@@ -128,7 +128,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetBytes
 	return nil
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetEnforceWorkgroupConfigurationParameters(val interface{}) error {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetEnforceWorkgroupConfigurationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetInter
 	return nil
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetPublishCloudwatchMetricsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetPublishCloudwatchMetricsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetPubli
 	return nil
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetRequesterPaysEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetRequesterPaysEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -296,4 +296,3 @@ func validateNewAthenaWorkgroupConfigurationOutputReferenceParameters(terraformR
 
 	return nil
 }
-

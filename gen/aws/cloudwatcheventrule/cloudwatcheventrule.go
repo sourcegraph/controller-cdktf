@@ -16,15 +16,15 @@ type CloudwatchEventRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,9 +49,9 @@ type CloudwatchEventRule interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsEnabled() interface{}
-	SetIsEnabled(val interface{})
-	IsEnabledInput() interface{}
+	IsEnabled() any
+	SetIsEnabled(val any)
+	IsEnabledInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,11 +69,11 @@ type CloudwatchEventRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -89,16 +89,16 @@ type CloudwatchEventRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type CloudwatchEventRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type CloudwatchEventRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type CloudwatchEventRule interface {
 	ResetScheduleExpression()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudwatchEventRule
@@ -187,8 +187,8 @@ func (j *jsiiProxy_CloudwatchEventRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_CloudwatchEventRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchEventRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_CloudwatchEventRule) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_CloudwatchEventRule) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) IsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventRule) IsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEnabled",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_CloudwatchEventRule) IsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) IsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventRule) IsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isEnabledInput",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_CloudwatchEventRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudwatchEventRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_CloudwatchEventRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_CloudwatchEventRule) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchEventRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,7 +557,6 @@ func (j *jsiiProxy_CloudwatchEventRule) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
 func NewCloudwatchEventRule(scope constructs.Construct, id *string, config *CloudwatchEventRuleConfig) CloudwatchEventRule {
 	_init_.Initialize()
@@ -569,7 +568,7 @@ func NewCloudwatchEventRule(scope constructs.Construct, id *string, config *Clou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventRule.CloudwatchEventRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -582,12 +581,12 @@ func NewCloudwatchEventRule_Override(c CloudwatchEventRule, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventRule.CloudwatchEventRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetDescription(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetEventBusName(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetEventBusName(val *string) {
 	if err := j.validateSetEventBusNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetEventBusName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetEventPattern(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetEventPattern(val *string) {
 	if err := j.validateSetEventPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetEventPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudwatchEventRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetId(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventRule) SetIsEnabled(val any) {
 	if err := j.validateSetIsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetIsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudwatchEventRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetName(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetNamePrefix(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudwatchEventRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -721,7 +720,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudwatchEventRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetRoleArn(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetScheduleExpression(val *string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetScheduleExpression(val *string) {
 	if err := j.validateSetScheduleExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetScheduleExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_CloudwatchEventRule)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventRule)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CloudwatchEventRule) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func CloudwatchEventRule_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventRule.CloudwatchEventRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func CloudwatchEventRule_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudwatchEventRule_IsConstruct(x interface{}) *bool {
+func CloudwatchEventRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventRule_IsConstructParameters(x); err != nil {
@@ -823,7 +822,7 @@ func CloudwatchEventRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventRule.CloudwatchEventRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func CloudwatchEventRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchEventRule_IsTerraformElement(x interface{}) *bool {
+func CloudwatchEventRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventRule_IsTerraformElementParameters(x); err != nil {
@@ -842,7 +841,7 @@ func CloudwatchEventRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventRule.CloudwatchEventRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func CloudwatchEventRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchEventRule_IsTerraformResource(x interface{}) *bool {
+func CloudwatchEventRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventRule_IsTerraformResourceParameters(x); err != nil {
@@ -861,7 +860,7 @@ func CloudwatchEventRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventRule.CloudwatchEventRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -886,31 +885,31 @@ func (c *jsiiProxy_CloudwatchEventRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudwatchEventRule) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudwatchEventRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (c *jsiiProxy_CloudwatchEventRule) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,15 +1037,15 @@ func (c *jsiiProxy_CloudwatchEventRule) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,7 +1064,7 @@ func (c *jsiiProxy_CloudwatchEventRule) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (c *jsiiProxy_CloudwatchEventRule) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,18 +1091,18 @@ func (c *jsiiProxy_CloudwatchEventRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudwatchEventRule) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1114,7 +1113,7 @@ func (c *jsiiProxy_CloudwatchEventRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (c *jsiiProxy_CloudwatchEventRule) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1225,8 +1224,8 @@ func (c *jsiiProxy_CloudwatchEventRule) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchEventRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1238,8 +1237,8 @@ func (c *jsiiProxy_CloudwatchEventRule) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchEventRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1251,8 +1250,8 @@ func (c *jsiiProxy_CloudwatchEventRule) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1264,8 +1263,8 @@ func (c *jsiiProxy_CloudwatchEventRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1290,8 +1289,8 @@ func (c *jsiiProxy_CloudwatchEventRule) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventRule) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1302,4 +1301,3 @@ func (c *jsiiProxy_CloudwatchEventRule) ToTerraform() interface{} {
 
 	return returns
 }
-

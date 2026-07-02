@@ -19,7 +19,7 @@ func (v *jsiiProxy_Vpc) validateAddMoveTargetParameters(moveTarget *string) erro
 	return nil
 }
 
-func (v *jsiiProxy_Vpc) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_Vpc) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_Vpc) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_Vpc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_Vpc) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVpc_GenerateConfigForImportParameters(scope constructs.Construct, i
 	return nil
 }
 
-func validateVpc_IsConstructParameters(x interface{}) error {
+func validateVpc_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVpc_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpc_IsTerraformElementParameters(x interface{}) error {
+func validateVpc_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVpc_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateVpc_IsTerraformResourceParameters(x interface{}) error {
+func validateVpc_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateVpc_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetAssignGeneratedIpv6CidrBlockParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetAssignGeneratedIpv6CidrBlockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_Vpc) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -305,7 +305,7 @@ func (j *jsiiProxy_Vpc) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -362,7 +362,7 @@ func (j *jsiiProxy_Vpc) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -382,7 +382,7 @@ func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkDnsSupportParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkDnsSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkDnsSupportParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetEnableDnsHostnamesParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetEnableDnsHostnamesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_Vpc) validateSetEnableDnsHostnamesParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetEnableDnsSupportParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetEnableDnsSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_Vpc) validateSetEnableDnsSupportParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetEnableNetworkAddressUsageMetricsParameters(val interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetEnableNetworkAddressUsageMetricsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -534,7 +534,7 @@ func (j *jsiiProxy_Vpc) validateSetLifecycleParameters(val *cdktf.TerraformResou
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Vpc) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -611,4 +611,3 @@ func validateNewVpcParameters(scope constructs.Construct, id *string, config *Vp
 
 	return nil
 }
-

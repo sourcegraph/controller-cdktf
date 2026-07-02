@@ -90,7 +90,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateInter
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validatePutMaintenanceScheduleParameters(value interface{}) error {
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validatePutMaintenanceScheduleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewOpensearchDomainAutoTuneOptionsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

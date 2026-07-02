@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkspacesIpGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkspacesIpGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroup) validatePutRulesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkspacesIpGroup) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWorkspacesIpGroup_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateWorkspacesIpGroup_IsConstructParameters(x interface{}) error {
+func validateWorkspacesIpGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWorkspacesIpGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkspacesIpGroup_IsTerraformElementParameters(x interface{}) error {
+func validateWorkspacesIpGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWorkspacesIpGroup_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateWorkspacesIpGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkspacesIpGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateWorkspacesIpGroup_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesIpGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_WorkspacesIpGroup) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesIpGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_WorkspacesIpGroup) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkspacesIpGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewWorkspacesIpGroupParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

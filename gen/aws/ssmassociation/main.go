@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
-		reflect.TypeOf((*SsmAssociation)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForSuccessTimeoutSeconds", GoGetter: "WaitForSuccessTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSuccessTimeoutSecondsInput", GoGetter: "WaitForSuccessTimeoutSecondsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig",
-		reflect.TypeOf((*SsmAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation",
-		reflect.TypeOf((*SsmAssociationOutputLocation)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociationOutputLocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
-		reflect.TypeOf((*SsmAssociationOutputLocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociationOutputLocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmAssociationOutputLocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets",
-		reflect.TypeOf((*SsmAssociationTargets)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociationTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList",
-		reflect.TypeOf((*SsmAssociationTargetsList)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociationTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmAssociationTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -183,7 +183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference",
-		reflect.TypeOf((*SsmAssociationTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmAssociationTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmAssociationTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

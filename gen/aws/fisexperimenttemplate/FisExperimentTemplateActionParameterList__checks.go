@@ -34,7 +34,7 @@ func (f *jsiiProxy_FisExperimentTemplateActionParameterList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateActionParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateActionParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFisExperimentTemplateActionParameterListParameters(terraformReso
 
 	return nil
 }
-

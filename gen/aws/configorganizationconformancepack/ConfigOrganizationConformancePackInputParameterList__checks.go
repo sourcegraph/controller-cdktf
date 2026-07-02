@@ -34,7 +34,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePackInputParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigOrganizationConformancePackInputParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewConfigOrganizationConformancePackInputParameterListParameters(te
 
 	return nil
 }
-

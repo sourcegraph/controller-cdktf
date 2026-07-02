@@ -90,7 +90,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validatePutOptionSettingsParameters(value interface{}) error {
+func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validatePutOptionSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOutputReference) validateSetDbSecurityGrou
 	return nil
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbOptionGroupOptionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -293,4 +293,3 @@ func validateNewDbOptionGroupOptionOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

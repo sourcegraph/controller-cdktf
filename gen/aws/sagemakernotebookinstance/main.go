@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
-		reflect.TypeOf((*SagemakerNotebookInstance)(nil)).Elem(),
+		reflect.TypeFor[SagemakerNotebookInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypes", GoGetter: "AcceleratorTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypesInput", GoGetter: "AcceleratorTypesInput"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeSizeInput", GoGetter: "VolumeSizeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerNotebookInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,15 +116,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceConfig",
-		reflect.TypeOf((*SagemakerNotebookInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerNotebookInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration",
-		reflect.TypeOf((*SagemakerNotebookInstanceInstanceMetadataServiceConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SagemakerNotebookInstanceInstanceMetadataServiceConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
-		reflect.TypeOf((*SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

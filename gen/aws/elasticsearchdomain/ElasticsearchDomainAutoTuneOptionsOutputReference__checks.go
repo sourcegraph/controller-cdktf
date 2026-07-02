@@ -90,7 +90,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateIn
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validatePutMaintenanceScheduleParameters(value interface{}) error {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validatePutMaintenanceScheduleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewElasticsearchDomainAutoTuneOptionsOutputReferenceParameters(terr
 
 	return nil
 }
-

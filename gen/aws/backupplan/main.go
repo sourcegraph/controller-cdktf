@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlan",
-		reflect.TypeOf((*BackupPlan)(nil)).Elem(),
+		reflect.TypeFor[BackupPlan](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting",
-		reflect.TypeOf((*BackupPlanAdvancedBackupSetting)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanAdvancedBackupSetting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList",
-		reflect.TypeOf((*BackupPlanAdvancedBackupSettingList)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanAdvancedBackupSettingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanAdvancedBackupSettingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -107,7 +107,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference",
-		reflect.TypeOf((*BackupPlanAdvancedBackupSettingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanAdvancedBackupSettingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupOptions", GoGetter: "BackupOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "backupOptionsInput", GoGetter: "BackupOptionsInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,23 +143,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupPlan.BackupPlanConfig",
-		reflect.TypeOf((*BackupPlanConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRule",
-		reflect.TypeOf((*BackupPlanRule)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction",
-		reflect.TypeOf((*BackupPlanRuleCopyAction)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleCopyAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle",
-		reflect.TypeOf((*BackupPlanRuleCopyActionLifecycle)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleCopyActionLifecycle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference",
-		reflect.TypeOf((*BackupPlanRuleCopyActionLifecycleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleCopyActionLifecycleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageAfter", GoGetter: "ColdStorageAfter"},
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageAfterInput", GoGetter: "ColdStorageAfterInput"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,7 +197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList",
-		reflect.TypeOf((*BackupPlanRuleCopyActionList)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleCopyActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanRuleCopyActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference",
-		reflect.TypeOf((*BackupPlanRuleCopyActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleCopyActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanRuleCopyActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle",
-		reflect.TypeOf((*BackupPlanRuleLifecycle)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleLifecycle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference",
-		reflect.TypeOf((*BackupPlanRuleLifecycleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleLifecycleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageAfter", GoGetter: "ColdStorageAfter"},
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageAfterInput", GoGetter: "ColdStorageAfterInput"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanRuleLifecycleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,7 +299,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleList",
-		reflect.TypeOf((*BackupPlanRuleList)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -313,7 +313,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -321,7 +321,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference",
-		reflect.TypeOf((*BackupPlanRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupPlanRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "completionWindow", GoGetter: "CompletionWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "completionWindowInput", GoGetter: "CompletionWindowInput"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupPlanRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

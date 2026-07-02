@@ -15,15 +15,15 @@ type BackupGlobalSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,24 +53,24 @@ type BackupGlobalSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type BackupGlobalSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type BackupGlobalSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type BackupGlobalSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BackupGlobalSettings
@@ -139,8 +139,8 @@ func (j *jsiiProxy_BackupGlobalSettings) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupGlobalSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_BackupGlobalSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupGlobalSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_BackupGlobalSettings) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupGlobalSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_BackupGlobalSettings) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BackupGlobalSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_BackupGlobalSettings) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupGlobalSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_BackupGlobalSettings) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupGlobalSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_BackupGlobalSettings) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
 func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *BackupGlobalSettingsConfig) BackupGlobalSettings {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *Bac
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewBackupGlobalSettings_Override(b BackupGlobalSettings, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_BackupGlobalSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_BackupGlobalSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BackupGlobalSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BackupGlobalSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetGlobalSettings(val *map[string]*string) {
+func (j *jsiiProxy_BackupGlobalSettings) SetGlobalSettings(val *map[string]*string) {
 	if err := j.validateSetGlobalSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetGlobalSettings(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetId(val *string) {
+func (j *jsiiProxy_BackupGlobalSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BackupGlobalSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BackupGlobalSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_BackupGlobalSettings)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BackupGlobalSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func BackupGlobalSettings_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func BackupGlobalSettings_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BackupGlobalSettings_IsConstruct(x interface{}) *bool {
+func BackupGlobalSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupGlobalSettings_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func BackupGlobalSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func BackupGlobalSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupGlobalSettings_IsTerraformElement(x interface{}) *bool {
+func BackupGlobalSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupGlobalSettings_IsTerraformElementParameters(x); err != nil {
@@ -515,7 +514,7 @@ func BackupGlobalSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func BackupGlobalSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupGlobalSettings_IsTerraformResource(x interface{}) *bool {
+func BackupGlobalSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupGlobalSettings_IsTerraformResourceParameters(x); err != nil {
@@ -534,7 +533,7 @@ func BackupGlobalSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,31 +558,31 @@ func (b *jsiiProxy_BackupGlobalSettings) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BackupGlobalSettings) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupGlobalSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (b *jsiiProxy_BackupGlobalSettings) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,15 +710,15 @@ func (b *jsiiProxy_BackupGlobalSettings) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupGlobalSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -738,7 +737,7 @@ func (b *jsiiProxy_BackupGlobalSettings) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -751,7 +750,7 @@ func (b *jsiiProxy_BackupGlobalSettings) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,18 +764,18 @@ func (b *jsiiProxy_BackupGlobalSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BackupGlobalSettings) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -787,7 +786,7 @@ func (b *jsiiProxy_BackupGlobalSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -798,7 +797,7 @@ func (b *jsiiProxy_BackupGlobalSettings) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -818,8 +817,8 @@ func (b *jsiiProxy_BackupGlobalSettings) ResetOverrideLogicalId() {
 	)
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupGlobalSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -831,8 +830,8 @@ func (b *jsiiProxy_BackupGlobalSettings) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupGlobalSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -844,8 +843,8 @@ func (b *jsiiProxy_BackupGlobalSettings) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupGlobalSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -857,8 +856,8 @@ func (b *jsiiProxy_BackupGlobalSettings) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupGlobalSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -883,8 +882,8 @@ func (b *jsiiProxy_BackupGlobalSettings) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BackupGlobalSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupGlobalSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -895,4 +894,3 @@ func (b *jsiiProxy_BackupGlobalSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

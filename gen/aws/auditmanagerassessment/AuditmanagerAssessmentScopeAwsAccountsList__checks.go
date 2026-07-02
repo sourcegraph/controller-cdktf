@@ -34,7 +34,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAuditmanagerAssessmentScopeAwsAccountsListParameters(terraformRe
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApigatewayv2AuthorizerJwtConfigurationOutputReferenceParameters(
 
 	return nil
 }
-

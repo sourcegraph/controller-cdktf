@@ -19,7 +19,7 @@ func (e *jsiiProxy_EcsService) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (e *jsiiProxy_EcsService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EcsService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EcsService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EcsService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_EcsService) validatePutAlarmsParameters(value *EcsServiceAlar
 	return nil
 }
 
-func (e *jsiiProxy_EcsService) validatePutCapacityProviderStrategyParameters(value interface{}) error {
+func (e *jsiiProxy_EcsService) validatePutCapacityProviderStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (e *jsiiProxy_EcsService) validatePutDeploymentControllerParameters(value *
 	return nil
 }
 
-func (e *jsiiProxy_EcsService) validatePutLoadBalancerParameters(value interface{}) error {
+func (e *jsiiProxy_EcsService) validatePutLoadBalancerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func (e *jsiiProxy_EcsService) validatePutNetworkConfigurationParameters(value *
 	return nil
 }
 
-func (e *jsiiProxy_EcsService) validatePutOrderedPlacementStrategyParameters(value interface{}) error {
+func (e *jsiiProxy_EcsService) validatePutOrderedPlacementStrategyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func (e *jsiiProxy_EcsService) validatePutOrderedPlacementStrategyParameters(val
 	return nil
 }
 
-func (e *jsiiProxy_EcsService) validatePutPlacementConstraintsParameters(value interface{}) error {
+func (e *jsiiProxy_EcsService) validatePutPlacementConstraintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func validateEcsService_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateEcsService_IsConstructParameters(x interface{}) error {
+func validateEcsService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func validateEcsService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcsService_IsTerraformElementParameters(x interface{}) error {
+func validateEcsService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func validateEcsService_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEcsService_IsTerraformResourceParameters(x interface{}) error {
+func validateEcsService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_EcsService) validateSetClusterParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -486,7 +486,7 @@ func (j *jsiiProxy_EcsService) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -567,7 +567,7 @@ func (j *jsiiProxy_EcsService) validateSetDesiredCountParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetEnableEcsManagedTagsParameters(val interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetEnableEcsManagedTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -587,7 +587,7 @@ func (j *jsiiProxy_EcsService) validateSetEnableEcsManagedTagsParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetEnableExecuteCommandParameters(val interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetEnableExecuteCommandParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -607,7 +607,7 @@ func (j *jsiiProxy_EcsService) validateSetEnableExecuteCommandParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetForceNewDeploymentParameters(val interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetForceNewDeploymentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -691,7 +691,7 @@ func (j *jsiiProxy_EcsService) validateSetPropagateTagsParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -777,7 +777,7 @@ func (j *jsiiProxy_EcsService) validateSetTriggersParameters(val *map[string]*st
 	return nil
 }
 
-func (j *jsiiProxy_EcsService) validateSetWaitForSteadyStateParameters(val interface{}) error {
+func (j *jsiiProxy_EcsService) validateSetWaitForSteadyStateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -815,4 +815,3 @@ func validateNewEcsServiceParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

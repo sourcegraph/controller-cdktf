@@ -19,7 +19,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateAddMoveTarge
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveFromIdPa
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateMacie2ClassificationExportConfiguration_GenerateConfigForImportPara
 	return nil
 }
 
-func validateMacie2ClassificationExportConfiguration_IsConstructParameters(x interface{}) error {
+func validateMacie2ClassificationExportConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateMacie2ClassificationExportConfiguration_IsConstructParameters(x int
 	return nil
 }
 
-func validateMacie2ClassificationExportConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateMacie2ClassificationExportConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateMacie2ClassificationExportConfiguration_IsTerraformElementParameter
 	return nil
 }
 
-func validateMacie2ClassificationExportConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateMacie2ClassificationExportConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateMacie2ClassificationExportConfiguration_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetLifecycle
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewMacie2ClassificationExportConfigurationParameters(scope construc
 
 	return nil
 }
-

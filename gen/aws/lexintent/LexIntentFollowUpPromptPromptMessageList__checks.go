@@ -34,7 +34,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptMessageList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptPromptMessageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptPromptMessageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLexIntentFollowUpPromptPromptMessageListParameters(terraformReso
 
 	return nil
 }
-

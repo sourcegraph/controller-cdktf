@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
-		reflect.TypeOf((*SesDomainIdentity)(nil)).Elem(),
+		reflect.TypeFor[SesDomainIdentity](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationToken", GoGetter: "VerificationToken"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SesDomainIdentity{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentityConfig",
-		reflect.TypeOf((*SesDomainIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[SesDomainIdentityConfig](),
 	)
 }

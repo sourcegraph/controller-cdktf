@@ -15,24 +15,24 @@ type S3AccountPublicAccessBlock interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	BlockPublicAcls() interface{}
-	SetBlockPublicAcls(val interface{})
-	BlockPublicAclsInput() interface{}
-	BlockPublicPolicy() interface{}
-	SetBlockPublicPolicy(val interface{})
-	BlockPublicPolicyInput() interface{}
+	BlockPublicAcls() any
+	SetBlockPublicAcls(val any)
+	BlockPublicAclsInput() any
+	BlockPublicPolicy() any
+	SetBlockPublicPolicy(val any)
+	BlockPublicPolicyInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,9 +48,9 @@ type S3AccountPublicAccessBlock interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnorePublicAcls() interface{}
-	SetIgnorePublicAcls(val interface{})
-	IgnorePublicAclsInput() interface{}
+	IgnorePublicAcls() any
+	SetIgnorePublicAcls(val any)
+	IgnorePublicAclsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -62,27 +62,27 @@ type S3AccountPublicAccessBlock interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RestrictPublicBuckets() interface{}
-	SetRestrictPublicBuckets(val interface{})
-	RestrictPublicBucketsInput() interface{}
+	RawOverrides() any
+	RestrictPublicBuckets() any
+	SetRestrictPublicBuckets(val any)
+	RestrictPublicBucketsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type S3AccountPublicAccessBlock interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type S3AccountPublicAccessBlock interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type S3AccountPublicAccessBlock interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRestrictPublicBuckets()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3AccountPublicAccessBlock
@@ -166,8 +166,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicAcls() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicAcls() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPublicAcls",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicAcls() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicAclsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicAclsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPublicAclsInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicAclsInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicPolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicPolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPublicPolicy",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicPolicy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) BlockPublicPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"blockPublicPolicyInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) IgnorePublicAcls() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) IgnorePublicAcls() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignorePublicAcls",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) IgnorePublicAcls() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) IgnorePublicAclsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) IgnorePublicAclsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignorePublicAclsInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) RestrictPublicBuckets() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) RestrictPublicBuckets() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restrictPublicBuckets",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) RestrictPublicBuckets() interface
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) RestrictPublicBucketsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) RestrictPublicBucketsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restrictPublicBucketsInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3AccountPublicAccessBlock) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -426,7 +426,6 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_account_public_access_block aws_s3_account_public_access_block} Resource.
 func NewS3AccountPublicAccessBlock(scope constructs.Construct, id *string, config *S3AccountPublicAccessBlockConfig) S3AccountPublicAccessBlock {
 	_init_.Initialize()
@@ -438,7 +437,7 @@ func NewS3AccountPublicAccessBlock(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -451,12 +450,12 @@ func NewS3AccountPublicAccessBlock_Override(s S3AccountPublicAccessBlock, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetAccountId(val *string) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetBlockPublicAcls(val interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetBlockPublicAcls(val any) {
 	if err := j.validateSetBlockPublicAclsParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetBlockPublicAcls(val interface{}
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetBlockPublicPolicy(val interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetBlockPublicPolicy(val any) {
 	if err := j.validateSetBlockPublicPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetBlockPublicPolicy(val interface
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetCount(val interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetId(val *string) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetIgnorePublicAcls(val interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetIgnorePublicAcls(val any) {
 	if err := j.validateSetIgnorePublicAclsParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetIgnorePublicAcls(val interface{
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_S3AccountPublicAccessBlock)SetRestrictPublicBuckets(val interface{}) {
+func (j *jsiiProxy_S3AccountPublicAccessBlock) SetRestrictPublicBuckets(val any) {
 	if err := j.validateSetRestrictPublicBucketsParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func S3AccountPublicAccessBlock_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func S3AccountPublicAccessBlock_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool {
+func S3AccountPublicAccessBlock_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3AccountPublicAccessBlock_IsConstructParameters(x); err != nil {
@@ -637,7 +636,7 @@ func S3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func S3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool {
+func S3AccountPublicAccessBlock_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3AccountPublicAccessBlock_IsTerraformElementParameters(x); err != nil {
@@ -656,7 +655,7 @@ func S3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func S3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3AccountPublicAccessBlock_IsTerraformResource(x interface{}) *bool {
+func S3AccountPublicAccessBlock_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3AccountPublicAccessBlock_IsTerraformResourceParameters(x); err != nil {
@@ -675,7 +674,7 @@ func S3AccountPublicAccessBlock_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,31 +699,31 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3AccountPublicAccessBlock) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3AccountPublicAccessBlock) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,15 +851,15 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3AccountPublicAccessBlock) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -879,7 +878,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -892,7 +891,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,18 +905,18 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3AccountPublicAccessBlock) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -928,7 +927,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -939,7 +938,7 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -999,8 +998,8 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) ResetRestrictPublicBuckets() {
 	)
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3AccountPublicAccessBlock) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1012,8 +1011,8 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3AccountPublicAccessBlock) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1025,8 +1024,8 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3AccountPublicAccessBlock) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1038,8 +1037,8 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3AccountPublicAccessBlock) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1064,8 +1063,8 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3AccountPublicAccessBlock) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3AccountPublicAccessBlock) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1076,4 +1075,3 @@ func (s *jsiiProxy_S3AccountPublicAccessBlock) ToTerraform() interface{} {
 
 	return returns
 }
-

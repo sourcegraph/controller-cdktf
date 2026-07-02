@@ -98,7 +98,7 @@ func (d *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDbEventSubscriptionTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

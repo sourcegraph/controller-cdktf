@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOpensearchDomainClusterConfigZoneAwarenessConfigOutputReferenceP
 
 	return nil
 }
-

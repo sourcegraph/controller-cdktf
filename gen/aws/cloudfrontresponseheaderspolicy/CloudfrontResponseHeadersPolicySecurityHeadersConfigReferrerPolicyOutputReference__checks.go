@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerP
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerP
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference) validateSetOverrideParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference) validateSetOverrideParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewCloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPoli
 
 	return nil
 }
-

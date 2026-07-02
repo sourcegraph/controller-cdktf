@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppconfigConfigurationProfileValidatorOutputReferenceParameters(
 
 	return nil
 }
-

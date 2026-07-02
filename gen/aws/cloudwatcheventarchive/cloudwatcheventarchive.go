@@ -16,15 +16,15 @@ type CloudwatchEventArchive interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,27 +63,27 @@ type CloudwatchEventArchive interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionDays() *float64
 	SetRetentionDays(val *float64)
 	RetentionDaysInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type CloudwatchEventArchive interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type CloudwatchEventArchive interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type CloudwatchEventArchive interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionDays()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudwatchEventArchive
@@ -165,8 +165,8 @@ func (j *jsiiProxy_CloudwatchEventArchive) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventArchive) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_CloudwatchEventArchive) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchEventArchive) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CloudwatchEventArchive) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventArchive) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_CloudwatchEventArchive) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudwatchEventArchive) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_CloudwatchEventArchive) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudwatchEventArchive) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_CloudwatchEventArchive) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudwatchEventArchive) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -435,7 +435,6 @@ func (j *jsiiProxy_CloudwatchEventArchive) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive} Resource.
 func NewCloudwatchEventArchive(scope constructs.Construct, id *string, config *CloudwatchEventArchiveConfig) CloudwatchEventArchive {
 	_init_.Initialize()
@@ -447,7 +446,7 @@ func NewCloudwatchEventArchive(scope constructs.Construct, id *string, config *C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -460,12 +459,12 @@ func NewCloudwatchEventArchive_Override(c CloudwatchEventArchive, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetDescription(val *string) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetEventPattern(val *string) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetEventPattern(val *string) {
 	if err := j.validateSetEventPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetEventPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetEventSourceArn(val *string) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetEventSourceArn(val *string) {
 	if err := j.validateSetEventSourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetEventSourceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetId(val *string) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetName(val *string) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_CloudwatchEventArchive)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventArchive)SetRetentionDays(val *float64) {
+func (j *jsiiProxy_CloudwatchEventArchive) SetRetentionDays(val *float64) {
 	if err := j.validateSetRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func CloudwatchEventArchive_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func CloudwatchEventArchive_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudwatchEventArchive_IsConstruct(x interface{}) *bool {
+func CloudwatchEventArchive_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventArchive_IsConstructParameters(x); err != nil {
@@ -646,7 +645,7 @@ func CloudwatchEventArchive_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func CloudwatchEventArchive_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool {
+func CloudwatchEventArchive_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventArchive_IsTerraformElementParameters(x); err != nil {
@@ -665,7 +664,7 @@ func CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudwatchEventArchive_IsTerraformResource(x interface{}) *bool {
+func CloudwatchEventArchive_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudwatchEventArchive_IsTerraformResourceParameters(x); err != nil {
@@ -684,7 +683,7 @@ func CloudwatchEventArchive_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,31 +708,31 @@ func (c *jsiiProxy_CloudwatchEventArchive) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudwatchEventArchive) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudwatchEventArchive) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,15 +860,15 @@ func (c *jsiiProxy_CloudwatchEventArchive) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventArchive) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -888,7 +887,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,18 +914,18 @@ func (c *jsiiProxy_CloudwatchEventArchive) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudwatchEventArchive) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -937,7 +936,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -948,7 +947,7 @@ func (c *jsiiProxy_CloudwatchEventArchive) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -992,8 +991,8 @@ func (c *jsiiProxy_CloudwatchEventArchive) ResetRetentionDays() {
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchEventArchive) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1005,8 +1004,8 @@ func (c *jsiiProxy_CloudwatchEventArchive) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudwatchEventArchive) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1018,8 +1017,8 @@ func (c *jsiiProxy_CloudwatchEventArchive) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventArchive) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1031,8 +1030,8 @@ func (c *jsiiProxy_CloudwatchEventArchive) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventArchive) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1057,8 +1056,8 @@ func (c *jsiiProxy_CloudwatchEventArchive) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventArchive) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudwatchEventArchive) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1069,4 +1068,3 @@ func (c *jsiiProxy_CloudwatchEventArchive) ToTerraform() interface{} {
 
 	return returns
 }
-

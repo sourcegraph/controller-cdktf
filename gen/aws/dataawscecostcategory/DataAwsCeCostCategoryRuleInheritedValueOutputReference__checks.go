@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCeCostCategoryRuleInheritedValueOutputReferenceParameters
 
 	return nil
 }
-

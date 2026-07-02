@@ -34,7 +34,7 @@ func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewS3BucketCorsConfigurationCorsRuleListParameters(terraformResourc
 
 	return nil
 }
-

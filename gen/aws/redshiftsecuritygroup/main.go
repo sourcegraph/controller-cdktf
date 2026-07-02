@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
-		reflect.TypeOf((*RedshiftSecurityGroup)(nil)).Elem(),
+		reflect.TypeFor[RedshiftSecurityGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftSecurityGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupConfig",
-		reflect.TypeOf((*RedshiftSecurityGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftSecurityGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress",
-		reflect.TypeOf((*RedshiftSecurityGroupIngress)(nil)).Elem(),
+		reflect.TypeFor[RedshiftSecurityGroupIngress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
-		reflect.TypeOf((*RedshiftSecurityGroupIngressList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftSecurityGroupIngressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftSecurityGroupIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
-		reflect.TypeOf((*RedshiftSecurityGroupIngressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftSecurityGroupIngressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftSecurityGroupIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,11 +19,11 @@ type DataAwsLakeformationDataLakeSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateDatabaseDefaultPermissions() DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList
 	CreateTableDefaultPermissions() DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList
 	// Experimental.
@@ -52,18 +52,18 @@ type DataAwsLakeformationDataLakeSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrustedResourceOwners() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataAwsLakeformationDataLakeSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsLakeformationDataLakeSettings
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TrustedResourceOwners()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) DataAwsLakeformationDataLakeSettings {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewDataAwsLakeformationDataLakeSettings_Override(d DataAwsLakeformationData
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetCatalogId(val *string) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetCatalogId(val *string) {
 	if err := j.validateSetCatalogIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetCatalogId(val *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetId(val *string) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -439,7 +438,7 @@ func DataAwsLakeformationDataLakeSettings_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func DataAwsLakeformationDataLakeSettings_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsLakeformationDataLakeSettings_IsConstruct(x interface{}) *bool {
+func DataAwsLakeformationDataLakeSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLakeformationDataLakeSettings_IsConstructParameters(x); err != nil {
@@ -474,7 +473,7 @@ func DataAwsLakeformationDataLakeSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func DataAwsLakeformationDataLakeSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLakeformationDataLakeSettings_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsLakeformationDataLakeSettings_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLakeformationDataLakeSettings_IsTerraformDataSourceParameters(x); err != nil {
@@ -493,7 +492,7 @@ func DataAwsLakeformationDataLakeSettings_IsTerraformDataSource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func DataAwsLakeformationDataLakeSettings_IsTerraformDataSource(x interface{}) *
 }
 
 // Experimental.
-func DataAwsLakeformationDataLakeSettings_IsTerraformElement(x interface{}) *bool {
+func DataAwsLakeformationDataLakeSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLakeformationDataLakeSettings_IsTerraformElementParameters(x); err != nil {
@@ -512,7 +511,7 @@ func DataAwsLakeformationDataLakeSettings_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -530,27 +529,27 @@ func DataAwsLakeformationDataLakeSettings_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -736,8 +735,8 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ResetOverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -749,8 +748,8 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) SynthesizeAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -762,8 +761,8 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) SynthesizeHclAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -775,8 +774,8 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToHclTerraform() interf
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -801,8 +800,8 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -813,4 +812,3 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettings) ToTerraform() interface
 
 	return returns
 }
-

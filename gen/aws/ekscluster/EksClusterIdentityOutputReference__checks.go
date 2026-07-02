@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksClusterIdentityOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterIdentityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterIdentityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEksClusterIdentityOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

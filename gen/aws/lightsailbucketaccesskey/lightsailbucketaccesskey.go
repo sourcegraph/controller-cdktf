@@ -19,15 +19,15 @@ type LightsailBucketAccessKey interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,26 +55,26 @@ type LightsailBucketAccessKey interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecretAccessKey() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type LightsailBucketAccessKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type LightsailBucketAccessKey interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type LightsailBucketAccessKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LightsailBucketAccessKey
@@ -173,8 +173,8 @@ func (j *jsiiProxy_LightsailBucketAccessKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailBucketAccessKey) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_LightsailBucketAccessKey) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailBucketAccessKey) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_LightsailBucketAccessKey) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailBucketAccessKey) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_LightsailBucketAccessKey) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LightsailBucketAccessKey) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_LightsailBucketAccessKey) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailBucketAccessKey) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_LightsailBucketAccessKey) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LightsailBucketAccessKey) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_LightsailBucketAccessKey) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
 func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config *LightsailBucketAccessKeyConfig) LightsailBucketAccessKey {
 	_init_.Initialize()
@@ -385,7 +384,7 @@ func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -398,12 +397,12 @@ func NewLightsailBucketAccessKey_Override(l LightsailBucketAccessKey, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetBucketName(val *string) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetConnection(val interface{}) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetCount(val interface{}) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -452,7 +451,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetId(val *string) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_LightsailBucketAccessKey)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LightsailBucketAccessKey) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func LightsailBucketAccessKey_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func LightsailBucketAccessKey_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LightsailBucketAccessKey_IsConstruct(x interface{}) *bool {
+func LightsailBucketAccessKey_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailBucketAccessKey_IsConstructParameters(x); err != nil {
@@ -540,7 +539,7 @@ func LightsailBucketAccessKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func LightsailBucketAccessKey_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailBucketAccessKey_IsTerraformElement(x interface{}) *bool {
+func LightsailBucketAccessKey_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailBucketAccessKey_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func LightsailBucketAccessKey_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func LightsailBucketAccessKey_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LightsailBucketAccessKey_IsTerraformResource(x interface{}) *bool {
+func LightsailBucketAccessKey_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLightsailBucketAccessKey_IsTerraformResourceParameters(x); err != nil {
@@ -578,7 +577,7 @@ func LightsailBucketAccessKey_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,31 +602,31 @@ func (l *jsiiProxy_LightsailBucketAccessKey) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LightsailBucketAccessKey) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailBucketAccessKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,15 +754,15 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailBucketAccessKey) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -782,7 +781,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -795,7 +794,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,18 +808,18 @@ func (l *jsiiProxy_LightsailBucketAccessKey) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LightsailBucketAccessKey) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -831,7 +830,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -842,7 +841,7 @@ func (l *jsiiProxy_LightsailBucketAccessKey) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -862,8 +861,8 @@ func (l *jsiiProxy_LightsailBucketAccessKey) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailBucketAccessKey) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -875,8 +874,8 @@ func (l *jsiiProxy_LightsailBucketAccessKey) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LightsailBucketAccessKey) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -888,8 +887,8 @@ func (l *jsiiProxy_LightsailBucketAccessKey) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailBucketAccessKey) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -901,8 +900,8 @@ func (l *jsiiProxy_LightsailBucketAccessKey) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailBucketAccessKey) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -927,8 +926,8 @@ func (l *jsiiProxy_LightsailBucketAccessKey) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LightsailBucketAccessKey) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LightsailBucketAccessKey) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -939,4 +938,3 @@ func (l *jsiiProxy_LightsailBucketAccessKey) ToTerraform() interface{} {
 
 	return returns
 }
-

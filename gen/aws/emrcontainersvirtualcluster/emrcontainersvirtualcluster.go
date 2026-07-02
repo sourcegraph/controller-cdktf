@@ -16,17 +16,17 @@ type EmrcontainersVirtualCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContainerProvider() EmrcontainersVirtualClusterContainerProviderOutputReference
 	ContainerProviderInput() *EmrcontainersVirtualClusterContainerProvider
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type EmrcontainersVirtualCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -70,18 +70,18 @@ type EmrcontainersVirtualCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EmrcontainersVirtualClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type EmrcontainersVirtualCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type EmrcontainersVirtualCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type EmrcontainersVirtualCluster interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EmrcontainersVirtualCluster
@@ -165,8 +165,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) ContainerProviderInput() *Emrcon
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) Timeouts() EmrcontainersVirtualC
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrcontainersVirtualCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource.
 func NewEmrcontainersVirtualCluster(scope constructs.Construct, id *string, config *EmrcontainersVirtualClusterConfig) EmrcontainersVirtualCluster {
@@ -447,7 +446,7 @@ func NewEmrcontainersVirtualCluster(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -460,12 +459,12 @@ func NewEmrcontainersVirtualCluster_Override(e EmrcontainersVirtualCluster, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetId(val *string) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetName(val *string) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetTags(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func EmrcontainersVirtualCluster_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func EmrcontainersVirtualCluster_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool {
+func EmrcontainersVirtualCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrcontainersVirtualCluster_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func EmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func EmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool {
+func EmrcontainersVirtualCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrcontainersVirtualCluster_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func EmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func EmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EmrcontainersVirtualCluster_IsTerraformResource(x interface{}) *bool {
+func EmrcontainersVirtualCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrcontainersVirtualCluster_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func EmrcontainersVirtualCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EmrcontainersVirtualCluster) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrcontainersVirtualCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrcontainersVirtualCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -866,7 +865,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EmrcontainersVirtualCluster) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) PutContainerProvider(value *Emrc
 	_jsii_.InvokeVoid(
 		e,
 		"putContainerProvider",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -948,7 +947,7 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) PutTimeouts(value *Emrcontainers
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -992,8 +991,8 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmrcontainersVirtualCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1005,8 +1004,8 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmrcontainersVirtualCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1018,8 +1017,8 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrcontainersVirtualCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1031,8 +1030,8 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrcontainersVirtualCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1057,8 +1056,8 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrcontainersVirtualCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1069,4 +1068,3 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

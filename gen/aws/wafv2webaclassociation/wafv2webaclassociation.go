@@ -15,15 +15,15 @@ type Wafv2WebAclAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,18 +50,18 @@ type Wafv2WebAclAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WebAclArn() *string
@@ -71,9 +71,9 @@ type Wafv2WebAclAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type Wafv2WebAclAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type Wafv2WebAclAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type Wafv2WebAclAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Wafv2WebAclAssociation
@@ -142,8 +142,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) WebAclArnInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource.
 func NewWafv2WebAclAssociation(scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfig) Wafv2WebAclAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewWafv2WebAclAssociation(scope constructs.Construct, id *string, config *W
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewWafv2WebAclAssociation_Override(w Wafv2WebAclAssociation, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetId(val *string) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetResourceArn(val *string) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetResourceArn(val *string) {
 	if err := j.validateSetResourceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation)SetResourceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation)SetWebAclArn(val *string) {
+func (j *jsiiProxy_Wafv2WebAclAssociation) SetWebAclArn(val *string) {
 	if err := j.validateSetWebAclArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func Wafv2WebAclAssociation_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func Wafv2WebAclAssociation_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Wafv2WebAclAssociation_IsConstruct(x interface{}) *bool {
+func Wafv2WebAclAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafv2WebAclAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func Wafv2WebAclAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func Wafv2WebAclAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Wafv2WebAclAssociation_IsTerraformElement(x interface{}) *bool {
+func Wafv2WebAclAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafv2WebAclAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func Wafv2WebAclAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func Wafv2WebAclAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Wafv2WebAclAssociation_IsTerraformResource(x interface{}) *bool {
+func Wafv2WebAclAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWafv2WebAclAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func Wafv2WebAclAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociation) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Wafv2WebAclAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Wafv2WebAclAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -772,7 +771,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociation) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Wafv2WebAclAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -865,8 +864,8 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Wafv2WebAclAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -878,8 +877,8 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Wafv2WebAclAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -891,8 +890,8 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Wafv2WebAclAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -917,8 +916,8 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Wafv2WebAclAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -929,4 +928,3 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

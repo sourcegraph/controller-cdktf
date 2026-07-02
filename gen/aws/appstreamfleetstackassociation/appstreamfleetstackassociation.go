@@ -15,15 +15,15 @@ type AppstreamFleetStackAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,27 +53,27 @@ type AppstreamFleetStackAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StackName() *string
 	SetStackName(val *string)
 	StackNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type AppstreamFleetStackAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type AppstreamFleetStackAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type AppstreamFleetStackAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppstreamFleetStackAssociation
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamFleetStackAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppstreamFleetStackAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamFleetStackAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppstreamFleetStackAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppstreamFleetStackAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppstreamFleetStackAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet_stack_association aws_appstream_fleet_stack_association} Resource.
 func NewAppstreamFleetStackAssociation(scope constructs.Construct, id *string, config *AppstreamFleetStackAssociationConfig) AppstreamFleetStackAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewAppstreamFleetStackAssociation(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewAppstreamFleetStackAssociation_Override(a AppstreamFleetStackAssociation
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetFleetName(val *string) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetFleetName(val *string) {
 	if err := j.validateSetFleetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetFleetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetId(val *string) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleetStackAssociation)SetStackName(val *string) {
+func (j *jsiiProxy_AppstreamFleetStackAssociation) SetStackName(val *string) {
 	if err := j.validateSetStackNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func AppstreamFleetStackAssociation_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func AppstreamFleetStackAssociation_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppstreamFleetStackAssociation_IsConstruct(x interface{}) *bool {
+func AppstreamFleetStackAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppstreamFleetStackAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func AppstreamFleetStackAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func AppstreamFleetStackAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppstreamFleetStackAssociation_IsTerraformElement(x interface{}) *bool {
+func AppstreamFleetStackAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppstreamFleetStackAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func AppstreamFleetStackAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func AppstreamFleetStackAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppstreamFleetStackAssociation_IsTerraformResource(x interface{}) *bool {
+func AppstreamFleetStackAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppstreamFleetStackAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func AppstreamFleetStackAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppstreamFleetStackAssociation) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppstreamFleetStackAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamFleetStackAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -772,7 +771,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppstreamFleetStackAssociation) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppstreamFleetStackAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -865,8 +864,8 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppstreamFleetStackAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -878,8 +877,8 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamFleetStackAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -891,8 +890,8 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamFleetStackAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -917,8 +916,8 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppstreamFleetStackAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppstreamFleetStackAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -929,4 +928,3 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

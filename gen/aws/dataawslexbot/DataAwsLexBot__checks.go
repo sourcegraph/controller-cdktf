@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsLexBot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsLexBot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsLexBot_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateDataAwsLexBot_IsConstructParameters(x interface{}) error {
+func validateDataAwsLexBot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsLexBot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsLexBot_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsLexBot_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsLexBot_IsTerraformDataSourceParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsLexBot_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsLexBot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsLexBot_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLexBot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLexBot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataAwsLexBotParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

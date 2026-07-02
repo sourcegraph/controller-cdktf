@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
-		reflect.TypeOf((*SagemakerHumanTaskUi)(nil)).Elem(),
+		reflect.TypeFor[SagemakerHumanTaskUi](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uiTemplate", GoGetter: "UiTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "uiTemplateInput", GoGetter: "UiTemplateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerHumanTaskUi{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiConfig",
-		reflect.TypeOf((*SagemakerHumanTaskUiConfig)(nil)).Elem(),
+		reflect.TypeFor[SagemakerHumanTaskUiConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplate",
-		reflect.TypeOf((*SagemakerHumanTaskUiUiTemplate)(nil)).Elem(),
+		reflect.TypeFor[SagemakerHumanTaskUiUiTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
-		reflect.TypeOf((*SagemakerHumanTaskUiUiTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SagemakerHumanTaskUiUiTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

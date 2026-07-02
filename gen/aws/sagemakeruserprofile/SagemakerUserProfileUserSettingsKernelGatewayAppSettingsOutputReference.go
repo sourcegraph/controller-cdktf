@@ -12,9 +12,9 @@ type SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference int
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference int
 	// Experimental.
 	CreationStack() *[]*string
 	CustomImage() SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList
-	CustomImageInput() interface{}
+	CustomImageInput() any
 	DefaultResourceSpec() SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference
 	DefaultResourceSpecInput() *SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 	// Experimental.
@@ -47,7 +47,7 @@ type SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,13 +68,13 @@ type SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomImage(value interface{})
+	PutCustomImage(value any)
 	PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec)
 	ResetCustomImage()
 	ResetLifecycleConfigArns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) CustomImageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) CustomImageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customImageInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	return returns
 }
 
-
 func NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)SetInternalValue(val *SagemakerUserProfileUserSettingsKernelGatewayAppSettings) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) SetInternalValue(val *SagemakerUserProfileUserSettingsKernelGatewayAppSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)SetLifecycleConfigArns(val *[]*string) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) SetLifecycleConfigArns(val *[]*string) {
 	if err := j.validateSetLifecycleConfigArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	)
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,16 +323,16 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,21 +489,21 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) PutCustomImage(value interface{}) {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) PutCustomImage(value any) {
 	if err := s.validatePutCustomImageParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCustomImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -515,7 +514,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	_jsii_.InvokeVoid(
 		s,
 		"putDefaultResourceSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 	)
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutpu
 
 	return returns
 }
-

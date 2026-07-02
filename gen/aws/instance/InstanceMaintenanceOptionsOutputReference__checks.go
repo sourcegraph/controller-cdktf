@@ -106,7 +106,7 @@ func (j *jsiiProxy_InstanceMaintenanceOptionsOutputReference) validateSetAutoRec
 	return nil
 }
 
-func (j *jsiiProxy_InstanceMaintenanceOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceMaintenanceOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewInstanceMaintenanceOptionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

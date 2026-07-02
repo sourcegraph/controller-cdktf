@@ -120,7 +120,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewEvidentlyProjectDataDeliveryOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -16,15 +16,15 @@ type CeCostCategory interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultValue() *string
 	SetDefaultValue(val *string)
 	DefaultValueInput() *string
@@ -61,18 +61,18 @@ type CeCostCategory interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rule() CeCostCategoryRuleList
-	RuleInput() interface{}
+	RuleInput() any
 	RuleVersion() *string
 	SetRuleVersion(val *string)
 	RuleVersionInput() *string
 	SplitChargeRule() CeCostCategorySplitChargeRuleList
-	SplitChargeRuleInput() interface{}
+	SplitChargeRuleInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -82,16 +82,16 @@ type CeCostCategory interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type CeCostCategory interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,15 +121,15 @@ type CeCostCategory interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRule(value interface{})
-	PutSplitChargeRule(value interface{})
+	PutRule(value any)
+	PutSplitChargeRule(value any)
 	ResetDefaultValue()
 	ResetEffectiveStart()
 	ResetId()
@@ -139,17 +139,17 @@ type CeCostCategory interface {
 	ResetSplitChargeRule()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CeCostCategory
@@ -177,8 +177,8 @@ func (j *jsiiProxy_CeCostCategory) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategory) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_CeCostCategory) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CeCostCategory) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_CeCostCategory) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategory) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_CeCostCategory) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CeCostCategory) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_CeCostCategory) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategory) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_CeCostCategory) Rule() CeCostCategoryRuleList {
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) RuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategory) RuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleInput",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_CeCostCategory) SplitChargeRule() CeCostCategorySplitChargeRu
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) SplitChargeRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CeCostCategory) SplitChargeRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splitChargeRuleInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_CeCostCategory) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_CeCostCategory) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CeCostCategory) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -517,7 +517,6 @@ func (j *jsiiProxy_CeCostCategory) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category aws_ce_cost_category} Resource.
 func NewCeCostCategory(scope constructs.Construct, id *string, config *CeCostCategoryConfig) CeCostCategory {
 	_init_.Initialize()
@@ -529,7 +528,7 @@ func NewCeCostCategory(scope constructs.Construct, id *string, config *CeCostCat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -542,12 +541,12 @@ func NewCeCostCategory_Override(c CeCostCategory, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetConnection(val interface{}) {
+func (j *jsiiProxy_CeCostCategory) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_CeCostCategory)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetCount(val interface{}) {
+func (j *jsiiProxy_CeCostCategory) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_CeCostCategory)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetDefaultValue(val *string) {
+func (j *jsiiProxy_CeCostCategory) SetDefaultValue(val *string) {
 	if err := j.validateSetDefaultValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_CeCostCategory)SetDefaultValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CeCostCategory) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_CeCostCategory)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetEffectiveStart(val *string) {
+func (j *jsiiProxy_CeCostCategory) SetEffectiveStart(val *string) {
 	if err := j.validateSetEffectiveStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_CeCostCategory)SetEffectiveStart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CeCostCategory) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +606,7 @@ func (j *jsiiProxy_CeCostCategory)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetId(val *string) {
+func (j *jsiiProxy_CeCostCategory) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_CeCostCategory)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CeCostCategory) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_CeCostCategory)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetName(val *string) {
+func (j *jsiiProxy_CeCostCategory) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_CeCostCategory)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CeCostCategory) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_CeCostCategory)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CeCostCategory) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_CeCostCategory)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetRuleVersion(val *string) {
+func (j *jsiiProxy_CeCostCategory) SetRuleVersion(val *string) {
 	if err := j.validateSetRuleVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_CeCostCategory)SetRuleVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CeCostCategory) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_CeCostCategory)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CeCostCategory)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CeCostCategory) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func CeCostCategory_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func CeCostCategory_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CeCostCategory_IsConstruct(x interface{}) *bool {
+func CeCostCategory_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCeCostCategory_IsConstructParameters(x); err != nil {
@@ -739,7 +738,7 @@ func CeCostCategory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func CeCostCategory_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CeCostCategory_IsTerraformElement(x interface{}) *bool {
+func CeCostCategory_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCeCostCategory_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func CeCostCategory_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func CeCostCategory_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CeCostCategory_IsTerraformResource(x interface{}) *bool {
+func CeCostCategory_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCeCostCategory_IsTerraformResourceParameters(x); err != nil {
@@ -777,7 +776,7 @@ func CeCostCategory_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,31 +801,31 @@ func (c *jsiiProxy_CeCostCategory) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CeCostCategory) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CeCostCategory) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CeCostCategory) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CeCostCategory) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (c *jsiiProxy_CeCostCategory) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (c *jsiiProxy_CeCostCategory) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (c *jsiiProxy_CeCostCategory) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (c *jsiiProxy_CeCostCategory) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (c *jsiiProxy_CeCostCategory) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (c *jsiiProxy_CeCostCategory) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (c *jsiiProxy_CeCostCategory) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,15 +953,15 @@ func (c *jsiiProxy_CeCostCategory) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategory) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostCategory) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -981,7 +980,7 @@ func (c *jsiiProxy_CeCostCategory) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -994,7 +993,7 @@ func (c *jsiiProxy_CeCostCategory) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,18 +1007,18 @@ func (c *jsiiProxy_CeCostCategory) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CeCostCategory) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CeCostCategory) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (c *jsiiProxy_CeCostCategory) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1041,29 +1040,29 @@ func (c *jsiiProxy_CeCostCategory) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CeCostCategory) PutRule(value interface{}) {
+func (c *jsiiProxy_CeCostCategory) PutRule(value any) {
 	if err := c.validatePutRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CeCostCategory) PutSplitChargeRule(value interface{}) {
+func (c *jsiiProxy_CeCostCategory) PutSplitChargeRule(value any) {
 	if err := c.validatePutSplitChargeRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSplitChargeRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,8 +1122,8 @@ func (c *jsiiProxy_CeCostCategory) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CeCostCategory) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CeCostCategory) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1136,8 +1135,8 @@ func (c *jsiiProxy_CeCostCategory) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategory) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CeCostCategory) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1149,8 +1148,8 @@ func (c *jsiiProxy_CeCostCategory) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategory) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostCategory) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1162,8 +1161,8 @@ func (c *jsiiProxy_CeCostCategory) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategory) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostCategory) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1188,8 +1187,8 @@ func (c *jsiiProxy_CeCostCategory) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategory) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CeCostCategory) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1200,4 +1199,3 @@ func (c *jsiiProxy_CeCostCategory) ToTerraform() interface{} {
 
 	return returns
 }
-

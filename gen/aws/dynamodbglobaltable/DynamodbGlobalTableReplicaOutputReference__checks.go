@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDynamodbGlobalTableReplicaOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

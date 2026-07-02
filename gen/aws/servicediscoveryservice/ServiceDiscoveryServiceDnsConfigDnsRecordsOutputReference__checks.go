@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewServiceDiscoveryServiceDnsConfigDnsRecordsOutputReferenceParamet
 
 	return nil
 }
-

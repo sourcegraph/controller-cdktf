@@ -36,7 +36,7 @@ type MediaPackageChannelHlsIngestList interface {
 	Get(index *float64) MediaPackageChannelHlsIngestOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMediaPackageChannelHlsIngestList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MediaPackageChannelHlsIngestList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewMediaPackageChannelHlsIngestList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewMediaPackageChannelHlsIngestList_Override(m MediaPackageChannelHlsIngest
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannelHlsIngestList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MediaPackageChannelHlsIngestList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannelHlsIngestList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MediaPackageChannelHlsIngestList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_MediaPackageChannelHlsIngestList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MediaPackageChannelHlsIngestList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestList) Get(index *float64) MediaPa
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestList) ToString() *string {
 
 	return returns
 }
-

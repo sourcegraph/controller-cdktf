@@ -98,7 +98,7 @@ func (d *jsiiProxy_DefaultRouteTableTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DefaultRouteTableTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultRouteTableTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DefaultRouteTableTimeoutsOutputReference) validateSetCreatePa
 	return nil
 }
 
-func (j *jsiiProxy_DefaultRouteTableTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DefaultRouteTableTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDefaultRouteTableTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

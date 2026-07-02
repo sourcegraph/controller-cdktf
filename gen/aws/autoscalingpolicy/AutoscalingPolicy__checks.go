@@ -19,7 +19,7 @@ func (a *jsiiProxy_AutoscalingPolicy) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AutoscalingPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AutoscalingPolicy) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AutoscalingPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (a *jsiiProxy_AutoscalingPolicy) validatePutPredictiveScalingConfigurationP
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicy) validatePutStepAdjustmentParameters(value interface{}) error {
+func (a *jsiiProxy_AutoscalingPolicy) validatePutStepAdjustmentParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateAutoscalingPolicy_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateAutoscalingPolicy_IsConstructParameters(x interface{}) error {
+func validateAutoscalingPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateAutoscalingPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAutoscalingPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateAutoscalingPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateAutoscalingPolicy_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateAutoscalingPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateAutoscalingPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_AutoscalingPolicy) validateSetAutoscalingGroupNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -354,7 +354,7 @@ func (j *jsiiProxy_AutoscalingPolicy) validateSetCooldownParameters(val *float64
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -411,7 +411,7 @@ func (j *jsiiProxy_AutoscalingPolicy) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicy) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -487,7 +487,7 @@ func (j *jsiiProxy_AutoscalingPolicy) validateSetPolicyTypeParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AutoscalingPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -559,4 +559,3 @@ func validateNewAutoscalingPolicyParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

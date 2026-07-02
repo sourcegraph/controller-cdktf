@@ -106,7 +106,7 @@ func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputRe
 	return nil
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIvschatLoggingConfigurationDestinationConfigurationS3OutputRefer
 
 	return nil
 }
-

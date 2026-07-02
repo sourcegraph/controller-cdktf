@@ -12,9 +12,9 @@ type DmsEndpointKinesisSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,29 +27,29 @@ type DmsEndpointKinesisSettingsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeControlDetails() interface{}
-	SetIncludeControlDetails(val interface{})
-	IncludeControlDetailsInput() interface{}
-	IncludeNullAndEmpty() interface{}
-	SetIncludeNullAndEmpty(val interface{})
-	IncludeNullAndEmptyInput() interface{}
-	IncludePartitionValue() interface{}
-	SetIncludePartitionValue(val interface{})
-	IncludePartitionValueInput() interface{}
-	IncludeTableAlterOperations() interface{}
-	SetIncludeTableAlterOperations(val interface{})
-	IncludeTableAlterOperationsInput() interface{}
-	IncludeTransactionDetails() interface{}
-	SetIncludeTransactionDetails(val interface{})
-	IncludeTransactionDetailsInput() interface{}
+	IncludeControlDetails() any
+	SetIncludeControlDetails(val any)
+	IncludeControlDetailsInput() any
+	IncludeNullAndEmpty() any
+	SetIncludeNullAndEmpty(val any)
+	IncludeNullAndEmptyInput() any
+	IncludePartitionValue() any
+	SetIncludePartitionValue(val any)
+	IncludePartitionValueInput() any
+	IncludeTableAlterOperations() any
+	SetIncludeTableAlterOperations(val any)
+	IncludeTableAlterOperationsInput() any
+	IncludeTransactionDetails() any
+	SetIncludeTransactionDetails(val any)
+	IncludeTransactionDetailsInput() any
 	InternalValue() *DmsEndpointKinesisSettings
 	SetInternalValue(val *DmsEndpointKinesisSettings)
 	MessageFormat() *string
 	SetMessageFormat(val *string)
 	MessageFormatInput() *string
-	PartitionIncludeSchemaTable() interface{}
-	SetPartitionIncludeSchemaTable(val interface{})
-	PartitionIncludeSchemaTableInput() interface{}
+	PartitionIncludeSchemaTable() any
+	SetPartitionIncludeSchemaTable(val any)
+	PartitionIncludeSchemaTableInput() any
 	ServiceAccessRoleArn() *string
 	SetServiceAccessRoleArn(val *string)
 	ServiceAccessRoleArnInput() *string
@@ -67,7 +67,7 @@ type DmsEndpointKinesisSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type DmsEndpointKinesisSettingsOutputReference interface {
 	ResetStreamArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_DmsEndpointKinesisSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeControlDetails() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeControlDetails() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeControlDetails",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeControlDeta
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeControlDetailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeControlDetailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeControlDetailsInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeControlDeta
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeNullAndEmpty() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeNullAndEmpty() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeNullAndEmpty",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeNullAndEmpt
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeNullAndEmptyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeNullAndEmptyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeNullAndEmptyInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeNullAndEmpt
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludePartitionValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludePartitionValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePartitionValue",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludePartitionVa
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludePartitionValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludePartitionValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includePartitionValueInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludePartitionVa
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTableAlterOperations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTableAlterOperations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTableAlterOperations",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTableAlterO
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTableAlterOperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTableAlterOperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTableAlterOperationsInput",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTableAlterO
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTransactionDetails() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTransactionDetails() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTransactionDetails",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTransaction
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTransactionDetailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) IncludeTransactionDetailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeTransactionDetailsInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) MessageFormatInput
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) PartitionIncludeSchemaTable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) PartitionIncludeSchemaTable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"partitionIncludeSchemaTable",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) PartitionIncludeSc
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) PartitionIncludeSchemaTableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) PartitionIncludeSchemaTableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"partitionIncludeSchemaTableInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewDmsEndpointKinesisSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointKinesisSettingsOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewDmsEndpointKinesisSettingsOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewDmsEndpointKinesisSettingsOutputReference_Override(d DmsEndpointKinesisS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeControlDetails(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetIncludeControlDetails(val any) {
 	if err := j.validateSetIncludeControlDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeControlDe
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeNullAndEmpty(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetIncludeNullAndEmpty(val any) {
 	if err := j.validateSetIncludeNullAndEmptyParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeNullAndEm
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludePartitionValue(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetIncludePartitionValue(val any) {
 	if err := j.validateSetIncludePartitionValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludePartition
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeTableAlterOperations(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetIncludeTableAlterOperations(val any) {
 	if err := j.validateSetIncludeTableAlterOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeTableAlte
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeTransactionDetails(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetIncludeTransactionDetails(val any) {
 	if err := j.validateSetIncludeTransactionDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetIncludeTransacti
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetInternalValue(val *DmsEndpointKinesisSettings) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetInternalValue(val *DmsEndpointKinesisSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetMessageFormat(val *string) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetMessageFormat(val *string) {
 	if err := j.validateSetMessageFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetMessageFormat(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetPartitionIncludeSchemaTable(val interface{}) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetPartitionIncludeSchemaTable(val any) {
 	if err := j.validateSetPartitionIncludeSchemaTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetPartitionInclude
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetServiceAccessRoleArn(val *string) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetServiceAccessRoleArn(val *string) {
 	if err := j.validateSetServiceAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetServiceAccessRol
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetStreamArn(val *string) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetStreamArn(val *string) {
 	if err := j.validateSetStreamArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetStreamArn(val *s
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ResetStreamArn() {
 	)
 }
 
-func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ToString() *string
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type Ec2TransitGatewayConnectTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type Ec2TransitGatewayConnectTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type Ec2TransitGatewayConnectTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type Ec2TransitGatewayConnectTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) UpdateInput(
 	return returns
 }
 
-
 func NewEc2TransitGatewayConnectTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayConnectTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewEc2TransitGatewayConnectTimeoutsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewEc2TransitGatewayConnectTimeoutsOutputReference_Override(e Ec2TransitGat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetCreate(val
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetDelete(val
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) ResetUpdate(
 	)
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectTimeoutsOutputReference) ToString() *
 
 	return returns
 }
-

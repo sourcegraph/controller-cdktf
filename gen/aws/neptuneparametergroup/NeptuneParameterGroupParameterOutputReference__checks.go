@@ -106,7 +106,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetApp
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewNeptuneParameterGroupParameterOutputReferenceParameters(terrafor
 
 	return nil
 }
-

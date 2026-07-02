@@ -18,11 +18,11 @@ type DataAwsServicecatalogConstraint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,21 +56,21 @@ type DataAwsServicecatalogConstraint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsServicecatalogConstraintTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,18 +99,18 @@ type DataAwsServicecatalogConstraint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsServicecatalogConstraint
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) Timeouts() DataAwsServicecat
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source.
 func NewDataAwsServicecatalogConstraint(scope constructs.Construct, id *string, config *DataAwsServicecatalogConstraintConfig) DataAwsServicecatalogConstraint {
 	_init_.Initialize()
@@ -410,7 +409,7 @@ func NewDataAwsServicecatalogConstraint(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewDataAwsServicecatalogConstraint_Override(d DataAwsServicecatalogConstrai
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetAcceptLanguage(val *string) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetAcceptLanguage(val *string) {
 	if err := j.validateSetAcceptLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetAcceptLanguage(val *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetDescription(val *string) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetId(val *string) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func DataAwsServicecatalogConstraint_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func DataAwsServicecatalogConstraint_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsServicecatalogConstraint_IsConstruct(x interface{}) *bool {
+func DataAwsServicecatalogConstraint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsServicecatalogConstraint_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func DataAwsServicecatalogConstraint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func DataAwsServicecatalogConstraint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsServicecatalogConstraint_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsServicecatalogConstraint_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsServicecatalogConstraint_IsTerraformDataSourceParameters(x); err != nil {
@@ -573,7 +572,7 @@ func DataAwsServicecatalogConstraint_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func DataAwsServicecatalogConstraint_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataAwsServicecatalogConstraint_IsTerraformElement(x interface{}) *bool {
+func DataAwsServicecatalogConstraint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsServicecatalogConstraint_IsTerraformElementParameters(x); err != nil {
@@ -592,7 +591,7 @@ func DataAwsServicecatalogConstraint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -610,27 +609,27 @@ func DataAwsServicecatalogConstraint_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -799,7 +798,7 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) PutTimeouts(value *DataAwsSe
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -835,8 +834,8 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -848,8 +847,8 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -861,8 +860,8 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -874,8 +873,8 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -900,8 +899,8 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -912,4 +911,3 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) ToTerraform() interface{} {
 
 	return returns
 }
-

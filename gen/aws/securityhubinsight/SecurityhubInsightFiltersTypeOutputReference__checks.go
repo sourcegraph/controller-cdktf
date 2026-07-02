@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersTypeOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersTypeOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersTypeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersTypeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecurityhubInsightFiltersTypeOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -28,15 +28,15 @@ type StoragegatewayGateway interface {
 	SetCloudwatchLogGroupArn(val *string)
 	CloudwatchLogGroupArnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -88,16 +88,16 @@ type StoragegatewayGateway interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SmbActiveDirectorySettings() StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference
 	SmbActiveDirectorySettingsInput() *StoragegatewayGatewaySmbActiveDirectorySettings
-	SmbFileShareVisibility() interface{}
-	SetSmbFileShareVisibility(val interface{})
-	SmbFileShareVisibilityInput() interface{}
+	SmbFileShareVisibility() any
+	SetSmbFileShareVisibility(val any)
+	SmbFileShareVisibilityInput() any
 	SmbGuestPassword() *string
 	SetSmbGuestPassword(val *string)
 	SmbGuestPasswordInput() *string
@@ -116,18 +116,18 @@ type StoragegatewayGateway interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StoragegatewayGatewayTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -145,7 +145,7 @@ type StoragegatewayGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -157,7 +157,7 @@ type StoragegatewayGateway interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -188,17 +188,17 @@ type StoragegatewayGateway interface {
 	ResetTagsAll()
 	ResetTapeDriveType()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StoragegatewayGateway
@@ -306,8 +306,8 @@ func (j *jsiiProxy_StoragegatewayGateway) CloudwatchLogGroupArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayGateway) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_StoragegatewayGateway) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewayGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_StoragegatewayGateway) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_StoragegatewayGateway) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StoragegatewayGateway) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -626,8 +626,8 @@ func (j *jsiiProxy_StoragegatewayGateway) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -656,8 +656,8 @@ func (j *jsiiProxy_StoragegatewayGateway) SmbActiveDirectorySettingsInput() *Sto
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) SmbFileShareVisibility() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayGateway) SmbFileShareVisibility() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"smbFileShareVisibility",
@@ -666,8 +666,8 @@ func (j *jsiiProxy_StoragegatewayGateway) SmbFileShareVisibility() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) SmbFileShareVisibilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayGateway) SmbFileShareVisibilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"smbFileShareVisibilityInput",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_StoragegatewayGateway) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StoragegatewayGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -816,8 +816,8 @@ func (j *jsiiProxy_StoragegatewayGateway) Timeouts() StoragegatewayGatewayTimeou
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StoragegatewayGateway) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -825,7 +825,6 @@ func (j *jsiiProxy_StoragegatewayGateway) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway} Resource.
 func NewStoragegatewayGateway(scope constructs.Construct, id *string, config *StoragegatewayGatewayConfig) StoragegatewayGateway {
@@ -838,7 +837,7 @@ func NewStoragegatewayGateway(scope constructs.Construct, id *string, config *St
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -851,12 +850,12 @@ func NewStoragegatewayGateway_Override(s StoragegatewayGateway, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetActivationKey(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetActivationKey(val *string) {
 	if err := j.validateSetActivationKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetActivationKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetAverageDownloadRateLimitInBitsPerSec(val *float64) {
+func (j *jsiiProxy_StoragegatewayGateway) SetAverageDownloadRateLimitInBitsPerSec(val *float64) {
 	if err := j.validateSetAverageDownloadRateLimitInBitsPerSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetAverageDownloadRateLimitInBitsPerSec
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetAverageUploadRateLimitInBitsPerSec(val *float64) {
+func (j *jsiiProxy_StoragegatewayGateway) SetAverageUploadRateLimitInBitsPerSec(val *float64) {
 	if err := j.validateSetAverageUploadRateLimitInBitsPerSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -889,7 +888,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetAverageUploadRateLimitInBitsPerSec(v
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetCloudwatchLogGroupArn(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetCloudwatchLogGroupArn(val *string) {
 	if err := j.validateSetCloudwatchLogGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -900,7 +899,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetCloudwatchLogGroupArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetConnection(val interface{}) {
+func (j *jsiiProxy_StoragegatewayGateway) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -911,7 +910,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_StoragegatewayGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -922,7 +921,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -930,7 +929,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StoragegatewayGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -938,7 +937,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetGatewayIpAddress(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetGatewayIpAddress(val *string) {
 	if err := j.validateSetGatewayIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -949,7 +948,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetGatewayIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetGatewayName(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetGatewayName(val *string) {
 	if err := j.validateSetGatewayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -960,7 +959,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetGatewayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetGatewayTimezone(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetGatewayTimezone(val *string) {
 	if err := j.validateSetGatewayTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -971,7 +970,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetGatewayTimezone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetGatewayType(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetGatewayType(val *string) {
 	if err := j.validateSetGatewayTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -982,7 +981,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetGatewayType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetGatewayVpcEndpoint(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetGatewayVpcEndpoint(val *string) {
 	if err := j.validateSetGatewayVpcEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -993,7 +992,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetGatewayVpcEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetId(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1004,7 +1003,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StoragegatewayGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1015,7 +1014,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetMediumChangerType(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetMediumChangerType(val *string) {
 	if err := j.validateSetMediumChangerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1026,7 +1025,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetMediumChangerType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StoragegatewayGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1034,7 +1033,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StoragegatewayGateway) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1045,7 +1044,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetSmbFileShareVisibility(val interface{}) {
+func (j *jsiiProxy_StoragegatewayGateway) SetSmbFileShareVisibility(val any) {
 	if err := j.validateSetSmbFileShareVisibilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1056,7 +1055,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetSmbFileShareVisibility(val interface
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetSmbGuestPassword(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetSmbGuestPassword(val *string) {
 	if err := j.validateSetSmbGuestPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1067,7 +1066,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetSmbGuestPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetSmbSecurityStrategy(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetSmbSecurityStrategy(val *string) {
 	if err := j.validateSetSmbSecurityStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1078,7 +1077,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetSmbSecurityStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1089,7 +1088,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1100,7 +1099,7 @@ func (j *jsiiProxy_StoragegatewayGateway)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewayGateway)SetTapeDriveType(val *string) {
+func (j *jsiiProxy_StoragegatewayGateway) SetTapeDriveType(val *string) {
 	if err := j.validateSetTapeDriveTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1123,7 +1122,7 @@ func StoragegatewayGateway_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1147,7 +1146,7 @@ func StoragegatewayGateway_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StoragegatewayGateway_IsConstruct(x interface{}) *bool {
+func StoragegatewayGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayGateway_IsConstructParameters(x); err != nil {
@@ -1158,7 +1157,7 @@ func StoragegatewayGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1166,7 +1165,7 @@ func StoragegatewayGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewayGateway_IsTerraformElement(x interface{}) *bool {
+func StoragegatewayGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayGateway_IsTerraformElementParameters(x); err != nil {
@@ -1177,7 +1176,7 @@ func StoragegatewayGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1185,7 +1184,7 @@ func StoragegatewayGateway_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StoragegatewayGateway_IsTerraformResource(x interface{}) *bool {
+func StoragegatewayGateway_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStoragegatewayGateway_IsTerraformResourceParameters(x); err != nil {
@@ -1196,7 +1195,7 @@ func StoragegatewayGateway_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1221,31 +1220,31 @@ func (s *jsiiProxy_StoragegatewayGateway) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StoragegatewayGateway) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StoragegatewayGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1261,7 +1260,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1293,7 +1292,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1309,7 +1308,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1325,7 +1324,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1341,7 +1340,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1357,7 +1356,7 @@ func (s *jsiiProxy_StoragegatewayGateway) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1373,15 +1372,15 @@ func (s *jsiiProxy_StoragegatewayGateway) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayGateway) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1400,7 +1399,7 @@ func (s *jsiiProxy_StoragegatewayGateway) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1413,7 +1412,7 @@ func (s *jsiiProxy_StoragegatewayGateway) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1427,18 +1426,18 @@ func (s *jsiiProxy_StoragegatewayGateway) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StoragegatewayGateway) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1449,7 +1448,7 @@ func (s *jsiiProxy_StoragegatewayGateway) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1460,7 +1459,7 @@ func (s *jsiiProxy_StoragegatewayGateway) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1471,7 +1470,7 @@ func (s *jsiiProxy_StoragegatewayGateway) PutMaintenanceStartTime(value *Storage
 	_jsii_.InvokeVoid(
 		s,
 		"putMaintenanceStartTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1482,7 +1481,7 @@ func (s *jsiiProxy_StoragegatewayGateway) PutSmbActiveDirectorySettings(value *S
 	_jsii_.InvokeVoid(
 		s,
 		"putSmbActiveDirectorySettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1493,7 +1492,7 @@ func (s *jsiiProxy_StoragegatewayGateway) PutTimeouts(value *StoragegatewayGatew
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1649,8 +1648,8 @@ func (s *jsiiProxy_StoragegatewayGateway) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewayGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1662,8 +1661,8 @@ func (s *jsiiProxy_StoragegatewayGateway) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StoragegatewayGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1675,8 +1674,8 @@ func (s *jsiiProxy_StoragegatewayGateway) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1688,8 +1687,8 @@ func (s *jsiiProxy_StoragegatewayGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1714,8 +1713,8 @@ func (s *jsiiProxy_StoragegatewayGateway) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StoragegatewayGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StoragegatewayGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1726,4 +1725,3 @@ func (s *jsiiProxy_StoragegatewayGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

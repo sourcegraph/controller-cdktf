@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
-		reflect.TypeOf((*FisExperimentTemplate)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateAction",
-		reflect.TypeOf((*FisExperimentTemplateAction)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionList",
-		reflect.TypeOf((*FisExperimentTemplateActionList)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionId", GoGetter: "ActionId"},
 			_jsii_.MemberProperty{JsiiProperty: "actionIdInput", GoGetter: "ActionIdInput"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameter",
-		reflect.TypeOf((*FisExperimentTemplateActionParameter)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
-		reflect.TypeOf((*FisExperimentTemplateActionParameterList)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateActionParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateActionParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateActionParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTarget",
-		reflect.TypeOf((*FisExperimentTemplateActionTarget)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateActionTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateActionTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateActionTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,15 +266,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateConfig",
-		reflect.TypeOf((*FisExperimentTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopCondition",
-		reflect.TypeOf((*FisExperimentTemplateStopCondition)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateStopCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
-		reflect.TypeOf((*FisExperimentTemplateStopConditionList)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateStopConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateStopConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -296,7 +296,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateStopConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateStopConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateStopConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -333,15 +333,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTarget",
-		reflect.TypeOf((*FisExperimentTemplateTarget)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTarget](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilter",
-		reflect.TypeOf((*FisExperimentTemplateTargetFilter)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
-		reflect.TypeOf((*FisExperimentTemplateTargetFilterList)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTargetFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -363,7 +363,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateTargetFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -391,7 +391,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTargetFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -399,7 +399,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetList",
-		reflect.TypeOf((*FisExperimentTemplateTargetList)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -413,7 +413,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -421,7 +421,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -462,7 +462,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -470,11 +470,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTag",
-		reflect.TypeOf((*FisExperimentTemplateTargetResourceTag)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetResourceTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
-		reflect.TypeOf((*FisExperimentTemplateTargetResourceTagList)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetResourceTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTargetResourceTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -496,7 +496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateTargetResourceTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTargetResourceTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -524,7 +524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -532,11 +532,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeouts",
-		reflect.TypeOf((*FisExperimentTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*FisExperimentTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FisExperimentTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -569,7 +569,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FisExperimentTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

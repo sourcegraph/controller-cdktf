@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateSetDo
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAppstreamStackStorageConnectorsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

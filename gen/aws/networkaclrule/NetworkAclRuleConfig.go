@@ -6,9 +6,9 @@ import (
 
 type NetworkAclRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetworkAclRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#network_acl_id NetworkAclRule#network_acl_id}.
 	NetworkAclId *string `field:"required" json:"networkAclId" yaml:"networkAclId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#protocol NetworkAclRule#protocol}.
@@ -30,7 +30,7 @@ type NetworkAclRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#cidr_block NetworkAclRule#cidr_block}.
 	CidrBlock *string `field:"optional" json:"cidrBlock" yaml:"cidrBlock"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#egress NetworkAclRule#egress}.
-	Egress interface{} `field:"optional" json:"egress" yaml:"egress"`
+	Egress any `field:"optional" json:"egress" yaml:"egress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#from_port NetworkAclRule#from_port}.
 	FromPort *float64 `field:"optional" json:"fromPort" yaml:"fromPort"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#icmp_code NetworkAclRule#icmp_code}.
@@ -47,4 +47,3 @@ type NetworkAclRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/network_acl_rule#to_port NetworkAclRule#to_port}.
 	ToPort *float64 `field:"optional" json:"toPort" yaml:"toPort"`
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetEndpointPrivateAccessParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetEndpointPrivateAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetEndpointPrivat
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetEndpointPublicAccessParameters(val interface{}) error {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) validateSetEndpointPublicAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewEksClusterVpcConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

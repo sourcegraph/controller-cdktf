@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
-		reflect.TypeOf((*ComprehendDocumentClassifier)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifier](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifier{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,19 +107,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierConfig",
-		reflect.TypeOf((*ComprehendDocumentClassifierConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig",
-		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierInputDataConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests",
-		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifests)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierInputDataConfigAugmentedManifests](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
-		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
-		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3Uri", GoGetter: "AnnotationDataS3Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3UriInput", GoGetter: "AnnotationDataS3UriInput"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
-		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierInputDataConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "augmentedManifests", GoGetter: "AugmentedManifests"},
 			_jsii_.MemberProperty{JsiiProperty: "augmentedManifestsInput", GoGetter: "AugmentedManifestsInput"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testS3UriInput", GoGetter: "TestS3UriInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,11 +237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig",
-		reflect.TypeOf((*ComprehendDocumentClassifierOutputDataConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierOutputDataConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
-		reflect.TypeOf((*ComprehendDocumentClassifierOutputDataConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierOutputDataConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifierOutputDataConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts",
-		reflect.TypeOf((*ComprehendDocumentClassifierTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
-		reflect.TypeOf((*ComprehendDocumentClassifierTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,11 +324,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig",
-		reflect.TypeOf((*ComprehendDocumentClassifierVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
-		reflect.TypeOf((*ComprehendDocumentClassifierVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComprehendDocumentClassifierVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComprehendDocumentClassifierVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

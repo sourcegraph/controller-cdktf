@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
-		reflect.TypeOf((*TranscribeLanguageModel)(nil)).Elem(),
+		reflect.TypeFor[TranscribeLanguageModel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeLanguageModel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig",
-		reflect.TypeOf((*TranscribeLanguageModelConfig)(nil)).Elem(),
+		reflect.TypeFor[TranscribeLanguageModelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig",
-		reflect.TypeOf((*TranscribeLanguageModelInputDataConfig)(nil)).Elem(),
+		reflect.TypeFor[TranscribeLanguageModelInputDataConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
-		reflect.TypeOf((*TranscribeLanguageModelInputDataConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscribeLanguageModelInputDataConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tuningDataS3Uri", GoGetter: "TuningDataS3Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "tuningDataS3UriInput", GoGetter: "TuningDataS3UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts",
-		reflect.TypeOf((*TranscribeLanguageModelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TranscribeLanguageModelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
-		reflect.TypeOf((*TranscribeLanguageModelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscribeLanguageModelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

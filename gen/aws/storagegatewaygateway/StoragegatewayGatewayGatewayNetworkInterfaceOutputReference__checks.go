@@ -98,7 +98,7 @@ func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStoragegatewayGatewayGatewayNetworkInterfaceOutputReferenceParam
 
 	return nil
 }
-

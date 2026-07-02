@@ -109,7 +109,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewEcsClusterConfigurationExecuteCommandConfigurationOutputReferenc
 
 	return nil
 }
-

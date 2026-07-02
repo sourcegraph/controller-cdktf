@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
-		reflect.TypeOf((*ConfigConformancePack)(nil)).Elem(),
+		reflect.TypeFor[ConfigConformancePack](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConformancePack{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig",
-		reflect.TypeOf((*ConfigConformancePackConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigConformancePackConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter",
-		reflect.TypeOf((*ConfigConformancePackInputParameter)(nil)).Elem(),
+		reflect.TypeFor[ConfigConformancePackInputParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterList",
-		reflect.TypeOf((*ConfigConformancePackInputParameterList)(nil)).Elem(),
+		reflect.TypeFor[ConfigConformancePackInputParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConformancePackInputParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
-		reflect.TypeOf((*ConfigConformancePackInputParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigConformancePackInputParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigConformancePackInputParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

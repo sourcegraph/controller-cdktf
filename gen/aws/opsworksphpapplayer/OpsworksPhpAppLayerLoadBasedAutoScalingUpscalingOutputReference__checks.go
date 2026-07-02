@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReferenceP
 
 	return nil
 }
-

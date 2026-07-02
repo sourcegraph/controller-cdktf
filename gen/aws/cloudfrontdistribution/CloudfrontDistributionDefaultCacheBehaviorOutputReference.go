@@ -21,17 +21,17 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	CachePolicyIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Compress() interface{}
-	SetCompress(val interface{})
-	CompressInput() interface{}
+	Compress() any
+	SetCompress(val any)
+	CompressInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -48,11 +48,11 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	FunctionAssociation() CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList
-	FunctionAssociationInput() interface{}
+	FunctionAssociationInput() any
 	InternalValue() *CloudfrontDistributionDefaultCacheBehavior
 	SetInternalValue(val *CloudfrontDistributionDefaultCacheBehavior)
 	LambdaFunctionAssociation() CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList
-	LambdaFunctionAssociationInput() interface{}
+	LambdaFunctionAssociationInput() any
 	MaxTtl() *float64
 	SetMaxTtl(val *float64)
 	MaxTtlInput() *float64
@@ -68,9 +68,9 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	ResponseHeadersPolicyId() *string
 	SetResponseHeadersPolicyId(val *string)
 	ResponseHeadersPolicyIdInput() *string
-	SmoothStreaming() interface{}
-	SetSmoothStreaming(val interface{})
-	SmoothStreamingInput() interface{}
+	SmoothStreaming() any
+	SetSmoothStreaming(val any)
+	SmoothStreamingInput() any
 	TargetOriginId() *string
 	SetTargetOriginId(val *string)
 	TargetOriginIdInput() *string
@@ -94,7 +94,7 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,8 +116,8 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutForwardedValues(value *CloudfrontDistributionDefaultCacheBehaviorForwardedValues)
-	PutFunctionAssociation(value interface{})
-	PutLambdaFunctionAssociation(value interface{})
+	PutFunctionAssociation(value any)
+	PutLambdaFunctionAssociation(value any)
 	ResetCachePolicyId()
 	ResetCompress()
 	ResetDefaultTtl()
@@ -135,7 +135,7 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	ResetTrustedSigners()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ca
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Co
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Compress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Compress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"compress",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Co
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) CompressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) CompressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"compressInput",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Fu
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) FunctionAssociationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) FunctionAssociationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"functionAssociationInput",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) La
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) LambdaFunctionAssociationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) LambdaFunctionAssociationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lambdaFunctionAssociationInput",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Re
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SmoothStreaming() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SmoothStreaming() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"smoothStreaming",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Sm
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SmoothStreamingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SmoothStreamingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"smoothStreamingInput",
@@ -598,7 +598,6 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Vi
 	return returns
 }
 
-
 func NewCloudfrontDistributionDefaultCacheBehaviorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionDefaultCacheBehaviorOutputReference {
 	_init_.Initialize()
 
@@ -609,7 +608,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -621,12 +620,12 @@ func NewCloudfrontDistributionDefaultCacheBehaviorOutputReference_Override(c Clo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetAllowedMethods(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetAllowedMethods(val *[]*string) {
 	if err := j.validateSetAllowedMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetCachedMethods(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetCachedMethods(val *[]*string) {
 	if err := j.validateSetCachedMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetCachePolicyId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetCachePolicyId(val *string) {
 	if err := j.validateSetCachePolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetCompress(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetCompress(val any) {
 	if err := j.validateSetCompressParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetDefaultTtl(val *float64) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetDefaultTtl(val *float64) {
 	if err := j.validateSetDefaultTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetFieldLevelEncryptionId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetFieldLevelEncryptionId(val *string) {
 	if err := j.validateSetFieldLevelEncryptionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetInternalValue(val *CloudfrontDistributionDefaultCacheBehavior) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetInternalValue(val *CloudfrontDistributionDefaultCacheBehavior) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetMaxTtl(val *float64) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetMaxTtl(val *float64) {
 	if err := j.validateSetMaxTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetMinTtl(val *float64) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetMinTtl(val *float64) {
 	if err := j.validateSetMinTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetOriginRequestPolicyId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetOriginRequestPolicyId(val *string) {
 	if err := j.validateSetOriginRequestPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetRealtimeLogConfigArn(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetRealtimeLogConfigArn(val *string) {
 	if err := j.validateSetRealtimeLogConfigArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetResponseHeadersPolicyId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetResponseHeadersPolicyId(val *string) {
 	if err := j.validateSetResponseHeadersPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetSmoothStreaming(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetSmoothStreaming(val any) {
 	if err := j.validateSetSmoothStreamingParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetTargetOriginId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetTargetOriginId(val *string) {
 	if err := j.validateSetTargetOriginIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetTrustedKeyGroups(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetTrustedKeyGroups(val *[]*string) {
 	if err := j.validateSetTrustedKeyGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetTrustedSigners(val *[]*string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetTrustedSigners(val *[]*string) {
 	if err := j.validateSetTrustedSignersParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference)SetViewerProtocolPolicy(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) SetViewerProtocolPolicy(val *string) {
 	if err := j.validateSetViewerProtocolPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,16 +869,16 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Co
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) In
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1050,29 +1049,29 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putForwardedValues",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) PutFunctionAssociation(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) PutFunctionAssociation(value any) {
 	if err := c.validatePutFunctionAssociationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFunctionAssociation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) PutLambdaFunctionAssociation(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) PutLambdaFunctionAssociation(value any) {
 	if err := c.validatePutLambdaFunctionAssociationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLambdaFunctionAssociation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1196,16 +1195,16 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Re
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1224,4 +1223,3 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) To
 
 	return returns
 }
-

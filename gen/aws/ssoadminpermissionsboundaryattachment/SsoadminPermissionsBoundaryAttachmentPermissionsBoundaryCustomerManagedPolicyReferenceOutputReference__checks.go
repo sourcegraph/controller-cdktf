@@ -98,7 +98,7 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCusto
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomer
 
 	return nil
 }
-

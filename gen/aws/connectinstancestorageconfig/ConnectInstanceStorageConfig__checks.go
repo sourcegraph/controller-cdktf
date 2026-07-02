@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfig) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfig) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateConnectInstanceStorageConfig_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateConnectInstanceStorageConfig_IsConstructParameters(x interface{}) error {
+func validateConnectInstanceStorageConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateConnectInstanceStorageConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateConnectInstanceStorageConfig_IsTerraformElementParameters(x interface{}) error {
+func validateConnectInstanceStorageConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateConnectInstanceStorageConfig_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateConnectInstanceStorageConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateConnectInstanceStorageConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateConnectInstanceStorageConfig_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewConnectInstanceStorageConfigParameters(scope constructs.Construc
 
 	return nil
 }
-

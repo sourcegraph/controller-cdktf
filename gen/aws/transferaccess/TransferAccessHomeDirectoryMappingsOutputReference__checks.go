@@ -98,7 +98,7 @@ func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewTransferAccessHomeDirectoryMappingsOutputReferenceParameters(ter
 
 	return nil
 }
-

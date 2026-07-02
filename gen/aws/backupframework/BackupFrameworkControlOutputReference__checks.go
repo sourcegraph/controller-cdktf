@@ -90,7 +90,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) validateInterpolationF
 	return nil
 }
 
-func (b *jsiiProxy_BackupFrameworkControlOutputReference) validatePutInputParameterParameters(value interface{}) error {
+func (b *jsiiProxy_BackupFrameworkControlOutputReference) validatePutInputParameterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (b *jsiiProxy_BackupFrameworkControlOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_BackupFrameworkControlOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_BackupFrameworkControlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupFrameworkControlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -272,4 +272,3 @@ func validateNewBackupFrameworkControlOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

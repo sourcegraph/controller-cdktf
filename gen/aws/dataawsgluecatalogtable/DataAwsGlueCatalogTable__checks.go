@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsGlueCatalogTable) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTable) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsGlueCatalogTable_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateDataAwsGlueCatalogTable_IsConstructParameters(x interface{}) error {
+func validateDataAwsGlueCatalogTable_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsGlueCatalogTable_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsGlueCatalogTable_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsGlueCatalogTable_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsGlueCatalogTable_IsTerraformDataSourceParameters(x interface
 	return nil
 }
 
-func validateDataAwsGlueCatalogTable_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsGlueCatalogTable_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetCatalogIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -282,4 +282,3 @@ func validateNewDataAwsGlueCatalogTableParameters(scope constructs.Construct, id
 
 	return nil
 }
-

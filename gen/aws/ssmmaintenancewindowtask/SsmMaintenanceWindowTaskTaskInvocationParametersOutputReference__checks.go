@@ -142,7 +142,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewSsmMaintenanceWindowTaskTaskInvocationParametersOutputReferenceP
 
 	return nil
 }
-

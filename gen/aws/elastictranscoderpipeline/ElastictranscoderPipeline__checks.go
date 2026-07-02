@@ -19,7 +19,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPipeline) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validatePutContentConfigParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) validatePutContentConfigPermissionsParameters(value interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPipeline) validatePutContentConfigPermissionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validatePutThumbnailConfigParamete
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipeline) validatePutThumbnailConfigPermissionsParameters(value interface{}) error {
+func (e *jsiiProxy_ElastictranscoderPipeline) validatePutThumbnailConfigPermissionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateElastictranscoderPipeline_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateElastictranscoderPipeline_IsConstructParameters(x interface{}) error {
+func validateElastictranscoderPipeline_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateElastictranscoderPipeline_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateElastictranscoderPipeline_IsTerraformElementParameters(x interface{}) error {
+func validateElastictranscoderPipeline_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateElastictranscoderPipeline_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateElastictranscoderPipeline_IsTerraformResourceParameters(x interface{}) error {
+func validateElastictranscoderPipeline_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -347,7 +347,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline) validateSetAwsKmsKeyArnParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPipeline) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPipeline) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -477,7 +477,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline) validateSetOutputBucketParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ElastictranscoderPipeline) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -549,4 +549,3 @@ func validateNewElastictranscoderPipelineParameters(scope constructs.Construct, 
 
 	return nil
 }
-

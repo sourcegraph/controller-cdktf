@@ -19,7 +19,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateAddMoveTargetPar
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateMoveFromIdParame
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateOpensearchInboundConnectionAccepter_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateOpensearchInboundConnectionAccepter_IsConstructParameters(x interface{}) error {
+func validateOpensearchInboundConnectionAccepter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateOpensearchInboundConnectionAccepter_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateOpensearchInboundConnectionAccepter_IsTerraformElementParameters(x interface{}) error {
+func validateOpensearchInboundConnectionAccepter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateOpensearchInboundConnectionAccepter_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateOpensearchInboundConnectionAccepter_IsTerraformResourceParameters(x interface{}) error {
+func validateOpensearchInboundConnectionAccepter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateOpensearchInboundConnectionAccepter_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetConnectionIdP
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewOpensearchInboundConnectionAccepterParameters(scope constructs.C
 
 	return nil
 }
-

@@ -20,11 +20,11 @@ type DataAwsEfsMountTarget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,19 +63,19 @@ type DataAwsEfsMountTarget interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SubnetId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,18 +104,18 @@ type DataAwsEfsMountTarget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEfsMountTarget
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEfsMountTarget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEfsMountTarget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEfsMountTarget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEfsMountTarget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -443,7 +443,6 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
 func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *DataAwsEfsMountTargetConfig) DataAwsEfsMountTarget {
 	_init_.Initialize()
@@ -455,7 +454,7 @@ func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -468,12 +467,12 @@ func NewDataAwsEfsMountTarget_Override(d DataAwsEfsMountTarget, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetAccessPointId(val *string) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetAccessPointId(val *string) {
 	if err := j.validateSetAccessPointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetAccessPointId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetFileSystemId(val *string) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetFileSystemId(val *string) {
 	if err := j.validateSetFileSystemIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetFileSystemId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetMountTargetId(val *string) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetMountTargetId(val *string) {
 	if err := j.validateSetMountTargetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetMountTargetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEfsMountTarget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +574,7 @@ func DataAwsEfsMountTarget_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func DataAwsEfsMountTarget_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEfsMountTarget_IsConstruct(x interface{}) *bool {
+func DataAwsEfsMountTarget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEfsMountTarget_IsConstructParameters(x); err != nil {
@@ -610,7 +609,7 @@ func DataAwsEfsMountTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func DataAwsEfsMountTarget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEfsMountTarget_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEfsMountTarget_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEfsMountTarget_IsTerraformDataSourceParameters(x); err != nil {
@@ -629,7 +628,7 @@ func DataAwsEfsMountTarget_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func DataAwsEfsMountTarget_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *bool {
+func DataAwsEfsMountTarget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEfsMountTarget_IsTerraformElementParameters(x); err != nil {
@@ -648,7 +647,7 @@ func DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,27 +665,27 @@ func DataAwsEfsMountTarget_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEfsMountTarget) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEfsMountTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -888,8 +887,8 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEfsMountTarget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -901,8 +900,8 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEfsMountTarget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -914,8 +913,8 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEfsMountTarget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -927,8 +926,8 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEfsMountTarget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -953,8 +952,8 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEfsMountTarget) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEfsMountTarget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -965,4 +964,3 @@ func (d *jsiiProxy_DataAwsEfsMountTarget) ToTerraform() interface{} {
 
 	return returns
 }
-

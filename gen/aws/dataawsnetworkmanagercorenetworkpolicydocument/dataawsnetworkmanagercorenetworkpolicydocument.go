@@ -13,17 +13,17 @@ import (
 type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	cdktf.TerraformDataSource
 	AttachmentPolicies() DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList
-	AttachmentPoliciesInput() interface{}
+	AttachmentPoliciesInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CoreNetworkConfiguration() DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList
-	CoreNetworkConfigurationInput() interface{}
+	CoreNetworkConfigurationInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,24 +51,24 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SegmentActions() DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsList
-	SegmentActionsInput() interface{}
+	SegmentActionsInput() any
 	Segments() DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList
-	SegmentsInput() interface{}
+	SegmentsInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,10 +90,10 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAttachmentPolicies(value interface{})
-	PutCoreNetworkConfiguration(value interface{})
-	PutSegmentActions(value interface{})
-	PutSegments(value interface{})
+	PutAttachmentPolicies(value any)
+	PutCoreNetworkConfiguration(value any)
+	PutSegmentActions(value any)
+	PutSegments(value any)
 	ResetAttachmentPolicies()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -101,18 +101,18 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	ResetOverrideLogicalId()
 	ResetSegmentActions()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsNetworkmanagerCoreNetworkPolicyDocument
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) AttachmentPol
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) AttachmentPoliciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) AttachmentPoliciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attachmentPoliciesInput",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) CoreNetworkCo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) CoreNetworkConfigurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) CoreNetworkConfigurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"coreNetworkConfigurationInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) CoreNetworkCo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SegmentAction
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SegmentActionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SegmentActionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"segmentActionsInput",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Segments() Da
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SegmentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SegmentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"segmentsInput",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,7 +390,6 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) VersionInput(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document} Data Source.
 func NewDataAwsNetworkmanagerCoreNetworkPolicyDocument(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig) DataAwsNetworkmanagerCoreNetworkPolicyDocument {
 	_init_.Initialize()
@@ -402,7 +401,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocument(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -415,12 +414,12 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocument_Override(d DataAwsNetwork
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetId(val *string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument)SetVersion(val *string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocument",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsConstruct(x interface{}) *bool {
+func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkmanagerCoreNetworkPolicyDocument_IsConstructParameters(x); err != nil {
@@ -535,7 +534,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocument",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformDataSourceParameters(x); err != nil {
@@ -554,7 +553,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformDataSource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocument",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformDataSource(x inte
 }
 
 // Experimental.
-func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformElement(x interface{}) *bool {
+func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocument",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,27 +590,27 @@ func DataAwsNetworkmanagerCoreNetworkPolicyDocument_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetBooleanAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetBooleanMap
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetListAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetNumberAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetNumberList
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetNumberMapA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetStringAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) GetStringMapA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Interpolation
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,51 +768,51 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) OverrideLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutAttachmentPolicies(value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutAttachmentPolicies(value any) {
 	if err := d.validatePutAttachmentPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAttachmentPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutCoreNetworkConfiguration(value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutCoreNetworkConfiguration(value any) {
 	if err := d.validatePutCoreNetworkConfigurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCoreNetworkConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutSegmentActions(value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutSegmentActions(value any) {
 	if err := d.validatePutSegmentActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSegmentActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutSegments(value interface{}) {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutSegments(value any) {
 	if err := d.validatePutSegmentsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSegments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -857,8 +856,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ResetVersion(
 	)
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -870,8 +869,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SynthesizeAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -883,8 +882,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) SynthesizeHcl
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -896,8 +895,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToHclTerrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -922,8 +921,8 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToString() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -934,4 +933,3 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ToTerraform()
 
 	return returns
 }
-

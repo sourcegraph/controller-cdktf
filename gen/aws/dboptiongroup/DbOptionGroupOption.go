@@ -1,6 +1,5 @@
 package dboptiongroup
 
-
 type DbOptionGroupOption struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#option_name DbOptionGroup#option_name}.
 	OptionName *string `field:"required" json:"optionName" yaml:"optionName"`
@@ -9,7 +8,7 @@ type DbOptionGroupOption struct {
 	// option_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#option_settings DbOptionGroup#option_settings}
-	OptionSettings interface{} `field:"optional" json:"optionSettings" yaml:"optionSettings"`
+	OptionSettings any `field:"optional" json:"optionSettings" yaml:"optionSettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#port DbOptionGroup#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#version DbOptionGroup#version}.
@@ -17,4 +16,3 @@ type DbOptionGroupOption struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_option_group#vpc_security_group_memberships DbOptionGroup#vpc_security_group_memberships}.
 	VpcSecurityGroupMemberships *[]*string `field:"optional" json:"vpcSecurityGroupMemberships" yaml:"vpcSecurityGroupMemberships"`
 }
-

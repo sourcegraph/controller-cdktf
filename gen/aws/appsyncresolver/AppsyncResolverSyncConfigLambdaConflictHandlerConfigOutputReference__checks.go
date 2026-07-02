@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputRefere
 
 	return nil
 }
-

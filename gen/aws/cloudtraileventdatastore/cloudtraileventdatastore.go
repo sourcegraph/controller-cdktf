@@ -13,20 +13,20 @@ import (
 type CloudtrailEventDataStore interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailEventDataStoreAdvancedEventSelectorList
-	AdvancedEventSelectorInput() interface{}
+	AdvancedEventSelectorInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,27 +46,27 @@ type CloudtrailEventDataStore interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MultiRegionEnabled() interface{}
-	SetMultiRegionEnabled(val interface{})
-	MultiRegionEnabledInput() interface{}
+	MultiRegionEnabled() any
+	SetMultiRegionEnabled(val any)
+	MultiRegionEnabledInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	OrganizationEnabled() interface{}
-	SetOrganizationEnabled(val interface{})
-	OrganizationEnabledInput() interface{}
+	OrganizationEnabled() any
+	SetOrganizationEnabled(val any)
+	OrganizationEnabledInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionPeriod() *float64
 	SetRetentionPeriod(val *float64)
 	RetentionPeriodInput() *float64
@@ -76,24 +76,24 @@ type CloudtrailEventDataStore interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
-	TerminationProtectionEnabled() interface{}
-	SetTerminationProtectionEnabled(val interface{})
-	TerminationProtectionEnabledInput() interface{}
+	TerminationProtectionEnabled() any
+	SetTerminationProtectionEnabled(val any)
+	TerminationProtectionEnabledInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudtrailEventDataStoreTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type CloudtrailEventDataStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type CloudtrailEventDataStore interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdvancedEventSelector(value interface{})
+	PutAdvancedEventSelector(value any)
 	PutTimeouts(value *CloudtrailEventDataStoreTimeouts)
 	ResetAdvancedEventSelector()
 	ResetId()
@@ -144,17 +144,17 @@ type CloudtrailEventDataStore interface {
 	ResetTagsAll()
 	ResetTerminationProtectionEnabled()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudtrailEventDataStore
@@ -172,8 +172,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) AdvancedEventSelector() CloudtrailE
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) AdvancedEventSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) AdvancedEventSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advancedEventSelectorInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) MultiRegionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) MultiRegionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiRegionEnabled",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) MultiRegionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) MultiRegionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) MultiRegionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiRegionEnabledInput",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) OrganizationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) OrganizationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"organizationEnabled",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) OrganizationEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) OrganizationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) OrganizationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"organizationEnabledInput",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TagsInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) TerminationProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) TerminationProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminationProtectionEnabled",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TerminationProtectionEnabled() inte
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) TerminationProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) TerminationProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"terminationProtectionEnabledInput",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Timeouts() CloudtrailEventDataStore
 	return returns
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) CloudtrailEventDataStore {
@@ -544,7 +543,7 @@ func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -557,12 +556,12 @@ func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -592,7 +591,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetId(val *string) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetMultiRegionEnabled(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetMultiRegionEnabled(val any) {
 	if err := j.validateSetMultiRegionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetMultiRegionEnabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetName(val *string) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetOrganizationEnabled(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetOrganizationEnabled(val any) {
 	if err := j.validateSetOrganizationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetOrganizationEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -663,7 +662,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetRetentionPeriod(val *float64) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetRetentionPeriod(val *float64) {
 	if err := j.validateSetRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetRetentionPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetTagsAll(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStore)SetTerminationProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_CloudtrailEventDataStore) SetTerminationProtectionEnabled(val any) {
 	if err := j.validateSetTerminationProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func CloudtrailEventDataStore_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func CloudtrailEventDataStore_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudtrailEventDataStore_IsConstruct(x interface{}) *bool {
+func CloudtrailEventDataStore_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudtrailEventDataStore_IsConstructParameters(x); err != nil {
@@ -765,7 +764,7 @@ func CloudtrailEventDataStore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func CloudtrailEventDataStore_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudtrailEventDataStore_IsTerraformElement(x interface{}) *bool {
+func CloudtrailEventDataStore_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudtrailEventDataStore_IsTerraformElementParameters(x); err != nil {
@@ -784,7 +783,7 @@ func CloudtrailEventDataStore_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func CloudtrailEventDataStore_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudtrailEventDataStore_IsTerraformResource(x interface{}) *bool {
+func CloudtrailEventDataStore_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudtrailEventDataStore_IsTerraformResourceParameters(x); err != nil {
@@ -803,7 +802,7 @@ func CloudtrailEventDataStore_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -828,31 +827,31 @@ func (c *jsiiProxy_CloudtrailEventDataStore) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudtrailEventDataStore) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudtrailEventDataStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,15 +979,15 @@ func (c *jsiiProxy_CloudtrailEventDataStore) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudtrailEventDataStore) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1007,7 +1006,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1020,7 +1019,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,18 +1033,18 @@ func (c *jsiiProxy_CloudtrailEventDataStore) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudtrailEventDataStore) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1056,7 +1055,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1067,18 +1066,18 @@ func (c *jsiiProxy_CloudtrailEventDataStore) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) PutAdvancedEventSelector(value interface{}) {
+func (c *jsiiProxy_CloudtrailEventDataStore) PutAdvancedEventSelector(value any) {
 	if err := c.validatePutAdvancedEventSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAdvancedEventSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (c *jsiiProxy_CloudtrailEventDataStore) PutTimeouts(value *CloudtrailEventD
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1173,8 +1172,8 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudtrailEventDataStore) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1186,8 +1185,8 @@ func (c *jsiiProxy_CloudtrailEventDataStore) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudtrailEventDataStore) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1199,8 +1198,8 @@ func (c *jsiiProxy_CloudtrailEventDataStore) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudtrailEventDataStore) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1212,8 +1211,8 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudtrailEventDataStore) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1238,8 +1237,8 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStore) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudtrailEventDataStore) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1250,4 +1249,3 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ToTerraform() interface{} {
 
 	return returns
 }
-

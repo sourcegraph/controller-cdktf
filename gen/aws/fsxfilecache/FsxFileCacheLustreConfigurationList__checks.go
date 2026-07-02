@@ -34,7 +34,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFsxFileCacheLustreConfigurationListParameters(terraformResource 
 
 	return nil
 }
-

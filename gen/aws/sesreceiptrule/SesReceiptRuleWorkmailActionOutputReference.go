@@ -12,9 +12,9 @@ type SesReceiptRuleWorkmailActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SesReceiptRuleWorkmailActionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OrganizationArn() *string
 	SetOrganizationArn(val *string)
 	OrganizationArnInput() *string
@@ -49,7 +49,7 @@ type SesReceiptRuleWorkmailActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type SesReceiptRuleWorkmailActionOutputReference interface {
 	ResetTopicArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_SesReceiptRuleWorkmailActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) TopicArnInput() 
 	return returns
 }
 
-
 func NewSesReceiptRuleWorkmailActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SesReceiptRuleWorkmailActionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewSesReceiptRuleWorkmailActionOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewSesReceiptRuleWorkmailActionOutputReference_Override(s SesReceiptRuleWor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetOrganizationArn(val *string) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetOrganizationArn(val *string) {
 	if err := j.validateSetOrganizationArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetOrganizationAr
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetPosition(val *float64) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetPosition(val *float64) {
 	if err := j.validateSetPositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetPosition(val *
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference)SetTopicArn(val *string) {
+func (j *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) SetTopicArn(val *string) {
 	if err := j.validateSetTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) ResetTopicArn() 
 	)
 }
 
-func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) ToString() *stri
 
 	return returns
 }
-

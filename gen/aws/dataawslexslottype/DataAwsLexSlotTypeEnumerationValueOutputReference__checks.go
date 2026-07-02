@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLexSlotTypeEnumerationValueOutputReferenceParameters(terr
 
 	return nil
 }
-

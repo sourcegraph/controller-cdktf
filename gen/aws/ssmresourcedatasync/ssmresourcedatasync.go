@@ -15,15 +15,15 @@ type SsmResourceDataSync interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,26 +53,26 @@ type SsmResourceDataSync interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3Destination() SsmResourceDataSyncS3DestinationOutputReference
 	S3DestinationInput() *SsmResourceDataSyncS3Destination
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type SsmResourceDataSync interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,7 +102,7 @@ type SsmResourceDataSync interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type SsmResourceDataSync interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SsmResourceDataSync
@@ -142,8 +142,8 @@ func (j *jsiiProxy_SsmResourceDataSync) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmResourceDataSync) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_SsmResourceDataSync) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmResourceDataSync) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SsmResourceDataSync) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmResourceDataSync) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_SsmResourceDataSync) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SsmResourceDataSync) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_SsmResourceDataSync) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmResourceDataSync) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_SsmResourceDataSync) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmResourceDataSync) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_SsmResourceDataSync) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource.
 func NewSsmResourceDataSync(scope constructs.Construct, id *string, config *SsmResourceDataSyncConfig) SsmResourceDataSync {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewSsmResourceDataSync(scope constructs.Construct, id *string, config *SsmR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewSsmResourceDataSync_Override(s SsmResourceDataSync, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetConnection(val interface{}) {
+func (j *jsiiProxy_SsmResourceDataSync) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetCount(val interface{}) {
+func (j *jsiiProxy_SsmResourceDataSync) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SsmResourceDataSync) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsmResourceDataSync) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetId(val *string) {
+func (j *jsiiProxy_SsmResourceDataSync) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsmResourceDataSync) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetName(val *string) {
+func (j *jsiiProxy_SsmResourceDataSync) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsmResourceDataSync) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_SsmResourceDataSync)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SsmResourceDataSync) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func SsmResourceDataSync_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func SsmResourceDataSync_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SsmResourceDataSync_IsConstruct(x interface{}) *bool {
+func SsmResourceDataSync_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmResourceDataSync_IsConstructParameters(x); err != nil {
@@ -519,7 +518,7 @@ func SsmResourceDataSync_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func SsmResourceDataSync_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmResourceDataSync_IsTerraformElement(x interface{}) *bool {
+func SsmResourceDataSync_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmResourceDataSync_IsTerraformElementParameters(x); err != nil {
@@ -538,7 +537,7 @@ func SsmResourceDataSync_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func SsmResourceDataSync_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmResourceDataSync_IsTerraformResource(x interface{}) *bool {
+func SsmResourceDataSync_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmResourceDataSync_IsTerraformResourceParameters(x); err != nil {
@@ -557,7 +556,7 @@ func SsmResourceDataSync_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,31 +581,31 @@ func (s *jsiiProxy_SsmResourceDataSync) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SsmResourceDataSync) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsmResourceDataSync) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (s *jsiiProxy_SsmResourceDataSync) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,15 +733,15 @@ func (s *jsiiProxy_SsmResourceDataSync) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmResourceDataSync) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -761,7 +760,7 @@ func (s *jsiiProxy_SsmResourceDataSync) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -774,7 +773,7 @@ func (s *jsiiProxy_SsmResourceDataSync) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,18 +787,18 @@ func (s *jsiiProxy_SsmResourceDataSync) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SsmResourceDataSync) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -810,7 +809,7 @@ func (s *jsiiProxy_SsmResourceDataSync) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -821,7 +820,7 @@ func (s *jsiiProxy_SsmResourceDataSync) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -832,7 +831,7 @@ func (s *jsiiProxy_SsmResourceDataSync) PutS3Destination(value *SsmResourceDataS
 	_jsii_.InvokeVoid(
 		s,
 		"putS3Destination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -852,8 +851,8 @@ func (s *jsiiProxy_SsmResourceDataSync) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmResourceDataSync) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -865,8 +864,8 @@ func (s *jsiiProxy_SsmResourceDataSync) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmResourceDataSync) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -878,8 +877,8 @@ func (s *jsiiProxy_SsmResourceDataSync) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmResourceDataSync) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -891,8 +890,8 @@ func (s *jsiiProxy_SsmResourceDataSync) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmResourceDataSync) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -917,8 +916,8 @@ func (s *jsiiProxy_SsmResourceDataSync) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SsmResourceDataSync) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmResourceDataSync) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -929,4 +928,3 @@ func (s *jsiiProxy_SsmResourceDataSync) ToTerraform() interface{} {
 
 	return returns
 }
-

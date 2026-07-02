@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
-		reflect.TypeOf((*OpsworksPermission)(nil)).Elem(),
+		reflect.TypeFor[OpsworksPermission](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userArn", GoGetter: "UserArn"},
 			_jsii_.MemberProperty{JsiiProperty: "userArnInput", GoGetter: "UserArnInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksPermission{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig",
-		reflect.TypeOf((*OpsworksPermissionConfig)(nil)).Elem(),
+		reflect.TypeFor[OpsworksPermissionConfig](),
 	)
 }

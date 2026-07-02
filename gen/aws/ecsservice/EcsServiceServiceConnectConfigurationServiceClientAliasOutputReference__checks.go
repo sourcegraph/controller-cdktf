@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutput
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutput
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcsServiceServiceConnectConfigurationServiceClientAliasOutputRef
 
 	return nil
 }
-

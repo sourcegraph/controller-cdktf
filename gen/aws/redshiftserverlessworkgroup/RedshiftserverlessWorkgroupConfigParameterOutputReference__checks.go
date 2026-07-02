@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRedshiftserverlessWorkgroupConfigParameterOutputReferenceParamet
 
 	return nil
 }
-

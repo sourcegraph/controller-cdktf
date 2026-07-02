@@ -14,9 +14,9 @@ type MedialiveChannelInputAttachmentsOutputReference interface {
 	AutomaticInputFailoverSettingsInput() *MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,8 +37,8 @@ type MedialiveChannelInputAttachmentsOutputReference interface {
 	InputIdInput() *string
 	InputSettings() MedialiveChannelInputAttachmentsInputSettingsOutputReference
 	InputSettingsInput() *MedialiveChannelInputAttachmentsInputSettings
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,7 +50,7 @@ type MedialiveChannelInputAttachmentsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type MedialiveChannelInputAttachmentsOutputReference interface {
 	ResetInputSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) AutomaticInp
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) InputSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewMedialiveChannelInputAttachmentsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MedialiveChannelInputAttachmentsOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewMedialiveChannelInputAttachmentsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewMedialiveChannelInputAttachmentsOutputReference_Override(m MedialiveChan
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetInputAttachmentName(val *string) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetInputAttachmentName(val *string) {
 	if err := j.validateSetInputAttachmentNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetInputAttac
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetInputId(val *string) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetInputId(val *string) {
 	if err := j.validateSetInputIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetInputId(va
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,16 +357,16 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) PutAutomatic
 	_jsii_.InvokeVoid(
 		m,
 		"putAutomaticInputFailoverSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -549,7 +548,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) PutInputSett
 	_jsii_.InvokeVoid(
 		m,
 		"putInputSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) ResetInputSe
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) ToString() *
 
 	return returns
 }
-

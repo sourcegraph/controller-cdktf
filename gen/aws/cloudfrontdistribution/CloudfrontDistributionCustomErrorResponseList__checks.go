@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionCustomErrorResponseList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfrontDistributionCustomErrorResponseListParameters(terrafor
 
 	return nil
 }
-

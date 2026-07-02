@@ -12,9 +12,9 @@ type QuicksightDataSourceParametersRdsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type QuicksightDataSourceParametersRdsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type QuicksightDataSourceParametersRdsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_QuicksightDataSourceParametersRdsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewQuicksightDataSourceParametersRdsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRdsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewQuicksightDataSourceParametersRdsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRdsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewQuicksightDataSourceParametersRdsOutputReference_Override(q QuicksightDa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRdsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		q,
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetDatabase(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetDatabase(
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetInstanceId(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetInstanceI
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetInternalValue(val *QuicksightDataSourceParametersRds) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetInternalValue(val *QuicksightDataSourceParametersRds) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		q,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		q,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		q,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		q,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		q,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		q,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		q,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		q,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		q,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) Interpolati
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := q.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRdsOutputReference) ToString() 
 
 	return returns
 }
-

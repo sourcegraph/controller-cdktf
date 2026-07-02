@@ -34,7 +34,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewS3BucketAclAccessControlPolicyGrantListParameters(terraformResou
 
 	return nil
 }
-

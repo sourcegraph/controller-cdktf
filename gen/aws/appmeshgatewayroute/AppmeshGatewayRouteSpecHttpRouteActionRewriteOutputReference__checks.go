@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReferencePara
 
 	return nil
 }
-

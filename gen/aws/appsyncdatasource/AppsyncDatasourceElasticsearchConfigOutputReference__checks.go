@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppsyncDatasourceElasticsearchConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceElasticsearchConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncDatasourceElasticsearchConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppsyncDatasourceElasticsearchConfigOutputReferenceParameters(te
 
 	return nil
 }
-

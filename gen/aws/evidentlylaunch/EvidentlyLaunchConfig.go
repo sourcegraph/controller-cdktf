@@ -6,9 +6,9 @@ import (
 
 type EvidentlyLaunchConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type EvidentlyLaunchConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// groups block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#groups EvidentlyLaunch#groups}
-	Groups interface{} `field:"required" json:"groups" yaml:"groups"`
+	Groups any `field:"required" json:"groups" yaml:"groups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#project EvidentlyLaunch#project}.
@@ -37,7 +37,7 @@ type EvidentlyLaunchConfig struct {
 	// metric_monitors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
-	MetricMonitors interface{} `field:"optional" json:"metricMonitors" yaml:"metricMonitors"`
+	MetricMonitors any `field:"optional" json:"metricMonitors" yaml:"metricMonitors"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}.
 	RandomizationSalt *string `field:"optional" json:"randomizationSalt" yaml:"randomizationSalt"`
 	// scheduled_splits_config block.
@@ -53,4 +53,3 @@ type EvidentlyLaunchConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_launch#timeouts EvidentlyLaunch#timeouts}
 	Timeouts *EvidentlyLaunchTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

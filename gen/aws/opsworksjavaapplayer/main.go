@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer",
-		reflect.TypeOf((*OpsworksJavaAppLayer)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useEbsOptimizedInstances", GoGetter: "UseEbsOptimizedInstances"},
 			_jsii_.MemberProperty{JsiiProperty: "useEbsOptimizedInstancesInput", GoGetter: "UseEbsOptimizedInstancesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -154,15 +154,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfiguration",
-		reflect.TypeOf((*OpsworksJavaAppLayerCloudwatchConfiguration)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerCloudwatchConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreams",
-		reflect.TypeOf((*OpsworksJavaAppLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerCloudwatchConfigurationLogStreams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList",
-		reflect.TypeOf((*OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference",
-		reflect.TypeOf((*OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
 			_jsii_.MemberProperty{JsiiProperty: "batchCountInput", GoGetter: "BatchCountInput"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerCloudwatchConfigurationLogStreamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerCloudwatchConfigurationOutputReference",
-		reflect.TypeOf((*OpsworksJavaAppLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerCloudwatchConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerCloudwatchConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -286,15 +286,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerConfig",
-		reflect.TypeOf((*OpsworksJavaAppLayerConfig)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolume",
-		reflect.TypeOf((*OpsworksJavaAppLayerEbsVolume)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerEbsVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList",
-		reflect.TypeOf((*OpsworksJavaAppLayerEbsVolumeList)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerEbsVolumeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerEbsVolumeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -316,7 +316,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeOutputReference",
-		reflect.TypeOf((*OpsworksJavaAppLayerEbsVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerEbsVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerEbsVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -366,15 +366,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScaling",
-		reflect.TypeOf((*OpsworksJavaAppLayerLoadBasedAutoScaling)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerLoadBasedAutoScaling](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling",
-		reflect.TypeOf((*OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference",
-		reflect.TypeOf((*OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmsInput", GoGetter: "AlarmsInput"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdsWaitTimeInput", GoGetter: "ThresholdsWaitTimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingDownscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -427,7 +427,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference",
-		reflect.TypeOf((*OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -462,7 +462,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upscaling", GoGetter: "Upscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "upscalingInput", GoGetter: "UpscalingInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -470,11 +470,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling",
-		reflect.TypeOf((*OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference",
-		reflect.TypeOf((*OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmsInput", GoGetter: "AlarmsInput"},
@@ -519,7 +519,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdsWaitTimeInput", GoGetter: "ThresholdsWaitTimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -15,9 +15,9 @@ type RedshiftSecurityGroupIngressOutputReference interface {
 	CidrInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type RedshiftSecurityGroupIngressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SecurityGroupName() *string
 	SetSecurityGroupName(val *string)
 	SecurityGroupNameInput() *string
@@ -49,7 +49,7 @@ type RedshiftSecurityGroupIngressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type RedshiftSecurityGroupIngressOutputReference interface {
 	ResetSecurityGroupOwnerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) CidrInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewRedshiftSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedshiftSecurityGroupIngressOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewRedshiftSecurityGroupIngressOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewRedshiftSecurityGroupIngressOutputReference_Override(r RedshiftSecurityG
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetCidr(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetCidr(val *stri
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetSecurityGroupName(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetSecurityGroupName(val *string) {
 	if err := j.validateSetSecurityGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetSecurityGroupN
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetSecurityGroupOwnerId(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetSecurityGroupOwnerId(val *string) {
 	if err := j.validateSetSecurityGroupOwnerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetSecurityGroupO
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) ResetSecurityGro
 	)
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressOutputReference) ToString() *stri
 
 	return returns
 }
-

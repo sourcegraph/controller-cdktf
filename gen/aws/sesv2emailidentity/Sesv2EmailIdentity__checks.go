@@ -19,7 +19,7 @@ func (s *jsiiProxy_Sesv2EmailIdentity) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentity) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Sesv2EmailIdentity) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Sesv2EmailIdentity) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentity) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Sesv2EmailIdentity) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSesv2EmailIdentity_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateSesv2EmailIdentity_IsConstructParameters(x interface{}) error {
+func validateSesv2EmailIdentity_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSesv2EmailIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSesv2EmailIdentity_IsTerraformElementParameters(x interface{}) error {
+func validateSesv2EmailIdentity_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSesv2EmailIdentity_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateSesv2EmailIdentity_IsTerraformResourceParameters(x interface{}) error {
+func validateSesv2EmailIdentity_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Sesv2EmailIdentity) validateSetConfigurationSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentity) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2EmailIdentity) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_Sesv2EmailIdentity) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentity) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Sesv2EmailIdentity) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_Sesv2EmailIdentity) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2EmailIdentity) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Sesv2EmailIdentity) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewSesv2EmailIdentityParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

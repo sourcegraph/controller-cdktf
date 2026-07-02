@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
-		reflect.TypeOf((*DocdbClusterInstance)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "writer", GoGetter: "Writer"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbClusterInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -122,15 +122,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig",
-		reflect.TypeOf((*DocdbClusterInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts",
-		reflect.TypeOf((*DocdbClusterInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*DocdbClusterInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DocdbClusterInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocdbClusterInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

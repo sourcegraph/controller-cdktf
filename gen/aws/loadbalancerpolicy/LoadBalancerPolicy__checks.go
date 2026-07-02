@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoadBalancerPolicy) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoadBalancerPolicy) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoadBalancerPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LoadBalancerPolicy) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPolicy) validatePutPolicyAttributeParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPolicy) validatePutPolicyAttributeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateLoadBalancerPolicy_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateLoadBalancerPolicy_IsConstructParameters(x interface{}) error {
+func validateLoadBalancerPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateLoadBalancerPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoadBalancerPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateLoadBalancerPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateLoadBalancerPolicy_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateLoadBalancerPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateLoadBalancerPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateLoadBalancerPolicy_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_LoadBalancerPolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_LoadBalancerPolicy) validateSetPolicyTypeNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoadBalancerPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewLoadBalancerPolicyParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

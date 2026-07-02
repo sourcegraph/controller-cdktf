@@ -109,7 +109,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -206,7 +206,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateSetNoDeviceParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateSetNoDeviceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,4 +269,3 @@ func validateNewImagebuilderImageRecipeBlockDeviceMappingOutputReferenceParamete
 
 	return nil
 }
-

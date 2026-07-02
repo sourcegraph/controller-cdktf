@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLbListenerDefaultActionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLbListenerDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLbListenerDefaultActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLbListenerDefaultActionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

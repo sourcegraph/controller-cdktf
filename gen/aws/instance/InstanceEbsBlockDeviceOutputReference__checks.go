@@ -98,7 +98,7 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetDeleteOnTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetDeviceNameP
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetEncryptedPa
 	return nil
 }
 
-func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -326,4 +326,3 @@ func validateNewInstanceEbsBlockDeviceOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

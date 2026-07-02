@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVpcIpamPoolCidrCidrAuthorizationContextOutputReferenceParameters
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewFsxLustreFileSystemLogConfigurationOutputReferenceParameters(ter
 
 	return nil
 }
-

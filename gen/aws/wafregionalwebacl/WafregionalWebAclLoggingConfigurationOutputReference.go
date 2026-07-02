@@ -12,9 +12,9 @@ type WafregionalWebAclLoggingConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type WafregionalWebAclLoggingConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type WafregionalWebAclLoggingConfigurationOutputReference interface {
 	ResetRedactedFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) Terrafo
 	return returns
 }
 
-
 func NewWafregionalWebAclLoggingConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WafregionalWebAclLoggingConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewWafregionalWebAclLoggingConfigurationOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewWafregionalWebAclLoggingConfigurationOutputReference_Override(w Wafregio
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetInternalValue(val *WafregionalWebAclLoggingConfiguration) {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) SetInternalValue(val *WafregionalWebAclLoggingConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetLogDestination(val *string) {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) SetLogDestination(val *string) {
 	if err := j.validateSetLogDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetLogDe
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) Compute
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetBool
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetBool
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetList
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetNumb
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetNumb
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetNumb
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetStri
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) GetStri
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) Interpo
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) PutReda
 	_jsii_.InvokeVoid(
 		w,
 		"putRedactedFields",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) ResetRe
 	)
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference) ToStrin
 
 	return returns
 }
-

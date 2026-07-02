@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsMqBrokerEncryptionOptionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMqBrokerEncryptionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsMqBrokerEncryptionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsMqBrokerEncryptionOptionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

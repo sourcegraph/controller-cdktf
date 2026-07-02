@@ -120,7 +120,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetDedicatedMasterEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetDedicatedMasterEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetW
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetWarmEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetWarmEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetW
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetZoneAwarenessEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateSetZoneAwarenessEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,4 +328,3 @@ func validateNewElasticsearchDomainClusterConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

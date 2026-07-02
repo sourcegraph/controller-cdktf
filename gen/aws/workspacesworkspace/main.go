@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
-		reflect.TypeOf((*WorkspacesWorkspace)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesWorkspace](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceProperties", GoGetter: "WorkspaceProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "workspacePropertiesInput", GoGetter: "WorkspacePropertiesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesWorkspace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceConfig",
-		reflect.TypeOf((*WorkspacesWorkspaceConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesWorkspaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeouts",
-		reflect.TypeOf((*WorkspacesWorkspaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesWorkspaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
-		reflect.TypeOf((*WorkspacesWorkspaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesWorkspaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesWorkspaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspaceProperties",
-		reflect.TypeOf((*WorkspacesWorkspaceWorkspaceProperties)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesWorkspaceWorkspaceProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
-		reflect.TypeOf((*WorkspacesWorkspaceWorkspacePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspacesWorkspaceWorkspacePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userVolumeSizeGib", GoGetter: "UserVolumeSizeGib"},
 			_jsii_.MemberProperty{JsiiProperty: "userVolumeSizeGibInput", GoGetter: "UserVolumeSizeGibInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

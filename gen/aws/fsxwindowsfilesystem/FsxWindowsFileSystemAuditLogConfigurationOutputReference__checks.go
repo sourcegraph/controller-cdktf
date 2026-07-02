@@ -106,7 +106,7 @@ func (j *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewFsxWindowsFileSystemAuditLogConfigurationOutputReferenceParamete
 
 	return nil
 }
-

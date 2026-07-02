@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEc2TrafficMirrorFilterRuleDestinationPortRangeOutputReferencePar
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type WafByteMatchSetByteMatchTuplesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type WafByteMatchSetByteMatchTuplesList interface {
 	Get(index *float64) WafByteMatchSetByteMatchTuplesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewWafByteMatchSetByteMatchTuplesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafByteMatchSetByteMatchTuplesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewWafByteMatchSetByteMatchTuplesList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewWafByteMatchSetByteMatchTuplesList_Override(w WafByteMatchSetByteMatchTu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WafByteMatchSetByteMatchTuplesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) Get(index *float64) WafBy
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) ToString() *string {
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_DynamodbTableTtlOutputReference) validateSetAttributeNamePara
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableTtlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DynamodbTableTtlOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableTtlOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableTtlOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewDynamodbTableTtlOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

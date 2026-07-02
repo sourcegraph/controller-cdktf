@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
-		reflect.TypeOf((*Ec2ClientVpnEndpoint)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnPort", GoGetter: "VpnPort"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnPortInput", GoGetter: "VpnPortInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ClientVpnEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -118,11 +118,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptions",
-		reflect.TypeOf((*Ec2ClientVpnEndpointAuthenticationOptions)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointAuthenticationOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList",
-		reflect.TypeOf((*Ec2ClientVpnEndpointAuthenticationOptionsList)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointAuthenticationOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -144,7 +144,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
-		reflect.TypeOf((*Ec2ClientVpnEndpointAuthenticationOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointAuthenticationOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryId", GoGetter: "ActiveDirectoryId"},
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryIdInput", GoGetter: "ActiveDirectoryIdInput"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptions",
-		reflect.TypeOf((*Ec2ClientVpnEndpointClientConnectOptions)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointClientConnectOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptionsOutputReference",
-		reflect.TypeOf((*Ec2ClientVpnEndpointClientConnectOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointClientConnectOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ClientVpnEndpointClientConnectOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptions",
-		reflect.TypeOf((*Ec2ClientVpnEndpointClientLoginBannerOptions)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointClientLoginBannerOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference",
-		reflect.TypeOf((*Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bannerText", GoGetter: "BannerText"},
 			_jsii_.MemberProperty{JsiiProperty: "bannerTextInput", GoGetter: "BannerTextInput"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,15 +274,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConfig",
-		reflect.TypeOf((*Ec2ClientVpnEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptions",
-		reflect.TypeOf((*Ec2ClientVpnEndpointConnectionLogOptions)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointConnectionLogOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptionsOutputReference",
-		reflect.TypeOf((*Ec2ClientVpnEndpointConnectionLogOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Ec2ClientVpnEndpointConnectionLogOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroup", GoGetter: "CloudwatchLogGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupInput", GoGetter: "CloudwatchLogGroupInput"},
@@ -314,7 +314,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

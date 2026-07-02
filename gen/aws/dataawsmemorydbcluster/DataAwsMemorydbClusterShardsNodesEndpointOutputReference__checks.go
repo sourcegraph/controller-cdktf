@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsMemorydbClusterShardsNodesEndpointOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMemorydbClusterShardsNodesEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsMemorydbClusterShardsNodesEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsMemorydbClusterShardsNodesEndpointOutputReferenceParamete
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
-		reflect.TypeOf((*CeCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig",
-		reflect.TypeOf((*CeCostCategoryConfig)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule",
-		reflect.TypeOf((*CeCostCategoryRule)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue",
-		reflect.TypeOf((*CeCostCategoryRuleInheritedValue)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleInheritedValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleInheritedValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleInheritedValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleInheritedValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleList",
-		reflect.TypeOf((*CeCostCategoryRuleList)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -161,7 +161,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,19 +207,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRule",
-		reflect.TypeOf((*CeCostCategoryRuleRule)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAnd)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAnd](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleAndCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndDimension)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,7 +305,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndList)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -327,7 +327,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -371,11 +371,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndTags)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleAndTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleAndTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -408,7 +408,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleAndTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -416,11 +416,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory",
-		reflect.TypeOf((*CeCostCategoryRuleRuleCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,11 +461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension",
-		reflect.TypeOf((*CeCostCategoryRuleRuleDimension)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -506,15 +506,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNot)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNot](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -547,7 +547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleNotCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -555,11 +555,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotDimension)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -592,7 +592,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleNotDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -600,7 +600,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -636,7 +636,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleNotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -644,11 +644,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotTags)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleNotTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleNotTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -681,7 +681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleNotTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -689,15 +689,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOr)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOr](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -730,7 +730,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleOrCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -738,11 +738,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrDimension)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -775,7 +775,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleOrDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -783,7 +783,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrList)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -797,7 +797,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleOrList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -805,7 +805,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -841,7 +841,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleOrOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -849,11 +849,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrTags)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOrTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOrTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -886,7 +886,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleOrTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -894,7 +894,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -942,7 +942,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -950,11 +950,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags",
-		reflect.TypeOf((*CeCostCategoryRuleRuleTags)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference",
-		reflect.TypeOf((*CeCostCategoryRuleRuleTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategoryRuleRuleTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -987,7 +987,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategoryRuleRuleTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -995,11 +995,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule",
-		reflect.TypeOf((*CeCostCategorySplitChargeRule)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategorySplitChargeRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList",
-		reflect.TypeOf((*CeCostCategorySplitChargeRuleList)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategorySplitChargeRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1013,7 +1013,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategorySplitChargeRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1021,7 +1021,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference",
-		reflect.TypeOf((*CeCostCategorySplitChargeRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategorySplitChargeRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1055,7 +1055,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategorySplitChargeRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1063,11 +1063,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter",
-		reflect.TypeOf((*CeCostCategorySplitChargeRuleParameter)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategorySplitChargeRuleParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
-		reflect.TypeOf((*CeCostCategorySplitChargeRuleParameterList)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategorySplitChargeRuleParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1081,7 +1081,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategorySplitChargeRuleParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1089,7 +1089,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
-		reflect.TypeOf((*CeCostCategorySplitChargeRuleParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeCostCategorySplitChargeRuleParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1119,7 +1119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

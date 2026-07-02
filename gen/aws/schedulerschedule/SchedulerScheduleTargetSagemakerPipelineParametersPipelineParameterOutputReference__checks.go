@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelinePar
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelinePar
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParame
 
 	return nil
 }
-

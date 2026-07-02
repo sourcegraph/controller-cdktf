@@ -98,7 +98,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfi
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigur
 
 	return nil
 }
-

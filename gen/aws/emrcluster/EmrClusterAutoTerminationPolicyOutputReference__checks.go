@@ -98,7 +98,7 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEmrClusterAutoTerminationPolicyOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package opsworksjavaapplayer
 
-
 type OpsworksJavaAppLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_java_app_layer#mount_point OpsworksJavaAppLayer#mount_point}.
 	MountPoint *string `field:"required" json:"mountPoint" yaml:"mountPoint"`
@@ -9,7 +8,7 @@ type OpsworksJavaAppLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_java_app_layer#size OpsworksJavaAppLayer#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_java_app_layer#encrypted OpsworksJavaAppLayer#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_java_app_layer#iops OpsworksJavaAppLayer#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_java_app_layer#raid_level OpsworksJavaAppLayer#raid_level}.
@@ -17,4 +16,3 @@ type OpsworksJavaAppLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_java_app_layer#type OpsworksJavaAppLayer#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

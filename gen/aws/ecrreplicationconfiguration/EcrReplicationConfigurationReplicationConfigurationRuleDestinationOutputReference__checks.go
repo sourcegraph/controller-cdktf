@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestin
 	return nil
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestin
 	return nil
 }
 
-func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcrReplicationConfigurationReplicationConfigurationRuleDestinati
 
 	return nil
 }
-

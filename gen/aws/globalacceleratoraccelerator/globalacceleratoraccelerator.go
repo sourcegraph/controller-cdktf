@@ -17,23 +17,23 @@ type GlobalacceleratorAccelerator interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsName() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,11 +67,11 @@ type GlobalacceleratorAccelerator interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -81,18 +81,18 @@ type GlobalacceleratorAccelerator interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GlobalacceleratorAcceleratorTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type GlobalacceleratorAccelerator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type GlobalacceleratorAccelerator interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type GlobalacceleratorAccelerator interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GlobalacceleratorAccelerator
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) DnsName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) Timeouts() GlobalacceleratorAcc
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlobalacceleratorAccelerator) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -529,7 +529,6 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Resource.
 func NewGlobalacceleratorAccelerator(scope constructs.Construct, id *string, config *GlobalacceleratorAcceleratorConfig) GlobalacceleratorAccelerator {
@@ -542,7 +541,7 @@ func NewGlobalacceleratorAccelerator(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewGlobalacceleratorAccelerator_Override(g GlobalacceleratorAccelerator, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetConnection(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetCount(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetId(val *string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetIpAddresses(val *[]*string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetIpAddresses(val *[]*string) {
 	if err := j.validateSetIpAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetIpAddresses(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetIpAddressType(val *string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetIpAddressType(val *string) {
 	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetIpAddressType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetName(val *string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetTags(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorAccelerator)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GlobalacceleratorAccelerator) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func GlobalacceleratorAccelerator_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func GlobalacceleratorAccelerator_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool {
+func GlobalacceleratorAccelerator_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlobalacceleratorAccelerator_IsConstructParameters(x); err != nil {
@@ -752,7 +751,7 @@ func GlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func GlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool {
+func GlobalacceleratorAccelerator_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlobalacceleratorAccelerator_IsTerraformElementParameters(x); err != nil {
@@ -771,7 +770,7 @@ func GlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func GlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GlobalacceleratorAccelerator_IsTerraformResource(x interface{}) *bool {
+func GlobalacceleratorAccelerator_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGlobalacceleratorAccelerator_IsTerraformResourceParameters(x); err != nil {
@@ -790,7 +789,7 @@ func GlobalacceleratorAccelerator_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,31 +814,31 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GlobalacceleratorAccelerator) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GlobalacceleratorAccelerator) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,15 +966,15 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorAccelerator) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,18 +1020,18 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GlobalacceleratorAccelerator) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) PutAttributes(value *Globalacce
 	_jsii_.InvokeVoid(
 		g,
 		"putAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) PutTimeouts(value *Globalaccele
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,8 +1151,8 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlobalacceleratorAccelerator) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1165,8 +1164,8 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GlobalacceleratorAccelerator) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1178,8 +1177,8 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorAccelerator) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1191,8 +1190,8 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorAccelerator) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1217,8 +1216,8 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorAccelerator) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GlobalacceleratorAccelerator) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1229,4 +1228,3 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) ToTerraform() interface{} {
 
 	return returns
 }
-

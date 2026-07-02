@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsVpcDhcpOptionsTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

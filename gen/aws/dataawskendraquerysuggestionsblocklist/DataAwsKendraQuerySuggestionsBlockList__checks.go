@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsKendraQuerySuggestionsBlockList_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataAwsKendraQuerySuggestionsBlockList_IsConstructParameters(x interface{}) error {
+func validateDataAwsKendraQuerySuggestionsBlockList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsKendraQuerySuggestionsBlockList_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformElementParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataAwsKendraQuerySuggestionsBlockListParameters(scope construct
 
 	return nil
 }
-

@@ -16,9 +16,9 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference in
 	AwsOrgInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrg
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference in
 	CreationStack() *[]*string
 	DataExport() S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference
 	DataExportInput() *S3ControlStorageLensConfigurationStorageLensConfigurationDataExport
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Exclude() S3ControlStorageLensConfigurationStorageLensConfigurationExcludeOutputReference
 	ExcludeInput() *S3ControlStorageLensConfigurationStorageLensConfigurationExclude
 	// Experimental.
@@ -53,7 +53,7 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference in
 	ResetInclude()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	return returns
 }
 
-
 func NewS3ControlStorageLensConfigurationStorageLensConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference)SetInternalValue(val *S3ControlStorageLensConfigurationStorageLensConfiguration) {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) SetInternalValue(val *S3ControlStorageLensConfigurationStorageLensConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,16 +394,16 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.InvokeVoid(
 		s,
 		"putAccountLevel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.InvokeVoid(
 		s,
 		"putAwsOrg",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -597,7 +596,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.InvokeVoid(
 		s,
 		"putDataExport",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -608,7 +607,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.InvokeVoid(
 		s,
 		"putExclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -619,7 +618,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.InvokeVoid(
 		s,
 		"putInclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,16 +654,16 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 
 	return returns
 }
-

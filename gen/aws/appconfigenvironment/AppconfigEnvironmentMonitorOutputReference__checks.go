@@ -114,7 +114,7 @@ func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetAlarmR
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppconfigEnvironmentMonitorOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

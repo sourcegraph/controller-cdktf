@@ -6,9 +6,9 @@ import (
 
 type CodebuildProjectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CodebuildProjectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// artifacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#artifacts CodebuildProject#artifacts}
@@ -36,7 +36,7 @@ type CodebuildProjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#source CodebuildProject#source}
 	Source *CodebuildProjectSource `field:"required" json:"source" yaml:"source"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#badge_enabled CodebuildProject#badge_enabled}.
-	BadgeEnabled interface{} `field:"optional" json:"badgeEnabled" yaml:"badgeEnabled"`
+	BadgeEnabled any `field:"optional" json:"badgeEnabled" yaml:"badgeEnabled"`
 	// build_batch_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#build_batch_config CodebuildProject#build_batch_config}
@@ -56,7 +56,7 @@ type CodebuildProjectConfig struct {
 	// file_system_locations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#file_system_locations CodebuildProject#file_system_locations}
-	FileSystemLocations interface{} `field:"optional" json:"fileSystemLocations" yaml:"fileSystemLocations"`
+	FileSystemLocations any `field:"optional" json:"fileSystemLocations" yaml:"fileSystemLocations"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#id CodebuildProject#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -75,15 +75,15 @@ type CodebuildProjectConfig struct {
 	// secondary_artifacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#secondary_artifacts CodebuildProject#secondary_artifacts}
-	SecondaryArtifacts interface{} `field:"optional" json:"secondaryArtifacts" yaml:"secondaryArtifacts"`
+	SecondaryArtifacts any `field:"optional" json:"secondaryArtifacts" yaml:"secondaryArtifacts"`
 	// secondary_sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#secondary_sources CodebuildProject#secondary_sources}
-	SecondarySources interface{} `field:"optional" json:"secondarySources" yaml:"secondarySources"`
+	SecondarySources any `field:"optional" json:"secondarySources" yaml:"secondarySources"`
 	// secondary_source_version block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#secondary_source_version CodebuildProject#secondary_source_version}
-	SecondarySourceVersion interface{} `field:"optional" json:"secondarySourceVersion" yaml:"secondarySourceVersion"`
+	SecondarySourceVersion any `field:"optional" json:"secondarySourceVersion" yaml:"secondarySourceVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#source_version CodebuildProject#source_version}.
 	SourceVersion *string `field:"optional" json:"sourceVersion" yaml:"sourceVersion"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#tags CodebuildProject#tags}.
@@ -95,4 +95,3 @@ type CodebuildProjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codebuild_project#vpc_config CodebuildProject#vpc_config}
 	VpcConfig *CodebuildProjectVpcConfig `field:"optional" json:"vpcConfig" yaml:"vpcConfig"`
 }
-

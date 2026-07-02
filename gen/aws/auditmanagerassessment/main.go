@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
-		reflect.TypeOf((*AuditmanagerAssessment)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,11 +87,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestination",
-		reflect.TypeOf((*AuditmanagerAssessmentAssessmentReportsDestination)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentAssessmentReportsDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
-		reflect.TypeOf((*AuditmanagerAssessmentAssessmentReportsDestinationList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentAssessmentReportsDestinationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
-		reflect.TypeOf((*AuditmanagerAssessmentAssessmentReportsDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentAssessmentReportsDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,19 +149,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentConfig",
-		reflect.TypeOf((*AuditmanagerAssessmentConfig)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRoles",
-		reflect.TypeOf((*AuditmanagerAssessmentRoles)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentRoles](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAll",
-		reflect.TypeOf((*AuditmanagerAssessmentRolesAll)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentRolesAll](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
-		reflect.TypeOf((*AuditmanagerAssessmentRolesAllList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentRolesAllList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentRolesAllList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -182,7 +182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllOutputReference",
-		reflect.TypeOf((*AuditmanagerAssessmentRolesAllOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentRolesAllOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentRolesAllOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,7 +216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesList",
-		reflect.TypeOf((*AuditmanagerAssessmentRolesList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentRolesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentRolesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -238,7 +238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesOutputReference",
-		reflect.TypeOf((*AuditmanagerAssessmentRolesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentRolesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentRolesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,15 +274,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScope",
-		reflect.TypeOf((*AuditmanagerAssessmentScope)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScope](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccounts",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsAccounts)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeAwsAccounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsAccountsList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeAwsAccountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsAccountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeAwsAccountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,11 +338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServices",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsServices)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeAwsServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesList",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsServicesList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeAwsServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentScopeAwsServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -364,7 +364,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesOutputReference",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeAwsServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -390,7 +390,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentScopeAwsServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -398,7 +398,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeList",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeList)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentScopeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -420,7 +420,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeOutputReference",
-		reflect.TypeOf((*AuditmanagerAssessmentScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AuditmanagerAssessmentScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccounts", GoGetter: "AwsAccounts"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountsInput", GoGetter: "AwsAccountsInput"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuditmanagerAssessmentScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

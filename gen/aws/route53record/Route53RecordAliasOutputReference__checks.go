@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetEvaluateTargetHealthParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetEvaluateTargetHealthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewRoute53RecordAliasOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

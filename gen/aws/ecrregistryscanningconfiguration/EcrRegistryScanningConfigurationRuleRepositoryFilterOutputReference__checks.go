@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcrRegistryScanningConfigurationRuleRepositoryFilterOutputRefere
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type EcsCapacityProviderAutoScalingGroupProviderOutputReference interface {
 	AutoScalingGroupArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type EcsCapacityProviderAutoScalingGroupProviderOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type EcsCapacityProviderAutoScalingGroupProviderOutputReference interface {
 	ResetManagedTerminationProtection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) T
 	return returns
 }
 
-
 func NewEcsCapacityProviderAutoScalingGroupProviderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderAutoScalingGroupProviderOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewEcsCapacityProviderAutoScalingGroupProviderOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewEcsCapacityProviderAutoScalingGroupProviderOutputReference_Override(e Ec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetAutoScalingGroupArn(val *string) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetAutoScalingGroupArn(val *string) {
 	if err := j.validateSetAutoScalingGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetInternalValue(val *EcsCapacityProviderAutoScalingGroupProvider) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetInternalValue(val *EcsCapacityProviderAutoScalingGroupProvider) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetManagedTerminationProtection(val *string) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetManagedTerminationProtection(val *string) {
 	if err := j.validateSetManagedTerminationProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) C
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) G
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) I
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) P
 	_jsii_.InvokeVoid(
 		e,
 		"putManagedScaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) R
 	)
 }
 
-func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) T
 
 	return returns
 }
-

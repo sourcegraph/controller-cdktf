@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGlueTriggerActionsNotificationPropertyOutputReferenceParameters(
 
 	return nil
 }
-

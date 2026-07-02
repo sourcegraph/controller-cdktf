@@ -106,7 +106,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockListSourceS3PathOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewKendraQuerySuggestionsBlockListSourceS3PathOutputReferenceParame
 
 	return nil
 }
-

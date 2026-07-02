@@ -106,7 +106,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStoragegatewayNfsFileShareCacheAttributesOutputReferenceParamete
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DynamodbGlobalTableReplicaList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbGlobalTableReplicaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbGlobalTableReplicaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDynamodbGlobalTableReplicaListParameters(terraformResource cdktf
 
 	return nil
 }
-

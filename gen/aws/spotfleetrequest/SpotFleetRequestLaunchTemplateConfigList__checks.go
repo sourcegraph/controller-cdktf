@@ -34,7 +34,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSpotFleetRequestLaunchTemplateConfigListParameters(terraformReso
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FsxLustreFileSystem) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FsxLustreFileSystem) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (f *jsiiProxy_FsxLustreFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FsxLustreFileSystem) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateFsxLustreFileSystem_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateFsxLustreFileSystem_IsConstructParameters(x interface{}) error {
+func validateFsxLustreFileSystem_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateFsxLustreFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFsxLustreFileSystem_IsTerraformElementParameters(x interface{}) error {
+func validateFsxLustreFileSystem_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateFsxLustreFileSystem_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateFsxLustreFileSystem_IsTerraformResourceParameters(x interface{}) error {
+func validateFsxLustreFileSystem_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetBackupIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) validateSetCopyTagsToBackupsParameters(val interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetCopyTagsToBackupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetCopyTagsToBackupsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -496,7 +496,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetPerUnitStorageThroughputParam
 	return nil
 }
 
-func (j *jsiiProxy_FsxLustreFileSystem) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -616,4 +616,3 @@ func validateNewFsxLustreFileSystemParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

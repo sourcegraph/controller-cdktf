@@ -19,7 +19,7 @@ func (s *jsiiProxy_SesIdentityNotificationTopic) validateAddMoveTargetParameters
 	return nil
 }
 
-func (s *jsiiProxy_SesIdentityNotificationTopic) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSesIdentityNotificationTopic_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateSesIdentityNotificationTopic_IsConstructParameters(x interface{}) error {
+func validateSesIdentityNotificationTopic_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSesIdentityNotificationTopic_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateSesIdentityNotificationTopic_IsTerraformElementParameters(x interface{}) error {
+func validateSesIdentityNotificationTopic_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSesIdentityNotificationTopic_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateSesIdentityNotificationTopic_IsTerraformResourceParameters(x interface{}) error {
+func validateSesIdentityNotificationTopic_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSesIdentityNotificationTopic_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetIdentityParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetIncludeOriginalHeadersParameters(val interface{}) error {
+func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetIncludeOriginalHeadersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -386,7 +386,7 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetNotificationTypePara
 	return nil
 }
 
-func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewSesIdentityNotificationTopicParameters(scope constructs.Construc
 
 	return nil
 }
-

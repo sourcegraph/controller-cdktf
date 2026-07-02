@@ -10,14 +10,14 @@ import (
 
 type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	cdktf.ComplexObject
-	AllSupported() interface{}
-	SetAllSupported(val interface{})
-	AllSupportedInput() interface{}
+	AllSupported() any
+	SetAllSupported(val any)
+	AllSupportedInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeGlobalResourceTypes() interface{}
-	SetIncludeGlobalResourceTypes(val interface{})
-	IncludeGlobalResourceTypesInput() interface{}
+	IncludeGlobalResourceTypes() any
+	SetIncludeGlobalResourceTypes(val any)
+	IncludeGlobalResourceTypesInput() any
 	InternalValue() *ConfigConfigurationRecorderRecordingGroup
 	SetInternalValue(val *ConfigConfigurationRecorderRecordingGroup)
 	ResourceTypes() *[]*string
@@ -49,7 +49,7 @@ type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	ResetResourceTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) AllSupported() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) AllSupported() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allSupported",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) All
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) AllSupportedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) AllSupportedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allSupportedInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) All
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) IncludeGlobalResourceTypes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) IncludeGlobalResourceTypes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeGlobalResourceTypes",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Inc
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) IncludeGlobalResourceTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) IncludeGlobalResourceTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeGlobalResourceTypesInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Ter
 	return returns
 }
 
-
 func NewConfigConfigurationRecorderRecordingGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingGroupOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewConfigConfigurationRecorderRecordingGroupOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewConfigConfigurationRecorderRecordingGroupOutputReference_Override(c Conf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetAllSupported(val interface{}) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetAllSupported(val any) {
 	if err := j.validateSetAllSupportedParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetIncludeGlobalResourceTypes(val interface{}) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetIncludeGlobalResourceTypes(val any) {
 	if err := j.validateSetIncludeGlobalResourceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetInternalValue(val *ConfigConfigurationRecorderRecordingGroup) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetInternalValue(val *ConfigConfigurationRecorderRecordingGroup) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetResourceTypes(val *[]*string) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetResourceTypes(val *[]*string) {
 	if err := j.validateSetResourceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ToS
 
 	return returns
 }
-

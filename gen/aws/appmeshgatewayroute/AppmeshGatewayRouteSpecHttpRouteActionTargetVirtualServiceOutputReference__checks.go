@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOut
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutput
 
 	return nil
 }
-

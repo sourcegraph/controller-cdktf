@@ -12,9 +12,9 @@ type LaunchConfigurationMetadataOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type LaunchConfigurationMetadataOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type LaunchConfigurationMetadataOptionsOutputReference interface {
 	ResetHttpTokens()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewLaunchConfigurationMetadataOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LaunchConfigurationMetadataOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewLaunchConfigurationMetadataOptionsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewLaunchConfigurationMetadataOptionsOutputReference_Override(l LaunchConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetHttpEndpoint(val *string) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetHttpEndpoint(val *string) {
 	if err := j.validateSetHttpEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetHttpEndp
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetHttpPutResponseHopLimit(val *float64) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetHttpPutResponseHopLimit(val *float64) {
 	if err := j.validateSetHttpPutResponseHopLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetHttpPutR
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetHttpTokens(val *string) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetHttpTokens(val *string) {
 	if err := j.validateSetHttpTokensParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetHttpToke
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetInternalValue(val *LaunchConfigurationMetadataOptions) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetInternalValue(val *LaunchConfigurationMetadataOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) ComputeFqn
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetStringA
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) GetStringM
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) Interpolat
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) ResetHttpT
 	)
 }
 
-func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (l *jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference) ToString()
 
 	return returns
 }
-

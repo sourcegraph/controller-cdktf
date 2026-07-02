@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSecurityhubInsightFiltersNetworkDestinationPortOutputReferencePa
 
 	return nil
 }
-

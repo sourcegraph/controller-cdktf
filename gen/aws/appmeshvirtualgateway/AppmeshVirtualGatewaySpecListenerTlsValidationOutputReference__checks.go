@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppmeshVirtualGatewaySpecListenerTlsValidationOutputReferencePar
 
 	return nil
 }
-

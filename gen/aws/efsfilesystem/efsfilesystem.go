@@ -20,15 +20,15 @@ type EfsFileSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationToken() *string
 	SetCreationToken(val *string)
 	CreationTokenInput() *string
@@ -37,9 +37,9 @@ type EfsFileSystem interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsName() *string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,7 +59,7 @@ type EfsFileSystem interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LifecyclePolicy() EfsFileSystemLifecyclePolicyList
-	LifecyclePolicyInput() interface{}
+	LifecyclePolicyInput() any
 	// The tree node.
 	Node() constructs.Node
 	NumberOfMountTargets() *float64
@@ -75,11 +75,11 @@ type EfsFileSystem interface {
 	SetProvisionedThroughputInMibps(val *float64)
 	ProvisionedThroughputInMibpsInput() *float64
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SizeInBytes() EfsFileSystemSizeInBytesList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -90,7 +90,7 @@ type EfsFileSystem interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThroughputMode() *string
@@ -100,9 +100,9 @@ type EfsFileSystem interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type EfsFileSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,14 +132,14 @@ type EfsFileSystem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLifecyclePolicy(value interface{})
+	PutLifecyclePolicy(value any)
 	ResetAvailabilityZoneName()
 	ResetCreationToken()
 	ResetEncrypted()
@@ -154,17 +154,17 @@ type EfsFileSystem interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetThroughputMode()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EfsFileSystem
@@ -222,8 +222,8 @@ func (j *jsiiProxy_EfsFileSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsFileSystem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_EfsFileSystem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EfsFileSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_EfsFileSystem) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsFileSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_EfsFileSystem) DnsName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsFileSystem) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_EfsFileSystem) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsFileSystem) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_EfsFileSystem) LifecyclePolicy() EfsFileSystemLifecyclePolicy
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) LifecyclePolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsFileSystem) LifecyclePolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lifecyclePolicyInput",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_EfsFileSystem) ProvisionedThroughputInMibpsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EfsFileSystem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_EfsFileSystem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsFileSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_EfsFileSystem) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EfsFileSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -612,7 +612,6 @@ func (j *jsiiProxy_EfsFileSystem) ThroughputModeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSystemConfig) EfsFileSystem {
 	_init_.Initialize()
@@ -624,7 +623,7 @@ func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSys
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -637,12 +636,12 @@ func NewEfsFileSystem_Override(e EfsFileSystem, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetAvailabilityZoneName(val *string) {
+func (j *jsiiProxy_EfsFileSystem) SetAvailabilityZoneName(val *string) {
 	if err := j.validateSetAvailabilityZoneNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_EfsFileSystem)SetAvailabilityZoneName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetConnection(val interface{}) {
+func (j *jsiiProxy_EfsFileSystem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_EfsFileSystem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_EfsFileSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_EfsFileSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetCreationToken(val *string) {
+func (j *jsiiProxy_EfsFileSystem) SetCreationToken(val *string) {
 	if err := j.validateSetCreationTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_EfsFileSystem)SetCreationToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EfsFileSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_EfsFileSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_EfsFileSystem) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_EfsFileSystem)SetEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EfsFileSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -713,7 +712,7 @@ func (j *jsiiProxy_EfsFileSystem)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetId(val *string) {
+func (j *jsiiProxy_EfsFileSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_EfsFileSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_EfsFileSystem) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_EfsFileSystem)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EfsFileSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_EfsFileSystem)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetPerformanceMode(val *string) {
+func (j *jsiiProxy_EfsFileSystem) SetPerformanceMode(val *string) {
 	if err := j.validateSetPerformanceModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_EfsFileSystem)SetPerformanceMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EfsFileSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -765,7 +764,7 @@ func (j *jsiiProxy_EfsFileSystem)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetProvisionedThroughputInMibps(val *float64) {
+func (j *jsiiProxy_EfsFileSystem) SetProvisionedThroughputInMibps(val *float64) {
 	if err := j.validateSetProvisionedThroughputInMibpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_EfsFileSystem)SetProvisionedThroughputInMibps(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EfsFileSystem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_EfsFileSystem)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EfsFileSystem) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_EfsFileSystem)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EfsFileSystem) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_EfsFileSystem)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystem)SetThroughputMode(val *string) {
+func (j *jsiiProxy_EfsFileSystem) SetThroughputMode(val *string) {
 	if err := j.validateSetThroughputModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func EfsFileSystem_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func EfsFileSystem_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EfsFileSystem_IsConstruct(x interface{}) *bool {
+func EfsFileSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEfsFileSystem_IsConstructParameters(x); err != nil {
@@ -867,7 +866,7 @@ func EfsFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func EfsFileSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EfsFileSystem_IsTerraformElement(x interface{}) *bool {
+func EfsFileSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEfsFileSystem_IsTerraformElementParameters(x); err != nil {
@@ -886,7 +885,7 @@ func EfsFileSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func EfsFileSystem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EfsFileSystem_IsTerraformResource(x interface{}) *bool {
+func EfsFileSystem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEfsFileSystem_IsTerraformResourceParameters(x); err != nil {
@@ -905,7 +904,7 @@ func EfsFileSystem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -930,31 +929,31 @@ func (e *jsiiProxy_EfsFileSystem) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EfsFileSystem) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EfsFileSystem) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EfsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EfsFileSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (e *jsiiProxy_EfsFileSystem) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (e *jsiiProxy_EfsFileSystem) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (e *jsiiProxy_EfsFileSystem) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (e *jsiiProxy_EfsFileSystem) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (e *jsiiProxy_EfsFileSystem) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (e *jsiiProxy_EfsFileSystem) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (e *jsiiProxy_EfsFileSystem) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1082,15 +1081,15 @@ func (e *jsiiProxy_EfsFileSystem) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EfsFileSystem) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EfsFileSystem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1109,7 +1108,7 @@ func (e *jsiiProxy_EfsFileSystem) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (e *jsiiProxy_EfsFileSystem) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1136,18 +1135,18 @@ func (e *jsiiProxy_EfsFileSystem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EfsFileSystem) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EfsFileSystem) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (e *jsiiProxy_EfsFileSystem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1169,18 +1168,18 @@ func (e *jsiiProxy_EfsFileSystem) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_EfsFileSystem) PutLifecyclePolicy(value interface{}) {
+func (e *jsiiProxy_EfsFileSystem) PutLifecyclePolicy(value any) {
 	if err := e.validatePutLifecyclePolicyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putLifecyclePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1280,8 +1279,8 @@ func (e *jsiiProxy_EfsFileSystem) ResetThroughputMode() {
 	)
 }
 
-func (e *jsiiProxy_EfsFileSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EfsFileSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1293,8 +1292,8 @@ func (e *jsiiProxy_EfsFileSystem) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (e *jsiiProxy_EfsFileSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EfsFileSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1306,8 +1305,8 @@ func (e *jsiiProxy_EfsFileSystem) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (e *jsiiProxy_EfsFileSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EfsFileSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1319,8 +1318,8 @@ func (e *jsiiProxy_EfsFileSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EfsFileSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EfsFileSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1345,8 +1344,8 @@ func (e *jsiiProxy_EfsFileSystem) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EfsFileSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EfsFileSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1357,4 +1356,3 @@ func (e *jsiiProxy_EfsFileSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

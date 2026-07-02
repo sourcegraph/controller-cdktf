@@ -34,7 +34,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelinePar
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParame
 
 	return nil
 }
-

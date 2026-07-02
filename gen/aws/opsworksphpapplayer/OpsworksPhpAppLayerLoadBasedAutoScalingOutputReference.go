@@ -12,9 +12,9 @@ type OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference interface {
 	CreationStack() *[]*string
 	Downscaling() OpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference
 	DownscalingInput() *OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OpsworksPhpAppLayerLoadBasedAutoScaling
@@ -47,7 +47,7 @@ type OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference interface {
 	ResetUpscaling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Downs
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Upsca
 	return returns
 }
 
-
 func NewOpsworksPhpAppLayerLoadBasedAutoScalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewOpsworksPhpAppLayerLoadBasedAutoScalingOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewOpsworksPhpAppLayerLoadBasedAutoScalingOutputReference_Override(o Opswor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetInternalValue(val *OpsworksPhpAppLayerLoadBasedAutoScaling) {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) SetInternalValue(val *OpsworksPhpAppLayerLoadBasedAutoScaling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,16 +324,16 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Compu
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetBo
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetBo
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetLi
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetNu
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetNu
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetNu
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetSt
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) GetSt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Inter
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) PutDo
 	_jsii_.InvokeVoid(
 		o,
 		"putDownscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -516,7 +515,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) PutUp
 	_jsii_.InvokeVoid(
 		o,
 		"putUpscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Reset
 	)
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (o *jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference) ToStr
 
 	return returns
 }
-

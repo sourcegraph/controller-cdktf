@@ -19,15 +19,15 @@ type RedshiftEndpointAccess interface {
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,11 +58,11 @@ type RedshiftEndpointAccess interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceOwner() *string
 	SetResourceOwner(val *string)
 	ResourceOwnerInput() *string
@@ -72,7 +72,7 @@ type RedshiftEndpointAccess interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcEndpoint() RedshiftEndpointAccessVpcEndpointList
@@ -83,9 +83,9 @@ type RedshiftEndpointAccess interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type RedshiftEndpointAccess interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type RedshiftEndpointAccess interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type RedshiftEndpointAccess interface {
 	ResetOverrideLogicalId()
 	ResetResourceOwner()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftEndpointAccess
@@ -186,8 +186,8 @@ func (j *jsiiProxy_RedshiftEndpointAccess) ClusterIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEndpointAccess) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_RedshiftEndpointAccess) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftEndpointAccess) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_RedshiftEndpointAccess) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEndpointAccess) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_RedshiftEndpointAccess) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftEndpointAccess) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_RedshiftEndpointAccess) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftEndpointAccess) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_RedshiftEndpointAccess) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftEndpointAccess) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -456,7 +456,6 @@ func (j *jsiiProxy_RedshiftEndpointAccess) VpcSecurityGroupIdsInput() *[]*string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access} Resource.
 func NewRedshiftEndpointAccess(scope constructs.Construct, id *string, config *RedshiftEndpointAccessConfig) RedshiftEndpointAccess {
 	_init_.Initialize()
@@ -468,7 +467,7 @@ func NewRedshiftEndpointAccess(scope constructs.Construct, id *string, config *R
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewRedshiftEndpointAccess_Override(r RedshiftEndpointAccess, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetEndpointName(val *string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetEndpointName(val *string) {
 	if err := j.validateSetEndpointNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetEndpointName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -546,7 +545,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetId(val *string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetResourceOwner(val *string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetResourceOwner(val *string) {
 	if err := j.validateSetResourceOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetResourceOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetSubnetGroupName(val *string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetSubnetGroupName(val *string) {
 	if err := j.validateSetSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftEndpointAccess)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_RedshiftEndpointAccess) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func RedshiftEndpointAccess_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func RedshiftEndpointAccess_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftEndpointAccess_IsConstruct(x interface{}) *bool {
+func RedshiftEndpointAccess_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftEndpointAccess_IsConstructParameters(x); err != nil {
@@ -667,7 +666,7 @@ func RedshiftEndpointAccess_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func RedshiftEndpointAccess_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftEndpointAccess_IsTerraformElement(x interface{}) *bool {
+func RedshiftEndpointAccess_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftEndpointAccess_IsTerraformElementParameters(x); err != nil {
@@ -686,7 +685,7 @@ func RedshiftEndpointAccess_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func RedshiftEndpointAccess_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftEndpointAccess_IsTerraformResource(x interface{}) *bool {
+func RedshiftEndpointAccess_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftEndpointAccess_IsTerraformResourceParameters(x); err != nil {
@@ -705,7 +704,7 @@ func RedshiftEndpointAccess_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,31 +729,31 @@ func (r *jsiiProxy_RedshiftEndpointAccess) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftEndpointAccess) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftEndpointAccess) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,15 +881,15 @@ func (r *jsiiProxy_RedshiftEndpointAccess) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEndpointAccess) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -909,7 +908,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -922,7 +921,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,18 +935,18 @@ func (r *jsiiProxy_RedshiftEndpointAccess) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftEndpointAccess) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -958,7 +957,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -969,7 +968,7 @@ func (r *jsiiProxy_RedshiftEndpointAccess) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1005,8 +1004,8 @@ func (r *jsiiProxy_RedshiftEndpointAccess) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftEndpointAccess) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1018,8 +1017,8 @@ func (r *jsiiProxy_RedshiftEndpointAccess) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftEndpointAccess) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1031,8 +1030,8 @@ func (r *jsiiProxy_RedshiftEndpointAccess) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEndpointAccess) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1044,8 +1043,8 @@ func (r *jsiiProxy_RedshiftEndpointAccess) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEndpointAccess) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1070,8 +1069,8 @@ func (r *jsiiProxy_RedshiftEndpointAccess) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccess) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftEndpointAccess) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1082,4 +1081,3 @@ func (r *jsiiProxy_RedshiftEndpointAccess) ToTerraform() interface{} {
 
 	return returns
 }
-

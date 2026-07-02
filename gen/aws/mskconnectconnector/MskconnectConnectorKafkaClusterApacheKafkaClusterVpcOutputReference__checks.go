@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputRefere
 
 	return nil
 }
-

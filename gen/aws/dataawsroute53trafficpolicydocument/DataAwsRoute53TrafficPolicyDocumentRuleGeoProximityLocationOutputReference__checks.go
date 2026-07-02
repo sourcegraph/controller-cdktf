@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference) validateSetEvaluateTargetHealthParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference) validateSetEvaluateTargetHealthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -298,4 +298,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutpu
 
 	return nil
 }
-

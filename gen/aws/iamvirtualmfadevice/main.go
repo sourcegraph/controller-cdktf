@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
-		reflect.TypeOf((*IamVirtualMfaDevice)(nil)).Elem(),
+		reflect.TypeFor[IamVirtualMfaDevice](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualMfaDeviceName", GoGetter: "VirtualMfaDeviceName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMfaDeviceNameInput", GoGetter: "VirtualMfaDeviceNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamVirtualMfaDevice{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDeviceConfig",
-		reflect.TypeOf((*IamVirtualMfaDeviceConfig)(nil)).Elem(),
+		reflect.TypeFor[IamVirtualMfaDeviceConfig](),
 	)
 }

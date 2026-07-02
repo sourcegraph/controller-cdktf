@@ -98,7 +98,7 @@ func (f *jsiiProxy_FisExperimentTemplateStopConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateStopConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateStopConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_FisExperimentTemplateStopConditionOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateStopConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FisExperimentTemplateStopConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFisExperimentTemplateStopConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

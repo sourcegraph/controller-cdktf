@@ -16,25 +16,25 @@ type MemorydbCluster interface {
 	SetAclName(val *string)
 	AclNameInput() *string
 	Arn() *string
-	AutoMinorVersionUpgrade() interface{}
-	SetAutoMinorVersionUpgrade(val interface{})
-	AutoMinorVersionUpgradeInput() interface{}
+	AutoMinorVersionUpgrade() any
+	SetAutoMinorVersionUpgrade(val any)
+	AutoMinorVersionUpgradeInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterEndpoint() MemorydbClusterClusterEndpointList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DataTiering() interface{}
-	SetDataTiering(val interface{})
-	DataTieringInput() interface{}
+	SetCount(val any)
+	DataTiering() any
+	SetDataTiering(val any)
+	DataTieringInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -98,11 +98,11 @@ type MemorydbCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -134,21 +134,21 @@ type MemorydbCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MemorydbClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	TlsEnabled() interface{}
-	SetTlsEnabled(val interface{})
-	TlsEnabledInput() interface{}
+	TimeoutsInput() any
+	TlsEnabled() any
+	SetTlsEnabled(val any)
+	TlsEnabledInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -166,7 +166,7 @@ type MemorydbCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -178,7 +178,7 @@ type MemorydbCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -214,17 +214,17 @@ type MemorydbCluster interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetTlsEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MemorydbCluster
@@ -262,8 +262,8 @@ func (j *jsiiProxy_MemorydbCluster) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) AutoMinorVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) AutoMinorVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgrade",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_MemorydbCluster) AutoMinorVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) AutoMinorVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) AutoMinorVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoMinorVersionUpgradeInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_MemorydbCluster) ClusterEndpoint() MemorydbClusterClusterEndp
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_MemorydbCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorydbCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_MemorydbCluster) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_MemorydbCluster) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) DataTiering() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) DataTiering() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTiering",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_MemorydbCluster) DataTiering() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) DataTieringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) DataTieringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTieringInput",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_MemorydbCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MemorydbCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -702,8 +702,8 @@ func (j *jsiiProxy_MemorydbCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -912,8 +912,8 @@ func (j *jsiiProxy_MemorydbCluster) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorydbCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -942,8 +942,8 @@ func (j *jsiiProxy_MemorydbCluster) Timeouts() MemorydbClusterTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -952,8 +952,8 @@ func (j *jsiiProxy_MemorydbCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) TlsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) TlsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsEnabled",
@@ -962,8 +962,8 @@ func (j *jsiiProxy_MemorydbCluster) TlsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorydbCluster) TlsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorydbCluster) TlsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsEnabledInput",
@@ -971,7 +971,6 @@ func (j *jsiiProxy_MemorydbCluster) TlsEnabledInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
 func NewMemorydbCluster(scope constructs.Construct, id *string, config *MemorydbClusterConfig) MemorydbCluster {
@@ -984,7 +983,7 @@ func NewMemorydbCluster(scope constructs.Construct, id *string, config *Memorydb
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -997,12 +996,12 @@ func NewMemorydbCluster_Override(m MemorydbCluster, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetAclName(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetAclName(val *string) {
 	if err := j.validateSetAclNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_MemorydbCluster)SetAclName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetAutoMinorVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_MemorydbCluster) SetAutoMinorVersionUpgrade(val any) {
 	if err := j.validateSetAutoMinorVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,7 +1023,7 @@ func (j *jsiiProxy_MemorydbCluster)SetAutoMinorVersionUpgrade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_MemorydbCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1035,7 +1034,7 @@ func (j *jsiiProxy_MemorydbCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_MemorydbCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1046,7 +1045,7 @@ func (j *jsiiProxy_MemorydbCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetDataTiering(val interface{}) {
+func (j *jsiiProxy_MemorydbCluster) SetDataTiering(val any) {
 	if err := j.validateSetDataTieringParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1056,7 @@ func (j *jsiiProxy_MemorydbCluster)SetDataTiering(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MemorydbCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_MemorydbCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetDescription(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_MemorydbCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetEngineVersion(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_MemorydbCluster)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetFinalSnapshotName(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetFinalSnapshotName(val *string) {
 	if err := j.validateSetFinalSnapshotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_MemorydbCluster)SetFinalSnapshotName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MemorydbCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_MemorydbCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetId(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_MemorydbCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_MemorydbCluster)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MemorydbCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_MemorydbCluster)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetMaintenanceWindow(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetMaintenanceWindow(val *string) {
 	if err := j.validateSetMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_MemorydbCluster)SetMaintenanceWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetName(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,7 +1160,7 @@ func (j *jsiiProxy_MemorydbCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetNamePrefix(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1172,7 +1171,7 @@ func (j *jsiiProxy_MemorydbCluster)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetNodeType(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1183,7 +1182,7 @@ func (j *jsiiProxy_MemorydbCluster)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetNumReplicasPerShard(val *float64) {
+func (j *jsiiProxy_MemorydbCluster) SetNumReplicasPerShard(val *float64) {
 	if err := j.validateSetNumReplicasPerShardParameters(val); err != nil {
 		panic(err)
 	}
@@ -1194,7 +1193,7 @@ func (j *jsiiProxy_MemorydbCluster)SetNumReplicasPerShard(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetNumShards(val *float64) {
+func (j *jsiiProxy_MemorydbCluster) SetNumShards(val *float64) {
 	if err := j.validateSetNumShardsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1205,7 +1204,7 @@ func (j *jsiiProxy_MemorydbCluster)SetNumShards(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetParameterGroupName(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetParameterGroupName(val *string) {
 	if err := j.validateSetParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1216,7 +1215,7 @@ func (j *jsiiProxy_MemorydbCluster)SetParameterGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetPort(val *float64) {
+func (j *jsiiProxy_MemorydbCluster) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1227,7 +1226,7 @@ func (j *jsiiProxy_MemorydbCluster)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MemorydbCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_MemorydbCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MemorydbCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_MemorydbCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_MemorydbCluster) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1257,7 +1256,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSnapshotArns(val *[]*string) {
+func (j *jsiiProxy_MemorydbCluster) SetSnapshotArns(val *[]*string) {
 	if err := j.validateSetSnapshotArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSnapshotArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSnapshotName(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetSnapshotName(val *string) {
 	if err := j.validateSetSnapshotNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSnapshotName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSnapshotRetentionLimit(val *float64) {
+func (j *jsiiProxy_MemorydbCluster) SetSnapshotRetentionLimit(val *float64) {
 	if err := j.validateSetSnapshotRetentionLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1290,7 +1289,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSnapshotRetentionLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSnapshotWindow(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetSnapshotWindow(val *string) {
 	if err := j.validateSetSnapshotWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1301,7 +1300,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSnapshotWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSnsTopicArn(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetSnsTopicArn(val *string) {
 	if err := j.validateSetSnsTopicArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1312,7 +1311,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSnsTopicArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetSubnetGroupName(val *string) {
+func (j *jsiiProxy_MemorydbCluster) SetSubnetGroupName(val *string) {
 	if err := j.validateSetSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1323,7 +1322,7 @@ func (j *jsiiProxy_MemorydbCluster)SetSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_MemorydbCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1334,7 +1333,7 @@ func (j *jsiiProxy_MemorydbCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_MemorydbCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1345,7 +1344,7 @@ func (j *jsiiProxy_MemorydbCluster)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorydbCluster)SetTlsEnabled(val interface{}) {
+func (j *jsiiProxy_MemorydbCluster) SetTlsEnabled(val any) {
 	if err := j.validateSetTlsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1368,7 +1367,7 @@ func MemorydbCluster_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1392,7 +1391,7 @@ func MemorydbCluster_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MemorydbCluster_IsConstruct(x interface{}) *bool {
+func MemorydbCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbCluster_IsConstructParameters(x); err != nil {
@@ -1403,7 +1402,7 @@ func MemorydbCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1411,7 +1410,7 @@ func MemorydbCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorydbCluster_IsTerraformElement(x interface{}) *bool {
+func MemorydbCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbCluster_IsTerraformElementParameters(x); err != nil {
@@ -1422,7 +1421,7 @@ func MemorydbCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1430,7 +1429,7 @@ func MemorydbCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorydbCluster_IsTerraformResource(x interface{}) *bool {
+func MemorydbCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorydbCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1441,7 +1440,7 @@ func MemorydbCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1466,31 +1465,31 @@ func (m *jsiiProxy_MemorydbCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MemorydbCluster) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MemorydbCluster) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MemorydbCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorydbCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1506,7 +1505,7 @@ func (m *jsiiProxy_MemorydbCluster) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1522,7 +1521,7 @@ func (m *jsiiProxy_MemorydbCluster) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1538,7 +1537,7 @@ func (m *jsiiProxy_MemorydbCluster) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1554,7 +1553,7 @@ func (m *jsiiProxy_MemorydbCluster) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1570,7 +1569,7 @@ func (m *jsiiProxy_MemorydbCluster) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1586,7 +1585,7 @@ func (m *jsiiProxy_MemorydbCluster) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1602,7 +1601,7 @@ func (m *jsiiProxy_MemorydbCluster) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1618,15 +1617,15 @@ func (m *jsiiProxy_MemorydbCluster) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1645,7 +1644,7 @@ func (m *jsiiProxy_MemorydbCluster) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1658,7 +1657,7 @@ func (m *jsiiProxy_MemorydbCluster) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1672,18 +1671,18 @@ func (m *jsiiProxy_MemorydbCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MemorydbCluster) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MemorydbCluster) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1694,7 +1693,7 @@ func (m *jsiiProxy_MemorydbCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1705,7 +1704,7 @@ func (m *jsiiProxy_MemorydbCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1716,7 +1715,7 @@ func (m *jsiiProxy_MemorydbCluster) PutTimeouts(value *MemorydbClusterTimeouts) 
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1928,8 +1927,8 @@ func (m *jsiiProxy_MemorydbCluster) ResetTlsEnabled() {
 	)
 }
 
-func (m *jsiiProxy_MemorydbCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorydbCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1941,8 +1940,8 @@ func (m *jsiiProxy_MemorydbCluster) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorydbCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1954,8 +1953,8 @@ func (m *jsiiProxy_MemorydbCluster) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1967,8 +1966,8 @@ func (m *jsiiProxy_MemorydbCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1993,8 +1992,8 @@ func (m *jsiiProxy_MemorydbCluster) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MemorydbCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorydbCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -2005,4 +2004,3 @@ func (m *jsiiProxy_MemorydbCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

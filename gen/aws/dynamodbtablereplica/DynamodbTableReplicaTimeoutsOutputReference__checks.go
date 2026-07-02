@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDynamodbTableReplicaTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

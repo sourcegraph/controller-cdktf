@@ -1,6 +1,5 @@
 package opsworksnodejsapplayer
 
-
 type OpsworksNodejsAppLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_nodejs_app_layer#mount_point OpsworksNodejsAppLayer#mount_point}.
 	MountPoint *string `field:"required" json:"mountPoint" yaml:"mountPoint"`
@@ -9,7 +8,7 @@ type OpsworksNodejsAppLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_nodejs_app_layer#size OpsworksNodejsAppLayer#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_nodejs_app_layer#encrypted OpsworksNodejsAppLayer#encrypted}.
-	Encrypted interface{} `field:"optional" json:"encrypted" yaml:"encrypted"`
+	Encrypted any `field:"optional" json:"encrypted" yaml:"encrypted"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_nodejs_app_layer#iops OpsworksNodejsAppLayer#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_nodejs_app_layer#raid_level OpsworksNodejsAppLayer#raid_level}.
@@ -17,4 +16,3 @@ type OpsworksNodejsAppLayerEbsVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_nodejs_app_layer#type OpsworksNodejsAppLayer#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

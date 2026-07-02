@@ -20,11 +20,11 @@ type DataAwsLb interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerOwnedIpv4Pool() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -67,7 +67,7 @@ type DataAwsLb interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroups() *[]*string
 	SubnetMapping() DataAwsLbSubnetMappingList
 	Subnets() *[]*string
@@ -77,17 +77,17 @@ type DataAwsLb interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsLbTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcId() *string
 	ZoneId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,18 +118,18 @@ type DataAwsLb interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsLb
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataAwsLb) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLb) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLb) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataAwsLb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLb) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLb) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_DataAwsLb) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLb) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLb) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_DataAwsLb) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLb) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLb) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -547,8 +547,8 @@ func (j *jsiiProxy_DataAwsLb) Timeouts() DataAwsLbTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLb) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLb) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -577,7 +577,6 @@ func (j *jsiiProxy_DataAwsLb) ZoneId() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfig) DataAwsLb {
 	_init_.Initialize()
@@ -589,7 +588,7 @@ func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewDataAwsLb_Override(d DataAwsLb, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsLb) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_DataAwsLb)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsLb) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_DataAwsLb)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsLb) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_DataAwsLb)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsLb) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_DataAwsLb)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetId(val *string) {
+func (j *jsiiProxy_DataAwsLb) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_DataAwsLb)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsLb) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_DataAwsLb)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetName(val *string) {
+func (j *jsiiProxy_DataAwsLb) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_DataAwsLb)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsLb) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_DataAwsLb)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLb)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsLb) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func DataAwsLb_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func DataAwsLb_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsLb_IsConstruct(x interface{}) *bool {
+func DataAwsLb_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLb_IsConstructParameters(x); err != nil {
@@ -744,7 +743,7 @@ func DataAwsLb_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func DataAwsLb_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLb_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsLb_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLb_IsTerraformDataSourceParameters(x); err != nil {
@@ -763,7 +762,7 @@ func DataAwsLb_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func DataAwsLb_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLb_IsTerraformElement(x interface{}) *bool {
+func DataAwsLb_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLb_IsTerraformElementParameters(x); err != nil {
@@ -782,7 +781,7 @@ func DataAwsLb_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,27 +799,27 @@ func DataAwsLb_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLb) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsLb) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLb) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsLb) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (d *jsiiProxy_DataAwsLb) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (d *jsiiProxy_DataAwsLb) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (d *jsiiProxy_DataAwsLb) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (d *jsiiProxy_DataAwsLb) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (d *jsiiProxy_DataAwsLb) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (d *jsiiProxy_DataAwsLb) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (d *jsiiProxy_DataAwsLb) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (d *jsiiProxy_DataAwsLb) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (d *jsiiProxy_DataAwsLb) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (d *jsiiProxy_DataAwsLb) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -989,7 +988,7 @@ func (d *jsiiProxy_DataAwsLb) PutTimeouts(value *DataAwsLbTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1041,8 +1040,8 @@ func (d *jsiiProxy_DataAwsLb) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsLb) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLb) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1054,8 +1053,8 @@ func (d *jsiiProxy_DataAwsLb) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLb) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLb) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1067,8 +1066,8 @@ func (d *jsiiProxy_DataAwsLb) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLb) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLb) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1080,8 +1079,8 @@ func (d *jsiiProxy_DataAwsLb) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLb) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLb) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1106,8 +1105,8 @@ func (d *jsiiProxy_DataAwsLb) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLb) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLb) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1118,4 +1117,3 @@ func (d *jsiiProxy_DataAwsLb) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -1,11 +1,10 @@
 package appmeshvirtualnode
 
-
 type AppmeshVirtualNodeSpec struct {
 	// backend block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_virtual_node#backend AppmeshVirtualNode#backend}
-	Backend interface{} `field:"optional" json:"backend" yaml:"backend"`
+	Backend any `field:"optional" json:"backend" yaml:"backend"`
 	// backend_defaults block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_virtual_node#backend_defaults AppmeshVirtualNode#backend_defaults}
@@ -13,7 +12,7 @@ type AppmeshVirtualNodeSpec struct {
 	// listener block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_virtual_node#listener AppmeshVirtualNode#listener}
-	Listener interface{} `field:"optional" json:"listener" yaml:"listener"`
+	Listener any `field:"optional" json:"listener" yaml:"listener"`
 	// logging block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_virtual_node#logging AppmeshVirtualNode#logging}
@@ -23,4 +22,3 @@ type AppmeshVirtualNodeSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_virtual_node#service_discovery AppmeshVirtualNode#service_discovery}
 	ServiceDiscovery *AppmeshVirtualNodeSpecServiceDiscovery `field:"optional" json:"serviceDiscovery" yaml:"serviceDiscovery"`
 }
-

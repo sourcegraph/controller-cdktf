@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewOpsworksStackCustomCookbooksSourceOutputReferenceParameters(terr
 
 	return nil
 }
-

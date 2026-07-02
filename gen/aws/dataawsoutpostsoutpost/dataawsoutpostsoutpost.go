@@ -20,11 +20,11 @@ type DataAwsOutpostsOutpost interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,18 +58,18 @@ type DataAwsOutpostsOutpost interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SiteId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataAwsOutpostsOutpost interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsOutpostsOutpost
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsOutpostsOutpost) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsOutpostsOutpost) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsOutpostsOutpost) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsOutpostsOutpost) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -377,7 +377,6 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/outposts_outpost aws_outposts_outpost} Data Source.
 func NewDataAwsOutpostsOutpost(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostConfig) DataAwsOutpostsOutpost {
 	_init_.Initialize()
@@ -389,7 +388,7 @@ func NewDataAwsOutpostsOutpost(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsOutpostsOutpost.DataAwsOutpostsOutpost",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewDataAwsOutpostsOutpost_Override(d DataAwsOutpostsOutpost, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsOutpostsOutpost.DataAwsOutpostsOutpost",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetArn(val *string) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetArn(val *string) {
 	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetId(val *string) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetName(val *string) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetOwnerId(val *string) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetOwnerId(val *string) {
 	if err := j.validateSetOwnerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetOwnerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpost)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func DataAwsOutpostsOutpost_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOutpostsOutpost.DataAwsOutpostsOutpost",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func DataAwsOutpostsOutpost_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsOutpostsOutpost_IsConstruct(x interface{}) *bool {
+func DataAwsOutpostsOutpost_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsOutpostsOutpost_IsConstructParameters(x); err != nil {
@@ -544,7 +543,7 @@ func DataAwsOutpostsOutpost_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOutpostsOutpost.DataAwsOutpostsOutpost",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func DataAwsOutpostsOutpost_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsOutpostsOutpost_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsOutpostsOutpost_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsOutpostsOutpost_IsTerraformDataSourceParameters(x); err != nil {
@@ -563,7 +562,7 @@ func DataAwsOutpostsOutpost_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOutpostsOutpost.DataAwsOutpostsOutpost",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func DataAwsOutpostsOutpost_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsOutpostsOutpost_IsTerraformElement(x interface{}) *bool {
+func DataAwsOutpostsOutpost_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsOutpostsOutpost_IsTerraformElementParameters(x); err != nil {
@@ -582,7 +581,7 @@ func DataAwsOutpostsOutpost_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsOutpostsOutpost.DataAwsOutpostsOutpost",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -600,27 +599,27 @@ func DataAwsOutpostsOutpost_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsOutpostsOutpost) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsOutpostsOutpost) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -822,8 +821,8 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) ResetOwnerId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsOutpostsOutpost) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -835,8 +834,8 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsOutpostsOutpost) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -848,8 +847,8 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsOutpostsOutpost) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -861,8 +860,8 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsOutpostsOutpost) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -887,8 +886,8 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOutpostsOutpost) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsOutpostsOutpost) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -899,4 +898,3 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElbHealthCheckOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_ElbHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElbHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewElbHealthCheckOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

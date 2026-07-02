@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputRef
 
 	return nil
 }
-

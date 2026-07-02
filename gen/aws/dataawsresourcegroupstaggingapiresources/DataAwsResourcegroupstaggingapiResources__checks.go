@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateOverrideLog
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validatePutTagFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validatePutTagFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsResourcegroupstaggingapiResources_GenerateConfigForImportPar
 	return nil
 }
 
-func validateDataAwsResourcegroupstaggingapiResources_IsConstructParameters(x interface{}) error {
+func validateDataAwsResourcegroupstaggingapiResources_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsResourcegroupstaggingapiResources_IsConstructParameters(x in
 	return nil
 }
 
-func validateDataAwsResourcegroupstaggingapiResources_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsResourcegroupstaggingapiResources_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsResourcegroupstaggingapiResources_IsTerraformDataSourceParam
 	return nil
 }
 
-func validateDataAwsResourcegroupstaggingapiResources_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsResourcegroupstaggingapiResources_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsResourcegroupstaggingapiResources_IsTerraformElementParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -239,7 +239,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetExcludeCompliantResourcesParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetExcludeCompliantResourcesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetIncludeComplianceDetailsParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetIncludeComplianceDetailsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,4 +326,3 @@ func validateNewDataAwsResourcegroupstaggingapiResourcesParameters(scope constru
 
 	return nil
 }
-

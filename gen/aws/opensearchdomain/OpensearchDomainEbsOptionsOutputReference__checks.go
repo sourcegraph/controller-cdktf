@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainEbsOptionsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainEbsOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainEbsOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpensearchDomainEbsOptionsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainEbsOptionsOutputReference) validateSetEbsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainEbsOptionsOutputReference) validateSetEbsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewOpensearchDomainEbsOptionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

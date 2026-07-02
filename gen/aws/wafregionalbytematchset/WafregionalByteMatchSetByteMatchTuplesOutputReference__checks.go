@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalByteMatchSetByteMatchTuplesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewWafregionalByteMatchSetByteMatchTuplesOutputReferenceParameters(
 
 	return nil
 }
-

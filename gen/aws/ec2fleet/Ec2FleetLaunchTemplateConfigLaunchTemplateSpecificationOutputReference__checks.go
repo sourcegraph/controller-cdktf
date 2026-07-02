@@ -98,7 +98,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutput
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEc2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputRef
 
 	return nil
 }
-

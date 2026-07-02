@@ -34,7 +34,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) va
 	return nil
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBatchSchedulingPolicyFairSharePolicyShareDistributionListParamet
 
 	return nil
 }
-

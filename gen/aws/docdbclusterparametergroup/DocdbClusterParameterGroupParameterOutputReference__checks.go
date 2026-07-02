@@ -106,7 +106,7 @@ func (j *jsiiProxy_DocdbClusterParameterGroupParameterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DocdbClusterParameterGroupParameterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbClusterParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDocdbClusterParameterGroupParameterOutputReferenceParameters(ter
 
 	return nil
 }
-

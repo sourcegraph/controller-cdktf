@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComprehendEntityRecognizerTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

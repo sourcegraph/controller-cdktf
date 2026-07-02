@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
-		reflect.TypeOf((*SignerSigningProfilePermission)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfilePermission](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SignerSigningProfilePermission{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermissionConfig",
-		reflect.TypeOf((*SignerSigningProfilePermissionConfig)(nil)).Elem(),
+		reflect.TypeFor[SignerSigningProfilePermissionConfig](),
 	)
 }

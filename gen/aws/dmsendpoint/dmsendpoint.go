@@ -18,15 +18,15 @@ type DmsEndpoint interface {
 	SetCertificateArn(val *string)
 	CertificateArnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
@@ -86,11 +86,11 @@ type DmsEndpoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedisSettings() DmsEndpointRedisSettingsOutputReference
 	RedisSettingsInput() *DmsEndpointRedisSettings
 	RedshiftSettings() DmsEndpointRedshiftSettingsOutputReference
@@ -121,11 +121,11 @@ type DmsEndpoint interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DmsEndpointTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -133,9 +133,9 @@ type DmsEndpoint interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -153,7 +153,7 @@ type DmsEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -165,7 +165,7 @@ type DmsEndpoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -206,17 +206,17 @@ type DmsEndpoint interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetUsername()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DmsEndpoint
@@ -254,8 +254,8 @@ func (j *jsiiProxy_DmsEndpoint) CertificateArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_DmsEndpoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DmsEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DmsEndpoint) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -624,8 +624,8 @@ func (j *jsiiProxy_DmsEndpoint) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DmsEndpoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -634,8 +634,8 @@ func (j *jsiiProxy_DmsEndpoint) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -854,8 +854,8 @@ func (j *jsiiProxy_DmsEndpoint) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DmsEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -884,8 +884,8 @@ func (j *jsiiProxy_DmsEndpoint) Timeouts() DmsEndpointTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DmsEndpoint) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -914,7 +914,6 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
@@ -926,7 +925,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -939,12 +938,12 @@ func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetCertificateArn(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetCertificateArn(val *string) {
 	if err := j.validateSetCertificateArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -955,7 +954,7 @@ func (j *jsiiProxy_DmsEndpoint)SetCertificateArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_DmsEndpoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func (j *jsiiProxy_DmsEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_DmsEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -977,7 +976,7 @@ func (j *jsiiProxy_DmsEndpoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetDatabaseName(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetDatabaseName(val *string) {
 	if err := j.validateSetDatabaseNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_DmsEndpoint)SetDatabaseName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DmsEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -996,7 +995,7 @@ func (j *jsiiProxy_DmsEndpoint)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetEndpointId(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetEndpointId(val *string) {
 	if err := j.validateSetEndpointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +1006,7 @@ func (j *jsiiProxy_DmsEndpoint)SetEndpointId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetEndpointType(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetEndpointType(val *string) {
 	if err := j.validateSetEndpointTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1018,7 +1017,7 @@ func (j *jsiiProxy_DmsEndpoint)SetEndpointType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetEngineName(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetEngineName(val *string) {
 	if err := j.validateSetEngineNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1029,7 +1028,7 @@ func (j *jsiiProxy_DmsEndpoint)SetEngineName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetExtraConnectionAttributes(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetExtraConnectionAttributes(val *string) {
 	if err := j.validateSetExtraConnectionAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_DmsEndpoint)SetExtraConnectionAttributes(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DmsEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1048,7 +1047,7 @@ func (j *jsiiProxy_DmsEndpoint)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetId(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1059,7 +1058,7 @@ func (j *jsiiProxy_DmsEndpoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1070,7 +1069,7 @@ func (j *jsiiProxy_DmsEndpoint)SetKmsKeyArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DmsEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1081,7 +1080,7 @@ func (j *jsiiProxy_DmsEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetPassword(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1092,7 +1091,7 @@ func (j *jsiiProxy_DmsEndpoint)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetPort(val *float64) {
+func (j *jsiiProxy_DmsEndpoint) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_DmsEndpoint)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DmsEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1111,7 +1110,7 @@ func (j *jsiiProxy_DmsEndpoint)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DmsEndpoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1122,7 +1121,7 @@ func (j *jsiiProxy_DmsEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetSecretsManagerAccessRoleArn(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetSecretsManagerAccessRoleArn(val *string) {
 	if err := j.validateSetSecretsManagerAccessRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1133,7 +1132,7 @@ func (j *jsiiProxy_DmsEndpoint)SetSecretsManagerAccessRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetSecretsManagerArn(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetSecretsManagerArn(val *string) {
 	if err := j.validateSetSecretsManagerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1143,7 @@ func (j *jsiiProxy_DmsEndpoint)SetSecretsManagerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetServerName(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetServerName(val *string) {
 	if err := j.validateSetServerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1155,7 +1154,7 @@ func (j *jsiiProxy_DmsEndpoint)SetServerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetServiceAccessRole(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetServiceAccessRole(val *string) {
 	if err := j.validateSetServiceAccessRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1166,7 +1165,7 @@ func (j *jsiiProxy_DmsEndpoint)SetServiceAccessRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetSslMode(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetSslMode(val *string) {
 	if err := j.validateSetSslModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1177,7 +1176,7 @@ func (j *jsiiProxy_DmsEndpoint)SetSslMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DmsEndpoint) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_DmsEndpoint)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DmsEndpoint) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_DmsEndpoint)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DmsEndpoint)SetUsername(val *string) {
+func (j *jsiiProxy_DmsEndpoint) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func DmsEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1246,7 +1245,7 @@ func DmsEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DmsEndpoint_IsConstruct(x interface{}) *bool {
+func DmsEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsEndpoint_IsConstructParameters(x); err != nil {
@@ -1257,7 +1256,7 @@ func DmsEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1265,7 +1264,7 @@ func DmsEndpoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DmsEndpoint_IsTerraformElement(x interface{}) *bool {
+func DmsEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -1276,7 +1275,7 @@ func DmsEndpoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1284,7 +1283,7 @@ func DmsEndpoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DmsEndpoint_IsTerraformResource(x interface{}) *bool {
+func DmsEndpoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDmsEndpoint_IsTerraformResourceParameters(x); err != nil {
@@ -1295,7 +1294,7 @@ func DmsEndpoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1320,31 +1319,31 @@ func (d *jsiiProxy_DmsEndpoint) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DmsEndpoint) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DmsEndpoint) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DmsEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DmsEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1360,7 +1359,7 @@ func (d *jsiiProxy_DmsEndpoint) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1376,7 +1375,7 @@ func (d *jsiiProxy_DmsEndpoint) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1392,7 +1391,7 @@ func (d *jsiiProxy_DmsEndpoint) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1408,7 +1407,7 @@ func (d *jsiiProxy_DmsEndpoint) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1424,7 +1423,7 @@ func (d *jsiiProxy_DmsEndpoint) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1440,7 +1439,7 @@ func (d *jsiiProxy_DmsEndpoint) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1456,7 +1455,7 @@ func (d *jsiiProxy_DmsEndpoint) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1472,15 +1471,15 @@ func (d *jsiiProxy_DmsEndpoint) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEndpoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1499,7 +1498,7 @@ func (d *jsiiProxy_DmsEndpoint) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1512,7 +1511,7 @@ func (d *jsiiProxy_DmsEndpoint) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1526,18 +1525,18 @@ func (d *jsiiProxy_DmsEndpoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DmsEndpoint) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DmsEndpoint) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1548,7 +1547,7 @@ func (d *jsiiProxy_DmsEndpoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1559,7 +1558,7 @@ func (d *jsiiProxy_DmsEndpoint) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1570,7 +1569,7 @@ func (d *jsiiProxy_DmsEndpoint) PutElasticsearchSettings(value *DmsEndpointElast
 	_jsii_.InvokeVoid(
 		d,
 		"putElasticsearchSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1581,7 +1580,7 @@ func (d *jsiiProxy_DmsEndpoint) PutKafkaSettings(value *DmsEndpointKafkaSettings
 	_jsii_.InvokeVoid(
 		d,
 		"putKafkaSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1592,7 +1591,7 @@ func (d *jsiiProxy_DmsEndpoint) PutKinesisSettings(value *DmsEndpointKinesisSett
 	_jsii_.InvokeVoid(
 		d,
 		"putKinesisSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1603,7 +1602,7 @@ func (d *jsiiProxy_DmsEndpoint) PutMongodbSettings(value *DmsEndpointMongodbSett
 	_jsii_.InvokeVoid(
 		d,
 		"putMongodbSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1614,7 +1613,7 @@ func (d *jsiiProxy_DmsEndpoint) PutRedisSettings(value *DmsEndpointRedisSettings
 	_jsii_.InvokeVoid(
 		d,
 		"putRedisSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1625,7 +1624,7 @@ func (d *jsiiProxy_DmsEndpoint) PutRedshiftSettings(value *DmsEndpointRedshiftSe
 	_jsii_.InvokeVoid(
 		d,
 		"putRedshiftSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1636,7 +1635,7 @@ func (d *jsiiProxy_DmsEndpoint) PutS3Settings(value *DmsEndpointS3Settings) {
 	_jsii_.InvokeVoid(
 		d,
 		"putS3Settings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1647,7 +1646,7 @@ func (d *jsiiProxy_DmsEndpoint) PutTimeouts(value *DmsEndpointTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1843,8 +1842,8 @@ func (d *jsiiProxy_DmsEndpoint) ResetUsername() {
 	)
 }
 
-func (d *jsiiProxy_DmsEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DmsEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1856,8 +1855,8 @@ func (d *jsiiProxy_DmsEndpoint) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DmsEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1869,8 +1868,8 @@ func (d *jsiiProxy_DmsEndpoint) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1882,8 +1881,8 @@ func (d *jsiiProxy_DmsEndpoint) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1908,8 +1907,8 @@ func (d *jsiiProxy_DmsEndpoint) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DmsEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1920,4 +1919,3 @@ func (d *jsiiProxy_DmsEndpoint) ToTerraform() interface{} {
 
 	return returns
 }
-

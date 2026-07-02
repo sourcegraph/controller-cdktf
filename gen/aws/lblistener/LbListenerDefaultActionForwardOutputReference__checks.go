@@ -101,7 +101,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardOutputReference) validatePutSti
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardOutputReference) validatePutTargetGroupParameters(value interface{}) error {
+func (l *jsiiProxy_LbListenerDefaultActionForwardOutputReference) validatePutTargetGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionForwardOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerDefaultActionForwardOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewLbListenerDefaultActionForwardOutputReferenceParameters(terrafor
 
 	return nil
 }
-

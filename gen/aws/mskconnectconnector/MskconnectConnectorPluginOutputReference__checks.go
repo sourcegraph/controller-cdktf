@@ -109,7 +109,7 @@ func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorPluginOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorPluginOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_MskconnectConnectorPluginOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorPluginOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorPluginOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,4 +233,3 @@ func validateNewMskconnectConnectorPluginOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

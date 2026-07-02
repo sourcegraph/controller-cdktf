@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEc2TransitGatewayAttachmentFilterOutputReferenceParameter
 
 	return nil
 }
-

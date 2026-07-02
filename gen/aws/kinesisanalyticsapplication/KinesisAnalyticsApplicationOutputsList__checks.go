@@ -34,7 +34,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKinesisAnalyticsApplicationOutputsListParameters(terraformResour
 
 	return nil
 }
-

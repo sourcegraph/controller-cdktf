@@ -15,19 +15,19 @@ type OpensearchInboundConnectionAccepter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
 	ConnectionStatus() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,26 +54,26 @@ type OpensearchInboundConnectionAccepter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OpensearchInboundConnectionAccepterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type OpensearchInboundConnectionAccepter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type OpensearchInboundConnectionAccepter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -116,17 +116,17 @@ type OpensearchInboundConnectionAccepter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpensearchInboundConnectionAccepter
@@ -144,8 +144,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) ConnectionStatus() *stri
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) Timeouts() OpensearchInb
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TimeoutsInput() interfac
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource.
 func NewOpensearchInboundConnectionAccepter(scope constructs.Construct, id *string, config *OpensearchInboundConnectionAccepterConfig) OpensearchInboundConnectionAccepter {
@@ -376,7 +375,7 @@ func NewOpensearchInboundConnectionAccepter(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -389,12 +388,12 @@ func NewOpensearchInboundConnectionAccepter_Override(o OpensearchInboundConnecti
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetConnectionId(val *string) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetConnectionId(val *stri
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetCount(val interface{}) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -435,7 +434,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetId(val *string) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func OpensearchInboundConnectionAccepter_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func OpensearchInboundConnectionAccepter_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpensearchInboundConnectionAccepter_IsConstruct(x interface{}) *bool {
+func OpensearchInboundConnectionAccepter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpensearchInboundConnectionAccepter_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func OpensearchInboundConnectionAccepter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func OpensearchInboundConnectionAccepter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpensearchInboundConnectionAccepter_IsTerraformElement(x interface{}) *bool {
+func OpensearchInboundConnectionAccepter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpensearchInboundConnectionAccepter_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func OpensearchInboundConnectionAccepter_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func OpensearchInboundConnectionAccepter_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func OpensearchInboundConnectionAccepter_IsTerraformResource(x interface{}) *bool {
+func OpensearchInboundConnectionAccepter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpensearchInboundConnectionAccepter_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func OpensearchInboundConnectionAccepter_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetStringAttribute(terra
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -773,7 +772,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) InterpolationForAttribut
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -844,7 +843,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) PutTimeouts(value *Opens
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -872,8 +871,8 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -885,8 +884,8 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) SynthesizeAttributes() *
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -898,8 +897,8 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) SynthesizeHclAttributes(
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -911,8 +910,8 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToHclTerraform() interfa
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -937,8 +936,8 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -949,4 +948,3 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) ToTerraform() interface{
 
 	return returns
 }
-

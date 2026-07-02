@@ -34,7 +34,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKeyspacesTableSchemaDefinitionStaticColumnListParameters(terrafo
 
 	return nil
 }
-

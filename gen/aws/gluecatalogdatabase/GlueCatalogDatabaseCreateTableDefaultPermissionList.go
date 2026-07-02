@@ -17,8 +17,8 @@ type GlueCatalogDatabaseCreateTableDefaultPermissionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GlueCatalogDatabaseCreateTableDefaultPermissionList interface {
 	Get(index *float64) GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) WrapsSet
 	return returns
 }
 
-
 func NewGlueCatalogDatabaseCreateTableDefaultPermissionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogDatabaseCreateTableDefaultPermissionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionList_Override(g GlueCatal
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) AllWithM
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) Get(inde
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) ToString
 
 	return returns
 }
-

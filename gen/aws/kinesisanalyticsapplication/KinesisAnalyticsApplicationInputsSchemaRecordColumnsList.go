@@ -17,8 +17,8 @@ type KinesisAnalyticsApplicationInputsSchemaRecordColumnsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type KinesisAnalyticsApplicationInputsSchemaRecordColumnsList interface {
 	Get(index *float64) KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) Wra
 	return returns
 }
 
-
 func NewKinesisAnalyticsApplicationInputsSchemaRecordColumnsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAnalyticsApplicationInputsSchemaRecordColumnsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewKinesisAnalyticsApplicationInputsSchemaRecordColumnsList(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordColumnsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewKinesisAnalyticsApplicationInputsSchemaRecordColumnsList_Override(k Kine
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordColumnsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetI
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetT
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetT
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) All
 	_jsii_.Invoke(
 		k,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) Get
 	_jsii_.Invoke(
 		k,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsList) ToS
 
 	return returns
 }
-

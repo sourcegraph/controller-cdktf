@@ -19,7 +19,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutClusterModeParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutLogDeliveryConfigurationParameters(value interface{}) error {
+func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutLogDeliveryConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateElasticacheReplicationGroup_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateElasticacheReplicationGroup_IsConstructParameters(x interface{}) error {
+func validateElasticacheReplicationGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateElasticacheReplicationGroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateElasticacheReplicationGroup_IsTerraformElementParameters(x interface{}) error {
+func validateElasticacheReplicationGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateElasticacheReplicationGroup_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateElasticacheReplicationGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateElasticacheReplicationGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateElasticacheReplicationGroup_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetApplyImmediatelyParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetApplyImmediatelyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetApplyImmediatelyParam
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAtRestEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAtRestEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -345,7 +345,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAuthTokenParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutomaticFailoverEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutomaticFailoverEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAvailabilityZonesPara
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -471,7 +471,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetDataTieringEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetDataTieringEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -563,7 +563,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetMaintenanceWindowPara
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetMultiAzEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetMultiAzEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -647,7 +647,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetPreferredCacheCluster
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -789,7 +789,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTagsAllParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTransitEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTransitEncryptionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -835,4 +835,3 @@ func validateNewElasticacheReplicationGroupParameters(scope constructs.Construct
 
 	return nil
 }
-

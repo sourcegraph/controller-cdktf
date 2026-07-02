@@ -98,7 +98,7 @@ func (m *jsiiProxy_MedialiveChannelVpcOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelVpcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelVpcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMedialiveChannelVpcOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

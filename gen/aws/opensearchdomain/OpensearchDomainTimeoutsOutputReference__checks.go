@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewOpensearchDomainTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

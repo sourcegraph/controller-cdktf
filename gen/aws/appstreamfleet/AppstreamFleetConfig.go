@@ -6,9 +6,9 @@ import (
 
 type AppstreamFleetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppstreamFleetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// compute_capacity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet#compute_capacity AppstreamFleet#compute_capacity}
@@ -38,7 +38,7 @@ type AppstreamFleetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet#domain_join_info AppstreamFleet#domain_join_info}
 	DomainJoinInfo *AppstreamFleetDomainJoinInfo `field:"optional" json:"domainJoinInfo" yaml:"domainJoinInfo"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet#enable_default_internet_access AppstreamFleet#enable_default_internet_access}.
-	EnableDefaultInternetAccess interface{} `field:"optional" json:"enableDefaultInternetAccess" yaml:"enableDefaultInternetAccess"`
+	EnableDefaultInternetAccess any `field:"optional" json:"enableDefaultInternetAccess" yaml:"enableDefaultInternetAccess"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet#fleet_type AppstreamFleet#fleet_type}.
 	FleetType *string `field:"optional" json:"fleetType" yaml:"fleetType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet#iam_role_arn AppstreamFleet#iam_role_arn}.
@@ -67,4 +67,3 @@ type AppstreamFleetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appstream_fleet#vpc_config AppstreamFleet#vpc_config}
 	VpcConfig *AppstreamFleetVpcConfig `field:"optional" json:"vpcConfig" yaml:"vpcConfig"`
 }
-

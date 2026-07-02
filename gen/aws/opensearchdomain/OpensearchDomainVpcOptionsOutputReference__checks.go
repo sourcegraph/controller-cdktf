@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOpensearchDomainVpcOptionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package kinesisanalyticsapplication
 
-
 type KinesisAnalyticsApplicationInputs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_analytics_application#name_prefix KinesisAnalyticsApplication#name_prefix}.
 	NamePrefix *string `field:"required" json:"namePrefix" yaml:"namePrefix"`
@@ -27,6 +26,5 @@ type KinesisAnalyticsApplicationInputs struct {
 	// starting_position_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kinesis_analytics_application#starting_position_configuration KinesisAnalyticsApplication#starting_position_configuration}
-	StartingPositionConfiguration interface{} `field:"optional" json:"startingPositionConfiguration" yaml:"startingPositionConfiguration"`
+	StartingPositionConfiguration any `field:"optional" json:"startingPositionConfiguration" yaml:"startingPositionConfiguration"`
 }
-

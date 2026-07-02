@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultRes
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResour
 
 	return nil
 }
-

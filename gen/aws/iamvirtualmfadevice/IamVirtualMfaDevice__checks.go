@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamVirtualMfaDevice) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIamVirtualMfaDevice_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateIamVirtualMfaDevice_IsConstructParameters(x interface{}) error {
+func validateIamVirtualMfaDevice_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIamVirtualMfaDevice_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamVirtualMfaDevice_IsTerraformElementParameters(x interface{}) error {
+func validateIamVirtualMfaDevice_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIamVirtualMfaDevice_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateIamVirtualMfaDevice_IsTerraformResourceParameters(x interface{}) error {
+func validateIamVirtualMfaDevice_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateIamVirtualMfaDevice_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamVirtualMfaDevice) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamVirtualMfaDevice) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice) validateSetPathParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamVirtualMfaDevice) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewIamVirtualMfaDeviceParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

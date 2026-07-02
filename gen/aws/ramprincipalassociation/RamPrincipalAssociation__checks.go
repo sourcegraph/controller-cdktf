@@ -19,7 +19,7 @@ func (r *jsiiProxy_RamPrincipalAssociation) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (r *jsiiProxy_RamPrincipalAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RamPrincipalAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RamPrincipalAssociation) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (r *jsiiProxy_RamPrincipalAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RamPrincipalAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRamPrincipalAssociation_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateRamPrincipalAssociation_IsConstructParameters(x interface{}) error {
+func validateRamPrincipalAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRamPrincipalAssociation_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateRamPrincipalAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateRamPrincipalAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRamPrincipalAssociation_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateRamPrincipalAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateRamPrincipalAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateRamPrincipalAssociation_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_RamPrincipalAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RamPrincipalAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RamPrincipalAssociation) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_RamPrincipalAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RamPrincipalAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_RamPrincipalAssociation) validateSetPrincipalParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_RamPrincipalAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RamPrincipalAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewRamPrincipalAssociationParameters(scope constructs.Construct, id
 
 	return nil
 }
-

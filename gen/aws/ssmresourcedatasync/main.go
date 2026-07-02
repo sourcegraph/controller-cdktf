@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
-		reflect.TypeOf((*SsmResourceDataSync)(nil)).Elem(),
+		reflect.TypeFor[SsmResourceDataSync](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmResourceDataSync{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig",
-		reflect.TypeOf((*SsmResourceDataSyncConfig)(nil)).Elem(),
+		reflect.TypeFor[SsmResourceDataSyncConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination",
-		reflect.TypeOf((*SsmResourceDataSyncS3Destination)(nil)).Elem(),
+		reflect.TypeFor[SsmResourceDataSyncS3Destination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference",
-		reflect.TypeOf((*SsmResourceDataSyncS3DestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SsmResourceDataSyncS3DestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

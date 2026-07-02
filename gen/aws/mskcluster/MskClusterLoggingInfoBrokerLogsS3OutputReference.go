@@ -15,9 +15,9 @@ type MskClusterLoggingInfoBrokerLogsS3OutputReference interface {
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type MskClusterLoggingInfoBrokerLogsS3OutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MskClusterLoggingInfoBrokerLogsS3
@@ -49,7 +49,7 @@ type MskClusterLoggingInfoBrokerLogsS3OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type MskClusterLoggingInfoBrokerLogsS3OutputReference interface {
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) BucketInput
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) Enabled() i
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) TerraformRe
 	return returns
 }
 
-
 func NewMskClusterLoggingInfoBrokerLogsS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsS3OutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewMskClusterLoggingInfoBrokerLogsS3OutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewMskClusterLoggingInfoBrokerLogsS3OutputReference_Override(m MskClusterLo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetBucket(va
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetInternalValue(val *MskClusterLoggingInfoBrokerLogsS3) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetInternalValue(val *MskClusterLoggingInfoBrokerLogsS3) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetPrefix(va
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) ComputeFqn(
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetBooleanA
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetBooleanM
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetListAttr
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetNumberAt
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetNumberLi
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetNumberMa
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetStringAt
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) GetStringMa
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) Interpolati
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) ResetPrefix
 	)
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsS3OutputReference) ToString() 
 
 	return returns
 }
-

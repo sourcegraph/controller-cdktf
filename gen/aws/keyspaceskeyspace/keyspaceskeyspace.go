@@ -16,15 +16,15 @@ type KeyspacesKeyspace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type KeyspacesKeyspace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -68,18 +68,18 @@ type KeyspacesKeyspace interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KeyspacesKeyspaceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type KeyspacesKeyspace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type KeyspacesKeyspace interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type KeyspacesKeyspace interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KeyspacesKeyspace
@@ -162,8 +162,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_KeyspacesKeyspace) Timeouts() KeyspacesKeyspaceTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesKeyspace) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_KeyspacesKeyspace) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace} Resource.
 func NewKeyspacesKeyspace(scope constructs.Construct, id *string, config *KeyspacesKeyspaceConfig) KeyspacesKeyspace {
@@ -424,7 +423,7 @@ func NewKeyspacesKeyspace(scope constructs.Construct, id *string, config *Keyspa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewKeyspacesKeyspace_Override(k KeyspacesKeyspace, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetConnection(val interface{}) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetCount(val interface{}) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetId(val *string) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetName(val *string) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -521,7 +520,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_KeyspacesKeyspace)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KeyspacesKeyspace) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func KeyspacesKeyspace_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func KeyspacesKeyspace_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KeyspacesKeyspace_IsConstruct(x interface{}) *bool {
+func KeyspacesKeyspace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKeyspacesKeyspace_IsConstructParameters(x); err != nil {
@@ -601,7 +600,7 @@ func KeyspacesKeyspace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func KeyspacesKeyspace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KeyspacesKeyspace_IsTerraformElement(x interface{}) *bool {
+func KeyspacesKeyspace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKeyspacesKeyspace_IsTerraformElementParameters(x); err != nil {
@@ -620,7 +619,7 @@ func KeyspacesKeyspace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func KeyspacesKeyspace_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KeyspacesKeyspace_IsTerraformResource(x interface{}) *bool {
+func KeyspacesKeyspace_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKeyspacesKeyspace_IsTerraformResourceParameters(x); err != nil {
@@ -639,7 +638,7 @@ func KeyspacesKeyspace_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,31 +663,31 @@ func (k *jsiiProxy_KeyspacesKeyspace) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KeyspacesKeyspace) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KeyspacesKeyspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,15 +815,15 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeyspacesKeyspace) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -843,7 +842,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -856,7 +855,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,18 +869,18 @@ func (k *jsiiProxy_KeyspacesKeyspace) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KeyspacesKeyspace) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -892,7 +891,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -903,7 +902,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -914,7 +913,7 @@ func (k *jsiiProxy_KeyspacesKeyspace) PutTimeouts(value *KeyspacesKeyspaceTimeou
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -958,8 +957,8 @@ func (k *jsiiProxy_KeyspacesKeyspace) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KeyspacesKeyspace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -971,8 +970,8 @@ func (k *jsiiProxy_KeyspacesKeyspace) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KeyspacesKeyspace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -984,8 +983,8 @@ func (k *jsiiProxy_KeyspacesKeyspace) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeyspacesKeyspace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -997,8 +996,8 @@ func (k *jsiiProxy_KeyspacesKeyspace) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeyspacesKeyspace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1023,8 +1022,8 @@ func (k *jsiiProxy_KeyspacesKeyspace) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesKeyspace) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KeyspacesKeyspace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1035,4 +1034,3 @@ func (k *jsiiProxy_KeyspacesKeyspace) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,12 +12,12 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
-	AllowVersionUpgrade() interface{}
-	SetAllowVersionUpgrade(val interface{})
-	AllowVersionUpgradeInput() interface{}
-	ApplyImmediately() interface{}
-	SetApplyImmediately(val interface{})
-	ApplyImmediatelyInput() interface{}
+	AllowVersionUpgrade() any
+	SetAllowVersionUpgrade(val any)
+	AllowVersionUpgradeInput() any
+	ApplyImmediately() any
+	SetApplyImmediately(val any)
+	ApplyImmediatelyInput() any
 	AquaConfigurationStatus() *string
 	SetAquaConfigurationStatus(val *string)
 	AquaConfigurationStatusInput() *string
@@ -28,9 +28,9 @@ type RedshiftCluster interface {
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
-	AvailabilityZoneRelocationEnabled() interface{}
-	SetAvailabilityZoneRelocationEnabled(val interface{})
-	AvailabilityZoneRelocationEnabledInput() interface{}
+	AvailabilityZoneRelocationEnabled() any
+	SetAvailabilityZoneRelocationEnabled(val any)
+	AvailabilityZoneRelocationEnabledInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterIdentifier() *string
@@ -59,15 +59,15 @@ type RedshiftCluster interface {
 	SetClusterVersion(val *string)
 	ClusterVersionInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
@@ -82,15 +82,15 @@ type RedshiftCluster interface {
 	ElasticIp() *string
 	SetElasticIp(val *string)
 	ElasticIpInput() *string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
-	EnhancedVpcRouting() interface{}
-	SetEnhancedVpcRouting(val interface{})
-	EnhancedVpcRoutingInput() interface{}
+	EnhancedVpcRouting() any
+	SetEnhancedVpcRouting(val any)
+	EnhancedVpcRoutingInput() any
 	FinalSnapshotIdentifier() *string
 	SetFinalSnapshotIdentifier(val *string)
 	FinalSnapshotIdentifierInput() *string
@@ -151,17 +151,17 @@ type RedshiftCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	PubliclyAccessible() interface{}
-	SetPubliclyAccessible(val interface{})
-	PubliclyAccessibleInput() interface{}
+	SetProvisioners(val *[]any)
+	PubliclyAccessible() any
+	SetPubliclyAccessible(val any)
+	PubliclyAccessibleInput() any
 	// Experimental.
-	RawOverrides() interface{}
-	SkipFinalSnapshot() interface{}
-	SetSkipFinalSnapshot(val interface{})
-	SkipFinalSnapshotInput() interface{}
+	RawOverrides() any
+	SkipFinalSnapshot() any
+	SetSkipFinalSnapshot(val any)
+	SkipFinalSnapshotInput() any
 	SnapshotClusterIdentifier() *string
 	SetSnapshotClusterIdentifier(val *string)
 	SnapshotClusterIdentifierInput() *string
@@ -179,11 +179,11 @@ type RedshiftCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RedshiftClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcSecurityGroupIds() *[]*string
 	SetVpcSecurityGroupIds(val *[]*string)
 	VpcSecurityGroupIdsInput() *[]*string
@@ -191,9 +191,9 @@ type RedshiftCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -211,7 +211,7 @@ type RedshiftCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -223,7 +223,7 @@ type RedshiftCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -277,17 +277,17 @@ type RedshiftCluster interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpcSecurityGroupIds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftCluster
@@ -295,8 +295,8 @@ type jsiiProxy_RedshiftCluster struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgrade() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgrade() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowVersionUpgrade",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgrade() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgradeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgradeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowVersionUpgradeInput",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_RedshiftCluster) AllowVersionUpgradeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) ApplyImmediately() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) ApplyImmediately() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediately",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_RedshiftCluster) ApplyImmediately() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) ApplyImmediatelyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) ApplyImmediatelyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applyImmediatelyInput",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"availabilityZoneRelocationEnabled",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabled() interfac
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) AvailabilityZoneRelocationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"availabilityZoneRelocationEnabledInput",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_RedshiftCluster) ClusterVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -615,8 +615,8 @@ func (j *jsiiProxy_RedshiftCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -625,8 +625,8 @@ func (j *jsiiProxy_RedshiftCluster) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -715,8 +715,8 @@ func (j *jsiiProxy_RedshiftCluster) ElasticIpInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -725,8 +725,8 @@ func (j *jsiiProxy_RedshiftCluster) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -755,8 +755,8 @@ func (j *jsiiProxy_RedshiftCluster) EndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRouting() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRouting() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enhancedVpcRouting",
@@ -765,8 +765,8 @@ func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRouting() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRoutingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) EnhancedVpcRoutingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enhancedVpcRoutingInput",
@@ -1115,8 +1115,8 @@ func (j *jsiiProxy_RedshiftCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1125,8 +1125,8 @@ func (j *jsiiProxy_RedshiftCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) PubliclyAccessible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) PubliclyAccessible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessible",
@@ -1135,8 +1135,8 @@ func (j *jsiiProxy_RedshiftCluster) PubliclyAccessible() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) PubliclyAccessibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) PubliclyAccessibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publiclyAccessibleInput",
@@ -1145,8 +1145,8 @@ func (j *jsiiProxy_RedshiftCluster) PubliclyAccessibleInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1155,8 +1155,8 @@ func (j *jsiiProxy_RedshiftCluster) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalSnapshot",
@@ -1165,8 +1165,8 @@ func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipFinalSnapshotInput",
@@ -1285,8 +1285,8 @@ func (j *jsiiProxy_RedshiftCluster) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1315,8 +1315,8 @@ func (j *jsiiProxy_RedshiftCluster) Timeouts() RedshiftClusterTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1345,7 +1345,6 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
@@ -1357,7 +1356,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1370,12 +1369,12 @@ func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetAllowVersionUpgrade(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetAllowVersionUpgrade(val any) {
 	if err := j.validateSetAllowVersionUpgradeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1386,7 +1385,7 @@ func (j *jsiiProxy_RedshiftCluster)SetAllowVersionUpgrade(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetApplyImmediately(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetApplyImmediately(val any) {
 	if err := j.validateSetApplyImmediatelyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1397,7 +1396,7 @@ func (j *jsiiProxy_RedshiftCluster)SetApplyImmediately(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetAquaConfigurationStatus(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetAquaConfigurationStatus(val *string) {
 	if err := j.validateSetAquaConfigurationStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1408,7 +1407,7 @@ func (j *jsiiProxy_RedshiftCluster)SetAquaConfigurationStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetAutomatedSnapshotRetentionPeriod(val *float64) {
+func (j *jsiiProxy_RedshiftCluster) SetAutomatedSnapshotRetentionPeriod(val *float64) {
 	if err := j.validateSetAutomatedSnapshotRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1419,7 +1418,7 @@ func (j *jsiiProxy_RedshiftCluster)SetAutomatedSnapshotRetentionPeriod(val *floa
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetAvailabilityZone(val *string) {
 	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1430,7 +1429,7 @@ func (j *jsiiProxy_RedshiftCluster)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetAvailabilityZoneRelocationEnabled(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetAvailabilityZoneRelocationEnabled(val any) {
 	if err := j.validateSetAvailabilityZoneRelocationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1441,7 +1440,7 @@ func (j *jsiiProxy_RedshiftCluster)SetAvailabilityZoneRelocationEnabled(val inte
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterIdentifier(val *string) {
 	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1452,7 +1451,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterParameterGroupName(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterParameterGroupName(val *string) {
 	if err := j.validateSetClusterParameterGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1463,7 +1462,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterParameterGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterPublicKey(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterPublicKey(val *string) {
 	if err := j.validateSetClusterPublicKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1474,7 +1473,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterPublicKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterRevisionNumber(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterRevisionNumber(val *string) {
 	if err := j.validateSetClusterRevisionNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -1485,7 +1484,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterRevisionNumber(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterSecurityGroups(val *[]*string) {
 	if err := j.validateSetClusterSecurityGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1496,7 +1495,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterSubnetGroupName(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterSubnetGroupName(val *string) {
 	if err := j.validateSetClusterSubnetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1507,7 +1506,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterType(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterType(val *string) {
 	if err := j.validateSetClusterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1518,7 +1517,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetClusterVersion(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetClusterVersion(val *string) {
 	if err := j.validateSetClusterVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1529,7 +1528,7 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1540,7 +1539,7 @@ func (j *jsiiProxy_RedshiftCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1551,7 +1550,7 @@ func (j *jsiiProxy_RedshiftCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetDatabaseName(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetDatabaseName(val *string) {
 	if err := j.validateSetDatabaseNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1562,7 +1561,7 @@ func (j *jsiiProxy_RedshiftCluster)SetDatabaseName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetDefaultIamRoleArn(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetDefaultIamRoleArn(val *string) {
 	if err := j.validateSetDefaultIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1573,7 +1572,7 @@ func (j *jsiiProxy_RedshiftCluster)SetDefaultIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1581,7 +1580,7 @@ func (j *jsiiProxy_RedshiftCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetElasticIp(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetElasticIp(val *string) {
 	if err := j.validateSetElasticIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1592,7 +1591,7 @@ func (j *jsiiProxy_RedshiftCluster)SetElasticIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1603,7 +1602,7 @@ func (j *jsiiProxy_RedshiftCluster)SetEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetEndpoint(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -1614,7 +1613,7 @@ func (j *jsiiProxy_RedshiftCluster)SetEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetEnhancedVpcRouting(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetEnhancedVpcRouting(val any) {
 	if err := j.validateSetEnhancedVpcRoutingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1625,7 +1624,7 @@ func (j *jsiiProxy_RedshiftCluster)SetEnhancedVpcRouting(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetFinalSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetFinalSnapshotIdentifier(val *string) {
 	if err := j.validateSetFinalSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1636,7 +1635,7 @@ func (j *jsiiProxy_RedshiftCluster)SetFinalSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1644,7 +1643,7 @@ func (j *jsiiProxy_RedshiftCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetIamRoles(val *[]*string) {
+func (j *jsiiProxy_RedshiftCluster) SetIamRoles(val *[]*string) {
 	if err := j.validateSetIamRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1655,7 +1654,7 @@ func (j *jsiiProxy_RedshiftCluster)SetIamRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetId(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1666,7 +1665,7 @@ func (j *jsiiProxy_RedshiftCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1677,7 +1676,7 @@ func (j *jsiiProxy_RedshiftCluster)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1688,7 +1687,7 @@ func (j *jsiiProxy_RedshiftCluster)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetMaintenanceTrackName(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetMaintenanceTrackName(val *string) {
 	if err := j.validateSetMaintenanceTrackNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1699,7 +1698,7 @@ func (j *jsiiProxy_RedshiftCluster)SetMaintenanceTrackName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetManualSnapshotRetentionPeriod(val *float64) {
+func (j *jsiiProxy_RedshiftCluster) SetManualSnapshotRetentionPeriod(val *float64) {
 	if err := j.validateSetManualSnapshotRetentionPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1710,7 +1709,7 @@ func (j *jsiiProxy_RedshiftCluster)SetManualSnapshotRetentionPeriod(val *float64
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetMasterPassword(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetMasterPassword(val *string) {
 	if err := j.validateSetMasterPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1721,7 +1720,7 @@ func (j *jsiiProxy_RedshiftCluster)SetMasterPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetMasterUsername(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetMasterUsername(val *string) {
 	if err := j.validateSetMasterUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1732,7 +1731,7 @@ func (j *jsiiProxy_RedshiftCluster)SetMasterUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetNodeType(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1743,7 +1742,7 @@ func (j *jsiiProxy_RedshiftCluster)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetNumberOfNodes(val *float64) {
+func (j *jsiiProxy_RedshiftCluster) SetNumberOfNodes(val *float64) {
 	if err := j.validateSetNumberOfNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1754,7 +1753,7 @@ func (j *jsiiProxy_RedshiftCluster)SetNumberOfNodes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetOwnerAccount(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetOwnerAccount(val *string) {
 	if err := j.validateSetOwnerAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1765,7 +1764,7 @@ func (j *jsiiProxy_RedshiftCluster)SetOwnerAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetPort(val *float64) {
+func (j *jsiiProxy_RedshiftCluster) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1776,7 +1775,7 @@ func (j *jsiiProxy_RedshiftCluster)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetPreferredMaintenanceWindow(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetPreferredMaintenanceWindow(val *string) {
 	if err := j.validateSetPreferredMaintenanceWindowParameters(val); err != nil {
 		panic(err)
 	}
@@ -1787,7 +1786,7 @@ func (j *jsiiProxy_RedshiftCluster)SetPreferredMaintenanceWindow(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1795,7 +1794,7 @@ func (j *jsiiProxy_RedshiftCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1806,7 +1805,7 @@ func (j *jsiiProxy_RedshiftCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetPubliclyAccessible(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetPubliclyAccessible(val any) {
 	if err := j.validateSetPubliclyAccessibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1817,7 +1816,7 @@ func (j *jsiiProxy_RedshiftCluster)SetPubliclyAccessible(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetSkipFinalSnapshot(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster) SetSkipFinalSnapshot(val any) {
 	if err := j.validateSetSkipFinalSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1828,7 +1827,7 @@ func (j *jsiiProxy_RedshiftCluster)SetSkipFinalSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetSnapshotClusterIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetSnapshotClusterIdentifier(val *string) {
 	if err := j.validateSetSnapshotClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1839,7 +1838,7 @@ func (j *jsiiProxy_RedshiftCluster)SetSnapshotClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetSnapshotIdentifier(val *string) {
+func (j *jsiiProxy_RedshiftCluster) SetSnapshotIdentifier(val *string) {
 	if err := j.validateSetSnapshotIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1850,7 +1849,7 @@ func (j *jsiiProxy_RedshiftCluster)SetSnapshotIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftCluster) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1861,7 +1860,7 @@ func (j *jsiiProxy_RedshiftCluster)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftCluster) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1872,7 +1871,7 @@ func (j *jsiiProxy_RedshiftCluster)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetVpcSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_RedshiftCluster) SetVpcSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetVpcSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1895,7 +1894,7 @@ func RedshiftCluster_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1919,7 +1918,7 @@ func RedshiftCluster_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftCluster_IsConstruct(x interface{}) *bool {
+func RedshiftCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftCluster_IsConstructParameters(x); err != nil {
@@ -1930,7 +1929,7 @@ func RedshiftCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1938,7 +1937,7 @@ func RedshiftCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftCluster_IsTerraformElement(x interface{}) *bool {
+func RedshiftCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftCluster_IsTerraformElementParameters(x); err != nil {
@@ -1949,7 +1948,7 @@ func RedshiftCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1957,7 +1956,7 @@ func RedshiftCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftCluster_IsTerraformResource(x interface{}) *bool {
+func RedshiftCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1968,7 +1967,7 @@ func RedshiftCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1993,31 +1992,31 @@ func (r *jsiiProxy_RedshiftCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftCluster) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2033,7 +2032,7 @@ func (r *jsiiProxy_RedshiftCluster) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2049,7 +2048,7 @@ func (r *jsiiProxy_RedshiftCluster) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2065,7 +2064,7 @@ func (r *jsiiProxy_RedshiftCluster) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2081,7 +2080,7 @@ func (r *jsiiProxy_RedshiftCluster) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2097,7 +2096,7 @@ func (r *jsiiProxy_RedshiftCluster) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2113,7 +2112,7 @@ func (r *jsiiProxy_RedshiftCluster) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2129,7 +2128,7 @@ func (r *jsiiProxy_RedshiftCluster) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2145,15 +2144,15 @@ func (r *jsiiProxy_RedshiftCluster) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2172,7 +2171,7 @@ func (r *jsiiProxy_RedshiftCluster) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2185,7 +2184,7 @@ func (r *jsiiProxy_RedshiftCluster) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2199,18 +2198,18 @@ func (r *jsiiProxy_RedshiftCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftCluster) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2221,7 +2220,7 @@ func (r *jsiiProxy_RedshiftCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2232,7 +2231,7 @@ func (r *jsiiProxy_RedshiftCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2243,7 +2242,7 @@ func (r *jsiiProxy_RedshiftCluster) PutLogging(value *RedshiftClusterLogging) {
 	_jsii_.InvokeVoid(
 		r,
 		"putLogging",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2254,7 +2253,7 @@ func (r *jsiiProxy_RedshiftCluster) PutSnapshotCopy(value *RedshiftClusterSnapsh
 	_jsii_.InvokeVoid(
 		r,
 		"putSnapshotCopy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2265,7 +2264,7 @@ func (r *jsiiProxy_RedshiftCluster) PutTimeouts(value *RedshiftClusterTimeouts) 
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2605,8 +2604,8 @@ func (r *jsiiProxy_RedshiftCluster) ResetVpcSecurityGroupIds() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -2618,8 +2617,8 @@ func (r *jsiiProxy_RedshiftCluster) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -2631,8 +2630,8 @@ func (r *jsiiProxy_RedshiftCluster) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2644,8 +2643,8 @@ func (r *jsiiProxy_RedshiftCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2670,8 +2669,8 @@ func (r *jsiiProxy_RedshiftCluster) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2682,4 +2681,3 @@ func (r *jsiiProxy_RedshiftCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

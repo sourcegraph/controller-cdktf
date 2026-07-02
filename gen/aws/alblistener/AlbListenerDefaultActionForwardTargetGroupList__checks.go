@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlbListenerDefaultActionForwardTargetGroupListParameters(terrafo
 
 	return nil
 }
-

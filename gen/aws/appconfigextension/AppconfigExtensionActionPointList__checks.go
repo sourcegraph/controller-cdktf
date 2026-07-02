@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppconfigExtensionActionPointList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigExtensionActionPointList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppconfigExtensionActionPointList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppconfigExtensionActionPointListParameters(terraformResource cd
 
 	return nil
 }
-

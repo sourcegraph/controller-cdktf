@@ -98,7 +98,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewGuarddutyFilterFindingCriteriaCriterionOutputReferenceParameters
 
 	return nil
 }
-

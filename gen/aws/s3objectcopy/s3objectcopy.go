@@ -18,20 +18,20 @@ type S3ObjectCopy interface {
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
-	BucketKeyEnabled() interface{}
-	SetBucketKeyEnabled(val interface{})
-	BucketKeyEnabledInput() interface{}
+	BucketKeyEnabled() any
+	SetBucketKeyEnabled(val any)
+	BucketKeyEnabledInput() any
 	CacheControl() *string
 	SetCacheControl(val *string)
 	CacheControlInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentDisposition() *string
 	SetContentDisposition(val *string)
 	ContentDispositionInput() *string
@@ -57,9 +57,9 @@ type S3ObjectCopy interface {
 	SetCopyIfUnmodifiedSince(val *string)
 	CopyIfUnmodifiedSinceInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerAlgorithm() *string
 	SetCustomerAlgorithm(val *string)
 	CustomerAlgorithmInput() *string
@@ -84,9 +84,9 @@ type S3ObjectCopy interface {
 	Expires() *string
 	SetExpires(val *string)
 	ExpiresInput() *string
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -96,7 +96,7 @@ type S3ObjectCopy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Grant() S3ObjectCopyGrantList
-	GrantInput() interface{}
+	GrantInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -136,11 +136,11 @@ type S3ObjectCopy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestCharged() cdktf.IResolvable
 	RequestPayer() *string
 	SetRequestPayer(val *string)
@@ -176,7 +176,7 @@ type S3ObjectCopy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VersionId() *string
@@ -187,9 +187,9 @@ type S3ObjectCopy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -207,7 +207,7 @@ type S3ObjectCopy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -219,14 +219,14 @@ type S3ObjectCopy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutGrant(value interface{})
+	PutGrant(value any)
 	ResetAcl()
 	ResetBucketKeyEnabled()
 	ResetCacheControl()
@@ -267,17 +267,17 @@ type S3ObjectCopy interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetWebsiteRedirect()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3ObjectCopy
@@ -325,8 +325,8 @@ func (j *jsiiProxy_S3ObjectCopy) BucketInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) BucketKeyEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) BucketKeyEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bucketKeyEnabled",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_S3ObjectCopy) BucketKeyEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) BucketKeyEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) BucketKeyEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bucketKeyEnabledInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_S3ObjectCopy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_S3ObjectCopy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3ObjectCopy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_S3ObjectCopy) CopyIfUnmodifiedSinceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -715,8 +715,8 @@ func (j *jsiiProxy_S3ObjectCopy) ExpiresInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -725,8 +725,8 @@ func (j *jsiiProxy_S3ObjectCopy) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -775,8 +775,8 @@ func (j *jsiiProxy_S3ObjectCopy) Grant() S3ObjectCopyGrantList {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) GrantInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) GrantInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"grantInput",
@@ -1005,8 +1005,8 @@ func (j *jsiiProxy_S3ObjectCopy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3ObjectCopy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1015,8 +1015,8 @@ func (j *jsiiProxy_S3ObjectCopy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ObjectCopy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1255,8 +1255,8 @@ func (j *jsiiProxy_S3ObjectCopy) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3ObjectCopy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1305,7 +1305,6 @@ func (j *jsiiProxy_S3ObjectCopy) WebsiteRedirectInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCopyConfig) S3ObjectCopy {
 	_init_.Initialize()
@@ -1317,7 +1316,7 @@ func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCop
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1330,12 +1329,12 @@ func NewS3ObjectCopy_Override(s S3ObjectCopy, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetAcl(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetAcl(val *string) {
 	if err := j.validateSetAclParameters(val); err != nil {
 		panic(err)
 	}
@@ -1346,7 +1345,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetBucket(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -1357,7 +1356,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetBucketKeyEnabled(val interface{}) {
+func (j *jsiiProxy_S3ObjectCopy) SetBucketKeyEnabled(val any) {
 	if err := j.validateSetBucketKeyEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1368,7 +1367,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetBucketKeyEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCacheControl(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCacheControl(val *string) {
 	if err := j.validateSetCacheControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1379,7 +1378,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCacheControl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3ObjectCopy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1390,7 +1389,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetContentDisposition(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetContentDisposition(val *string) {
 	if err := j.validateSetContentDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1401,7 +1400,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetContentDisposition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetContentEncoding(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetContentEncoding(val *string) {
 	if err := j.validateSetContentEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1412,7 +1411,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetContentEncoding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetContentLanguage(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetContentLanguage(val *string) {
 	if err := j.validateSetContentLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1423,7 +1422,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetContentLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetContentType(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1434,7 +1433,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCopyIfMatch(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCopyIfMatch(val *string) {
 	if err := j.validateSetCopyIfMatchParameters(val); err != nil {
 		panic(err)
 	}
@@ -1445,7 +1444,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCopyIfMatch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCopyIfModifiedSince(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCopyIfModifiedSince(val *string) {
 	if err := j.validateSetCopyIfModifiedSinceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1456,7 +1455,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCopyIfModifiedSince(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCopyIfNoneMatch(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCopyIfNoneMatch(val *string) {
 	if err := j.validateSetCopyIfNoneMatchParameters(val); err != nil {
 		panic(err)
 	}
@@ -1467,7 +1466,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCopyIfNoneMatch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCopyIfUnmodifiedSince(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCopyIfUnmodifiedSince(val *string) {
 	if err := j.validateSetCopyIfUnmodifiedSinceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1478,7 +1477,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCopyIfUnmodifiedSince(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCount(val interface{}) {
+func (j *jsiiProxy_S3ObjectCopy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1489,7 +1488,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCustomerAlgorithm(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCustomerAlgorithm(val *string) {
 	if err := j.validateSetCustomerAlgorithmParameters(val); err != nil {
 		panic(err)
 	}
@@ -1500,7 +1499,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCustomerAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCustomerKey(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCustomerKey(val *string) {
 	if err := j.validateSetCustomerKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1511,7 +1510,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCustomerKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCustomerKeyMd5(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetCustomerKeyMd5(val *string) {
 	if err := j.validateSetCustomerKeyMd5Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1522,7 +1521,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetCustomerKeyMd5(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3ObjectCopy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1530,7 +1529,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetExpectedBucketOwner(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetExpectedBucketOwner(val *string) {
 	if err := j.validateSetExpectedBucketOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1541,7 +1540,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetExpectedBucketOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetExpectedSourceBucketOwner(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetExpectedSourceBucketOwner(val *string) {
 	if err := j.validateSetExpectedSourceBucketOwnerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1552,7 +1551,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetExpectedSourceBucketOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetExpires(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetExpires(val *string) {
 	if err := j.validateSetExpiresParameters(val); err != nil {
 		panic(err)
 	}
@@ -1563,7 +1562,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetExpires(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_S3ObjectCopy) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1574,7 +1573,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3ObjectCopy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1582,7 +1581,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetId(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1593,7 +1592,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetKey(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1604,7 +1603,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetKmsEncryptionContext(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetKmsEncryptionContext(val *string) {
 	if err := j.validateSetKmsEncryptionContextParameters(val); err != nil {
 		panic(err)
 	}
@@ -1615,7 +1614,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetKmsEncryptionContext(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1626,7 +1625,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3ObjectCopy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1637,7 +1636,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_S3ObjectCopy) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1648,7 +1647,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetMetadataDirective(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetMetadataDirective(val *string) {
 	if err := j.validateSetMetadataDirectiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -1659,7 +1658,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetMetadataDirective(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetObjectLockLegalHoldStatus(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetObjectLockLegalHoldStatus(val *string) {
 	if err := j.validateSetObjectLockLegalHoldStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1670,7 +1669,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetObjectLockLegalHoldStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetObjectLockMode(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetObjectLockMode(val *string) {
 	if err := j.validateSetObjectLockModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1681,7 +1680,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetObjectLockMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetObjectLockRetainUntilDate(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetObjectLockRetainUntilDate(val *string) {
 	if err := j.validateSetObjectLockRetainUntilDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1692,7 +1691,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetObjectLockRetainUntilDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3ObjectCopy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1700,7 +1699,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3ObjectCopy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1711,7 +1710,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetRequestPayer(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetRequestPayer(val *string) {
 	if err := j.validateSetRequestPayerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1722,7 +1721,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetRequestPayer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetServerSideEncryption(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetServerSideEncryption(val *string) {
 	if err := j.validateSetServerSideEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1733,7 +1732,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetServerSideEncryption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetSource(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1744,7 +1743,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetSourceCustomerAlgorithm(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetSourceCustomerAlgorithm(val *string) {
 	if err := j.validateSetSourceCustomerAlgorithmParameters(val); err != nil {
 		panic(err)
 	}
@@ -1755,7 +1754,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetSourceCustomerAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetSourceCustomerKey(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetSourceCustomerKey(val *string) {
 	if err := j.validateSetSourceCustomerKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1766,7 +1765,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetSourceCustomerKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetSourceCustomerKeyMd5(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetSourceCustomerKeyMd5(val *string) {
 	if err := j.validateSetSourceCustomerKeyMd5Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1777,7 +1776,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetSourceCustomerKeyMd5(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetStorageClass(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetStorageClass(val *string) {
 	if err := j.validateSetStorageClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1788,7 +1787,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetStorageClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetTaggingDirective(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetTaggingDirective(val *string) {
 	if err := j.validateSetTaggingDirectiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -1799,7 +1798,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetTaggingDirective(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_S3ObjectCopy) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1810,7 +1809,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_S3ObjectCopy) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1821,7 +1820,7 @@ func (j *jsiiProxy_S3ObjectCopy)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetWebsiteRedirect(val *string) {
+func (j *jsiiProxy_S3ObjectCopy) SetWebsiteRedirect(val *string) {
 	if err := j.validateSetWebsiteRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1844,7 +1843,7 @@ func S3ObjectCopy_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1868,7 +1867,7 @@ func S3ObjectCopy_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3ObjectCopy_IsConstruct(x interface{}) *bool {
+func S3ObjectCopy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ObjectCopy_IsConstructParameters(x); err != nil {
@@ -1879,7 +1878,7 @@ func S3ObjectCopy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1887,7 +1886,7 @@ func S3ObjectCopy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3ObjectCopy_IsTerraformElement(x interface{}) *bool {
+func S3ObjectCopy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ObjectCopy_IsTerraformElementParameters(x); err != nil {
@@ -1898,7 +1897,7 @@ func S3ObjectCopy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1906,7 +1905,7 @@ func S3ObjectCopy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3ObjectCopy_IsTerraformResource(x interface{}) *bool {
+func S3ObjectCopy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3ObjectCopy_IsTerraformResourceParameters(x); err != nil {
@@ -1917,7 +1916,7 @@ func S3ObjectCopy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1942,31 +1941,31 @@ func (s *jsiiProxy_S3ObjectCopy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3ObjectCopy) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3ObjectCopy) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3ObjectCopy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3ObjectCopy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1982,7 +1981,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1998,7 +1997,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2014,7 +2013,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2030,7 +2029,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2046,7 +2045,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2062,7 +2061,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2078,7 +2077,7 @@ func (s *jsiiProxy_S3ObjectCopy) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2094,15 +2093,15 @@ func (s *jsiiProxy_S3ObjectCopy) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3ObjectCopy) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ObjectCopy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -2121,7 +2120,7 @@ func (s *jsiiProxy_S3ObjectCopy) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2134,7 +2133,7 @@ func (s *jsiiProxy_S3ObjectCopy) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2148,18 +2147,18 @@ func (s *jsiiProxy_S3ObjectCopy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3ObjectCopy) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3ObjectCopy) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2170,7 +2169,7 @@ func (s *jsiiProxy_S3ObjectCopy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2181,18 +2180,18 @@ func (s *jsiiProxy_S3ObjectCopy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_S3ObjectCopy) PutGrant(value interface{}) {
+func (s *jsiiProxy_S3ObjectCopy) PutGrant(value any) {
 	if err := s.validatePutGrantParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putGrant",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2500,8 +2499,8 @@ func (s *jsiiProxy_S3ObjectCopy) ResetWebsiteRedirect() {
 	)
 }
 
-func (s *jsiiProxy_S3ObjectCopy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3ObjectCopy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -2513,8 +2512,8 @@ func (s *jsiiProxy_S3ObjectCopy) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (s *jsiiProxy_S3ObjectCopy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3ObjectCopy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -2526,8 +2525,8 @@ func (s *jsiiProxy_S3ObjectCopy) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (s *jsiiProxy_S3ObjectCopy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ObjectCopy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -2539,8 +2538,8 @@ func (s *jsiiProxy_S3ObjectCopy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3ObjectCopy) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ObjectCopy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -2565,8 +2564,8 @@ func (s *jsiiProxy_S3ObjectCopy) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3ObjectCopy) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3ObjectCopy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -2577,4 +2576,3 @@ func (s *jsiiProxy_S3ObjectCopy) ToTerraform() interface{} {
 
 	return returns
 }
-

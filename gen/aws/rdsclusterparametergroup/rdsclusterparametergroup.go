@@ -16,15 +16,15 @@ type RdsClusterParameterGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,17 +59,17 @@ type RdsClusterParameterGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	Parameter() RdsClusterParameterGroupParameterList
-	ParameterInput() interface{}
+	ParameterInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -79,16 +79,16 @@ type RdsClusterParameterGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type RdsClusterParameterGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,14 +118,14 @@ type RdsClusterParameterGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutParameter(value interface{})
+	PutParameter(value any)
 	ResetDescription()
 	ResetId()
 	ResetName()
@@ -136,17 +136,17 @@ type RdsClusterParameterGroup interface {
 	ResetParameter()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RdsClusterParameterGroup
@@ -174,8 +174,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) Parameter() RdsClusterParameterGrou
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) ParameterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) ParameterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterInput",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_RdsClusterParameterGroup) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RdsClusterParameterGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -484,7 +484,6 @@ func (j *jsiiProxy_RdsClusterParameterGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/rds_cluster_parameter_group aws_rds_cluster_parameter_group} Resource.
 func NewRdsClusterParameterGroup(scope constructs.Construct, id *string, config *RdsClusterParameterGroupConfig) RdsClusterParameterGroup {
 	_init_.Initialize()
@@ -496,7 +495,7 @@ func NewRdsClusterParameterGroup(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -509,12 +508,12 @@ func NewRdsClusterParameterGroup_Override(r RdsClusterParameterGroup, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetDescription(val *string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetFamily(val *string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetFamily(val *string) {
 	if err := j.validateSetFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetId(val *string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetName(val *string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetNamePrefix(val *string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -626,7 +625,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_RdsClusterParameterGroup)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroup)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RdsClusterParameterGroup) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func RdsClusterParameterGroup_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func RdsClusterParameterGroup_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RdsClusterParameterGroup_IsConstruct(x interface{}) *bool {
+func RdsClusterParameterGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterParameterGroup_IsConstructParameters(x); err != nil {
@@ -706,7 +705,7 @@ func RdsClusterParameterGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func RdsClusterParameterGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
+func RdsClusterParameterGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterParameterGroup_IsTerraformElementParameters(x); err != nil {
@@ -725,7 +724,7 @@ func RdsClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func RdsClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RdsClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
+func RdsClusterParameterGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRdsClusterParameterGroup_IsTerraformResourceParameters(x); err != nil {
@@ -744,7 +743,7 @@ func RdsClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,31 +768,31 @@ func (r *jsiiProxy_RdsClusterParameterGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RdsClusterParameterGroup) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RdsClusterParameterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,15 +920,15 @@ func (r *jsiiProxy_RdsClusterParameterGroup) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterParameterGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -948,7 +947,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -961,7 +960,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,18 +974,18 @@ func (r *jsiiProxy_RdsClusterParameterGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RdsClusterParameterGroup) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -997,7 +996,7 @@ func (r *jsiiProxy_RdsClusterParameterGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1008,18 +1007,18 @@ func (r *jsiiProxy_RdsClusterParameterGroup) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) PutParameter(value interface{}) {
+func (r *jsiiProxy_RdsClusterParameterGroup) PutParameter(value any) {
 	if err := r.validatePutParameterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,8 +1086,8 @@ func (r *jsiiProxy_RdsClusterParameterGroup) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsClusterParameterGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1100,8 +1099,8 @@ func (r *jsiiProxy_RdsClusterParameterGroup) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RdsClusterParameterGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1113,8 +1112,8 @@ func (r *jsiiProxy_RdsClusterParameterGroup) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterParameterGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1126,8 +1125,8 @@ func (r *jsiiProxy_RdsClusterParameterGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterParameterGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1152,8 +1151,8 @@ func (r *jsiiProxy_RdsClusterParameterGroup) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RdsClusterParameterGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1164,4 +1163,3 @@ func (r *jsiiProxy_RdsClusterParameterGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

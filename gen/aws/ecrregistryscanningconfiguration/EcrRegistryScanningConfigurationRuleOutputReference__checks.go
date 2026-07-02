@@ -90,7 +90,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validatePutRepositoryFilterParameters(value interface{}) error {
+func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validatePutRepositoryFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewEcrRegistryScanningConfigurationRuleOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	// Experimental.
 	CreationStack() *[]*string
 	CustomField() IotIndexingConfigurationThingIndexingConfigurationCustomFieldList
-	CustomFieldInput() interface{}
+	CustomFieldInput() any
 	DeviceDefenderIndexingMode() *string
 	SetDeviceDefenderIndexingMode(val *string)
 	DeviceDefenderIndexingModeInput() *string
@@ -35,7 +35,7 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	InternalValue() *IotIndexingConfigurationThingIndexingConfiguration
 	SetInternalValue(val *IotIndexingConfigurationThingIndexingConfiguration)
 	ManagedField() IotIndexingConfigurationThingIndexingConfigurationManagedFieldList
-	ManagedFieldInput() interface{}
+	ManagedFieldInput() any
 	NamedShadowIndexingMode() *string
 	SetNamedShadowIndexingMode(val *string)
 	NamedShadowIndexingModeInput() *string
@@ -56,7 +56,7 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,8 +77,8 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomField(value interface{})
-	PutManagedField(value interface{})
+	PutCustomField(value any)
+	PutManagedField(value any)
 	ResetCustomField()
 	ResetDeviceDefenderIndexingMode()
 	ResetManagedField()
@@ -86,7 +86,7 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	ResetThingConnectivityIndexingMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) CustomFieldInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) CustomFieldInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customFieldInput",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) ManagedFieldInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) ManagedFieldInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedFieldInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	return returns
 }
 
-
 func NewIotIndexingConfigurationThingIndexingConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotIndexingConfigurationThingIndexingConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewIotIndexingConfigurationThingIndexingConfigurationOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewIotIndexingConfigurationThingIndexingConfigurationOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetDeviceDefenderIndexingMode(val *string) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetDeviceDefenderIndexingMode(val *string) {
 	if err := j.validateSetDeviceDefenderIndexingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetInternalValue(val *IotIndexingConfigurationThingIndexingConfiguration) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetInternalValue(val *IotIndexingConfigurationThingIndexingConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetNamedShadowIndexingMode(val *string) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetNamedShadowIndexingMode(val *string) {
 	if err := j.validateSetNamedShadowIndexingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetThingConnectivityIndexingMode(val *string) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetThingConnectivityIndexingMode(val *string) {
 	if err := j.validateSetThingConnectivityIndexingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference)SetThingIndexingMode(val *string) {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) SetThingIndexingMode(val *string) {
 	if err := j.validateSetThingIndexingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,16 +428,16 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	return returns
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,32 +594,32 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) PutCustomField(value interface{}) {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) PutCustomField(value any) {
 	if err := i.validatePutCustomFieldParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putCustomField",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) PutManagedField(value interface{}) {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) PutManagedField(value any) {
 	if err := i.validatePutManagedFieldParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putManagedField",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 
 	return returns
 }
-

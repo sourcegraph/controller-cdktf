@@ -15,9 +15,9 @@ type EfsReplicationConfigurationDestinationOutputReference interface {
 	AvailabilityZoneNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type EfsReplicationConfigurationDestinationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type EfsReplicationConfigurationDestinationOutputReference interface {
 	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) Availa
 	return returns
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) Terraf
 	return returns
 }
 
-
 func NewEfsReplicationConfigurationDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EfsReplicationConfigurationDestinationOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewEfsReplicationConfigurationDestinationOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewEfsReplicationConfigurationDestinationOutputReference_Override(e EfsRepl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetAvailabilityZoneName(val *string) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetAvailabilityZoneName(val *string) {
 	if err := j.validateSetAvailabilityZoneNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetAvai
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetInternalValue(val *EfsReplicationConfigurationDestination) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetInternalValue(val *EfsReplicationConfigurationDestination) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetKmsK
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetRegi
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,16 +368,16 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) Comput
 	return returns
 }
 
-func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetBoo
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetBoo
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetLis
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetNum
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetStr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) GetStr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) Interp
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -566,16 +565,16 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) ResetR
 	)
 }
 
-func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -594,4 +593,3 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) ToStri
 
 	return returns
 }
-

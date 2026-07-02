@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsDynamodbTableAttributeOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTableAttributeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDynamodbTableAttributeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsDynamodbTableAttributeOutputReferenceParameters(terraform
 
 	return nil
 }
-

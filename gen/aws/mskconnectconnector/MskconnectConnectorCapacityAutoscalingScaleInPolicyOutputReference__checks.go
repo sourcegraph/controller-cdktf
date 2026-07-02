@@ -98,7 +98,7 @@ func (m *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReferen
 
 	return nil
 }
-

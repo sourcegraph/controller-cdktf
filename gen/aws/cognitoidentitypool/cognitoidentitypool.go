@@ -12,27 +12,27 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool}.
 type CognitoIdentityPool interface {
 	cdktf.TerraformResource
-	AllowClassicFlow() interface{}
-	SetAllowClassicFlow(val interface{})
-	AllowClassicFlowInput() interface{}
-	AllowUnauthenticatedIdentities() interface{}
-	SetAllowUnauthenticatedIdentities(val interface{})
-	AllowUnauthenticatedIdentitiesInput() interface{}
+	AllowClassicFlow() any
+	SetAllowClassicFlow(val any)
+	AllowClassicFlowInput() any
+	AllowUnauthenticatedIdentities() any
+	SetAllowUnauthenticatedIdentities(val any)
+	AllowUnauthenticatedIdentitiesInput() any
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CognitoIdentityProviders() CognitoIdentityPoolCognitoIdentityProvidersList
-	CognitoIdentityProvidersInput() interface{}
+	CognitoIdentityProvidersInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,11 +68,11 @@ type CognitoIdentityPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SamlProviderArns() *[]*string
 	SetSamlProviderArns(val *[]*string)
 	SamlProviderArnsInput() *[]*string
@@ -88,16 +88,16 @@ type CognitoIdentityPool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type CognitoIdentityPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,14 +127,14 @@ type CognitoIdentityPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCognitoIdentityProviders(value interface{})
+	PutCognitoIdentityProviders(value any)
 	ResetAllowClassicFlow()
 	ResetAllowUnauthenticatedIdentities()
 	ResetCognitoIdentityProviders()
@@ -148,17 +148,17 @@ type CognitoIdentityPool interface {
 	ResetSupportedLoginProviders()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CognitoIdentityPool
@@ -166,8 +166,8 @@ type jsiiProxy_CognitoIdentityPool struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) AllowClassicFlow() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) AllowClassicFlow() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowClassicFlow",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_CognitoIdentityPool) AllowClassicFlow() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) AllowClassicFlowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) AllowClassicFlowInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowClassicFlowInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_CognitoIdentityPool) AllowClassicFlowInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) AllowUnauthenticatedIdentities() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) AllowUnauthenticatedIdentities() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUnauthenticatedIdentities",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_CognitoIdentityPool) AllowUnauthenticatedIdentities() interfa
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) AllowUnauthenticatedIdentitiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) AllowUnauthenticatedIdentitiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUnauthenticatedIdentitiesInput",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_CognitoIdentityPool) CognitoIdentityProviders() CognitoIdenti
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) CognitoIdentityProvidersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) CognitoIdentityProvidersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cognitoIdentityProvidersInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_CognitoIdentityPool) CognitoIdentityProvidersInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_CognitoIdentityPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoIdentityPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_CognitoIdentityPool) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_CognitoIdentityPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CognitoIdentityPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_CognitoIdentityPool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoIdentityPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_CognitoIdentityPool) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_CognitoIdentityPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CognitoIdentityPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -556,7 +556,6 @@ func (j *jsiiProxy_CognitoIdentityPool) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool} Resource.
 func NewCognitoIdentityPool(scope constructs.Construct, id *string, config *CognitoIdentityPoolConfig) CognitoIdentityPool {
 	_init_.Initialize()
@@ -568,7 +567,7 @@ func NewCognitoIdentityPool(scope constructs.Construct, id *string, config *Cogn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -581,12 +580,12 @@ func NewCognitoIdentityPool_Override(c CognitoIdentityPool, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetAllowClassicFlow(val interface{}) {
+func (j *jsiiProxy_CognitoIdentityPool) SetAllowClassicFlow(val any) {
 	if err := j.validateSetAllowClassicFlowParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetAllowClassicFlow(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetAllowUnauthenticatedIdentities(val interface{}) {
+func (j *jsiiProxy_CognitoIdentityPool) SetAllowUnauthenticatedIdentities(val any) {
 	if err := j.validateSetAllowUnauthenticatedIdentitiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetAllowUnauthenticatedIdentities(val int
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_CognitoIdentityPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetCount(val interface{}) {
+func (j *jsiiProxy_CognitoIdentityPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetDeveloperProviderName(val *string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetDeveloperProviderName(val *string) {
 	if err := j.validateSetDeveloperProviderNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetDeveloperProviderName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CognitoIdentityPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetId(val *string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetIdentityPoolName(val *string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetIdentityPoolName(val *string) {
 	if err := j.validateSetIdentityPoolNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetIdentityPoolName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CognitoIdentityPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetOpenidConnectProviderArns(val *[]*string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetOpenidConnectProviderArns(val *[]*string) {
 	if err := j.validateSetOpenidConnectProviderArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetOpenidConnectProviderArns(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CognitoIdentityPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CognitoIdentityPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetSamlProviderArns(val *[]*string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetSamlProviderArns(val *[]*string) {
 	if err := j.validateSetSamlProviderArnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetSamlProviderArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetSupportedLoginProviders(val *map[string]*string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetSupportedLoginProviders(val *map[string]*string) {
 	if err := j.validateSetSupportedLoginProvidersParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetSupportedLoginProviders(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_CognitoIdentityPool)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CognitoIdentityPool)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CognitoIdentityPool) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func CognitoIdentityPool_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func CognitoIdentityPool_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CognitoIdentityPool_IsConstruct(x interface{}) *bool {
+func CognitoIdentityPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoIdentityPool_IsConstructParameters(x); err != nil {
@@ -811,7 +810,7 @@ func CognitoIdentityPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func CognitoIdentityPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoIdentityPool_IsTerraformElement(x interface{}) *bool {
+func CognitoIdentityPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoIdentityPool_IsTerraformElementParameters(x); err != nil {
@@ -830,7 +829,7 @@ func CognitoIdentityPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func CognitoIdentityPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CognitoIdentityPool_IsTerraformResource(x interface{}) *bool {
+func CognitoIdentityPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCognitoIdentityPool_IsTerraformResourceParameters(x); err != nil {
@@ -849,7 +848,7 @@ func CognitoIdentityPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -874,31 +873,31 @@ func (c *jsiiProxy_CognitoIdentityPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CognitoIdentityPool) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoIdentityPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (c *jsiiProxy_CognitoIdentityPool) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,15 +1025,15 @@ func (c *jsiiProxy_CognitoIdentityPool) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1053,7 +1052,7 @@ func (c *jsiiProxy_CognitoIdentityPool) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (c *jsiiProxy_CognitoIdentityPool) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,18 +1079,18 @@ func (c *jsiiProxy_CognitoIdentityPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CognitoIdentityPool) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (c *jsiiProxy_CognitoIdentityPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1113,18 +1112,18 @@ func (c *jsiiProxy_CognitoIdentityPool) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) PutCognitoIdentityProviders(value interface{}) {
+func (c *jsiiProxy_CognitoIdentityPool) PutCognitoIdentityProviders(value any) {
 	if err := c.validatePutCognitoIdentityProvidersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCognitoIdentityProviders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1216,8 +1215,8 @@ func (c *jsiiProxy_CognitoIdentityPool) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoIdentityPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1229,8 +1228,8 @@ func (c *jsiiProxy_CognitoIdentityPool) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CognitoIdentityPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1242,8 +1241,8 @@ func (c *jsiiProxy_CognitoIdentityPool) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1255,8 +1254,8 @@ func (c *jsiiProxy_CognitoIdentityPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1281,8 +1280,8 @@ func (c *jsiiProxy_CognitoIdentityPool) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CognitoIdentityPool) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CognitoIdentityPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1293,4 +1292,3 @@ func (c *jsiiProxy_CognitoIdentityPool) ToTerraform() interface{} {
 
 	return returns
 }
-

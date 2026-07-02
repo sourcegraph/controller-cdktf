@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList) val
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksPhpAppLayerCloudwatchConfigurationLogStreamsListParamete
 
 	return nil
 }
-

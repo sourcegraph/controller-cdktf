@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCodestarconnectionsHostVpcConfigurationOutputReferenceParameters
 
 	return nil
 }
-

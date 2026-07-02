@@ -34,7 +34,7 @@ func (w *jsiiProxy_WafregionalIpsetIpSetDescriptorList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafregionalIpsetIpSetDescriptorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWafregionalIpsetIpSetDescriptorListParameters(terraformResource 
 
 	return nil
 }
-

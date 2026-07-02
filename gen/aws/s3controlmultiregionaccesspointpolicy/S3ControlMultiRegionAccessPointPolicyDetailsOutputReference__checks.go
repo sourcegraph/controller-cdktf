@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicyDetailsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicyDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicyDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewS3ControlMultiRegionAccessPointPolicyDetailsOutputReferenceParam
 
 	return nil
 }
-

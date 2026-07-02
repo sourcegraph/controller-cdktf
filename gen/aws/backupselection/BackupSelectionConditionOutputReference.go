@@ -12,9 +12,9 @@ type BackupSelectionConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,16 +27,16 @@ type BackupSelectionConditionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	StringEquals() BackupSelectionConditionStringEqualsList
-	StringEqualsInput() interface{}
+	StringEqualsInput() any
 	StringLike() BackupSelectionConditionStringLikeList
-	StringLikeInput() interface{}
+	StringLikeInput() any
 	StringNotEquals() BackupSelectionConditionStringNotEqualsList
-	StringNotEqualsInput() interface{}
+	StringNotEqualsInput() any
 	StringNotLike() BackupSelectionConditionStringNotLikeList
-	StringNotLikeInput() interface{}
+	StringNotLikeInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type BackupSelectionConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,17 +69,17 @@ type BackupSelectionConditionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStringEquals(value interface{})
-	PutStringLike(value interface{})
-	PutStringNotEquals(value interface{})
-	PutStringNotLike(value interface{})
+	PutStringEquals(value any)
+	PutStringLike(value any)
+	PutStringNotEquals(value any)
+	PutStringNotLike(value any)
 	ResetStringEquals()
 	ResetStringLike()
 	ResetStringNotEquals()
 	ResetStringNotLike()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_BackupSelectionConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringEquals() Backu
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringEqualsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringEqualsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stringEqualsInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringLike() BackupS
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringLikeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringLikeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stringLikeInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringNotEquals() Ba
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringNotEqualsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringNotEqualsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stringNotEqualsInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringNotLike() Back
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringNotLikeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) StringNotLikeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stringNotLikeInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewBackupSelectionConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BackupSelectionConditionOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewBackupSelectionConditionOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewBackupSelectionConditionOutputReference_Override(b BackupSelectionCondit
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_BackupSelectionConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupSelectionConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,54 +503,54 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringEquals(value interface{}) {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringEquals(value any) {
 	if err := b.validatePutStringEqualsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putStringEquals",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringLike(value interface{}) {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringLike(value any) {
 	if err := b.validatePutStringLikeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putStringLike",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringNotEquals(value interface{}) {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringNotEquals(value any) {
 	if err := b.validatePutStringNotEqualsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putStringNotEquals",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringNotLike(value interface{}) {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) PutStringNotLike(value any) {
 	if err := b.validatePutStringNotLikeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putStringNotLike",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) ResetStringNotLike()
 	)
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) ToString() *string {
 
 	return returns
 }
-

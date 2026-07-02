@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewOpensearchInboundConnectionAccepterTimeoutsOutputReferenceParame
 
 	return nil
 }
-

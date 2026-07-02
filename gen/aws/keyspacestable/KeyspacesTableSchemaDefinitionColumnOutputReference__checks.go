@@ -98,7 +98,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKeyspacesTableSchemaDefinitionColumnOutputReferenceParameters(te
 
 	return nil
 }
-

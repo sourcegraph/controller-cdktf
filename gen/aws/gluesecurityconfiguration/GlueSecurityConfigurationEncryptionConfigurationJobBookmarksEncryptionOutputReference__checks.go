@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationJobBookmarksE
 	return nil
 }
 
-func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncr
 
 	return nil
 }
-

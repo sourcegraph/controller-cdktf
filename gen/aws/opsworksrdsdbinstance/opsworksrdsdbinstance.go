@@ -15,15 +15,15 @@ type OpsworksRdsDbInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbPassword() *string
 	SetDbPassword(val *string)
 	DbPasswordInput() *string
@@ -56,11 +56,11 @@ type OpsworksRdsDbInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RdsDbInstanceArn() *string
 	SetRdsDbInstanceArn(val *string)
 	RdsDbInstanceArnInput() *string
@@ -70,16 +70,16 @@ type OpsworksRdsDbInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type OpsworksRdsDbInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type OpsworksRdsDbInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type OpsworksRdsDbInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksRdsDbInstance
@@ -148,8 +148,8 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksRdsDbInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksRdsDbInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksRdsDbInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksRdsDbInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksRdsDbInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksRdsDbInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
 func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *OpsworksRdsDbInstanceConfig) OpsworksRdsDbInstance {
 	_init_.Initialize()
@@ -410,7 +409,7 @@ func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *Op
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewOpsworksRdsDbInstance_Override(o OpsworksRdsDbInstance, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetDbPassword(val *string) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetDbPassword(val *string) {
 	if err := j.validateSetDbPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetDbPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetDbUser(val *string) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetDbUser(val *string) {
 	if err := j.validateSetDbUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetDbUser(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetId(val *string) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetRdsDbInstanceArn(val *string) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetRdsDbInstanceArn(val *string) {
 	if err := j.validateSetRdsDbInstanceArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance)SetRdsDbInstanceArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksRdsDbInstance)SetStackId(val *string) {
+func (j *jsiiProxy_OpsworksRdsDbInstance) SetStackId(val *string) {
 	if err := j.validateSetStackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func OpsworksRdsDbInstance_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func OpsworksRdsDbInstance_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksRdsDbInstance_IsConstruct(x interface{}) *bool {
+func OpsworksRdsDbInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksRdsDbInstance_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func OpsworksRdsDbInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func OpsworksRdsDbInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksRdsDbInstance_IsTerraformElement(x interface{}) *bool {
+func OpsworksRdsDbInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksRdsDbInstance_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func OpsworksRdsDbInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func OpsworksRdsDbInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksRdsDbInstance_IsTerraformResource(x interface{}) *bool {
+func OpsworksRdsDbInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksRdsDbInstance_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func OpsworksRdsDbInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksRdsDbInstance) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksRdsDbInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksRdsDbInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -840,7 +839,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksRdsDbInstance) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -920,8 +919,8 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) ResetOverrideLogicalId() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksRdsDbInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -933,8 +932,8 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksRdsDbInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -946,8 +945,8 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksRdsDbInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -959,8 +958,8 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksRdsDbInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -985,8 +984,8 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRdsDbInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksRdsDbInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -997,4 +996,3 @@ func (o *jsiiProxy_OpsworksRdsDbInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

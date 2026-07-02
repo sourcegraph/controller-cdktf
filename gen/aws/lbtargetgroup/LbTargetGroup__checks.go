@@ -19,7 +19,7 @@ func (l *jsiiProxy_LbTargetGroup) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LbTargetGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LbTargetGroup) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LbTargetGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (l *jsiiProxy_LbTargetGroup) validatePutStickinessParameters(value *LbTarge
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateLbTargetGroup_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateLbTargetGroup_IsConstructParameters(x interface{}) error {
+func validateLbTargetGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateLbTargetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLbTargetGroup_IsTerraformElementParameters(x interface{}) error {
+func validateLbTargetGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateLbTargetGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLbTargetGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateLbTargetGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateLbTargetGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_LbTargetGroup) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroup) validateSetConnectionTerminationParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroup) validateSetConnectionTerminationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -350,7 +350,7 @@ func (j *jsiiProxy_LbTargetGroup) validateSetConnectionTerminationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_LbTargetGroup) validateSetIpAddressTypeParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroup) validateSetLambdaMultiValueHeadersEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroup) validateSetLambdaMultiValueHeadersEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -515,7 +515,7 @@ func (j *jsiiProxy_LbTargetGroup) validateSetProtocolVersionParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LbTargetGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -561,7 +561,7 @@ func (j *jsiiProxy_LbTargetGroup) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroup) validateSetProxyProtocolV2Parameters(val interface{}) error {
+func (j *jsiiProxy_LbTargetGroup) validateSetProxyProtocolV2Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -636,4 +636,3 @@ func validateNewLbTargetGroupParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

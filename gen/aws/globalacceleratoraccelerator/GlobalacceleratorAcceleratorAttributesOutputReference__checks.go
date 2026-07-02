@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateSetFlowLogsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateSetFlowLogsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGlobalacceleratorAcceleratorAttributesOutputReferenceParameters(
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsVpcIpamPoolsIpamPoolsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

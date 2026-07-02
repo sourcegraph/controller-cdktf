@@ -1,6 +1,5 @@
 package dataawslakeformationpermissions
 
-
 type DataAwsLakeformationPermissionsTableWithColumns struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#database_name DataAwsLakeformationPermissions#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
@@ -13,6 +12,5 @@ type DataAwsLakeformationPermissionsTableWithColumns struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#excluded_column_names DataAwsLakeformationPermissions#excluded_column_names}.
 	ExcludedColumnNames *[]*string `field:"optional" json:"excludedColumnNames" yaml:"excludedColumnNames"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/lakeformation_permissions#wildcard DataAwsLakeformationPermissions#wildcard}.
-	Wildcard interface{} `field:"optional" json:"wildcard" yaml:"wildcard"`
+	Wildcard any `field:"optional" json:"wildcard" yaml:"wildcard"`
 }
-

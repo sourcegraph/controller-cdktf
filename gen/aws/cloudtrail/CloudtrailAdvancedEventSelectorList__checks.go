@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudtrailAdvancedEventSelectorListParameters(terraformResource 
 
 	return nil
 }
-

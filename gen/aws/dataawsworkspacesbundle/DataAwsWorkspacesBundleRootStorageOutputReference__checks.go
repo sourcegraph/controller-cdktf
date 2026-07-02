@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsWorkspacesBundleRootStorageOutputReferenceParameters(terr
 
 	return nil
 }
-

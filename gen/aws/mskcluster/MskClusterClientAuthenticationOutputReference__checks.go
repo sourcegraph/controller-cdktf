@@ -120,7 +120,7 @@ func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetUnauthenticatedParameters(val interface{}) error {
+func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetUnauthenticatedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -240,4 +240,3 @@ func validateNewMskClusterClientAuthenticationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

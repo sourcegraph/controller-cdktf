@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersOracleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersOracleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersOracleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewQuicksightDataSourceParametersOracleOutputReferenceParameters(te
 
 	return nil
 }
-

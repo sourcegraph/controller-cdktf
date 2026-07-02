@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsSecretsmanagerRandomPassword_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataAwsSecretsmanagerRandomPassword_IsConstructParameters(x interface{}) error {
+func validateDataAwsSecretsmanagerRandomPassword_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsSecretsmanagerRandomPassword_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataAwsSecretsmanagerRandomPassword_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsSecretsmanagerRandomPassword_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsSecretsmanagerRandomPassword_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataAwsSecretsmanagerRandomPassword_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsSecretsmanagerRandomPassword_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsSecretsmanagerRandomPassword_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeCharac
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeLowercaseParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeLowercaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeLowerc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeNumbersParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeNumbersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -256,7 +256,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeNumber
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludePunctuationParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludePunctuationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludePunctu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeUppercaseParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeUppercaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetIncludeSpaceParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetIncludeSpaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRandomPasswor
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRequireEachIncludedTypeParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRequireEachIncludedTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -383,4 +383,3 @@ func validateNewDataAwsSecretsmanagerRandomPasswordParameters(scope constructs.C
 
 	return nil
 }
-

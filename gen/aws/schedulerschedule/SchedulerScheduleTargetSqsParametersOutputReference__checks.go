@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetSqsParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetSqsParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleTargetSqsParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSchedulerScheduleTargetSqsParametersOutputReferenceParameters(te
 
 	return nil
 }
-

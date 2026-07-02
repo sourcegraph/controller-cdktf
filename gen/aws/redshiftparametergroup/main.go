@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
-		reflect.TypeOf((*RedshiftParameterGroup)(nil)).Elem(),
+		reflect.TypeFor[RedshiftParameterGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftParameterGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig",
-		reflect.TypeOf((*RedshiftParameterGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftParameterGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter",
-		reflect.TypeOf((*RedshiftParameterGroupParameter)(nil)).Elem(),
+		reflect.TypeFor[RedshiftParameterGroupParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
-		reflect.TypeOf((*RedshiftParameterGroupParameterList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftParameterGroupParameterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftParameterGroupParameterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
-		reflect.TypeOf((*RedshiftParameterGroupParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftParameterGroupParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftParameterGroupParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

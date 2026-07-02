@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
-		reflect.TypeOf((*AppsyncDatasource)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,19 +97,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig",
-		reflect.TypeOf((*AppsyncDatasourceConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig",
-		reflect.TypeOf((*AppsyncDatasourceDynamodbConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceDynamodbConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig",
-		reflect.TypeOf((*AppsyncDatasourceDynamodbConfigDeltaSyncConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceDynamodbConfigDeltaSyncConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseTableTtl", GoGetter: "BaseTableTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "baseTableTtlInput", GoGetter: "BaseTableTtlInput"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,7 +149,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceDynamodbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceDynamodbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versioned", GoGetter: "Versioned"},
 			_jsii_.MemberProperty{JsiiProperty: "versionedInput", GoGetter: "VersionedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig",
-		reflect.TypeOf((*AppsyncDatasourceElasticsearchConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceElasticsearchConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceElasticsearchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceElasticsearchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceElasticsearchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,19 +237,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig",
-		reflect.TypeOf((*AppsyncDatasourceHttpConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceHttpConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig",
-		reflect.TypeOf((*AppsyncDatasourceHttpConfigAuthorizationConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceHttpConfigAuthorizationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig",
-		reflect.TypeOf((*AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -287,7 +287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationType", GoGetter: "AuthorizationType"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationTypeInput", GoGetter: "AuthorizationTypeInput"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -326,7 +326,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceHttpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceHttpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationConfig", GoGetter: "AuthorizationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationConfigInput", GoGetter: "AuthorizationConfigInput"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceHttpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -364,11 +364,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfig",
-		reflect.TypeOf((*AppsyncDatasourceLambdaConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceLambdaConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceLambdaConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceLambdaConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -394,7 +394,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceLambdaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -402,15 +402,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig",
-		reflect.TypeOf((*AppsyncDatasourceRelationalDatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceRelationalDatabaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig",
-		reflect.TypeOf((*AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsSecretStoreArn", GoGetter: "AwsSecretStoreArn"},
 			_jsii_.MemberProperty{JsiiProperty: "awsSecretStoreArnInput", GoGetter: "AwsSecretStoreArnInput"},
@@ -447,7 +447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -455,7 +455,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference",
-		reflect.TypeOf((*AppsyncDatasourceRelationalDatabaseConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncDatasourceRelationalDatabaseConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
-		reflect.TypeOf((*EgressOnlyInternetGateway)(nil)).Elem(),
+		reflect.TypeFor[EgressOnlyInternetGateway](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EgressOnlyInternetGateway{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig",
-		reflect.TypeOf((*EgressOnlyInternetGatewayConfig)(nil)).Elem(),
+		reflect.TypeFor[EgressOnlyInternetGatewayConfig](),
 	)
 }

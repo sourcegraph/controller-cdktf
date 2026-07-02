@@ -109,7 +109,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewRolesanywhereTrustAnchorSourceOutputReferenceParameters(terrafor
 
 	return nil
 }
-

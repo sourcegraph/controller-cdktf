@@ -16,15 +16,15 @@ type DataAwsConnectContactFlowModule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContactFlowModuleId() *string
 	SetContactFlowModuleId(val *string)
 	ContactFlowModuleIdInput() *string
 	Content() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,7 +58,7 @@ type DataAwsConnectContactFlowModule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	Status() *string
 	Tags() *map[string]*string
@@ -67,13 +67,13 @@ type DataAwsConnectContactFlowModule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataAwsConnectContactFlowModule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsConnectContactFlowModule
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule) Content() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/connect_contact_flow_module aws_connect_contact_flow_module} Data Source.
 func NewDataAwsConnectContactFlowModule(scope constructs.Construct, id *string, config *DataAwsConnectContactFlowModuleConfig) DataAwsConnectContactFlowModule {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewDataAwsConnectContactFlowModule(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewDataAwsConnectContactFlowModule_Override(d DataAwsConnectContactFlowModu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetContactFlowModuleId(val *string) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetContactFlowModuleId(val *string) {
 	if err := j.validateSetContactFlowModuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetContactFlowModuleId(val *s
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetId(val *string) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetInstanceId(val *string) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetName(val *string) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectContactFlowModule)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func DataAwsConnectContactFlowModule_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func DataAwsConnectContactFlowModule_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsConnectContactFlowModule_IsConstruct(x interface{}) *bool {
+func DataAwsConnectContactFlowModule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectContactFlowModule_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func DataAwsConnectContactFlowModule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func DataAwsConnectContactFlowModule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsConnectContactFlowModule_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsConnectContactFlowModule_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectContactFlowModule_IsTerraformDataSourceParameters(x); err != nil {
@@ -608,7 +607,7 @@ func DataAwsConnectContactFlowModule_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func DataAwsConnectContactFlowModule_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataAwsConnectContactFlowModule_IsTerraformElement(x interface{}) *bool {
+func DataAwsConnectContactFlowModule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsConnectContactFlowModule_IsTerraformElementParameters(x); err != nil {
@@ -627,7 +626,7 @@ func DataAwsConnectContactFlowModule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -645,27 +644,27 @@ func DataAwsConnectContactFlowModule_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,8 +866,8 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -880,8 +879,8 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -893,8 +892,8 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -906,8 +905,8 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -932,8 +931,8 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -944,4 +943,3 @@ func (d *jsiiProxy_DataAwsConnectContactFlowModule) ToTerraform() interface{} {
 
 	return returns
 }
-

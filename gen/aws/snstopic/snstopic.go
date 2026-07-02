@@ -25,18 +25,18 @@ type SnsTopic interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	ContentBasedDeduplication() interface{}
-	SetContentBasedDeduplication(val interface{})
-	ContentBasedDeduplicationInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	ContentBasedDeduplication() any
+	SetContentBasedDeduplication(val any)
+	ContentBasedDeduplicationInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeliveryPolicy() *string
 	SetDeliveryPolicy(val *string)
 	DeliveryPolicyInput() *string
@@ -47,9 +47,9 @@ type SnsTopic interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
-	FifoTopic() interface{}
-	SetFifoTopic(val interface{})
-	FifoTopicInput() interface{}
+	FifoTopic() any
+	SetFifoTopic(val any)
+	FifoTopicInput() any
 	FirehoseFailureFeedbackRoleArn() *string
 	SetFirehoseFailureFeedbackRoleArn(val *string)
 	FirehoseFailureFeedbackRoleArnInput() *string
@@ -112,11 +112,11 @@ type SnsTopic interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SqsFailureFeedbackRoleArn() *string
 	SetSqsFailureFeedbackRoleArn(val *string)
 	SqsFailureFeedbackRoleArnInput() *string
@@ -135,16 +135,16 @@ type SnsTopic interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -162,7 +162,7 @@ type SnsTopic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -174,7 +174,7 @@ type SnsTopic interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -210,17 +210,17 @@ type SnsTopic interface {
 	ResetSqsSuccessFeedbackSampleRate()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SnsTopic
@@ -308,8 +308,8 @@ func (j *jsiiProxy_SnsTopic) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_SnsTopic) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnsTopic) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_SnsTopic) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) ContentBasedDeduplication() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) ContentBasedDeduplication() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contentBasedDeduplication",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_SnsTopic) ContentBasedDeduplication() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) ContentBasedDeduplicationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) ContentBasedDeduplicationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contentBasedDeduplicationInput",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_SnsTopic) ContentBasedDeduplicationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_SnsTopic) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) FifoTopic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) FifoTopic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fifoTopic",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_SnsTopic) FifoTopic() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) FifoTopicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) FifoTopicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fifoTopicInput",
@@ -778,8 +778,8 @@ func (j *jsiiProxy_SnsTopic) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SnsTopic) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -788,8 +788,8 @@ func (j *jsiiProxy_SnsTopic) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SnsTopic) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -908,8 +908,8 @@ func (j *jsiiProxy_SnsTopic) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SnsTopic) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -928,7 +928,6 @@ func (j *jsiiProxy_SnsTopic) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig) SnsTopic {
 	_init_.Initialize()
@@ -940,7 +939,7 @@ func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -953,12 +952,12 @@ func NewSnsTopic_Override(s SnsTopic, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetApplicationFailureFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetApplicationFailureFeedbackRoleArn(val *string) {
 	if err := j.validateSetApplicationFailureFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_SnsTopic)SetApplicationFailureFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetApplicationSuccessFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetApplicationSuccessFeedbackRoleArn(val *string) {
 	if err := j.validateSetApplicationSuccessFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_SnsTopic)SetApplicationSuccessFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetApplicationSuccessFeedbackSampleRate(val *float64) {
+func (j *jsiiProxy_SnsTopic) SetApplicationSuccessFeedbackSampleRate(val *float64) {
 	if err := j.validateSetApplicationSuccessFeedbackSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +990,7 @@ func (j *jsiiProxy_SnsTopic)SetApplicationSuccessFeedbackSampleRate(val *float64
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetConnection(val interface{}) {
+func (j *jsiiProxy_SnsTopic) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1001,7 @@ func (j *jsiiProxy_SnsTopic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetContentBasedDeduplication(val interface{}) {
+func (j *jsiiProxy_SnsTopic) SetContentBasedDeduplication(val any) {
 	if err := j.validateSetContentBasedDeduplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_SnsTopic)SetContentBasedDeduplication(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetCount(val interface{}) {
+func (j *jsiiProxy_SnsTopic) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,7 +1023,7 @@ func (j *jsiiProxy_SnsTopic)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetDeliveryPolicy(val *string) {
+func (j *jsiiProxy_SnsTopic) SetDeliveryPolicy(val *string) {
 	if err := j.validateSetDeliveryPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1035,7 +1034,7 @@ func (j *jsiiProxy_SnsTopic)SetDeliveryPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SnsTopic) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_SnsTopic)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetDisplayName(val *string) {
+func (j *jsiiProxy_SnsTopic) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_SnsTopic)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetFifoTopic(val interface{}) {
+func (j *jsiiProxy_SnsTopic) SetFifoTopic(val any) {
 	if err := j.validateSetFifoTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_SnsTopic)SetFifoTopic(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetFirehoseFailureFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetFirehoseFailureFeedbackRoleArn(val *string) {
 	if err := j.validateSetFirehoseFailureFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_SnsTopic)SetFirehoseFailureFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetFirehoseSuccessFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetFirehoseSuccessFeedbackRoleArn(val *string) {
 	if err := j.validateSetFirehoseSuccessFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_SnsTopic)SetFirehoseSuccessFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetFirehoseSuccessFeedbackSampleRate(val *float64) {
+func (j *jsiiProxy_SnsTopic) SetFirehoseSuccessFeedbackSampleRate(val *float64) {
 	if err := j.validateSetFirehoseSuccessFeedbackSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_SnsTopic)SetFirehoseSuccessFeedbackSampleRate(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SnsTopic) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_SnsTopic)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetHttpFailureFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetHttpFailureFeedbackRoleArn(val *string) {
 	if err := j.validateSetHttpFailureFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_SnsTopic)SetHttpFailureFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetHttpSuccessFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetHttpSuccessFeedbackRoleArn(val *string) {
 	if err := j.validateSetHttpSuccessFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_SnsTopic)SetHttpSuccessFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetHttpSuccessFeedbackSampleRate(val *float64) {
+func (j *jsiiProxy_SnsTopic) SetHttpSuccessFeedbackSampleRate(val *float64) {
 	if err := j.validateSetHttpSuccessFeedbackSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_SnsTopic)SetHttpSuccessFeedbackSampleRate(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetId(val *string) {
+func (j *jsiiProxy_SnsTopic) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_SnsTopic)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetKmsMasterKeyId(val *string) {
+func (j *jsiiProxy_SnsTopic) SetKmsMasterKeyId(val *string) {
 	if err := j.validateSetKmsMasterKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,7 +1160,7 @@ func (j *jsiiProxy_SnsTopic)SetKmsMasterKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetLambdaFailureFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetLambdaFailureFeedbackRoleArn(val *string) {
 	if err := j.validateSetLambdaFailureFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1172,7 +1171,7 @@ func (j *jsiiProxy_SnsTopic)SetLambdaFailureFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetLambdaSuccessFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetLambdaSuccessFeedbackRoleArn(val *string) {
 	if err := j.validateSetLambdaSuccessFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1183,7 +1182,7 @@ func (j *jsiiProxy_SnsTopic)SetLambdaSuccessFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetLambdaSuccessFeedbackSampleRate(val *float64) {
+func (j *jsiiProxy_SnsTopic) SetLambdaSuccessFeedbackSampleRate(val *float64) {
 	if err := j.validateSetLambdaSuccessFeedbackSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1194,7 +1193,7 @@ func (j *jsiiProxy_SnsTopic)SetLambdaSuccessFeedbackSampleRate(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SnsTopic) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1205,7 +1204,7 @@ func (j *jsiiProxy_SnsTopic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetName(val *string) {
+func (j *jsiiProxy_SnsTopic) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1216,7 +1215,7 @@ func (j *jsiiProxy_SnsTopic)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetNamePrefix(val *string) {
+func (j *jsiiProxy_SnsTopic) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1227,7 +1226,7 @@ func (j *jsiiProxy_SnsTopic)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetPolicy(val *string) {
+func (j *jsiiProxy_SnsTopic) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1238,7 +1237,7 @@ func (j *jsiiProxy_SnsTopic)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SnsTopic) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_SnsTopic)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SnsTopic) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1257,7 +1256,7 @@ func (j *jsiiProxy_SnsTopic)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetSqsFailureFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetSqsFailureFeedbackRoleArn(val *string) {
 	if err := j.validateSetSqsFailureFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_SnsTopic)SetSqsFailureFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetSqsSuccessFeedbackRoleArn(val *string) {
+func (j *jsiiProxy_SnsTopic) SetSqsSuccessFeedbackRoleArn(val *string) {
 	if err := j.validateSetSqsSuccessFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_SnsTopic)SetSqsSuccessFeedbackRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetSqsSuccessFeedbackSampleRate(val *float64) {
+func (j *jsiiProxy_SnsTopic) SetSqsSuccessFeedbackSampleRate(val *float64) {
 	if err := j.validateSetSqsSuccessFeedbackSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1290,7 +1289,7 @@ func (j *jsiiProxy_SnsTopic)SetSqsSuccessFeedbackSampleRate(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SnsTopic) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1301,7 +1300,7 @@ func (j *jsiiProxy_SnsTopic)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SnsTopic) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func SnsTopic_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1348,7 +1347,7 @@ func SnsTopic_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SnsTopic_IsConstruct(x interface{}) *bool {
+func SnsTopic_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnsTopic_IsConstructParameters(x); err != nil {
@@ -1359,7 +1358,7 @@ func SnsTopic_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1367,7 +1366,7 @@ func SnsTopic_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SnsTopic_IsTerraformElement(x interface{}) *bool {
+func SnsTopic_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnsTopic_IsTerraformElementParameters(x); err != nil {
@@ -1378,7 +1377,7 @@ func SnsTopic_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1386,7 +1385,7 @@ func SnsTopic_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SnsTopic_IsTerraformResource(x interface{}) *bool {
+func SnsTopic_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSnsTopic_IsTerraformResourceParameters(x); err != nil {
@@ -1397,7 +1396,7 @@ func SnsTopic_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1422,31 +1421,31 @@ func (s *jsiiProxy_SnsTopic) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SnsTopic) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SnsTopic) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SnsTopic) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SnsTopic) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1462,7 +1461,7 @@ func (s *jsiiProxy_SnsTopic) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1478,7 +1477,7 @@ func (s *jsiiProxy_SnsTopic) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1494,7 +1493,7 @@ func (s *jsiiProxy_SnsTopic) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1510,7 +1509,7 @@ func (s *jsiiProxy_SnsTopic) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1526,7 +1525,7 @@ func (s *jsiiProxy_SnsTopic) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1542,7 +1541,7 @@ func (s *jsiiProxy_SnsTopic) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1558,7 +1557,7 @@ func (s *jsiiProxy_SnsTopic) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1574,15 +1573,15 @@ func (s *jsiiProxy_SnsTopic) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopic) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopic) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1601,7 +1600,7 @@ func (s *jsiiProxy_SnsTopic) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1614,7 +1613,7 @@ func (s *jsiiProxy_SnsTopic) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1628,18 +1627,18 @@ func (s *jsiiProxy_SnsTopic) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SnsTopic) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SnsTopic) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1650,7 +1649,7 @@ func (s *jsiiProxy_SnsTopic) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1661,7 +1660,7 @@ func (s *jsiiProxy_SnsTopic) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1881,8 +1880,8 @@ func (s *jsiiProxy_SnsTopic) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SnsTopic) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnsTopic) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1894,8 +1893,8 @@ func (s *jsiiProxy_SnsTopic) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopic) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SnsTopic) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1907,8 +1906,8 @@ func (s *jsiiProxy_SnsTopic) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopic) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopic) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1920,8 +1919,8 @@ func (s *jsiiProxy_SnsTopic) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopic) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopic) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1946,8 +1945,8 @@ func (s *jsiiProxy_SnsTopic) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SnsTopic) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SnsTopic) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1958,4 +1957,3 @@ func (s *jsiiProxy_SnsTopic) ToTerraform() interface{} {
 
 	return returns
 }
-

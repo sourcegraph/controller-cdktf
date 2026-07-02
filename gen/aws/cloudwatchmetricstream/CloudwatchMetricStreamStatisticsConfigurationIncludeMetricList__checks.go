@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricLis
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricListPa
 
 	return nil
 }
-

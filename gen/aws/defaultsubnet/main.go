@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSubnet.DefaultSubnet",
-		reflect.TypeOf((*DefaultSubnet)(nil)).Elem(),
+		reflect.TypeFor[DefaultSubnet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSubnet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -117,15 +117,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetConfig",
-		reflect.TypeOf((*DefaultSubnetConfig)(nil)).Elem(),
+		reflect.TypeFor[DefaultSubnetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeouts",
-		reflect.TypeOf((*DefaultSubnetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DefaultSubnetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
-		reflect.TypeOf((*DefaultSubnetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultSubnetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultSubnetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy",
-		reflect.TypeOf((*EbsSnapshotCopy)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotCopy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeSize", GoGetter: "VolumeSize"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotCopy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,15 +103,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyConfig",
-		reflect.TypeOf((*EbsSnapshotCopyConfig)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotCopyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyTimeouts",
-		reflect.TypeOf((*EbsSnapshotCopyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotCopyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyTimeoutsOutputReference",
-		reflect.TypeOf((*EbsSnapshotCopyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EbsSnapshotCopyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EbsSnapshotCopyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

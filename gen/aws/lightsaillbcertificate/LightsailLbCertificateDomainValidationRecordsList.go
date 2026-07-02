@@ -36,7 +36,7 @@ type LightsailLbCertificateDomainValidationRecordsList interface {
 	Get(index *float64) LightsailLbCertificateDomainValidationRecordsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) WrapsSet()
 	return returns
 }
 
-
 func NewLightsailLbCertificateDomainValidationRecordsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailLbCertificateDomainValidationRecordsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewLightsailLbCertificateDomainValidationRecordsList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewLightsailLbCertificateDomainValidationRecordsList_Override(l LightsailLb
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) AllWithMap
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) Get(index 
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) ToString()
 
 	return returns
 }
-

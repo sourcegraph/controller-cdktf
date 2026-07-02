@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudformationType.CloudformationType",
-		reflect.TypeOf((*CloudformationType)(nil)).Elem(),
+		reflect.TypeFor[CloudformationType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudformationType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudformationType.CloudformationTypeConfig",
-		reflect.TypeOf((*CloudformationTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudformationTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudformationType.CloudformationTypeLoggingConfig",
-		reflect.TypeOf((*CloudformationTypeLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudformationTypeLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudformationType.CloudformationTypeLoggingConfigOutputReference",
-		reflect.TypeOf((*CloudformationTypeLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudformationTypeLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudformationTypeLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

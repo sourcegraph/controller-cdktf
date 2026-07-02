@@ -1,11 +1,10 @@
 package emrcluster
 
-
 type EmrClusterCoreInstanceFleet struct {
 	// instance_type_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_cluster#instance_type_configs EmrCluster#instance_type_configs}
-	InstanceTypeConfigs interface{} `field:"optional" json:"instanceTypeConfigs" yaml:"instanceTypeConfigs"`
+	InstanceTypeConfigs any `field:"optional" json:"instanceTypeConfigs" yaml:"instanceTypeConfigs"`
 	// launch_specifications block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_cluster#launch_specifications EmrCluster#launch_specifications}
@@ -17,4 +16,3 @@ type EmrClusterCoreInstanceFleet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}.
 	TargetSpotCapacity *float64 `field:"optional" json:"targetSpotCapacity" yaml:"targetSpotCapacity"`
 }
-

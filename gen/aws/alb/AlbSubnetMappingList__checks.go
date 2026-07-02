@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlbSubnetMappingList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_AlbSubnetMappingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbSubnetMappingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlbSubnetMappingListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

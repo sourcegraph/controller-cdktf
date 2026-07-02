@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZonesFilterList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZonesFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAvailabilityZonesFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsAvailabilityZonesFilterListParameters(terraformResource c
 
 	return nil
 }
-

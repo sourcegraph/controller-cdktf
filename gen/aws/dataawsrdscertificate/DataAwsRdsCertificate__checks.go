@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsRdsCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsRdsCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsRdsCertificate_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataAwsRdsCertificate_IsConstructParameters(x interface{}) error {
+func validateDataAwsRdsCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsRdsCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsRdsCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsRdsCertificate_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsRdsCertificate_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataAwsRdsCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsRdsCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataAwsRdsCertificate_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsCertificate) validateSetLatestValidTillParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRdsCertificate) validateSetLatestValidTillParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -259,4 +259,3 @@ func validateNewDataAwsRdsCertificateParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

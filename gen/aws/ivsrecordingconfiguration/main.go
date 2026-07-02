@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
-		reflect.TypeOf((*IvsRecordingConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsRecordingConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig",
-		reflect.TypeOf((*IvsRecordingConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration",
-		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationDestinationConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationOutputReference",
-		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationDestinationConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3",
-		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfigurationS3)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationDestinationConfigurationS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
-		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfigurationS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationDestinationConfigurationS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsRecordingConfigurationDestinationConfigurationS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration",
-		reflect.TypeOf((*IvsRecordingConfigurationThumbnailConfiguration)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationThumbnailConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
-		reflect.TypeOf((*IvsRecordingConfigurationThumbnailConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationThumbnailConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -212,11 +212,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts",
-		reflect.TypeOf((*IvsRecordingConfigurationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
-		reflect.TypeOf((*IvsRecordingConfigurationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IvsRecordingConfigurationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

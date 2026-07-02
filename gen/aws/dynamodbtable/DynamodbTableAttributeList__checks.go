@@ -34,7 +34,7 @@ func (d *jsiiProxy_DynamodbTableAttributeList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableAttributeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTableAttributeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDynamodbTableAttributeListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

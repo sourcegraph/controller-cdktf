@@ -34,7 +34,7 @@ func (i *jsiiProxy_IotTopicRuleElasticsearchList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleElasticsearchList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleElasticsearchList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIotTopicRuleElasticsearchListParameters(terraformResource cdktf.
 
 	return nil
 }
-

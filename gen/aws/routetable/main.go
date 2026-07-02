@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.routeTable.RouteTable",
-		reflect.TypeOf((*RouteTable)(nil)).Elem(),
+		reflect.TypeFor[RouteTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RouteTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.routeTable.RouteTableConfig",
-		reflect.TypeOf((*RouteTableConfig)(nil)).Elem(),
+		reflect.TypeFor[RouteTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.routeTable.RouteTableRoute",
-		reflect.TypeOf((*RouteTableRoute)(nil)).Elem(),
+		reflect.TypeFor[RouteTableRoute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.routeTable.RouteTableRouteList",
-		reflect.TypeOf((*RouteTableRouteList)(nil)).Elem(),
+		reflect.TypeFor[RouteTableRouteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RouteTableRouteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference",
-		reflect.TypeOf((*RouteTableRouteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RouteTableRouteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "carrierGatewayId", GoGetter: "CarrierGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "carrierGatewayIdInput", GoGetter: "CarrierGatewayIdInput"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionId", GoGetter: "VpcPeeringConnectionId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConnectionIdInput", GoGetter: "VpcPeeringConnectionIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RouteTableRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,11 +189,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.routeTable.RouteTableTimeouts",
-		reflect.TypeOf((*RouteTableTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RouteTableTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference",
-		reflect.TypeOf((*RouteTableTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RouteTableTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RouteTableTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

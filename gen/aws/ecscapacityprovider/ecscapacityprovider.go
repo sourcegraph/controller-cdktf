@@ -18,15 +18,15 @@ type EcsCapacityProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type EcsCapacityProvider interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -70,16 +70,16 @@ type EcsCapacityProvider interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type EcsCapacityProvider interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type EcsCapacityProvider interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type EcsCapacityProvider interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EcsCapacityProvider
@@ -181,8 +181,8 @@ func (j *jsiiProxy_EcsCapacityProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsCapacityProvider) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_EcsCapacityProvider) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcsCapacityProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_EcsCapacityProvider) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsCapacityProvider) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_EcsCapacityProvider) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EcsCapacityProvider) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_EcsCapacityProvider) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsCapacityProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_EcsCapacityProvider) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcsCapacityProvider) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_EcsCapacityProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
 func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsCapacityProviderConfig) EcsCapacityProvider {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewEcsCapacityProvider_Override(e EcsCapacityProvider, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetConnection(val interface{}) {
+func (j *jsiiProxy_EcsCapacityProvider) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetCount(val interface{}) {
+func (j *jsiiProxy_EcsCapacityProvider) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcsCapacityProvider) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcsCapacityProvider) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetId(val *string) {
+func (j *jsiiProxy_EcsCapacityProvider) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcsCapacityProvider) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetName(val *string) {
+func (j *jsiiProxy_EcsCapacityProvider) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcsCapacityProvider) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcsCapacityProvider) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EcsCapacityProvider) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_EcsCapacityProvider)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsCapacityProvider)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EcsCapacityProvider) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func EcsCapacityProvider_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func EcsCapacityProvider_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EcsCapacityProvider_IsConstruct(x interface{}) *bool {
+func EcsCapacityProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsCapacityProvider_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func EcsCapacityProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func EcsCapacityProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EcsCapacityProvider_IsTerraformElement(x interface{}) *bool {
+func EcsCapacityProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsCapacityProvider_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func EcsCapacityProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func EcsCapacityProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EcsCapacityProvider_IsTerraformResource(x interface{}) *bool {
+func EcsCapacityProvider_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsCapacityProvider_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func EcsCapacityProvider_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (e *jsiiProxy_EcsCapacityProvider) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EcsCapacityProvider) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsCapacityProvider) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (e *jsiiProxy_EcsCapacityProvider) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (e *jsiiProxy_EcsCapacityProvider) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsCapacityProvider) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -842,7 +841,7 @@ func (e *jsiiProxy_EcsCapacityProvider) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (e *jsiiProxy_EcsCapacityProvider) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (e *jsiiProxy_EcsCapacityProvider) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EcsCapacityProvider) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (e *jsiiProxy_EcsCapacityProvider) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (e *jsiiProxy_EcsCapacityProvider) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (e *jsiiProxy_EcsCapacityProvider) PutAutoScalingGroupProvider(value *EcsCa
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoScalingGroupProvider",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (e *jsiiProxy_EcsCapacityProvider) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcsCapacityProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -962,8 +961,8 @@ func (e *jsiiProxy_EcsCapacityProvider) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcsCapacityProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -975,8 +974,8 @@ func (e *jsiiProxy_EcsCapacityProvider) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsCapacityProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -988,8 +987,8 @@ func (e *jsiiProxy_EcsCapacityProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsCapacityProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1014,8 +1013,8 @@ func (e *jsiiProxy_EcsCapacityProvider) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsCapacityProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1026,4 +1025,3 @@ func (e *jsiiProxy_EcsCapacityProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

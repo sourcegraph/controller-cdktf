@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElbListenerOutputReference) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElbListenerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ElbListenerOutputReference) validateSetInstanceProtocolParame
 	return nil
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElbListenerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewElbListenerOutputReferenceParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

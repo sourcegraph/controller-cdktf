@@ -15,11 +15,11 @@ type DataAwsCeTags interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,12 +48,12 @@ type DataAwsCeTags interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SearchString() *string
 	SetSearchString(val *string)
 	SearchStringInput() *string
 	SortBy() DataAwsCeTagsSortByList
-	SortByInput() interface{}
+	SortByInput() any
 	TagKey() *string
 	SetTagKey(val *string)
 	TagKeyInput() *string
@@ -61,15 +61,15 @@ type DataAwsCeTags interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimePeriod() DataAwsCeTagsTimePeriodOutputReference
 	TimePeriodInput() *DataAwsCeTagsTimePeriod
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type DataAwsCeTags interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataAwsCeTagsFilter)
-	PutSortBy(value interface{})
+	PutSortBy(value any)
 	PutTimePeriod(value *DataAwsCeTagsTimePeriod)
 	ResetFilter()
 	ResetId()
@@ -102,18 +102,18 @@ type DataAwsCeTags interface {
 	ResetSearchString()
 	ResetSortBy()
 	ResetTagKey()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsCeTags
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsCeTags) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTags) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCeTags) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsCeTags) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTags) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCeTags) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_DataAwsCeTags) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTags) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCeTags) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_DataAwsCeTags) SortBy() DataAwsCeTagsSortByList {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTags) SortByInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCeTags) SortByInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sortByInput",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_DataAwsCeTags) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTags) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsCeTags) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -391,7 +391,6 @@ func (j *jsiiProxy_DataAwsCeTags) TimePeriodInput() *DataAwsCeTagsTimePeriod {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ce_tags aws_ce_tags} Data Source.
 func NewDataAwsCeTags(scope constructs.Construct, id *string, config *DataAwsCeTagsConfig) DataAwsCeTags {
 	_init_.Initialize()
@@ -403,7 +402,7 @@ func NewDataAwsCeTags(scope constructs.Construct, id *string, config *DataAwsCeT
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -416,12 +415,12 @@ func NewDataAwsCeTags_Override(d DataAwsCeTags, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsCeTags) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsCeTags) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsCeTags) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetId(val *string) {
+func (j *jsiiProxy_DataAwsCeTags) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsCeTags) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsCeTags) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetSearchString(val *string) {
+func (j *jsiiProxy_DataAwsCeTags) SetSearchString(val *string) {
 	if err := j.validateSetSearchStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataAwsCeTags)SetSearchString(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTags)SetTagKey(val *string) {
+func (j *jsiiProxy_DataAwsCeTags) SetTagKey(val *string) {
 	if err := j.validateSetTagKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func DataAwsCeTags_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func DataAwsCeTags_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsCeTags_IsConstruct(x interface{}) *bool {
+func DataAwsCeTags_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCeTags_IsConstructParameters(x); err != nil {
@@ -547,7 +546,7 @@ func DataAwsCeTags_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func DataAwsCeTags_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCeTags_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsCeTags_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCeTags_IsTerraformDataSourceParameters(x); err != nil {
@@ -566,7 +565,7 @@ func DataAwsCeTags_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func DataAwsCeTags_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsCeTags_IsTerraformElement(x interface{}) *bool {
+func DataAwsCeTags_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsCeTags_IsTerraformElementParameters(x); err != nil {
@@ -585,7 +584,7 @@ func DataAwsCeTags_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,27 +602,27 @@ func DataAwsCeTags_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTags) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsCeTags) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCeTags) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsCeTags) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataAwsCeTags) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataAwsCeTags) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (d *jsiiProxy_DataAwsCeTags) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -792,18 +791,18 @@ func (d *jsiiProxy_DataAwsCeTags) PutFilter(value *DataAwsCeTagsFilter) {
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsCeTags) PutSortBy(value interface{}) {
+func (d *jsiiProxy_DataAwsCeTags) PutSortBy(value any) {
 	if err := d.validatePutSortByParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSortBy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -814,7 +813,7 @@ func (d *jsiiProxy_DataAwsCeTags) PutTimePeriod(value *DataAwsCeTagsTimePeriod) 
 	_jsii_.InvokeVoid(
 		d,
 		"putTimePeriod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -866,8 +865,8 @@ func (d *jsiiProxy_DataAwsCeTags) ResetTagKey() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsCeTags) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCeTags) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataAwsCeTags) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTags) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsCeTags) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataAwsCeTags) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTags) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCeTags) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataAwsCeTags) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTags) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCeTags) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -931,8 +930,8 @@ func (d *jsiiProxy_DataAwsCeTags) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTags) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsCeTags) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -943,4 +942,3 @@ func (d *jsiiProxy_DataAwsCeTags) ToTerraform() interface{} {
 
 	return returns
 }
-

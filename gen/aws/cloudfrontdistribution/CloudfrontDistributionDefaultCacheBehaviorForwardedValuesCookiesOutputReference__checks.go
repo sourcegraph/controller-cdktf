@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCook
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RdsReservedInstanceRecurringChargesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_RdsReservedInstanceRecurringChargesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsReservedInstanceRecurringChargesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRdsReservedInstanceRecurringChargesOutputReferenceParameters(ter
 
 	return nil
 }
-

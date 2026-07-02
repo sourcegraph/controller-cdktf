@@ -22,15 +22,15 @@ type GameliftFleet interface {
 	CertificateConfiguration() GameliftFleetCertificateConfigurationOutputReference
 	CertificateConfigurationInput() *GameliftFleetCertificateConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,7 +39,7 @@ type GameliftFleet interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Ec2InboundPermission() GameliftFleetEc2InboundPermissionList
-	Ec2InboundPermissionInput() interface{}
+	Ec2InboundPermissionInput() any
 	Ec2InstanceType() *string
 	SetEc2InstanceType(val *string)
 	Ec2InstanceTypeInput() *string
@@ -82,11 +82,11 @@ type GameliftFleet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceCreationLimitPolicy() GameliftFleetResourceCreationLimitPolicyOutputReference
 	ResourceCreationLimitPolicyInput() *GameliftFleetResourceCreationLimitPolicy
 	RuntimeConfiguration() GameliftFleetRuntimeConfigurationOutputReference
@@ -104,18 +104,18 @@ type GameliftFleet interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GameliftFleetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -133,7 +133,7 @@ type GameliftFleet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -145,7 +145,7 @@ type GameliftFleet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,7 +153,7 @@ type GameliftFleet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCertificateConfiguration(value *GameliftFleetCertificateConfiguration)
-	PutEc2InboundPermission(value interface{})
+	PutEc2InboundPermission(value any)
 	PutResourceCreationLimitPolicy(value *GameliftFleetResourceCreationLimitPolicy)
 	PutRuntimeConfiguration(value *GameliftFleetRuntimeConfiguration)
 	PutTimeouts(value *GameliftFleetTimeouts)
@@ -175,17 +175,17 @@ type GameliftFleet interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GameliftFleet
@@ -263,8 +263,8 @@ func (j *jsiiProxy_GameliftFleet) CertificateConfigurationInput() *GameliftFleet
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_GameliftFleet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GameliftFleet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_GameliftFleet) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_GameliftFleet) Ec2InboundPermission() GameliftFleetEc2Inbound
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) Ec2InboundPermissionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleet) Ec2InboundPermissionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ec2InboundPermissionInput",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_GameliftFleet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GameliftFleet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_GameliftFleet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_GameliftFleet) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GameliftFleet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -733,8 +733,8 @@ func (j *jsiiProxy_GameliftFleet) Timeouts() GameliftFleetTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleet) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GameliftFleet) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -742,7 +742,6 @@ func (j *jsiiProxy_GameliftFleet) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/gamelift_fleet aws_gamelift_fleet} Resource.
 func NewGameliftFleet(scope constructs.Construct, id *string, config *GameliftFleetConfig) GameliftFleet {
@@ -755,7 +754,7 @@ func NewGameliftFleet(scope constructs.Construct, id *string, config *GameliftFl
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -768,12 +767,12 @@ func NewGameliftFleet_Override(g GameliftFleet, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetBuildId(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetBuildId(val *string) {
 	if err := j.validateSetBuildIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_GameliftFleet)SetBuildId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetConnection(val interface{}) {
+func (j *jsiiProxy_GameliftFleet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_GameliftFleet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetCount(val interface{}) {
+func (j *jsiiProxy_GameliftFleet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_GameliftFleet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GameliftFleet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -814,7 +813,7 @@ func (j *jsiiProxy_GameliftFleet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetDescription(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_GameliftFleet)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetEc2InstanceType(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetEc2InstanceType(val *string) {
 	if err := j.validateSetEc2InstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_GameliftFleet)SetEc2InstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetFleetType(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetFleetType(val *string) {
 	if err := j.validateSetFleetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_GameliftFleet)SetFleetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GameliftFleet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -855,7 +854,7 @@ func (j *jsiiProxy_GameliftFleet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetId(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_GameliftFleet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetInstanceRoleArn(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetInstanceRoleArn(val *string) {
 	if err := j.validateSetInstanceRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_GameliftFleet)SetInstanceRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GameliftFleet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_GameliftFleet)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetMetricGroups(val *[]*string) {
+func (j *jsiiProxy_GameliftFleet) SetMetricGroups(val *[]*string) {
 	if err := j.validateSetMetricGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_GameliftFleet)SetMetricGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetName(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_GameliftFleet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetNewGameSessionProtectionPolicy(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetNewGameSessionProtectionPolicy(val *string) {
 	if err := j.validateSetNewGameSessionProtectionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_GameliftFleet)SetNewGameSessionProtectionPolicy(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GameliftFleet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -929,7 +928,7 @@ func (j *jsiiProxy_GameliftFleet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GameliftFleet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_GameliftFleet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetScriptId(val *string) {
+func (j *jsiiProxy_GameliftFleet) SetScriptId(val *string) {
 	if err := j.validateSetScriptIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_GameliftFleet)SetScriptId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GameliftFleet) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_GameliftFleet)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GameliftFleet)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_GameliftFleet) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -985,7 +984,7 @@ func GameliftFleet_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func GameliftFleet_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GameliftFleet_IsConstruct(x interface{}) *bool {
+func GameliftFleet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGameliftFleet_IsConstructParameters(x); err != nil {
@@ -1020,7 +1019,7 @@ func GameliftFleet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func GameliftFleet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GameliftFleet_IsTerraformElement(x interface{}) *bool {
+func GameliftFleet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGameliftFleet_IsTerraformElementParameters(x); err != nil {
@@ -1039,7 +1038,7 @@ func GameliftFleet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func GameliftFleet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GameliftFleet_IsTerraformResource(x interface{}) *bool {
+func GameliftFleet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGameliftFleet_IsTerraformResourceParameters(x); err != nil {
@@ -1058,7 +1057,7 @@ func GameliftFleet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1083,31 +1082,31 @@ func (g *jsiiProxy_GameliftFleet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GameliftFleet) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GameliftFleet) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GameliftFleet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GameliftFleet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1123,7 +1122,7 @@ func (g *jsiiProxy_GameliftFleet) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func (g *jsiiProxy_GameliftFleet) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func (g *jsiiProxy_GameliftFleet) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1171,7 +1170,7 @@ func (g *jsiiProxy_GameliftFleet) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func (g *jsiiProxy_GameliftFleet) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1203,7 +1202,7 @@ func (g *jsiiProxy_GameliftFleet) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1219,7 +1218,7 @@ func (g *jsiiProxy_GameliftFleet) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1235,15 +1234,15 @@ func (g *jsiiProxy_GameliftFleet) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleet) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GameliftFleet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1262,7 +1261,7 @@ func (g *jsiiProxy_GameliftFleet) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1275,7 +1274,7 @@ func (g *jsiiProxy_GameliftFleet) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1289,18 +1288,18 @@ func (g *jsiiProxy_GameliftFleet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GameliftFleet) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GameliftFleet) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1311,7 +1310,7 @@ func (g *jsiiProxy_GameliftFleet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1322,7 +1321,7 @@ func (g *jsiiProxy_GameliftFleet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1333,18 +1332,18 @@ func (g *jsiiProxy_GameliftFleet) PutCertificateConfiguration(value *GameliftFle
 	_jsii_.InvokeVoid(
 		g,
 		"putCertificateConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GameliftFleet) PutEc2InboundPermission(value interface{}) {
+func (g *jsiiProxy_GameliftFleet) PutEc2InboundPermission(value any) {
 	if err := g.validatePutEc2InboundPermissionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEc2InboundPermission",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1355,7 +1354,7 @@ func (g *jsiiProxy_GameliftFleet) PutResourceCreationLimitPolicy(value *Gamelift
 	_jsii_.InvokeVoid(
 		g,
 		"putResourceCreationLimitPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1366,7 +1365,7 @@ func (g *jsiiProxy_GameliftFleet) PutRuntimeConfiguration(value *GameliftFleetRu
 	_jsii_.InvokeVoid(
 		g,
 		"putRuntimeConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1377,7 +1376,7 @@ func (g *jsiiProxy_GameliftFleet) PutTimeouts(value *GameliftFleetTimeouts) {
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1509,8 +1508,8 @@ func (g *jsiiProxy_GameliftFleet) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GameliftFleet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GameliftFleet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1522,8 +1521,8 @@ func (g *jsiiProxy_GameliftFleet) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GameliftFleet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1535,8 +1534,8 @@ func (g *jsiiProxy_GameliftFleet) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GameliftFleet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1548,8 +1547,8 @@ func (g *jsiiProxy_GameliftFleet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleet) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GameliftFleet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1574,8 +1573,8 @@ func (g *jsiiProxy_GameliftFleet) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleet) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GameliftFleet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1586,4 +1585,3 @@ func (g *jsiiProxy_GameliftFleet) ToTerraform() interface{} {
 
 	return returns
 }
-

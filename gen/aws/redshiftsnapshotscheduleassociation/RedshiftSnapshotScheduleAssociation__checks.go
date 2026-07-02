@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateAddMoveTargetPar
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateMoveFromIdParame
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRedshiftSnapshotScheduleAssociation_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateRedshiftSnapshotScheduleAssociation_IsConstructParameters(x interface{}) error {
+func validateRedshiftSnapshotScheduleAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRedshiftSnapshotScheduleAssociation_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateRedshiftSnapshotScheduleAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateRedshiftSnapshotScheduleAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRedshiftSnapshotScheduleAssociation_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateRedshiftSnapshotScheduleAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateRedshiftSnapshotScheduleAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetClusterIdenti
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewRedshiftSnapshotScheduleAssociationParameters(scope constructs.C
 
 	return nil
 }
-

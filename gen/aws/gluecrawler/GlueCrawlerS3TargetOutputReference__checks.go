@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCrawlerS3TargetOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerS3TargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerS3TargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GlueCrawlerS3TargetOutputReference) validateSetExclusionsPara
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerS3TargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerS3TargetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewGlueCrawlerS3TargetOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

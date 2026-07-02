@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53ZoneVpcOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneVpcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ZoneVpcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Route53ZoneVpcOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneVpcOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53ZoneVpcOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRoute53ZoneVpcOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

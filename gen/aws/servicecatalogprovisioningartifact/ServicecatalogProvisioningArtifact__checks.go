@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) validateAddMoveTargetPara
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) validateMoveFromIdParamet
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServicecatalogProvisioningArtifact_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateServicecatalogProvisioningArtifact_IsConstructParameters(x interface{}) error {
+func validateServicecatalogProvisioningArtifact_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServicecatalogProvisioningArtifact_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateServicecatalogProvisioningArtifact_IsTerraformElementParameters(x interface{}) error {
+func validateServicecatalogProvisioningArtifact_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServicecatalogProvisioningArtifact_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateServicecatalogProvisioningArtifact_IsTerraformResourceParameters(x interface{}) error {
+func validateServicecatalogProvisioningArtifact_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetAcceptLanguage
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetActiveParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetActiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetActiveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetDescriptionPar
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetDisableTemplateValidationParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetDisableTemplateValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -441,7 +441,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetProductIdParam
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -529,4 +529,3 @@ func validateNewServicecatalogProvisioningArtifactParameters(scope constructs.Co
 
 	return nil
 }
-

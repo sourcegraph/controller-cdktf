@@ -11,12 +11,12 @@ import (
 type LightsailContainerServicePublicDomainNamesOutputReference interface {
 	cdktf.ComplexObject
 	Certificate() LightsailContainerServicePublicDomainNamesCertificateList
-	CertificateInput() interface{}
+	CertificateInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type LightsailContainerServicePublicDomainNamesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,10 +63,10 @@ type LightsailContainerServicePublicDomainNamesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCertificate(value interface{})
+	PutCertificate(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ce
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) CertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) CertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"certificateInput",
@@ -99,8 +99,8 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ce
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Te
 	return returns
 }
 
-
 func NewLightsailContainerServicePublicDomainNamesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LightsailContainerServicePublicDomainNamesOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewLightsailContainerServicePublicDomainNamesOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewLightsailContainerServicePublicDomainNamesOutputReference_Override(l Lig
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)SetInternalValue(val *LightsailContainerServicePublicDomainNames) {
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) SetInternalValue(val *LightsailContainerServicePublicDomainNames) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Co
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Ge
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,34 +430,34 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) In
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) PutCertificate(value interface{}) {
+func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) PutCertificate(value any) {
 	if err := l.validatePutCertificateParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putCertificate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) To
 
 	return returns
 }
-

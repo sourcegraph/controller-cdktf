@@ -14,9 +14,9 @@ type AppmeshVirtualNodeSpecServiceDiscoveryOutputReference interface {
 	AwsCloudMapInput() *AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type AppmeshVirtualNodeSpecServiceDiscoveryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AppmeshVirtualNodeSpecServiceDiscoveryOutputReference interface {
 	ResetDns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) AwsClo
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) Terraf
 	return returns
 }
 
-
 func NewAppmeshVirtualNodeSpecServiceDiscoveryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecServiceDiscoveryOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAppmeshVirtualNodeSpecServiceDiscoveryOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAppmeshVirtualNodeSpecServiceDiscoveryOutputReference_Override(a Appmesh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetInternalValue(val *AppmeshVirtualNodeSpecServiceDiscovery) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) SetInternalValue(val *AppmeshVirtualNodeSpecServiceDiscovery) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) Comput
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetLis
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) Interp
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) PutAws
 	_jsii_.InvokeVoid(
 		a,
 		"putAwsCloudMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) PutDns
 	_jsii_.InvokeVoid(
 		a,
 		"putDns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) ResetD
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryOutputReference) ToStri
 
 	return returns
 }
-

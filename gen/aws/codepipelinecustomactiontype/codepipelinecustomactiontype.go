@@ -19,17 +19,17 @@ type CodepipelineCustomActionType interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfigurationProperty() CodepipelineCustomActionTypeConfigurationPropertyList
-	ConfigurationPropertyInput() interface{}
+	ConfigurationPropertyInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,11 +64,11 @@ type CodepipelineCustomActionType interface {
 	SetProviderName(val *string)
 	ProviderNameInput() *string
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Settings() CodepipelineCustomActionTypeSettingsOutputReference
 	SettingsInput() *CodepipelineCustomActionTypeSettings
 	Tags() *map[string]*string
@@ -80,7 +80,7 @@ type CodepipelineCustomActionType interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
@@ -90,9 +90,9 @@ type CodepipelineCustomActionType interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type CodepipelineCustomActionType interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,14 +122,14 @@ type CodepipelineCustomActionType interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfigurationProperty(value interface{})
+	PutConfigurationProperty(value any)
 	PutInputArtifactDetails(value *CodepipelineCustomActionTypeInputArtifactDetails)
 	PutOutputArtifactDetails(value *CodepipelineCustomActionTypeOutputArtifactDetails)
 	PutSettings(value *CodepipelineCustomActionTypeSettings)
@@ -141,17 +141,17 @@ type CodepipelineCustomActionType interface {
 	ResetSettings()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CodepipelineCustomActionType
@@ -209,8 +209,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) ConfigurationProperty() Codepip
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) ConfigurationPropertyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) ConfigurationPropertyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"configurationPropertyInput",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) ConfigurationPropertyInput() in
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) ProviderNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CodepipelineCustomActionType) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -539,7 +539,6 @@ func (j *jsiiProxy_CodepipelineCustomActionType) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) CodepipelineCustomActionType {
 	_init_.Initialize()
@@ -551,7 +550,7 @@ func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -564,12 +563,12 @@ func NewCodepipelineCustomActionType_Override(c CodepipelineCustomActionType, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetCategory(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetCategory(val *string) {
 	if err := j.validateSetCategoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetCategory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetConnection(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetCount(val interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetId(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetProviderName(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetProviderName(val *string) {
 	if err := j.validateSetProviderNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetProviderName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetTags(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetTagsAll(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetVersion(val *string) {
+func (j *jsiiProxy_CodepipelineCustomActionType) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func CodepipelineCustomActionType_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func CodepipelineCustomActionType_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CodepipelineCustomActionType_IsConstruct(x interface{}) *bool {
+func CodepipelineCustomActionType_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodepipelineCustomActionType_IsConstructParameters(x); err != nil {
@@ -750,7 +749,7 @@ func CodepipelineCustomActionType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func CodepipelineCustomActionType_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CodepipelineCustomActionType_IsTerraformElement(x interface{}) *bool {
+func CodepipelineCustomActionType_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodepipelineCustomActionType_IsTerraformElementParameters(x); err != nil {
@@ -769,7 +768,7 @@ func CodepipelineCustomActionType_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func CodepipelineCustomActionType_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CodepipelineCustomActionType_IsTerraformResource(x interface{}) *bool {
+func CodepipelineCustomActionType_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCodepipelineCustomActionType_IsTerraformResourceParameters(x); err != nil {
@@ -788,7 +787,7 @@ func CodepipelineCustomActionType_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,31 +812,31 @@ func (c *jsiiProxy_CodepipelineCustomActionType) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CodepipelineCustomActionType) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodepipelineCustomActionType) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,15 +964,15 @@ func (c *jsiiProxy_CodepipelineCustomActionType) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodepipelineCustomActionType) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -992,7 +991,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,18 +1018,18 @@ func (c *jsiiProxy_CodepipelineCustomActionType) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CodepipelineCustomActionType) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1052,18 +1051,18 @@ func (c *jsiiProxy_CodepipelineCustomActionType) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) PutConfigurationProperty(value interface{}) {
+func (c *jsiiProxy_CodepipelineCustomActionType) PutConfigurationProperty(value any) {
 	if err := c.validatePutConfigurationPropertyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putConfigurationProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) PutInputArtifactDetails(value *
 	_jsii_.InvokeVoid(
 		c,
 		"putInputArtifactDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) PutOutputArtifactDetails(value 
 	_jsii_.InvokeVoid(
 		c,
 		"putOutputArtifactDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (c *jsiiProxy_CodepipelineCustomActionType) PutSettings(value *Codepipeline
 	_jsii_.InvokeVoid(
 		c,
 		"putSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1148,8 +1147,8 @@ func (c *jsiiProxy_CodepipelineCustomActionType) ResetTagsAll() {
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodepipelineCustomActionType) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1161,8 +1160,8 @@ func (c *jsiiProxy_CodepipelineCustomActionType) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CodepipelineCustomActionType) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1174,8 +1173,8 @@ func (c *jsiiProxy_CodepipelineCustomActionType) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodepipelineCustomActionType) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1187,8 +1186,8 @@ func (c *jsiiProxy_CodepipelineCustomActionType) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodepipelineCustomActionType) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1213,8 +1212,8 @@ func (c *jsiiProxy_CodepipelineCustomActionType) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionType) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CodepipelineCustomActionType) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1225,4 +1224,3 @@ func (c *jsiiProxy_CodepipelineCustomActionType) ToTerraform() interface{} {
 
 	return returns
 }
-

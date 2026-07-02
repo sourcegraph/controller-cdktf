@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOpensearchDomainSamlOptionsSamlOptionsIdpOutputReferenceParamete
 
 	return nil
 }
-

@@ -16,15 +16,15 @@ type AppmeshMesh interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,11 +57,11 @@ type AppmeshMesh interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceOwner() *string
 	Spec() AppmeshMeshSpecOutputReference
 	SpecInput() *AppmeshMeshSpec
@@ -74,16 +74,16 @@ type AppmeshMesh interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type AppmeshMesh interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type AppmeshMesh interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type AppmeshMesh interface {
 	ResetSpec()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppmeshMesh
@@ -166,8 +166,8 @@ func (j *jsiiProxy_AppmeshMesh) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshMesh) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshMesh) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_AppmeshMesh) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshMesh) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppmeshMesh) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_AppmeshMesh) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshMesh) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshMesh) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_AppmeshMesh) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshMesh) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppmeshMesh) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_AppmeshMesh) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshMesh) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppmeshMesh) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_AppmeshMesh) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshMesh) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppmeshMesh) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -456,7 +456,6 @@ func (j *jsiiProxy_AppmeshMesh) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource.
 func NewAppmeshMesh(scope constructs.Construct, id *string, config *AppmeshMeshConfig) AppmeshMesh {
 	_init_.Initialize()
@@ -468,7 +467,7 @@ func NewAppmeshMesh(scope constructs.Construct, id *string, config *AppmeshMeshC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewAppmeshMesh_Override(a AppmeshMesh, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppmeshMesh) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_AppmeshMesh)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetCount(val interface{}) {
+func (j *jsiiProxy_AppmeshMesh) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_AppmeshMesh)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppmeshMesh) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -516,7 +515,7 @@ func (j *jsiiProxy_AppmeshMesh)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppmeshMesh) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_AppmeshMesh)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetId(val *string) {
+func (j *jsiiProxy_AppmeshMesh) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_AppmeshMesh)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppmeshMesh) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_AppmeshMesh)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetName(val *string) {
+func (j *jsiiProxy_AppmeshMesh) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_AppmeshMesh)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppmeshMesh) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_AppmeshMesh)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppmeshMesh) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_AppmeshMesh)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AppmeshMesh) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_AppmeshMesh)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppmeshMesh)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_AppmeshMesh) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func AppmeshMesh_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func AppmeshMesh_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppmeshMesh_IsConstruct(x interface{}) *bool {
+func AppmeshMesh_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppmeshMesh_IsConstructParameters(x); err != nil {
@@ -645,7 +644,7 @@ func AppmeshMesh_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func AppmeshMesh_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppmeshMesh_IsTerraformElement(x interface{}) *bool {
+func AppmeshMesh_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppmeshMesh_IsTerraformElementParameters(x); err != nil {
@@ -664,7 +663,7 @@ func AppmeshMesh_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func AppmeshMesh_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppmeshMesh_IsTerraformResource(x interface{}) *bool {
+func AppmeshMesh_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppmeshMesh_IsTerraformResourceParameters(x); err != nil {
@@ -683,7 +682,7 @@ func AppmeshMesh_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -708,31 +707,31 @@ func (a *jsiiProxy_AppmeshMesh) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppmeshMesh) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppmeshMesh) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppmeshMesh) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppmeshMesh) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (a *jsiiProxy_AppmeshMesh) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (a *jsiiProxy_AppmeshMesh) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (a *jsiiProxy_AppmeshMesh) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (a *jsiiProxy_AppmeshMesh) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (a *jsiiProxy_AppmeshMesh) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (a *jsiiProxy_AppmeshMesh) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (a *jsiiProxy_AppmeshMesh) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,15 +859,15 @@ func (a *jsiiProxy_AppmeshMesh) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshMesh) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshMesh) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -887,7 +886,7 @@ func (a *jsiiProxy_AppmeshMesh) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -900,7 +899,7 @@ func (a *jsiiProxy_AppmeshMesh) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,18 +913,18 @@ func (a *jsiiProxy_AppmeshMesh) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppmeshMesh) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppmeshMesh) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -936,7 +935,7 @@ func (a *jsiiProxy_AppmeshMesh) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -947,7 +946,7 @@ func (a *jsiiProxy_AppmeshMesh) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -958,7 +957,7 @@ func (a *jsiiProxy_AppmeshMesh) PutSpec(value *AppmeshMeshSpec) {
 	_jsii_.InvokeVoid(
 		a,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1002,8 +1001,8 @@ func (a *jsiiProxy_AppmeshMesh) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_AppmeshMesh) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppmeshMesh) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1015,8 +1014,8 @@ func (a *jsiiProxy_AppmeshMesh) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshMesh) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppmeshMesh) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1028,8 +1027,8 @@ func (a *jsiiProxy_AppmeshMesh) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshMesh) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshMesh) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1041,8 +1040,8 @@ func (a *jsiiProxy_AppmeshMesh) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshMesh) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshMesh) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1067,8 +1066,8 @@ func (a *jsiiProxy_AppmeshMesh) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshMesh) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppmeshMesh) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1079,4 +1078,3 @@ func (a *jsiiProxy_AppmeshMesh) ToTerraform() interface{} {
 
 	return returns
 }
-

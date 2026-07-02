@@ -1,6 +1,5 @@
 package lblistenerrule
 
-
 type LbListenerRuleCondition struct {
 	// host_header block.
 	//
@@ -21,10 +20,9 @@ type LbListenerRuleCondition struct {
 	// query_string block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#query_string LbListenerRule#query_string}
-	QueryString interface{} `field:"optional" json:"queryString" yaml:"queryString"`
+	QueryString any `field:"optional" json:"queryString" yaml:"queryString"`
 	// source_ip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/lb_listener_rule#source_ip LbListenerRule#source_ip}
 	SourceIp *LbListenerRuleConditionSourceIp `field:"optional" json:"sourceIp" yaml:"sourceIp"`
 }
-

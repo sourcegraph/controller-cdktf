@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppsyncGraphqlApiAdditionalAuthenticationProviderListParameters(
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDatapipelinePipelineDefinitionParameterObjectAttributeOutputRefe
 
 	return nil
 }
-

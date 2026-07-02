@@ -109,7 +109,7 @@ func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewVpnConnectionTunnel2LogOptionsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

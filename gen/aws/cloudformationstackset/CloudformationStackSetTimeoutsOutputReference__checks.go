@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudformationStackSetTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudformationStackSetTimeoutsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_CloudformationStackSetTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudformationStackSetTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudformationStackSetTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

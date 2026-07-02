@@ -19,7 +19,7 @@ func (e *jsiiProxy_EcrReplicationConfiguration) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (e *jsiiProxy_EcrReplicationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EcrReplicationConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EcrReplicationConfiguration) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (e *jsiiProxy_EcrReplicationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EcrReplicationConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateEcrReplicationConfiguration_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateEcrReplicationConfiguration_IsConstructParameters(x interface{}) error {
+func validateEcrReplicationConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateEcrReplicationConfiguration_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateEcrReplicationConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateEcrReplicationConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateEcrReplicationConfiguration_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateEcrReplicationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateEcrReplicationConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateEcrReplicationConfiguration_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_EcrReplicationConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EcrReplicationConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_EcrReplicationConfiguration) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_EcrReplicationConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EcrReplicationConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_EcrReplicationConfiguration) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_EcrReplicationConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EcrReplicationConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewEcrReplicationConfigurationParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type EksFargateProfileSelectorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type EksFargateProfileSelectorOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -46,7 +46,7 @@ type EksFargateProfileSelectorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type EksFargateProfileSelectorOutputReference interface {
 	ResetLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_EksFargateProfileSelectorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewEksFargateProfileSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EksFargateProfileSelectorOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewEksFargateProfileSelectorOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewEksFargateProfileSelectorOutputReference_Override(e EksFargateProfileSel
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetLabels(val *map[s
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetNamespace(val *st
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) ResetLabels() {
 	)
 }
 
-func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) ToString() *string 
 
 	return returns
 }
-

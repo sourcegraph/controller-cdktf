@@ -106,7 +106,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) validateSetAlarmN
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewIotTopicRuleCloudwatchAlarmOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

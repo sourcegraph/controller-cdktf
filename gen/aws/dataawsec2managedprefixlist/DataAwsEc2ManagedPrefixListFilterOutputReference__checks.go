@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixListFilterOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsEc2ManagedPrefixListFilterOutputReferenceParameters(terra
 
 	return nil
 }
-

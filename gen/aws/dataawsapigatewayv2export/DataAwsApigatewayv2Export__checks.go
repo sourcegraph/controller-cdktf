@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsApigatewayv2Export) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsApigatewayv2Export) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataAwsApigatewayv2Export_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataAwsApigatewayv2Export_IsConstructParameters(x interface{}) error {
+func validateDataAwsApigatewayv2Export_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataAwsApigatewayv2Export_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataAwsApigatewayv2Export_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsApigatewayv2Export_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataAwsApigatewayv2Export_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataAwsApigatewayv2Export_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsApigatewayv2Export_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetApiIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetIncludeExtensionsParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetIncludeExtensionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -302,4 +302,3 @@ func validateNewDataAwsApigatewayv2ExportParameters(scope constructs.Construct, 
 
 	return nil
 }
-

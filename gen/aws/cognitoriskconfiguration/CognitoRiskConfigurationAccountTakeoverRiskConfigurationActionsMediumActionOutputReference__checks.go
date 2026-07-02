@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActio
 	return nil
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActio
 	return nil
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateSetNotifyParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateSetNotifyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsM
 
 	return nil
 }
-

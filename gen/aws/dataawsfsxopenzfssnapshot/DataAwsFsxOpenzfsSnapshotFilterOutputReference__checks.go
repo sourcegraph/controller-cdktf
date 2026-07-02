@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsFsxOpenzfsSnapshotFilterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

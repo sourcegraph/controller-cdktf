@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
-		reflect.TypeOf((*RedshiftScheduledAction)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledAction](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftScheduledAction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig",
-		reflect.TypeOf((*RedshiftScheduledActionConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetAction",
-		reflect.TypeOf((*RedshiftScheduledActionTargetAction)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftScheduledActionTargetActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionPauseCluster)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionPauseCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionPauseClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionPauseClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdentifier", GoGetter: "ClusterIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdentifierInput", GoGetter: "ClusterIdentifierInput"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftScheduledActionTargetActionPauseClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -175,11 +175,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionResizeCluster)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionResizeCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionResizeClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionResizeClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classic", GoGetter: "Classic"},
 			_jsii_.MemberProperty{JsiiProperty: "classicInput", GoGetter: "ClassicInput"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,11 +225,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionResumeCluster)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionResumeCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeClusterOutputReference",
-		reflect.TypeOf((*RedshiftScheduledActionTargetActionResumeClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftScheduledActionTargetActionResumeClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdentifier", GoGetter: "ClusterIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdentifierInput", GoGetter: "ClusterIdentifierInput"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftScheduledActionTargetActionResumeClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

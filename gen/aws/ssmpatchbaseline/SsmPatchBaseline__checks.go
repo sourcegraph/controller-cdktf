@@ -19,7 +19,7 @@ func (s *jsiiProxy_SsmPatchBaseline) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SsmPatchBaseline) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SsmPatchBaseline) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SsmPatchBaseline) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SsmPatchBaseline) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) validatePutApprovalRuleParameters(value interface{}) error {
+func (s *jsiiProxy_SsmPatchBaseline) validatePutApprovalRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (s *jsiiProxy_SsmPatchBaseline) validatePutApprovalRuleParameters(value int
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) validatePutGlobalFilterParameters(value interface{}) error {
+func (s *jsiiProxy_SsmPatchBaseline) validatePutGlobalFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func (s *jsiiProxy_SsmPatchBaseline) validatePutGlobalFilterParameters(value int
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaseline) validatePutSourceParameters(value interface{}) error {
+func (s *jsiiProxy_SsmPatchBaseline) validatePutSourceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateSsmPatchBaseline_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateSsmPatchBaseline_IsConstructParameters(x interface{}) error {
+func validateSsmPatchBaseline_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func validateSsmPatchBaseline_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSsmPatchBaseline_IsTerraformElementParameters(x interface{}) error {
+func validateSsmPatchBaseline_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func validateSsmPatchBaseline_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateSsmPatchBaseline_IsTerraformResourceParameters(x interface{}) error {
+func validateSsmPatchBaseline_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetApprovedPatchesComplianceLevelPa
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) validateSetApprovedPatchesEnableNonSecurityParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaseline) validateSetApprovedPatchesEnableNonSecurityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetApprovedPatchesEnableNonSecurity
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaseline) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SsmPatchBaseline) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -503,7 +503,7 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetOperatingSystemParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaseline) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SsmPatchBaseline) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -599,4 +599,3 @@ func validateNewSsmPatchBaselineParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

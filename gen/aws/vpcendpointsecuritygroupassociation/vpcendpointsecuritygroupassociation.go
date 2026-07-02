@@ -15,15 +15,15 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,21 +50,21 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	ReplaceDefaultAssociation() interface{}
-	SetReplaceDefaultAssociation(val interface{})
-	ReplaceDefaultAssociationInput() interface{}
+	RawOverrides() any
+	ReplaceDefaultAssociation() any
+	SetReplaceDefaultAssociation(val any)
+	ReplaceDefaultAssociationInput() any
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VpcEndpointId() *string
@@ -74,9 +74,9 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type VpcEndpointSecurityGroupAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReplaceDefaultAssociation()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcEndpointSecurityGroupAssociation
@@ -146,8 +146,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ReplaceDefaultAssociation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ReplaceDefaultAssociation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replaceDefaultAssociation",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ReplaceDefaultAssociatio
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ReplaceDefaultAssociationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ReplaceDefaultAssociationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replaceDefaultAssociationInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) VpcEndpointIdInput() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
 func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *string, config *VpcEndpointSecurityGroupAssociationConfig) VpcEndpointSecurityGroupAssociation {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewVpcEndpointSecurityGroupAssociation_Override(v VpcEndpointSecurityGroupA
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetId(val *string) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetReplaceDefaultAssociation(val interface{}) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetReplaceDefaultAssociation(val any) {
 	if err := j.validateSetReplaceDefaultAssociationParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetReplaceDefaultAssociat
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetSecurityGroupId(val *string) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetSecurityGroupId(val *string) {
 	if err := j.validateSetSecurityGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetSecurityGroupId(val *s
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetVpcEndpointId(val *string) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) SetVpcEndpointId(val *string) {
 	if err := j.validateSetVpcEndpointIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func VpcEndpointSecurityGroupAssociation_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func VpcEndpointSecurityGroupAssociation_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcEndpointSecurityGroupAssociation_IsConstruct(x interface{}) *bool {
+func VpcEndpointSecurityGroupAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcEndpointSecurityGroupAssociation_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func VpcEndpointSecurityGroupAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func VpcEndpointSecurityGroupAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcEndpointSecurityGroupAssociation_IsTerraformElement(x interface{}) *bool {
+func VpcEndpointSecurityGroupAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcEndpointSecurityGroupAssociation_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func VpcEndpointSecurityGroupAssociation_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func VpcEndpointSecurityGroupAssociation_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func VpcEndpointSecurityGroupAssociation_IsTerraformResource(x interface{}) *bool {
+func VpcEndpointSecurityGroupAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcEndpointSecurityGroupAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func VpcEndpointSecurityGroupAssociation_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetStringAttribute(terra
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -807,7 +806,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) InterpolationForAttribut
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -895,8 +894,8 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ResetReplaceDefaultAssoc
 	)
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -908,8 +907,8 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) SynthesizeAttributes() *
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -921,8 +920,8 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) SynthesizeHclAttributes(
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -934,8 +933,8 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToHclTerraform() interfa
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -960,8 +959,8 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -972,4 +971,3 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ToTerraform() interface{
 
 	return returns
 }
-

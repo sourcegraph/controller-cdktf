@@ -17,8 +17,8 @@ type MedialiveInputMediaConnectFlowsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MedialiveInputMediaConnectFlowsList interface {
 	Get(index *float64) MedialiveInputMediaConnectFlowsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMedialiveInputMediaConnectFlowsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputMediaConnectFlowsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMedialiveInputMediaConnectFlowsList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMedialiveInputMediaConnectFlowsList_Override(m MedialiveInputMediaConnec
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MedialiveInputMediaConnectFlowsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) Get(index *float64) Medi
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) ToString() *string {
 
 	return returns
 }
-

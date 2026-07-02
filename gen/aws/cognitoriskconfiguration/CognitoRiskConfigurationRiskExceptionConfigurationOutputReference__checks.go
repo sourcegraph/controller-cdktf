@@ -106,7 +106,7 @@ func (j *jsiiProxy_CognitoRiskConfigurationRiskExceptionConfigurationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationRiskExceptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoRiskConfigurationRiskExceptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCognitoRiskConfigurationRiskExceptionConfigurationOutputReferenc
 
 	return nil
 }
-

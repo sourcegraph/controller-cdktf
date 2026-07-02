@@ -98,7 +98,7 @@ func (s *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSnapshotCreateVolumePermissionTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

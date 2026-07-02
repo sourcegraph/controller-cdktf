@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudfrontDistribution) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistribution) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudfrontDistribution) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudfrontDistribution) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CloudfrontDistribution) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) validatePutCustomErrorResponseParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistribution) validatePutCustomErrorResponseParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (c *jsiiProxy_CloudfrontDistribution) validatePutLoggingConfigParameters(va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) validatePutOrderedCacheBehaviorParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistribution) validatePutOrderedCacheBehaviorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func (c *jsiiProxy_CloudfrontDistribution) validatePutOrderedCacheBehaviorParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) validatePutOriginParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistribution) validatePutOriginParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func (c *jsiiProxy_CloudfrontDistribution) validatePutOriginParameters(value int
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistribution) validatePutOriginGroupParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfrontDistribution) validatePutOriginGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -388,7 +388,7 @@ func validateCloudfrontDistribution_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateCloudfrontDistribution_IsConstructParameters(x interface{}) error {
+func validateCloudfrontDistribution_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -396,7 +396,7 @@ func validateCloudfrontDistribution_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudfrontDistribution_IsTerraformElementParameters(x interface{}) error {
+func validateCloudfrontDistribution_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func validateCloudfrontDistribution_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateCloudfrontDistribution_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudfrontDistribution_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -428,7 +428,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetCommentParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -461,7 +461,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -526,7 +526,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetDefaultRootObjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -562,7 +562,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetIsIpv6EnabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetIsIpv6EnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -598,7 +598,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetPriceClassParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -644,7 +644,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetProvisionersParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetRetainOnDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetRetainOnDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -680,7 +680,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetTagsAllParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetWaitForDeploymentParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetWaitForDeploymentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -726,4 +726,3 @@ func validateNewCloudfrontDistributionParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

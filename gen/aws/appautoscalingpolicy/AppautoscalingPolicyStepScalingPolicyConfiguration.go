@@ -1,6 +1,5 @@
 package appautoscalingpolicy
 
-
 type AppautoscalingPolicyStepScalingPolicyConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appautoscaling_policy#adjustment_type AppautoscalingPolicy#adjustment_type}.
 	AdjustmentType *string `field:"optional" json:"adjustmentType" yaml:"adjustmentType"`
@@ -13,6 +12,5 @@ type AppautoscalingPolicyStepScalingPolicyConfiguration struct {
 	// step_adjustment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/appautoscaling_policy#step_adjustment AppautoscalingPolicy#step_adjustment}
-	StepAdjustment interface{} `field:"optional" json:"stepAdjustment" yaml:"stepAdjustment"`
+	StepAdjustment any `field:"optional" json:"stepAdjustment" yaml:"stepAdjustment"`
 }
-

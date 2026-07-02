@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsMskBrokerNodesNodeInfoListStructOutputReferenceParameters
 
 	return nil
 }
-

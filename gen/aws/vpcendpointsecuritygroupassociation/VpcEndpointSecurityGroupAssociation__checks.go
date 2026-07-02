@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateAddMoveTargetPar
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateMoveFromIdParame
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateVpcEndpointSecurityGroupAssociation_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateVpcEndpointSecurityGroupAssociation_IsConstructParameters(x interface{}) error {
+func validateVpcEndpointSecurityGroupAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateVpcEndpointSecurityGroupAssociation_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateVpcEndpointSecurityGroupAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateVpcEndpointSecurityGroupAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateVpcEndpointSecurityGroupAssociation_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateVpcEndpointSecurityGroupAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateVpcEndpointSecurityGroupAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateVpcEndpointSecurityGroupAssociation_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetLifecyclePara
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -396,7 +396,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetProvisionersP
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetReplaceDefaultAssociationParameters(val interface{}) error {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetReplaceDefaultAssociationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -450,4 +450,3 @@ func validateNewVpcEndpointSecurityGroupAssociationParameters(scope constructs.C
 
 	return nil
 }
-

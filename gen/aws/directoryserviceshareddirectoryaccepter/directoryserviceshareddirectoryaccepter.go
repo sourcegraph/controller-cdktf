@@ -15,15 +15,15 @@ type DirectoryServiceSharedDirectoryAccepter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,29 +54,29 @@ type DirectoryServiceSharedDirectoryAccepter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SharedDirectoryId() *string
 	SetSharedDirectoryId(val *string)
 	SharedDirectoryIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type DirectoryServiceSharedDirectoryAccepter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type DirectoryServiceSharedDirectoryAccepter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type DirectoryServiceSharedDirectoryAccepter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectoryServiceSharedDirectoryAccepter
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) Timeouts() Directory
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -396,7 +396,6 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TimeoutsInput() inte
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
 func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryAccepterConfig) DirectoryServiceSharedDirectoryAccepter {
@@ -409,7 +408,7 @@ func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -422,12 +421,12 @@ func NewDirectoryServiceSharedDirectoryAccepter_Override(d DirectoryServiceShare
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -457,7 +456,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetId(val *string) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter)SetSharedDirectoryId(val *string) {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SetSharedDirectoryId(val *string) {
 	if err := j.validateSetSharedDirectoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func DirectoryServiceSharedDirectoryAccepter_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func DirectoryServiceSharedDirectoryAccepter_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectoryServiceSharedDirectoryAccepter_IsConstruct(x interface{}) *bool {
+func DirectoryServiceSharedDirectoryAccepter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectoryServiceSharedDirectoryAccepter_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectoryServiceSharedDirectoryAccepter_IsTerraformElement(x interface{}) *bool {
+func DirectoryServiceSharedDirectoryAccepter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectoryServiceSharedDirectoryAccepter_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func DirectoryServiceSharedDirectoryAccepter_IsTerraformResource(x interface{}) *bool {
+func DirectoryServiceSharedDirectoryAccepter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectoryServiceSharedDirectoryAccepter_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -806,7 +805,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) PutTimeouts(value *D
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -918,8 +917,8 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -931,8 +930,8 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -944,8 +943,8 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -970,8 +969,8 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -982,4 +981,3 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ToTerraform() interf
 
 	return returns
 }
-

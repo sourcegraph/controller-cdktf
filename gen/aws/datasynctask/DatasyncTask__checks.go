@@ -19,7 +19,7 @@ func (d *jsiiProxy_DatasyncTask) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTask) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DatasyncTask) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DatasyncTask) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTask) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DatasyncTask) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateDatasyncTask_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateDatasyncTask_IsConstructParameters(x interface{}) error {
+func validateDatasyncTask_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateDatasyncTask_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDatasyncTask_IsTerraformElementParameters(x interface{}) error {
+func validateDatasyncTask_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateDatasyncTask_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDatasyncTask_IsTerraformResourceParameters(x interface{}) error {
+func validateDatasyncTask_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DatasyncTask) validateSetCloudwatchLogGroupArnParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncTask) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncTask) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DatasyncTask) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncTask) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncTask) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DatasyncTask) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncTask) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DatasyncTask) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -517,4 +517,3 @@ func validateNewDatasyncTaskParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

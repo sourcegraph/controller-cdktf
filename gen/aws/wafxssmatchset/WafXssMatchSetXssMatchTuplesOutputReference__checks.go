@@ -109,7 +109,7 @@ func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewWafXssMatchSetXssMatchTuplesOutputReferenceParameters(terraformR
 
 	return nil
 }
-

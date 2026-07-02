@@ -13,29 +13,29 @@ import (
 type OpsworksPhpAppLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
-	AutoAssignElasticIps() interface{}
-	SetAutoAssignElasticIps(val interface{})
-	AutoAssignElasticIpsInput() interface{}
-	AutoAssignPublicIps() interface{}
-	SetAutoAssignPublicIps(val interface{})
-	AutoAssignPublicIpsInput() interface{}
-	AutoHealing() interface{}
-	SetAutoHealing(val interface{})
-	AutoHealingInput() interface{}
+	AutoAssignElasticIps() any
+	SetAutoAssignElasticIps(val any)
+	AutoAssignElasticIpsInput() any
+	AutoAssignPublicIps() any
+	SetAutoAssignPublicIps(val any)
+	AutoAssignPublicIpsInput() any
+	AutoHealing() any
+	SetAutoHealing(val any)
+	AutoHealingInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudwatchConfiguration() OpsworksPhpAppLayerCloudwatchConfigurationOutputReference
 	CloudwatchConfigurationInput() *OpsworksPhpAppLayerCloudwatchConfiguration
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomConfigureRecipes() *[]*string
 	SetCustomConfigureRecipes(val *[]*string)
 	CustomConfigureRecipesInput() *[]*string
@@ -64,11 +64,11 @@ type OpsworksPhpAppLayer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DrainElbOnShutdown() interface{}
-	SetDrainElbOnShutdown(val interface{})
-	DrainElbOnShutdownInput() interface{}
+	DrainElbOnShutdown() any
+	SetDrainElbOnShutdown(val any)
+	DrainElbOnShutdownInput() any
 	EbsVolume() OpsworksPhpAppLayerEbsVolumeList
-	EbsVolumeInput() interface{}
+	EbsVolumeInput() any
 	ElasticLoadBalancer() *string
 	SetElasticLoadBalancer(val *string)
 	ElasticLoadBalancerInput() *string
@@ -83,9 +83,9 @@ type OpsworksPhpAppLayer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InstallUpdatesOnBoot() interface{}
-	SetInstallUpdatesOnBoot(val interface{})
-	InstallUpdatesOnBootInput() interface{}
+	InstallUpdatesOnBoot() any
+	SetInstallUpdatesOnBoot(val any)
+	InstallUpdatesOnBootInput() any
 	InstanceShutdownTimeout() *float64
 	SetInstanceShutdownTimeout(val *float64)
 	InstanceShutdownTimeoutInput() *float64
@@ -105,11 +105,11 @@ type OpsworksPhpAppLayer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StackId() *string
 	SetStackId(val *string)
 	StackIdInput() *string
@@ -125,19 +125,19 @@ type OpsworksPhpAppLayer interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	UseEbsOptimizedInstances() interface{}
-	SetUseEbsOptimizedInstances(val interface{})
-	UseEbsOptimizedInstancesInput() interface{}
+	UseEbsOptimizedInstances() any
+	SetUseEbsOptimizedInstances(val any)
+	UseEbsOptimizedInstancesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -155,7 +155,7 @@ type OpsworksPhpAppLayer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -167,7 +167,7 @@ type OpsworksPhpAppLayer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -175,7 +175,7 @@ type OpsworksPhpAppLayer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksPhpAppLayerCloudwatchConfiguration)
-	PutEbsVolume(value interface{})
+	PutEbsVolume(value any)
 	PutLoadBasedAutoScaling(value *OpsworksPhpAppLayerLoadBasedAutoScaling)
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
@@ -204,17 +204,17 @@ type OpsworksPhpAppLayer interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetUseEbsOptimizedInstances()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpsworksPhpAppLayer
@@ -232,8 +232,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignElasticIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignElasticIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignElasticIps",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignElasticIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignElasticIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignElasticIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignElasticIpsInput",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignElasticIpsInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignPublicIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignPublicIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignPublicIps",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignPublicIps() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignPublicIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignPublicIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoAssignPublicIpsInput",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) AutoAssignPublicIpsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) AutoHealing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) AutoHealing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoHealing",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) AutoHealing() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) AutoHealingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) AutoHealingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoHealingInput",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) CloudwatchConfigurationInput() *Opsworks
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) DrainElbOnShutdown() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) DrainElbOnShutdown() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"drainElbOnShutdown",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) DrainElbOnShutdown() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) DrainElbOnShutdownInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) DrainElbOnShutdownInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"drainElbOnShutdownInput",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) EbsVolume() OpsworksPhpAppLayerEbsVolume
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) EbsVolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) EbsVolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ebsVolumeInput",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) InstallUpdatesOnBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) InstallUpdatesOnBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBoot",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) InstallUpdatesOnBoot() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) InstallUpdatesOnBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) InstallUpdatesOnBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installUpdatesOnBootInput",
@@ -742,8 +742,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -752,8 +752,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -852,8 +852,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -872,8 +872,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstances() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstances() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useEbsOptimizedInstances",
@@ -882,8 +882,8 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstances() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useEbsOptimizedInstancesInput",
@@ -891,7 +891,6 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstancesInput() interfac
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
 func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *OpsworksPhpAppLayerConfig) OpsworksPhpAppLayer {
@@ -904,7 +903,7 @@ func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *Opsw
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -917,12 +916,12 @@ func NewOpsworksPhpAppLayer_Override(o OpsworksPhpAppLayer, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetAutoAssignElasticIps(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetAutoAssignElasticIps(val any) {
 	if err := j.validateSetAutoAssignElasticIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -933,7 +932,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetAutoAssignElasticIps(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetAutoAssignPublicIps(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetAutoAssignPublicIps(val any) {
 	if err := j.validateSetAutoAssignPublicIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -944,7 +943,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetAutoAssignPublicIps(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetAutoHealing(val any) {
 	if err := j.validateSetAutoHealingParameters(val); err != nil {
 		panic(err)
 	}
@@ -955,7 +954,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetAutoHealing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCount(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -977,7 +976,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomConfigureRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomConfigureRecipes(val *[]*string) {
 	if err := j.validateSetCustomConfigureRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomConfigureRecipes(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomDeployRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomDeployRecipes(val *[]*string) {
 	if err := j.validateSetCustomDeployRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomDeployRecipes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomInstanceProfileArn(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomInstanceProfileArn(val *string) {
 	if err := j.validateSetCustomInstanceProfileArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomInstanceProfileArn(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomJson(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomJson(val *string) {
 	if err := j.validateSetCustomJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetCustomSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomSecurityGroupIds(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomSetupRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomSetupRecipes(val *[]*string) {
 	if err := j.validateSetCustomSetupRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomSetupRecipes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomShutdownRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomShutdownRecipes(val *[]*string) {
 	if err := j.validateSetCustomShutdownRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomShutdownRecipes(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomUndeployRecipes(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetCustomUndeployRecipes(val *[]*string) {
 	if err := j.validateSetCustomUndeployRecipesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetCustomUndeployRecipes(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetDrainElbOnShutdown(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetDrainElbOnShutdown(val any) {
 	if err := j.validateSetDrainElbOnShutdownParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetDrainElbOnShutdown(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetElasticLoadBalancer(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetElasticLoadBalancer(val *string) {
 	if err := j.validateSetElasticLoadBalancerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetElasticLoadBalancer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetId(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,7 +1113,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetInstallUpdatesOnBoot(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetInstallUpdatesOnBoot(val any) {
 	if err := j.validateSetInstallUpdatesOnBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetInstallUpdatesOnBoot(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetInstanceShutdownTimeout(val *float64) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetInstanceShutdownTimeout(val *float64) {
 	if err := j.validateSetInstanceShutdownTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetInstanceShutdownTimeout(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetName(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1166,7 +1165,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1177,7 +1176,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetStackId(val *string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetStackId(val *string) {
 	if err := j.validateSetStackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetStackId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetSystemPackages(val *[]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetSystemPackages(val *[]*string) {
 	if err := j.validateSetSystemPackagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetSystemPackages(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayer)SetUseEbsOptimizedInstances(val interface{}) {
+func (j *jsiiProxy_OpsworksPhpAppLayer) SetUseEbsOptimizedInstances(val any) {
 	if err := j.validateSetUseEbsOptimizedInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func OpsworksPhpAppLayer_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1268,7 +1267,7 @@ func OpsworksPhpAppLayer_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpsworksPhpAppLayer_IsConstruct(x interface{}) *bool {
+func OpsworksPhpAppLayer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksPhpAppLayer_IsConstructParameters(x); err != nil {
@@ -1279,7 +1278,7 @@ func OpsworksPhpAppLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1287,7 +1286,7 @@ func OpsworksPhpAppLayer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksPhpAppLayer_IsTerraformElement(x interface{}) *bool {
+func OpsworksPhpAppLayer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksPhpAppLayer_IsTerraformElementParameters(x); err != nil {
@@ -1298,7 +1297,7 @@ func OpsworksPhpAppLayer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1306,7 +1305,7 @@ func OpsworksPhpAppLayer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpsworksPhpAppLayer_IsTerraformResource(x interface{}) *bool {
+func OpsworksPhpAppLayer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpsworksPhpAppLayer_IsTerraformResourceParameters(x); err != nil {
@@ -1317,7 +1316,7 @@ func OpsworksPhpAppLayer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1342,31 +1341,31 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpsworksPhpAppLayer) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksPhpAppLayer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1382,7 +1381,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1398,7 +1397,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1414,7 +1413,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1430,7 +1429,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1446,7 +1445,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1462,7 +1461,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1478,7 +1477,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1494,15 +1493,15 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksPhpAppLayer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1521,7 +1520,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1534,7 +1533,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1548,18 +1547,18 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpsworksPhpAppLayer) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1570,7 +1569,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1581,7 +1580,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1592,18 +1591,18 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) PutCloudwatchConfiguration(value *Opswor
 	_jsii_.InvokeVoid(
 		o,
 		"putCloudwatchConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) PutEbsVolume(value interface{}) {
+func (o *jsiiProxy_OpsworksPhpAppLayer) PutEbsVolume(value any) {
 	if err := o.validatePutEbsVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putEbsVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1614,7 +1613,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) PutLoadBasedAutoScaling(value *OpsworksP
 	_jsii_.InvokeVoid(
 		o,
 		"putLoadBasedAutoScaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1818,8 +1817,8 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) ResetUseEbsOptimizedInstances() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksPhpAppLayer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1831,8 +1830,8 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpsworksPhpAppLayer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1844,8 +1843,8 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksPhpAppLayer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1857,8 +1856,8 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksPhpAppLayer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1883,8 +1882,8 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayer) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpsworksPhpAppLayer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1895,4 +1894,3 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) ToTerraform() interface{} {
 
 	return returns
 }
-

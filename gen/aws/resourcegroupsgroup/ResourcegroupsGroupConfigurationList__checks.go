@@ -34,7 +34,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewResourcegroupsGroupConfigurationListParameters(terraformResource
 
 	return nil
 }
-

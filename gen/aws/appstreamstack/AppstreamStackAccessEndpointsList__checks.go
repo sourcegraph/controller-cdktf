@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppstreamStackAccessEndpointsList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackAccessEndpointsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppstreamStackAccessEndpointsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppstreamStackAccessEndpointsListParameters(terraformResource cd
 
 	return nil
 }
-

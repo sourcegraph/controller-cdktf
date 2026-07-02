@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration",
-		reflect.TypeOf((*EfsReplicationConfiguration)(nil)).Elem(),
+		reflect.TypeFor[EfsReplicationConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsReplicationConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationConfig",
-		reflect.TypeOf((*EfsReplicationConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[EfsReplicationConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestination",
-		reflect.TypeOf((*EfsReplicationConfigurationDestination)(nil)).Elem(),
+		reflect.TypeFor[EfsReplicationConfigurationDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
-		reflect.TypeOf((*EfsReplicationConfigurationDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsReplicationConfigurationDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneName", GoGetter: "AvailabilityZoneName"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneNameInput", GoGetter: "AvailabilityZoneNameInput"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsReplicationConfigurationDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeouts",
-		reflect.TypeOf((*EfsReplicationConfigurationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EfsReplicationConfigurationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
-		reflect.TypeOf((*EfsReplicationConfigurationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EfsReplicationConfigurationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

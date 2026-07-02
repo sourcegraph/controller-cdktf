@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsPricingProductFiltersOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsPricingProductFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsPricingProductFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataAwsPricingProductFiltersOutputReference) validateSetField
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsPricingProductFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsPricingProductFiltersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataAwsPricingProductFiltersOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
-		reflect.TypeOf((*DxPrivateVirtualInterface)(nil)).Elem(),
+		reflect.TypeFor[DxPrivateVirtualInterface](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayId", GoGetter: "VpnGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayIdInput", GoGetter: "VpnGatewayIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxPrivateVirtualInterface{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterfaceConfig",
-		reflect.TypeOf((*DxPrivateVirtualInterfaceConfig)(nil)).Elem(),
+		reflect.TypeFor[DxPrivateVirtualInterfaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterfaceTimeouts",
-		reflect.TypeOf((*DxPrivateVirtualInterfaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DxPrivateVirtualInterfaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterfaceTimeoutsOutputReference",
-		reflect.TypeOf((*DxPrivateVirtualInterfaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DxPrivateVirtualInterfaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxPrivateVirtualInterfaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

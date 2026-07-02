@@ -15,15 +15,15 @@ type IamGroupMembership interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,15 +56,15 @@ type IamGroupMembership interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Users() *[]*string
@@ -74,9 +74,9 @@ type IamGroupMembership interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type IamGroupMembership interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type IamGroupMembership interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type IamGroupMembership interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamGroupMembership
@@ -145,8 +145,8 @@ func (j *jsiiProxy_IamGroupMembership) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamGroupMembership) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamGroupMembership) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_IamGroupMembership) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamGroupMembership) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamGroupMembership) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_IamGroupMembership) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_IamGroupMembership) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamGroupMembership) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_IamGroupMembership) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamGroupMembership) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamGroupMembership) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_IamGroupMembership) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamGroupMembership) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamGroupMembership) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_IamGroupMembership) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_IamGroupMembership) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamGroupMembership) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_IamGroupMembership) UsersInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_group_membership aws_iam_group_membership} Resource.
 func NewIamGroupMembership(scope constructs.Construct, id *string, config *IamGroupMembershipConfig) IamGroupMembership {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewIamGroupMembership(scope constructs.Construct, id *string, config *IamGr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamGroupMembership.IamGroupMembership",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewIamGroupMembership_Override(i IamGroupMembership, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamGroupMembership.IamGroupMembership",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamGroupMembership) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_IamGroupMembership)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetCount(val interface{}) {
+func (j *jsiiProxy_IamGroupMembership) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_IamGroupMembership)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamGroupMembership) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -435,7 +434,7 @@ func (j *jsiiProxy_IamGroupMembership)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamGroupMembership) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_IamGroupMembership)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetGroup(val *string) {
+func (j *jsiiProxy_IamGroupMembership) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_IamGroupMembership)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetId(val *string) {
+func (j *jsiiProxy_IamGroupMembership) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_IamGroupMembership)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamGroupMembership) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_IamGroupMembership)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetName(val *string) {
+func (j *jsiiProxy_IamGroupMembership) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_IamGroupMembership)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamGroupMembership) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_IamGroupMembership)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamGroupMembership) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_IamGroupMembership)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamGroupMembership)SetUsers(val *[]*string) {
+func (j *jsiiProxy_IamGroupMembership) SetUsers(val *[]*string) {
 	if err := j.validateSetUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func IamGroupMembership_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamGroupMembership.IamGroupMembership",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func IamGroupMembership_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamGroupMembership_IsConstruct(x interface{}) *bool {
+func IamGroupMembership_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamGroupMembership_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func IamGroupMembership_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamGroupMembership.IamGroupMembership",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func IamGroupMembership_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamGroupMembership_IsTerraformElement(x interface{}) *bool {
+func IamGroupMembership_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamGroupMembership_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func IamGroupMembership_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamGroupMembership.IamGroupMembership",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func IamGroupMembership_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamGroupMembership_IsTerraformResource(x interface{}) *bool {
+func IamGroupMembership_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamGroupMembership_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func IamGroupMembership_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamGroupMembership.IamGroupMembership",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (i *jsiiProxy_IamGroupMembership) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamGroupMembership) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamGroupMembership) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamGroupMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamGroupMembership) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (i *jsiiProxy_IamGroupMembership) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (i *jsiiProxy_IamGroupMembership) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (i *jsiiProxy_IamGroupMembership) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (i *jsiiProxy_IamGroupMembership) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (i *jsiiProxy_IamGroupMembership) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (i *jsiiProxy_IamGroupMembership) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (i *jsiiProxy_IamGroupMembership) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (i *jsiiProxy_IamGroupMembership) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamGroupMembership) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamGroupMembership) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -806,7 +805,7 @@ func (i *jsiiProxy_IamGroupMembership) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (i *jsiiProxy_IamGroupMembership) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (i *jsiiProxy_IamGroupMembership) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamGroupMembership) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamGroupMembership) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (i *jsiiProxy_IamGroupMembership) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (i *jsiiProxy_IamGroupMembership) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -886,8 +885,8 @@ func (i *jsiiProxy_IamGroupMembership) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IamGroupMembership) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamGroupMembership) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -899,8 +898,8 @@ func (i *jsiiProxy_IamGroupMembership) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (i *jsiiProxy_IamGroupMembership) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamGroupMembership) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -912,8 +911,8 @@ func (i *jsiiProxy_IamGroupMembership) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (i *jsiiProxy_IamGroupMembership) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamGroupMembership) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -925,8 +924,8 @@ func (i *jsiiProxy_IamGroupMembership) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamGroupMembership) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamGroupMembership) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -951,8 +950,8 @@ func (i *jsiiProxy_IamGroupMembership) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamGroupMembership) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamGroupMembership) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -963,4 +962,3 @@ func (i *jsiiProxy_IamGroupMembership) ToTerraform() interface{} {
 
 	return returns
 }
-

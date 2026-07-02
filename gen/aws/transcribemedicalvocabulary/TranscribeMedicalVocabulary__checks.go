@@ -19,7 +19,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateTranscribeMedicalVocabulary_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateTranscribeMedicalVocabulary_IsConstructParameters(x interface{}) error {
+func validateTranscribeMedicalVocabulary_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateTranscribeMedicalVocabulary_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateTranscribeMedicalVocabulary_IsTerraformElementParameters(x interface{}) error {
+func validateTranscribeMedicalVocabulary_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateTranscribeMedicalVocabulary_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateTranscribeMedicalVocabulary_IsTerraformResourceParameters(x interface{}) error {
+func validateTranscribeMedicalVocabulary_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateTranscribeMedicalVocabulary_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewTranscribeMedicalVocabularyParameters(scope constructs.Construct
 
 	return nil
 }
-

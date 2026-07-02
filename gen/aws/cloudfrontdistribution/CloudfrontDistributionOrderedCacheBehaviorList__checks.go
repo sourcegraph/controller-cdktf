@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfrontDistributionOrderedCacheBehaviorListParameters(terrafo
 
 	return nil
 }
-

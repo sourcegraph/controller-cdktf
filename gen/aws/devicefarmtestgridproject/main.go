@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
-		reflect.TypeOf((*DevicefarmTestGridProject)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmTestGridProject](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmTestGridProject{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectConfig",
-		reflect.TypeOf((*DevicefarmTestGridProjectConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmTestGridProjectConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfig",
-		reflect.TypeOf((*DevicefarmTestGridProjectVpcConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmTestGridProjectVpcConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
-		reflect.TypeOf((*DevicefarmTestGridProjectVpcConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmTestGridProjectVpcConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

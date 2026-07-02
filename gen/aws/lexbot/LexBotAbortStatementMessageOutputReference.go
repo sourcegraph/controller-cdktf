@@ -12,9 +12,9 @@ type LexBotAbortStatementMessageOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type LexBotAbortStatementMessageOutputReference interface {
 	GroupNumber() *float64
 	SetGroupNumber(val *float64)
 	GroupNumberInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type LexBotAbortStatementMessageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type LexBotAbortStatementMessageOutputReference interface {
 	ResetGroupNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_LexBotAbortStatementMessageOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) GroupNumberInput(
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewLexBotAbortStatementMessageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LexBotAbortStatementMessageOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewLexBotAbortStatementMessageOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewLexBotAbortStatementMessageOutputReference_Override(l LexBotAbortStateme
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetContent(val *string) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetContent(val *st
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetContentType(val *string) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetContentType(val
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetGroupNumber(val *float64) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetGroupNumber(val *float64) {
 	if err := j.validateSetGroupNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetGroupNumber(val
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexBotAbortStatementMessageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) ResetGroupNumber(
 	)
 }
 
-func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) ToString() *strin
 
 	return returns
 }
-

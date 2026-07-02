@@ -19,7 +19,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateChimeVoiceConnectorLogging_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateChimeVoiceConnectorLogging_IsConstructParameters(x interface{}) error {
+func validateChimeVoiceConnectorLogging_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateChimeVoiceConnectorLogging_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateChimeVoiceConnectorLogging_IsTerraformElementParameters(x interface{}) error {
+func validateChimeVoiceConnectorLogging_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateChimeVoiceConnectorLogging_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateChimeVoiceConnectorLogging_IsTerraformResourceParameters(x interface{}) error {
+func validateChimeVoiceConnectorLogging_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateChimeVoiceConnectorLogging_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -334,7 +334,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetEnableMediaMetricLogsParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetEnableMediaMetricLogsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -354,7 +354,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetEnableMediaMetricLogsP
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetEnableSipLogsParameters(val interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetEnableSipLogsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetLifecycleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewChimeVoiceConnectorLoggingParameters(scope constructs.Construct,
 
 	return nil
 }
-

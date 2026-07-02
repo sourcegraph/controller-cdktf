@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewServicecatalogTagOptionResourceAssociationTimeoutsOutputReferenc
 
 	return nil
 }
-

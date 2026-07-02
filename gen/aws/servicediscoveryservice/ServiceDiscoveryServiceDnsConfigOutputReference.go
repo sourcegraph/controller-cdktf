@@ -12,9 +12,9 @@ type ServiceDiscoveryServiceDnsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type ServiceDiscoveryServiceDnsConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DnsRecords() ServiceDiscoveryServiceDnsConfigDnsRecordsList
-	DnsRecordsInput() interface{}
+	DnsRecordsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ServiceDiscoveryServiceDnsConfig
@@ -48,7 +48,7 @@ type ServiceDiscoveryServiceDnsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,11 +69,11 @@ type ServiceDiscoveryServiceDnsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDnsRecords(value interface{})
+	PutDnsRecords(value any)
 	ResetRoutingPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) DnsRecords()
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) DnsRecordsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) DnsRecordsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dnsRecordsInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewServiceDiscoveryServiceDnsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceDnsConfigOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewServiceDiscoveryServiceDnsConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewServiceDiscoveryServiceDnsConfigOutputReference_Override(s ServiceDiscov
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetInternalValue(val *ServiceDiscoveryServiceDnsConfig) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetInternalValue(val *ServiceDiscoveryServiceDnsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetNamespaceId(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetNamespaceId(val *string) {
 	if err := j.validateSetNamespaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetNamespaceI
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetRoutingPolicy(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetRoutingPolicy(val *string) {
 	if err := j.validateSetRoutingPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetRoutingPol
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,21 +499,21 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) PutDnsRecords(value interface{}) {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) PutDnsRecords(value any) {
 	if err := s.validatePutDnsRecordsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDnsRecords",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) ResetRouting
 	)
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) ToString() *
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
-		reflect.TypeOf((*DevicefarmDevicePool)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmDevicePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmDevicePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig",
-		reflect.TypeOf((*DevicefarmDevicePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmDevicePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule",
-		reflect.TypeOf((*DevicefarmDevicePoolRule)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmDevicePoolRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
-		reflect.TypeOf((*DevicefarmDevicePoolRuleList)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmDevicePoolRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmDevicePoolRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
-		reflect.TypeOf((*DevicefarmDevicePoolRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DevicefarmDevicePoolRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicefarmDevicePoolRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

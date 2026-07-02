@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmrClusterBootstrapActionList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterBootstrapActionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmrClusterBootstrapActionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmrClusterBootstrapActionListParameters(terraformResource cdktf.
 
 	return nil
 }
-

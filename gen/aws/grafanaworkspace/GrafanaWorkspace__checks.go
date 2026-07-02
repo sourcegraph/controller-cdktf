@@ -19,7 +19,7 @@ func (g *jsiiProxy_GrafanaWorkspace) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GrafanaWorkspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GrafanaWorkspace) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GrafanaWorkspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGrafanaWorkspace_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateGrafanaWorkspace_IsConstructParameters(x interface{}) error {
+func validateGrafanaWorkspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGrafanaWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGrafanaWorkspace_IsTerraformElementParameters(x interface{}) error {
+func validateGrafanaWorkspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGrafanaWorkspace_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateGrafanaWorkspace_IsTerraformResourceParameters(x interface{}) error {
+func validateGrafanaWorkspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetConfigurationParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetPermissionTypeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -548,4 +548,3 @@ func validateNewGrafanaWorkspaceParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateInterpolatio
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validatePutArgsParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validatePutArgsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueScriptDagNodeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewDataAwsGlueScriptDagNodeOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

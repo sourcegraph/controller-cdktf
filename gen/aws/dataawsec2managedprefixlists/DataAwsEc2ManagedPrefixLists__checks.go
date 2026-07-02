@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsEc2ManagedPrefixLists_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDataAwsEc2ManagedPrefixLists_IsConstructParameters(x interface{}) error {
+func validateDataAwsEc2ManagedPrefixLists_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsEc2ManagedPrefixLists_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDataAwsEc2ManagedPrefixLists_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsEc2ManagedPrefixLists_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsEc2ManagedPrefixLists_IsTerraformDataSourceParameters(x inte
 	return nil
 }
 
-func validateDataAwsEc2ManagedPrefixLists_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsEc2ManagedPrefixLists_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsEc2ManagedPrefixLists_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -278,4 +278,3 @@ func validateNewDataAwsEc2ManagedPrefixListsParameters(scope constructs.Construc
 
 	return nil
 }
-

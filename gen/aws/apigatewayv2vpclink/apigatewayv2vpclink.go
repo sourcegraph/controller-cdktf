@@ -16,15 +16,15 @@ type Apigatewayv2VpcLink interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type Apigatewayv2VpcLink interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -74,16 +74,16 @@ type Apigatewayv2VpcLink interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type Apigatewayv2VpcLink interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type Apigatewayv2VpcLink interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type Apigatewayv2VpcLink interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Apigatewayv2VpcLink
@@ -164,8 +164,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2VpcLink) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Apigatewayv2VpcLink) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2VpcLink) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Apigatewayv2VpcLink) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2VpcLink) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Apigatewayv2VpcLink) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Resource.
 func NewApigatewayv2VpcLink(scope constructs.Construct, id *string, config *Apigatewayv2VpcLinkConfig) Apigatewayv2VpcLink {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewApigatewayv2VpcLink(scope constructs.Construct, id *string, config *Apig
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewApigatewayv2VpcLink_Override(a Apigatewayv2VpcLink, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetConnection(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetCount(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetId(val *string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetName(val *string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_Apigatewayv2VpcLink) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func Apigatewayv2VpcLink_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func Apigatewayv2VpcLink_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Apigatewayv2VpcLink_IsConstruct(x interface{}) *bool {
+func Apigatewayv2VpcLink_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2VpcLink_IsConstructParameters(x); err != nil {
@@ -645,7 +644,7 @@ func Apigatewayv2VpcLink_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func Apigatewayv2VpcLink_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Apigatewayv2VpcLink_IsTerraformElement(x interface{}) *bool {
+func Apigatewayv2VpcLink_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2VpcLink_IsTerraformElementParameters(x); err != nil {
@@ -664,7 +663,7 @@ func Apigatewayv2VpcLink_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func Apigatewayv2VpcLink_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Apigatewayv2VpcLink_IsTerraformResource(x interface{}) *bool {
+func Apigatewayv2VpcLink_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2VpcLink_IsTerraformResourceParameters(x); err != nil {
@@ -683,7 +682,7 @@ func Apigatewayv2VpcLink_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -708,31 +707,31 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_Apigatewayv2VpcLink) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2VpcLink) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,15 +859,15 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2VpcLink) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -887,7 +886,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -900,7 +899,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,18 +913,18 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_Apigatewayv2VpcLink) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -936,7 +935,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -947,7 +946,7 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -983,8 +982,8 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) ResetTagsAll() {
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Apigatewayv2VpcLink) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -996,8 +995,8 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Apigatewayv2VpcLink) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1009,8 +1008,8 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2VpcLink) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1022,8 +1021,8 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2VpcLink) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1048,8 +1047,8 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2VpcLink) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2VpcLink) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1060,4 +1059,3 @@ func (a *jsiiProxy_Apigatewayv2VpcLink) ToTerraform() interface{} {
 
 	return returns
 }
-

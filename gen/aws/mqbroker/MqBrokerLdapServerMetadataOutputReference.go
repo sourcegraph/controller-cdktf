@@ -12,9 +12,9 @@ type MqBrokerLdapServerMetadataOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,9 +41,9 @@ type MqBrokerLdapServerMetadataOutputReference interface {
 	RoleSearchMatching() *string
 	SetRoleSearchMatching(val *string)
 	RoleSearchMatchingInput() *string
-	RoleSearchSubtree() interface{}
-	SetRoleSearchSubtree(val interface{})
-	RoleSearchSubtreeInput() interface{}
+	RoleSearchSubtree() any
+	SetRoleSearchSubtree(val any)
+	RoleSearchSubtreeInput() any
 	ServiceAccountPassword() *string
 	SetServiceAccountPassword(val *string)
 	ServiceAccountPasswordInput() *string
@@ -67,13 +67,13 @@ type MqBrokerLdapServerMetadataOutputReference interface {
 	UserSearchMatching() *string
 	SetUserSearchMatching(val *string)
 	UserSearchMatchingInput() *string
-	UserSearchSubtree() interface{}
-	SetUserSearchSubtree(val interface{})
-	UserSearchSubtreeInput() interface{}
+	UserSearchSubtree() any
+	SetUserSearchSubtree(val any)
+	UserSearchSubtreeInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type MqBrokerLdapServerMetadataOutputReference interface {
 	ResetUserSearchSubtree()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ type jsiiProxy_MqBrokerLdapServerMetadataOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) RoleSearchMatching
 	return returns
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) RoleSearchSubtree() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) RoleSearchSubtree() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"roleSearchSubtree",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) RoleSearchSubtree(
 	return returns
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) RoleSearchSubtreeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) RoleSearchSubtreeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"roleSearchSubtreeInput",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchMatching
 	return returns
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchSubtree() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchSubtree() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userSearchSubtree",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchSubtree(
 	return returns
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchSubtreeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchSubtreeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userSearchSubtreeInput",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) UserSearchSubtreeI
 	)
 	return returns
 }
-
 
 func NewMqBrokerLdapServerMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MqBrokerLdapServerMetadataOutputReference {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewMqBrokerLdapServerMetadataOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewMqBrokerLdapServerMetadataOutputReference_Override(m MqBrokerLdapServerM
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetHosts(val *[]*string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetHosts(val *[]*string) {
 	if err := j.validateSetHostsParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetHosts(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetInternalValue(val *MqBrokerLdapServerMetadata) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetInternalValue(val *MqBrokerLdapServerMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleBase(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetRoleBase(val *string) {
 	if err := j.validateSetRoleBaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleBase(val *st
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleName(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetRoleName(val *string) {
 	if err := j.validateSetRoleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleName(val *st
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleSearchMatching(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetRoleSearchMatching(val *string) {
 	if err := j.validateSetRoleSearchMatchingParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleSearchMatchi
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleSearchSubtree(val interface{}) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetRoleSearchSubtree(val any) {
 	if err := j.validateSetRoleSearchSubtreeParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetRoleSearchSubtre
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetServiceAccountPassword(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetServiceAccountPassword(val *string) {
 	if err := j.validateSetServiceAccountPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetServiceAccountPa
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetServiceAccountUsername(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetServiceAccountUsername(val *string) {
 	if err := j.validateSetServiceAccountUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetServiceAccountUs
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserBase(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetUserBase(val *string) {
 	if err := j.validateSetUserBaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserBase(val *st
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserRoleName(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetUserRoleName(val *string) {
 	if err := j.validateSetUserRoleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserRoleName(val
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserSearchMatching(val *string) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetUserSearchMatching(val *string) {
 	if err := j.validateSetUserSearchMatchingParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserSearchMatchi
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference)SetUserSearchSubtree(val interface{}) {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) SetUserSearchSubtree(val any) {
 	if err := j.validateSetUserSearchSubtreeParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) ResetUserSearchSub
 	)
 }
 
-func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) ToString() *string
 
 	return returns
 }
-

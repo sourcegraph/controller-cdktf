@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkAcl) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (n *jsiiProxy_NetworkAcl) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkAcl) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkAcl) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (n *jsiiProxy_NetworkAcl) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkAcl) validatePutEgressParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkAcl) validatePutEgressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (n *jsiiProxy_NetworkAcl) validatePutEgressParameters(value interface{}) er
 	return nil
 }
 
-func (n *jsiiProxy_NetworkAcl) validatePutIngressParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkAcl) validatePutIngressParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateNetworkAcl_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateNetworkAcl_IsConstructParameters(x interface{}) error {
+func validateNetworkAcl_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateNetworkAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetworkAcl_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkAcl_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateNetworkAcl_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetworkAcl_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkAcl_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateNetworkAcl_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_NetworkAcl) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkAcl) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_NetworkAcl) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkAcl) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkAcl) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_NetworkAcl) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
-func (j *jsiiProxy_NetworkAcl) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkAcl) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -508,4 +508,3 @@ func validateNewNetworkAclParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

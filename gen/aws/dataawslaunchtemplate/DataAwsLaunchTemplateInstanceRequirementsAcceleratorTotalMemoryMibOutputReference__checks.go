@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryM
 
 	return nil
 }
-

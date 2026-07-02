@@ -12,9 +12,9 @@ type OpsworksMemcachedLayerEbsVolumeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type OpsworksMemcachedLayerEbsVolumeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Iops() *float64
 	SetIops(val *float64)
 	IopsInput() *float64
@@ -61,7 +61,7 @@ type OpsworksMemcachedLayerEbsVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type OpsworksMemcachedLayerEbsVolumeOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ type jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) CreationStack
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Encrypted() i
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -311,7 +311,6 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) TypeInput() *
 	return returns
 }
 
-
 func NewOpsworksMemcachedLayerEbsVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksMemcachedLayerEbsVolumeOutputReference {
 	_init_.Initialize()
 
@@ -322,7 +321,7 @@ func NewOpsworksMemcachedLayerEbsVolumeOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -334,12 +333,12 @@ func NewOpsworksMemcachedLayerEbsVolumeOutputReference_Override(o OpsworksMemcac
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetEncrypted(v
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetIops(val *f
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetMountPoint(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetMountPoint(val *string) {
 	if err := j.validateSetMountPointParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetMountPoint(
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetNumberOfDisks(val *float64) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetNumberOfDisks(val *float64) {
 	if err := j.validateSetNumberOfDisksParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetNumberOfDis
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetRaidLevel(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetRaidLevel(val *string) {
 	if err := j.validateSetRaidLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetRaidLevel(v
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetSize(val *float64) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetSize(val *f
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference)SetType(val *string) {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,16 +483,16 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetNumberList
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Interpolation
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -689,16 +688,16 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) ResetType() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -717,4 +716,3 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference) ToString() *s
 
 	return returns
 }
-

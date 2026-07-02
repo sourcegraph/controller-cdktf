@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
-		reflect.TypeOf((*ElasticacheReplicationGroup)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userGroupIds", GoGetter: "UserGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "userGroupIdsInput", GoGetter: "UserGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheReplicationGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterMode",
-		reflect.TypeOf((*ElasticacheReplicationGroupClusterMode)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupClusterMode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
-		reflect.TypeOf((*ElasticacheReplicationGroupClusterModeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupClusterModeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,15 +235,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupConfig",
-		reflect.TypeOf((*ElasticacheReplicationGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfiguration",
-		reflect.TypeOf((*ElasticacheReplicationGroupLogDeliveryConfiguration)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupLogDeliveryConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationList",
-		reflect.TypeOf((*ElasticacheReplicationGroupLogDeliveryConfigurationList)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupLogDeliveryConfigurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -265,7 +265,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
-		reflect.TypeOf((*ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeouts",
-		reflect.TypeOf((*ElasticacheReplicationGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
-		reflect.TypeOf((*ElasticacheReplicationGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ElasticacheReplicationGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ElasticacheReplicationGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

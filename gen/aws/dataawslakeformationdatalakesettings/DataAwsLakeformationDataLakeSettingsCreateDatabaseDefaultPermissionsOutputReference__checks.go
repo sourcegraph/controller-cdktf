@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPerm
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermiss
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference) validateSetAd
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCeAnomalySubscriptionSubscriberOutputReferenceParameters(terrafo
 
 	return nil
 }
-

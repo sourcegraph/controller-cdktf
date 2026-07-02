@@ -15,15 +15,15 @@ type EcrPullThroughCacheRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,16 +53,16 @@ type EcrPullThroughCacheRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RegistryId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpstreamRegistryUrl() *string
@@ -72,9 +72,9 @@ type EcrPullThroughCacheRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type EcrPullThroughCacheRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type EcrPullThroughCacheRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type EcrPullThroughCacheRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EcrPullThroughCacheRule
@@ -143,8 +143,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrPullThroughCacheRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcrPullThroughCacheRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrPullThroughCacheRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EcrPullThroughCacheRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcrPullThroughCacheRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcrPullThroughCacheRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) UpstreamRegistryUrlInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
 func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *EcrPullThroughCacheRuleConfig) EcrPullThroughCacheRule {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewEcrPullThroughCacheRule_Override(e EcrPullThroughCacheRule, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetCount(val interface{}) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetEcrRepositoryPrefix(val *string) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetEcrRepositoryPrefix(val *string) {
 	if err := j.validateSetEcrRepositoryPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetEcrRepositoryPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -442,7 +441,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetId(val *string) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetUpstreamRegistryUrl(val *string) {
+func (j *jsiiProxy_EcrPullThroughCacheRule) SetUpstreamRegistryUrl(val *string) {
 	if err := j.validateSetUpstreamRegistryUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func EcrPullThroughCacheRule_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func EcrPullThroughCacheRule_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EcrPullThroughCacheRule_IsConstruct(x interface{}) *bool {
+func EcrPullThroughCacheRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrPullThroughCacheRule_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func EcrPullThroughCacheRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func EcrPullThroughCacheRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EcrPullThroughCacheRule_IsTerraformElement(x interface{}) *bool {
+func EcrPullThroughCacheRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrPullThroughCacheRule_IsTerraformElementParameters(x); err != nil {
@@ -560,7 +559,7 @@ func EcrPullThroughCacheRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func EcrPullThroughCacheRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EcrPullThroughCacheRule_IsTerraformResource(x interface{}) *bool {
+func EcrPullThroughCacheRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcrPullThroughCacheRule_IsTerraformResourceParameters(x); err != nil {
@@ -579,7 +578,7 @@ func EcrPullThroughCacheRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,31 +603,31 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EcrPullThroughCacheRule) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcrPullThroughCacheRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,15 +755,15 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrPullThroughCacheRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -783,7 +782,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -796,7 +795,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,18 +809,18 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EcrPullThroughCacheRule) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -832,7 +831,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -843,7 +842,7 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -863,8 +862,8 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) ResetOverrideLogicalId() {
 	)
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcrPullThroughCacheRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -876,8 +875,8 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcrPullThroughCacheRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -889,8 +888,8 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrPullThroughCacheRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -902,8 +901,8 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrPullThroughCacheRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -928,8 +927,8 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcrPullThroughCacheRule) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcrPullThroughCacheRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -940,4 +939,3 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) ToTerraform() interface{} {
 
 	return returns
 }
-

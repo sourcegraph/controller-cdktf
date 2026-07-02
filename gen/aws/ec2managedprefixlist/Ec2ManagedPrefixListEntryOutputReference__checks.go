@@ -106,7 +106,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateSetCidrPara
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateSetDescript
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEc2ManagedPrefixListEntryOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

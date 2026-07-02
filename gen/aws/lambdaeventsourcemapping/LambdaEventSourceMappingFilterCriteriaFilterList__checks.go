@@ -34,7 +34,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLambdaEventSourceMappingFilterCriteriaFilterListParameters(terra
 
 	return nil
 }
-

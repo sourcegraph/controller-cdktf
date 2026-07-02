@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroup",
-		reflect.TypeOf((*Wafv2RuleGroup)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibilityConfig", GoGetter: "VisibilityConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityConfigInput", GoGetter: "VisibilityConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig",
-		reflect.TypeOf((*Wafv2RuleGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody",
-		reflect.TypeOf((*Wafv2RuleGroupCustomResponseBody)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupCustomResponseBody](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList",
-		reflect.TypeOf((*Wafv2RuleGroupCustomResponseBodyList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupCustomResponseBodyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupCustomResponseBodyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupCustomResponseBodyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupCustomResponseBodyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupCustomResponseBodyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,27 +160,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule",
-		reflect.TypeOf((*Wafv2RuleGroupRule)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction",
-		reflect.TypeOf((*Wafv2RuleGroupRuleAction)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllow",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllow)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllow](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandling",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllowCustomRequestHandling)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllowCustomRequestHandling](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,7 +238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -273,7 +273,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionAllowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionAllowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,15 +309,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlock",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlock)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlock](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlockCustomResponse)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlockCustomResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -350,7 +350,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -358,11 +358,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -376,7 +376,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -384,7 +384,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,7 +420,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionBlockOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionBlockOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionBlockOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,19 +456,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptcha",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptcha)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptcha](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -490,7 +490,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -526,7 +526,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -553,7 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -561,7 +561,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCaptchaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCaptchaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -589,7 +589,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCaptchaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -597,19 +597,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCount)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCount](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandling",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCountCustomRequestHandling)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCountCustomRequestHandling](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -623,7 +623,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -631,7 +631,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -659,7 +659,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -667,7 +667,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -694,7 +694,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -702,7 +702,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionCountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionCountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -730,7 +730,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionCountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -738,7 +738,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
@@ -778,7 +778,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -786,7 +786,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleList",
-		reflect.TypeOf((*Wafv2RuleGroupRuleList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -800,7 +800,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -808,7 +808,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -849,7 +849,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibilityConfig", GoGetter: "VisibilityConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityConfigInput", GoGetter: "VisibilityConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -857,11 +857,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel",
-		reflect.TypeOf((*Wafv2RuleGroupRuleRuleLabel)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleRuleLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabelList",
-		reflect.TypeOf((*Wafv2RuleGroupRuleRuleLabelList)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleRuleLabelList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -875,7 +875,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleRuleLabelList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -883,7 +883,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabelOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleRuleLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleRuleLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -909,7 +909,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleRuleLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -917,11 +917,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig",
-		reflect.TypeOf((*Wafv2RuleGroupRuleVisibilityConfig)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleVisibilityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupRuleVisibilityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupRuleVisibilityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchMetricsEnabled", GoGetter: "CloudwatchMetricsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchMetricsEnabledInput", GoGetter: "CloudwatchMetricsEnabledInput"},
@@ -951,7 +951,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -959,11 +959,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig",
-		reflect.TypeOf((*Wafv2RuleGroupVisibilityConfig)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupVisibilityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfigOutputReference",
-		reflect.TypeOf((*Wafv2RuleGroupVisibilityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Wafv2RuleGroupVisibilityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchMetricsEnabled", GoGetter: "CloudwatchMetricsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchMetricsEnabledInput", GoGetter: "CloudwatchMetricsEnabledInput"},
@@ -993,7 +993,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Wafv2RuleGroupVisibilityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

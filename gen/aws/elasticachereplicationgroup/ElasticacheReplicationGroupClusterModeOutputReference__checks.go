@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewElasticacheReplicationGroupClusterModeOutputReferenceParameters(
 
 	return nil
 }
-

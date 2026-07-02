@@ -109,7 +109,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketObjectLockConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketObjectLockConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewS3BucketObjectLockConfigurationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

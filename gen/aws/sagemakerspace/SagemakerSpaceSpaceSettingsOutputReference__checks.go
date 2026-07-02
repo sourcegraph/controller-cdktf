@@ -120,7 +120,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewSagemakerSpaceSpaceSettingsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

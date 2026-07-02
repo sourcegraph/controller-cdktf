@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateAddMoveTargetParame
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveFromIdParameter
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApprunnerCustomDomainAssociation_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateApprunnerCustomDomainAssociation_IsConstructParameters(x interface{}) error {
+func validateApprunnerCustomDomainAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApprunnerCustomDomainAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateApprunnerCustomDomainAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateApprunnerCustomDomainAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApprunnerCustomDomainAssociation_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateApprunnerCustomDomainAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateApprunnerCustomDomainAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateApprunnerCustomDomainAssociation_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetDomainNameParame
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetEnableWwwSubdomainParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetEnableWwwSubdomainParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetLifecycleParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -450,4 +450,3 @@ func validateNewApprunnerCustomDomainAssociationParameters(scope constructs.Cons
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList) val
 	return nil
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyListParamete
 
 	return nil
 }
-

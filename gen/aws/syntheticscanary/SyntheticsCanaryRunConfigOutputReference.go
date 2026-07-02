@@ -10,14 +10,14 @@ import (
 
 type SyntheticsCanaryRunConfigOutputReference interface {
 	cdktf.ComplexObject
-	ActiveTracing() interface{}
-	SetActiveTracing(val interface{})
-	ActiveTracingInput() interface{}
+	ActiveTracing() any
+	SetActiveTracing(val any)
+	ActiveTracingInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type SyntheticsCanaryRunConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type SyntheticsCanaryRunConfigOutputReference interface {
 	ResetTimeoutInSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_SyntheticsCanaryRunConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ActiveTracing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ActiveTracing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeTracing",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ActiveTracing() int
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ActiveTracingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ActiveTracingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeTracingInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ActiveTracingInput(
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) TimeoutInSecondsInp
 	return returns
 }
 
-
 func NewSyntheticsCanaryRunConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsCanaryRunConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewSyntheticsCanaryRunConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewSyntheticsCanaryRunConfigOutputReference_Override(s SyntheticsCanaryRunC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetActiveTracing(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetActiveTracing(val any) {
 	if err := j.validateSetActiveTracingParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetActiveTracing(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetEnvironmentVariab
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetInternalValue(val *SyntheticsCanaryRunConfig) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetInternalValue(val *SyntheticsCanaryRunConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetMemoryInMb(val *float64) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetMemoryInMb(val *float64) {
 	if err := j.validateSetMemoryInMbParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetMemoryInMb(val *f
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetTimeoutInSeconds(val *float64) {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) SetTimeoutInSeconds(val *float64) {
 	if err := j.validateSetTimeoutInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ResetTimeoutInSecon
 	)
 }
 
-func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

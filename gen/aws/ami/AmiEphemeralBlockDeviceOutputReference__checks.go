@@ -98,7 +98,7 @@ func (a *jsiiProxy_AmiEphemeralBlockDeviceOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AmiEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AmiEphemeralBlockDeviceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AmiEphemeralBlockDeviceOutputReference) validateSetDeviceName
 	return nil
 }
 
-func (j *jsiiProxy_AmiEphemeralBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmiEphemeralBlockDeviceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAmiEphemeralBlockDeviceOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

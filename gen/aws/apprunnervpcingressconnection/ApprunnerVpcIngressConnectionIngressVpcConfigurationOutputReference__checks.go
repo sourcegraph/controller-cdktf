@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApprunnerVpcIngressConnectionIngressVpcConfigurationOutputRefere
 
 	return nil
 }
-

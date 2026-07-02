@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateAddMoveTarge
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateMoveFromIdPa
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServicecatalogBudgetResourceAssociation_GenerateConfigForImportPara
 	return nil
 }
 
-func validateServicecatalogBudgetResourceAssociation_IsConstructParameters(x interface{}) error {
+func validateServicecatalogBudgetResourceAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServicecatalogBudgetResourceAssociation_IsConstructParameters(x int
 	return nil
 }
 
-func validateServicecatalogBudgetResourceAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateServicecatalogBudgetResourceAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServicecatalogBudgetResourceAssociation_IsTerraformElementParameter
 	return nil
 }
 
-func validateServicecatalogBudgetResourceAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateServicecatalogBudgetResourceAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetBudgetNam
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetLifecycle
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewServicecatalogBudgetResourceAssociationParameters(scope construc
 
 	return nil
 }
-

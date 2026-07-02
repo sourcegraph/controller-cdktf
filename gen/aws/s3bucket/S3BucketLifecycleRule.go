@@ -1,9 +1,8 @@
 package s3bucket
 
-
 type S3BucketLifecycleRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}.
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}.
 	AbortIncompleteMultipartUploadDays *float64 `field:"optional" json:"abortIncompleteMultipartUploadDays" yaml:"abortIncompleteMultipartUploadDays"`
 	// expiration block.
@@ -22,7 +21,7 @@ type S3BucketLifecycleRule struct {
 	// noncurrent_version_transition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#noncurrent_version_transition S3Bucket#noncurrent_version_transition}
-	NoncurrentVersionTransition interface{} `field:"optional" json:"noncurrentVersionTransition" yaml:"noncurrentVersionTransition"`
+	NoncurrentVersionTransition any `field:"optional" json:"noncurrentVersionTransition" yaml:"noncurrentVersionTransition"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#tags S3Bucket#tags}.
@@ -30,6 +29,5 @@ type S3BucketLifecycleRule struct {
 	// transition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket#transition S3Bucket#transition}
-	Transition interface{} `field:"optional" json:"transition" yaml:"transition"`
+	Transition any `field:"optional" json:"transition" yaml:"transition"`
 }
-

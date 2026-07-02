@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueJobExecutionPropertyOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueJobExecutionPropertyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueJobExecutionPropertyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGlueJobExecutionPropertyOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

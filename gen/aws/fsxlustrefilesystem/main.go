@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
-		reflect.TypeOf((*FsxLustreFileSystem)(nil)).Elem(),
+		reflect.TypeFor[FsxLustreFileSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTime", GoGetter: "WeeklyMaintenanceStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTimeInput", GoGetter: "WeeklyMaintenanceStartTimeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxLustreFileSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemConfig",
-		reflect.TypeOf((*FsxLustreFileSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[FsxLustreFileSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration",
-		reflect.TypeOf((*FsxLustreFileSystemLogConfiguration)(nil)).Elem(),
+		reflect.TypeFor[FsxLustreFileSystemLogConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
-		reflect.TypeOf((*FsxLustreFileSystemLogConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxLustreFileSystemLogConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeouts",
-		reflect.TypeOf((*FsxLustreFileSystemTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FsxLustreFileSystemTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
-		reflect.TypeOf((*FsxLustreFileSystemTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FsxLustreFileSystemTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

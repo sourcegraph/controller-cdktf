@@ -16,15 +16,15 @@ type EvidentlySegment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,11 +64,11 @@ type EvidentlySegment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -78,16 +78,16 @@ type EvidentlySegment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type EvidentlySegment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type EvidentlySegment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type EvidentlySegment interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EvidentlySegment
@@ -169,8 +169,8 @@ func (j *jsiiProxy_EvidentlySegment) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlySegment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_EvidentlySegment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EvidentlySegment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_EvidentlySegment) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlySegment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_EvidentlySegment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EvidentlySegment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_EvidentlySegment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EvidentlySegment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_EvidentlySegment) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EvidentlySegment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -479,7 +479,6 @@ func (j *jsiiProxy_EvidentlySegment) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/evidently_segment aws_evidently_segment} Resource.
 func NewEvidentlySegment(scope constructs.Construct, id *string, config *EvidentlySegmentConfig) EvidentlySegment {
 	_init_.Initialize()
@@ -491,7 +490,7 @@ func NewEvidentlySegment(scope constructs.Construct, id *string, config *Evident
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewEvidentlySegment_Override(e EvidentlySegment, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetConnection(val interface{}) {
+func (j *jsiiProxy_EvidentlySegment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_EvidentlySegment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetCount(val interface{}) {
+func (j *jsiiProxy_EvidentlySegment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_EvidentlySegment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EvidentlySegment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_EvidentlySegment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetDescription(val *string) {
+func (j *jsiiProxy_EvidentlySegment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_EvidentlySegment)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EvidentlySegment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +557,7 @@ func (j *jsiiProxy_EvidentlySegment)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetId(val *string) {
+func (j *jsiiProxy_EvidentlySegment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_EvidentlySegment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EvidentlySegment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_EvidentlySegment)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetName(val *string) {
+func (j *jsiiProxy_EvidentlySegment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_EvidentlySegment)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetPattern(val *string) {
+func (j *jsiiProxy_EvidentlySegment) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_EvidentlySegment)SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EvidentlySegment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_EvidentlySegment)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EvidentlySegment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_EvidentlySegment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EvidentlySegment) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_EvidentlySegment)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EvidentlySegment) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func EvidentlySegment_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func EvidentlySegment_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EvidentlySegment_IsConstruct(x interface{}) *bool {
+func EvidentlySegment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlySegment_IsConstructParameters(x); err != nil {
@@ -690,7 +689,7 @@ func EvidentlySegment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func EvidentlySegment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EvidentlySegment_IsTerraformElement(x interface{}) *bool {
+func EvidentlySegment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlySegment_IsTerraformElementParameters(x); err != nil {
@@ -709,7 +708,7 @@ func EvidentlySegment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func EvidentlySegment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EvidentlySegment_IsTerraformResource(x interface{}) *bool {
+func EvidentlySegment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEvidentlySegment_IsTerraformResourceParameters(x); err != nil {
@@ -728,7 +727,7 @@ func EvidentlySegment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,31 +752,31 @@ func (e *jsiiProxy_EvidentlySegment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EvidentlySegment) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EvidentlySegment) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EvidentlySegment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EvidentlySegment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (e *jsiiProxy_EvidentlySegment) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (e *jsiiProxy_EvidentlySegment) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (e *jsiiProxy_EvidentlySegment) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (e *jsiiProxy_EvidentlySegment) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (e *jsiiProxy_EvidentlySegment) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (e *jsiiProxy_EvidentlySegment) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (e *jsiiProxy_EvidentlySegment) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,15 +904,15 @@ func (e *jsiiProxy_EvidentlySegment) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlySegment) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlySegment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -932,7 +931,7 @@ func (e *jsiiProxy_EvidentlySegment) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -945,7 +944,7 @@ func (e *jsiiProxy_EvidentlySegment) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,18 +958,18 @@ func (e *jsiiProxy_EvidentlySegment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EvidentlySegment) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EvidentlySegment) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -981,7 +980,7 @@ func (e *jsiiProxy_EvidentlySegment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -992,7 +991,7 @@ func (e *jsiiProxy_EvidentlySegment) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1036,8 +1035,8 @@ func (e *jsiiProxy_EvidentlySegment) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_EvidentlySegment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EvidentlySegment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1049,8 +1048,8 @@ func (e *jsiiProxy_EvidentlySegment) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlySegment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EvidentlySegment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1062,8 +1061,8 @@ func (e *jsiiProxy_EvidentlySegment) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlySegment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlySegment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1075,8 +1074,8 @@ func (e *jsiiProxy_EvidentlySegment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlySegment) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlySegment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1101,8 +1100,8 @@ func (e *jsiiProxy_EvidentlySegment) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlySegment) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EvidentlySegment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1113,4 +1112,3 @@ func (e *jsiiProxy_EvidentlySegment) ToTerraform() interface{} {
 
 	return returns
 }
-

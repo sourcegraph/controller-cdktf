@@ -155,7 +155,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -311,4 +311,3 @@ func validateNewKinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRef
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (i *jsiiProxy_IotRoleAlias) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (i *jsiiProxy_IotRoleAlias) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IotRoleAlias) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IotRoleAlias) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (i *jsiiProxy_IotRoleAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IotRoleAlias) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIotRoleAlias_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateIotRoleAlias_IsConstructParameters(x interface{}) error {
+func validateIotRoleAlias_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIotRoleAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIotRoleAlias_IsTerraformElementParameters(x interface{}) error {
+func validateIotRoleAlias_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIotRoleAlias_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIotRoleAlias_IsTerraformResourceParameters(x interface{}) error {
+func validateIotRoleAlias_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IotRoleAlias) validateSetAliasParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IotRoleAlias) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IotRoleAlias) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_IotRoleAlias) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_IotRoleAlias) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IotRoleAlias) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_IotRoleAlias) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
-func (j *jsiiProxy_IotRoleAlias) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IotRoleAlias) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewIotRoleAliasParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

@@ -18,24 +18,24 @@ type S3BucketInventory interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Destination() S3BucketInventoryDestinationOutputReference
 	DestinationInput() *S3BucketInventoryDestination
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Filter() S3BucketInventoryFilterOutputReference
 	FilterInput() *S3BucketInventoryFilter
 	// Experimental.
@@ -69,26 +69,26 @@ type S3BucketInventory interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schedule() S3BucketInventoryScheduleOutputReference
 	ScheduleInput() *S3BucketInventorySchedule
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type S3BucketInventory interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type S3BucketInventory interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type S3BucketInventory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for S3BucketInventory
@@ -183,8 +183,8 @@ func (j *jsiiProxy_S3BucketInventory) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketInventory) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_S3BucketInventory) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketInventory) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_S3BucketInventory) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketInventory) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_S3BucketInventory) DestinationInput() *S3BucketInventoryDesti
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketInventory) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_S3BucketInventory) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketInventory) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_S3BucketInventory) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_S3BucketInventory) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_S3BucketInventory) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketInventory) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_S3BucketInventory) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventory) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_S3BucketInventory) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_S3BucketInventory) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource.
 func NewS3BucketInventory(scope constructs.Construct, id *string, config *S3BucketInventoryConfig) S3BucketInventory {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewS3BucketInventory(scope constructs.Construct, id *string, config *S3Buck
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewS3BucketInventory_Override(s S3BucketInventory, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetBucket(val *string) {
+func (j *jsiiProxy_S3BucketInventory) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_S3BucketInventory)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetConnection(val interface{}) {
+func (j *jsiiProxy_S3BucketInventory) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_S3BucketInventory)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetCount(val interface{}) {
+func (j *jsiiProxy_S3BucketInventory) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_S3BucketInventory)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_S3BucketInventory) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_S3BucketInventory)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetEnabled(val interface{}) {
+func (j *jsiiProxy_S3BucketInventory) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_S3BucketInventory)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_S3BucketInventory) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +582,7 @@ func (j *jsiiProxy_S3BucketInventory)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetId(val *string) {
+func (j *jsiiProxy_S3BucketInventory) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_S3BucketInventory)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetIncludedObjectVersions(val *string) {
+func (j *jsiiProxy_S3BucketInventory) SetIncludedObjectVersions(val *string) {
 	if err := j.validateSetIncludedObjectVersionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_S3BucketInventory)SetIncludedObjectVersions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_S3BucketInventory) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_S3BucketInventory)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetName(val *string) {
+func (j *jsiiProxy_S3BucketInventory) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_S3BucketInventory)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetOptionalFields(val *[]*string) {
+func (j *jsiiProxy_S3BucketInventory) SetOptionalFields(val *[]*string) {
 	if err := j.validateSetOptionalFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_S3BucketInventory)SetOptionalFields(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_S3BucketInventory) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -646,7 +645,7 @@ func (j *jsiiProxy_S3BucketInventory)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventory)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_S3BucketInventory) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func S3BucketInventory_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func S3BucketInventory_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func S3BucketInventory_IsConstruct(x interface{}) *bool {
+func S3BucketInventory_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketInventory_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func S3BucketInventory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func S3BucketInventory_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketInventory_IsTerraformElement(x interface{}) *bool {
+func S3BucketInventory_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketInventory_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func S3BucketInventory_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func S3BucketInventory_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func S3BucketInventory_IsTerraformResource(x interface{}) *bool {
+func S3BucketInventory_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateS3BucketInventory_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func S3BucketInventory_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (s *jsiiProxy_S3BucketInventory) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_S3BucketInventory) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_S3BucketInventory) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_S3BucketInventory) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketInventory) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (s *jsiiProxy_S3BucketInventory) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (s *jsiiProxy_S3BucketInventory) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (s *jsiiProxy_S3BucketInventory) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_S3BucketInventory) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (s *jsiiProxy_S3BucketInventory) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (s *jsiiProxy_S3BucketInventory) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (s *jsiiProxy_S3BucketInventory) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (s *jsiiProxy_S3BucketInventory) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventory) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketInventory) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -946,7 +945,7 @@ func (s *jsiiProxy_S3BucketInventory) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (s *jsiiProxy_S3BucketInventory) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (s *jsiiProxy_S3BucketInventory) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_S3BucketInventory) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_S3BucketInventory) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (s *jsiiProxy_S3BucketInventory) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (s *jsiiProxy_S3BucketInventory) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (s *jsiiProxy_S3BucketInventory) PutDestination(value *S3BucketInventoryDes
 	_jsii_.InvokeVoid(
 		s,
 		"putDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (s *jsiiProxy_S3BucketInventory) PutFilter(value *S3BucketInventoryFilter) 
 	_jsii_.InvokeVoid(
 		s,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (s *jsiiProxy_S3BucketInventory) PutSchedule(value *S3BucketInventorySchedu
 	_jsii_.InvokeVoid(
 		s,
 		"putSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1083,8 +1082,8 @@ func (s *jsiiProxy_S3BucketInventory) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketInventory) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketInventory) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1096,8 +1095,8 @@ func (s *jsiiProxy_S3BucketInventory) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventory) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_S3BucketInventory) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1109,8 +1108,8 @@ func (s *jsiiProxy_S3BucketInventory) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventory) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketInventory) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1122,8 +1121,8 @@ func (s *jsiiProxy_S3BucketInventory) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventory) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketInventory) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1148,8 +1147,8 @@ func (s *jsiiProxy_S3BucketInventory) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventory) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_S3BucketInventory) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1160,4 +1159,3 @@ func (s *jsiiProxy_S3BucketInventory) ToTerraform() interface{} {
 
 	return returns
 }
-

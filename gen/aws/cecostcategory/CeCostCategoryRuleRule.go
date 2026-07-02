@@ -1,11 +1,10 @@
 package cecostcategory
 
-
 type CeCostCategoryRuleRule struct {
 	// and block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category#and CeCostCategory#and}
-	And interface{} `field:"optional" json:"and" yaml:"and"`
+	And any `field:"optional" json:"and" yaml:"and"`
 	// cost_category block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
@@ -21,10 +20,9 @@ type CeCostCategoryRuleRule struct {
 	// or block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category#or CeCostCategory#or}
-	Or interface{} `field:"optional" json:"or" yaml:"or"`
+	Or any `field:"optional" json:"or" yaml:"or"`
 	// tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 	Tags *CeCostCategoryRuleRuleTags `field:"optional" json:"tags" yaml:"tags"`
 }
-

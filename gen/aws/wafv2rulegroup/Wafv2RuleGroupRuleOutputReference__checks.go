@@ -101,7 +101,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutActionParameter
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutRuleLabelParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutRuleLabelParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetPriorityParamet
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetStatementParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetStatementParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,4 +299,3 @@ func validateNewWafv2RuleGroupRuleOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SqsQueue) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (s *jsiiProxy_SqsQueue) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SqsQueue) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SqsQueue) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqsQueue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SqsQueue) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSqsQueue_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateSqsQueue_IsConstructParameters(x interface{}) error {
+func validateSqsQueue_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSqsQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSqsQueue_IsTerraformElementParameters(x interface{}) error {
+func validateSqsQueue_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSqsQueue_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSqsQueue_IsTerraformResourceParameters(x interface{}) error {
+func validateSqsQueue_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSqsQueue_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueue) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SqsQueue) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SqsQueue) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueue) validateSetContentBasedDeduplicationParameters(val interface{}) error {
+func (j *jsiiProxy_SqsQueue) validateSetContentBasedDeduplicationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_SqsQueue) validateSetContentBasedDeduplicationParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueue) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SqsQueue) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -370,7 +370,7 @@ func (j *jsiiProxy_SqsQueue) validateSetDelaySecondsParameters(val *float64) err
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueue) validateSetFifoQueueParameters(val interface{}) error {
+func (j *jsiiProxy_SqsQueue) validateSetFifoQueueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -470,7 +470,7 @@ func (j *jsiiProxy_SqsQueue) validateSetPolicyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueue) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SqsQueue) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -540,7 +540,7 @@ func (j *jsiiProxy_SqsQueue) validateSetRedrivePolicyParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueue) validateSetSqsManagedSseEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqsQueue) validateSetSqsManagedSseEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -599,4 +599,3 @@ func validateNewSqsQueueParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

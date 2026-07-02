@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamAccountAlias) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (i *jsiiProxy_IamAccountAlias) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamAccountAlias) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamAccountAlias) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (i *jsiiProxy_IamAccountAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamAccountAlias) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIamAccountAlias_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateIamAccountAlias_IsConstructParameters(x interface{}) error {
+func validateIamAccountAlias_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIamAccountAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamAccountAlias_IsTerraformElementParameters(x interface{}) error {
+func validateIamAccountAlias_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIamAccountAlias_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamAccountAlias_IsTerraformResourceParameters(x interface{}) error {
+func validateIamAccountAlias_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IamAccountAlias) validateSetAccountAliasParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountAlias) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountAlias) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_IamAccountAlias) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountAlias) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountAlias) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_IamAccountAlias) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountAlias) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamAccountAlias) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -422,4 +422,3 @@ func validateNewIamAccountAliasParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

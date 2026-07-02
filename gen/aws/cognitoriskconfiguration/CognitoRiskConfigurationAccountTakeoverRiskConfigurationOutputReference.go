@@ -14,9 +14,9 @@ type CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference int
 	ActionsInput() *CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference int
 	PutNotifyConfiguration(value *CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	return returns
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	return returns
 }
 
-
 func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	)
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	)
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference)SetInternalValue(val *CognitoRiskConfigurationAccountTakeoverRiskConfiguration) {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) SetInternalValue(val *CognitoRiskConfigurationAccountTakeoverRiskConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	)
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	)
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.InvokeVoid(
 		c,
 		"putActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -479,20 +478,20 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 	_jsii_.InvokeVoid(
 		c,
 		"putNotifyConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 
 	return returns
 }
-

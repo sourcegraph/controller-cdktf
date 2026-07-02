@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.Instance",
-		reflect.TypeOf((*Instance)(nil)).Elem(),
+		reflect.TypeFor[Instance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Instance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -222,15 +222,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceCapacityReservationSpecification",
-		reflect.TypeOf((*InstanceCapacityReservationSpecification)(nil)).Elem(),
+		reflect.TypeFor[InstanceCapacityReservationSpecification](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget",
-		reflect.TypeOf((*InstanceCapacityReservationSpecificationCapacityReservationTarget)(nil)).Elem(),
+		reflect.TypeFor[InstanceCapacityReservationSpecificationCapacityReservationTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference",
-		reflect.TypeOf((*InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationId", GoGetter: "CapacityReservationId"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationIdInput", GoGetter: "CapacityReservationIdInput"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,7 +268,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationOutputReference",
-		reflect.TypeOf((*InstanceCapacityReservationSpecificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceCapacityReservationSpecificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationPreference", GoGetter: "CapacityReservationPreference"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationPreferenceInput", GoGetter: "CapacityReservationPreferenceInput"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceCapacityReservationSpecificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,15 +307,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceConfig",
-		reflect.TypeOf((*InstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[InstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceCreditSpecification",
-		reflect.TypeOf((*InstanceCreditSpecification)(nil)).Elem(),
+		reflect.TypeFor[InstanceCreditSpecification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceCreditSpecificationOutputReference",
-		reflect.TypeOf((*InstanceCreditSpecificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceCreditSpecificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceCreditSpecificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -350,11 +350,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceEbsBlockDevice",
-		reflect.TypeOf((*InstanceEbsBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[InstanceEbsBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceEbsBlockDeviceList",
-		reflect.TypeOf((*InstanceEbsBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[InstanceEbsBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceEbsBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -376,7 +376,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceEbsBlockDeviceOutputReference",
-		reflect.TypeOf((*InstanceEbsBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceEbsBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -430,7 +430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceEbsBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -438,11 +438,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceEnclaveOptions",
-		reflect.TypeOf((*InstanceEnclaveOptions)(nil)).Elem(),
+		reflect.TypeFor[InstanceEnclaveOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceEnclaveOptionsOutputReference",
-		reflect.TypeOf((*InstanceEnclaveOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceEnclaveOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -469,7 +469,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceEnclaveOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -477,11 +477,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice",
-		reflect.TypeOf((*InstanceEphemeralBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[InstanceEphemeralBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceEphemeralBlockDeviceList",
-		reflect.TypeOf((*InstanceEphemeralBlockDeviceList)(nil)).Elem(),
+		reflect.TypeFor[InstanceEphemeralBlockDeviceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -495,7 +495,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceEphemeralBlockDeviceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -503,7 +503,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceEphemeralBlockDeviceOutputReference",
-		reflect.TypeOf((*InstanceEphemeralBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceEphemeralBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -535,7 +535,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualName", GoGetter: "VirtualName"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNameInput", GoGetter: "VirtualNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceEphemeralBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -543,11 +543,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceLaunchTemplate",
-		reflect.TypeOf((*InstanceLaunchTemplate)(nil)).Elem(),
+		reflect.TypeFor[InstanceLaunchTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceLaunchTemplateOutputReference",
-		reflect.TypeOf((*InstanceLaunchTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceLaunchTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -580,7 +580,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceLaunchTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -588,11 +588,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceMaintenanceOptions",
-		reflect.TypeOf((*InstanceMaintenanceOptions)(nil)).Elem(),
+		reflect.TypeFor[InstanceMaintenanceOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceMaintenanceOptionsOutputReference",
-		reflect.TypeOf((*InstanceMaintenanceOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceMaintenanceOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRecovery", GoGetter: "AutoRecovery"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRecoveryInput", GoGetter: "AutoRecoveryInput"},
@@ -619,7 +619,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceMaintenanceOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -627,11 +627,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceMetadataOptions",
-		reflect.TypeOf((*InstanceMetadataOptions)(nil)).Elem(),
+		reflect.TypeFor[InstanceMetadataOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceMetadataOptionsOutputReference",
-		reflect.TypeOf((*InstanceMetadataOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceMetadataOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -675,11 +675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceNetworkInterface",
-		reflect.TypeOf((*InstanceNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[InstanceNetworkInterface](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceList",
-		reflect.TypeOf((*InstanceNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[InstanceNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -693,7 +693,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -701,7 +701,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceOutputReference",
-		reflect.TypeOf((*InstanceNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -735,7 +735,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -743,11 +743,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions",
-		reflect.TypeOf((*InstancePrivateDnsNameOptions)(nil)).Elem(),
+		reflect.TypeFor[InstancePrivateDnsNameOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference",
-		reflect.TypeOf((*InstancePrivateDnsNameOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstancePrivateDnsNameOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -780,7 +780,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstancePrivateDnsNameOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -788,11 +788,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceRootBlockDevice",
-		reflect.TypeOf((*InstanceRootBlockDevice)(nil)).Elem(),
+		reflect.TypeFor[InstanceRootBlockDevice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceRootBlockDeviceOutputReference",
-		reflect.TypeOf((*InstanceRootBlockDeviceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceRootBlockDeviceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -842,7 +842,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceRootBlockDeviceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -850,11 +850,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.instance.InstanceTimeouts",
-		reflect.TypeOf((*InstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[InstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.instance.InstanceTimeoutsOutputReference",
-		reflect.TypeOf((*InstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[InstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -887,7 +887,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_InstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

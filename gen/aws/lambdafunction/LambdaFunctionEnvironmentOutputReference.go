@@ -12,9 +12,9 @@ type LambdaFunctionEnvironmentOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type LambdaFunctionEnvironmentOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type LambdaFunctionEnvironmentOutputReference interface {
 	ResetVariables()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_LambdaFunctionEnvironmentOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) VariablesInput() *m
 	return returns
 }
 
-
 func NewLambdaFunctionEnvironmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaFunctionEnvironmentOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewLambdaFunctionEnvironmentOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewLambdaFunctionEnvironmentOutputReference_Override(l LambdaFunctionEnviro
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetInternalValue(val *LambdaFunctionEnvironment) {
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) SetInternalValue(val *LambdaFunctionEnvironment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference)SetVariables(val *map[string]*string) {
+func (j *jsiiProxy_LambdaFunctionEnvironmentOutputReference) SetVariables(val *map[string]*string) {
 	if err := j.validateSetVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) ResetVariables() {
 	)
 }
 
-func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (l *jsiiProxy_LambdaFunctionEnvironmentOutputReference) ToString() *string 
 
 	return returns
 }
-

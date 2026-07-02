@@ -19,7 +19,7 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (l *jsiiProxy_LbSslNegotiationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (l *jsiiProxy_LbSslNegotiationPolicy) validatePutAttributeParameters(value interface{}) error {
+func (l *jsiiProxy_LbSslNegotiationPolicy) validatePutAttributeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateLbSslNegotiationPolicy_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateLbSslNegotiationPolicy_IsConstructParameters(x interface{}) error {
+func validateLbSslNegotiationPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateLbSslNegotiationPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLbSslNegotiationPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateLbSslNegotiationPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateLbSslNegotiationPolicy_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateLbSslNegotiationPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateLbSslNegotiationPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateLbSslNegotiationPolicy_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewLbSslNegotiationPolicyParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

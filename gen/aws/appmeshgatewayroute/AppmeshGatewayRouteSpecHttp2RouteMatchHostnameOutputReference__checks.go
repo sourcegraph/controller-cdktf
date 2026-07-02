@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReferencePar
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type KendraIndex interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,7 +36,7 @@ type KendraIndex interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DocumentMetadataConfigurationUpdates() KendraIndexDocumentMetadataConfigurationUpdatesList
-	DocumentMetadataConfigurationUpdatesInput() interface{}
+	DocumentMetadataConfigurationUpdatesInput() any
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
@@ -67,11 +67,11 @@ type KendraIndex interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -87,11 +87,11 @@ type KendraIndex interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KendraIndexTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdatedAt() *string
 	UserContextPolicy() *string
 	SetUserContextPolicy(val *string)
@@ -104,9 +104,9 @@ type KendraIndex interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type KendraIndex interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type KendraIndex interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,7 +144,7 @@ type KendraIndex interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCapacityUnits(value *KendraIndexCapacityUnits)
-	PutDocumentMetadataConfigurationUpdates(value interface{})
+	PutDocumentMetadataConfigurationUpdates(value any)
 	PutServerSideEncryptionConfiguration(value *KendraIndexServerSideEncryptionConfiguration)
 	PutTimeouts(value *KendraIndexTimeouts)
 	PutUserGroupResolutionConfiguration(value *KendraIndexUserGroupResolutionConfiguration)
@@ -164,17 +164,17 @@ type KendraIndex interface {
 	ResetUserContextPolicy()
 	ResetUserGroupResolutionConfiguration()
 	ResetUserTokenConfigurations()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KendraIndex
@@ -222,8 +222,8 @@ func (j *jsiiProxy_KendraIndex) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndex) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_KendraIndex) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KendraIndex) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_KendraIndex) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndex) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_KendraIndex) DocumentMetadataConfigurationUpdates() KendraInd
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) DocumentMetadataConfigurationUpdatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndex) DocumentMetadataConfigurationUpdatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"documentMetadataConfigurationUpdatesInput",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_KendraIndex) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KendraIndex) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_KendraIndex) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndex) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_KendraIndex) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KendraIndex) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_KendraIndex) Timeouts() KendraIndexTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndex) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KendraIndex) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -682,7 +682,6 @@ func (j *jsiiProxy_KendraIndex) UserTokenConfigurationsInput() *KendraIndexUserT
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kendra_index aws_kendra_index} Resource.
 func NewKendraIndex(scope constructs.Construct, id *string, config *KendraIndexConfig) KendraIndex {
 	_init_.Initialize()
@@ -694,7 +693,7 @@ func NewKendraIndex(scope constructs.Construct, id *string, config *KendraIndexC
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraIndex.KendraIndex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -707,12 +706,12 @@ func NewKendraIndex_Override(k KendraIndex, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kendraIndex.KendraIndex",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetConnection(val interface{}) {
+func (j *jsiiProxy_KendraIndex) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_KendraIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetCount(val interface{}) {
+func (j *jsiiProxy_KendraIndex) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_KendraIndex)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KendraIndex) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_KendraIndex)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetDescription(val *string) {
+func (j *jsiiProxy_KendraIndex) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_KendraIndex)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetEdition(val *string) {
+func (j *jsiiProxy_KendraIndex) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_KendraIndex)SetEdition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KendraIndex) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -772,7 +771,7 @@ func (j *jsiiProxy_KendraIndex)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetId(val *string) {
+func (j *jsiiProxy_KendraIndex) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_KendraIndex)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KendraIndex) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_KendraIndex)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetName(val *string) {
+func (j *jsiiProxy_KendraIndex) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_KendraIndex)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KendraIndex) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -813,7 +812,7 @@ func (j *jsiiProxy_KendraIndex)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KendraIndex) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_KendraIndex)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetRoleArn(val *string) {
+func (j *jsiiProxy_KendraIndex) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_KendraIndex)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_KendraIndex) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_KendraIndex)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_KendraIndex) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_KendraIndex)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_KendraIndex)SetUserContextPolicy(val *string) {
+func (j *jsiiProxy_KendraIndex) SetUserContextPolicy(val *string) {
 	if err := j.validateSetUserContextPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func KendraIndex_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraIndex.KendraIndex",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func KendraIndex_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KendraIndex_IsConstruct(x interface{}) *bool {
+func KendraIndex_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKendraIndex_IsConstructParameters(x); err != nil {
@@ -915,7 +914,7 @@ func KendraIndex_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraIndex.KendraIndex",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func KendraIndex_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KendraIndex_IsTerraformElement(x interface{}) *bool {
+func KendraIndex_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKendraIndex_IsTerraformElementParameters(x); err != nil {
@@ -934,7 +933,7 @@ func KendraIndex_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraIndex.KendraIndex",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func KendraIndex_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KendraIndex_IsTerraformResource(x interface{}) *bool {
+func KendraIndex_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKendraIndex_IsTerraformResourceParameters(x); err != nil {
@@ -953,7 +952,7 @@ func KendraIndex_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraIndex.KendraIndex",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -978,31 +977,31 @@ func (k *jsiiProxy_KendraIndex) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KendraIndex) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KendraIndex) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KendraIndex) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KendraIndex) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (k *jsiiProxy_KendraIndex) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (k *jsiiProxy_KendraIndex) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (k *jsiiProxy_KendraIndex) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (k *jsiiProxy_KendraIndex) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1082,7 +1081,7 @@ func (k *jsiiProxy_KendraIndex) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1098,7 +1097,7 @@ func (k *jsiiProxy_KendraIndex) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1114,7 +1113,7 @@ func (k *jsiiProxy_KendraIndex) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1130,15 +1129,15 @@ func (k *jsiiProxy_KendraIndex) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndex) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraIndex) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1157,7 +1156,7 @@ func (k *jsiiProxy_KendraIndex) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (k *jsiiProxy_KendraIndex) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,18 +1183,18 @@ func (k *jsiiProxy_KendraIndex) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KendraIndex) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KendraIndex) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (k *jsiiProxy_KendraIndex) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (k *jsiiProxy_KendraIndex) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1228,18 +1227,18 @@ func (k *jsiiProxy_KendraIndex) PutCapacityUnits(value *KendraIndexCapacityUnits
 	_jsii_.InvokeVoid(
 		k,
 		"putCapacityUnits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (k *jsiiProxy_KendraIndex) PutDocumentMetadataConfigurationUpdates(value interface{}) {
+func (k *jsiiProxy_KendraIndex) PutDocumentMetadataConfigurationUpdates(value any) {
 	if err := k.validatePutDocumentMetadataConfigurationUpdatesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putDocumentMetadataConfigurationUpdates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (k *jsiiProxy_KendraIndex) PutServerSideEncryptionConfiguration(value *Kend
 	_jsii_.InvokeVoid(
 		k,
 		"putServerSideEncryptionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1261,7 +1260,7 @@ func (k *jsiiProxy_KendraIndex) PutTimeouts(value *KendraIndexTimeouts) {
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (k *jsiiProxy_KendraIndex) PutUserGroupResolutionConfiguration(value *Kendr
 	_jsii_.InvokeVoid(
 		k,
 		"putUserGroupResolutionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1283,7 +1282,7 @@ func (k *jsiiProxy_KendraIndex) PutUserTokenConfigurations(value *KendraIndexUse
 	_jsii_.InvokeVoid(
 		k,
 		"putUserTokenConfigurations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1391,8 +1390,8 @@ func (k *jsiiProxy_KendraIndex) ResetUserTokenConfigurations() {
 	)
 }
 
-func (k *jsiiProxy_KendraIndex) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KendraIndex) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1404,8 +1403,8 @@ func (k *jsiiProxy_KendraIndex) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndex) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KendraIndex) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1417,8 +1416,8 @@ func (k *jsiiProxy_KendraIndex) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndex) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraIndex) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1430,8 +1429,8 @@ func (k *jsiiProxy_KendraIndex) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndex) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraIndex) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1456,8 +1455,8 @@ func (k *jsiiProxy_KendraIndex) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndex) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KendraIndex) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1468,4 +1467,3 @@ func (k *jsiiProxy_KendraIndex) ToTerraform() interface{} {
 
 	return returns
 }
-

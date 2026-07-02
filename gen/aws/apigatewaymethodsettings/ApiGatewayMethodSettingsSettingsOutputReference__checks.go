@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetCacheDataEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetCacheDataEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetCachingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetCachingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetDataTraceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetDataTraceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetMetricsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetMetricsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetM
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetRequireAuthorizationForCacheControlParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetRequireAuthorizationForCacheControlParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,4 +338,3 @@ func validateNewApiGatewayMethodSettingsSettingsOutputReferenceParameters(terraf
 
 	return nil
 }
-

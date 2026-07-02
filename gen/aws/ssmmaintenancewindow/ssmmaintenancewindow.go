@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}.
 type SsmMaintenanceWindow interface {
 	cdktf.TerraformResource
-	AllowUnassociatedTargets() interface{}
-	SetAllowUnassociatedTargets(val interface{})
-	AllowUnassociatedTargetsInput() interface{}
+	AllowUnassociatedTargets() any
+	SetAllowUnassociatedTargets(val any)
+	AllowUnassociatedTargetsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Cutoff() *float64
 	SetCutoff(val *float64)
 	CutoffInput() *float64
@@ -40,9 +40,9 @@ type SsmMaintenanceWindow interface {
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EndDate() *string
 	SetEndDate(val *string)
 	EndDateInput() *string
@@ -71,11 +71,11 @@ type SsmMaintenanceWindow interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleInput() *string
@@ -97,16 +97,16 @@ type SsmMaintenanceWindow interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type SsmMaintenanceWindow interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type SsmMaintenanceWindow interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,17 +156,17 @@ type SsmMaintenanceWindow interface {
 	ResetStartDate()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SsmMaintenanceWindow
@@ -174,8 +174,8 @@ type jsiiProxy_SsmMaintenanceWindow struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) AllowUnassociatedTargets() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) AllowUnassociatedTargets() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUnassociatedTargets",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) AllowUnassociatedTargets() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) AllowUnassociatedTargetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) AllowUnassociatedTargetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowUnassociatedTargetsInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) DurationInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SsmMaintenanceWindow) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -614,7 +614,6 @@ func (j *jsiiProxy_SsmMaintenanceWindow) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window} Resource.
 func NewSsmMaintenanceWindow(scope constructs.Construct, id *string, config *SsmMaintenanceWindowConfig) SsmMaintenanceWindow {
 	_init_.Initialize()
@@ -626,7 +625,7 @@ func NewSsmMaintenanceWindow(scope constructs.Construct, id *string, config *Ssm
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -639,12 +638,12 @@ func NewSsmMaintenanceWindow_Override(s SsmMaintenanceWindow, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetAllowUnassociatedTargets(val interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetAllowUnassociatedTargets(val any) {
 	if err := j.validateSetAllowUnassociatedTargetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetAllowUnassociatedTargets(val interfac
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetConnection(val interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetCount(val interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetCutoff(val *float64) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetCutoff(val *float64) {
 	if err := j.validateSetCutoffParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetCutoff(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetDescription(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetDuration(val *float64) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetDuration(val *float64) {
 	if err := j.validateSetDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetDuration(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetEndDate(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetEndDate(val *string) {
 	if err := j.validateSetEndDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetEndDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -748,7 +747,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetId(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetName(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -789,7 +788,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetSchedule(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetSchedule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetScheduleOffset(val *float64) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetScheduleOffset(val *float64) {
 	if err := j.validateSetScheduleOffsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetScheduleOffset(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetScheduleTimezone(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetScheduleTimezone(val *string) {
 	if err := j.validateSetScheduleTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetScheduleTimezone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetStartDate(val *string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetStartDate(val *string) {
 	if err := j.validateSetStartDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetStartDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SsmMaintenanceWindow) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func SsmMaintenanceWindow_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func SsmMaintenanceWindow_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SsmMaintenanceWindow_IsConstruct(x interface{}) *bool {
+func SsmMaintenanceWindow_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmMaintenanceWindow_IsConstructParameters(x); err != nil {
@@ -913,7 +912,7 @@ func SsmMaintenanceWindow_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func SsmMaintenanceWindow_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmMaintenanceWindow_IsTerraformElement(x interface{}) *bool {
+func SsmMaintenanceWindow_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmMaintenanceWindow_IsTerraformElementParameters(x); err != nil {
@@ -932,7 +931,7 @@ func SsmMaintenanceWindow_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func SsmMaintenanceWindow_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SsmMaintenanceWindow_IsTerraformResource(x interface{}) *bool {
+func SsmMaintenanceWindow_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSsmMaintenanceWindow_IsTerraformResourceParameters(x); err != nil {
@@ -951,7 +950,7 @@ func SsmMaintenanceWindow_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -976,31 +975,31 @@ func (s *jsiiProxy_SsmMaintenanceWindow) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SsmMaintenanceWindow) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SsmMaintenanceWindow) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,15 +1127,15 @@ func (s *jsiiProxy_SsmMaintenanceWindow) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmMaintenanceWindow) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1155,7 +1154,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,18 +1181,18 @@ func (s *jsiiProxy_SsmMaintenanceWindow) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SsmMaintenanceWindow) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1204,7 +1203,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1215,7 +1214,7 @@ func (s *jsiiProxy_SsmMaintenanceWindow) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1307,8 +1306,8 @@ func (s *jsiiProxy_SsmMaintenanceWindow) ResetTagsAll() {
 	)
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmMaintenanceWindow) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1320,8 +1319,8 @@ func (s *jsiiProxy_SsmMaintenanceWindow) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SsmMaintenanceWindow) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1333,8 +1332,8 @@ func (s *jsiiProxy_SsmMaintenanceWindow) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmMaintenanceWindow) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1346,8 +1345,8 @@ func (s *jsiiProxy_SsmMaintenanceWindow) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmMaintenanceWindow) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1372,8 +1371,8 @@ func (s *jsiiProxy_SsmMaintenanceWindow) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindow) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SsmMaintenanceWindow) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1384,4 +1383,3 @@ func (s *jsiiProxy_SsmMaintenanceWindow) ToTerraform() interface{} {
 
 	return returns
 }
-

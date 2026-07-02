@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2TrafficMirrorSession.Ec2TrafficMirrorSession",
-		reflect.TypeOf((*Ec2TrafficMirrorSession)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorSession](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkId", GoGetter: "VirtualNetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIdInput", GoGetter: "VirtualNetworkIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ec2TrafficMirrorSession{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,6 +89,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2TrafficMirrorSession.Ec2TrafficMirrorSessionConfig",
-		reflect.TypeOf((*Ec2TrafficMirrorSessionConfig)(nil)).Elem(),
+		reflect.TypeFor[Ec2TrafficMirrorSessionConfig](),
 	)
 }

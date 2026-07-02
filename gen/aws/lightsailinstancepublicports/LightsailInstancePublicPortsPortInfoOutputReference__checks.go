@@ -114,7 +114,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewLightsailInstancePublicPortsPortInfoOutputReferenceParameters(te
 
 	return nil
 }
-

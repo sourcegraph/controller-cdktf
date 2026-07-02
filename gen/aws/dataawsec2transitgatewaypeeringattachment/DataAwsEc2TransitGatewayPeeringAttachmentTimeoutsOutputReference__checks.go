@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsEc2TransitGatewayPeeringAttachmentTimeoutsOutputReference
 
 	return nil
 }
-

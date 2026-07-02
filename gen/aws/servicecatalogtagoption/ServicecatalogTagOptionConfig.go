@@ -6,9 +6,9 @@ import (
 
 type ServicecatalogTagOptionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type ServicecatalogTagOptionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}.
-	Active interface{} `field:"optional" json:"active" yaml:"active"`
+	Active any `field:"optional" json:"active" yaml:"active"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -35,4 +35,3 @@ type ServicecatalogTagOptionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_tag_option#timeouts ServicecatalogTagOption#timeouts}
 	Timeouts *ServicecatalogTagOptionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

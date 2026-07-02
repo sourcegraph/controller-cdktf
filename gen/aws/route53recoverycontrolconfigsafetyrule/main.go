@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
-		reflect.TypeOf((*Route53RecoverycontrolconfigSafetyRule)(nil)).Elem(),
+		reflect.TypeFor[Route53RecoverycontrolconfigSafetyRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitPeriodMs", GoGetter: "WaitPeriodMs"},
 			_jsii_.MemberProperty{JsiiProperty: "waitPeriodMsInput", GoGetter: "WaitPeriodMsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecoverycontrolconfigSafetyRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleConfig",
-		reflect.TypeOf((*Route53RecoverycontrolconfigSafetyRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53RecoverycontrolconfigSafetyRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleRuleConfig",
-		reflect.TypeOf((*Route53RecoverycontrolconfigSafetyRuleRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[Route53RecoverycontrolconfigSafetyRuleRuleConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference",
-		reflect.TypeOf((*Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

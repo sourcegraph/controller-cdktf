@@ -12,9 +12,9 @@ type Route53ResolverRuleTargetIpOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type Route53ResolverRuleTargetIpOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -46,7 +46,7 @@ type Route53ResolverRuleTargetIpOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type Route53ResolverRuleTargetIpOutputReference interface {
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_Route53ResolverRuleTargetIpOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewRoute53ResolverRuleTargetIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Route53ResolverRuleTargetIpOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewRoute53ResolverRuleTargetIpOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewRoute53ResolverRuleTargetIpOutputReference_Override(r Route53ResolverRul
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetIp(val *string) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetIp(val *string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetIp(val *string)
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetPort(val *float
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ResetPort() {
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ToString() *strin
 
 	return returns
 }
-

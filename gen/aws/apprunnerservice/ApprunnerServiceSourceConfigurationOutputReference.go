@@ -12,16 +12,16 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	AuthenticationConfiguration() ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference
 	AuthenticationConfigurationInput() *ApprunnerServiceSourceConfigurationAuthenticationConfiguration
-	AutoDeploymentsEnabled() interface{}
-	SetAutoDeploymentsEnabled(val interface{})
-	AutoDeploymentsEnabledInput() interface{}
+	AutoDeploymentsEnabled() any
+	SetAutoDeploymentsEnabled(val any)
+	AutoDeploymentsEnabledInput() any
 	CodeRepository() ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference
 	CodeRepositoryInput() *ApprunnerServiceSourceConfigurationCodeRepository
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 	ResetImageRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Authentic
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) AutoDeploymentsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) AutoDeploymentsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoDeploymentsEnabled",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) AutoDeplo
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) AutoDeploymentsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) AutoDeploymentsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoDeploymentsEnabledInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) CodeRepos
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Terraform
 	return returns
 }
 
-
 func NewApprunnerServiceSourceConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewApprunnerServiceSourceConfigurationOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewApprunnerServiceSourceConfigurationOutputReference_Override(a ApprunnerS
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetAutoDeploymentsEnabled(val interface{}) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) SetAutoDeploymentsEnabled(val any) {
 	if err := j.validateSetAutoDeploymentsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetAutoDep
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetInternalValue(val *ApprunnerServiceSourceConfiguration) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) SetInternalValue(val *ApprunnerServiceSourceConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) ComputeFq
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetListAt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Interpola
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) PutAuthen
 	_jsii_.InvokeVoid(
 		a,
 		"putAuthenticationConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) PutCodeRe
 	_jsii_.InvokeVoid(
 		a,
 		"putCodeRepository",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) PutImageR
 	_jsii_.InvokeVoid(
 		a,
 		"putImageRepository",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) ResetImag
 	)
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) ToString(
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
-		reflect.TypeOf((*GuarddutyFilter)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilter](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyFilter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,19 +85,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterConfig",
-		reflect.TypeOf((*GuarddutyFilterConfig)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteria",
-		reflect.TypeOf((*GuarddutyFilterFindingCriteria)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilterFindingCriteria](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterion",
-		reflect.TypeOf((*GuarddutyFilterFindingCriteriaCriterion)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilterFindingCriteriaCriterion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
-		reflect.TypeOf((*GuarddutyFilterFindingCriteriaCriterionList)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilterFindingCriteriaCriterionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionOutputReference",
-		reflect.TypeOf((*GuarddutyFilterFindingCriteriaCriterionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilterFindingCriteriaCriterionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyFilterFindingCriteriaCriterionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
-		reflect.TypeOf((*GuarddutyFilterFindingCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GuarddutyFilterFindingCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GuarddutyFilterFindingCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

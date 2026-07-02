@@ -12,9 +12,9 @@ type AlbTargetGroupHealthCheckOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type AlbTargetGroupHealthCheckOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	HealthyThreshold() *float64
@@ -67,7 +67,7 @@ type AlbTargetGroupHealthCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type AlbTargetGroupHealthCheckOutputReference interface {
 	ResetUnhealthyThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_AlbTargetGroupHealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) Enabled() interface
 	return returns
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) UnhealthyThresholdI
 	return returns
 }
 
-
 func NewAlbTargetGroupHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlbTargetGroupHealthCheckOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewAlbTargetGroupHealthCheckOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewAlbTargetGroupHealthCheckOutputReference_Override(a AlbTargetGroupHealth
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetEnabled(val inter
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetHealthyThreshold(val *float64) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetHealthyThreshold(val *float64) {
 	if err := j.validateSetHealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetHealthyThreshold(
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetInternalValue(val *AlbTargetGroupHealthCheck) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetInternalValue(val *AlbTargetGroupHealthCheck) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetInterval(val *float64) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetInterval(val *float64) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetInterval(val *flo
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetMatcher(val *string) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetMatcher(val *string) {
 	if err := j.validateSetMatcherParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetMatcher(val *stri
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetPath(val *string)
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetPort(val *string) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetPort(val *string) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetPort(val *string)
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetProtocol(val *string) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetProtocol(val *str
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetTimeout(val *float64) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetTimeout(val *floa
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference)SetUnhealthyThreshold(val *float64) {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) SetUnhealthyThreshold(val *float64) {
 	if err := j.validateSetUnhealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) ResetUnhealthyThres
 	)
 }
 
-func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) ToString() *string 
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbListenerRuleActionForwardStickinessOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleActionForwardStickinessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleActionForwardStickinessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LbListenerRuleActionForwardStickinessOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleActionForwardStickinessOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleActionForwardStickinessOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewLbListenerRuleActionForwardStickinessOutputReferenceParameters(t
 
 	return nil
 }
-

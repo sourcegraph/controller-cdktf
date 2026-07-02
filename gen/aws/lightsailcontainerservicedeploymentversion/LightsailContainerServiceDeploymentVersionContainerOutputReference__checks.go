@@ -106,7 +106,7 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewLightsailContainerServiceDeploymentVersionContainerOutputReferen
 
 	return nil
 }
-

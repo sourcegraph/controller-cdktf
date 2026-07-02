@@ -98,7 +98,7 @@ func (r *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewRoute53RecordGeolocationRoutingPolicyOutputReferenceParameters(t
 
 	return nil
 }
-

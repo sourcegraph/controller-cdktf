@@ -109,7 +109,7 @@ func (e *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetInternalUserDatabaseEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetInternalUserDatabaseEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewElasticsearchDomainAdvancedSecurityOptionsOutputReferenceParamet
 
 	return nil
 }
-

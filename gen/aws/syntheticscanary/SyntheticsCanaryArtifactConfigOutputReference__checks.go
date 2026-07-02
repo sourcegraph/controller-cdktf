@@ -109,7 +109,7 @@ func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewSyntheticsCanaryArtifactConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

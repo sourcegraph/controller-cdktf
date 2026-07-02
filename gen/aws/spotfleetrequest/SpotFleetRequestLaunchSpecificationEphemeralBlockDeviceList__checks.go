@@ -34,7 +34,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList) 
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceListParam
 
 	return nil
 }
-

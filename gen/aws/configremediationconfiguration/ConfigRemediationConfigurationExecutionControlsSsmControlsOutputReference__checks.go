@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOut
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewConfigRemediationConfigurationExecutionControlsSsmControlsOutput
 
 	return nil
 }
-

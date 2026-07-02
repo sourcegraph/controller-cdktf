@@ -17,11 +17,11 @@ type DataAwsPrometheusWorkspace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -50,7 +50,7 @@ type DataAwsPrometheusWorkspace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -58,16 +58,16 @@ type DataAwsPrometheusWorkspace interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkspaceId() *string
 	SetWorkspaceId(val *string)
 	WorkspaceIdInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataAwsPrometheusWorkspace interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsPrometheusWorkspace
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) WorkspaceIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace} Data Source.
 func NewDataAwsPrometheusWorkspace(scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspaceConfig) DataAwsPrometheusWorkspace {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewDataAwsPrometheusWorkspace(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewDataAwsPrometheusWorkspace_Override(d DataAwsPrometheusWorkspace, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetId(val *string) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func DataAwsPrometheusWorkspace_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func DataAwsPrometheusWorkspace_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsPrometheusWorkspace_IsConstruct(x interface{}) *bool {
+func DataAwsPrometheusWorkspace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPrometheusWorkspace_IsConstructParameters(x); err != nil {
@@ -519,7 +518,7 @@ func DataAwsPrometheusWorkspace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func DataAwsPrometheusWorkspace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPrometheusWorkspace_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsPrometheusWorkspace_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPrometheusWorkspace_IsTerraformDataSourceParameters(x); err != nil {
@@ -538,7 +537,7 @@ func DataAwsPrometheusWorkspace_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func DataAwsPrometheusWorkspace_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsPrometheusWorkspace_IsTerraformElement(x interface{}) *bool {
+func DataAwsPrometheusWorkspace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsPrometheusWorkspace_IsTerraformElementParameters(x); err != nil {
@@ -557,7 +556,7 @@ func DataAwsPrometheusWorkspace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -575,27 +574,27 @@ func DataAwsPrometheusWorkspace_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -781,8 +780,8 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -794,8 +793,8 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -846,8 +845,8 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,4 +857,3 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) ToTerraform() interface{} {
 
 	return returns
 }
-

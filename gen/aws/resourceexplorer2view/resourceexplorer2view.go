@@ -16,24 +16,24 @@ type Resourceexplorer2View interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DefaultView() interface{}
-	SetDefaultView(val interface{})
-	DefaultViewInput() interface{}
+	SetCount(val any)
+	DefaultView() any
+	SetDefaultView(val any)
+	DefaultViewInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filters() Resourceexplorer2ViewFiltersList
-	FiltersInput() interface{}
+	FiltersInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,7 +44,7 @@ type Resourceexplorer2View interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	IncludedProperty() Resourceexplorer2ViewIncludedPropertyList
-	IncludedPropertyInput() interface{}
+	IncludedPropertyInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,11 +59,11 @@ type Resourceexplorer2View interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -71,16 +71,16 @@ type Resourceexplorer2View interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type Resourceexplorer2View interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,15 +110,15 @@ type Resourceexplorer2View interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilters(value interface{})
-	PutIncludedProperty(value interface{})
+	PutFilters(value any)
+	PutIncludedProperty(value any)
 	ResetDefaultView()
 	ResetFilters()
 	ResetIncludedProperty()
@@ -126,17 +126,17 @@ type Resourceexplorer2View interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Resourceexplorer2View
@@ -164,8 +164,8 @@ func (j *jsiiProxy_Resourceexplorer2View) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_Resourceexplorer2View) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Resourceexplorer2View) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_Resourceexplorer2View) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_Resourceexplorer2View) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) DefaultView() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) DefaultView() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultView",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_Resourceexplorer2View) DefaultView() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) DefaultViewInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) DefaultViewInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultViewInput",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_Resourceexplorer2View) Filters() Resourceexplorer2ViewFilters
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) FiltersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) FiltersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filtersInput",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_Resourceexplorer2View) IncludedProperty() Resourceexplorer2Vi
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) IncludedPropertyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) IncludedPropertyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includedPropertyInput",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_Resourceexplorer2View) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Resourceexplorer2View) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_Resourceexplorer2View) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Resourceexplorer2View) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_Resourceexplorer2View) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Resourceexplorer2View) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_Resourceexplorer2View) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
 func NewResourceexplorer2View(scope constructs.Construct, id *string, config *Resourceexplorer2ViewConfig) Resourceexplorer2View {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewResourceexplorer2View(scope constructs.Construct, id *string, config *Re
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewResourceexplorer2View_Override(r Resourceexplorer2View, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetConnection(val interface{}) {
+func (j *jsiiProxy_Resourceexplorer2View) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetCount(val interface{}) {
+func (j *jsiiProxy_Resourceexplorer2View) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetDefaultView(val interface{}) {
+func (j *jsiiProxy_Resourceexplorer2View) SetDefaultView(val any) {
 	if err := j.validateSetDefaultViewParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetDefaultView(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Resourceexplorer2View) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Resourceexplorer2View) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Resourceexplorer2View) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetName(val *string) {
+func (j *jsiiProxy_Resourceexplorer2View) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Resourceexplorer2View) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Resourceexplorer2View) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_Resourceexplorer2View)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Resourceexplorer2View) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func Resourceexplorer2View_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func Resourceexplorer2View_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Resourceexplorer2View_IsConstruct(x interface{}) *bool {
+func Resourceexplorer2View_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceexplorer2View_IsConstructParameters(x); err != nil {
@@ -612,7 +611,7 @@ func Resourceexplorer2View_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func Resourceexplorer2View_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Resourceexplorer2View_IsTerraformElement(x interface{}) *bool {
+func Resourceexplorer2View_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceexplorer2View_IsTerraformElementParameters(x); err != nil {
@@ -631,7 +630,7 @@ func Resourceexplorer2View_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func Resourceexplorer2View_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Resourceexplorer2View_IsTerraformResource(x interface{}) *bool {
+func Resourceexplorer2View_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceexplorer2View_IsTerraformResourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func Resourceexplorer2View_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,31 +674,31 @@ func (r *jsiiProxy_Resourceexplorer2View) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Resourceexplorer2View) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Resourceexplorer2View) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (r *jsiiProxy_Resourceexplorer2View) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,15 +826,15 @@ func (r *jsiiProxy_Resourceexplorer2View) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Resourceexplorer2View) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -854,7 +853,7 @@ func (r *jsiiProxy_Resourceexplorer2View) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -867,7 +866,7 @@ func (r *jsiiProxy_Resourceexplorer2View) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,18 +880,18 @@ func (r *jsiiProxy_Resourceexplorer2View) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Resourceexplorer2View) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -903,7 +902,7 @@ func (r *jsiiProxy_Resourceexplorer2View) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -914,29 +913,29 @@ func (r *jsiiProxy_Resourceexplorer2View) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) PutFilters(value interface{}) {
+func (r *jsiiProxy_Resourceexplorer2View) PutFilters(value any) {
 	if err := r.validatePutFiltersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) PutIncludedProperty(value interface{}) {
+func (r *jsiiProxy_Resourceexplorer2View) PutIncludedProperty(value any) {
 	if err := r.validatePutIncludedPropertyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putIncludedProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -980,8 +979,8 @@ func (r *jsiiProxy_Resourceexplorer2View) ResetTags() {
 	)
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Resourceexplorer2View) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -993,8 +992,8 @@ func (r *jsiiProxy_Resourceexplorer2View) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Resourceexplorer2View) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1006,8 +1005,8 @@ func (r *jsiiProxy_Resourceexplorer2View) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Resourceexplorer2View) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1019,8 +1018,8 @@ func (r *jsiiProxy_Resourceexplorer2View) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Resourceexplorer2View) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1045,8 +1044,8 @@ func (r *jsiiProxy_Resourceexplorer2View) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Resourceexplorer2View) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Resourceexplorer2View) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1057,4 +1056,3 @@ func (r *jsiiProxy_Resourceexplorer2View) ToTerraform() interface{} {
 
 	return returns
 }
-

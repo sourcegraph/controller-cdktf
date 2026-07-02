@@ -19,7 +19,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateAddMoveTargetParamet
 	return nil
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveFromIdParameters
 	return nil
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateKendraQuerySuggestionsBlockList_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateKendraQuerySuggestionsBlockList_IsConstructParameters(x interface{}) error {
+func validateKendraQuerySuggestionsBlockList_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateKendraQuerySuggestionsBlockList_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x interface{}) error {
+func validateKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateKendraQuerySuggestionsBlockList_IsTerraformResourceParameters(x interface{}) error {
+func validateKendraQuerySuggestionsBlockList_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateKendraQuerySuggestionsBlockList_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,4 +484,3 @@ func validateNewKendraQuerySuggestionsBlockListParameters(scope constructs.Const
 
 	return nil
 }
-

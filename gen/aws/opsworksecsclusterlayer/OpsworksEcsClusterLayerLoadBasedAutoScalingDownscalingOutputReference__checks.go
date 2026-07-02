@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputR
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputRefe
 
 	return nil
 }
-

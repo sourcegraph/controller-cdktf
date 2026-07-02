@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQueue.ConnectQueue",
-		reflect.TypeOf((*ConnectQueue)(nil)).Elem(),
+		reflect.TypeFor[ConnectQueue](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQueue{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQueue.ConnectQueueConfig",
-		reflect.TypeOf((*ConnectQueueConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQueueConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig",
-		reflect.TypeOf((*ConnectQueueOutboundCallerConfig)(nil)).Elem(),
+		reflect.TypeFor[ConnectQueueOutboundCallerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.connectQueue.ConnectQueueOutboundCallerConfigOutputReference",
-		reflect.TypeOf((*ConnectQueueOutboundCallerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConnectQueueOutboundCallerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConnectQueueOutboundCallerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

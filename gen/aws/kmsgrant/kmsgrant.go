@@ -15,17 +15,17 @@ type KmsGrant interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	Constraints() KmsGrantConstraintsList
-	ConstraintsInput() interface{}
+	ConstraintsInput() any
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,30 +69,30 @@ type KmsGrant interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RetireOnDelete() interface{}
-	SetRetireOnDelete(val interface{})
-	RetireOnDeleteInput() interface{}
+	RawOverrides() any
+	RetireOnDelete() any
+	SetRetireOnDelete(val any)
+	RetireOnDeleteInput() any
 	RetiringPrincipal() *string
 	SetRetiringPrincipal(val *string)
 	RetiringPrincipalInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type KmsGrant interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,14 +122,14 @@ type KmsGrant interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConstraints(value interface{})
+	PutConstraints(value any)
 	ResetConstraints()
 	ResetGrantCreationTokens()
 	ResetId()
@@ -139,17 +139,17 @@ type KmsGrant interface {
 	ResetOverrideLogicalId()
 	ResetRetireOnDelete()
 	ResetRetiringPrincipal()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KmsGrant
@@ -167,8 +167,8 @@ func (j *jsiiProxy_KmsGrant) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsGrant) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_KmsGrant) Constraints() KmsGrantConstraintsList {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) ConstraintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsGrant) ConstraintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"constraintsInput",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_KmsGrant) ConstraintsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsGrant) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_KmsGrant) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsGrant) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_KmsGrant) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KmsGrant) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_KmsGrant) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsGrant) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_KmsGrant) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) RetireOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsGrant) RetireOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retireOnDelete",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_KmsGrant) RetireOnDelete() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) RetireOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsGrant) RetireOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retireOnDeleteInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_KmsGrant) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_KmsGrant) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsGrant) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -517,7 +517,6 @@ func (j *jsiiProxy_KmsGrant) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_grant aws_kms_grant} Resource.
 func NewKmsGrant(scope constructs.Construct, id *string, config *KmsGrantConfig) KmsGrant {
 	_init_.Initialize()
@@ -529,7 +528,7 @@ func NewKmsGrant(scope constructs.Construct, id *string, config *KmsGrantConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kmsGrant.KmsGrant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -542,12 +541,12 @@ func NewKmsGrant_Override(k KmsGrant, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kmsGrant.KmsGrant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsGrant) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_KmsGrant)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetCount(val interface{}) {
+func (j *jsiiProxy_KmsGrant) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_KmsGrant)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsGrant) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_KmsGrant)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsGrant) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +584,7 @@ func (j *jsiiProxy_KmsGrant)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetGrantCreationTokens(val *[]*string) {
+func (j *jsiiProxy_KmsGrant) SetGrantCreationTokens(val *[]*string) {
 	if err := j.validateSetGrantCreationTokensParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_KmsGrant)SetGrantCreationTokens(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetGranteePrincipal(val *string) {
+func (j *jsiiProxy_KmsGrant) SetGranteePrincipal(val *string) {
 	if err := j.validateSetGranteePrincipalParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_KmsGrant)SetGranteePrincipal(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetId(val *string) {
+func (j *jsiiProxy_KmsGrant) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_KmsGrant)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetKeyId(val *string) {
+func (j *jsiiProxy_KmsGrant) SetKeyId(val *string) {
 	if err := j.validateSetKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_KmsGrant)SetKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsGrant) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_KmsGrant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetName(val *string) {
+func (j *jsiiProxy_KmsGrant) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_KmsGrant)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetOperations(val *[]*string) {
+func (j *jsiiProxy_KmsGrant) SetOperations(val *[]*string) {
 	if err := j.validateSetOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_KmsGrant)SetOperations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsGrant) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -670,7 +669,7 @@ func (j *jsiiProxy_KmsGrant)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsGrant) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_KmsGrant)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetRetireOnDelete(val interface{}) {
+func (j *jsiiProxy_KmsGrant) SetRetireOnDelete(val any) {
 	if err := j.validateSetRetireOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_KmsGrant)SetRetireOnDelete(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsGrant)SetRetiringPrincipal(val *string) {
+func (j *jsiiProxy_KmsGrant) SetRetiringPrincipal(val *string) {
 	if err := j.validateSetRetiringPrincipalParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func KmsGrant_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func KmsGrant_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KmsGrant_IsConstruct(x interface{}) *bool {
+func KmsGrant_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsGrant_IsConstructParameters(x); err != nil {
@@ -750,7 +749,7 @@ func KmsGrant_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func KmsGrant_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsGrant_IsTerraformElement(x interface{}) *bool {
+func KmsGrant_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsGrant_IsTerraformElementParameters(x); err != nil {
@@ -769,7 +768,7 @@ func KmsGrant_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func KmsGrant_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsGrant_IsTerraformResource(x interface{}) *bool {
+func KmsGrant_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsGrant_IsTerraformResourceParameters(x); err != nil {
@@ -788,7 +787,7 @@ func KmsGrant_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,31 +812,31 @@ func (k *jsiiProxy_KmsGrant) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KmsGrant) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KmsGrant) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KmsGrant) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsGrant) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (k *jsiiProxy_KmsGrant) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (k *jsiiProxy_KmsGrant) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (k *jsiiProxy_KmsGrant) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (k *jsiiProxy_KmsGrant) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (k *jsiiProxy_KmsGrant) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (k *jsiiProxy_KmsGrant) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (k *jsiiProxy_KmsGrant) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,15 +964,15 @@ func (k *jsiiProxy_KmsGrant) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsGrant) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsGrant) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -992,7 +991,7 @@ func (k *jsiiProxy_KmsGrant) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (k *jsiiProxy_KmsGrant) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,18 +1018,18 @@ func (k *jsiiProxy_KmsGrant) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KmsGrant) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KmsGrant) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (k *jsiiProxy_KmsGrant) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1052,18 +1051,18 @@ func (k *jsiiProxy_KmsGrant) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (k *jsiiProxy_KmsGrant) PutConstraints(value interface{}) {
+func (k *jsiiProxy_KmsGrant) PutConstraints(value any) {
 	if err := k.validatePutConstraintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,8 +1122,8 @@ func (k *jsiiProxy_KmsGrant) ResetRetiringPrincipal() {
 	)
 }
 
-func (k *jsiiProxy_KmsGrant) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsGrant) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1136,8 +1135,8 @@ func (k *jsiiProxy_KmsGrant) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsGrant) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsGrant) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1149,8 +1148,8 @@ func (k *jsiiProxy_KmsGrant) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsGrant) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsGrant) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1162,8 +1161,8 @@ func (k *jsiiProxy_KmsGrant) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsGrant) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsGrant) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1188,8 +1187,8 @@ func (k *jsiiProxy_KmsGrant) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KmsGrant) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsGrant) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1200,4 +1199,3 @@ func (k *jsiiProxy_KmsGrant) ToTerraform() interface{} {
 
 	return returns
 }
-

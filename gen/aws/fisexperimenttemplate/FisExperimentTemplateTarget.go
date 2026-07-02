@@ -1,6 +1,5 @@
 package fisexperimenttemplate
 
-
 type FisExperimentTemplateTarget struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -11,12 +10,11 @@ type FisExperimentTemplateTarget struct {
 	// filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fis_experiment_template#filter FisExperimentTemplate#filter}
-	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
+	Filter any `field:"optional" json:"filter" yaml:"filter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fis_experiment_template#resource_arns FisExperimentTemplate#resource_arns}.
 	ResourceArns *[]*string `field:"optional" json:"resourceArns" yaml:"resourceArns"`
 	// resource_tag block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/fis_experiment_template#resource_tag FisExperimentTemplate#resource_tag}
-	ResourceTag interface{} `field:"optional" json:"resourceTag" yaml:"resourceTag"`
+	ResourceTag any `field:"optional" json:"resourceTag" yaml:"resourceTag"`
 }
-

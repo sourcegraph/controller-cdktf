@@ -6,9 +6,9 @@ import (
 
 type BackupPlanConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,17 +18,17 @@ type BackupPlanConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#name BackupPlan#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#rule BackupPlan#rule}
-	Rule interface{} `field:"required" json:"rule" yaml:"rule"`
+	Rule any `field:"required" json:"rule" yaml:"rule"`
 	// advanced_backup_setting block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
-	AdvancedBackupSetting interface{} `field:"optional" json:"advancedBackupSetting" yaml:"advancedBackupSetting"`
+	AdvancedBackupSetting any `field:"optional" json:"advancedBackupSetting" yaml:"advancedBackupSetting"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#id BackupPlan#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,4 +39,3 @@ type BackupPlanConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

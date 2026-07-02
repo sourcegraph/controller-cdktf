@@ -19,7 +19,7 @@ func (w *jsiiProxy_Wafv2RuleGroup) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_Wafv2RuleGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_Wafv2RuleGroup) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_Wafv2RuleGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_Wafv2RuleGroup) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroup) validatePutCustomResponseBodyParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2RuleGroup) validatePutCustomResponseBodyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (w *jsiiProxy_Wafv2RuleGroup) validatePutCustomResponseBodyParameters(value
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroup) validatePutRuleParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2RuleGroup) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateWafv2RuleGroup_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateWafv2RuleGroup_IsConstructParameters(x interface{}) error {
+func validateWafv2RuleGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateWafv2RuleGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafv2RuleGroup_IsTerraformElementParameters(x interface{}) error {
+func validateWafv2RuleGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateWafv2RuleGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafv2RuleGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateWafv2RuleGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetCapacityParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -447,7 +447,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetNameParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -535,4 +535,3 @@ func validateNewWafv2RuleGroupParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

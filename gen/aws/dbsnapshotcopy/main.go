@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
-		reflect.TypeOf((*DbSnapshotCopy)(nil)).Elem(),
+		reflect.TypeFor[DbSnapshotCopy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbSnapshotCopy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -109,15 +109,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopyConfig",
-		reflect.TypeOf((*DbSnapshotCopyConfig)(nil)).Elem(),
+		reflect.TypeFor[DbSnapshotCopyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopyTimeouts",
-		reflect.TypeOf((*DbSnapshotCopyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DbSnapshotCopyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopyTimeoutsOutputReference",
-		reflect.TypeOf((*DbSnapshotCopyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DbSnapshotCopyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DbSnapshotCopyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

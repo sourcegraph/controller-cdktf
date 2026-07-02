@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
-		reflect.TypeOf((*DxBgpPeer)(nil)).Elem(),
+		reflect.TypeFor[DxBgpPeer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualInterfaceId", GoGetter: "VirtualInterfaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualInterfaceIdInput", GoGetter: "VirtualInterfaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxBgpPeer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerConfig",
-		reflect.TypeOf((*DxBgpPeerConfig)(nil)).Elem(),
+		reflect.TypeFor[DxBgpPeerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeouts",
-		reflect.TypeOf((*DxBgpPeerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DxBgpPeerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
-		reflect.TypeOf((*DxBgpPeerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DxBgpPeerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DxBgpPeerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

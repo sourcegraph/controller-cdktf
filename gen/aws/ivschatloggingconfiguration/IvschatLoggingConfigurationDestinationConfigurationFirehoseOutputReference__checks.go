@@ -98,7 +98,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationFirehoseOu
 	return nil
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIvschatLoggingConfigurationDestinationConfigurationFirehoseOutpu
 
 	return nil
 }
-

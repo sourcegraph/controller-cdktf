@@ -17,8 +17,8 @@ type IotTopicRuleHttpList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IotTopicRuleHttpList interface {
 	Get(index *float64) IotTopicRuleHttpOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IotTopicRuleHttpList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotTopicRuleHttpList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IotTopicRuleHttpList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewIotTopicRuleHttpList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleHttpList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIotTopicRuleHttpList(terraformResource cdktf.IInterpolatingParent, terra
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIotTopicRuleHttpList_Override(i IotTopicRuleHttpList, terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IotTopicRuleHttpList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IotTopicRuleHttpList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IotTopicRuleHttpList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IotTopicRuleHttpList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleHttpList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IotTopicRuleHttpList)SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IotTopicRuleHttpList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IotTopicRuleHttpList) AllWithMapKey(mapKeyAttributeName *stri
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IotTopicRuleHttpList) Get(index *float64) IotTopicRuleHttpOut
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleHttpList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IotTopicRuleHttpList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IotTopicRuleHttpList) ToString() *string {
 
 	return returns
 }
-

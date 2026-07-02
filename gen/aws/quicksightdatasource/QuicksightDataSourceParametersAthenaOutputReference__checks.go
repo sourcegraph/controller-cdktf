@@ -98,7 +98,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewQuicksightDataSourceParametersAthenaOutputReferenceParameters(te
 
 	return nil
 }
-

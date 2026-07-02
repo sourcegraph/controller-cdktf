@@ -15,17 +15,17 @@ type DataAwsEbsSnapshotIds interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Filter() DataAwsEbsSnapshotIdsFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,22 +52,22 @@ type DataAwsEbsSnapshotIds interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestorableByUserIds() *[]*string
 	SetRestorableByUserIds(val *[]*string)
 	RestorableByUserIdsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataAwsEbsSnapshotIdsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type DataAwsEbsSnapshotIds interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutFilter(value any)
 	PutTimeouts(value *DataAwsEbsSnapshotIdsTimeouts)
 	ResetFilter()
 	ResetId()
@@ -99,18 +99,18 @@ type DataAwsEbsSnapshotIds interface {
 	ResetOwners()
 	ResetRestorableByUserIds()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsEbsSnapshotIds
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) Filter() DataAwsEbsSnapshotIdsFilterLi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) Timeouts() DataAwsEbsSnapshotIdsTimeou
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -367,7 +367,6 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
 func NewDataAwsEbsSnapshotIds(scope constructs.Construct, id *string, config *DataAwsEbsSnapshotIdsConfig) DataAwsEbsSnapshotIds {
@@ -380,7 +379,7 @@ func NewDataAwsEbsSnapshotIds(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -393,12 +392,12 @@ func NewDataAwsEbsSnapshotIds_Override(d DataAwsEbsSnapshotIds, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetId(val *string) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetOwners(val *[]*string) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetOwners(val *[]*string) {
 	if err := j.validateSetOwnersParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetOwners(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetRestorableByUserIds(val *[]*string) {
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) SetRestorableByUserIds(val *[]*string) {
 	if err := j.validateSetRestorableByUserIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func DataAwsEbsSnapshotIds_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func DataAwsEbsSnapshotIds_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsEbsSnapshotIds_IsConstruct(x interface{}) *bool {
+func DataAwsEbsSnapshotIds_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEbsSnapshotIds_IsConstructParameters(x); err != nil {
@@ -524,7 +523,7 @@ func DataAwsEbsSnapshotIds_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func DataAwsEbsSnapshotIds_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEbsSnapshotIds_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsEbsSnapshotIds_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEbsSnapshotIds_IsTerraformDataSourceParameters(x); err != nil {
@@ -543,7 +542,7 @@ func DataAwsEbsSnapshotIds_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func DataAwsEbsSnapshotIds_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsEbsSnapshotIds_IsTerraformElement(x interface{}) *bool {
+func DataAwsEbsSnapshotIds_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsEbsSnapshotIds_IsTerraformElementParameters(x); err != nil {
@@ -562,7 +561,7 @@ func DataAwsEbsSnapshotIds_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -580,27 +579,27 @@ func DataAwsEbsSnapshotIds_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,18 +757,18 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) PutFilter(value any) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) PutTimeouts(value *DataAwsEbsSnapshotI
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -832,8 +831,8 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -871,8 +870,8 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -897,8 +896,8 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -909,4 +908,3 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) ToTerraform() interface{} {
 
 	return returns
 }
-

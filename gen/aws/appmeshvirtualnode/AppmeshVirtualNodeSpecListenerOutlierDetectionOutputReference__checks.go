@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewAppmeshVirtualNodeSpecListenerOutlierDetectionOutputReferencePar
 
 	return nil
 }
-

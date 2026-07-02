@@ -34,7 +34,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGlobalacceleratorEndpointGroupEndpointConfigurationListParameter
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
-		reflect.TypeOf((*Macie2FindingsFilter)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilter](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2FindingsFilter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,19 +88,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig",
-		reflect.TypeOf((*Macie2FindingsFilterConfig)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteria)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilterFindingCriteria](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaCriterion)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilterFindingCriteriaCriterion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionList",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaCriterionList)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilterFindingCriteriaCriterionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionOutputReference",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaCriterionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilterFindingCriteriaCriterionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,7 +177,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
-		reflect.TypeOf((*Macie2FindingsFilterFindingCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[Macie2FindingsFilterFindingCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

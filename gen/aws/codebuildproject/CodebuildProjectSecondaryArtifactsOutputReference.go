@@ -18,9 +18,9 @@ type CodebuildProjectSecondaryArtifactsOutputReference interface {
 	BucketOwnerAccessInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,13 +31,13 @@ type CodebuildProjectSecondaryArtifactsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EncryptionDisabled() interface{}
-	SetEncryptionDisabled(val interface{})
-	EncryptionDisabledInput() interface{}
+	EncryptionDisabled() any
+	SetEncryptionDisabled(val any)
+	EncryptionDisabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -47,9 +47,9 @@ type CodebuildProjectSecondaryArtifactsOutputReference interface {
 	NamespaceType() *string
 	SetNamespaceType(val *string)
 	NamespaceTypeInput() *string
-	OverrideArtifactName() interface{}
-	SetOverrideArtifactName(val interface{})
-	OverrideArtifactNameInput() interface{}
+	OverrideArtifactName() any
+	SetOverrideArtifactName(val any)
+	OverrideArtifactNameInput() any
 	Packaging() *string
 	SetPackaging(val *string)
 	PackagingInput() *string
@@ -70,7 +70,7 @@ type CodebuildProjectSecondaryArtifactsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type CodebuildProjectSecondaryArtifactsOutputReference interface {
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) BucketOwne
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) EncryptionDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) EncryptionDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptionDisabled",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) Encryption
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) EncryptionDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) EncryptionDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptionDisabledInput",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) NamespaceT
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) OverrideArtifactName() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) OverrideArtifactName() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideArtifactName",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) OverrideAr
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) OverrideArtifactNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) OverrideArtifactNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overrideArtifactNameInput",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) TypeInput(
 	return returns
 }
 
-
 func NewCodebuildProjectSecondaryArtifactsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodebuildProjectSecondaryArtifactsOutputReference {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewCodebuildProjectSecondaryArtifactsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -407,12 +406,12 @@ func NewCodebuildProjectSecondaryArtifactsOutputReference_Override(c CodebuildPr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetArtifactIdentifier(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetArtifactIdentifier(val *string) {
 	if err := j.validateSetArtifactIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetArtifact
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetBucketOwnerAccess(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetBucketOwnerAccess(val *string) {
 	if err := j.validateSetBucketOwnerAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetBucketOw
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetEncryptionDisabled(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetEncryptionDisabled(val any) {
 	if err := j.validateSetEncryptionDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetEncrypti
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetLocation
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetName(val
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetNamespaceType(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetNamespaceType(val *string) {
 	if err := j.validateSetNamespaceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetNamespac
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetOverrideArtifactName(val interface{}) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetOverrideArtifactName(val any) {
 	if err := j.validateSetOverrideArtifactNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetOverride
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetPackaging(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetPackaging(val *string) {
 	if err := j.validateSetPackagingParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetPackagin
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetPath(val
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,16 +589,16 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -827,16 +826,16 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) ResetPath(
 	)
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -855,4 +854,3 @@ func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference) ToString()
 
 	return returns
 }
-

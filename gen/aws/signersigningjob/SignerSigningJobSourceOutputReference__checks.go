@@ -109,7 +109,7 @@ func (s *jsiiProxy_SignerSigningJobSourceOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningJobSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SignerSigningJobSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewSignerSigningJobSourceOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

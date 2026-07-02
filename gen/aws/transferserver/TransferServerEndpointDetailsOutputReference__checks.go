@@ -106,7 +106,7 @@ func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) validateSetAddr
 	return nil
 }
 
-func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TransferServerEndpointDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewTransferServerEndpointDetailsOutputReferenceParameters(terraform
 
 	return nil
 }
-

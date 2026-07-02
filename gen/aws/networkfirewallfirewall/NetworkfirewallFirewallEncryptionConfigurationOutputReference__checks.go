@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkfirewallFirewallEncryptionConfigurationOutputReferencePar
 
 	return nil
 }
-

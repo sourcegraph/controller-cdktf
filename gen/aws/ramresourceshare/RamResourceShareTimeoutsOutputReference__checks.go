@@ -98,7 +98,7 @@ func (r *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewRamResourceShareTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

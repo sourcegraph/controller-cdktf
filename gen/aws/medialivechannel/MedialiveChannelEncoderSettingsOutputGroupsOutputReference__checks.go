@@ -101,7 +101,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) validatePutOutputsParameters(value interface{}) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) validatePutOutputsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -272,4 +272,3 @@ func validateNewMedialiveChannelEncoderSettingsOutputGroupsOutputReferenceParame
 
 	return nil
 }
-

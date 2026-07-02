@@ -12,9 +12,9 @@ type OpsworksGangliaLayerCloudwatchConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type OpsworksGangliaLayerCloudwatchConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OpsworksGangliaLayerCloudwatchConfiguration
 	SetInternalValue(val *OpsworksGangliaLayerCloudwatchConfiguration)
 	LogStreams() OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList
-	LogStreamsInput() interface{}
+	LogStreamsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type OpsworksGangliaLayerCloudwatchConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type OpsworksGangliaLayerCloudwatchConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLogStreams(value interface{})
+	PutLogStreams(value any)
 	ResetEnabled()
 	ResetLogStreams()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) E
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) L
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) LogStreamsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) LogStreamsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logStreamsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) T
 	return returns
 }
 
-
 func NewOpsworksGangliaLayerCloudwatchConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksGangliaLayerCloudwatchConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewOpsworksGangliaLayerCloudwatchConfigurationOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewOpsworksGangliaLayerCloudwatchConfigurationOutputReference_Override(o Op
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)SetInternalValue(val *OpsworksGangliaLayerCloudwatchConfiguration) {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) SetInternalValue(val *OpsworksGangliaLayerCloudwatchConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) C
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) G
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) I
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) PutLogStreams(value interface{}) {
+func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) PutLogStreams(value any) {
 	if err := o.validatePutLogStreamsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putLogStreams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) R
 	)
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference) T
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList)
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsListPara
 
 	return nil
 }
-

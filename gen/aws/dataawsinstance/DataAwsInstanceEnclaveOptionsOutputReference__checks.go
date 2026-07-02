@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsInstanceEnclaveOptionsOutputReferenceParameters(terraform
 
 	return nil
 }
-

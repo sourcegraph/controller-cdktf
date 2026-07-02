@@ -98,7 +98,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAutoscalingplansScalingPlanApplicationSourceTagFilterOutputRefer
 
 	return nil
 }
-

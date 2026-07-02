@@ -98,7 +98,7 @@ func (s *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfiguration
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOut
 
 	return nil
 }
-

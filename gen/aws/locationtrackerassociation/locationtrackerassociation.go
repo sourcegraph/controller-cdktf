@@ -15,18 +15,18 @@ type LocationTrackerAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerArn() *string
 	SetConsumerArn(val *string)
 	ConsumerArnInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,19 +53,19 @@ type LocationTrackerAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LocationTrackerAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrackerName() *string
 	SetTrackerName(val *string)
 	TrackerNameInput() *string
@@ -73,9 +73,9 @@ type LocationTrackerAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type LocationTrackerAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type LocationTrackerAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type LocationTrackerAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LocationTrackerAssociation
@@ -146,8 +146,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) ConsumerArnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_LocationTrackerAssociation) Timeouts() LocationTrackerAssocia
 	return returns
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocationTrackerAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_LocationTrackerAssociation) TrackerNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/location_tracker_association aws_location_tracker_association} Resource.
 func NewLocationTrackerAssociation(scope constructs.Construct, id *string, config *LocationTrackerAssociationConfig) LocationTrackerAssociation {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewLocationTrackerAssociation(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewLocationTrackerAssociation_Override(l LocationTrackerAssociation, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetConsumerArn(val *string) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetConsumerArn(val *string) {
 	if err := j.validateSetConsumerArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetConsumerArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetId(val *string) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_LocationTrackerAssociation)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_LocationTrackerAssociation)SetTrackerName(val *string) {
+func (j *jsiiProxy_LocationTrackerAssociation) SetTrackerName(val *string) {
 	if err := j.validateSetTrackerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func LocationTrackerAssociation_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func LocationTrackerAssociation_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LocationTrackerAssociation_IsConstruct(x interface{}) *bool {
+func LocationTrackerAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationTrackerAssociation_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func LocationTrackerAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func LocationTrackerAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LocationTrackerAssociation_IsTerraformElement(x interface{}) *bool {
+func LocationTrackerAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationTrackerAssociation_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func LocationTrackerAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func LocationTrackerAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LocationTrackerAssociation_IsTerraformResource(x interface{}) *bool {
+func LocationTrackerAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocationTrackerAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func LocationTrackerAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (l *jsiiProxy_LocationTrackerAssociation) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LocationTrackerAssociation) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LocationTrackerAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (l *jsiiProxy_LocationTrackerAssociation) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationTrackerAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -796,7 +795,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (l *jsiiProxy_LocationTrackerAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LocationTrackerAssociation) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (l *jsiiProxy_LocationTrackerAssociation) PutTimeouts(value *LocationTracke
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (l *jsiiProxy_LocationTrackerAssociation) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocationTrackerAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -908,8 +907,8 @@ func (l *jsiiProxy_LocationTrackerAssociation) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocationTrackerAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -921,8 +920,8 @@ func (l *jsiiProxy_LocationTrackerAssociation) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationTrackerAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -934,8 +933,8 @@ func (l *jsiiProxy_LocationTrackerAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationTrackerAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -960,8 +959,8 @@ func (l *jsiiProxy_LocationTrackerAssociation) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LocationTrackerAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocationTrackerAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -972,4 +971,3 @@ func (l *jsiiProxy_LocationTrackerAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

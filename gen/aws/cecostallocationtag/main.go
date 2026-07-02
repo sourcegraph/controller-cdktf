@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
-		reflect.TypeOf((*CeCostAllocationTag)(nil)).Elem(),
+		reflect.TypeFor[CeCostAllocationTag](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeCostAllocationTag{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTagConfig",
-		reflect.TypeOf((*CeCostAllocationTagConfig)(nil)).Elem(),
+		reflect.TypeFor[CeCostAllocationTagConfig](),
 	)
 }

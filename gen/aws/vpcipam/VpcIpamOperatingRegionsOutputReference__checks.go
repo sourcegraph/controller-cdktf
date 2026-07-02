@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcIpamOperatingRegionsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamOperatingRegionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcIpamOperatingRegionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_VpcIpamOperatingRegionsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamOperatingRegionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VpcIpamOperatingRegionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVpcIpamOperatingRegionsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewConnectQuickConnectQuickConnectConfigQueueConfigOutputReferenceP
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatasyncLocationHdfsQopConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationHdfsQopConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncLocationHdfsQopConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDatasyncLocationHdfsQopConfigurationOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
-		reflect.TypeOf((*VpcPeeringConnection)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepter", GoGetter: "Accepter"},
 			_jsii_.MemberProperty{JsiiProperty: "accepterInput", GoGetter: "AccepterInput"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcPeeringConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,11 +96,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionAccepter",
-		reflect.TypeOf((*VpcPeeringConnectionAccepter)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionAccepter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionAccepterOutputReference",
-		reflect.TypeOf((*VpcPeeringConnectionAccepterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionAccepterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpc", GoGetter: "AllowClassicLinkToRemoteVpc"},
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpcInput", GoGetter: "AllowClassicLinkToRemoteVpcInput"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcPeeringConnectionAccepterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,15 +141,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionConfig",
-		reflect.TypeOf((*VpcPeeringConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionRequester",
-		reflect.TypeOf((*VpcPeeringConnectionRequester)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionRequester](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
-		reflect.TypeOf((*VpcPeeringConnectionRequesterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionRequesterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpc", GoGetter: "AllowClassicLinkToRemoteVpc"},
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpcInput", GoGetter: "AllowClassicLinkToRemoteVpcInput"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcPeeringConnectionRequesterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionTimeouts",
-		reflect.TypeOf((*VpcPeeringConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*VpcPeeringConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcPeeringConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcPeeringConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -16,18 +16,18 @@ type SqsQueue interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
-	ContentBasedDeduplication() interface{}
-	SetContentBasedDeduplication(val interface{})
-	ContentBasedDeduplicationInput() interface{}
+	ConstructNodeMetadata() *map[string]any
+	ContentBasedDeduplication() any
+	SetContentBasedDeduplication(val any)
+	ContentBasedDeduplicationInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeduplicationScope() *string
 	SetDeduplicationScope(val *string)
 	DeduplicationScopeInput() *string
@@ -38,9 +38,9 @@ type SqsQueue interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	FifoQueue() interface{}
-	SetFifoQueue(val interface{})
-	FifoQueueInput() interface{}
+	FifoQueue() any
+	SetFifoQueue(val any)
+	FifoQueueInput() any
 	FifoThroughputLimit() *string
 	SetFifoThroughputLimit(val *string)
 	FifoThroughputLimitInput() *string
@@ -87,11 +87,11 @@ type SqsQueue interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReceiveWaitTimeSeconds() *float64
 	SetReceiveWaitTimeSeconds(val *float64)
 	ReceiveWaitTimeSecondsInput() *float64
@@ -101,9 +101,9 @@ type SqsQueue interface {
 	RedrivePolicy() *string
 	SetRedrivePolicy(val *string)
 	RedrivePolicyInput() *string
-	SqsManagedSseEnabled() interface{}
-	SetSqsManagedSseEnabled(val interface{})
-	SqsManagedSseEnabledInput() interface{}
+	SqsManagedSseEnabled() any
+	SetSqsManagedSseEnabled(val any)
+	SqsManagedSseEnabledInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -113,7 +113,7 @@ type SqsQueue interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
@@ -124,9 +124,9 @@ type SqsQueue interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -144,7 +144,7 @@ type SqsQueue interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -156,7 +156,7 @@ type SqsQueue interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -186,17 +186,17 @@ type SqsQueue interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetVisibilityTimeoutSeconds()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SqsQueue
@@ -224,8 +224,8 @@ func (j *jsiiProxy_SqsQueue) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_SqsQueue) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SqsQueue) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_SqsQueue) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) ContentBasedDeduplication() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) ContentBasedDeduplication() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contentBasedDeduplication",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_SqsQueue) ContentBasedDeduplication() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) ContentBasedDeduplicationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) ContentBasedDeduplicationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contentBasedDeduplicationInput",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_SqsQueue) ContentBasedDeduplicationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_SqsQueue) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) FifoQueue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) FifoQueue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fifoQueue",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_SqsQueue) FifoQueue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) FifoQueueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) FifoQueueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fifoQueueInput",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_SqsQueue) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SqsQueue) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_SqsQueue) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -664,8 +664,8 @@ func (j *jsiiProxy_SqsQueue) RedrivePolicyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) SqsManagedSseEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) SqsManagedSseEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sqsManagedSseEnabled",
@@ -674,8 +674,8 @@ func (j *jsiiProxy_SqsQueue) SqsManagedSseEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) SqsManagedSseEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqsQueue) SqsManagedSseEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sqsManagedSseEnabledInput",
@@ -734,8 +734,8 @@ func (j *jsiiProxy_SqsQueue) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SqsQueue) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -784,7 +784,6 @@ func (j *jsiiProxy_SqsQueue) VisibilityTimeoutSecondsInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig) SqsQueue {
 	_init_.Initialize()
@@ -796,7 +795,7 @@ func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -809,12 +808,12 @@ func NewSqsQueue_Override(s SqsQueue, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetConnection(val interface{}) {
+func (j *jsiiProxy_SqsQueue) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_SqsQueue)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetContentBasedDeduplication(val interface{}) {
+func (j *jsiiProxy_SqsQueue) SetContentBasedDeduplication(val any) {
 	if err := j.validateSetContentBasedDeduplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_SqsQueue)SetContentBasedDeduplication(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetCount(val interface{}) {
+func (j *jsiiProxy_SqsQueue) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_SqsQueue)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetDeduplicationScope(val *string) {
+func (j *jsiiProxy_SqsQueue) SetDeduplicationScope(val *string) {
 	if err := j.validateSetDeduplicationScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func (j *jsiiProxy_SqsQueue)SetDeduplicationScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetDelaySeconds(val *float64) {
+func (j *jsiiProxy_SqsQueue) SetDelaySeconds(val *float64) {
 	if err := j.validateSetDelaySecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_SqsQueue)SetDelaySeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqsQueue) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -877,7 +876,7 @@ func (j *jsiiProxy_SqsQueue)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetFifoQueue(val interface{}) {
+func (j *jsiiProxy_SqsQueue) SetFifoQueue(val any) {
 	if err := j.validateSetFifoQueueParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_SqsQueue)SetFifoQueue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetFifoThroughputLimit(val *string) {
+func (j *jsiiProxy_SqsQueue) SetFifoThroughputLimit(val *string) {
 	if err := j.validateSetFifoThroughputLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_SqsQueue)SetFifoThroughputLimit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqsQueue) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -907,7 +906,7 @@ func (j *jsiiProxy_SqsQueue)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetId(val *string) {
+func (j *jsiiProxy_SqsQueue) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_SqsQueue)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetKmsDataKeyReusePeriodSeconds(val *float64) {
+func (j *jsiiProxy_SqsQueue) SetKmsDataKeyReusePeriodSeconds(val *float64) {
 	if err := j.validateSetKmsDataKeyReusePeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_SqsQueue)SetKmsDataKeyReusePeriodSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetKmsMasterKeyId(val *string) {
+func (j *jsiiProxy_SqsQueue) SetKmsMasterKeyId(val *string) {
 	if err := j.validateSetKmsMasterKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_SqsQueue)SetKmsMasterKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqsQueue) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_SqsQueue)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetMaxMessageSize(val *float64) {
+func (j *jsiiProxy_SqsQueue) SetMaxMessageSize(val *float64) {
 	if err := j.validateSetMaxMessageSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_SqsQueue)SetMaxMessageSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetMessageRetentionSeconds(val *float64) {
+func (j *jsiiProxy_SqsQueue) SetMessageRetentionSeconds(val *float64) {
 	if err := j.validateSetMessageRetentionSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_SqsQueue)SetMessageRetentionSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetName(val *string) {
+func (j *jsiiProxy_SqsQueue) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_SqsQueue)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetNamePrefix(val *string) {
+func (j *jsiiProxy_SqsQueue) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_SqsQueue)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetPolicy(val *string) {
+func (j *jsiiProxy_SqsQueue) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_SqsQueue)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqsQueue) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1014,7 +1013,7 @@ func (j *jsiiProxy_SqsQueue)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqsQueue) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1025,7 +1024,7 @@ func (j *jsiiProxy_SqsQueue)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetReceiveWaitTimeSeconds(val *float64) {
+func (j *jsiiProxy_SqsQueue) SetReceiveWaitTimeSeconds(val *float64) {
 	if err := j.validateSetReceiveWaitTimeSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1036,7 +1035,7 @@ func (j *jsiiProxy_SqsQueue)SetReceiveWaitTimeSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetRedriveAllowPolicy(val *string) {
+func (j *jsiiProxy_SqsQueue) SetRedriveAllowPolicy(val *string) {
 	if err := j.validateSetRedriveAllowPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_SqsQueue)SetRedriveAllowPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetRedrivePolicy(val *string) {
+func (j *jsiiProxy_SqsQueue) SetRedrivePolicy(val *string) {
 	if err := j.validateSetRedrivePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_SqsQueue)SetRedrivePolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetSqsManagedSseEnabled(val interface{}) {
+func (j *jsiiProxy_SqsQueue) SetSqsManagedSseEnabled(val any) {
 	if err := j.validateSetSqsManagedSseEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_SqsQueue)SetSqsManagedSseEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_SqsQueue) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_SqsQueue)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_SqsQueue) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_SqsQueue)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetVisibilityTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_SqsQueue) SetVisibilityTimeoutSeconds(val *float64) {
 	if err := j.validateSetVisibilityTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,7 +1113,7 @@ func SqsQueue_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1138,7 +1137,7 @@ func SqsQueue_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SqsQueue_IsConstruct(x interface{}) *bool {
+func SqsQueue_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqsQueue_IsConstructParameters(x); err != nil {
@@ -1149,7 +1148,7 @@ func SqsQueue_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1157,7 +1156,7 @@ func SqsQueue_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SqsQueue_IsTerraformElement(x interface{}) *bool {
+func SqsQueue_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqsQueue_IsTerraformElementParameters(x); err != nil {
@@ -1168,7 +1167,7 @@ func SqsQueue_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1176,7 +1175,7 @@ func SqsQueue_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SqsQueue_IsTerraformResource(x interface{}) *bool {
+func SqsQueue_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqsQueue_IsTerraformResourceParameters(x); err != nil {
@@ -1187,7 +1186,7 @@ func SqsQueue_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1212,31 +1211,31 @@ func (s *jsiiProxy_SqsQueue) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SqsQueue) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SqsQueue) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SqsQueue) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqsQueue) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1252,7 +1251,7 @@ func (s *jsiiProxy_SqsQueue) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1268,7 +1267,7 @@ func (s *jsiiProxy_SqsQueue) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1284,7 +1283,7 @@ func (s *jsiiProxy_SqsQueue) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1300,7 +1299,7 @@ func (s *jsiiProxy_SqsQueue) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1316,7 +1315,7 @@ func (s *jsiiProxy_SqsQueue) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1332,7 +1331,7 @@ func (s *jsiiProxy_SqsQueue) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1348,7 +1347,7 @@ func (s *jsiiProxy_SqsQueue) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1364,15 +1363,15 @@ func (s *jsiiProxy_SqsQueue) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SqsQueue) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqsQueue) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1391,7 +1390,7 @@ func (s *jsiiProxy_SqsQueue) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1404,7 +1403,7 @@ func (s *jsiiProxy_SqsQueue) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1418,18 +1417,18 @@ func (s *jsiiProxy_SqsQueue) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SqsQueue) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SqsQueue) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1440,7 +1439,7 @@ func (s *jsiiProxy_SqsQueue) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1451,7 +1450,7 @@ func (s *jsiiProxy_SqsQueue) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1623,8 +1622,8 @@ func (s *jsiiProxy_SqsQueue) ResetVisibilityTimeoutSeconds() {
 	)
 }
 
-func (s *jsiiProxy_SqsQueue) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SqsQueue) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1636,8 +1635,8 @@ func (s *jsiiProxy_SqsQueue) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqsQueue) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SqsQueue) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1649,8 +1648,8 @@ func (s *jsiiProxy_SqsQueue) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqsQueue) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqsQueue) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1662,8 +1661,8 @@ func (s *jsiiProxy_SqsQueue) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqsQueue) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqsQueue) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1688,8 +1687,8 @@ func (s *jsiiProxy_SqsQueue) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SqsQueue) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqsQueue) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1700,4 +1699,3 @@ func (s *jsiiProxy_SqsQueue) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApiGatewayUsagePlanApiStagesThrottleListParameters(terraformReso
 
 	return nil
 }
-

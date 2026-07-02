@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetBlockPublicAclsParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetBlockPublicAclsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetBlockPublicPolicyParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetBlockPublicPolicyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetIgnorePublicAclsParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetIgnorePublicAclsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetRestrictPublicBucketsParameters(val interface{}) error {
+func (j *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateSetRestrictPublicBucketsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewS3AccessPointPublicAccessBlockConfigurationOutputReferenceParame
 
 	return nil
 }
-

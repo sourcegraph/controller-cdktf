@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReferenceP
 
 	return nil
 }
-

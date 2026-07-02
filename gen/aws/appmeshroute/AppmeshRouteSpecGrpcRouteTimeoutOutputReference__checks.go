@@ -120,7 +120,7 @@ func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewAppmeshRouteSpecGrpcRouteTimeoutOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateOverrideLogica
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validatePutParameterValueParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validatePutParameterValueParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func validateDataAwsDatapipelinePipelineDefinition_GenerateConfigForImportParame
 	return nil
 }
 
-func validateDataAwsDatapipelinePipelineDefinition_IsConstructParameters(x interface{}) error {
+func validateDataAwsDatapipelinePipelineDefinition_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func validateDataAwsDatapipelinePipelineDefinition_IsConstructParameters(x inter
 	return nil
 }
 
-func validateDataAwsDatapipelinePipelineDefinition_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsDatapipelinePipelineDefinition_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func validateDataAwsDatapipelinePipelineDefinition_IsTerraformDataSourceParamete
 	return nil
 }
 
-func validateDataAwsDatapipelinePipelineDefinition_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsDatapipelinePipelineDefinition_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func validateDataAwsDatapipelinePipelineDefinition_IsTerraformElementParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -281,4 +281,3 @@ func validateNewDataAwsDatapipelinePipelineDefinitionParameters(scope constructs
 
 	return nil
 }
-

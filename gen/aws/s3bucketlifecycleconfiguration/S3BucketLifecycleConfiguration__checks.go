@@ -19,7 +19,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfiguration) validatePutRuleParameters(value interface{}) error {
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateS3BucketLifecycleConfiguration_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateS3BucketLifecycleConfiguration_IsConstructParameters(x interface{}) error {
+func validateS3BucketLifecycleConfiguration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateS3BucketLifecycleConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateS3BucketLifecycleConfiguration_IsTerraformElementParameters(x interface{}) error {
+func validateS3BucketLifecycleConfiguration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateS3BucketLifecycleConfiguration_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateS3BucketLifecycleConfiguration_IsTerraformResourceParameters(x interface{}) error {
+func validateS3BucketLifecycleConfiguration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetBucketParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetLifecycleParameter
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,4 +461,3 @@ func validateNewS3BucketLifecycleConfigurationParameters(scope constructs.Constr
 
 	return nil
 }
-

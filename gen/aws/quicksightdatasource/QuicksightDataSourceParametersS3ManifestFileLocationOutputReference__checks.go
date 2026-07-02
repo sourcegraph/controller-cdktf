@@ -106,7 +106,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewQuicksightDataSourceParametersS3ManifestFileLocationOutputRefere
 
 	return nil
 }
-

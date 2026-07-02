@@ -19,7 +19,7 @@ func (l *jsiiProxy_LightsailLbCertificateAttachment) validateAddMoveTargetParame
 	return nil
 }
 
-func (l *jsiiProxy_LightsailLbCertificateAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LightsailLbCertificateAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LightsailLbCertificateAttachment) validateMoveFromIdParameter
 	return nil
 }
 
-func (l *jsiiProxy_LightsailLbCertificateAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LightsailLbCertificateAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLightsailLbCertificateAttachment_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateLightsailLbCertificateAttachment_IsConstructParameters(x interface{}) error {
+func validateLightsailLbCertificateAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLightsailLbCertificateAttachment_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateLightsailLbCertificateAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateLightsailLbCertificateAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLightsailLbCertificateAttachment_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateLightsailLbCertificateAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateLightsailLbCertificateAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetCertificateNameP
 	return nil
 }
 
-func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetLifecycleParamet
 	return nil
 }
 
-func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewLightsailLbCertificateAttachmentParameters(scope constructs.Cons
 
 	return nil
 }
-

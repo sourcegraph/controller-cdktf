@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewElasticsearchDomainCognitoOptionsOutputReferenceParameters(terra
 
 	return nil
 }
-

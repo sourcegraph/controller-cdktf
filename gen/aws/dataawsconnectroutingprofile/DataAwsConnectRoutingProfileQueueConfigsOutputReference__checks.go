@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfileQueueConfigsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectRoutingProfileQueueConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsConnectRoutingProfileQueueConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsConnectRoutingProfileQueueConfigsOutputReferenceParameter
 
 	return nil
 }
-

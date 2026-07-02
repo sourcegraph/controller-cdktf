@@ -17,8 +17,8 @@ type KeyspacesTableSchemaDefinitionPartitionKeyList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type KeyspacesTableSchemaDefinitionPartitionKeyList interface {
 	Get(index *float64) KeyspacesTableSchemaDefinitionPartitionKeyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) WrapsSet() *b
 	return returns
 }
 
-
 func NewKeyspacesTableSchemaDefinitionPartitionKeyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyspacesTableSchemaDefinitionPartitionKeyList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewKeyspacesTableSchemaDefinitionPartitionKeyList(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewKeyspacesTableSchemaDefinitionPartitionKeyList_Override(k KeyspacesTable
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) AllWithMapKey
 	_jsii_.Invoke(
 		k,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) Get(index *fl
 	_jsii_.Invoke(
 		k,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) ToString() *s
 
 	return returns
 }
-

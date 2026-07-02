@@ -98,7 +98,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSetExcludeMatchedPatternParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSetExcludeMatchedPatternParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewCodebuildWebhookFilterGroupFilterOutputReferenceParameters(terra
 
 	return nil
 }
-

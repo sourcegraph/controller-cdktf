@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsRouteTableAssociationsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRouteTableAssociationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRouteTableAssociationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsRouteTableAssociationsOutputReferenceParameters(terraform
 
 	return nil
 }
-

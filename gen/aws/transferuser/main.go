@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferUser.TransferUser",
-		reflect.TypeOf((*TransferUser)(nil)).Elem(),
+		reflect.TypeFor[TransferUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferUser.TransferUserConfig",
-		reflect.TypeOf((*TransferUserConfig)(nil)).Elem(),
+		reflect.TypeFor[TransferUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings",
-		reflect.TypeOf((*TransferUserHomeDirectoryMappings)(nil)).Elem(),
+		reflect.TypeFor[TransferUserHomeDirectoryMappings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsList",
-		reflect.TypeOf((*TransferUserHomeDirectoryMappingsList)(nil)).Elem(),
+		reflect.TypeFor[TransferUserHomeDirectoryMappingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferUserHomeDirectoryMappingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
-		reflect.TypeOf((*TransferUserHomeDirectoryMappingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferUserHomeDirectoryMappingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferUserHomeDirectoryMappingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferUser.TransferUserPosixProfile",
-		reflect.TypeOf((*TransferUserPosixProfile)(nil)).Elem(),
+		reflect.TypeFor[TransferUserPosixProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferUser.TransferUserPosixProfileOutputReference",
-		reflect.TypeOf((*TransferUserPosixProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferUserPosixProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "uidInput", GoGetter: "UidInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferUserPosixProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

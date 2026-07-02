@@ -98,7 +98,7 @@ func (a *jsiiProxy_AutoscalingGroupTagTagOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) validateSetKeyParamete
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) validateSetPropagateAtLaunchParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingGroupTagTagOutputReference) validateSetPropagateAtLaunchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewAutoscalingGroupTagTagOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

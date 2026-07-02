@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
-		reflect.TypeOf((*DynamodbTable)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeCapacity", GoGetter: "WriteCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "writeCapacityInput", GoGetter: "WriteCapacityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableAttribute",
-		reflect.TypeOf((*DynamodbTableAttribute)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableAttribute](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableAttributeList",
-		reflect.TypeOf((*DynamodbTableAttributeList)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableAttributeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableAttributeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableAttributeOutputReference",
-		reflect.TypeOf((*DynamodbTableAttributeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableAttributeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableAttributeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,15 +202,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableConfig",
-		reflect.TypeOf((*DynamodbTableConfig)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex",
-		reflect.TypeOf((*DynamodbTableGlobalSecondaryIndex)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableGlobalSecondaryIndex](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexList",
-		reflect.TypeOf((*DynamodbTableGlobalSecondaryIndexList)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableGlobalSecondaryIndexList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableGlobalSecondaryIndexList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference",
-		reflect.TypeOf((*DynamodbTableGlobalSecondaryIndexOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableGlobalSecondaryIndexOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeCapacity", GoGetter: "WriteCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "writeCapacityInput", GoGetter: "WriteCapacityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex",
-		reflect.TypeOf((*DynamodbTableLocalSecondaryIndex)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableLocalSecondaryIndex](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndexList",
-		reflect.TypeOf((*DynamodbTableLocalSecondaryIndexList)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableLocalSecondaryIndexList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableLocalSecondaryIndexList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndexOutputReference",
-		reflect.TypeOf((*DynamodbTableLocalSecondaryIndexOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableLocalSecondaryIndexOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableLocalSecondaryIndexOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -349,11 +349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery",
-		reflect.TypeOf((*DynamodbTablePointInTimeRecovery)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTablePointInTimeRecovery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecoveryOutputReference",
-		reflect.TypeOf((*DynamodbTablePointInTimeRecoveryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTablePointInTimeRecoveryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -387,11 +387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplica",
-		reflect.TypeOf((*DynamodbTableReplica)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplica](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaList",
-		reflect.TypeOf((*DynamodbTableReplicaList)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplicaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableReplicaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -413,7 +413,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaOutputReference",
-		reflect.TypeOf((*DynamodbTableReplicaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplicaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -451,7 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableReplicaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -459,11 +459,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption",
-		reflect.TypeOf((*DynamodbTableServerSideEncryption)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableServerSideEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableServerSideEncryptionOutputReference",
-		reflect.TypeOf((*DynamodbTableServerSideEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableServerSideEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -492,7 +492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableServerSideEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -500,11 +500,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableTimeouts",
-		reflect.TypeOf((*DynamodbTableTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableTimeoutsOutputReference",
-		reflect.TypeOf((*DynamodbTableTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -537,7 +537,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -545,11 +545,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableTtl",
-		reflect.TypeOf((*DynamodbTableTtl)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableTtl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableTtlOutputReference",
-		reflect.TypeOf((*DynamodbTableTtlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableTtlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPrometheusWorkspaceLoggingConfigurationOutputReferenceParameters
 
 	return nil
 }
-

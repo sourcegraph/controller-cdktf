@@ -13,9 +13,9 @@ type OpensearchDomainVpcOptionsOutputReference interface {
 	AvailabilityZones() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type OpensearchDomainVpcOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type OpensearchDomainVpcOptionsOutputReference interface {
 	ResetSubnetIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) AvailabilityZones(
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) VpcId() *string {
 	return returns
 }
 
-
 func NewOpensearchDomainVpcOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainVpcOptionsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewOpensearchDomainVpcOptionsOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewOpensearchDomainVpcOptionsOutputReference_Override(o OpensearchDomainVpc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetInternalValue(val *OpensearchDomainVpcOptions) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetInternalValue(val *OpensearchDomainVpcOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetSecurityGroupIds
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetSubnetIds(val *[
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -523,16 +522,16 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) ResetSubnetIds() {
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -551,4 +550,3 @@ func (o *jsiiProxy_OpensearchDomainVpcOptionsOutputReference) ToString() *string
 
 	return returns
 }
-

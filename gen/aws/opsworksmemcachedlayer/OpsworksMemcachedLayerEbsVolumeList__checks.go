@@ -34,7 +34,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOpsworksMemcachedLayerEbsVolumeListParameters(terraformResource 
 
 	return nil
 }
-

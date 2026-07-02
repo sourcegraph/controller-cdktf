@@ -98,7 +98,7 @@ func (g *jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference) validateSetCreatePar
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGrafanaWorkspaceTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -122,7 +122,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -310,4 +310,3 @@ func validateNewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputRefer
 
 	return nil
 }
-

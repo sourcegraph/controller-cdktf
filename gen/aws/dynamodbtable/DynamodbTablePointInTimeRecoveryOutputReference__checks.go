@@ -98,7 +98,7 @@ func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewDynamodbTablePointInTimeRecoveryOutputReferenceParameters(terraf
 
 	return nil
 }
-

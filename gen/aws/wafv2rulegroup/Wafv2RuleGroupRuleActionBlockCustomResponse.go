@@ -1,6 +1,5 @@
 package wafv2rulegroup
 
-
 type Wafv2RuleGroupRuleActionBlockCustomResponse struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
 	ResponseCode *float64 `field:"required" json:"responseCode" yaml:"responseCode"`
@@ -9,6 +8,5 @@ type Wafv2RuleGroupRuleActionBlockCustomResponse struct {
 	// response_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
-	ResponseHeader interface{} `field:"optional" json:"responseHeader" yaml:"responseHeader"`
+	ResponseHeader any `field:"optional" json:"responseHeader" yaml:"responseHeader"`
 }
-

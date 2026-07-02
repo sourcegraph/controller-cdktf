@@ -34,7 +34,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationCo
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewS3ControlObjectLambdaAccessPointConfigurationTransformationConfi
 
 	return nil
 }
-

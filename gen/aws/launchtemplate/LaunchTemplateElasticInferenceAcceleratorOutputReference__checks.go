@@ -98,7 +98,7 @@ func (l *jsiiProxy_LaunchTemplateElasticInferenceAcceleratorOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateElasticInferenceAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateElasticInferenceAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLaunchTemplateElasticInferenceAcceleratorOutputReferenceParamete
 
 	return nil
 }
-

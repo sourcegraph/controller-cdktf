@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewServiceDiscoveryServiceHealthCheckConfigOutputReferenceParameter
 
 	return nil
 }
-

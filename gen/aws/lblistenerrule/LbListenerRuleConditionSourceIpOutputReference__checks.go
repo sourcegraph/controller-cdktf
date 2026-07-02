@@ -98,7 +98,7 @@ func (l *jsiiProxy_LbListenerRuleConditionSourceIpOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleConditionSourceIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LbListenerRuleConditionSourceIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLbListenerRuleConditionSourceIpOutputReferenceParameters(terrafo
 
 	return nil
 }
-

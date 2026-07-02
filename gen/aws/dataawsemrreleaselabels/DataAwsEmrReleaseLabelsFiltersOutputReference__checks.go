@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataAwsEmrReleaseLabelsFiltersOutputReference) validateSetApp
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEmrReleaseLabelsFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEmrReleaseLabelsFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataAwsEmrReleaseLabelsFiltersOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GlueCrawlerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GlueCrawlerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#name GlueCrawler#name}.
@@ -28,7 +28,7 @@ type GlueCrawlerConfig struct {
 	// catalog_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
-	CatalogTarget interface{} `field:"optional" json:"catalogTarget" yaml:"catalogTarget"`
+	CatalogTarget any `field:"optional" json:"catalogTarget" yaml:"catalogTarget"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
 	Classifiers *[]*string `field:"optional" json:"classifiers" yaml:"classifiers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
@@ -36,13 +36,13 @@ type GlueCrawlerConfig struct {
 	// delta_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
-	DeltaTarget interface{} `field:"optional" json:"deltaTarget" yaml:"deltaTarget"`
+	DeltaTarget any `field:"optional" json:"deltaTarget" yaml:"deltaTarget"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#description GlueCrawler#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// dynamodb_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
-	DynamodbTarget interface{} `field:"optional" json:"dynamodbTarget" yaml:"dynamodbTarget"`
+	DynamodbTarget any `field:"optional" json:"dynamodbTarget" yaml:"dynamodbTarget"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#id GlueCrawler#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -51,7 +51,7 @@ type GlueCrawlerConfig struct {
 	// jdbc_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
-	JdbcTarget interface{} `field:"optional" json:"jdbcTarget" yaml:"jdbcTarget"`
+	JdbcTarget any `field:"optional" json:"jdbcTarget" yaml:"jdbcTarget"`
 	// lake_formation_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
@@ -63,7 +63,7 @@ type GlueCrawlerConfig struct {
 	// mongodb_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
-	MongodbTarget interface{} `field:"optional" json:"mongodbTarget" yaml:"mongodbTarget"`
+	MongodbTarget any `field:"optional" json:"mongodbTarget" yaml:"mongodbTarget"`
 	// recrawl_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
@@ -71,7 +71,7 @@ type GlueCrawlerConfig struct {
 	// s3_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
-	S3Target interface{} `field:"optional" json:"s3Target" yaml:"s3Target"`
+	S3Target any `field:"optional" json:"s3Target" yaml:"s3Target"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
 	Schedule *string `field:"optional" json:"schedule" yaml:"schedule"`
 	// schema_change_policy block.
@@ -87,4 +87,3 @@ type GlueCrawlerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

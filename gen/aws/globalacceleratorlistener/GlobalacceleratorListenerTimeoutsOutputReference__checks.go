@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGlobalacceleratorListenerTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

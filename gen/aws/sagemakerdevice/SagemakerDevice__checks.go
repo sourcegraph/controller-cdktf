@@ -19,7 +19,7 @@ func (s *jsiiProxy_SagemakerDevice) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDevice) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SagemakerDevice) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SagemakerDevice) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDevice) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SagemakerDevice) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSagemakerDevice_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateSagemakerDevice_IsConstructParameters(x interface{}) error {
+func validateSagemakerDevice_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSagemakerDevice_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSagemakerDevice_IsTerraformElementParameters(x interface{}) error {
+func validateSagemakerDevice_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSagemakerDevice_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSagemakerDevice_IsTerraformResourceParameters(x interface{}) error {
+func validateSagemakerDevice_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSagemakerDevice_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDevice) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDevice) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SagemakerDevice) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDevice) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerDevice) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_SagemakerDevice) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDevice) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SagemakerDevice) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewSagemakerDeviceParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package medialivechannel
 
-
 type MedialiveChannelEncoderSettingsOutputGroups struct {
 	// output_group_settings block.
 	//
@@ -9,8 +8,7 @@ type MedialiveChannelEncoderSettingsOutputGroups struct {
 	// outputs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#outputs MedialiveChannel#outputs}
-	Outputs interface{} `field:"required" json:"outputs" yaml:"outputs"`
+	Outputs any `field:"required" json:"outputs" yaml:"outputs"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/medialive_channel#name MedialiveChannel#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

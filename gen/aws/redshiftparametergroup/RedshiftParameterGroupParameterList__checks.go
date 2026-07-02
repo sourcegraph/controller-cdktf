@@ -34,7 +34,7 @@ func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftParameterGroupParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedshiftParameterGroupParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRedshiftParameterGroupParameterListParameters(terraformResource 
 
 	return nil
 }
-

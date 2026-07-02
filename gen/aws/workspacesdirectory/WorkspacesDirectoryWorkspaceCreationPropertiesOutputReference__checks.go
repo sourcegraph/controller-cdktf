@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetEnableInternetAccessParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetEnableInternetAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetEnableMaintenanceModeParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetEnableMaintenanceModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetUserEnabledAsLocalAdministratorParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetUserEnabledAsLocalAdministratorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewWorkspacesDirectoryWorkspaceCreationPropertiesOutputReferencePar
 
 	return nil
 }
-

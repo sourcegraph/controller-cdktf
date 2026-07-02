@@ -16,11 +16,11 @@ type DataAwsBillingServiceAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,17 +47,17 @@ type DataAwsBillingServiceAccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,18 +83,18 @@ type DataAwsBillingServiceAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsBillingServiceAccount
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsBillingServiceAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsBillingServiceAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsBillingServiceAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsBillingServiceAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -272,7 +272,6 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/billing_service_account aws_billing_service_account} Data Source.
 func NewDataAwsBillingServiceAccount(scope constructs.Construct, id *string, config *DataAwsBillingServiceAccountConfig) DataAwsBillingServiceAccount {
 	_init_.Initialize()
@@ -284,7 +283,7 @@ func NewDataAwsBillingServiceAccount(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -297,12 +296,12 @@ func NewDataAwsBillingServiceAccount_Override(d DataAwsBillingServiceAccount, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsBillingServiceAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsBillingServiceAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -321,7 +320,7 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsBillingServiceAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount)SetId(val *string) {
+func (j *jsiiProxy_DataAwsBillingServiceAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsBillingServiceAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataAwsBillingServiceAccount)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataAwsBillingServiceAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsBillingServiceAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -371,7 +370,7 @@ func DataAwsBillingServiceAccount_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func DataAwsBillingServiceAccount_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool {
+func DataAwsBillingServiceAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsBillingServiceAccount_IsConstructParameters(x); err != nil {
@@ -406,7 +405,7 @@ func DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsBillingServiceAccount_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsBillingServiceAccount_IsTerraformDataSourceParameters(x); err != nil {
@@ -425,7 +424,7 @@ func DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsBillingServiceAccount_IsTerraformElement(x interface{}) *bool {
+func DataAwsBillingServiceAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsBillingServiceAccount_IsTerraformElementParameters(x); err != nil {
@@ -444,7 +443,7 @@ func DataAwsBillingServiceAccount_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -462,27 +461,27 @@ func DataAwsBillingServiceAccount_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsBillingServiceAccount) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsBillingServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -660,8 +659,8 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsBillingServiceAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -673,8 +672,8 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsBillingServiceAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -686,8 +685,8 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsBillingServiceAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -699,8 +698,8 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsBillingServiceAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -725,8 +724,8 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBillingServiceAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsBillingServiceAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -737,4 +736,3 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) ToTerraform() interface{} {
 
 	return returns
 }
-

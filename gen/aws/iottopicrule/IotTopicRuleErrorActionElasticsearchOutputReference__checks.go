@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIotTopicRuleErrorActionElasticsearchOutputReferenceParameters(te
 
 	return nil
 }
-

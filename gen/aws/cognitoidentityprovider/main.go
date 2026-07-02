@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
-		reflect.TypeOf((*CognitoIdentityProvider)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoIdentityProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig",
-		reflect.TypeOf((*CognitoIdentityProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoIdentityProviderConfig](),
 	)
 }

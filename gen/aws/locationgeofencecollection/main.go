@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
-		reflect.TypeOf((*LocationGeofenceCollection)(nil)).Elem(),
+		reflect.TypeFor[LocationGeofenceCollection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationGeofenceCollection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionConfig",
-		reflect.TypeOf((*LocationGeofenceCollectionConfig)(nil)).Elem(),
+		reflect.TypeFor[LocationGeofenceCollectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeouts",
-		reflect.TypeOf((*LocationGeofenceCollectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LocationGeofenceCollectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
-		reflect.TypeOf((*LocationGeofenceCollectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LocationGeofenceCollectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

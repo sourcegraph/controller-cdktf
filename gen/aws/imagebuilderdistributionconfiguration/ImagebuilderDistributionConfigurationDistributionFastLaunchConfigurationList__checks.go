@@ -34,7 +34,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchCo
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewImagebuilderDistributionConfigurationDistributionFastLaunchConfi
 
 	return nil
 }
-

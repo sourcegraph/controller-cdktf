@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsVpcPeeringConnectionCidrBlockSetOutputReferenceParameters
 
 	return nil
 }
-

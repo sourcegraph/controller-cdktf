@@ -98,7 +98,7 @@ func (s *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewS3BucketOwnershipControlsRuleOutputReferenceParameters(terraform
 
 	return nil
 }
-

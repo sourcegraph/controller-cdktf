@@ -98,7 +98,7 @@ func (s *jsiiProxy_SesEventDestinationKinesisDestinationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SesEventDestinationKinesisDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SesEventDestinationKinesisDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSesEventDestinationKinesisDestinationOutputReferenceParameters(t
 
 	return nil
 }
-

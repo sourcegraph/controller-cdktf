@@ -17,15 +17,15 @@ type IamVirtualMfaDevice interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,12 +55,12 @@ type IamVirtualMfaDevice interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QrCodePng() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -70,7 +70,7 @@ type IamVirtualMfaDevice interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VirtualMfaDeviceName() *string
@@ -80,9 +80,9 @@ type IamVirtualMfaDevice interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type IamVirtualMfaDevice interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type IamVirtualMfaDevice interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type IamVirtualMfaDevice interface {
 	ResetPath()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamVirtualMfaDevice
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IamVirtualMfaDevice) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamVirtualMfaDevice) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_IamVirtualMfaDevice) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamVirtualMfaDevice) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_IamVirtualMfaDevice) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamVirtualMfaDevice) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_IamVirtualMfaDevice) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamVirtualMfaDevice) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_IamVirtualMfaDevice) QrCodePng() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamVirtualMfaDevice) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_IamVirtualMfaDevice) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamVirtualMfaDevice) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_IamVirtualMfaDevice) VirtualMfaDeviceNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device} Resource.
 func NewIamVirtualMfaDevice(scope constructs.Construct, id *string, config *IamVirtualMfaDeviceConfig) IamVirtualMfaDevice {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewIamVirtualMfaDevice(scope constructs.Construct, id *string, config *IamV
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIamVirtualMfaDevice_Override(i IamVirtualMfaDevice, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetCount(val interface{}) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetId(val *string) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetPath(val *string) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +542,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice)SetVirtualMfaDeviceName(val *string) {
+func (j *jsiiProxy_IamVirtualMfaDevice) SetVirtualMfaDeviceName(val *string) {
 	if err := j.validateSetVirtualMfaDeviceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func IamVirtualMfaDevice_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func IamVirtualMfaDevice_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamVirtualMfaDevice_IsConstruct(x interface{}) *bool {
+func IamVirtualMfaDevice_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamVirtualMfaDevice_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func IamVirtualMfaDevice_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func IamVirtualMfaDevice_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamVirtualMfaDevice_IsTerraformElement(x interface{}) *bool {
+func IamVirtualMfaDevice_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamVirtualMfaDevice_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func IamVirtualMfaDevice_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func IamVirtualMfaDevice_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamVirtualMfaDevice_IsTerraformResource(x interface{}) *bool {
+func IamVirtualMfaDevice_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamVirtualMfaDevice_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func IamVirtualMfaDevice_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (i *jsiiProxy_IamVirtualMfaDevice) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamVirtualMfaDevice) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamVirtualMfaDevice) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (i *jsiiProxy_IamVirtualMfaDevice) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamVirtualMfaDevice) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -876,7 +875,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (i *jsiiProxy_IamVirtualMfaDevice) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamVirtualMfaDevice) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (i *jsiiProxy_IamVirtualMfaDevice) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -980,8 +979,8 @@ func (i *jsiiProxy_IamVirtualMfaDevice) ResetTagsAll() {
 	)
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamVirtualMfaDevice) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -993,8 +992,8 @@ func (i *jsiiProxy_IamVirtualMfaDevice) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamVirtualMfaDevice) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1006,8 +1005,8 @@ func (i *jsiiProxy_IamVirtualMfaDevice) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamVirtualMfaDevice) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1019,8 +1018,8 @@ func (i *jsiiProxy_IamVirtualMfaDevice) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamVirtualMfaDevice) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1045,8 +1044,8 @@ func (i *jsiiProxy_IamVirtualMfaDevice) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamVirtualMfaDevice) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamVirtualMfaDevice) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1057,4 +1056,3 @@ func (i *jsiiProxy_IamVirtualMfaDevice) ToTerraform() interface{} {
 
 	return returns
 }
-

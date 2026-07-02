@@ -98,7 +98,7 @@ func (e *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewElasticacheReplicationGroupLogDeliveryConfigurationOutputReferen
 
 	return nil
 }
-

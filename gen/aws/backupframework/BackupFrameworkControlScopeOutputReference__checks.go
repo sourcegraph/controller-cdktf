@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupFrameworkControlScopeOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BackupFrameworkControlScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupFrameworkControlScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBackupFrameworkControlScopeOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

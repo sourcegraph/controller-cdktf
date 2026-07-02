@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionTracingConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionTracingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLambdaFunctionTracingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLambdaFunctionTracingConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

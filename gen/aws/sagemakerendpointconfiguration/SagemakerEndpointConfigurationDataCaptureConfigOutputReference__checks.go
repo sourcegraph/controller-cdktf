@@ -101,7 +101,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference) validatePutCaptureOptionsParameters(value interface{}) error {
+func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference) validatePutCaptureOptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference) validateSetEnableCaptureParameters(val interface{}) error {
+func (j *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference) validateSetEnableCaptureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -284,4 +284,3 @@ func validateNewSagemakerEndpointConfigurationDataCaptureConfigOutputReferencePa
 
 	return nil
 }
-

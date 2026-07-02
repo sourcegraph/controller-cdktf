@@ -106,7 +106,7 @@ func (j *jsiiProxy_GlueMlTransformInputRecordTablesOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GlueMlTransformInputRecordTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueMlTransformInputRecordTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GlueMlTransformInputRecordTablesOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_GlueMlTransformInputRecordTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueMlTransformInputRecordTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGlueMlTransformInputRecordTablesOutputReferenceParameters(terraf
 
 	return nil
 }
-

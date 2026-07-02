@@ -34,7 +34,7 @@ func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGameliftGameSessionQueuePlayerLatencyPolicyListParameters(terraf
 
 	return nil
 }
-

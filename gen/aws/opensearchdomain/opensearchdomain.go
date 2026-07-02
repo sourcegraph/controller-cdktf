@@ -30,15 +30,15 @@ type OpensearchDomain interface {
 	CognitoOptions() OpensearchDomainCognitoOptionsOutputReference
 	CognitoOptionsInput() *OpensearchDomainCognitoOptions
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -74,7 +74,7 @@ type OpensearchDomain interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogPublishingOptions() OpensearchDomainLogPublishingOptionsList
-	LogPublishingOptionsInput() interface{}
+	LogPublishingOptionsInput() any
 	// The tree node.
 	Node() constructs.Node
 	NodeToNodeEncryption() OpensearchDomainNodeToNodeEncryptionOutputReference
@@ -84,11 +84,11 @@ type OpensearchDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotOptions() OpensearchDomainSnapshotOptionsOutputReference
 	SnapshotOptionsInput() *OpensearchDomainSnapshotOptions
 	Tags() *map[string]*string
@@ -100,20 +100,20 @@ type OpensearchDomain interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OpensearchDomainTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcOptions() OpensearchDomainVpcOptionsOutputReference
 	VpcOptionsInput() *OpensearchDomainVpcOptions
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type OpensearchDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -143,7 +143,7 @@ type OpensearchDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -157,7 +157,7 @@ type OpensearchDomain interface {
 	PutDomainEndpointOptions(value *OpensearchDomainDomainEndpointOptions)
 	PutEbsOptions(value *OpensearchDomainEbsOptions)
 	PutEncryptAtRest(value *OpensearchDomainEncryptAtRest)
-	PutLogPublishingOptions(value interface{})
+	PutLogPublishingOptions(value any)
 	PutNodeToNodeEncryption(value *OpensearchDomainNodeToNodeEncryption)
 	PutSnapshotOptions(value *OpensearchDomainSnapshotOptions)
 	PutTimeouts(value *OpensearchDomainTimeouts)
@@ -183,17 +183,17 @@ type OpensearchDomain interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetVpcOptions()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OpensearchDomain
@@ -341,8 +341,8 @@ func (j *jsiiProxy_OpensearchDomain) CognitoOptionsInput() *OpensearchDomainCogn
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_OpensearchDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpensearchDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_OpensearchDomain) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -581,8 +581,8 @@ func (j *jsiiProxy_OpensearchDomain) LogPublishingOptions() OpensearchDomainLogP
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) LogPublishingOptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomain) LogPublishingOptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logPublishingOptionsInput",
@@ -631,8 +631,8 @@ func (j *jsiiProxy_OpensearchDomain) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OpensearchDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -641,8 +641,8 @@ func (j *jsiiProxy_OpensearchDomain) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -721,8 +721,8 @@ func (j *jsiiProxy_OpensearchDomain) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OpensearchDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -751,8 +751,8 @@ func (j *jsiiProxy_OpensearchDomain) Timeouts() OpensearchDomainTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpensearchDomain) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -781,7 +781,6 @@ func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptio
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
 	_init_.Initialize()
@@ -793,7 +792,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -806,12 +805,12 @@ func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetAccessPolicies(val *string) {
+func (j *jsiiProxy_OpensearchDomain) SetAccessPolicies(val *string) {
 	if err := j.validateSetAccessPoliciesParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_OpensearchDomain)SetAccessPolicies(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetAdvancedOptions(val *map[string]*string) {
+func (j *jsiiProxy_OpensearchDomain) SetAdvancedOptions(val *map[string]*string) {
 	if err := j.validateSetAdvancedOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_OpensearchDomain)SetAdvancedOptions(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_OpensearchDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_OpensearchDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_OpensearchDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_OpensearchDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OpensearchDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -863,7 +862,7 @@ func (j *jsiiProxy_OpensearchDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetDomainName(val *string) {
+func (j *jsiiProxy_OpensearchDomain) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_OpensearchDomain)SetDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetEngineVersion(val *string) {
+func (j *jsiiProxy_OpensearchDomain) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_OpensearchDomain)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpensearchDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -893,7 +892,7 @@ func (j *jsiiProxy_OpensearchDomain)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetId(val *string) {
+func (j *jsiiProxy_OpensearchDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_OpensearchDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpensearchDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_OpensearchDomain)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpensearchDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -923,7 +922,7 @@ func (j *jsiiProxy_OpensearchDomain)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OpensearchDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_OpensearchDomain)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_OpensearchDomain) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_OpensearchDomain)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_OpensearchDomain) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -968,7 +967,7 @@ func OpensearchDomain_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func OpensearchDomain_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OpensearchDomain_IsConstruct(x interface{}) *bool {
+func OpensearchDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpensearchDomain_IsConstructParameters(x); err != nil {
@@ -1003,7 +1002,7 @@ func OpensearchDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func OpensearchDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OpensearchDomain_IsTerraformElement(x interface{}) *bool {
+func OpensearchDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpensearchDomain_IsTerraformElementParameters(x); err != nil {
@@ -1022,7 +1021,7 @@ func OpensearchDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1030,7 +1029,7 @@ func OpensearchDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OpensearchDomain_IsTerraformResource(x interface{}) *bool {
+func OpensearchDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOpensearchDomain_IsTerraformResourceParameters(x); err != nil {
@@ -1041,7 +1040,7 @@ func OpensearchDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1066,31 +1065,31 @@ func (o *jsiiProxy_OpensearchDomain) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomain) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OpensearchDomain) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OpensearchDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func (o *jsiiProxy_OpensearchDomain) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1122,7 +1121,7 @@ func (o *jsiiProxy_OpensearchDomain) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1138,7 +1137,7 @@ func (o *jsiiProxy_OpensearchDomain) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1154,7 +1153,7 @@ func (o *jsiiProxy_OpensearchDomain) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1170,7 +1169,7 @@ func (o *jsiiProxy_OpensearchDomain) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1186,7 +1185,7 @@ func (o *jsiiProxy_OpensearchDomain) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1202,7 +1201,7 @@ func (o *jsiiProxy_OpensearchDomain) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1218,15 +1217,15 @@ func (o *jsiiProxy_OpensearchDomain) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1245,7 +1244,7 @@ func (o *jsiiProxy_OpensearchDomain) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1258,7 +1257,7 @@ func (o *jsiiProxy_OpensearchDomain) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1272,18 +1271,18 @@ func (o *jsiiProxy_OpensearchDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomain) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OpensearchDomain) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1294,7 +1293,7 @@ func (o *jsiiProxy_OpensearchDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1305,7 +1304,7 @@ func (o *jsiiProxy_OpensearchDomain) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1316,7 +1315,7 @@ func (o *jsiiProxy_OpensearchDomain) PutAdvancedSecurityOptions(value *Opensearc
 	_jsii_.InvokeVoid(
 		o,
 		"putAdvancedSecurityOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1327,7 +1326,7 @@ func (o *jsiiProxy_OpensearchDomain) PutAutoTuneOptions(value *OpensearchDomainA
 	_jsii_.InvokeVoid(
 		o,
 		"putAutoTuneOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1338,7 +1337,7 @@ func (o *jsiiProxy_OpensearchDomain) PutClusterConfig(value *OpensearchDomainClu
 	_jsii_.InvokeVoid(
 		o,
 		"putClusterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1349,7 +1348,7 @@ func (o *jsiiProxy_OpensearchDomain) PutCognitoOptions(value *OpensearchDomainCo
 	_jsii_.InvokeVoid(
 		o,
 		"putCognitoOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1360,7 +1359,7 @@ func (o *jsiiProxy_OpensearchDomain) PutDomainEndpointOptions(value *OpensearchD
 	_jsii_.InvokeVoid(
 		o,
 		"putDomainEndpointOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1371,7 +1370,7 @@ func (o *jsiiProxy_OpensearchDomain) PutEbsOptions(value *OpensearchDomainEbsOpt
 	_jsii_.InvokeVoid(
 		o,
 		"putEbsOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1382,18 +1381,18 @@ func (o *jsiiProxy_OpensearchDomain) PutEncryptAtRest(value *OpensearchDomainEnc
 	_jsii_.InvokeVoid(
 		o,
 		"putEncryptAtRest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomain) PutLogPublishingOptions(value interface{}) {
+func (o *jsiiProxy_OpensearchDomain) PutLogPublishingOptions(value any) {
 	if err := o.validatePutLogPublishingOptionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putLogPublishingOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1404,7 +1403,7 @@ func (o *jsiiProxy_OpensearchDomain) PutNodeToNodeEncryption(value *OpensearchDo
 	_jsii_.InvokeVoid(
 		o,
 		"putNodeToNodeEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1415,7 +1414,7 @@ func (o *jsiiProxy_OpensearchDomain) PutSnapshotOptions(value *OpensearchDomainS
 	_jsii_.InvokeVoid(
 		o,
 		"putSnapshotOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1426,7 +1425,7 @@ func (o *jsiiProxy_OpensearchDomain) PutTimeouts(value *OpensearchDomainTimeouts
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1437,7 +1436,7 @@ func (o *jsiiProxy_OpensearchDomain) PutVpcOptions(value *OpensearchDomainVpcOpt
 	_jsii_.InvokeVoid(
 		o,
 		"putVpcOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1593,8 +1592,8 @@ func (o *jsiiProxy_OpensearchDomain) ResetVpcOptions() {
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpensearchDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1606,8 +1605,8 @@ func (o *jsiiProxy_OpensearchDomain) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OpensearchDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1619,8 +1618,8 @@ func (o *jsiiProxy_OpensearchDomain) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1632,8 +1631,8 @@ func (o *jsiiProxy_OpensearchDomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1658,8 +1657,8 @@ func (o *jsiiProxy_OpensearchDomain) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OpensearchDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1670,4 +1669,3 @@ func (o *jsiiProxy_OpensearchDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

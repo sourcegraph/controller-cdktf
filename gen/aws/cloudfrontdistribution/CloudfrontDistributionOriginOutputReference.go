@@ -12,9 +12,9 @@ type CloudfrontDistributionOriginOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,7 +32,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomHeader() CloudfrontDistributionOriginCustomHeaderList
-	CustomHeaderInput() interface{}
+	CustomHeaderInput() any
 	CustomOriginConfig() CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	CustomOriginConfigInput() *CloudfrontDistributionOriginCustomOriginConfig
 	DomainName() *string
@@ -40,8 +40,8 @@ type CloudfrontDistributionOriginOutputReference interface {
 	DomainNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OriginAccessControlId() *string
 	SetOriginAccessControlId(val *string)
 	OriginAccessControlIdInput() *string
@@ -66,7 +66,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomHeader(value interface{})
+	PutCustomHeader(value any)
 	PutCustomOriginConfig(value *CloudfrontDistributionOriginCustomOriginConfig)
 	PutOriginShield(value *CloudfrontDistributionOriginOriginShield)
 	PutS3OriginConfig(value *CloudfrontDistributionOriginS3OriginConfig)
@@ -101,7 +101,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	ResetS3OriginConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ type jsiiProxy_CloudfrontDistributionOriginOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) CustomHeader() C
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) CustomHeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) CustomHeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customHeaderInput",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewCloudfrontDistributionOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudfrontDistributionOriginOutputReference {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewCloudfrontDistributionOriginOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -407,12 +406,12 @@ func NewCloudfrontDistributionOriginOutputReference_Override(c CloudfrontDistrib
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetConnectionAttempts(val *float64) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetConnectionAttempts(val *float64) {
 	if err := j.validateSetConnectionAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetConnectionAtte
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetConnectionTimeout(val *float64) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetConnectionTimeout(val *float64) {
 	if err := j.validateSetConnectionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetConnectionTime
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetDomainName(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetDomainName(val *string) {
 	if err := j.validateSetDomainNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetDomainName(val
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginAccessControlId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetOriginAccessControlId(val *string) {
 	if err := j.validateSetOriginAccessControlIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginAccessCo
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginId(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetOriginId(val *string) {
 	if err := j.validateSetOriginIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginId(val *
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginPath(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetOriginPath(val *string) {
 	if err := j.validateSetOriginPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginPath(val
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,16 +545,16 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,21 +711,21 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutCustomHeader(value interface{}) {
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutCustomHeader(value any) {
 	if err := c.validatePutCustomHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -737,7 +736,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutCustomOriginC
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomOriginConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutOriginShield(
 	_jsii_.InvokeVoid(
 		c,
 		"putOriginShield",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,7 +758,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutS3OriginConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putS3OriginConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -827,16 +826,16 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetS3OriginCon
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -855,4 +854,3 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ToString() *stri
 
 	return returns
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataAwsSubnet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataAwsSubnet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataAwsSubnet) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSubnet) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsSubnet) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -169,7 +169,7 @@ func validateDataAwsSubnet_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateDataAwsSubnet_IsConstructParameters(x interface{}) error {
+func validateDataAwsSubnet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -177,7 +177,7 @@ func validateDataAwsSubnet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataAwsSubnet_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataAwsSubnet_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func validateDataAwsSubnet_IsTerraformDataSourceParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataAwsSubnet_IsTerraformElementParameters(x interface{}) error {
+func validateDataAwsSubnet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -217,7 +217,7 @@ func (j *jsiiProxy_DataAwsSubnet) validateSetCidrBlockParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSubnet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSubnet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,7 +274,7 @@ func (j *jsiiProxy_DataAwsSubnet) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSubnet) validateSetDefaultForAzParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSubnet) validateSetDefaultForAzParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -357,4 +357,3 @@ func validateNewDataAwsSubnetParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

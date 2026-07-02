@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComprehendDocumentClassifierOutputDataConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierOutputDataConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComprehendDocumentClassifierOutputDataConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComprehendDocumentClassifierOutputDataConfigOutputReferenceParam
 
 	return nil
 }
-

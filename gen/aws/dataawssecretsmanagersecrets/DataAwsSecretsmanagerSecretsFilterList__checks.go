@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsSecretsmanagerSecretsFilterListParameters(terraformResour
 
 	return nil
 }
-

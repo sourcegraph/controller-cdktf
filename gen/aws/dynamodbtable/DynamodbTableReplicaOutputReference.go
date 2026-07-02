@@ -13,9 +13,9 @@ type DynamodbTableReplicaOutputReference interface {
 	Arn() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,17 +28,17 @@ type DynamodbTableReplicaOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	KmsKeyArn() *string
 	SetKmsKeyArn(val *string)
 	KmsKeyArnInput() *string
-	PointInTimeRecovery() interface{}
-	SetPointInTimeRecovery(val interface{})
-	PointInTimeRecoveryInput() interface{}
-	PropagateTags() interface{}
-	SetPropagateTags(val interface{})
-	PropagateTagsInput() interface{}
+	PointInTimeRecovery() any
+	SetPointInTimeRecovery(val any)
+	PointInTimeRecoveryInput() any
+	PropagateTags() any
+	SetPropagateTags(val any)
+	PropagateTagsInput() any
 	RegionName() *string
 	SetRegionName(val *string)
 	RegionNameInput() *string
@@ -55,7 +55,7 @@ type DynamodbTableReplicaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type DynamodbTableReplicaOutputReference interface {
 	ResetPropagateTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) KmsKeyArnInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PointInTimeRecovery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PointInTimeRecovery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pointInTimeRecovery",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PointInTimeRecovery() in
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PointInTimeRecoveryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PointInTimeRecoveryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pointInTimeRecoveryInput",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PointInTimeRecoveryInput
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PropagateTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PropagateTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"propagateTags",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PropagateTags() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PropagateTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) PropagateTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"propagateTagsInput",
@@ -274,7 +274,6 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewDynamodbTableReplicaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DynamodbTableReplicaOutputReference {
 	_init_.Initialize()
 
@@ -285,7 +284,7 @@ func NewDynamodbTableReplicaOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -297,12 +296,12 @@ func NewDynamodbTableReplicaOutputReference_Override(d DynamodbTableReplicaOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetKmsKeyArn(val *string)
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetPointInTimeRecovery(val interface{}) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetPointInTimeRecovery(val any) {
 	if err := j.validateSetPointInTimeRecoveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetPointInTimeRecovery(va
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetPropagateTags(val interface{}) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetPropagateTags(val any) {
 	if err := j.validateSetPropagateTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetPropagateTags(val inte
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetRegionName(val *string) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetRegionName(val *string) {
 	if err := j.validateSetRegionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,7 +378,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetRegionName(val *string
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,16 +413,16 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -611,16 +610,16 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ResetPropagateTags() {
 	)
 }
 
-func (d *jsiiProxy_DynamodbTableReplicaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DynamodbTableReplicaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -639,4 +638,3 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ToString() *string {
 
 	return returns
 }
-

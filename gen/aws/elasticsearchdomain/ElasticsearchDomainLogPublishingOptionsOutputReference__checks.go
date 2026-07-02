@@ -106,7 +106,7 @@ func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewElasticsearchDomainLogPublishingOptionsOutputReferenceParameters
 
 	return nil
 }
-

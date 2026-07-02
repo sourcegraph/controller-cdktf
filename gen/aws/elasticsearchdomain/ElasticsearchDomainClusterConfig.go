@@ -1,6 +1,5 @@
 package elasticsearchdomain
 
-
 type ElasticsearchDomainClusterConfig struct {
 	// cold_storage_options block.
 	//
@@ -9,7 +8,7 @@ type ElasticsearchDomainClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#dedicated_master_count ElasticsearchDomain#dedicated_master_count}.
 	DedicatedMasterCount *float64 `field:"optional" json:"dedicatedMasterCount" yaml:"dedicatedMasterCount"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#dedicated_master_enabled ElasticsearchDomain#dedicated_master_enabled}.
-	DedicatedMasterEnabled interface{} `field:"optional" json:"dedicatedMasterEnabled" yaml:"dedicatedMasterEnabled"`
+	DedicatedMasterEnabled any `field:"optional" json:"dedicatedMasterEnabled" yaml:"dedicatedMasterEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#dedicated_master_type ElasticsearchDomain#dedicated_master_type}.
 	DedicatedMasterType *string `field:"optional" json:"dedicatedMasterType" yaml:"dedicatedMasterType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#instance_count ElasticsearchDomain#instance_count}.
@@ -19,7 +18,7 @@ type ElasticsearchDomainClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#warm_count ElasticsearchDomain#warm_count}.
 	WarmCount *float64 `field:"optional" json:"warmCount" yaml:"warmCount"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#warm_enabled ElasticsearchDomain#warm_enabled}.
-	WarmEnabled interface{} `field:"optional" json:"warmEnabled" yaml:"warmEnabled"`
+	WarmEnabled any `field:"optional" json:"warmEnabled" yaml:"warmEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#warm_type ElasticsearchDomain#warm_type}.
 	WarmType *string `field:"optional" json:"warmType" yaml:"warmType"`
 	// zone_awareness_config block.
@@ -27,6 +26,5 @@ type ElasticsearchDomainClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#zone_awareness_config ElasticsearchDomain#zone_awareness_config}
 	ZoneAwarenessConfig *ElasticsearchDomainClusterConfigZoneAwarenessConfig `field:"optional" json:"zoneAwarenessConfig" yaml:"zoneAwarenessConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/elasticsearch_domain#zone_awareness_enabled ElasticsearchDomain#zone_awareness_enabled}.
-	ZoneAwarenessEnabled interface{} `field:"optional" json:"zoneAwarenessEnabled" yaml:"zoneAwarenessEnabled"`
+	ZoneAwarenessEnabled any `field:"optional" json:"zoneAwarenessEnabled" yaml:"zoneAwarenessEnabled"`
 }
-

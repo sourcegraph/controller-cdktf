@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudfrontDistributionOriginGroupMemberOutputReferenceParameters
 
 	return nil
 }
-

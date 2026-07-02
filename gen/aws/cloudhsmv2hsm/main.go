@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
-		reflect.TypeOf((*CloudhsmV2Hsm)(nil)).Elem(),
+		reflect.TypeFor[CloudhsmV2Hsm](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudhsmV2Hsm{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmConfig",
-		reflect.TypeOf((*CloudhsmV2HsmConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudhsmV2HsmConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeouts",
-		reflect.TypeOf((*CloudhsmV2HsmTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudhsmV2HsmTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeoutsOutputReference",
-		reflect.TypeOf((*CloudhsmV2HsmTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudhsmV2HsmTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudhsmV2HsmTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

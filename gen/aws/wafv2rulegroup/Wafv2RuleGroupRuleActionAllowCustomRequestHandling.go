@@ -1,10 +1,8 @@
 package wafv2rulegroup
 
-
 type Wafv2RuleGroupRuleActionAllowCustomRequestHandling struct {
 	// insert_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
-	InsertHeader interface{} `field:"required" json:"insertHeader" yaml:"insertHeader"`
+	InsertHeader any `field:"required" json:"insertHeader" yaml:"insertHeader"`
 }
-

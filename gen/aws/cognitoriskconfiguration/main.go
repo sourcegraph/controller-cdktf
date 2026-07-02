@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
-		reflect.TypeOf((*CognitoRiskConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfiguration](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountTakeoverRiskConfiguration", GoGetter: "AccountTakeoverRiskConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "accountTakeoverRiskConfigurationInput", GoGetter: "AccountTakeoverRiskConfigurationInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfiguration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,19 +81,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,7 +209,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,15 +253,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textBodyInput", GoGetter: "TextBodyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textBodyInput", GoGetter: "TextBodyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -341,11 +341,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -375,7 +375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textBodyInput", GoGetter: "TextBodyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -383,7 +383,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockEmail", GoGetter: "BlockEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "blockEmailInput", GoGetter: "BlockEmailInput"},
@@ -427,7 +427,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -435,7 +435,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -473,15 +473,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration",
-		reflect.TypeOf((*CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions",
-		reflect.TypeOf((*CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,7 +515,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -553,15 +553,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig",
-		reflect.TypeOf((*CognitoRiskConfigurationConfig)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration",
-		reflect.TypeOf((*CognitoRiskConfigurationRiskExceptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationRiskExceptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference",
-		reflect.TypeOf((*CognitoRiskConfigurationRiskExceptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CognitoRiskConfigurationRiskExceptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockedIpRangeList", GoGetter: "BlockedIpRangeList"},
 			_jsii_.MemberProperty{JsiiProperty: "blockedIpRangeListInput", GoGetter: "BlockedIpRangeListInput"},
@@ -591,7 +591,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CognitoRiskConfigurationRiskExceptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

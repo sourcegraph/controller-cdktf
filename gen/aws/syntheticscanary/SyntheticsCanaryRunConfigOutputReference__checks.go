@@ -98,7 +98,7 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetActiveTracingParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetActiveTracingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetActiveTr
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewSyntheticsCanaryRunConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

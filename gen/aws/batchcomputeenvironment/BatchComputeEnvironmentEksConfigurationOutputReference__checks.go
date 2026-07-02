@@ -98,7 +98,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBatchComputeEnvironmentEksConfigurationOutputReferenceParameters
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type EksNodeGroupUpdateConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type EksNodeGroupUpdateConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type EksNodeGroupUpdateConfigOutputReference interface {
 	ResetMaxUnavailablePercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_EksNodeGroupUpdateConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewEksNodeGroupUpdateConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EksNodeGroupUpdateConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewEksNodeGroupUpdateConfigOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewEksNodeGroupUpdateConfigOutputReference_Override(e EksNodeGroupUpdateCon
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetInternalValue(val *EksNodeGroupUpdateConfig) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetInternalValue(val *EksNodeGroupUpdateConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetMaxUnavailable(val *float64) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetMaxUnavailable(val *float64) {
 	if err := j.validateSetMaxUnavailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetMaxUnavailable(val
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetMaxUnavailablePercentage(val *float64) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetMaxUnavailablePercentage(val *float64) {
 	if err := j.validateSetMaxUnavailablePercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetMaxUnavailablePerc
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) ResetMaxUnavailableP
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (e *jsiiProxy_EksNodeGroupUpdateConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

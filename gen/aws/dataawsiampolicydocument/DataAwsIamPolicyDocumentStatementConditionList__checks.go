@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementConditionList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementConditionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementConditionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsIamPolicyDocumentStatementConditionListParameters(terrafo
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,11 +57,11 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
@@ -71,16 +71,16 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatistic()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcNetworkPerformanceMetricSubscription
@@ -151,8 +151,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
 func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *string, config *VpcNetworkPerformanceMetricSubscriptionConfig) VpcNetworkPerformanceMetricSubscription {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewVpcNetworkPerformanceMetricSubscription_Override(v VpcNetworkPerformance
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetDestination(val *string) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetDestination(val *s
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetId(val *string) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetMetric(val *string) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetMetric(val *string) {
 	if err := j.validateSetMetricParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetMetric(val *string
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetSource(val *string) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetSource(val *string
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetStatistic(val *string) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SetStatistic(val *string) {
 	if err := j.validateSetStatisticParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func VpcNetworkPerformanceMetricSubscription_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func VpcNetworkPerformanceMetricSubscription_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcNetworkPerformanceMetricSubscription_IsConstruct(x interface{}) *bool {
+func VpcNetworkPerformanceMetricSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcNetworkPerformanceMetricSubscription_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func VpcNetworkPerformanceMetricSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func VpcNetworkPerformanceMetricSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcNetworkPerformanceMetricSubscription_IsTerraformElement(x interface{}) *bool {
+func VpcNetworkPerformanceMetricSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcNetworkPerformanceMetricSubscription_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func VpcNetworkPerformanceMetricSubscription_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func VpcNetworkPerformanceMetricSubscription_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func VpcNetworkPerformanceMetricSubscription_IsTerraformResource(x interface{}) *bool {
+func VpcNetworkPerformanceMetricSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcNetworkPerformanceMetricSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func VpcNetworkPerformanceMetricSubscription_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetBooleanAttribute(
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetListAttribute(ter
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetNumberAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetNumberListAttribu
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetNumberMapAttribut
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetStringAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) GetStringMapAttribut
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -853,7 +852,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) InterpolationForAttr
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ResetStatistic() {
 	)
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -962,8 +961,8 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SynthesizeAttributes
 	return returns
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -975,8 +974,8 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) SynthesizeHclAttribu
 	return returns
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -988,8 +987,8 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToHclTerraform() int
 	return returns
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1014,8 +1013,8 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1026,4 +1025,3 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ToTerraform() interf
 
 	return returns
 }
-

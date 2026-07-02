@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsS3ControlMultiRegionAccessPointPublicAccessBlockOutputRef
 
 	return nil
 }
-

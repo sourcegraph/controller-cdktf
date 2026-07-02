@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssoc
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociat
 
 	return nil
 }
-

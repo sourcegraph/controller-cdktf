@@ -12,9 +12,9 @@ type TransferWorkflowStepsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type TransferWorkflowStepsOutputReference interface {
 	DeleteStepDetailsInput() *TransferWorkflowStepsDeleteStepDetails
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	TagStepDetails() TransferWorkflowStepsTagStepDetailsOutputReference
 	TagStepDetailsInput() *TransferWorkflowStepsTagStepDetails
 	// Experimental.
@@ -51,7 +51,7 @@ type TransferWorkflowStepsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type TransferWorkflowStepsOutputReference interface {
 	ResetTagStepDetails()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_TransferWorkflowStepsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewTransferWorkflowStepsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TransferWorkflowStepsOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewTransferWorkflowStepsOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewTransferWorkflowStepsOutputReference_Override(t TransferWorkflowStepsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_TransferWorkflowStepsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,16 +371,16 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) PutCopyStepDetails(valu
 	_jsii_.InvokeVoid(
 		t,
 		"putCopyStepDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -563,7 +562,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) PutCustomStepDetails(va
 	_jsii_.InvokeVoid(
 		t,
 		"putCustomStepDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -574,7 +573,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) PutDeleteStepDetails(va
 	_jsii_.InvokeVoid(
 		t,
 		"putDeleteStepDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -585,7 +584,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) PutTagStepDetails(value
 	_jsii_.InvokeVoid(
 		t,
 		"putTagStepDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) ResetTagStepDetails() {
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TransferWorkflowStepsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package cognitoidentitypoolrolesattachment
 
-
 type CognitoIdentityPoolRolesAttachmentRoleMapping struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_identity_pool_roles_attachment#identity_provider CognitoIdentityPoolRolesAttachment#identity_provider}.
 	IdentityProvider *string `field:"required" json:"identityProvider" yaml:"identityProvider"`
@@ -11,6 +10,5 @@ type CognitoIdentityPoolRolesAttachmentRoleMapping struct {
 	// mapping_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cognito_identity_pool_roles_attachment#mapping_rule CognitoIdentityPoolRolesAttachment#mapping_rule}
-	MappingRule interface{} `field:"optional" json:"mappingRule" yaml:"mappingRule"`
+	MappingRule any `field:"optional" json:"mappingRule" yaml:"mappingRule"`
 }
-

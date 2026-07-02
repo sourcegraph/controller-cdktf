@@ -34,7 +34,7 @@ func (n *jsiiProxy_NeptuneClusterParameterGroupParameterList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneClusterParameterGroupParameterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NeptuneClusterParameterGroupParameterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNeptuneClusterParameterGroupParameterListParameters(terraformRes
 
 	return nil
 }
-

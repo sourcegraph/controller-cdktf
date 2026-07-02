@@ -106,7 +106,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateSetClien
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIotTopicRuleErrorActionKafkaOutputReferenceParameters(terraformR
 
 	return nil
 }
-

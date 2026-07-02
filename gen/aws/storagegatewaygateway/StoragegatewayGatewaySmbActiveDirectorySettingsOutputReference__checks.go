@@ -98,7 +98,7 @@ func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewStoragegatewayGatewaySmbActiveDirectorySettingsOutputReferencePa
 
 	return nil
 }
-

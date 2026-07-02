@@ -16,15 +16,15 @@ type RedshiftSnapshotCopyGrant interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,11 +54,11 @@ type RedshiftSnapshotCopyGrant interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SnapshotCopyGrantName() *string
 	SetSnapshotCopyGrantName(val *string)
 	SnapshotCopyGrantNameInput() *string
@@ -71,16 +71,16 @@ type RedshiftSnapshotCopyGrant interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type RedshiftSnapshotCopyGrant interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type RedshiftSnapshotCopyGrant interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type RedshiftSnapshotCopyGrant interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedshiftSnapshotCopyGrant
@@ -162,8 +162,8 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -412,7 +412,6 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant} Resource.
 func NewRedshiftSnapshotCopyGrant(scope constructs.Construct, id *string, config *RedshiftSnapshotCopyGrantConfig) RedshiftSnapshotCopyGrant {
 	_init_.Initialize()
@@ -424,7 +423,7 @@ func NewRedshiftSnapshotCopyGrant(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewRedshiftSnapshotCopyGrant_Override(r RedshiftSnapshotCopyGrant, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetCount(val interface{}) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetId(val *string) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -521,7 +520,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetSnapshotCopyGrantName(val *string) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetSnapshotCopyGrantName(val *string) {
 	if err := j.validateSetSnapshotCopyGrantNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetSnapshotCopyGrantName(val *strin
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func RedshiftSnapshotCopyGrant_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func RedshiftSnapshotCopyGrant_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedshiftSnapshotCopyGrant_IsConstruct(x interface{}) *bool {
+func RedshiftSnapshotCopyGrant_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftSnapshotCopyGrant_IsConstructParameters(x); err != nil {
@@ -612,7 +611,7 @@ func RedshiftSnapshotCopyGrant_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func RedshiftSnapshotCopyGrant_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftSnapshotCopyGrant_IsTerraformElement(x interface{}) *bool {
+func RedshiftSnapshotCopyGrant_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftSnapshotCopyGrant_IsTerraformElementParameters(x); err != nil {
@@ -631,7 +630,7 @@ func RedshiftSnapshotCopyGrant_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func RedshiftSnapshotCopyGrant_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedshiftSnapshotCopyGrant_IsTerraformResource(x interface{}) *bool {
+func RedshiftSnapshotCopyGrant_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedshiftSnapshotCopyGrant_IsTerraformResourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func RedshiftSnapshotCopyGrant_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,31 +674,31 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,15 +826,15 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -854,7 +853,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -867,7 +866,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,18 +880,18 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -903,7 +902,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -914,7 +913,7 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -958,8 +957,8 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ResetTagsAll() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -971,8 +970,8 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -984,8 +983,8 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -997,8 +996,8 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1023,8 +1022,8 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1035,4 +1034,3 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference interface {
 	ResetUsers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	return returns
 }
 
-
 func NewBudgetsBudgetActionDefinitionIamActionDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewBudgetsBudgetActionDefinitionIamActionDefinitionOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewBudgetsBudgetActionDefinitionIamActionDefinitionOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetGroups(val *[]*string) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetGroups(val *[]*string) {
 	if err := j.validateSetGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetInternalValue(val *BudgetsBudgetActionDefinitionIamActionDefinition) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetInternalValue(val *BudgetsBudgetActionDefinitionIamActionDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetPolicyArn(val *string) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetPolicyArn(val *string) {
 	if err := j.validateSetPolicyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetRoles(val *[]*string) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetRoles(val *[]*string) {
 	if err := j.validateSetRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)SetUsers(val *[]*string) {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) SetUsers(val *[]*string) {
 	if err := j.validateSetUsersParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReferen
 
 	return returns
 }
-

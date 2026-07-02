@@ -28,15 +28,15 @@ type EksAddon interface {
 	SetConfigurationValues(val *string)
 	ConfigurationValuesInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -60,19 +60,19 @@ type EksAddon interface {
 	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
-	Preserve() interface{}
-	SetPreserve(val interface{})
-	PreserveInput() interface{}
+	Preserve() any
+	SetPreserve(val any)
+	PreserveInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResolveConflicts() *string
 	SetResolveConflicts(val *string)
 	ResolveConflictsInput() *string
@@ -88,18 +88,18 @@ type EksAddon interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EksAddonTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type EksAddon interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type EksAddon interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type EksAddon interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EksAddon
@@ -267,8 +267,8 @@ func (j *jsiiProxy_EksAddon) ConfigurationValuesInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksAddon) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_EksAddon) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EksAddon) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_EksAddon) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksAddon) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_EksAddon) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) Preserve() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksAddon) Preserve() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserve",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_EksAddon) Preserve() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) PreserveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksAddon) PreserveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preserveInput",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_EksAddon) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EksAddon) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_EksAddon) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksAddon) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_EksAddon) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EksAddon) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_EksAddon) Timeouts() EksAddonTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksAddon) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -576,7 +576,6 @@ func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig) EksAddon {
@@ -589,7 +588,7 @@ func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewEksAddon_Override(e EksAddon, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetAddonName(val *string) {
+func (j *jsiiProxy_EksAddon) SetAddonName(val *string) {
 	if err := j.validateSetAddonNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_EksAddon)SetAddonName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetAddonVersion(val *string) {
+func (j *jsiiProxy_EksAddon) SetAddonVersion(val *string) {
 	if err := j.validateSetAddonVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_EksAddon)SetAddonVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetClusterName(val *string) {
+func (j *jsiiProxy_EksAddon) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_EksAddon)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetConfigurationValues(val *string) {
+func (j *jsiiProxy_EksAddon) SetConfigurationValues(val *string) {
 	if err := j.validateSetConfigurationValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_EksAddon)SetConfigurationValues(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetConnection(val interface{}) {
+func (j *jsiiProxy_EksAddon) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_EksAddon)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetCount(val interface{}) {
+func (j *jsiiProxy_EksAddon) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_EksAddon)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EksAddon) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_EksAddon)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EksAddon) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_EksAddon)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetId(val *string) {
+func (j *jsiiProxy_EksAddon) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_EksAddon)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EksAddon) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_EksAddon)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetPreserve(val interface{}) {
+func (j *jsiiProxy_EksAddon) SetPreserve(val any) {
 	if err := j.validateSetPreserveParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_EksAddon)SetPreserve(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EksAddon) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -730,7 +729,7 @@ func (j *jsiiProxy_EksAddon)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EksAddon) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_EksAddon)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetResolveConflicts(val *string) {
+func (j *jsiiProxy_EksAddon) SetResolveConflicts(val *string) {
 	if err := j.validateSetResolveConflictsParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_EksAddon)SetResolveConflicts(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetServiceAccountRoleArn(val *string) {
+func (j *jsiiProxy_EksAddon) SetServiceAccountRoleArn(val *string) {
 	if err := j.validateSetServiceAccountRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_EksAddon)SetServiceAccountRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EksAddon) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_EksAddon)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EksAddon) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func EksAddon_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func EksAddon_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EksAddon_IsConstruct(x interface{}) *bool {
+func EksAddon_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksAddon_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func EksAddon_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func EksAddon_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EksAddon_IsTerraformElement(x interface{}) *bool {
+func EksAddon_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksAddon_IsTerraformElementParameters(x); err != nil {
@@ -851,7 +850,7 @@ func EksAddon_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func EksAddon_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EksAddon_IsTerraformResource(x interface{}) *bool {
+func EksAddon_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEksAddon_IsTerraformResourceParameters(x); err != nil {
@@ -870,7 +869,7 @@ func EksAddon_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,31 +894,31 @@ func (e *jsiiProxy_EksAddon) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EksAddon) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EksAddon) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EksAddon) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksAddon) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (e *jsiiProxy_EksAddon) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (e *jsiiProxy_EksAddon) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (e *jsiiProxy_EksAddon) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (e *jsiiProxy_EksAddon) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (e *jsiiProxy_EksAddon) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (e *jsiiProxy_EksAddon) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (e *jsiiProxy_EksAddon) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,15 +1046,15 @@ func (e *jsiiProxy_EksAddon) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EksAddon) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksAddon) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1074,7 +1073,7 @@ func (e *jsiiProxy_EksAddon) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (e *jsiiProxy_EksAddon) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,18 +1100,18 @@ func (e *jsiiProxy_EksAddon) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EksAddon) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EksAddon) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (e *jsiiProxy_EksAddon) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (e *jsiiProxy_EksAddon) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (e *jsiiProxy_EksAddon) PutTimeouts(value *EksAddonTimeouts) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1229,8 +1228,8 @@ func (e *jsiiProxy_EksAddon) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EksAddon) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EksAddon) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1242,8 +1241,8 @@ func (e *jsiiProxy_EksAddon) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EksAddon) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EksAddon) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1255,8 +1254,8 @@ func (e *jsiiProxy_EksAddon) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EksAddon) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksAddon) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1268,8 +1267,8 @@ func (e *jsiiProxy_EksAddon) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EksAddon) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksAddon) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1294,8 +1293,8 @@ func (e *jsiiProxy_EksAddon) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EksAddon) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EksAddon) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1306,4 +1305,3 @@ func (e *jsiiProxy_EksAddon) ToTerraform() interface{} {
 
 	return returns
 }
-

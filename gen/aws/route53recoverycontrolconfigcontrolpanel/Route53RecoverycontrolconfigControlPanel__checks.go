@@ -19,7 +19,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateAddMoveTarg
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateMoveFromIdP
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateRoute53RecoverycontrolconfigControlPanel_GenerateConfigForImportPar
 	return nil
 }
 
-func validateRoute53RecoverycontrolconfigControlPanel_IsConstructParameters(x interface{}) error {
+func validateRoute53RecoverycontrolconfigControlPanel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateRoute53RecoverycontrolconfigControlPanel_IsConstructParameters(x in
 	return nil
 }
 
-func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformElementParameters(x interface{}) error {
+func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformElementParamete
 	return nil
 }
 
-func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformResourceParameters(x interface{}) error {
+func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetClusterA
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetNamePara
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewRoute53RecoverycontrolconfigControlPanelParameters(scope constru
 
 	return nil
 }
-

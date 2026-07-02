@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validatePutLogDestinationConfigParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validatePutLogDestinationConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewNetworkfirewallLoggingConfigurationLoggingConfigurationOutputRef
 
 	return nil
 }
-

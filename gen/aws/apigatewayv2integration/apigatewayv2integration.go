@@ -18,9 +18,9 @@ type Apigatewayv2Integration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
@@ -28,14 +28,14 @@ type Apigatewayv2Integration interface {
 	SetConnectionType(val *string)
 	ConnectionTypeInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentHandlingStrategy() *string
 	SetContentHandlingStrategy(val *string)
 	ContentHandlingStrategyInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CredentialsArn() *string
 	SetCredentialsArn(val *string)
 	CredentialsArnInput() *string
@@ -87,11 +87,11 @@ type Apigatewayv2Integration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestParameters() *map[string]*string
 	SetRequestParameters(val *map[string]*string)
 	RequestParametersInput() *map[string]*string
@@ -99,14 +99,14 @@ type Apigatewayv2Integration interface {
 	SetRequestTemplates(val *map[string]*string)
 	RequestTemplatesInput() *map[string]*string
 	ResponseParameters() Apigatewayv2IntegrationResponseParametersList
-	ResponseParametersInput() interface{}
+	ResponseParametersInput() any
 	TemplateSelectionExpression() *string
 	SetTemplateSelectionExpression(val *string)
 	TemplateSelectionExpressionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimeoutMilliseconds() *float64
@@ -118,9 +118,9 @@ type Apigatewayv2Integration interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,7 +138,7 @@ type Apigatewayv2Integration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -150,14 +150,14 @@ type Apigatewayv2Integration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutResponseParameters(value interface{})
+	PutResponseParameters(value any)
 	PutTlsConfig(value *Apigatewayv2IntegrationTlsConfig)
 	ResetConnectionId()
 	ResetConnectionType()
@@ -179,17 +179,17 @@ type Apigatewayv2Integration interface {
 	ResetTemplateSelectionExpression()
 	ResetTimeoutMilliseconds()
 	ResetTlsConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Apigatewayv2Integration
@@ -227,8 +227,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) ConnectionTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) ContentHandlingStrategyInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) ResponseParameters() Apigatewayv2Int
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) ResponseParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) ResponseParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"responseParametersInput",
@@ -687,8 +687,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Apigatewayv2Integration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -747,7 +747,6 @@ func (j *jsiiProxy_Apigatewayv2Integration) TlsConfigInput() *Apigatewayv2Integr
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
 func NewApigatewayv2Integration(scope constructs.Construct, id *string, config *Apigatewayv2IntegrationConfig) Apigatewayv2Integration {
 	_init_.Initialize()
@@ -759,7 +758,7 @@ func NewApigatewayv2Integration(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -772,12 +771,12 @@ func NewApigatewayv2Integration_Override(a Apigatewayv2Integration, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetApiId(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetApiId(val *string) {
 	if err := j.validateSetApiIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetApiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetConnection(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetConnectionId(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetConnectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetConnectionType(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetConnectionType(val *string) {
 	if err := j.validateSetConnectionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetConnectionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetContentHandlingStrategy(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetContentHandlingStrategy(val *string) {
 	if err := j.validateSetContentHandlingStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetContentHandlingStrategy(val *strin
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetCount(val interface{}) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetCredentialsArn(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetCredentialsArn(val *string) {
 	if err := j.validateSetCredentialsArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetCredentialsArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -862,7 +861,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetDescription(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -881,7 +880,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetId(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +891,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationMethod(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetIntegrationMethod(val *string) {
 	if err := j.validateSetIntegrationMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationSubtype(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetIntegrationSubtype(val *string) {
 	if err := j.validateSetIntegrationSubtypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -914,7 +913,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationSubtype(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationType(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetIntegrationType(val *string) {
 	if err := j.validateSetIntegrationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -925,7 +924,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationUri(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetIntegrationUri(val *string) {
 	if err := j.validateSetIntegrationUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -936,7 +935,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetIntegrationUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetPassthroughBehavior(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetPassthroughBehavior(val *string) {
 	if err := j.validateSetPassthroughBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +957,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetPassthroughBehavior(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetPayloadFormatVersion(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetPayloadFormatVersion(val *string) {
 	if err := j.validateSetPayloadFormatVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetPayloadFormatVersion(val *string) 
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -977,7 +976,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetRequestParameters(val *map[string]*string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetRequestParameters(val *map[string]*string) {
 	if err := j.validateSetRequestParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetRequestParameters(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetRequestTemplates(val *map[string]*string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetRequestTemplates(val *map[string]*string) {
 	if err := j.validateSetRequestTemplatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetRequestTemplates(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetTemplateSelectionExpression(val *string) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetTemplateSelectionExpression(val *string) {
 	if err := j.validateSetTemplateSelectionExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetTemplateSelectionExpression(val *s
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetTimeoutMilliseconds(val *float64) {
+func (j *jsiiProxy_Apigatewayv2Integration) SetTimeoutMilliseconds(val *float64) {
 	if err := j.validateSetTimeoutMillisecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func Apigatewayv2Integration_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func Apigatewayv2Integration_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Apigatewayv2Integration_IsConstruct(x interface{}) *bool {
+func Apigatewayv2Integration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2Integration_IsConstructParameters(x); err != nil {
@@ -1079,7 +1078,7 @@ func Apigatewayv2Integration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func Apigatewayv2Integration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Apigatewayv2Integration_IsTerraformElement(x interface{}) *bool {
+func Apigatewayv2Integration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2Integration_IsTerraformElementParameters(x); err != nil {
@@ -1098,7 +1097,7 @@ func Apigatewayv2Integration_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1106,7 +1105,7 @@ func Apigatewayv2Integration_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Apigatewayv2Integration_IsTerraformResource(x interface{}) *bool {
+func Apigatewayv2Integration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigatewayv2Integration_IsTerraformResourceParameters(x); err != nil {
@@ -1117,7 +1116,7 @@ func Apigatewayv2Integration_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1142,31 +1141,31 @@ func (a *jsiiProxy_Apigatewayv2Integration) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_Apigatewayv2Integration) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Apigatewayv2Integration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,7 +1181,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1214,7 +1213,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1230,7 +1229,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,7 +1245,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1262,7 +1261,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1278,7 +1277,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1294,15 +1293,15 @@ func (a *jsiiProxy_Apigatewayv2Integration) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Integration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1321,7 +1320,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1334,7 +1333,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1348,18 +1347,18 @@ func (a *jsiiProxy_Apigatewayv2Integration) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_Apigatewayv2Integration) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1370,7 +1369,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1381,18 +1380,18 @@ func (a *jsiiProxy_Apigatewayv2Integration) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) PutResponseParameters(value interface{}) {
+func (a *jsiiProxy_Apigatewayv2Integration) PutResponseParameters(value any) {
 	if err := a.validatePutResponseParametersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putResponseParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1403,7 +1402,7 @@ func (a *jsiiProxy_Apigatewayv2Integration) PutTlsConfig(value *Apigatewayv2Inte
 	_jsii_.InvokeVoid(
 		a,
 		"putTlsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1551,8 +1550,8 @@ func (a *jsiiProxy_Apigatewayv2Integration) ResetTlsConfig() {
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Apigatewayv2Integration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1564,8 +1563,8 @@ func (a *jsiiProxy_Apigatewayv2Integration) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Apigatewayv2Integration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1577,8 +1576,8 @@ func (a *jsiiProxy_Apigatewayv2Integration) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Integration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1590,8 +1589,8 @@ func (a *jsiiProxy_Apigatewayv2Integration) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Integration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1616,8 +1615,8 @@ func (a *jsiiProxy_Apigatewayv2Integration) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2Integration) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Apigatewayv2Integration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1628,4 +1627,3 @@ func (a *jsiiProxy_Apigatewayv2Integration) ToTerraform() interface{} {
 
 	return returns
 }
-

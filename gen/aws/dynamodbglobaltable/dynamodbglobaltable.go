@@ -16,15 +16,15 @@ type DynamodbGlobalTable interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,28 +54,28 @@ type DynamodbGlobalTable interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Replica() DynamodbGlobalTableReplicaList
-	ReplicaInput() interface{}
+	ReplicaInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DynamodbGlobalTableTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type DynamodbGlobalTable interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,31 +105,31 @@ type DynamodbGlobalTable interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutReplica(value interface{})
+	PutReplica(value any)
 	PutTimeouts(value *DynamodbGlobalTableTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DynamodbGlobalTable
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) Replica() DynamodbGlobalTableReplicaList
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) ReplicaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) ReplicaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replicaInput",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) Timeouts() DynamodbGlobalTableTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbGlobalTable) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_DynamodbGlobalTable) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
 func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *DynamodbGlobalTableConfig) DynamodbGlobalTable {
@@ -399,7 +398,7 @@ func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *Dyna
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewDynamodbGlobalTable_Override(d DynamodbGlobalTable, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetConnection(val interface{}) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetCount(val interface{}) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetId(val *string) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetName(val *string) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DynamodbGlobalTable) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func DynamodbGlobalTable_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func DynamodbGlobalTable_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DynamodbGlobalTable_IsConstruct(x interface{}) *bool {
+func DynamodbGlobalTable_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDynamodbGlobalTable_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func DynamodbGlobalTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func DynamodbGlobalTable_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DynamodbGlobalTable_IsTerraformElement(x interface{}) *bool {
+func DynamodbGlobalTable_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDynamodbGlobalTable_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func DynamodbGlobalTable_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func DynamodbGlobalTable_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DynamodbGlobalTable_IsTerraformResource(x interface{}) *bool {
+func DynamodbGlobalTable_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDynamodbGlobalTable_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func DynamodbGlobalTable_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (d *jsiiProxy_DynamodbGlobalTable) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DynamodbGlobalTable) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DynamodbGlobalTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (d *jsiiProxy_DynamodbGlobalTable) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbGlobalTable) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -796,7 +795,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (d *jsiiProxy_DynamodbGlobalTable) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DynamodbGlobalTable) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,18 +855,18 @@ func (d *jsiiProxy_DynamodbGlobalTable) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) PutReplica(value interface{}) {
+func (d *jsiiProxy_DynamodbGlobalTable) PutReplica(value any) {
 	if err := d.validatePutReplicaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putReplica",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DynamodbGlobalTable) PutTimeouts(value *DynamodbGlobalTableTi
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -906,8 +905,8 @@ func (d *jsiiProxy_DynamodbGlobalTable) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DynamodbGlobalTable) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -919,8 +918,8 @@ func (d *jsiiProxy_DynamodbGlobalTable) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DynamodbGlobalTable) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -932,8 +931,8 @@ func (d *jsiiProxy_DynamodbGlobalTable) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbGlobalTable) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -945,8 +944,8 @@ func (d *jsiiProxy_DynamodbGlobalTable) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbGlobalTable) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -971,8 +970,8 @@ func (d *jsiiProxy_DynamodbGlobalTable) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbGlobalTable) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbGlobalTable) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -983,4 +982,3 @@ func (d *jsiiProxy_DynamodbGlobalTable) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (e *jsiiProxy_Ec2TransitGatewayRoute) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Ec2TransitGatewayRoute) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Ec2TransitGatewayRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEc2TransitGatewayRoute_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateEc2TransitGatewayRoute_IsConstructParameters(x interface{}) error {
+func validateEc2TransitGatewayRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEc2TransitGatewayRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEc2TransitGatewayRoute_IsTerraformElementParameters(x interface{}) error {
+func validateEc2TransitGatewayRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEc2TransitGatewayRoute_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateEc2TransitGatewayRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateEc2TransitGatewayRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEc2TransitGatewayRoute_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetBlackholeParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetBlackholeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetBlackholeParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -297,7 +297,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -378,7 +378,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,4 +458,3 @@ func validateNewEc2TransitGatewayRouteParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

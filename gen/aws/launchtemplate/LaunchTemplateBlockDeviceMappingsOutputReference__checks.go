@@ -109,7 +109,7 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewLaunchTemplateBlockDeviceMappingsOutputReferenceParameters(terra
 
 	return nil
 }
-

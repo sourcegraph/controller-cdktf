@@ -34,7 +34,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBatchJobDefinitionRetryStrategyEvaluateOnExitListParameters(terr
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
-		reflect.TypeOf((*DataAwsSecretsmanagerSecretVersion)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecretsmanagerSecretVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionStageInput", GoGetter: "VersionStageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "versionStages", GoGetter: "VersionStages"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsSecretsmanagerSecretVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,6 +68,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersionConfig",
-		reflect.TypeOf((*DataAwsSecretsmanagerSecretVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsSecretsmanagerSecretVersionConfig](),
 	)
 }

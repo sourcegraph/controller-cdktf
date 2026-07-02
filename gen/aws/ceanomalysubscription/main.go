@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
-		reflect.TypeOf((*CeAnomalySubscription)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscription](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscription{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionConfig",
-		reflect.TypeOf((*CeAnomalySubscriptionConfig)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriber",
-		reflect.TypeOf((*CeAnomalySubscriptionSubscriber)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionSubscriber](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
-		reflect.TypeOf((*CeAnomalySubscriptionSubscriberList)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionSubscriberList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionSubscriberList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -120,7 +120,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionSubscriberOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionSubscriberOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionSubscriberOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,19 +156,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpression",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpression)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpression](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAnd",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAnd)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAnd](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimension",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndDimension)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,7 +254,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndList)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -276,7 +276,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -320,11 +320,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTags",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndTags)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -365,11 +365,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategory",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -402,7 +402,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -410,11 +410,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimension",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionDimension)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimensionOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -447,7 +447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -455,15 +455,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNot",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNot)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNot](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -496,7 +496,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -504,11 +504,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimension",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotDimension)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -541,7 +541,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -549,7 +549,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -585,7 +585,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -593,11 +593,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTags",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotTags)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -630,7 +630,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -638,15 +638,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOr",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOr)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOr](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrCostCategory)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrCostCategory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -679,7 +679,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -687,11 +687,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimension",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrDimension)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -724,7 +724,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -732,7 +732,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrList)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -746,7 +746,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -754,7 +754,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -790,7 +790,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -798,11 +798,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTags",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrTags)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -835,7 +835,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -843,7 +843,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
 			_jsii_.MemberProperty{JsiiProperty: "andInput", GoGetter: "AndInput"},
@@ -891,7 +891,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -899,11 +899,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTags",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionTags)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTagsOutputReference",
-		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CeAnomalySubscriptionThresholdExpressionTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -936,7 +936,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

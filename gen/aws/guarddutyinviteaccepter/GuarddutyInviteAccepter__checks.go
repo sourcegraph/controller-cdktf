@@ -19,7 +19,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GuarddutyInviteAccepter) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GuarddutyInviteAccepter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGuarddutyInviteAccepter_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGuarddutyInviteAccepter_IsConstructParameters(x interface{}) error {
+func validateGuarddutyInviteAccepter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGuarddutyInviteAccepter_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGuarddutyInviteAccepter_IsTerraformElementParameters(x interface{}) error {
+func validateGuarddutyInviteAccepter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGuarddutyInviteAccepter_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGuarddutyInviteAccepter_IsTerraformResourceParameters(x interface{}) error {
+func validateGuarddutyInviteAccepter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGuarddutyInviteAccepter_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetMasterAccountIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGuarddutyInviteAccepterParameters(scope constructs.Construct, id
 
 	return nil
 }
-

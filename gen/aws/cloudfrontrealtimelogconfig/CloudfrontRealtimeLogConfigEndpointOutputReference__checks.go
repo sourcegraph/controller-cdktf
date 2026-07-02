@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewCloudfrontRealtimeLogConfigEndpointOutputReferenceParameters(ter
 
 	return nil
 }
-

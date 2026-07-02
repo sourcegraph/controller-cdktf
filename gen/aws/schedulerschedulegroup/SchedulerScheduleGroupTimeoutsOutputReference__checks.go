@@ -98,7 +98,7 @@ func (s *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSchedulerScheduleGroupTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

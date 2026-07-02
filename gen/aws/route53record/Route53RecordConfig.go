@@ -6,9 +6,9 @@ import (
 
 type Route53RecordConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Route53RecordConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#name Route53Record#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#type Route53Record#type}.
@@ -30,7 +30,7 @@ type Route53RecordConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#alias Route53Record#alias}
 	Alias *Route53RecordAlias `field:"optional" json:"alias" yaml:"alias"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#allow_overwrite Route53Record#allow_overwrite}.
-	AllowOverwrite interface{} `field:"optional" json:"allowOverwrite" yaml:"allowOverwrite"`
+	AllowOverwrite any `field:"optional" json:"allowOverwrite" yaml:"allowOverwrite"`
 	// failover_routing_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#failover_routing_policy Route53Record#failover_routing_policy}
@@ -51,7 +51,7 @@ type Route53RecordConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#latency_routing_policy Route53Record#latency_routing_policy}
 	LatencyRoutingPolicy *Route53RecordLatencyRoutingPolicy `field:"optional" json:"latencyRoutingPolicy" yaml:"latencyRoutingPolicy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#multivalue_answer_routing_policy Route53Record#multivalue_answer_routing_policy}.
-	MultivalueAnswerRoutingPolicy interface{} `field:"optional" json:"multivalueAnswerRoutingPolicy" yaml:"multivalueAnswerRoutingPolicy"`
+	MultivalueAnswerRoutingPolicy any `field:"optional" json:"multivalueAnswerRoutingPolicy" yaml:"multivalueAnswerRoutingPolicy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#records Route53Record#records}.
 	Records *[]*string `field:"optional" json:"records" yaml:"records"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#set_identifier Route53Record#set_identifier}.
@@ -63,4 +63,3 @@ type Route53RecordConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_record#weighted_routing_policy Route53Record#weighted_routing_policy}
 	WeightedRoutingPolicy *Route53RecordWeightedRoutingPolicy `field:"optional" json:"weightedRoutingPolicy" yaml:"weightedRoutingPolicy"`
 }
-

@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewCloudfrontDistributionRestrictionsOutputReferenceParameters(terr
 
 	return nil
 }
-

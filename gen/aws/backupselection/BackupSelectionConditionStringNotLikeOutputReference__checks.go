@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBackupSelectionConditionStringNotLikeOutputReferenceParameters(t
 
 	return nil
 }
-

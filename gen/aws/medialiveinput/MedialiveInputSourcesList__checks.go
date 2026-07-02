@@ -34,7 +34,7 @@ func (m *jsiiProxy_MedialiveInputSourcesList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveInputSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMedialiveInputSourcesListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

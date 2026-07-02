@@ -15,15 +15,15 @@ type DbProxyTarget interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbClusterIdentifier() *string
 	SetDbClusterIdentifier(val *string)
 	DbClusterIdentifierInput() *string
@@ -61,11 +61,11 @@ type DbProxyTarget interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RdsResourceId() *string
 	TargetArn() *string
 	TargetGroupName() *string
@@ -74,7 +74,7 @@ type DbProxyTarget interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrackedClusterId() *string
@@ -83,9 +83,9 @@ type DbProxyTarget interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type DbProxyTarget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type DbProxyTarget interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type DbProxyTarget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DbProxyTarget
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DbProxyTarget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyTarget) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxyTarget) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DbProxyTarget) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyTarget) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbProxyTarget) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DbProxyTarget) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyTarget) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxyTarget) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DbProxyTarget) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyTarget) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DbProxyTarget) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_DbProxyTarget) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyTarget) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DbProxyTarget) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_DbProxyTarget) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyTarget) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DbProxyTarget) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -466,7 +466,6 @@ func (j *jsiiProxy_DbProxyTarget) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/db_proxy_target aws_db_proxy_target} Resource.
 func NewDbProxyTarget(scope constructs.Construct, id *string, config *DbProxyTargetConfig) DbProxyTarget {
 	_init_.Initialize()
@@ -478,7 +477,7 @@ func NewDbProxyTarget(scope constructs.Construct, id *string, config *DbProxyTar
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -491,12 +490,12 @@ func NewDbProxyTarget_Override(d DbProxyTarget, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetConnection(val interface{}) {
+func (j *jsiiProxy_DbProxyTarget) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_DbProxyTarget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetCount(val interface{}) {
+func (j *jsiiProxy_DbProxyTarget) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DbProxyTarget)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetDbClusterIdentifier(val *string) {
+func (j *jsiiProxy_DbProxyTarget) SetDbClusterIdentifier(val *string) {
 	if err := j.validateSetDbClusterIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_DbProxyTarget)SetDbClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetDbInstanceIdentifier(val *string) {
+func (j *jsiiProxy_DbProxyTarget) SetDbInstanceIdentifier(val *string) {
 	if err := j.validateSetDbInstanceIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_DbProxyTarget)SetDbInstanceIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetDbProxyName(val *string) {
+func (j *jsiiProxy_DbProxyTarget) SetDbProxyName(val *string) {
 	if err := j.validateSetDbProxyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_DbProxyTarget)SetDbProxyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DbProxyTarget) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DbProxyTarget)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DbProxyTarget) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_DbProxyTarget)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetId(val *string) {
+func (j *jsiiProxy_DbProxyTarget) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_DbProxyTarget)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DbProxyTarget) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_DbProxyTarget)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DbProxyTarget) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_DbProxyTarget)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DbProxyTarget) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_DbProxyTarget)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyTarget)SetTargetGroupName(val *string) {
+func (j *jsiiProxy_DbProxyTarget) SetTargetGroupName(val *string) {
 	if err := j.validateSetTargetGroupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func DbProxyTarget_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func DbProxyTarget_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DbProxyTarget_IsConstruct(x interface{}) *bool {
+func DbProxyTarget_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbProxyTarget_IsConstructParameters(x); err != nil {
@@ -666,7 +665,7 @@ func DbProxyTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func DbProxyTarget_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DbProxyTarget_IsTerraformElement(x interface{}) *bool {
+func DbProxyTarget_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbProxyTarget_IsTerraformElementParameters(x); err != nil {
@@ -685,7 +684,7 @@ func DbProxyTarget_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func DbProxyTarget_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DbProxyTarget_IsTerraformResource(x interface{}) *bool {
+func DbProxyTarget_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDbProxyTarget_IsTerraformResourceParameters(x); err != nil {
@@ -704,7 +703,7 @@ func DbProxyTarget_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dbProxyTarget.DbProxyTarget",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,31 +728,31 @@ func (d *jsiiProxy_DbProxyTarget) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DbProxyTarget) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DbProxyTarget) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DbProxyTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DbProxyTarget) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (d *jsiiProxy_DbProxyTarget) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DbProxyTarget) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DbProxyTarget) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DbProxyTarget) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DbProxyTarget) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DbProxyTarget) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DbProxyTarget) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,15 +880,15 @@ func (d *jsiiProxy_DbProxyTarget) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DbProxyTarget) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxyTarget) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -908,7 +907,7 @@ func (d *jsiiProxy_DbProxyTarget) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -921,7 +920,7 @@ func (d *jsiiProxy_DbProxyTarget) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,18 +934,18 @@ func (d *jsiiProxy_DbProxyTarget) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DbProxyTarget) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DbProxyTarget) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -957,7 +956,7 @@ func (d *jsiiProxy_DbProxyTarget) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -968,7 +967,7 @@ func (d *jsiiProxy_DbProxyTarget) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1004,8 +1003,8 @@ func (d *jsiiProxy_DbProxyTarget) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DbProxyTarget) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbProxyTarget) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1017,8 +1016,8 @@ func (d *jsiiProxy_DbProxyTarget) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DbProxyTarget) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DbProxyTarget) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1030,8 +1029,8 @@ func (d *jsiiProxy_DbProxyTarget) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DbProxyTarget) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxyTarget) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1043,8 +1042,8 @@ func (d *jsiiProxy_DbProxyTarget) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DbProxyTarget) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxyTarget) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1069,8 +1068,8 @@ func (d *jsiiProxy_DbProxyTarget) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DbProxyTarget) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DbProxyTarget) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1081,4 +1080,3 @@ func (d *jsiiProxy_DbProxyTarget) ToTerraform() interface{} {
 
 	return returns
 }
-

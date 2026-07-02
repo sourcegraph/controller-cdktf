@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewWorklinkFleetNetworkOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (l *jsiiProxy_LightsailStaticIpAttachment) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LightsailStaticIpAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LightsailStaticIpAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LightsailStaticIpAttachment) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (l *jsiiProxy_LightsailStaticIpAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LightsailStaticIpAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLightsailStaticIpAttachment_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateLightsailStaticIpAttachment_IsConstructParameters(x interface{}) error {
+func validateLightsailStaticIpAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLightsailStaticIpAttachment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateLightsailStaticIpAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateLightsailStaticIpAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLightsailStaticIpAttachment_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateLightsailStaticIpAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateLightsailStaticIpAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateLightsailStaticIpAttachment_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewLightsailStaticIpAttachmentParameters(scope constructs.Construct
 
 	return nil
 }
-

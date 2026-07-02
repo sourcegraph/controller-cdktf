@@ -17,8 +17,8 @@ type SecurityhubInsightFiltersResourceRegionList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SecurityhubInsightFiltersResourceRegionList interface {
 	Get(index *float64) SecurityhubInsightFiltersResourceRegionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewSecurityhubInsightFiltersResourceRegionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceRegionList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSecurityhubInsightFiltersResourceRegionList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSecurityhubInsightFiltersResourceRegionList_Override(s SecurityhubInsigh
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) Get(index *float
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceRegionList) ToString() *stri
 
 	return returns
 }
-

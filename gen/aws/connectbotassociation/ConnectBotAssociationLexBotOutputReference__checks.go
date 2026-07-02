@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewConnectBotAssociationLexBotOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

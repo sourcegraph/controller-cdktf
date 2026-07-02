@@ -18,15 +18,15 @@ type KmsCustomKeyStore interface {
 	SetCloudHsmClusterId(val *string)
 	CloudHsmClusterIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomKeyStoreName() *string
 	SetCustomKeyStoreName(val *string)
 	CustomKeyStoreNameInput() *string
@@ -59,19 +59,19 @@ type KmsCustomKeyStore interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KmsCustomKeyStoreTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrustAnchorCertificate() *string
 	SetTrustAnchorCertificate(val *string)
 	TrustAnchorCertificateInput() *string
@@ -79,9 +79,9 @@ type KmsCustomKeyStore interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type KmsCustomKeyStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type KmsCustomKeyStore interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type KmsCustomKeyStore interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KmsCustomKeyStore
@@ -172,8 +172,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) CloudHsmClusterIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_KmsCustomKeyStore) Timeouts() KmsCustomKeyStoreTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCustomKeyStore) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -422,7 +422,6 @@ func (j *jsiiProxy_KmsCustomKeyStore) TrustAnchorCertificateInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/kms_custom_key_store aws_kms_custom_key_store} Resource.
 func NewKmsCustomKeyStore(scope constructs.Construct, id *string, config *KmsCustomKeyStoreConfig) KmsCustomKeyStore {
 	_init_.Initialize()
@@ -434,7 +433,7 @@ func NewKmsCustomKeyStore(scope constructs.Construct, id *string, config *KmsCus
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -447,12 +446,12 @@ func NewKmsCustomKeyStore_Override(k KmsCustomKeyStore, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetCloudHsmClusterId(val *string) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetCloudHsmClusterId(val *string) {
 	if err := j.validateSetCloudHsmClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetCloudHsmClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetCount(val interface{}) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetCustomKeyStoreName(val *string) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetCustomKeyStoreName(val *string) {
 	if err := j.validateSetCustomKeyStoreNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetCustomKeyStoreName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetId(val *string) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetKeyStorePassword(val *string) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetKeyStorePassword(val *string) {
 	if err := j.validateSetKeyStorePasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetKeyStorePassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore)SetTrustAnchorCertificate(val *string) {
+func (j *jsiiProxy_KmsCustomKeyStore) SetTrustAnchorCertificate(val *string) {
 	if err := j.validateSetTrustAnchorCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func KmsCustomKeyStore_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func KmsCustomKeyStore_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KmsCustomKeyStore_IsConstruct(x interface{}) *bool {
+func KmsCustomKeyStore_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCustomKeyStore_IsConstructParameters(x); err != nil {
@@ -622,7 +621,7 @@ func KmsCustomKeyStore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func KmsCustomKeyStore_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsCustomKeyStore_IsTerraformElement(x interface{}) *bool {
+func KmsCustomKeyStore_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCustomKeyStore_IsTerraformElementParameters(x); err != nil {
@@ -641,7 +640,7 @@ func KmsCustomKeyStore_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func KmsCustomKeyStore_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsCustomKeyStore_IsTerraformResource(x interface{}) *bool {
+func KmsCustomKeyStore_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCustomKeyStore_IsTerraformResourceParameters(x); err != nil {
@@ -660,7 +659,7 @@ func KmsCustomKeyStore_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,31 +684,31 @@ func (k *jsiiProxy_KmsCustomKeyStore) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KmsCustomKeyStore) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsCustomKeyStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,15 +836,15 @@ func (k *jsiiProxy_KmsCustomKeyStore) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCustomKeyStore) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -864,7 +863,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -877,7 +876,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,18 +890,18 @@ func (k *jsiiProxy_KmsCustomKeyStore) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KmsCustomKeyStore) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -913,7 +912,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -924,7 +923,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -935,7 +934,7 @@ func (k *jsiiProxy_KmsCustomKeyStore) PutTimeouts(value *KmsCustomKeyStoreTimeou
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -963,8 +962,8 @@ func (k *jsiiProxy_KmsCustomKeyStore) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsCustomKeyStore) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -976,8 +975,8 @@ func (k *jsiiProxy_KmsCustomKeyStore) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsCustomKeyStore) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -989,8 +988,8 @@ func (k *jsiiProxy_KmsCustomKeyStore) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCustomKeyStore) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1002,8 +1001,8 @@ func (k *jsiiProxy_KmsCustomKeyStore) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCustomKeyStore) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1028,8 +1027,8 @@ func (k *jsiiProxy_KmsCustomKeyStore) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KmsCustomKeyStore) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCustomKeyStore) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1040,4 +1039,3 @@ func (k *jsiiProxy_KmsCustomKeyStore) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCognitoUserPoolSmsConfigurationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

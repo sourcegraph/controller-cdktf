@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkInterfaceAttachmentList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkInterfaceAttachmentListParameters(terraformResource cdktf
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_RdsClusterParameterGroupParameterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterParameterGroupParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RdsClusterParameterGroupParameterOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroupParameterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RdsClusterParameterGroupParameterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewRdsClusterParameterGroupParameterOutputReferenceParameters(terra
 
 	return nil
 }
-

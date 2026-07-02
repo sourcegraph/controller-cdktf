@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllo
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllo
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllo
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -258,4 +258,3 @@ func validateNewVpcPeeringConnectionRequesterOutputReferenceParameters(terraform
 
 	return nil
 }
-

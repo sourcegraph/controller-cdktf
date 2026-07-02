@@ -15,9 +15,9 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 	AlarmsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,14 +28,14 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	IgnorePollAlarmFailure() interface{}
-	SetIgnorePollAlarmFailure(val interface{})
-	IgnorePollAlarmFailureInput() interface{}
+	IgnorePollAlarmFailure() any
+	SetIgnorePollAlarmFailure(val any)
+	IgnorePollAlarmFailureInput() any
 	InternalValue() *CodedeployDeploymentGroupAlarmConfiguration
 	SetInternalValue(val *CodedeployDeploymentGroupAlarmConfiguration)
 	// Experimental.
@@ -49,7 +49,7 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 	ResetIgnorePollAlarmFailure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) E
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) IgnorePollAlarmFailure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) IgnorePollAlarmFailure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignorePollAlarmFailure",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) IgnorePollAlarmFailureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) IgnorePollAlarmFailureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignorePollAlarmFailureInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) T
 	return returns
 }
 
-
 func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupAlarmConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference_Override(c Co
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetAlarms(val *[]*string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetAlarms(val *[]*string) {
 	if err := j.validateSetAlarmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetIgnorePollAlarmFailure(val interface{}) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetIgnorePollAlarmFailure(val any) {
 	if err := j.validateSetIgnorePollAlarmFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetInternalValue(val *CodedeployDeploymentGroupAlarmConfiguration) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetInternalValue(val *CodedeployDeploymentGroupAlarmConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) C
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) I
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) T
 
 	return returns
 }
-

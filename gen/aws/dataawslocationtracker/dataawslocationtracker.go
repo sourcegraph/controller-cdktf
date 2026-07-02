@@ -15,11 +15,11 @@ type DataAwsLocationTracker interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -50,14 +50,14 @@ type DataAwsLocationTracker interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrackerArn() *string
@@ -66,9 +66,9 @@ type DataAwsLocationTracker interface {
 	TrackerNameInput() *string
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataAwsLocationTracker interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsLocationTracker
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataAwsLocationTracker) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLocationTracker) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsLocationTracker) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLocationTracker) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataAwsLocationTracker) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsLocationTracker) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataAwsLocationTracker) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsLocationTracker) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -374,7 +374,6 @@ func (j *jsiiProxy_DataAwsLocationTracker) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/location_tracker aws_location_tracker} Data Source.
 func NewDataAwsLocationTracker(scope constructs.Construct, id *string, config *DataAwsLocationTrackerConfig) DataAwsLocationTracker {
 	_init_.Initialize()
@@ -386,7 +385,7 @@ func NewDataAwsLocationTracker(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -399,12 +398,12 @@ func NewDataAwsLocationTracker_Override(d DataAwsLocationTracker, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetId(val *string) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_DataAwsLocationTracker)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLocationTracker)SetTrackerName(val *string) {
+func (j *jsiiProxy_DataAwsLocationTracker) SetTrackerName(val *string) {
 	if err := j.validateSetTrackerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func DataAwsLocationTracker_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func DataAwsLocationTracker_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsLocationTracker_IsConstruct(x interface{}) *bool {
+func DataAwsLocationTracker_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLocationTracker_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func DataAwsLocationTracker_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func DataAwsLocationTracker_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLocationTracker_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsLocationTracker_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLocationTracker_IsTerraformDataSourceParameters(x); err != nil {
@@ -549,7 +548,7 @@ func DataAwsLocationTracker_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func DataAwsLocationTracker_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsLocationTracker_IsTerraformElement(x interface{}) *bool {
+func DataAwsLocationTracker_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsLocationTracker_IsTerraformElementParameters(x); err != nil {
@@ -568,7 +567,7 @@ func DataAwsLocationTracker_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -586,27 +585,27 @@ func DataAwsLocationTracker_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsLocationTracker) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsLocationTracker) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataAwsLocationTracker) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -792,8 +791,8 @@ func (d *jsiiProxy_DataAwsLocationTracker) ResetTags() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLocationTracker) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -805,8 +804,8 @@ func (d *jsiiProxy_DataAwsLocationTracker) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsLocationTracker) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -818,8 +817,8 @@ func (d *jsiiProxy_DataAwsLocationTracker) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLocationTracker) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -831,8 +830,8 @@ func (d *jsiiProxy_DataAwsLocationTracker) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLocationTracker) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,8 +856,8 @@ func (d *jsiiProxy_DataAwsLocationTracker) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLocationTracker) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsLocationTracker) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -869,4 +868,3 @@ func (d *jsiiProxy_DataAwsLocationTracker) ToTerraform() interface{} {
 
 	return returns
 }
-

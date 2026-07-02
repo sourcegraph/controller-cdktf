@@ -16,18 +16,18 @@ type EcsTaskDefinition interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContainerDefinitions() *string
 	SetContainerDefinitions(val *string)
 	ContainerDefinitionsInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Cpu() *string
 	SetCpu(val *string)
 	CpuInput() *string
@@ -55,7 +55,7 @@ type EcsTaskDefinition interface {
 	SetId(val *string)
 	IdInput() *string
 	InferenceAccelerator() EcsTaskDefinitionInferenceAcceleratorList
-	InferenceAcceleratorInput() interface{}
+	InferenceAcceleratorInput() any
 	IpcMode() *string
 	SetIpcMode(val *string)
 	IpcModeInput() *string
@@ -75,28 +75,28 @@ type EcsTaskDefinition interface {
 	SetPidMode(val *string)
 	PidModeInput() *string
 	PlacementConstraints() EcsTaskDefinitionPlacementConstraintsList
-	PlacementConstraintsInput() interface{}
+	PlacementConstraintsInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	ProxyConfiguration() EcsTaskDefinitionProxyConfigurationOutputReference
 	ProxyConfigurationInput() *EcsTaskDefinitionProxyConfiguration
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequiresCompatibilities() *[]*string
 	SetRequiresCompatibilities(val *[]*string)
 	RequiresCompatibilitiesInput() *[]*string
 	Revision() *float64
 	RuntimePlatform() EcsTaskDefinitionRuntimePlatformOutputReference
 	RuntimePlatformInput() *EcsTaskDefinitionRuntimePlatform
-	SkipDestroy() interface{}
-	SetSkipDestroy(val interface{})
-	SkipDestroyInput() interface{}
+	SkipDestroy() any
+	SetSkipDestroy(val any)
+	SkipDestroyInput() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -109,18 +109,18 @@ type EcsTaskDefinition interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Volume() EcsTaskDefinitionVolumeList
-	VolumeInput() interface{}
+	VolumeInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,7 +138,7 @@ type EcsTaskDefinition interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -150,7 +150,7 @@ type EcsTaskDefinition interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,11 +158,11 @@ type EcsTaskDefinition interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEphemeralStorage(value *EcsTaskDefinitionEphemeralStorage)
-	PutInferenceAccelerator(value interface{})
-	PutPlacementConstraints(value interface{})
+	PutInferenceAccelerator(value any)
+	PutPlacementConstraints(value any)
 	PutProxyConfiguration(value *EcsTaskDefinitionProxyConfiguration)
 	PutRuntimePlatform(value *EcsTaskDefinitionRuntimePlatform)
-	PutVolume(value interface{})
+	PutVolume(value any)
 	ResetCpu()
 	ResetEphemeralStorage()
 	ResetExecutionRoleArn()
@@ -184,17 +184,17 @@ type EcsTaskDefinition interface {
 	ResetTagsAll()
 	ResetTaskRoleArn()
 	ResetVolume()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EcsTaskDefinition
@@ -222,8 +222,8 @@ func (j *jsiiProxy_EcsTaskDefinition) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_EcsTaskDefinition) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcsTaskDefinition) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_EcsTaskDefinition) ContainerDefinitionsInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_EcsTaskDefinition) InferenceAccelerator() EcsTaskDefinitionIn
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) InferenceAcceleratorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) InferenceAcceleratorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inferenceAcceleratorInput",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_EcsTaskDefinition) PlacementConstraints() EcsTaskDefinitionPl
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) PlacementConstraintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) PlacementConstraintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"placementConstraintsInput",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_EcsTaskDefinition) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EcsTaskDefinition) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_EcsTaskDefinition) ProxyConfigurationInput() *EcsTaskDefiniti
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_EcsTaskDefinition) RuntimePlatformInput() *EcsTaskDefinitionR
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) SkipDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) SkipDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDestroy",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_EcsTaskDefinition) SkipDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) SkipDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) SkipDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipDestroyInput",
@@ -742,8 +742,8 @@ func (j *jsiiProxy_EcsTaskDefinition) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EcsTaskDefinition) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_EcsTaskDefinition) Volume() EcsTaskDefinitionVolumeList {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeInput",
@@ -781,7 +781,6 @@ func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) EcsTaskDefinition {
@@ -794,7 +793,7 @@ func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTas
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -807,12 +806,12 @@ func NewEcsTaskDefinition_Override(e EcsTaskDefinition, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetConnection(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinition) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetContainerDefinitions(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetContainerDefinitions(val *string) {
 	if err := j.validateSetContainerDefinitionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetContainerDefinitions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetCount(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinition) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetCpu(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetCpu(val *string) {
 	if err := j.validateSetCpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetCpu(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -864,7 +863,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetExecutionRoleArn(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetExecutionRoleArn(val *string) {
 	if err := j.validateSetExecutionRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetExecutionRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetFamily(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetFamily(val *string) {
 	if err := j.validateSetFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EcsTaskDefinition) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -894,7 +893,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetId(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -905,7 +904,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetIpcMode(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetIpcMode(val *string) {
 	if err := j.validateSetIpcModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -916,7 +915,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetIpcMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EcsTaskDefinition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -927,7 +926,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetMemory(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetMemory(val *string) {
 	if err := j.validateSetMemoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -938,7 +937,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetMemory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetNetworkMode(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetNetworkMode(val *string) {
 	if err := j.validateSetNetworkModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -949,7 +948,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetNetworkMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetPidMode(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetPidMode(val *string) {
 	if err := j.validateSetPidModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -960,7 +959,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetPidMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EcsTaskDefinition) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -968,7 +967,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EcsTaskDefinition) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -979,7 +978,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetRequiresCompatibilities(val *[]*string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetRequiresCompatibilities(val *[]*string) {
 	if err := j.validateSetRequiresCompatibilitiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -990,7 +989,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetRequiresCompatibilities(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetSkipDestroy(val interface{}) {
+func (j *jsiiProxy_EcsTaskDefinition) SetSkipDestroy(val any) {
 	if err := j.validateSetSkipDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1000,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetSkipDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1012,7 +1011,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1023,7 +1022,7 @@ func (j *jsiiProxy_EcsTaskDefinition)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EcsTaskDefinition)SetTaskRoleArn(val *string) {
+func (j *jsiiProxy_EcsTaskDefinition) SetTaskRoleArn(val *string) {
 	if err := j.validateSetTaskRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -1046,7 +1045,7 @@ func EcsTaskDefinition_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func EcsTaskDefinition_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EcsTaskDefinition_IsConstruct(x interface{}) *bool {
+func EcsTaskDefinition_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsTaskDefinition_IsConstructParameters(x); err != nil {
@@ -1081,7 +1080,7 @@ func EcsTaskDefinition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1089,7 +1088,7 @@ func EcsTaskDefinition_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
+func EcsTaskDefinition_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsTaskDefinition_IsTerraformElementParameters(x); err != nil {
@@ -1100,7 +1099,7 @@ func EcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func EcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EcsTaskDefinition_IsTerraformResource(x interface{}) *bool {
+func EcsTaskDefinition_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEcsTaskDefinition_IsTerraformResourceParameters(x); err != nil {
@@ -1119,7 +1118,7 @@ func EcsTaskDefinition_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1144,31 +1143,31 @@ func (e *jsiiProxy_EcsTaskDefinition) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EcsTaskDefinition) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EcsTaskDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1200,7 +1199,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1216,7 +1215,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1248,7 +1247,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1264,7 +1263,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1280,7 +1279,7 @@ func (e *jsiiProxy_EcsTaskDefinition) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1296,15 +1295,15 @@ func (e *jsiiProxy_EcsTaskDefinition) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsTaskDefinition) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1323,7 +1322,7 @@ func (e *jsiiProxy_EcsTaskDefinition) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1336,7 +1335,7 @@ func (e *jsiiProxy_EcsTaskDefinition) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1350,18 +1349,18 @@ func (e *jsiiProxy_EcsTaskDefinition) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EcsTaskDefinition) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1372,7 +1371,7 @@ func (e *jsiiProxy_EcsTaskDefinition) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1383,7 +1382,7 @@ func (e *jsiiProxy_EcsTaskDefinition) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1394,29 +1393,29 @@ func (e *jsiiProxy_EcsTaskDefinition) PutEphemeralStorage(value *EcsTaskDefiniti
 	_jsii_.InvokeVoid(
 		e,
 		"putEphemeralStorage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) PutInferenceAccelerator(value interface{}) {
+func (e *jsiiProxy_EcsTaskDefinition) PutInferenceAccelerator(value any) {
 	if err := e.validatePutInferenceAcceleratorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putInferenceAccelerator",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) PutPlacementConstraints(value interface{}) {
+func (e *jsiiProxy_EcsTaskDefinition) PutPlacementConstraints(value any) {
 	if err := e.validatePutPlacementConstraintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putPlacementConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1427,7 +1426,7 @@ func (e *jsiiProxy_EcsTaskDefinition) PutProxyConfiguration(value *EcsTaskDefini
 	_jsii_.InvokeVoid(
 		e,
 		"putProxyConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1438,18 +1437,18 @@ func (e *jsiiProxy_EcsTaskDefinition) PutRuntimePlatform(value *EcsTaskDefinitio
 	_jsii_.InvokeVoid(
 		e,
 		"putRuntimePlatform",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) PutVolume(value interface{}) {
+func (e *jsiiProxy_EcsTaskDefinition) PutVolume(value any) {
 	if err := e.validatePutVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1605,8 +1604,8 @@ func (e *jsiiProxy_EcsTaskDefinition) ResetVolume() {
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcsTaskDefinition) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1618,8 +1617,8 @@ func (e *jsiiProxy_EcsTaskDefinition) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EcsTaskDefinition) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1631,8 +1630,8 @@ func (e *jsiiProxy_EcsTaskDefinition) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsTaskDefinition) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1644,8 +1643,8 @@ func (e *jsiiProxy_EcsTaskDefinition) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsTaskDefinition) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1670,8 +1669,8 @@ func (e *jsiiProxy_EcsTaskDefinition) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EcsTaskDefinition) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1682,4 +1681,3 @@ func (e *jsiiProxy_EcsTaskDefinition) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -109,7 +109,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferencePa
 
 	return nil
 }
-

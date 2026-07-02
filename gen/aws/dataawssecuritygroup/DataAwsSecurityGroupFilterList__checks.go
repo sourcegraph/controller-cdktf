@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsSecurityGroupFilterList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroupFilterList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecurityGroupFilterList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsSecurityGroupFilterListParameters(terraformResource cdktf
 
 	return nil
 }
-

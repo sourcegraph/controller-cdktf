@@ -19,7 +19,7 @@ func (f *jsiiProxy_FsxFileCache) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCache) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FsxFileCache) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FsxFileCache) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FsxFileCache) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (f *jsiiProxy_FsxFileCache) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCache) validatePutDataRepositoryAssociationParameters(value interface{}) error {
+func (f *jsiiProxy_FsxFileCache) validatePutDataRepositoryAssociationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (f *jsiiProxy_FsxFileCache) validatePutDataRepositoryAssociationParameters(
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCache) validatePutLustreConfigurationParameters(value interface{}) error {
+func (f *jsiiProxy_FsxFileCache) validatePutLustreConfigurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateFsxFileCache_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateFsxFileCache_IsConstructParameters(x interface{}) error {
+func validateFsxFileCache_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateFsxFileCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFsxFileCache_IsTerraformElementParameters(x interface{}) error {
+func validateFsxFileCache_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateFsxFileCache_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateFsxFileCache_IsTerraformResourceParameters(x interface{}) error {
+func validateFsxFileCache_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateFsxFileCache_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCache) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCache) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_FsxFileCache) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCache) validateSetCopyTagsToDataRepositoryAssociationsParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCache) validateSetCopyTagsToDataRepositoryAssociationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -370,7 +370,7 @@ func (j *jsiiProxy_FsxFileCache) validateSetCopyTagsToDataRepositoryAssociations
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCache) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FsxFileCache) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -467,7 +467,7 @@ func (j *jsiiProxy_FsxFileCache) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCache) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FsxFileCache) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -571,4 +571,3 @@ func validateNewFsxFileCacheParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

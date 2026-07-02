@@ -19,7 +19,7 @@ func (i *jsiiProxy_IdentitystoreGroupMembership) validateAddMoveTargetParameters
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreGroupMembership) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IdentitystoreGroupMembership) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IdentitystoreGroupMembership) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreGroupMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IdentitystoreGroupMembership) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIdentitystoreGroupMembership_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateIdentitystoreGroupMembership_IsConstructParameters(x interface{}) error {
+func validateIdentitystoreGroupMembership_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIdentitystoreGroupMembership_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateIdentitystoreGroupMembership_IsTerraformElementParameters(x interface{}) error {
+func validateIdentitystoreGroupMembership_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIdentitystoreGroupMembership_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateIdentitystoreGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+func validateIdentitystoreGroupMembership_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateIdentitystoreGroupMembership_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetMemberIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewIdentitystoreGroupMembershipParameters(scope constructs.Construc
 
 	return nil
 }
-

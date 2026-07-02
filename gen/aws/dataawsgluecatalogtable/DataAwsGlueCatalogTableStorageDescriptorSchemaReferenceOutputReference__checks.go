@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputRef
 
 	return nil
 }
-

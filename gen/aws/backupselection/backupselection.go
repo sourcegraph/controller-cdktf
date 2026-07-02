@@ -15,17 +15,17 @@ type BackupSelection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() BackupSelectionConditionList
-	ConditionInput() interface{}
+	ConditionInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,29 +64,29 @@ type BackupSelection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Resources() *[]*string
 	SetResources(val *[]*string)
 	ResourcesInput() *[]*string
 	SelectionTag() BackupSelectionSelectionTagList
-	SelectionTagInput() interface{}
+	SelectionTagInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type BackupSelection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,15 +116,15 @@ type BackupSelection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCondition(value interface{})
-	PutSelectionTag(value interface{})
+	PutCondition(value any)
+	PutSelectionTag(value any)
 	ResetCondition()
 	ResetId()
 	ResetNotResources()
@@ -133,17 +133,17 @@ type BackupSelection interface {
 	ResetOverrideLogicalId()
 	ResetResources()
 	ResetSelectionTag()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BackupSelection
@@ -171,8 +171,8 @@ func (j *jsiiProxy_BackupSelection) Condition() BackupSelectionConditionList {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) ConditionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelection) ConditionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_BackupSelection) ConditionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_BackupSelection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupSelection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_BackupSelection) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_BackupSelection) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BackupSelection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_BackupSelection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_BackupSelection) SelectionTag() BackupSelectionSelectionTagLi
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) SelectionTagInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupSelection) SelectionTagInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"selectionTagInput",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_BackupSelection) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupSelection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,7 +471,6 @@ func (j *jsiiProxy_BackupSelection) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/backup_selection aws_backup_selection} Resource.
 func NewBackupSelection(scope constructs.Construct, id *string, config *BackupSelectionConfig) BackupSelection {
 	_init_.Initialize()
@@ -483,7 +482,7 @@ func NewBackupSelection(scope constructs.Construct, id *string, config *BackupSe
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewBackupSelection_Override(b BackupSelection, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetConnection(val interface{}) {
+func (j *jsiiProxy_BackupSelection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_BackupSelection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetCount(val interface{}) {
+func (j *jsiiProxy_BackupSelection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_BackupSelection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BackupSelection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_BackupSelection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BackupSelection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_BackupSelection)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetIamRoleArn(val *string) {
+func (j *jsiiProxy_BackupSelection) SetIamRoleArn(val *string) {
 	if err := j.validateSetIamRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_BackupSelection)SetIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetId(val *string) {
+func (j *jsiiProxy_BackupSelection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_BackupSelection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BackupSelection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_BackupSelection)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetName(val *string) {
+func (j *jsiiProxy_BackupSelection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_BackupSelection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetNotResources(val *[]*string) {
+func (j *jsiiProxy_BackupSelection) SetNotResources(val *[]*string) {
 	if err := j.validateSetNotResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_BackupSelection)SetNotResources(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetPlanId(val *string) {
+func (j *jsiiProxy_BackupSelection) SetPlanId(val *string) {
 	if err := j.validateSetPlanIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_BackupSelection)SetPlanId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BackupSelection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -613,7 +612,7 @@ func (j *jsiiProxy_BackupSelection)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BackupSelection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_BackupSelection)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetResources(val *[]*string) {
+func (j *jsiiProxy_BackupSelection) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func BackupSelection_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func BackupSelection_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BackupSelection_IsConstruct(x interface{}) *bool {
+func BackupSelection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupSelection_IsConstructParameters(x); err != nil {
@@ -682,7 +681,7 @@ func BackupSelection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func BackupSelection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupSelection_IsTerraformElement(x interface{}) *bool {
+func BackupSelection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupSelection_IsTerraformElementParameters(x); err != nil {
@@ -701,7 +700,7 @@ func BackupSelection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func BackupSelection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupSelection_IsTerraformResource(x interface{}) *bool {
+func BackupSelection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupSelection_IsTerraformResourceParameters(x); err != nil {
@@ -720,7 +719,7 @@ func BackupSelection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,31 +744,31 @@ func (b *jsiiProxy_BackupSelection) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BackupSelection) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BackupSelection) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BackupSelection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupSelection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (b *jsiiProxy_BackupSelection) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (b *jsiiProxy_BackupSelection) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (b *jsiiProxy_BackupSelection) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (b *jsiiProxy_BackupSelection) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (b *jsiiProxy_BackupSelection) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (b *jsiiProxy_BackupSelection) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (b *jsiiProxy_BackupSelection) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,15 +896,15 @@ func (b *jsiiProxy_BackupSelection) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelection) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupSelection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -924,7 +923,7 @@ func (b *jsiiProxy_BackupSelection) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -937,7 +936,7 @@ func (b *jsiiProxy_BackupSelection) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,18 +950,18 @@ func (b *jsiiProxy_BackupSelection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BackupSelection) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BackupSelection) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -973,7 +972,7 @@ func (b *jsiiProxy_BackupSelection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -984,29 +983,29 @@ func (b *jsiiProxy_BackupSelection) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (b *jsiiProxy_BackupSelection) PutCondition(value interface{}) {
+func (b *jsiiProxy_BackupSelection) PutCondition(value any) {
 	if err := b.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupSelection) PutSelectionTag(value interface{}) {
+func (b *jsiiProxy_BackupSelection) PutSelectionTag(value any) {
 	if err := b.validatePutSelectionTagParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putSelectionTag",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1058,8 +1057,8 @@ func (b *jsiiProxy_BackupSelection) ResetSelectionTag() {
 	)
 }
 
-func (b *jsiiProxy_BackupSelection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupSelection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1071,8 +1070,8 @@ func (b *jsiiProxy_BackupSelection) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupSelection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1084,8 +1083,8 @@ func (b *jsiiProxy_BackupSelection) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupSelection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1097,8 +1096,8 @@ func (b *jsiiProxy_BackupSelection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelection) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupSelection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1123,8 +1122,8 @@ func (b *jsiiProxy_BackupSelection) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BackupSelection) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupSelection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1135,4 +1134,3 @@ func (b *jsiiProxy_BackupSelection) ToTerraform() interface{} {
 
 	return returns
 }
-

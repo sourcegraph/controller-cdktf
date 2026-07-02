@@ -19,7 +19,7 @@ func (g *jsiiProxy_GlueDevEndpoint) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GlueDevEndpoint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GlueDevEndpoint) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (g *jsiiProxy_GlueDevEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GlueDevEndpoint) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGlueDevEndpoint_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateGlueDevEndpoint_IsConstructParameters(x interface{}) error {
+func validateGlueDevEndpoint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGlueDevEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGlueDevEndpoint_IsTerraformElementParameters(x interface{}) error {
+func validateGlueDevEndpoint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGlueDevEndpoint_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateGlueDevEndpoint_IsTerraformResourceParameters(x interface{}) error {
+func validateGlueDevEndpoint_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GlueDevEndpoint) validateSetArgumentsParameters(val *map[stri
 	return nil
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GlueDevEndpoint) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GlueDevEndpoint) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GlueDevEndpoint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_GlueDevEndpoint) validateSetNumberOfWorkersParameters(val *fl
 	return nil
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GlueDevEndpoint) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -542,4 +542,3 @@ func validateNewGlueDevEndpointParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

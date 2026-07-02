@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference
 
 	return nil
 }
-

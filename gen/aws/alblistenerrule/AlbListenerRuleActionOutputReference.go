@@ -16,9 +16,9 @@ type AlbListenerRuleActionOutputReference interface {
 	AuthenticateOidcInput() *AlbListenerRuleActionAuthenticateOidc
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type AlbListenerRuleActionOutputReference interface {
 	ForwardInput() *AlbListenerRuleActionForward
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Order() *float64
 	SetOrder(val *float64)
 	OrderInput() *float64
@@ -59,7 +59,7 @@ type AlbListenerRuleActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type AlbListenerRuleActionOutputReference interface {
 	ResetTargetGroupArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) AuthenticateOidcInput()
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewAlbListenerRuleActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlbListenerRuleActionOutputReference {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewAlbListenerRuleActionOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewAlbListenerRuleActionOutputReference_Override(a AlbListenerRuleActionOut
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetOrder(val *float64) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetOrder(val *float64) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetOrder(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetTargetGroupArn(val *string) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetTargetGroupArn(val *string) {
 	if err := j.validateSetTargetGroupArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetTargetGroupArn(val *s
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference)SetType(val *string) {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,16 +465,16 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutAuthenticateCognito(
 	_jsii_.InvokeVoid(
 		a,
 		"putAuthenticateCognito",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -657,7 +656,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutAuthenticateOidc(val
 	_jsii_.InvokeVoid(
 		a,
 		"putAuthenticateOidc",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -668,7 +667,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutFixedResponse(value 
 	_jsii_.InvokeVoid(
 		a,
 		"putFixedResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -679,7 +678,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutForward(value *AlbLi
 	_jsii_.InvokeVoid(
 		a,
 		"putForward",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -690,7 +689,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutRedirect(value *AlbL
 	_jsii_.InvokeVoid(
 		a,
 		"putRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,16 +749,16 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) ResetTargetGroupArn() {
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlbListenerRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) ToString() *string {
 
 	return returns
 }
-

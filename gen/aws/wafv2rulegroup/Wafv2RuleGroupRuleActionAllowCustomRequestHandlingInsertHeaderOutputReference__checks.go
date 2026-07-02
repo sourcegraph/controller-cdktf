@@ -98,7 +98,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeade
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeade
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOu
 
 	return nil
 }
-

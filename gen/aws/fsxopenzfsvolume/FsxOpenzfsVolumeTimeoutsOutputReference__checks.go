@@ -98,7 +98,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFsxOpenzfsVolumeTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

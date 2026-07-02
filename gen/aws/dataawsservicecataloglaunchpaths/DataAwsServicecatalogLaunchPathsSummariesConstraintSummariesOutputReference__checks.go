@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutp
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package cloudfrontdistribution
 
-
 type CloudfrontDistributionDefaultCacheBehavior struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#allowed_methods CloudfrontDistribution#allowed_methods}.
 	AllowedMethods *[]*string `field:"required" json:"allowedMethods" yaml:"allowedMethods"`
@@ -13,7 +12,7 @@ type CloudfrontDistributionDefaultCacheBehavior struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#cache_policy_id CloudfrontDistribution#cache_policy_id}.
 	CachePolicyId *string `field:"optional" json:"cachePolicyId" yaml:"cachePolicyId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#compress CloudfrontDistribution#compress}.
-	Compress interface{} `field:"optional" json:"compress" yaml:"compress"`
+	Compress any `field:"optional" json:"compress" yaml:"compress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#default_ttl CloudfrontDistribution#default_ttl}.
 	DefaultTtl *float64 `field:"optional" json:"defaultTtl" yaml:"defaultTtl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#field_level_encryption_id CloudfrontDistribution#field_level_encryption_id}.
@@ -25,11 +24,11 @@ type CloudfrontDistributionDefaultCacheBehavior struct {
 	// function_association block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#function_association CloudfrontDistribution#function_association}
-	FunctionAssociation interface{} `field:"optional" json:"functionAssociation" yaml:"functionAssociation"`
+	FunctionAssociation any `field:"optional" json:"functionAssociation" yaml:"functionAssociation"`
 	// lambda_function_association block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#lambda_function_association CloudfrontDistribution#lambda_function_association}
-	LambdaFunctionAssociation interface{} `field:"optional" json:"lambdaFunctionAssociation" yaml:"lambdaFunctionAssociation"`
+	LambdaFunctionAssociation any `field:"optional" json:"lambdaFunctionAssociation" yaml:"lambdaFunctionAssociation"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#max_ttl CloudfrontDistribution#max_ttl}.
 	MaxTtl *float64 `field:"optional" json:"maxTtl" yaml:"maxTtl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#min_ttl CloudfrontDistribution#min_ttl}.
@@ -41,10 +40,9 @@ type CloudfrontDistributionDefaultCacheBehavior struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}.
 	ResponseHeadersPolicyId *string `field:"optional" json:"responseHeadersPolicyId" yaml:"responseHeadersPolicyId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#smooth_streaming CloudfrontDistribution#smooth_streaming}.
-	SmoothStreaming interface{} `field:"optional" json:"smoothStreaming" yaml:"smoothStreaming"`
+	SmoothStreaming any `field:"optional" json:"smoothStreaming" yaml:"smoothStreaming"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#trusted_key_groups CloudfrontDistribution#trusted_key_groups}.
 	TrustedKeyGroups *[]*string `field:"optional" json:"trustedKeyGroups" yaml:"trustedKeyGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudfront_distribution#trusted_signers CloudfrontDistribution#trusted_signers}.
 	TrustedSigners *[]*string `field:"optional" json:"trustedSigners" yaml:"trustedSigners"`
 }
-

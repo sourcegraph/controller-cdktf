@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutp
 
 	return nil
 }
-

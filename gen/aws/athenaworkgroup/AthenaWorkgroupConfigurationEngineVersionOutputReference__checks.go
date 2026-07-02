@@ -98,7 +98,7 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAthenaWorkgroupConfigurationEngineVersionOutputReferenceParamete
 
 	return nil
 }
-

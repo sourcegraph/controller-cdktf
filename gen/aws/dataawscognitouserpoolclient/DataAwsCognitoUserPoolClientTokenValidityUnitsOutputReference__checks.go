@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCognitoUserPoolClientTokenValidityUnitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsCognitoUserPoolClientTokenValidityUnitsOutputReferencePar
 
 	return nil
 }
-

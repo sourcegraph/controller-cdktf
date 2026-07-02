@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudwatchEventTargetBatchTargetOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetBatchTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudwatchEventTargetBatchTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudwatchEventTargetBatchTargetOutputReferenceParameters(terraf
 
 	return nil
 }
-

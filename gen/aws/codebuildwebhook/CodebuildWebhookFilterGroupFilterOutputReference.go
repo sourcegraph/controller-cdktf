@@ -12,9 +12,9 @@ type CodebuildWebhookFilterGroupFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type CodebuildWebhookFilterGroupFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	ExcludeMatchedPattern() interface{}
-	SetExcludeMatchedPattern(val interface{})
-	ExcludeMatchedPatternInput() interface{}
+	ExcludeMatchedPattern() any
+	SetExcludeMatchedPattern(val any)
+	ExcludeMatchedPatternInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Pattern() *string
 	SetPattern(val *string)
 	PatternInput() *string
@@ -49,7 +49,7 @@ type CodebuildWebhookFilterGroupFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type CodebuildWebhookFilterGroupFilterOutputReference interface {
 	ResetExcludeMatchedPattern()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ExcludeMatchedPattern() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ExcludeMatchedPattern() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeMatchedPattern",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ExcludeMatc
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ExcludeMatchedPatternInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ExcludeMatchedPatternInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeMatchedPatternInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) TypeInput()
 	return returns
 }
 
-
 func NewCodebuildWebhookFilterGroupFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodebuildWebhookFilterGroupFilterOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewCodebuildWebhookFilterGroupFilterOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewCodebuildWebhookFilterGroupFilterOutputReference_Override(c CodebuildWeb
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetExcludeMatchedPattern(val interface{}) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetExcludeMatchedPattern(val any) {
 	if err := j.validateSetExcludeMatchedPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetExcludeMa
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetPattern(val *string) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetPattern(v
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ResetExclud
 	)
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) ToString() 
 
 	return returns
 }
-

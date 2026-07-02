@@ -19,7 +19,7 @@ func (e *jsiiProxy_EbsEncryptionByDefault) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (e *jsiiProxy_EbsEncryptionByDefault) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EbsEncryptionByDefault) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EbsEncryptionByDefault) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (e *jsiiProxy_EbsEncryptionByDefault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EbsEncryptionByDefault) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateEbsEncryptionByDefault_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateEbsEncryptionByDefault_IsConstructParameters(x interface{}) error {
+func validateEbsEncryptionByDefault_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateEbsEncryptionByDefault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEbsEncryptionByDefault_IsTerraformElementParameters(x interface{}) error {
+func validateEbsEncryptionByDefault_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateEbsEncryptionByDefault_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateEbsEncryptionByDefault_IsTerraformResourceParameters(x interface{}) error {
+func validateEbsEncryptionByDefault_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateEbsEncryptionByDefault_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_EbsEncryptionByDefault) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -334,7 +334,7 @@ func (j *jsiiProxy_EbsEncryptionByDefault) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -370,7 +370,7 @@ func (j *jsiiProxy_EbsEncryptionByDefault) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -431,4 +431,3 @@ func validateNewEbsEncryptionByDefaultParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

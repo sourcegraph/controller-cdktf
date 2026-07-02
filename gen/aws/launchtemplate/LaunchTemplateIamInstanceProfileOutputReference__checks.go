@@ -106,7 +106,7 @@ func (j *jsiiProxy_LaunchTemplateIamInstanceProfileOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateIamInstanceProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateIamInstanceProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLaunchTemplateIamInstanceProfileOutputReferenceParameters(terraf
 
 	return nil
 }
-

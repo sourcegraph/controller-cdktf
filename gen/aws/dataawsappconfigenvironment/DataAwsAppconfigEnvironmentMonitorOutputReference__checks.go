@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsAppconfigEnvironmentMonitorOutputReferenceParameters(terr
 
 	return nil
 }
-

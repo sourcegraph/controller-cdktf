@@ -12,9 +12,9 @@ type S3ControlMultiRegionAccessPointDetailsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,7 +35,7 @@ type S3ControlMultiRegionAccessPointDetailsOutputReference interface {
 	PublicAccessBlock() S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference
 	PublicAccessBlockInput() *S3ControlMultiRegionAccessPointDetailsPublicAccessBlock
 	Region() S3ControlMultiRegionAccessPointDetailsRegionList
-	RegionInput() interface{}
+	RegionInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,7 +47,7 @@ type S3ControlMultiRegionAccessPointDetailsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,11 +69,11 @@ type S3ControlMultiRegionAccessPointDetailsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPublicAccessBlock(value *S3ControlMultiRegionAccessPointDetailsPublicAccessBlock)
-	PutRegion(value interface{})
+	PutRegion(value any)
 	ResetPublicAccessBlock()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) Region
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) RegionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) RegionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"regionInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) Terraf
 	return returns
 }
 
-
 func NewS3ControlMultiRegionAccessPointDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3ControlMultiRegionAccessPointDetailsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewS3ControlMultiRegionAccessPointDetailsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewS3ControlMultiRegionAccessPointDetailsOutputReference_Override(s S3Contr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetInternalValue(val *S3ControlMultiRegionAccessPointDetails) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) SetInternalValue(val *S3ControlMultiRegionAccessPointDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetName
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) Comput
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetBoo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetBoo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetLis
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetNum
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetStr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) GetStr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) Interp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -503,18 +502,18 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) PutPub
 	_jsii_.InvokeVoid(
 		s,
 		"putPublicAccessBlock",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) PutRegion(value interface{}) {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) PutRegion(value any) {
 	if err := s.validatePutRegionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRegion",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) ResetP
 	)
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) ToStri
 
 	return returns
 }
-

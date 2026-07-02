@@ -98,7 +98,7 @@ func (m *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMqBrokerMaintenanceWindowStartTimeOutputReferenceParameters(terr
 
 	return nil
 }
-

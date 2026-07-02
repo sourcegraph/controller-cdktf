@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorydbClusterClusterEndpointOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbClusterClusterEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorydbClusterClusterEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorydbClusterClusterEndpointOutputReferenceParameters(terrafor
 
 	return nil
 }
-

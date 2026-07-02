@@ -34,7 +34,7 @@ func (a *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AmiFromInstanceEphemeralBlockDeviceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAmiFromInstanceEphemeralBlockDeviceListParameters(terraformResou
 
 	return nil
 }
-

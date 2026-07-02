@@ -1,6 +1,5 @@
 package spotfleetrequest
 
-
 type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements struct {
 	// accelerator_count block.
 	//
@@ -49,7 +48,7 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#on_demand_max_price_percentage_over_lowest_price SpotFleetRequest#on_demand_max_price_percentage_over_lowest_price}.
 	OnDemandMaxPricePercentageOverLowestPrice *float64 `field:"optional" json:"onDemandMaxPricePercentageOverLowestPrice" yaml:"onDemandMaxPricePercentageOverLowestPrice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#require_hibernate_support SpotFleetRequest#require_hibernate_support}.
-	RequireHibernateSupport interface{} `field:"optional" json:"requireHibernateSupport" yaml:"requireHibernateSupport"`
+	RequireHibernateSupport any `field:"optional" json:"requireHibernateSupport" yaml:"requireHibernateSupport"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#spot_max_price_percentage_over_lowest_price SpotFleetRequest#spot_max_price_percentage_over_lowest_price}.
 	SpotMaxPricePercentageOverLowestPrice *float64 `field:"optional" json:"spotMaxPricePercentageOverLowestPrice" yaml:"spotMaxPricePercentageOverLowestPrice"`
 	// total_local_storage_gb block.
@@ -61,4 +60,3 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/spot_fleet_request#vcpu_count SpotFleetRequest#vcpu_count}
 	VcpuCount *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount `field:"optional" json:"vcpuCount" yaml:"vcpuCount"`
 }
-

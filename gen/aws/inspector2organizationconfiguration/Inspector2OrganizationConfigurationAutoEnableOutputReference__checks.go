@@ -98,7 +98,7 @@ func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetEc2Parameters(val interface{}) error {
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetEc2Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetEcrParameters(val interface{}) error {
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetEcrParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewInspector2OrganizationConfigurationAutoEnableOutputReferencePara
 
 	return nil
 }
-

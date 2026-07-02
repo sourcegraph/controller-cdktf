@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferServer.TransferServer",
-		reflect.TypeOf((*TransferServer)(nil)).Elem(),
+		reflect.TypeFor[TransferServer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflowDetails", GoGetter: "WorkflowDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowDetailsInput", GoGetter: "WorkflowDetailsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferServer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -126,15 +126,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferServer.TransferServerConfig",
-		reflect.TypeOf((*TransferServerConfig)(nil)).Elem(),
+		reflect.TypeFor[TransferServerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetails",
-		reflect.TypeOf((*TransferServerEndpointDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferServerEndpointDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
-		reflect.TypeOf((*TransferServerEndpointDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferServerEndpointDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressAllocationIds", GoGetter: "AddressAllocationIds"},
 			_jsii_.MemberProperty{JsiiProperty: "addressAllocationIdsInput", GoGetter: "AddressAllocationIdsInput"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferServerEndpointDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,15 +181,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetails",
-		reflect.TypeOf((*TransferServerWorkflowDetails)(nil)).Elem(),
+		reflect.TypeFor[TransferServerWorkflowDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload",
-		reflect.TypeOf((*TransferServerWorkflowDetailsOnUpload)(nil)).Elem(),
+		reflect.TypeFor[TransferServerWorkflowDetailsOnUpload](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUploadOutputReference",
-		reflect.TypeOf((*TransferServerWorkflowDetailsOnUploadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferServerWorkflowDetailsOnUploadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflowId", GoGetter: "WorkflowId"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowIdInput", GoGetter: "WorkflowIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferServerWorkflowDetailsOnUploadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference",
-		reflect.TypeOf((*TransferServerWorkflowDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TransferServerWorkflowDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TransferServerWorkflowDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

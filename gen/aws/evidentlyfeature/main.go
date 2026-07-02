@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
-		reflect.TypeOf((*EvidentlyFeature)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeature](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variations", GoGetter: "Variations"},
 			_jsii_.MemberProperty{JsiiProperty: "variationsInput", GoGetter: "VariationsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeature{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureConfig",
-		reflect.TypeOf((*EvidentlyFeatureConfig)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRules",
-		reflect.TypeOf((*EvidentlyFeatureEvaluationRules)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureEvaluationRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesList",
-		reflect.TypeOf((*EvidentlyFeatureEvaluationRulesList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureEvaluationRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeatureEvaluationRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -128,7 +128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesOutputReference",
-		reflect.TypeOf((*EvidentlyFeatureEvaluationRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureEvaluationRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureTimeouts",
-		reflect.TypeOf((*EvidentlyFeatureTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureTimeoutsOutputReference",
-		reflect.TypeOf((*EvidentlyFeatureTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeatureTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,11 +207,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariations",
-		reflect.TypeOf((*EvidentlyFeatureVariations)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureVariations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsList",
-		reflect.TypeOf((*EvidentlyFeatureVariationsList)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureVariationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeatureVariationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -233,7 +233,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsOutputReference",
-		reflect.TypeOf((*EvidentlyFeatureVariationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureVariationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeatureVariationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,11 +270,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsValue",
-		reflect.TypeOf((*EvidentlyFeatureVariationsValue)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureVariationsValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsValueOutputReference",
-		reflect.TypeOf((*EvidentlyFeatureVariationsValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EvidentlyFeatureVariationsValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
 			_jsii_.MemberProperty{JsiiProperty: "boolValueInput", GoGetter: "BoolValueInput"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EvidentlyFeatureVariationsValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

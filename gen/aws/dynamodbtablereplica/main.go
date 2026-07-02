@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
-		reflect.TypeOf((*DynamodbTableReplicaA)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplicaA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableReplicaA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaAConfig",
-		reflect.TypeOf((*DynamodbTableReplicaAConfig)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplicaAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaTimeouts",
-		reflect.TypeOf((*DynamodbTableReplicaTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplicaTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaTimeoutsOutputReference",
-		reflect.TypeOf((*DynamodbTableReplicaTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DynamodbTableReplicaTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DynamodbTableReplicaTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

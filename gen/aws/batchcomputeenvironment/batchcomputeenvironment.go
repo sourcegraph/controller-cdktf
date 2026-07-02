@@ -24,15 +24,15 @@ type BatchComputeEnvironment interface {
 	ComputeResources() BatchComputeEnvironmentComputeResourcesOutputReference
 	ComputeResourcesInput() *BatchComputeEnvironmentComputeResources
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type BatchComputeEnvironment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceRole() *string
 	SetServiceRole(val *string)
 	ServiceRoleInput() *string
@@ -84,7 +84,7 @@ type BatchComputeEnvironment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -94,9 +94,9 @@ type BatchComputeEnvironment interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type BatchComputeEnvironment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type BatchComputeEnvironment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type BatchComputeEnvironment interface {
 	ResetState()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BatchComputeEnvironment
@@ -245,8 +245,8 @@ func (j *jsiiProxy_BatchComputeEnvironment) ComputeResourcesInput() *BatchComput
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchComputeEnvironment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_BatchComputeEnvironment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BatchComputeEnvironment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_BatchComputeEnvironment) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchComputeEnvironment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_BatchComputeEnvironment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BatchComputeEnvironment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_BatchComputeEnvironment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BatchComputeEnvironment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_BatchComputeEnvironment) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BatchComputeEnvironment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -565,7 +565,6 @@ func (j *jsiiProxy_BatchComputeEnvironment) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) BatchComputeEnvironment {
 	_init_.Initialize()
@@ -577,7 +576,7 @@ func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -590,12 +589,12 @@ func NewBatchComputeEnvironment_Override(b BatchComputeEnvironment, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetComputeEnvironmentName(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetComputeEnvironmentName(val *string) {
 	if err := j.validateSetComputeEnvironmentNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetComputeEnvironmentName(val *string
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetComputeEnvironmentNamePrefix(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetComputeEnvironmentNamePrefix(val *string) {
 	if err := j.validateSetComputeEnvironmentNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetComputeEnvironmentNamePrefix(val *
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetConnection(val interface{}) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetCount(val interface{}) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -647,7 +646,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetId(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -685,7 +684,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetServiceRole(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetServiceRole(val *string) {
 	if err := j.validateSetServiceRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetServiceRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetState(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment)SetType(val *string) {
+func (j *jsiiProxy_BatchComputeEnvironment) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func BatchComputeEnvironment_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func BatchComputeEnvironment_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BatchComputeEnvironment_IsConstruct(x interface{}) *bool {
+func BatchComputeEnvironment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBatchComputeEnvironment_IsConstructParameters(x); err != nil {
@@ -798,7 +797,7 @@ func BatchComputeEnvironment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func BatchComputeEnvironment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BatchComputeEnvironment_IsTerraformElement(x interface{}) *bool {
+func BatchComputeEnvironment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBatchComputeEnvironment_IsTerraformElementParameters(x); err != nil {
@@ -817,7 +816,7 @@ func BatchComputeEnvironment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func BatchComputeEnvironment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BatchComputeEnvironment_IsTerraformResource(x interface{}) *bool {
+func BatchComputeEnvironment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBatchComputeEnvironment_IsTerraformResourceParameters(x); err != nil {
@@ -836,7 +835,7 @@ func BatchComputeEnvironment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,31 +860,31 @@ func (b *jsiiProxy_BatchComputeEnvironment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BatchComputeEnvironment) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BatchComputeEnvironment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,15 +1012,15 @@ func (b *jsiiProxy_BatchComputeEnvironment) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BatchComputeEnvironment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1040,7 +1039,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,18 +1066,18 @@ func (b *jsiiProxy_BatchComputeEnvironment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BatchComputeEnvironment) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) PutComputeResources(value *BatchComp
 	_jsii_.InvokeVoid(
 		b,
 		"putComputeResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (b *jsiiProxy_BatchComputeEnvironment) PutEksConfiguration(value *BatchComp
 	_jsii_.InvokeVoid(
 		b,
 		"putEksConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,8 +1205,8 @@ func (b *jsiiProxy_BatchComputeEnvironment) ResetTagsAll() {
 	)
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BatchComputeEnvironment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1219,8 +1218,8 @@ func (b *jsiiProxy_BatchComputeEnvironment) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BatchComputeEnvironment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1232,8 +1231,8 @@ func (b *jsiiProxy_BatchComputeEnvironment) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BatchComputeEnvironment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1245,8 +1244,8 @@ func (b *jsiiProxy_BatchComputeEnvironment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BatchComputeEnvironment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1271,8 +1270,8 @@ func (b *jsiiProxy_BatchComputeEnvironment) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BatchComputeEnvironment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1283,4 +1282,3 @@ func (b *jsiiProxy_BatchComputeEnvironment) ToTerraform() interface{} {
 
 	return returns
 }
-

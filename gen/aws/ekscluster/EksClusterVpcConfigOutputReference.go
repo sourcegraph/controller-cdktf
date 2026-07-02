@@ -13,9 +13,9 @@ type EksClusterVpcConfigOutputReference interface {
 	ClusterSecurityGroupId() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,12 +26,12 @@ type EksClusterVpcConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EndpointPrivateAccess() interface{}
-	SetEndpointPrivateAccess(val interface{})
-	EndpointPrivateAccessInput() interface{}
-	EndpointPublicAccess() interface{}
-	SetEndpointPublicAccess(val interface{})
-	EndpointPublicAccessInput() interface{}
+	EndpointPrivateAccess() any
+	SetEndpointPrivateAccess(val any)
+	EndpointPrivateAccessInput() any
+	EndpointPublicAccess() any
+	SetEndpointPublicAccess(val any)
+	EndpointPublicAccessInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EksClusterVpcConfig
@@ -57,7 +57,7 @@ type EksClusterVpcConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type EksClusterVpcConfigOutputReference interface {
 	ResetSecurityGroupIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) ClusterSecurityGroupId() 
 	return returns
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) CreationStack() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPrivateAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPrivateAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointPrivateAccess",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPrivateAccess() i
 	return returns
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPrivateAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPrivateAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointPrivateAccessInput",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPrivateAccessInpu
 	return returns
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPublicAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPublicAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointPublicAccess",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPublicAccess() in
 	return returns
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPublicAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) EndpointPublicAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointPublicAccessInput",
@@ -287,7 +287,6 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) VpcId() *string {
 	return returns
 }
 
-
 func NewEksClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EksClusterVpcConfigOutputReference {
 	_init_.Initialize()
 
@@ -298,7 +297,7 @@ func NewEksClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -310,12 +309,12 @@ func NewEksClusterVpcConfigOutputReference_Override(e EksClusterVpcConfigOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetEndpointPrivateAccess(val interface{}) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetEndpointPrivateAccess(val any) {
 	if err := j.validateSetEndpointPrivateAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetEndpointPrivateAccess(v
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetEndpointPublicAccess(val interface{}) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetEndpointPublicAccess(val any) {
 	if err := j.validateSetEndpointPublicAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetEndpointPublicAccess(va
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetInternalValue(val *EksClusterVpcConfig) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetInternalValue(val *EksClusterVpcConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetInternalValue(val *EksC
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetPublicAccessCidrs(val *[]*string) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetPublicAccessCidrs(val *[]*string) {
 	if err := j.validateSetPublicAccessCidrsParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetPublicAccessCidrs(val *
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetSecurityGroupIds(val *[
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetSubnetIds(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,16 +437,16 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -643,16 +642,16 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) ResetSecurityGroupIds() {
 	)
 }
 
-func (e *jsiiProxy_EksClusterVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EksClusterVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -671,4 +670,3 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -18,15 +18,15 @@ type EbsSnapshotImport interface {
 	ClientData() EbsSnapshotImportClientDataOutputReference
 	ClientDataInput() *EbsSnapshotImportClientData
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataEncryptionKeyId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -37,9 +37,9 @@ type EbsSnapshotImport interface {
 	DescriptionInput() *string
 	DiskContainer() EbsSnapshotImportDiskContainerOutputReference
 	DiskContainerInput() *EbsSnapshotImportDiskContainer
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() any
+	SetEncrypted(val any)
+	EncryptedInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,19 +63,19 @@ type EbsSnapshotImport interface {
 	OutpostArn() *string
 	OwnerAlias() *string
 	OwnerId() *string
-	PermanentRestore() interface{}
-	SetPermanentRestore(val interface{})
-	PermanentRestoreInput() interface{}
+	PermanentRestore() any
+	SetPermanentRestore(val any)
+	PermanentRestoreInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
@@ -94,20 +94,20 @@ type EbsSnapshotImport interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EbsSnapshotImportTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VolumeId() *string
 	VolumeSize() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type EbsSnapshotImport interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type EbsSnapshotImport interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -162,17 +162,17 @@ type EbsSnapshotImport interface {
 	ResetTagsAll()
 	ResetTemporaryRestoreDays()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EbsSnapshotImport
@@ -220,8 +220,8 @@ func (j *jsiiProxy_EbsSnapshotImport) ClientDataInput() *EbsSnapshotImportClient
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_EbsSnapshotImport) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EbsSnapshotImport) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_EbsSnapshotImport) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_EbsSnapshotImport) DiskContainerInput() *EbsSnapshotImportDis
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) Encrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_EbsSnapshotImport) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) EncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_EbsSnapshotImport) OwnerId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) PermanentRestore() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) PermanentRestore() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"permanentRestore",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_EbsSnapshotImport) PermanentRestore() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) PermanentRestoreInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) PermanentRestoreInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"permanentRestoreInput",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_EbsSnapshotImport) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EbsSnapshotImport) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_EbsSnapshotImport) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -610,8 +610,8 @@ func (j *jsiiProxy_EbsSnapshotImport) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EbsSnapshotImport) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_EbsSnapshotImport) Timeouts() EbsSnapshotImportTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_EbsSnapshotImport) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EbsSnapshotImport) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -670,7 +670,6 @@ func (j *jsiiProxy_EbsSnapshotImport) VolumeSize() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource.
 func NewEbsSnapshotImport(scope constructs.Construct, id *string, config *EbsSnapshotImportConfig) EbsSnapshotImport {
 	_init_.Initialize()
@@ -682,7 +681,7 @@ func NewEbsSnapshotImport(scope constructs.Construct, id *string, config *EbsSna
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -695,12 +694,12 @@ func NewEbsSnapshotImport_Override(e EbsSnapshotImport, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetConnection(val interface{}) {
+func (j *jsiiProxy_EbsSnapshotImport) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetCount(val interface{}) {
+func (j *jsiiProxy_EbsSnapshotImport) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -730,7 +729,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetDescription(val *string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_EbsSnapshotImport) SetEncrypted(val any) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetEncrypted(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EbsSnapshotImport) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -760,7 +759,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetId(val *string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetKmsKeyId(val *string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EbsSnapshotImport) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetPermanentRestore(val interface{}) {
+func (j *jsiiProxy_EbsSnapshotImport) SetPermanentRestore(val any) {
 	if err := j.validateSetPermanentRestoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetPermanentRestore(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EbsSnapshotImport) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -812,7 +811,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EbsSnapshotImport) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetRoleName(val *string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetRoleName(val *string) {
 	if err := j.validateSetRoleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetRoleName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetStorageTier(val *string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetStorageTier(val *string) {
 	if err := j.validateSetStorageTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetStorageTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EbsSnapshotImport) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_EbsSnapshotImport)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EbsSnapshotImport)SetTemporaryRestoreDays(val *float64) {
+func (j *jsiiProxy_EbsSnapshotImport) SetTemporaryRestoreDays(val *float64) {
 	if err := j.validateSetTemporaryRestoreDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func EbsSnapshotImport_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func EbsSnapshotImport_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EbsSnapshotImport_IsConstruct(x interface{}) *bool {
+func EbsSnapshotImport_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEbsSnapshotImport_IsConstructParameters(x); err != nil {
@@ -925,7 +924,7 @@ func EbsSnapshotImport_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func EbsSnapshotImport_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EbsSnapshotImport_IsTerraformElement(x interface{}) *bool {
+func EbsSnapshotImport_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEbsSnapshotImport_IsTerraformElementParameters(x); err != nil {
@@ -944,7 +943,7 @@ func EbsSnapshotImport_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func EbsSnapshotImport_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EbsSnapshotImport_IsTerraformResource(x interface{}) *bool {
+func EbsSnapshotImport_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEbsSnapshotImport_IsTerraformResourceParameters(x); err != nil {
@@ -963,7 +962,7 @@ func EbsSnapshotImport_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -988,31 +987,31 @@ func (e *jsiiProxy_EbsSnapshotImport) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EbsSnapshotImport) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EbsSnapshotImport) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,7 +1123,7 @@ func (e *jsiiProxy_EbsSnapshotImport) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,15 +1139,15 @@ func (e *jsiiProxy_EbsSnapshotImport) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsSnapshotImport) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1167,7 +1166,7 @@ func (e *jsiiProxy_EbsSnapshotImport) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (e *jsiiProxy_EbsSnapshotImport) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1194,18 +1193,18 @@ func (e *jsiiProxy_EbsSnapshotImport) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EbsSnapshotImport) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (e *jsiiProxy_EbsSnapshotImport) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (e *jsiiProxy_EbsSnapshotImport) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (e *jsiiProxy_EbsSnapshotImport) PutClientData(value *EbsSnapshotImportClie
 	_jsii_.InvokeVoid(
 		e,
 		"putClientData",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1249,7 +1248,7 @@ func (e *jsiiProxy_EbsSnapshotImport) PutDiskContainer(value *EbsSnapshotImportD
 	_jsii_.InvokeVoid(
 		e,
 		"putDiskContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1260,7 +1259,7 @@ func (e *jsiiProxy_EbsSnapshotImport) PutTimeouts(value *EbsSnapshotImportTimeou
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1368,8 +1367,8 @@ func (e *jsiiProxy_EbsSnapshotImport) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EbsSnapshotImport) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1381,8 +1380,8 @@ func (e *jsiiProxy_EbsSnapshotImport) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EbsSnapshotImport) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1394,8 +1393,8 @@ func (e *jsiiProxy_EbsSnapshotImport) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsSnapshotImport) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1407,8 +1406,8 @@ func (e *jsiiProxy_EbsSnapshotImport) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsSnapshotImport) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1433,8 +1432,8 @@ func (e *jsiiProxy_EbsSnapshotImport) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EbsSnapshotImport) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EbsSnapshotImport) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1445,4 +1444,3 @@ func (e *jsiiProxy_EbsSnapshotImport) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
-		reflect.TypeOf((*RedshiftCluster)(nil)).Elem(),
+		reflect.TypeFor[RedshiftCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodes",
-		reflect.TypeOf((*RedshiftClusterClusterNodes)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterClusterNodes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList",
-		reflect.TypeOf((*RedshiftClusterClusterNodesList)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterClusterNodesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftClusterClusterNodesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodesOutputReference",
-		reflect.TypeOf((*RedshiftClusterClusterNodesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterClusterNodesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftClusterClusterNodesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,15 +254,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterConfig",
-		reflect.TypeOf((*RedshiftClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterLogging",
-		reflect.TypeOf((*RedshiftClusterLogging)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterLogging](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
-		reflect.TypeOf((*RedshiftClusterLoggingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterLoggingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftClusterLoggingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopy",
-		reflect.TypeOf((*RedshiftClusterSnapshotCopy)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterSnapshotCopy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
-		reflect.TypeOf((*RedshiftClusterSnapshotCopyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterSnapshotCopyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -344,7 +344,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftClusterSnapshotCopyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -352,11 +352,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterTimeouts",
-		reflect.TypeOf((*RedshiftClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
-		reflect.TypeOf((*RedshiftClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedshiftClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedshiftClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

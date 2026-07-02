@@ -19,7 +19,7 @@ func (d *jsiiProxy_DocdbGlobalCluster) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DocdbGlobalCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DocdbGlobalCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DocdbGlobalCluster) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DocdbGlobalCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DocdbGlobalCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDocdbGlobalCluster_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDocdbGlobalCluster_IsConstructParameters(x interface{}) error {
+func validateDocdbGlobalCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDocdbGlobalCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDocdbGlobalCluster_IsTerraformElementParameters(x interface{}) error {
+func validateDocdbGlobalCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDocdbGlobalCluster_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDocdbGlobalCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateDocdbGlobalCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDocdbGlobalCluster_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DocdbGlobalCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DocdbGlobalCluster) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DocdbGlobalCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DocdbGlobalCluster) validateSetDatabaseNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DocdbGlobalCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DocdbGlobalCluster) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DocdbGlobalCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -467,7 +467,7 @@ func (j *jsiiProxy_DocdbGlobalCluster) validateSetSourceDbClusterIdentifierParam
 	return nil
 }
 
-func (j *jsiiProxy_DocdbGlobalCluster) validateSetStorageEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetStorageEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -505,4 +505,3 @@ func validateNewDocdbGlobalClusterParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

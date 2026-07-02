@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
-		reflect.TypeOf((*DataAwsDefaultTags)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDefaultTags](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsDefaultTags{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,6 +57,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig",
-		reflect.TypeOf((*DataAwsDefaultTagsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsDefaultTagsConfig](),
 	)
 }

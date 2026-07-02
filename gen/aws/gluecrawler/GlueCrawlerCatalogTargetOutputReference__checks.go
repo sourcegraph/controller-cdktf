@@ -98,7 +98,7 @@ func (g *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetEventQueu
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewGlueCrawlerCatalogTargetOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DataAwsS3ObjectsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataAwsS3ObjectsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects#bucket DataAwsS3Objects#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects#delimiter DataAwsS3Objects#delimiter}.
@@ -26,7 +26,7 @@ type DataAwsS3ObjectsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects#encoding_type DataAwsS3Objects#encoding_type}.
 	EncodingType *string `field:"optional" json:"encodingType" yaml:"encodingType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects#fetch_owner DataAwsS3Objects#fetch_owner}.
-	FetchOwner interface{} `field:"optional" json:"fetchOwner" yaml:"fetchOwner"`
+	FetchOwner any `field:"optional" json:"fetchOwner" yaml:"fetchOwner"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects#id DataAwsS3Objects#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,4 +39,3 @@ type DataAwsS3ObjectsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/s3_objects#start_after DataAwsS3Objects#start_after}.
 	StartAfter *string `field:"optional" json:"startAfter" yaml:"startAfter"`
 }
-

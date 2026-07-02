@@ -6,9 +6,9 @@ import (
 
 type CloudformationStackConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type CloudformationStackConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudformation_stack#name CloudformationStack#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudformation_stack#capabilities CloudformationStack#capabilities}.
 	Capabilities *[]*string `field:"optional" json:"capabilities" yaml:"capabilities"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudformation_stack#disable_rollback CloudformationStack#disable_rollback}.
-	DisableRollback interface{} `field:"optional" json:"disableRollback" yaml:"disableRollback"`
+	DisableRollback any `field:"optional" json:"disableRollback" yaml:"disableRollback"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudformation_stack#iam_role_arn CloudformationStack#iam_role_arn}.
 	IamRoleArn *string `field:"optional" json:"iamRoleArn" yaml:"iamRoleArn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudformation_stack#id CloudformationStack#id}.
@@ -57,4 +57,3 @@ type CloudformationStackConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/cloudformation_stack#timeouts CloudformationStack#timeouts}
 	Timeouts *CloudformationStackTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

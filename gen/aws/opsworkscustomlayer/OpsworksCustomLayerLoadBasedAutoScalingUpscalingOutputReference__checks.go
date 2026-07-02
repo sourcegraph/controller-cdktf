@@ -106,7 +106,7 @@ func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewOpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReferenceP
 
 	return nil
 }
-

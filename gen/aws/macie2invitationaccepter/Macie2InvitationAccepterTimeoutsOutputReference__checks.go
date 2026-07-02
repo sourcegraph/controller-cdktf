@@ -98,7 +98,7 @@ func (m *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMacie2InvitationAccepterTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

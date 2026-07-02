@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleStepFunctionsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleStepFunctionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleStepFunctionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IotTopicRuleStepFunctionsOutputReference) validateSetExecutio
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleStepFunctionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleStepFunctionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIotTopicRuleStepFunctionsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

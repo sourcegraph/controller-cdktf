@@ -14,22 +14,22 @@ type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
 	Attribute() DynamodbTableAttributeList
-	AttributeInput() interface{}
+	AttributeInput() any
 	BillingMode() *string
 	SetBillingMode(val *string)
 	BillingModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,7 +43,7 @@ type DynamodbTable interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GlobalSecondaryIndex() DynamodbTableGlobalSecondaryIndexList
-	GlobalSecondaryIndexInput() interface{}
+	GlobalSecondaryIndexInput() any
 	HashKey() *string
 	SetHashKey(val *string)
 	HashKeyInput() *string
@@ -55,7 +55,7 @@ type DynamodbTable interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LocalSecondaryIndex() DynamodbTableLocalSecondaryIndexList
-	LocalSecondaryIndexInput() interface{}
+	LocalSecondaryIndexInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -68,34 +68,34 @@ type DynamodbTable interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RangeKey() *string
 	SetRangeKey(val *string)
 	RangeKeyInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadCapacity() *float64
 	SetReadCapacity(val *float64)
 	ReadCapacityInput() *float64
 	Replica() DynamodbTableReplicaList
-	ReplicaInput() interface{}
+	ReplicaInput() any
 	RestoreDateTime() *string
 	SetRestoreDateTime(val *string)
 	RestoreDateTimeInput() *string
 	RestoreSourceName() *string
 	SetRestoreSourceName(val *string)
 	RestoreSourceNameInput() *string
-	RestoreToLatestTime() interface{}
-	SetRestoreToLatestTime(val interface{})
-	RestoreToLatestTimeInput() interface{}
+	RestoreToLatestTime() any
+	SetRestoreToLatestTime(val any)
+	RestoreToLatestTimeInput() any
 	ServerSideEncryption() DynamodbTableServerSideEncryptionOutputReference
 	ServerSideEncryptionInput() *DynamodbTableServerSideEncryption
 	StreamArn() *string
-	StreamEnabled() interface{}
-	SetStreamEnabled(val interface{})
-	StreamEnabledInput() interface{}
+	StreamEnabled() any
+	SetStreamEnabled(val any)
+	StreamEnabledInput() any
 	StreamLabel() *string
 	StreamViewType() *string
 	SetStreamViewType(val *string)
@@ -112,11 +112,11 @@ type DynamodbTable interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DynamodbTableTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Ttl() DynamodbTableTtlOutputReference
 	TtlInput() *DynamodbTableTtl
 	WriteCapacity() *float64
@@ -126,9 +126,9 @@ type DynamodbTable interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -146,7 +146,7 @@ type DynamodbTable interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -158,18 +158,18 @@ type DynamodbTable interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAttribute(value interface{})
-	PutGlobalSecondaryIndex(value interface{})
-	PutLocalSecondaryIndex(value interface{})
+	PutAttribute(value any)
+	PutGlobalSecondaryIndex(value any)
+	PutLocalSecondaryIndex(value any)
 	PutPointInTimeRecovery(value *DynamodbTablePointInTimeRecovery)
-	PutReplica(value interface{})
+	PutReplica(value any)
 	PutServerSideEncryption(value *DynamodbTableServerSideEncryption)
 	PutTimeouts(value *DynamodbTableTimeouts)
 	PutTtl(value *DynamodbTableTtl)
@@ -198,17 +198,17 @@ type DynamodbTable interface {
 	ResetTimeouts()
 	ResetTtl()
 	ResetWriteCapacity()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DynamodbTable
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DynamodbTable) Attribute() DynamodbTableAttributeList {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) AttributeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) AttributeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attributeInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DynamodbTable) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DynamodbTable) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DynamodbTable) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DynamodbTable) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DynamodbTable) GlobalSecondaryIndex() DynamodbTableGlobalSeco
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) GlobalSecondaryIndexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) GlobalSecondaryIndexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalSecondaryIndexInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_DynamodbTable) LocalSecondaryIndex() DynamodbTableLocalSecond
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) LocalSecondaryIndexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) LocalSecondaryIndexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"localSecondaryIndexInput",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_DynamodbTable) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DynamodbTable) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_DynamodbTable) RangeKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_DynamodbTable) Replica() DynamodbTableReplicaList {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) ReplicaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) ReplicaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replicaInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_DynamodbTable) RestoreSourceNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) RestoreToLatestTime() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) RestoreToLatestTime() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restoreToLatestTime",
@@ -626,8 +626,8 @@ func (j *jsiiProxy_DynamodbTable) RestoreToLatestTime() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) RestoreToLatestTimeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) RestoreToLatestTimeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restoreToLatestTimeInput",
@@ -666,8 +666,8 @@ func (j *jsiiProxy_DynamodbTable) StreamArn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) StreamEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) StreamEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"streamEnabled",
@@ -676,8 +676,8 @@ func (j *jsiiProxy_DynamodbTable) StreamEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) StreamEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) StreamEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"streamEnabledInput",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_DynamodbTable) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DynamodbTable) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -816,8 +816,8 @@ func (j *jsiiProxy_DynamodbTable) Timeouts() DynamodbTableTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbTable) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DynamodbTable) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -866,7 +866,6 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
@@ -878,7 +877,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -891,12 +890,12 @@ func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetBillingMode(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetBillingMode(val *string) {
 	if err := j.validateSetBillingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_DynamodbTable)SetBillingMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetConnection(val interface{}) {
+func (j *jsiiProxy_DynamodbTable) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_DynamodbTable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetCount(val interface{}) {
+func (j *jsiiProxy_DynamodbTable) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_DynamodbTable)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DynamodbTable) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -937,7 +936,7 @@ func (j *jsiiProxy_DynamodbTable)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DynamodbTable) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -945,7 +944,7 @@ func (j *jsiiProxy_DynamodbTable)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetHashKey(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetHashKey(val *string) {
 	if err := j.validateSetHashKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_DynamodbTable)SetHashKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetId(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_DynamodbTable)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DynamodbTable) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_DynamodbTable)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetName(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_DynamodbTable)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DynamodbTable) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -997,7 +996,7 @@ func (j *jsiiProxy_DynamodbTable)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DynamodbTable) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_DynamodbTable)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetRangeKey(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetRangeKey(val *string) {
 	if err := j.validateSetRangeKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_DynamodbTable)SetRangeKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetReadCapacity(val *float64) {
+func (j *jsiiProxy_DynamodbTable) SetReadCapacity(val *float64) {
 	if err := j.validateSetReadCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_DynamodbTable)SetReadCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetRestoreDateTime(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetRestoreDateTime(val *string) {
 	if err := j.validateSetRestoreDateTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_DynamodbTable)SetRestoreDateTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetRestoreSourceName(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetRestoreSourceName(val *string) {
 	if err := j.validateSetRestoreSourceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_DynamodbTable)SetRestoreSourceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetRestoreToLatestTime(val interface{}) {
+func (j *jsiiProxy_DynamodbTable) SetRestoreToLatestTime(val any) {
 	if err := j.validateSetRestoreToLatestTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_DynamodbTable)SetRestoreToLatestTime(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetStreamEnabled(val interface{}) {
+func (j *jsiiProxy_DynamodbTable) SetStreamEnabled(val any) {
 	if err := j.validateSetStreamEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_DynamodbTable)SetStreamEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetStreamViewType(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetStreamViewType(val *string) {
 	if err := j.validateSetStreamViewTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_DynamodbTable)SetStreamViewType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetTableClass(val *string) {
+func (j *jsiiProxy_DynamodbTable) SetTableClass(val *string) {
 	if err := j.validateSetTableClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_DynamodbTable)SetTableClass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DynamodbTable) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_DynamodbTable)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_DynamodbTable) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_DynamodbTable)SetTagsAll(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbTable)SetWriteCapacity(val *float64) {
+func (j *jsiiProxy_DynamodbTable) SetWriteCapacity(val *float64) {
 	if err := j.validateSetWriteCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1141,7 +1140,7 @@ func DynamodbTable_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1165,7 +1164,7 @@ func DynamodbTable_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DynamodbTable_IsConstruct(x interface{}) *bool {
+func DynamodbTable_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDynamodbTable_IsConstructParameters(x); err != nil {
@@ -1176,7 +1175,7 @@ func DynamodbTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func DynamodbTable_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DynamodbTable_IsTerraformElement(x interface{}) *bool {
+func DynamodbTable_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDynamodbTable_IsTerraformElementParameters(x); err != nil {
@@ -1195,7 +1194,7 @@ func DynamodbTable_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1203,7 +1202,7 @@ func DynamodbTable_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DynamodbTable_IsTerraformResource(x interface{}) *bool {
+func DynamodbTable_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDynamodbTable_IsTerraformResourceParameters(x); err != nil {
@@ -1214,7 +1213,7 @@ func DynamodbTable_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1239,31 +1238,31 @@ func (d *jsiiProxy_DynamodbTable) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DynamodbTable) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DynamodbTable) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1279,7 +1278,7 @@ func (d *jsiiProxy_DynamodbTable) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1295,7 +1294,7 @@ func (d *jsiiProxy_DynamodbTable) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1311,7 +1310,7 @@ func (d *jsiiProxy_DynamodbTable) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1327,7 +1326,7 @@ func (d *jsiiProxy_DynamodbTable) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1343,7 +1342,7 @@ func (d *jsiiProxy_DynamodbTable) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1359,7 +1358,7 @@ func (d *jsiiProxy_DynamodbTable) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1375,7 +1374,7 @@ func (d *jsiiProxy_DynamodbTable) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1391,15 +1390,15 @@ func (d *jsiiProxy_DynamodbTable) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbTable) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbTable) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1418,7 +1417,7 @@ func (d *jsiiProxy_DynamodbTable) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1431,7 +1430,7 @@ func (d *jsiiProxy_DynamodbTable) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1445,18 +1444,18 @@ func (d *jsiiProxy_DynamodbTable) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DynamodbTable) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1467,7 +1466,7 @@ func (d *jsiiProxy_DynamodbTable) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1478,40 +1477,40 @@ func (d *jsiiProxy_DynamodbTable) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) PutAttribute(value interface{}) {
+func (d *jsiiProxy_DynamodbTable) PutAttribute(value any) {
 	if err := d.validatePutAttributeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAttribute",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) PutGlobalSecondaryIndex(value interface{}) {
+func (d *jsiiProxy_DynamodbTable) PutGlobalSecondaryIndex(value any) {
 	if err := d.validatePutGlobalSecondaryIndexParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putGlobalSecondaryIndex",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) PutLocalSecondaryIndex(value interface{}) {
+func (d *jsiiProxy_DynamodbTable) PutLocalSecondaryIndex(value any) {
 	if err := d.validatePutLocalSecondaryIndexParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putLocalSecondaryIndex",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1522,18 +1521,18 @@ func (d *jsiiProxy_DynamodbTable) PutPointInTimeRecovery(value *DynamodbTablePoi
 	_jsii_.InvokeVoid(
 		d,
 		"putPointInTimeRecovery",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) PutReplica(value interface{}) {
+func (d *jsiiProxy_DynamodbTable) PutReplica(value any) {
 	if err := d.validatePutReplicaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putReplica",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1544,7 +1543,7 @@ func (d *jsiiProxy_DynamodbTable) PutServerSideEncryption(value *DynamodbTableSe
 	_jsii_.InvokeVoid(
 		d,
 		"putServerSideEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1555,7 +1554,7 @@ func (d *jsiiProxy_DynamodbTable) PutTimeouts(value *DynamodbTableTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1566,7 +1565,7 @@ func (d *jsiiProxy_DynamodbTable) PutTtl(value *DynamodbTableTtl) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTtl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1754,8 +1753,8 @@ func (d *jsiiProxy_DynamodbTable) ResetWriteCapacity() {
 	)
 }
 
-func (d *jsiiProxy_DynamodbTable) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DynamodbTable) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1767,8 +1766,8 @@ func (d *jsiiProxy_DynamodbTable) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbTable) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DynamodbTable) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1780,8 +1779,8 @@ func (d *jsiiProxy_DynamodbTable) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbTable) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbTable) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1793,8 +1792,8 @@ func (d *jsiiProxy_DynamodbTable) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbTable) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbTable) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1819,8 +1818,8 @@ func (d *jsiiProxy_DynamodbTable) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DynamodbTable) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DynamodbTable) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1831,4 +1830,3 @@ func (d *jsiiProxy_DynamodbTable) ToTerraform() interface{} {
 
 	return returns
 }
-

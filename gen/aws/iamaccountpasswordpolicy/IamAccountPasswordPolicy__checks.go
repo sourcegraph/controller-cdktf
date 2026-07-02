@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamAccountPasswordPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamAccountPasswordPolicy) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (i *jsiiProxy_IamAccountPasswordPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamAccountPasswordPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIamAccountPasswordPolicy_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateIamAccountPasswordPolicy_IsConstructParameters(x interface{}) error {
+func validateIamAccountPasswordPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIamAccountPasswordPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateIamAccountPasswordPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateIamAccountPasswordPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIamAccountPasswordPolicy_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateIamAccountPasswordPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateIamAccountPasswordPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateIamAccountPasswordPolicy_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetAllowUsersToChangePasswordParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetAllowUsersToChangePasswordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetAllowUsersToChangePasswo
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -297,7 +297,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -354,7 +354,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetHardExpiryParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetHardExpiryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetPasswordReusePreventionP
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,7 +460,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireLowercaseCharactersParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireLowercaseCharactersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -480,7 +480,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireLowercaseCharacte
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireNumbersParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireNumbersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -500,7 +500,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireNumbersParameters
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireSymbolsParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireSymbolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -520,7 +520,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireSymbolsParameters
 	return nil
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireUppercaseCharactersParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetRequireUppercaseCharactersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -555,4 +555,3 @@ func validateNewIamAccountPasswordPolicyParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -16,11 +16,11 @@ type DataAwsNeptuneOrderableDbInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,7 +69,7 @@ type DataAwsNeptuneOrderableDbInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadReplicaCapable() cdktf.IResolvable
 	StorageType() *string
 	SupportsEnhancedMonitoring() cdktf.IResolvable
@@ -80,16 +80,16 @@ type DataAwsNeptuneOrderableDbInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	Vpc() interface{}
-	SetVpc(val interface{})
-	VpcInput() interface{}
+	Vpc() any
+	SetVpc(val any)
+	VpcInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,18 +121,18 @@ type DataAwsNeptuneOrderableDbInstance interface {
 	ResetOverrideLogicalId()
 	ResetPreferredInstanceClasses()
 	ResetVpc()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataAwsNeptuneOrderableDbInstance
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) TerraformResourceType() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Vpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Vpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vpc",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Vpc() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) VpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) VpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vpcInput",
@@ -569,7 +569,6 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) VpcInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
 func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string, config *DataAwsNeptuneOrderableDbInstanceConfig) DataAwsNeptuneOrderableDbInstance {
@@ -582,7 +581,7 @@ func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -595,12 +594,12 @@ func NewDataAwsNeptuneOrderableDbInstance_Override(d DataAwsNeptuneOrderableDbIn
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetEngine(val *string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetEngine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetEngineVersion(val *string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetEngineVersion(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -649,7 +648,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetId(val *string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetInstanceClass(val *string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetInstanceClass(val *string) {
 	if err := j.validateSetInstanceClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetInstanceClass(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetLicenseModel(val *string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetLicenseModel(val *string) {
 	if err := j.validateSetLicenseModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetLicenseModel(val *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetPreferredInstanceClasses(val *[]*string) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetPreferredInstanceClasses(val *[]*string) {
 	if err := j.validateSetPreferredInstanceClassesParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetPreferredInstanceClasses
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetVpc(val interface{}) {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SetVpc(val any) {
 	if err := j.validateSetVpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func DataAwsNeptuneOrderableDbInstance_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func DataAwsNeptuneOrderableDbInstance_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataAwsNeptuneOrderableDbInstance_IsConstruct(x interface{}) *bool {
+func DataAwsNeptuneOrderableDbInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNeptuneOrderableDbInstance_IsConstructParameters(x); err != nil {
@@ -770,7 +769,7 @@ func DataAwsNeptuneOrderableDbInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func DataAwsNeptuneOrderableDbInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataAwsNeptuneOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool {
+func DataAwsNeptuneOrderableDbInstance_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNeptuneOrderableDbInstance_IsTerraformDataSourceParameters(x); err != nil {
@@ -789,7 +788,7 @@ func DataAwsNeptuneOrderableDbInstance_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func DataAwsNeptuneOrderableDbInstance_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataAwsNeptuneOrderableDbInstance_IsTerraformElement(x interface{}) *bool {
+func DataAwsNeptuneOrderableDbInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataAwsNeptuneOrderableDbInstance_IsTerraformElementParameters(x); err != nil {
@@ -808,7 +807,7 @@ func DataAwsNeptuneOrderableDbInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,27 +825,27 @@ func DataAwsNeptuneOrderableDbInstance_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1072,8 +1071,8 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ResetVpc() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1085,8 +1084,8 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1098,8 +1097,8 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1111,8 +1110,8 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1137,8 +1136,8 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1149,4 +1148,3 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ToTerraform() interface{} 
 
 	return returns
 }
-

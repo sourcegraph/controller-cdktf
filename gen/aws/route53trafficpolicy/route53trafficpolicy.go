@@ -18,15 +18,15 @@ type Route53TrafficPolicy interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,15 +59,15 @@ type Route53TrafficPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -76,9 +76,9 @@ type Route53TrafficPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type Route53TrafficPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type Route53TrafficPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type Route53TrafficPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53TrafficPolicy
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Route53TrafficPolicy) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53TrafficPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_Route53TrafficPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53TrafficPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_Route53TrafficPolicy) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53TrafficPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_Route53TrafficPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53TrafficPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_Route53TrafficPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53TrafficPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_Route53TrafficPolicy) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53TrafficPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_Route53TrafficPolicy) Version() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_traffic_policy aws_route53_traffic_policy} Resource.
 func NewRoute53TrafficPolicy(scope constructs.Construct, id *string, config *Route53TrafficPolicyConfig) Route53TrafficPolicy {
 	_init_.Initialize()
@@ -410,7 +409,7 @@ func NewRoute53TrafficPolicy(scope constructs.Construct, id *string, config *Rou
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewRoute53TrafficPolicy_Override(r Route53TrafficPolicy, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetComment(val *string) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetDocument(val *string) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetDocument(val *string) {
 	if err := j.validateSetDocumentParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetDocument(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetId(val *string) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetName(val *string) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_Route53TrafficPolicy)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_Route53TrafficPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53TrafficPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func Route53TrafficPolicy_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func Route53TrafficPolicy_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53TrafficPolicy_IsConstruct(x interface{}) *bool {
+func Route53TrafficPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53TrafficPolicy_IsConstructParameters(x); err != nil {
@@ -587,7 +586,7 @@ func Route53TrafficPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func Route53TrafficPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53TrafficPolicy_IsTerraformElement(x interface{}) *bool {
+func Route53TrafficPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53TrafficPolicy_IsTerraformElementParameters(x); err != nil {
@@ -606,7 +605,7 @@ func Route53TrafficPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func Route53TrafficPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53TrafficPolicy_IsTerraformResource(x interface{}) *bool {
+func Route53TrafficPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53TrafficPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -625,7 +624,7 @@ func Route53TrafficPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,31 +649,31 @@ func (r *jsiiProxy_Route53TrafficPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53TrafficPolicy) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53TrafficPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,15 +801,15 @@ func (r *jsiiProxy_Route53TrafficPolicy) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53TrafficPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -829,7 +828,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -842,7 +841,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,18 +855,18 @@ func (r *jsiiProxy_Route53TrafficPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53TrafficPolicy) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -878,7 +877,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -889,7 +888,7 @@ func (r *jsiiProxy_Route53TrafficPolicy) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -917,8 +916,8 @@ func (r *jsiiProxy_Route53TrafficPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53TrafficPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -930,8 +929,8 @@ func (r *jsiiProxy_Route53TrafficPolicy) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53TrafficPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -943,8 +942,8 @@ func (r *jsiiProxy_Route53TrafficPolicy) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53TrafficPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -956,8 +955,8 @@ func (r *jsiiProxy_Route53TrafficPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53TrafficPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -982,8 +981,8 @@ func (r *jsiiProxy_Route53TrafficPolicy) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_Route53TrafficPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53TrafficPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -994,4 +993,3 @@ func (r *jsiiProxy_Route53TrafficPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

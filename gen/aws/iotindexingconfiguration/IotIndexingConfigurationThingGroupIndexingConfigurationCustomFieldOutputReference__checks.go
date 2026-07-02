@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustom
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustom
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIotIndexingConfigurationThingGroupIndexingConfigurationCustomFie
 
 	return nil
 }
-

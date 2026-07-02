@@ -114,7 +114,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetAs
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -374,4 +374,3 @@ func validateNewLaunchTemplateNetworkInterfacesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

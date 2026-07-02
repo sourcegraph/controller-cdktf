@@ -10,20 +10,20 @@ import (
 
 type ApiGatewayMethodSettingsSettingsOutputReference interface {
 	cdktf.ComplexObject
-	CacheDataEncrypted() interface{}
-	SetCacheDataEncrypted(val interface{})
-	CacheDataEncryptedInput() interface{}
+	CacheDataEncrypted() any
+	SetCacheDataEncrypted(val any)
+	CacheDataEncryptedInput() any
 	CacheTtlInSeconds() *float64
 	SetCacheTtlInSeconds(val *float64)
 	CacheTtlInSecondsInput() *float64
-	CachingEnabled() interface{}
-	SetCachingEnabled(val interface{})
-	CachingEnabledInput() interface{}
+	CachingEnabled() any
+	SetCachingEnabled(val any)
+	CachingEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type ApiGatewayMethodSettingsSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DataTraceEnabled() interface{}
-	SetDataTraceEnabled(val interface{})
-	DataTraceEnabledInput() interface{}
+	DataTraceEnabled() any
+	SetDataTraceEnabled(val any)
+	DataTraceEnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ApiGatewayMethodSettingsSettings
@@ -44,12 +44,12 @@ type ApiGatewayMethodSettingsSettingsOutputReference interface {
 	LoggingLevel() *string
 	SetLoggingLevel(val *string)
 	LoggingLevelInput() *string
-	MetricsEnabled() interface{}
-	SetMetricsEnabled(val interface{})
-	MetricsEnabledInput() interface{}
-	RequireAuthorizationForCacheControl() interface{}
-	SetRequireAuthorizationForCacheControl(val interface{})
-	RequireAuthorizationForCacheControlInput() interface{}
+	MetricsEnabled() any
+	SetMetricsEnabled(val any)
+	MetricsEnabledInput() any
+	RequireAuthorizationForCacheControl() any
+	SetRequireAuthorizationForCacheControl(val any)
+	RequireAuthorizationForCacheControlInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +70,7 @@ type ApiGatewayMethodSettingsSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ApiGatewayMethodSettingsSettingsOutputReference interface {
 	ResetUnauthorizedCacheControlHeaderStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ type jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CacheDataEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CacheDataEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheDataEncrypted",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CacheDataEnc
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CacheDataEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CacheDataEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cacheDataEncryptedInput",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CacheTtlInSe
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CachingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CachingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cachingEnabled",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CachingEnabl
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CachingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CachingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cachingEnabledInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CachingEnabl
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) CreationStac
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) DataTraceEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) DataTraceEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTraceEnabled",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) DataTraceEna
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) DataTraceEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) DataTraceEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataTraceEnabledInput",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) LoggingLevel
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) MetricsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) MetricsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"metricsEnabled",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) MetricsEnabl
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) MetricsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) MetricsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"metricsEnabledInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) MetricsEnabl
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) RequireAuthorizationForCacheControl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) RequireAuthorizationForCacheControl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAuthorizationForCacheControl",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) RequireAutho
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) RequireAuthorizationForCacheControlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) RequireAuthorizationForCacheControlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAuthorizationForCacheControlInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) Unauthorized
 	return returns
 }
 
-
 func NewApiGatewayMethodSettingsSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiGatewayMethodSettingsSettingsOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewApiGatewayMethodSettingsSettingsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewApiGatewayMethodSettingsSettingsOutputReference_Override(a ApiGatewayMet
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetCacheDataEncrypted(val interface{}) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetCacheDataEncrypted(val any) {
 	if err := j.validateSetCacheDataEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetCacheDataE
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetCacheTtlInSeconds(val *float64) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetCacheTtlInSeconds(val *float64) {
 	if err := j.validateSetCacheTtlInSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetCacheTtlIn
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetCachingEnabled(val interface{}) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetCachingEnabled(val any) {
 	if err := j.validateSetCachingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetCachingEna
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetDataTraceEnabled(val interface{}) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetDataTraceEnabled(val any) {
 	if err := j.validateSetDataTraceEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetDataTraceE
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetInternalValue(val *ApiGatewayMethodSettingsSettings) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetInternalValue(val *ApiGatewayMethodSettingsSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetLoggingLevel(val *string) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetLoggingLevel(val *string) {
 	if err := j.validateSetLoggingLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetLoggingLev
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetMetricsEnabled(val interface{}) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetMetricsEnabled(val any) {
 	if err := j.validateSetMetricsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetMetricsEna
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetRequireAuthorizationForCacheControl(val interface{}) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetRequireAuthorizationForCacheControl(val any) {
 	if err := j.validateSetRequireAuthorizationForCacheControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetRequireAut
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetThrottlingBurstLimit(val *float64) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetThrottlingBurstLimit(val *float64) {
 	if err := j.validateSetThrottlingBurstLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetThrottling
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetThrottlingRateLimit(val *float64) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetThrottlingRateLimit(val *float64) {
 	if err := j.validateSetThrottlingRateLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetThrottling
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference)SetUnauthorizedCacheControlHeaderStrategy(val *string) {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) SetUnauthorizedCacheControlHeaderStrategy(val *string) {
 	if err := j.validateSetUnauthorizedCacheControlHeaderStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,16 +591,16 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -845,16 +844,16 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) ResetUnautho
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) ToString() *
 
 	return returns
 }
-

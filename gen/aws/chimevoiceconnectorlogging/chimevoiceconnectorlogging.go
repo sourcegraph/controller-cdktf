@@ -15,25 +15,25 @@ type ChimeVoiceConnectorLogging interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableMediaMetricLogs() interface{}
-	SetEnableMediaMetricLogs(val interface{})
-	EnableMediaMetricLogsInput() interface{}
-	EnableSipLogs() interface{}
-	SetEnableSipLogs(val interface{})
-	EnableSipLogsInput() interface{}
+	EnableMediaMetricLogs() any
+	SetEnableMediaMetricLogs(val any)
+	EnableMediaMetricLogsInput() any
+	EnableSipLogs() any
+	SetEnableSipLogs(val any)
+	EnableSipLogsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,15 +56,15 @@ type ChimeVoiceConnectorLogging interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VoiceConnectorId() *string
@@ -74,9 +74,9 @@ type ChimeVoiceConnectorLogging interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type ChimeVoiceConnectorLogging interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type ChimeVoiceConnectorLogging interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type ChimeVoiceConnectorLogging interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ChimeVoiceConnectorLogging
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMediaMetricLogs",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogs() interface
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMediaMetricLogsInput",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogsInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableSipLogs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableSipLogs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSipLogs",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableSipLogs() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableSipLogsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableSipLogsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSipLogsInput",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -377,7 +377,6 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) VoiceConnectorIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource.
 func NewChimeVoiceConnectorLogging(scope constructs.Construct, id *string, config *ChimeVoiceConnectorLoggingConfig) ChimeVoiceConnectorLogging {
 	_init_.Initialize()
@@ -389,7 +388,7 @@ func NewChimeVoiceConnectorLogging(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewChimeVoiceConnectorLogging_Override(c ChimeVoiceConnectorLogging, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetConnection(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetCount(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetEnableMediaMetricLogs(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetEnableMediaMetricLogs(val any) {
 	if err := j.validateSetEnableMediaMetricLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetEnableMediaMetricLogs(val inter
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetEnableSipLogs(val interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetEnableSipLogs(val any) {
 	if err := j.validateSetEnableSipLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetEnableSipLogs(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -467,7 +466,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetId(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorLogging)SetVoiceConnectorId(val *string) {
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetVoiceConnectorId(val *string) {
 	if err := j.validateSetVoiceConnectorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func ChimeVoiceConnectorLogging_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func ChimeVoiceConnectorLogging_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ChimeVoiceConnectorLogging_IsConstruct(x interface{}) *bool {
+func ChimeVoiceConnectorLogging_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorLogging_IsConstructParameters(x); err != nil {
@@ -566,7 +565,7 @@ func ChimeVoiceConnectorLogging_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func ChimeVoiceConnectorLogging_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ChimeVoiceConnectorLogging_IsTerraformElement(x interface{}) *bool {
+func ChimeVoiceConnectorLogging_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorLogging_IsTerraformElementParameters(x); err != nil {
@@ -585,7 +584,7 @@ func ChimeVoiceConnectorLogging_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func ChimeVoiceConnectorLogging_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ChimeVoiceConnectorLogging_IsTerraformResource(x interface{}) *bool {
+func ChimeVoiceConnectorLogging_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChimeVoiceConnectorLogging_IsTerraformResourceParameters(x); err != nil {
@@ -604,7 +603,7 @@ func ChimeVoiceConnectorLogging_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -629,31 +628,31 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,15 +780,15 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -808,7 +807,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -821,7 +820,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,18 +834,18 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -904,8 +903,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -917,8 +916,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -930,8 +929,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -943,8 +942,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -969,8 +968,8 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -981,4 +980,3 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) ToTerraform() interface{} {
 
 	return returns
 }
-

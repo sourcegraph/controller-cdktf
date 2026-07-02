@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApiGatewayAuthorizer) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayAuthorizer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApiGatewayAuthorizer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApiGatewayAuthorizer) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayAuthorizer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApiGatewayAuthorizer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateApiGatewayAuthorizer_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateApiGatewayAuthorizer_IsConstructParameters(x interface{}) error {
+func validateApiGatewayAuthorizer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateApiGatewayAuthorizer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApiGatewayAuthorizer_IsTerraformElementParameters(x interface{}) error {
+func validateApiGatewayAuthorizer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateApiGatewayAuthorizer_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateApiGatewayAuthorizer_IsTerraformResourceParameters(x interface{}) error {
+func validateApiGatewayAuthorizer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetAuthorizerUriParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetProviderArnsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -486,4 +486,3 @@ func validateNewApiGatewayAuthorizerParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

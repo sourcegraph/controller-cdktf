@@ -98,7 +98,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMe
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetri
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupSelectionConditionStringLikeList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionStringLikeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupSelectionConditionStringLikeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupSelectionConditionStringLikeListParameters(terraformResour
 
 	return nil
 }
-

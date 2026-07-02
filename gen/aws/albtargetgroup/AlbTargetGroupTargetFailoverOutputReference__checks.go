@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAlbTargetGroupTargetFailoverOutputReferenceParameters(terraformR
 
 	return nil
 }
-

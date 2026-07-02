@@ -34,7 +34,7 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMedialiveInputSecurityGroupWhitelistRulesListParameters(terrafor
 
 	return nil
 }
-

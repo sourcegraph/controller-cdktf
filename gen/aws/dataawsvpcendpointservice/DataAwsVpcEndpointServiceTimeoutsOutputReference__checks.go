@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsVpcEndpointServiceTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcEndpointServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcEndpointServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsVpcEndpointServiceTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcEndpointServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsVpcEndpointServiceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsVpcEndpointServiceTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

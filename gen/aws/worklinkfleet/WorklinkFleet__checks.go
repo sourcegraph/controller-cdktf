@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorklinkFleet) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (w *jsiiProxy_WorklinkFleet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorklinkFleet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorklinkFleet) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (w *jsiiProxy_WorklinkFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorklinkFleet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateWorklinkFleet_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateWorklinkFleet_IsConstructParameters(x interface{}) error {
+func validateWorklinkFleet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateWorklinkFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorklinkFleet_IsTerraformElementParameters(x interface{}) error {
+func validateWorklinkFleet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateWorklinkFleet_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorklinkFleet_IsTerraformResourceParameters(x interface{}) error {
+func validateWorklinkFleet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_WorklinkFleet) validateSetAuditStreamArnParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorklinkFleet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_WorklinkFleet) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorklinkFleet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_WorklinkFleet) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleet) validateSetOptimizeForEndUserLocationParameters(val interface{}) error {
+func (j *jsiiProxy_WorklinkFleet) validateSetOptimizeForEndUserLocationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,7 +424,7 @@ func (j *jsiiProxy_WorklinkFleet) validateSetOptimizeForEndUserLocationParameter
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorklinkFleet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -488,4 +488,3 @@ func validateNewWorklinkFleetParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

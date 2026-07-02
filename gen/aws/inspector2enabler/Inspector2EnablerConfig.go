@@ -6,9 +6,9 @@ import (
 
 type Inspector2EnablerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Inspector2EnablerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
 	AccountIds *[]*string `field:"required" json:"accountIds" yaml:"accountIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
@@ -33,4 +33,3 @@ type Inspector2EnablerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
 	Timeouts *Inspector2EnablerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

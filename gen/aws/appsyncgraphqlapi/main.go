@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
-		reflect.TypeOf((*AppsyncGraphqlApi)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApi](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticationProvider", GoGetter: "AdditionalAuthenticationProvider"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticationProviderInput", GoGetter: "AdditionalAuthenticationProviderInput"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xrayEnabled", GoGetter: "XrayEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "xrayEnabledInput", GoGetter: "XrayEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApi{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProvider",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProvider)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProvider](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerResultTtlInSeconds", GoGetter: "AuthorizerResultTtlInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizerResultTtlInSecondsInput", GoGetter: "AuthorizerResultTtlInSecondsInput"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,7 +150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderList",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderList)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -172,11 +172,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authTtl", GoGetter: "AuthTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "authTtlInput", GoGetter: "AuthTtlInput"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationType", GoGetter: "AuthenticationType"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationTypeInput", GoGetter: "AuthenticationTypeInput"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolConfig", GoGetter: "UserPoolConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolConfigInput", GoGetter: "UserPoolConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,11 +265,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appIdClientRegex", GoGetter: "AppIdClientRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "appIdClientRegexInput", GoGetter: "AppIdClientRegexInput"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,15 +309,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiLambdaAuthorizerConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiLambdaAuthorizerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerResultTtlInSeconds", GoGetter: "AuthorizerResultTtlInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizerResultTtlInSecondsInput", GoGetter: "AuthorizerResultTtlInSecondsInput"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,11 +357,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLogConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiLogConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLogConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogsRoleArn", GoGetter: "CloudwatchLogsRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogsRoleArnInput", GoGetter: "CloudwatchLogsRoleArnInput"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,11 +400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiOpenidConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiOpenidConnectConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiOpenidConnectConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiOpenidConnectConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authTtl", GoGetter: "AuthTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "authTtlInput", GoGetter: "AuthTtlInput"},
@@ -439,7 +439,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -447,11 +447,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfig",
-		reflect.TypeOf((*AppsyncGraphqlApiUserPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiUserPoolConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfigOutputReference",
-		reflect.TypeOf((*AppsyncGraphqlApiUserPoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppsyncGraphqlApiUserPoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appIdClientRegex", GoGetter: "AppIdClientRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "appIdClientRegexInput", GoGetter: "AppIdClientRegexInput"},
@@ -485,7 +485,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

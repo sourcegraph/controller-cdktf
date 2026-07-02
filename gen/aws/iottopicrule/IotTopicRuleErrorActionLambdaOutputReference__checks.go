@@ -98,7 +98,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionLambdaOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionLambdaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionLambdaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIotTopicRuleErrorActionLambdaOutputReferenceParameters(terraform
 
 	return nil
 }
-

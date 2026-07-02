@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
-		reflect.TypeOf((*DataAwsWafregionalIpset)(nil)).Elem(),
+		reflect.TypeFor[DataAwsWafregionalIpset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -50,7 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsWafregionalIpset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -58,6 +58,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpsetConfig",
-		reflect.TypeOf((*DataAwsWafregionalIpsetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsWafregionalIpsetConfig](),
 	)
 }

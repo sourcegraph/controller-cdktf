@@ -12,9 +12,9 @@ type AppsyncFunctionRuntimeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type AppsyncFunctionRuntimeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type AppsyncFunctionRuntimeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_AppsyncFunctionRuntimeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewAppsyncFunctionRuntimeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsyncFunctionRuntimeOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewAppsyncFunctionRuntimeOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewAppsyncFunctionRuntimeOutputReference_Override(a AppsyncFunctionRuntimeO
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetInternalValue(val *AppsyncFunctionRuntime) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetInternalValue(val *AppsyncFunctionRuntime) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetInternalValue(val *A
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetName(val *string) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetRuntimeVersion(val *string) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetRuntimeVersion(val *string) {
 	if err := j.validateSetRuntimeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetRuntimeVersion(val *
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsyncFunctionRuntimeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (a *jsiiProxy_AppsyncFunctionRuntimeOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (a *jsiiProxy_AwsProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AwsProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func validateAwsProvider_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateAwsProvider_IsConstructParameters(x interface{}) error {
+func validateAwsProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func validateAwsProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAwsProvider_IsTerraformElementParameters(x interface{}) error {
+func validateAwsProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func validateAwsProvider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAwsProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateAwsProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func validateAwsProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -99,7 +99,7 @@ func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -127,7 +127,7 @@ func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetEndpointsParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetEndpointsParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_AwsProvider) validateSetEndpointsParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetInsecureParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -228,7 +228,7 @@ func (j *jsiiProxy_AwsProvider) validateSetInsecureParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetS3ForcePathStyleParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetS3ForcePathStyleParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -245,7 +245,7 @@ func (j *jsiiProxy_AwsProvider) validateSetS3ForcePathStyleParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetS3UsePathStyleParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetS3UsePathStyleParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -262,7 +262,7 @@ func (j *jsiiProxy_AwsProvider) validateSetS3UsePathStyleParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetSkipCredentialsValidationParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetSkipCredentialsValidationParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -279,7 +279,7 @@ func (j *jsiiProxy_AwsProvider) validateSetSkipCredentialsValidationParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetSkipGetEc2PlatformsParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetSkipGetEc2PlatformsParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -296,7 +296,7 @@ func (j *jsiiProxy_AwsProvider) validateSetSkipGetEc2PlatformsParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetSkipRegionValidationParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetSkipRegionValidationParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -313,7 +313,7 @@ func (j *jsiiProxy_AwsProvider) validateSetSkipRegionValidationParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetSkipRequestingAccountIdParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetSkipRequestingAccountIdParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -330,7 +330,7 @@ func (j *jsiiProxy_AwsProvider) validateSetSkipRequestingAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetUseDualstackEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetUseDualstackEndpointParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -347,7 +347,7 @@ func (j *jsiiProxy_AwsProvider) validateSetUseDualstackEndpointParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetUseFipsEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_AwsProvider) validateSetUseFipsEndpointParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -379,4 +379,3 @@ func validateNewAwsProviderParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

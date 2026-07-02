@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataAwsRoute53TrafficPolicyDocumentRuleRegionListParameters(terr
 
 	return nil
 }
-

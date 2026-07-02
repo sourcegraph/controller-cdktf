@@ -98,7 +98,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetEncryp
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -290,4 +290,3 @@ func validateNewOpsworksMysqlLayerEbsVolumeOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

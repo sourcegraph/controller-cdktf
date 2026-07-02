@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingLis
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListSt
 
 	return nil
 }
-

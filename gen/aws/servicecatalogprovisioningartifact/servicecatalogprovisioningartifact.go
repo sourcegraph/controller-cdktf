@@ -15,21 +15,21 @@ type ServicecatalogProvisioningArtifact interface {
 	AcceptLanguage() *string
 	SetAcceptLanguage(val *string)
 	AcceptLanguageInput() *string
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
+	Active() any
+	SetActive(val any)
+	ActiveInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -38,9 +38,9 @@ type ServicecatalogProvisioningArtifact interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableTemplateValidation() interface{}
-	SetDisableTemplateValidation(val interface{})
-	DisableTemplateValidationInput() interface{}
+	DisableTemplateValidation() any
+	SetDisableTemplateValidation(val any)
+	DisableTemplateValidationInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,11 +72,11 @@ type ServicecatalogProvisioningArtifact interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TemplatePhysicalId() *string
 	SetTemplatePhysicalId(val *string)
 	TemplatePhysicalIdInput() *string
@@ -86,11 +86,11 @@ type ServicecatalogProvisioningArtifact interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ServicecatalogProvisioningArtifactTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -98,9 +98,9 @@ type ServicecatalogProvisioningArtifact interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type ServicecatalogProvisioningArtifact interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type ServicecatalogProvisioningArtifact interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,17 +152,17 @@ type ServicecatalogProvisioningArtifact interface {
 	ResetTemplateUrl()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServicecatalogProvisioningArtifact
@@ -190,8 +190,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) AcceptLanguageInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Active() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Active() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"active",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Active() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) ActiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) ActiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeInput",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) DescriptionInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) DisableTemplateValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) DisableTemplateValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTemplateValidation",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) DisableTemplateValidation
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) DisableTemplateValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) DisableTemplateValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTemplateValidationInput",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Timeouts() Servicecatalog
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -580,7 +580,6 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
 func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *string, config *ServicecatalogProvisioningArtifactConfig) ServicecatalogProvisioningArtifact {
 	_init_.Initialize()
@@ -592,7 +591,7 @@ func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -605,12 +604,12 @@ func NewServicecatalogProvisioningArtifact_Override(s ServicecatalogProvisioning
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetAcceptLanguage(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetAcceptLanguage(val *string) {
 	if err := j.validateSetAcceptLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetAcceptLanguage(val *str
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetActive(val interface{}) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetActive(val any) {
 	if err := j.validateSetActiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetActive(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetCount(val interface{}) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetDescription(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetDisableTemplateValidation(val interface{}) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetDisableTemplateValidation(val any) {
 	if err := j.validateSetDisableTemplateValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetDisableTemplateValidati
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -692,7 +691,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetGuidance(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetGuidance(val *string) {
 	if err := j.validateSetGuidanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetGuidance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetId(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetName(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProductId(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetProductId(val *string) {
 	if err := j.validateSetProductIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProductId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -755,7 +754,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetTemplatePhysicalId(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetTemplatePhysicalId(val *string) {
 	if err := j.validateSetTemplatePhysicalIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetTemplatePhysicalId(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetTemplateUrl(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetTemplateUrl(val *string) {
 	if err := j.validateSetTemplateUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetTemplateUrl(val *string
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetType(val *string) {
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func ServicecatalogProvisioningArtifact_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func ServicecatalogProvisioningArtifact_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServicecatalogProvisioningArtifact_IsConstruct(x interface{}) *bool {
+func ServicecatalogProvisioningArtifact_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogProvisioningArtifact_IsConstructParameters(x); err != nil {
@@ -846,7 +845,7 @@ func ServicecatalogProvisioningArtifact_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func ServicecatalogProvisioningArtifact_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServicecatalogProvisioningArtifact_IsTerraformElement(x interface{}) *bool {
+func ServicecatalogProvisioningArtifact_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogProvisioningArtifact_IsTerraformElementParameters(x); err != nil {
@@ -865,7 +864,7 @@ func ServicecatalogProvisioningArtifact_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func ServicecatalogProvisioningArtifact_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func ServicecatalogProvisioningArtifact_IsTerraformResource(x interface{}) *bool {
+func ServicecatalogProvisioningArtifact_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServicecatalogProvisioningArtifact_IsTerraformResourceParameters(x); err != nil {
@@ -884,7 +883,7 @@ func ServicecatalogProvisioningArtifact_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -909,31 +908,31 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,15 +1060,15 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1088,7 +1087,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) InterpolationForAttribute
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,18 +1114,18 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1137,7 +1136,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1148,7 +1147,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1159,7 +1158,7 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) PutTimeouts(value *Servic
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1259,8 +1258,8 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1272,8 +1271,8 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) SynthesizeAttributes() *m
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1285,8 +1284,8 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) SynthesizeHclAttributes()
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1298,8 +1297,8 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToHclTerraform() interfac
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1324,8 +1323,8 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1336,4 +1335,3 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ToTerraform() interface{}
 
 	return returns
 }
-

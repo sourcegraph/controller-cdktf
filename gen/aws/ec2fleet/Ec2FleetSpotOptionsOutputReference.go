@@ -15,9 +15,9 @@ type Ec2FleetSpotOptionsOutputReference interface {
 	AllocationStrategyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type Ec2FleetSpotOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type Ec2FleetSpotOptionsOutputReference interface {
 	ResetMaintenanceStrategies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) AllocationStrategyInput()
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewEc2FleetSpotOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Ec2FleetSpotOptionsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewEc2FleetSpotOptionsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewEc2FleetSpotOptionsOutputReference_Override(e Ec2FleetSpotOptionsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetAllocationStrategy(val *string) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetAllocationStrategy(val *string) {
 	if err := j.validateSetAllocationStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetAllocationStrategy(val 
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetInstanceInterruptionBehavior(val *string) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetInstanceInterruptionBehavior(val *string) {
 	if err := j.validateSetInstanceInterruptionBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetInstanceInterruptionBeh
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetInstancePoolsToUseCount(val *float64) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetInstancePoolsToUseCount(val *float64) {
 	if err := j.validateSetInstancePoolsToUseCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetInstancePoolsToUseCount
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetInternalValue(val *Ec2FleetSpotOptions) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetInternalValue(val *Ec2FleetSpotOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetInternalValue(val *Ec2F
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) PutMaintenanceStrategies(
 	_jsii_.InvokeVoid(
 		e,
 		"putMaintenanceStrategies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) ResetMaintenanceStrategie
 	)
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) ToString() *string {
 
 	return returns
 }
-

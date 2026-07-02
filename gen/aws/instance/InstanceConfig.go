@@ -6,9 +6,9 @@ import (
 
 type InstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type InstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#ami Instance#ami}.
 	Ami *string `field:"optional" json:"ami" yaml:"ami"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#associate_public_ip_address Instance#associate_public_ip_address}.
-	AssociatePublicIpAddress interface{} `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
+	AssociatePublicIpAddress any `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#availability_zone Instance#availability_zone}.
 	AvailabilityZone *string `field:"optional" json:"availabilityZone" yaml:"availabilityZone"`
 	// capacity_reservation_specification block.
@@ -38,15 +38,15 @@ type InstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#credit_specification Instance#credit_specification}
 	CreditSpecification *InstanceCreditSpecification `field:"optional" json:"creditSpecification" yaml:"creditSpecification"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#disable_api_stop Instance#disable_api_stop}.
-	DisableApiStop interface{} `field:"optional" json:"disableApiStop" yaml:"disableApiStop"`
+	DisableApiStop any `field:"optional" json:"disableApiStop" yaml:"disableApiStop"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#disable_api_termination Instance#disable_api_termination}.
-	DisableApiTermination interface{} `field:"optional" json:"disableApiTermination" yaml:"disableApiTermination"`
+	DisableApiTermination any `field:"optional" json:"disableApiTermination" yaml:"disableApiTermination"`
 	// ebs_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#ebs_block_device Instance#ebs_block_device}
-	EbsBlockDevice interface{} `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
+	EbsBlockDevice any `field:"optional" json:"ebsBlockDevice" yaml:"ebsBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#ebs_optimized Instance#ebs_optimized}.
-	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
+	EbsOptimized any `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// enclave_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#enclave_options Instance#enclave_options}
@@ -54,11 +54,11 @@ type InstanceConfig struct {
 	// ephemeral_block_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#ephemeral_block_device Instance#ephemeral_block_device}
-	EphemeralBlockDevice interface{} `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
+	EphemeralBlockDevice any `field:"optional" json:"ephemeralBlockDevice" yaml:"ephemeralBlockDevice"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#get_password_data Instance#get_password_data}.
-	FetchPasswordData interface{} `field:"optional" json:"fetchPasswordData" yaml:"fetchPasswordData"`
+	FetchPasswordData any `field:"optional" json:"fetchPasswordData" yaml:"fetchPasswordData"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#hibernation Instance#hibernation}.
-	Hibernation interface{} `field:"optional" json:"hibernation" yaml:"hibernation"`
+	Hibernation any `field:"optional" json:"hibernation" yaml:"hibernation"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#host_id Instance#host_id}.
 	HostId *string `field:"optional" json:"hostId" yaml:"hostId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#host_resource_group_arn Instance#host_resource_group_arn}.
@@ -93,11 +93,11 @@ type InstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#metadata_options Instance#metadata_options}
 	MetadataOptions *InstanceMetadataOptions `field:"optional" json:"metadataOptions" yaml:"metadataOptions"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#monitoring Instance#monitoring}.
-	Monitoring interface{} `field:"optional" json:"monitoring" yaml:"monitoring"`
+	Monitoring any `field:"optional" json:"monitoring" yaml:"monitoring"`
 	// network_interface block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#network_interface Instance#network_interface}
-	NetworkInterface interface{} `field:"optional" json:"networkInterface" yaml:"networkInterface"`
+	NetworkInterface any `field:"optional" json:"networkInterface" yaml:"networkInterface"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#placement_group Instance#placement_group}.
 	PlacementGroup *string `field:"optional" json:"placementGroup" yaml:"placementGroup"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#placement_partition_number Instance#placement_partition_number}.
@@ -117,7 +117,7 @@ type InstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#security_groups Instance#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#source_dest_check Instance#source_dest_check}.
-	SourceDestCheck interface{} `field:"optional" json:"sourceDestCheck" yaml:"sourceDestCheck"`
+	SourceDestCheck any `field:"optional" json:"sourceDestCheck" yaml:"sourceDestCheck"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#subnet_id Instance#subnet_id}.
 	SubnetId *string `field:"optional" json:"subnetId" yaml:"subnetId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#tags Instance#tags}.
@@ -135,10 +135,9 @@ type InstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#user_data_base64 Instance#user_data_base64}.
 	UserDataBase64 *string `field:"optional" json:"userDataBase64" yaml:"userDataBase64"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#user_data_replace_on_change Instance#user_data_replace_on_change}.
-	UserDataReplaceOnChange interface{} `field:"optional" json:"userDataReplaceOnChange" yaml:"userDataReplaceOnChange"`
+	UserDataReplaceOnChange any `field:"optional" json:"userDataReplaceOnChange" yaml:"userDataReplaceOnChange"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#volume_tags Instance#volume_tags}.
 	VolumeTags *map[string]*string `field:"optional" json:"volumeTags" yaml:"volumeTags"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/instance#vpc_security_group_ids Instance#vpc_security_group_ids}.
 	VpcSecurityGroupIds *[]*string `field:"optional" json:"vpcSecurityGroupIds" yaml:"vpcSecurityGroupIds"`
 }
-

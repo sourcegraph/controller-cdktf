@@ -19,7 +19,7 @@ func (w *jsiiProxy_WafRegexMatchSet) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (w *jsiiProxy_WafRegexMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WafRegexMatchSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WafRegexMatchSet) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (w *jsiiProxy_WafRegexMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WafRegexMatchSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (w *jsiiProxy_WafRegexMatchSet) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (w *jsiiProxy_WafRegexMatchSet) validatePutRegexMatchTupleParameters(value interface{}) error {
+func (w *jsiiProxy_WafRegexMatchSet) validatePutRegexMatchTupleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateWafRegexMatchSet_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateWafRegexMatchSet_IsConstructParameters(x interface{}) error {
+func validateWafRegexMatchSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateWafRegexMatchSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWafRegexMatchSet_IsTerraformElementParameters(x interface{}) error {
+func validateWafRegexMatchSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateWafRegexMatchSet_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateWafRegexMatchSet_IsTerraformResourceParameters(x interface{}) error {
+func validateWafRegexMatchSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateWafRegexMatchSet_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_WafRegexMatchSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WafRegexMatchSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_WafRegexMatchSet) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_WafRegexMatchSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WafRegexMatchSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_WafRegexMatchSet) validateSetNameParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_WafRegexMatchSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WafRegexMatchSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewWafRegexMatchSetParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

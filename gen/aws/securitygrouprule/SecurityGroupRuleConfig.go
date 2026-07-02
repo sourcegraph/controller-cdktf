@@ -6,9 +6,9 @@ import (
 
 type SecurityGroupRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SecurityGroupRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group_rule#from_port SecurityGroupRule#from_port}.
 	FromPort *float64 `field:"required" json:"fromPort" yaml:"fromPort"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}.
@@ -43,7 +43,7 @@ type SecurityGroupRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group_rule#prefix_list_ids SecurityGroupRule#prefix_list_ids}.
 	PrefixListIds *[]*string `field:"optional" json:"prefixListIds" yaml:"prefixListIds"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group_rule#self SecurityGroupRule#self}.
-	SelfAttribute interface{} `field:"optional" json:"selfAttribute" yaml:"selfAttribute"`
+	SelfAttribute any `field:"optional" json:"selfAttribute" yaml:"selfAttribute"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group_rule#source_security_group_id SecurityGroupRule#source_security_group_id}.
 	SourceSecurityGroupId *string `field:"optional" json:"sourceSecurityGroupId" yaml:"sourceSecurityGroupId"`
 	// timeouts block.
@@ -51,4 +51,3 @@ type SecurityGroupRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/security_group_rule#timeouts SecurityGroupRule#timeouts}
 	Timeouts *SecurityGroupRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

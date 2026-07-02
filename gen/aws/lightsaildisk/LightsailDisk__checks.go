@@ -19,7 +19,7 @@ func (l *jsiiProxy_LightsailDisk) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDisk) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LightsailDisk) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LightsailDisk) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LightsailDisk) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLightsailDisk_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateLightsailDisk_IsConstructParameters(x interface{}) error {
+func validateLightsailDisk_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLightsailDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLightsailDisk_IsTerraformElementParameters(x interface{}) error {
+func validateLightsailDisk_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLightsailDisk_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLightsailDisk_IsTerraformResourceParameters(x interface{}) error {
+func validateLightsailDisk_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LightsailDisk) validateSetAvailabilityZoneParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDisk) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailDisk) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LightsailDisk) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDisk) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailDisk) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LightsailDisk) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDisk) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LightsailDisk) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewLightsailDiskParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

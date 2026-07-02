@@ -98,7 +98,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutp
 	return nil
 }
 
-func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputR
 
 	return nil
 }
-

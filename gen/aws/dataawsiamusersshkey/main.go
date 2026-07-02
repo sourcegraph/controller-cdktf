@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
-		reflect.TypeOf((*DataAwsIamUserSshKey)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamUserSshKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataAwsIamUserSshKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,6 +65,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKeyConfig",
-		reflect.TypeOf((*DataAwsIamUserSshKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataAwsIamUserSshKeyConfig](),
 	)
 }

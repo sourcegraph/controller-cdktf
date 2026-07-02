@@ -15,15 +15,15 @@ type Route53ResolverQueryLogConfigAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,11 +50,11 @@ type Route53ResolverQueryLogConfigAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResolverQueryLogConfigId() *string
 	SetResolverQueryLogConfigId(val *string)
 	ResolverQueryLogConfigIdInput() *string
@@ -64,16 +64,16 @@ type Route53ResolverQueryLogConfigAssociation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type Route53ResolverQueryLogConfigAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type Route53ResolverQueryLogConfigAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -114,17 +114,17 @@ type Route53ResolverQueryLogConfigAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Route53ResolverQueryLogConfigAssociation
@@ -142,8 +142,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) Provisioners() *[]i
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) TerraformResourceTy
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association} Resource.
 func NewRoute53ResolverQueryLogConfigAssociation(scope constructs.Construct, id *string, config *Route53ResolverQueryLogConfigAssociationConfig) Route53ResolverQueryLogConfigAssociation {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewRoute53ResolverQueryLogConfigAssociation(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewRoute53ResolverQueryLogConfigAssociation_Override(r Route53ResolverQuery
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetId(val *string) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetProvisioners(val 
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetResolverQueryLogConfigId(val *string) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetResolverQueryLogConfigId(val *string) {
 	if err := j.validateSetResolverQueryLogConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetResolverQueryLogC
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation)SetResourceId(val *string) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SetResourceId(val *string) {
 	if err := j.validateSetResourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func Route53ResolverQueryLogConfigAssociation_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func Route53ResolverQueryLogConfigAssociation_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Route53ResolverQueryLogConfigAssociation_IsConstruct(x interface{}) *bool {
+func Route53ResolverQueryLogConfigAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverQueryLogConfigAssociation_IsConstructParameters(x); err != nil {
@@ -530,7 +529,7 @@ func Route53ResolverQueryLogConfigAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func Route53ResolverQueryLogConfigAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Route53ResolverQueryLogConfigAssociation_IsTerraformElement(x interface{}) *bool {
+func Route53ResolverQueryLogConfigAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverQueryLogConfigAssociation_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func Route53ResolverQueryLogConfigAssociation_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func Route53ResolverQueryLogConfigAssociation_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func Route53ResolverQueryLogConfigAssociation_IsTerraformResource(x interface{}) *bool {
+func Route53ResolverQueryLogConfigAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRoute53ResolverQueryLogConfigAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -568,7 +567,7 @@ func Route53ResolverQueryLogConfigAssociation_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,31 +592,31 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetBooleanAttribute
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetListAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetNumberAttribute(
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetNumberListAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetNumberMapAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetStringAttribute(
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,15 +744,15 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) GetStringMapAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -772,7 +771,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -785,7 +784,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) InterpolationForAtt
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,18 +798,18 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -821,7 +820,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -832,7 +831,7 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -852,8 +851,8 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ResetOverrideLogica
 	)
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -865,8 +864,8 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SynthesizeAttribute
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -878,8 +877,8 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) SynthesizeHclAttrib
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -891,8 +890,8 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToHclTerraform() in
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -917,8 +916,8 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToString() *string 
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -929,4 +928,3 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfigAssociation) ToTerraform() inter
 
 	return returns
 }
-

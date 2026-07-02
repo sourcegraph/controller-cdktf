@@ -34,7 +34,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList) valida
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLambdaEventSourceMappingSourceAccessConfigurationListParameters(
 
 	return nil
 }
-

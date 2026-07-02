@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionFixedResponseOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionFixedResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerDefaultActionFixedResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAlbListenerDefaultActionFixedResponseOutputReferenceParameters(t
 
 	return nil
 }
-

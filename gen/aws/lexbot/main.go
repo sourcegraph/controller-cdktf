@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBot",
-		reflect.TypeOf((*LexBot)(nil)).Elem(),
+		reflect.TypeFor[LexBot](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortStatement", GoGetter: "AbortStatement"},
 			_jsii_.MemberProperty{JsiiProperty: "abortStatementInput", GoGetter: "AbortStatementInput"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "voiceId", GoGetter: "VoiceId"},
 			_jsii_.MemberProperty{JsiiProperty: "voiceIdInput", GoGetter: "VoiceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBot{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,15 +116,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatement",
-		reflect.TypeOf((*LexBotAbortStatement)(nil)).Elem(),
+		reflect.TypeFor[LexBotAbortStatement](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage",
-		reflect.TypeOf((*LexBotAbortStatementMessage)(nil)).Elem(),
+		reflect.TypeFor[LexBotAbortStatementMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList",
-		reflect.TypeOf((*LexBotAbortStatementMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexBotAbortStatementMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotAbortStatementMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -146,7 +146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference",
-		reflect.TypeOf((*LexBotAbortStatementMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexBotAbortStatementMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotAbortStatementMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,7 +185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference",
-		reflect.TypeOf((*LexBotAbortStatementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexBotAbortStatementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotAbortStatementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -223,15 +223,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPrompt",
-		reflect.TypeOf((*LexBotClarificationPrompt)(nil)).Elem(),
+		reflect.TypeFor[LexBotClarificationPrompt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage",
-		reflect.TypeOf((*LexBotClarificationPromptMessage)(nil)).Elem(),
+		reflect.TypeFor[LexBotClarificationPromptMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList",
-		reflect.TypeOf((*LexBotClarificationPromptMessageList)(nil)).Elem(),
+		reflect.TypeFor[LexBotClarificationPromptMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotClarificationPromptMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -253,7 +253,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference",
-		reflect.TypeOf((*LexBotClarificationPromptMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexBotClarificationPromptMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotClarificationPromptMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -292,7 +292,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference",
-		reflect.TypeOf((*LexBotClarificationPromptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexBotClarificationPromptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotClarificationPromptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -332,15 +332,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotConfig",
-		reflect.TypeOf((*LexBotConfig)(nil)).Elem(),
+		reflect.TypeFor[LexBotConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotIntent",
-		reflect.TypeOf((*LexBotIntent)(nil)).Elem(),
+		reflect.TypeFor[LexBotIntent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotIntentList",
-		reflect.TypeOf((*LexBotIntentList)(nil)).Elem(),
+		reflect.TypeFor[LexBotIntentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -354,7 +354,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotIntentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -362,7 +362,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotIntentOutputReference",
-		reflect.TypeOf((*LexBotIntentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexBotIntentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -390,7 +390,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotIntentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -398,11 +398,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lexBot.LexBotTimeouts",
-		reflect.TypeOf((*LexBotTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LexBotTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference",
-		reflect.TypeOf((*LexBotTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LexBotTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LexBotTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

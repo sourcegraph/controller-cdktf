@@ -34,7 +34,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLakeformationPermissionsLfTagPolicyExpressionListParameters(terr
 
 	return nil
 }
-

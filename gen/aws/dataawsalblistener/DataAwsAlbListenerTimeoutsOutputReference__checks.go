@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsAlbListenerTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbListenerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAlbListenerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataAwsAlbListenerTimeoutsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataAwsAlbListenerTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

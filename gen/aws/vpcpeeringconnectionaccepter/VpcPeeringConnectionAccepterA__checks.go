@@ -19,7 +19,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateAddMoveTargetParameter
 	return nil
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateVpcPeeringConnectionAccepterA_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateVpcPeeringConnectionAccepterA_IsConstructParameters(x interface{}) error {
+func validateVpcPeeringConnectionAccepterA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateVpcPeeringConnectionAccepterA_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateVpcPeeringConnectionAccepterA_IsTerraformElementParameters(x interface{}) error {
+func validateVpcPeeringConnectionAccepterA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateVpcPeeringConnectionAccepterA_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateVpcPeeringConnectionAccepterA_IsTerraformResourceParameters(x interface{}) error {
+func validateVpcPeeringConnectionAccepterA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateVpcPeeringConnectionAccepterA_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetAutoAcceptParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetAutoAcceptParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetAutoAcceptParameter
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -403,7 +403,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -491,4 +491,3 @@ func validateNewVpcPeeringConnectionAccepterAParameters(scope constructs.Constru
 
 	return nil
 }
-

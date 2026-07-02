@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
-		reflect.TypeOf((*LambdaFunctionUrl)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionUrl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "urlId", GoGetter: "UrlId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionUrl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlConfig",
-		reflect.TypeOf((*LambdaFunctionUrlConfig)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionUrlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCors",
-		reflect.TypeOf((*LambdaFunctionUrlCors)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionUrlCors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCorsOutputReference",
-		reflect.TypeOf((*LambdaFunctionUrlCorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionUrlCorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionUrlCorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeouts",
-		reflect.TypeOf((*LambdaFunctionUrlTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionUrlTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeoutsOutputReference",
-		reflect.TypeOf((*LambdaFunctionUrlTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LambdaFunctionUrlTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

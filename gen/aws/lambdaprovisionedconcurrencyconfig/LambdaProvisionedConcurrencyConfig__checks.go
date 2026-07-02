@@ -19,7 +19,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateAddMoveTargetPara
 	return nil
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveFromIdParamet
 	return nil
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateLambdaProvisionedConcurrencyConfig_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateLambdaProvisionedConcurrencyConfig_IsConstructParameters(x interface{}) error {
+func validateLambdaProvisionedConcurrencyConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateLambdaProvisionedConcurrencyConfig_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateLambdaProvisionedConcurrencyConfig_IsTerraformElementParameters(x interface{}) error {
+func validateLambdaProvisionedConcurrencyConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateLambdaProvisionedConcurrencyConfig_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateLambdaProvisionedConcurrencyConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateLambdaProvisionedConcurrencyConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateLambdaProvisionedConcurrencyConfig_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetProvisionedCon
 	return nil
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewLambdaProvisionedConcurrencyConfigParameters(scope constructs.Co
 
 	return nil
 }
-

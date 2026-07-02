@@ -12,9 +12,9 @@ type S3BucketNotificationLambdaFunctionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,8 +39,8 @@ type S3BucketNotificationLambdaFunctionOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LambdaFunctionArn() *string
 	SetLambdaFunctionArn(val *string)
 	LambdaFunctionArnInput() *string
@@ -55,7 +55,7 @@ type S3BucketNotificationLambdaFunctionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type S3BucketNotificationLambdaFunctionOutputReference interface {
 	ResetLambdaFunctionArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ type jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) IdInput() 
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) TerraformR
 	return returns
 }
 
-
 func NewS3BucketNotificationLambdaFunctionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketNotificationLambdaFunctionOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewS3BucketNotificationLambdaFunctionOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationLambdaFunctionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewS3BucketNotificationLambdaFunctionOutputReference_Override(s S3BucketNot
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationLambdaFunctionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetEvents(val *[]*string) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetEvents(val *[]*string) {
 	if err := j.validateSetEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetEvents(v
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetFilterPrefix(val *string) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetFilterPrefix(val *string) {
 	if err := j.validateSetFilterPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetFilterPr
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetFilterSuffix(val *string) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetFilterSuffix(val *string) {
 	if err := j.validateSetFilterSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetFilterSu
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetId(val *string) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetId(val *
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetLambdaFunctionArn(val *string) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetLambdaFunctionArn(val *string) {
 	if err := j.validateSetLambdaFunctionArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetLambdaFu
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) ComputeFqn
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetBoolean
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetBoolean
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetListAtt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetNumberA
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetNumberL
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetNumberM
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetStringA
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) GetStringM
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) Interpolat
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) ResetLambd
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) ToString()
 
 	return returns
 }
-

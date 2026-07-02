@@ -98,7 +98,7 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InstanceCreditSpecificationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewInstanceCreditSpecificationOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

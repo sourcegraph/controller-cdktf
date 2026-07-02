@@ -34,7 +34,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewS3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionLis
 
 	return nil
 }
-

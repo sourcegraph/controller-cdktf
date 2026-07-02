@@ -15,15 +15,15 @@ type Macie2ClassificationExportConfiguration interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,26 +50,26 @@ type Macie2ClassificationExportConfiguration interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	S3Destination() Macie2ClassificationExportConfigurationS3DestinationOutputReference
 	S3DestinationInput() *Macie2ClassificationExportConfigurationS3Destination
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type Macie2ClassificationExportConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -99,7 +99,7 @@ type Macie2ClassificationExportConfiguration interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -112,17 +112,17 @@ type Macie2ClassificationExportConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetS3Destination()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Macie2ClassificationExportConfiguration
@@ -140,8 +140,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -330,7 +330,6 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
 func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *string, config *Macie2ClassificationExportConfigurationConfig) Macie2ClassificationExportConfiguration {
 	_init_.Initialize()
@@ -342,7 +341,7 @@ func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -355,12 +354,12 @@ func NewMacie2ClassificationExportConfiguration_Override(m Macie2ClassificationE
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetConnection(val interface{}) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetCount(val interface{}) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -390,7 +389,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -398,7 +397,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetId(val *string) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -428,7 +427,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func Macie2ClassificationExportConfiguration_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func Macie2ClassificationExportConfiguration_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Macie2ClassificationExportConfiguration_IsConstruct(x interface{}) *bool {
+func Macie2ClassificationExportConfiguration_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2ClassificationExportConfiguration_IsConstructParameters(x); err != nil {
@@ -486,7 +485,7 @@ func Macie2ClassificationExportConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func Macie2ClassificationExportConfiguration_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Macie2ClassificationExportConfiguration_IsTerraformElement(x interface{}) *bool {
+func Macie2ClassificationExportConfiguration_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2ClassificationExportConfiguration_IsTerraformElementParameters(x); err != nil {
@@ -505,7 +504,7 @@ func Macie2ClassificationExportConfiguration_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func Macie2ClassificationExportConfiguration_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func Macie2ClassificationExportConfiguration_IsTerraformResource(x interface{}) *bool {
+func Macie2ClassificationExportConfiguration_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMacie2ClassificationExportConfiguration_IsTerraformResourceParameters(x); err != nil {
@@ -524,7 +523,7 @@ func Macie2ClassificationExportConfiguration_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,31 +548,31 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetBooleanAttribute(
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetListAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetNumberAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetNumberListAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetNumberMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetStringAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,15 +700,15 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) GetStringMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -728,7 +727,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -741,7 +740,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) InterpolationForAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,18 +754,18 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -777,7 +776,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -788,7 +787,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -799,7 +798,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) PutS3Destination(val
 	_jsii_.InvokeVoid(
 		m,
 		"putS3Destination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -827,8 +826,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ResetS3Destination()
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -840,8 +839,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) SynthesizeAttributes
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -853,8 +852,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) SynthesizeHclAttribu
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -866,8 +865,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToHclTerraform() int
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -892,8 +891,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -904,4 +903,3 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ToTerraform() interf
 
 	return returns
 }
-

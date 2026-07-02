@@ -98,7 +98,7 @@ func (l *jsiiProxy_LightsailCertificateDomainValidationOptionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LightsailCertificateDomainValidationOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LightsailCertificateDomainValidationOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLightsailCertificateDomainValidationOptionsOutputReferenceParame
 
 	return nil
 }
-

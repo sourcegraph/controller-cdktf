@@ -12,9 +12,9 @@ type EfsBackupPolicyBackupPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type EfsBackupPolicyBackupPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type EfsBackupPolicyBackupPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewEfsBackupPolicyBackupPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EfsBackupPolicyBackupPolicyOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewEfsBackupPolicyBackupPolicyOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewEfsBackupPolicyBackupPolicyOutputReference_Override(e EfsBackupPolicyBac
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetInternalValue(val *EfsBackupPolicyBackupPolicy) {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) SetInternalValue(val *EfsBackupPolicyBackupPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetStatus(val *string) {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetStatus(val *str
 	)
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -36,7 +36,7 @@ type RedshiftserverlessWorkgroupEndpointVpcEndpointList interface {
 	Get(index *float64) RedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) WrapsSet(
 	return returns
 }
 
-
 func NewRedshiftserverlessWorkgroupEndpointVpcEndpointList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftserverlessWorkgroupEndpointVpcEndpointList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewRedshiftserverlessWorkgroupEndpointVpcEndpointList(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewRedshiftserverlessWorkgroupEndpointVpcEndpointList_Override(r Redshiftse
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) AllWithMa
 	_jsii_.Invoke(
 		r,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) Get(index
 	_jsii_.Invoke(
 		r,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointList) ToString(
 
 	return returns
 }
-

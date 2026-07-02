@@ -106,7 +106,7 @@ func (j *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSsmResourceDataSyncS3DestinationOutputReferenceParameters(terraf
 
 	return nil
 }
-

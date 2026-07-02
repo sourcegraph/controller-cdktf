@@ -19,7 +19,7 @@ func (d *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateAddMoveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateMoveFromIdPa
 	return nil
 }
 
-func (d *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDxHostedTransitVirtualInterfaceAccepter_GenerateConfigForImportPara
 	return nil
 }
 
-func validateDxHostedTransitVirtualInterfaceAccepter_IsConstructParameters(x interface{}) error {
+func validateDxHostedTransitVirtualInterfaceAccepter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDxHostedTransitVirtualInterfaceAccepter_IsConstructParameters(x int
 	return nil
 }
 
-func validateDxHostedTransitVirtualInterfaceAccepter_IsTerraformElementParameters(x interface{}) error {
+func validateDxHostedTransitVirtualInterfaceAccepter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDxHostedTransitVirtualInterfaceAccepter_IsTerraformElementParameter
 	return nil
 }
 
-func validateDxHostedTransitVirtualInterfaceAccepter_IsTerraformResourceParameters(x interface{}) error {
+func validateDxHostedTransitVirtualInterfaceAccepter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDxHostedTransitVirtualInterfaceAccepter_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetLifecycle
 	return nil
 }
 
-func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewDxHostedTransitVirtualInterfaceAccepterParameters(scope construc
 
 	return nil
 }
-

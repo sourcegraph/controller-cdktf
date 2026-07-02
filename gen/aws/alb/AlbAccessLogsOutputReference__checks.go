@@ -106,7 +106,7 @@ func (j *jsiiProxy_AlbAccessLogsOutputReference) validateSetBucketParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AlbAccessLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlbAccessLogsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlbAccessLogsOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
-func (j *jsiiProxy_AlbAccessLogsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlbAccessLogsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewAlbAccessLogsOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

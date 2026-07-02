@@ -34,7 +34,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewS3BucketReplicationConfigurationRuleListParameters(terraformReso
 
 	return nil
 }
-

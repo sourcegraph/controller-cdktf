@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataAwsKendraThesaurusSourceS3PathOutputReferenceParameters(terr
 
 	return nil
 }
-

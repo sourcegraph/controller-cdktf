@@ -6,9 +6,9 @@ import (
 
 type Apigatewayv2StageConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Apigatewayv2StageConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#api_id Apigatewayv2Stage#api_id}.
 	ApiId *string `field:"required" json:"apiId" yaml:"apiId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#name Apigatewayv2Stage#name}.
@@ -28,7 +28,7 @@ type Apigatewayv2StageConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#access_log_settings Apigatewayv2Stage#access_log_settings}
 	AccessLogSettings *Apigatewayv2StageAccessLogSettings `field:"optional" json:"accessLogSettings" yaml:"accessLogSettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#auto_deploy Apigatewayv2Stage#auto_deploy}.
-	AutoDeploy interface{} `field:"optional" json:"autoDeploy" yaml:"autoDeploy"`
+	AutoDeploy any `field:"optional" json:"autoDeploy" yaml:"autoDeploy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#client_certificate_id Apigatewayv2Stage#client_certificate_id}.
 	ClientCertificateId *string `field:"optional" json:"clientCertificateId" yaml:"clientCertificateId"`
 	// default_route_settings block.
@@ -47,7 +47,7 @@ type Apigatewayv2StageConfig struct {
 	// route_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#route_settings Apigatewayv2Stage#route_settings}
-	RouteSettings interface{} `field:"optional" json:"routeSettings" yaml:"routeSettings"`
+	RouteSettings any `field:"optional" json:"routeSettings" yaml:"routeSettings"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#stage_variables Apigatewayv2Stage#stage_variables}.
 	StageVariables *map[string]*string `field:"optional" json:"stageVariables" yaml:"stageVariables"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#tags Apigatewayv2Stage#tags}.
@@ -55,4 +55,3 @@ type Apigatewayv2StageConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/apigatewayv2_stage#tags_all Apigatewayv2Stage#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
-

@@ -23,15 +23,15 @@ type EmrserverlessApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,7 +48,7 @@ type EmrserverlessApplication interface {
 	SetId(val *string)
 	IdInput() *string
 	InitialCapacity() EmrserverlessApplicationInitialCapacityList
-	InitialCapacityInput() interface{}
+	InitialCapacityInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,11 +67,11 @@ type EmrserverlessApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseLabel() *string
 	SetReleaseLabel(val *string)
 	ReleaseLabelInput() *string
@@ -84,7 +84,7 @@ type EmrserverlessApplication interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -94,9 +94,9 @@ type EmrserverlessApplication interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type EmrserverlessApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type EmrserverlessApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,7 +135,7 @@ type EmrserverlessApplication interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoStartConfiguration(value *EmrserverlessApplicationAutoStartConfiguration)
 	PutAutoStopConfiguration(value *EmrserverlessApplicationAutoStopConfiguration)
-	PutInitialCapacity(value interface{})
+	PutInitialCapacity(value any)
 	PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity)
 	PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration)
 	ResetArchitecture()
@@ -150,17 +150,17 @@ type EmrserverlessApplication interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EmrserverlessApplication
@@ -248,8 +248,8 @@ func (j *jsiiProxy_EmrserverlessApplication) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrserverlessApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_EmrserverlessApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmrserverlessApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_EmrserverlessApplication) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrserverlessApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_EmrserverlessApplication) InitialCapacity() EmrserverlessAppl
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) InitialCapacityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrserverlessApplication) InitialCapacityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"initialCapacityInput",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_EmrserverlessApplication) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EmrserverlessApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_EmrserverlessApplication) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmrserverlessApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_EmrserverlessApplication) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmrserverlessApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -578,7 +578,6 @@ func (j *jsiiProxy_EmrserverlessApplication) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication(scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) EmrserverlessApplication {
 	_init_.Initialize()
@@ -590,7 +589,7 @@ func NewEmrserverlessApplication(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -603,12 +602,12 @@ func NewEmrserverlessApplication_Override(e EmrserverlessApplication, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetArchitecture(val *string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetArchitecture(val *string) {
 	if err := j.validateSetArchitectureParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetArchitecture(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_EmrserverlessApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_EmrserverlessApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -649,7 +648,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmrserverlessApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetId(val *string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmrserverlessApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetName(val *string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmrserverlessApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -698,7 +697,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmrserverlessApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetReleaseLabel(val *string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetReleaseLabel(val *string) {
 	if err := j.validateSetReleaseLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetReleaseLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetTagsAll(val *map[string]*string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetTagsAll(val *map[string]*string) {
 	if err := j.validateSetTagsAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_EmrserverlessApplication)SetTagsAll(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplication)SetType(val *string) {
+func (j *jsiiProxy_EmrserverlessApplication) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func EmrserverlessApplication_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func EmrserverlessApplication_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EmrserverlessApplication_IsConstruct(x interface{}) *bool {
+func EmrserverlessApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrserverlessApplication_IsConstructParameters(x); err != nil {
@@ -800,7 +799,7 @@ func EmrserverlessApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func EmrserverlessApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EmrserverlessApplication_IsTerraformElement(x interface{}) *bool {
+func EmrserverlessApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrserverlessApplication_IsTerraformElementParameters(x); err != nil {
@@ -819,7 +818,7 @@ func EmrserverlessApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func EmrserverlessApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EmrserverlessApplication_IsTerraformResource(x interface{}) *bool {
+func EmrserverlessApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmrserverlessApplication_IsTerraformResourceParameters(x); err != nil {
@@ -838,7 +837,7 @@ func EmrserverlessApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -863,31 +862,31 @@ func (e *jsiiProxy_EmrserverlessApplication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EmrserverlessApplication) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmrserverlessApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (e *jsiiProxy_EmrserverlessApplication) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,15 +1014,15 @@ func (e *jsiiProxy_EmrserverlessApplication) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrserverlessApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1042,7 +1041,7 @@ func (e *jsiiProxy_EmrserverlessApplication) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (e *jsiiProxy_EmrserverlessApplication) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,18 +1068,18 @@ func (e *jsiiProxy_EmrserverlessApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EmrserverlessApplication) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1091,7 +1090,7 @@ func (e *jsiiProxy_EmrserverlessApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (e *jsiiProxy_EmrserverlessApplication) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (e *jsiiProxy_EmrserverlessApplication) PutAutoStartConfiguration(value *Em
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoStartConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,18 +1123,18 @@ func (e *jsiiProxy_EmrserverlessApplication) PutAutoStopConfiguration(value *Emr
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoStopConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) PutInitialCapacity(value interface{}) {
+func (e *jsiiProxy_EmrserverlessApplication) PutInitialCapacity(value any) {
 	if err := e.validatePutInitialCapacityParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putInitialCapacity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (e *jsiiProxy_EmrserverlessApplication) PutMaximumCapacity(value *Emrserver
 	_jsii_.InvokeVoid(
 		e,
 		"putMaximumCapacity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (e *jsiiProxy_EmrserverlessApplication) PutNetworkConfiguration(value *Emrs
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworkConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1241,8 +1240,8 @@ func (e *jsiiProxy_EmrserverlessApplication) ResetTagsAll() {
 	)
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmrserverlessApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1254,8 +1253,8 @@ func (e *jsiiProxy_EmrserverlessApplication) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmrserverlessApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1267,8 +1266,8 @@ func (e *jsiiProxy_EmrserverlessApplication) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrserverlessApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1280,8 +1279,8 @@ func (e *jsiiProxy_EmrserverlessApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrserverlessApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1306,8 +1305,8 @@ func (e *jsiiProxy_EmrserverlessApplication) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmrserverlessApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1318,4 +1317,3 @@ func (e *jsiiProxy_EmrserverlessApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

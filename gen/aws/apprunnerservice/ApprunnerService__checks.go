@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApprunnerService) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApprunnerService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApprunnerService) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApprunnerService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateApprunnerService_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateApprunnerService_IsConstructParameters(x interface{}) error {
+func validateApprunnerService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateApprunnerService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApprunnerService_IsTerraformElementParameters(x interface{}) error {
+func validateApprunnerService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateApprunnerService_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateApprunnerService_IsTerraformResourceParameters(x interface{}) error {
+func validateApprunnerService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (j *jsiiProxy_ApprunnerService) validateSetAutoScalingConfigurationArnParam
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -351,7 +351,7 @@ func (j *jsiiProxy_ApprunnerService) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApprunnerService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ApprunnerService) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApprunnerService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewApprunnerServiceParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-
